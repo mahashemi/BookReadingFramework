@@ -85,5 +85,5 @@
       "status": "fetched_and_chunked"
     }
   ],
-  "progress": "13 of 13 reading units identified; source extraction/chunking complete. 160 source-understanding chunks currently verified in chunks.json. Structured pedagogical enrichment is in progress; questions/exams/UI remain to be generated."
+  "progress": "13 of 13 reading units identified, fetched, and chunked. 160 source-understanding chunks verified. Structured study layer, question universe, study UI, unit tests, cumulative exams, 20 simulated years, mind maps, and teaching outline are built."
 }
