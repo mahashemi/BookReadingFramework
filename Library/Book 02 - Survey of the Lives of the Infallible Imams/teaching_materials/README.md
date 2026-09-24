@@ -1,3 +1,9 @@
 # Teaching Materials
 
-Claim → explanation → example teaching materials, chapter outlines, lecture material, and review aids will live here.
+Teaching outputs should be derived from the same structured Book 02 data.
+
+Recommended pattern:
+
+**Claim → explanation → example/evidence → implication → exam question**
+
+Do not let teaching notes diverge silently from the source-understanding layer.
