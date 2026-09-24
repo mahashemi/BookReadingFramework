@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book 02 — 20 Simulated Years Master Workbook</title>
+<style>
+body{margin:0;background:#faf8f4;color:#1c1a17;font:15px/1.55 Georgia,serif}.wrap{max-width:960px;margin:auto;padding:20px 14px 70px}
+.paper{background:#fff;border:1px solid #e2dcd1;border-radius:10px;padding:17px;margin:16px 0;page-break-after:always}
+.q{margin:11px 0;padding:8px 0 8px 11px;border-left:3px solid #8b6f3e}.ans{display:none;background:#fdf3dc;padding:9px;border-radius:6px;margin-top:6px}
+.show .ans{display:block}.btn{padding:6px 9px;border:1px solid #cfc7ba;background:#fff;border-radius:5px;cursor:pointer}
+.controls{background:#fff;border:1px solid #e2dcd1;border-radius:10px;padding:12px;position:sticky;top:0;z-index:2}
+</style></head><body><div class="wrap">
+<h1>Book 02 — 20 Simulated Years Master Workbook</h1>
+<div class="controls">
+<button class="btn" onclick="window.print()">Print all</button>
+<button class="btn" onclick="document.querySelectorAll('.ans').forEach(x=>x.style.display='block')">Reveal all answers</button>
+<button class="btn" onclick="document.querySelectorAll('.ans').forEach(x=>x.style.display='none')">Hide all answers</button>
+</div>
+<div id="papers"></div></div>
+<script>
+let Q=[];
+function rand(seed){let x=seed>>>0;return()=>{x=(x*1664525+1013904223)>>>0;return x/4294967296}}
+function sample(pool,n,seed){let a=[...pool],r=rand(seed),o=[];while(a.length&&o.length<n)o.push(a.splice(Math.floor(r()*a.length),1)[0]);return o}
+function qhtml(q){return '<div class="q" onclick="this.classList.toggle(\'show\')"><b>'+q.prompt+'</b>'+(q.options?'<br><ol>'+q.options.map(x=>'<li>'+x+'</li>').join('')+'</ol>':'')+'<button class="btn" onclick="event.stopPropagation();this.parentElement.classList.add(\'show\')">Show answer</button><div class="ans"><b>Answer:</b><br>'+String(q.answer).replace(/\n/g,'<br>')+'</div></div>'}
+function makePaper(y){let obj=sample(Q.filter(q=>q.type==='MCQ'||q.type==='FILL'),4,1000+y),written=sample(Q.filter(q=>q.type==='SHORT'||q.type==='LONG'),7,5000+y);return '<section class="paper"><h2>Simulated Year '+y+'</h2><p>Part A — 4 objective · Part B — 7 written · fully interleaved across the book.</p><h3>Part A — Objective</h3>'+obj.map(qhtml).join('')+'<h3>Part B — Written</h3>'+written.map(qhtml).join('')+'</section>'}
+fetch('questions.json').then(r=>r.json()).then(d=>{Q=d.questions;papers.innerHTML=Array.from({length:20},(_,i)=>makePaper(i+1)).join('')}).catch(e=>papers.innerHTML='<p>Could not load questions.json: '+e.message+'</p>');
+</script></body></html>
