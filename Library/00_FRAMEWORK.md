@@ -25,13 +25,15 @@ If a study method doesn't map to one of these four, it's probably just re-readin
 Read the *entire* book before extracting anything. Partial coverage produces confident-sounding gaps — the single biggest risk in this whole process. If a source is split across editions, uploads, or missing chapters, actively search/fetch the rest before starting Module 2. Verify page/chapter counts against the book's own table of contents.
 
 ### Module 2 — Chapter-by-Chapter Extraction
-For every chapter/reading-unit, extract four things:
+For every chapter/reading-unit, extract five things:
 - **Key Concepts** — the claims and ideas, in the author's logic, not just topic labels
 - **Key Terms & Names** — anything a reader would need to look up, with a one-line gloss
 - **Key Quotes** — the sentences worth memorizing verbatim (usually the author's own claim-statements, not the illustrating examples)
-- **Questions** — tagged by type (see Module 4)
+- **Questions** — tagged by type (see Module 4), designed to test understanding rather than recognition
 
 **The claim → example pattern.** Most serious non-fiction authors argue by stating a general claim, then proving it with a story, statistic, or historical case. Once you spot this pattern in a book, extraction becomes mechanical: the claim is the quote/slide material, the example is what you narrate or explain. Look for it explicitly in Module 2.
+
+**Deep-understanding rule.** A question should usually force the learner to combine at least two elements: cause + consequence, claim + evidence, comparison + reason, event + interpretation, or concept + application. Avoid questions whose answer is merely a section title or one isolated fact.
 
 ### Module 3 — Mind Maps (Dual Coding)
 Two layers, per your preference:
@@ -46,6 +48,16 @@ Every question gets one of four tags:
 - **FILL** — fill-in-the-blank, tests precise recall (names, numbers, terms)
 - **SHORT** — 4–6 sentence answer, tests explanation
 - **LONG** — essay-length, tests synthesis across multiple chapters
+
+Question design should be layered:
+1. **Recall** — names, sequence, precise terminology.
+2. **Comprehension** — explain what the author means in your own words.
+3. **Reasoning** — explain why the author reaches the conclusion.
+4. **Evidence** — show how a story/example supports the claim.
+5. **Connection** — connect two or more ideas/reading units.
+6. **Listener challenge** — answer a plausible objection or misconception raised during teaching.
+
+The master universe should be dominated by levels 2–6. Recall is necessary, but it must not become the study method itself.
 
 Build the bank *once*, deep enough to draw from repeatedly (target: 100+ items for a book this size; for exam-heavy preparation, build an intentionally exhaustive master universe rather than a representative sample). Every other module (exam papers, spaced review) draws from this single bank rather than duplicating content — one source of truth.
 
@@ -93,7 +105,17 @@ The goal is not merely to predict the real paper. Build enough coverage that an 
 - recall, explanation and synthesis questions
 - plausible MCQ distractors and fill-in-the-blank variants
 
-Then generate many **interleaved simulated papers** from the same master universe. If the real exam has a small number of questions, practice should still be much larger so that the learner is prepared for the worst case.
+Then generate many **interleaved simulated papers** from the same master universe.
+
+### Module 6C — Teaching-First Concept Questions
+Teaching material and exam preparation should share the same conceptual question universe. For each major idea, create at least one question that a listener could naturally ask:
+- “Why does that follow?”
+- “How is this different from the previous case?”
+- “What would happen if the circumstances changed?”
+- “Isn't this example actually evidence for the opposite?”
+- “What exactly is the author trying to prove with this story?”
+
+These questions are not filler. They are a bridge between teaching discussion and exam mastery. If the real exam has a small number of questions, practice should still be much larger so that the learner is prepared for the worst case.
 
 ## Module 6B — Generic Study Engine
 Use a locked separation of concerns:
