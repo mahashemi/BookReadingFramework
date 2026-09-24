@@ -1,6 +1,6 @@
 # The Deep-Reading Framework
 ### A repeatable pipeline for turning any book into long-term memory
-*Version 1.1 — generic, data-driven framework; validated on Book 01 and being applied to Book 02*
+*Version 1.1 — generic, data-driven framework; validated on Book 01 and Book 02*
 
 ---
 
