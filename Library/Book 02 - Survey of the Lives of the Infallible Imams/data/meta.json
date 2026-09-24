@@ -9,8 +9,8 @@
     {"id": "u00", "title": "Foreword", "url": "/foreword", "status": "fetched"},
     {"id": "u01", "title": "Introduction: A Comparison between Imam al-Husayn's Path and That of Other Imams", "url": "/introduction-comparison-between-imam-al-husayns", "status": "fetched"},
     {"id": "u02", "title": "Chapter 1: 'Ali's Struggles", "url": "/chapter-1-alis-struggles", "status": "fetched"},
-    {"id": "u03", "title": "Chapter 2: Imam al-Hassan's Pacifism (Session 1)", "url": "/chapter-2-imam-al-hassans-pacifism-session-1", "status": "pending"},
-    {"id": "u04", "title": "Chapter 2: Imam al-Hassan's Pacifism (Session 2)", "url": "/chapter-2-imam-al-hassans-pacifism-session-2", "status": "pending"},
+    {"id": "u03", "title": "Chapter 2: Imam al-Hassan's Pacifism (Session 1)", "url": "/chapter-2-imam-al-hassans-pacifism-session-1", "status": "fetched"},
+    {"id": "u04", "title": "Chapter 2: Imam al-Hassan's Pacifism (Session 2)", "url": "/chapter-2-imam-al-hassans-pacifism-session-2", "status": "fetched"},
     {"id": "u05", "title": "Chapter 3: A Discourse on Imam Zayn al-'Abidin", "url": "/chapter-3-discourse-imam-zayn-al-abidin", "status": "pending"},
     {"id": "u06", "title": "Chapter 4: Imam al-Sadiq and the Issue of Vicegerency (Sessions 1 & 2)", "url": "/chapter-4-imam-al-sadiq-and-issue-vicegerency", "status": "pending"},
     {"id": "u07", "title": "Chapter 5: The Reasons for Imam Musa al-Kazim's Martyrdom", "url": "/chapter-5-reasons-imam-musa-al-kazims-martyrdom", "status": "pending"},
@@ -20,5 +20,5 @@
     {"id": "u11", "title": "Chapter 8, Part 1: The Universal Justice", "url": "/chapter-8-part-1-universal-justice", "status": "pending"},
     {"id": "u12", "title": "Chapter 8, Part 2: The Promised al-Mahdi", "url": "/chapter-8-part-2-promised-mawud-al-mahdi", "status": "pending"}
   ],
-  "progress": "3 of 13 reading units fetched and chunked (Foreword, Introduction, Chapter 1)"
+  "progress": "5 of 13 reading units fetched and chunked (Foreword, Introduction, Chapter 1, Chapter 2 Session 1, Chapter 2 Session 2). Next: u05 Chapter 3 (Imam Zayn al-'Abidin)."
 }
