@@ -1,6 +1,6 @@
 # The Deep-Reading Framework
 ### A repeatable pipeline for turning any book into long-term memory
-*Version 1.0 — built from "Polarization Around the Character of 'Ali ibn Abi Talib" (Mutahhari)*
+*Version 1.1 — generic, data-driven framework; validated on Book 01 and being applied to Book 02*
 
 ---
 
@@ -47,7 +47,7 @@ Every question gets one of four tags:
 - **SHORT** — 4–6 sentence answer, tests explanation
 - **LONG** — essay-length, tests synthesis across multiple chapters
 
-Build the bank *once*, deep enough to draw from repeatedly (target: 100+ items for a book this size). Every other module (exam papers, spaced review) draws from this single bank rather than duplicating content — one source of truth.
+Build the bank *once*, deep enough to draw from repeatedly (target: 100+ items for a book this size; for exam-heavy preparation, build an intentionally exhaustive master universe rather than a representative sample). Every other module (exam papers, spaced review) draws from this single bank rather than duplicating content — one source of truth.
 
 ### Module 5 — Spaced Review Tracker
 A simple, no-extra-app tracker embedded directly in the study guide HTML:
@@ -57,6 +57,85 @@ A simple, no-extra-app tracker embedded directly in the study guide HTML:
 - Persisted in the browser via `localStorage`, so it survives closing and reopening the file — no login, no separate app
 
 ### Module 6 — Interleaved Practice Exams
+Generate multiple full papers by **shuffling and cycling through the Module 4 bank**, not writing new questions each time. Mix chapters/reading-units within every paper — never one paper per chapter. This is what makes practice resemble the actual exam experience.
+
+### Question-bank architecture
+The **master question universe is the source of truth**:
+```
+UNIT
+ ├── Study material
+ ├── Questions
+ └── Unit test
+
+QUESTION BANK
+ ├── Unit questions
+ ├── Cumulative questions
+ └── Master universe
+
+EXAM GENERATOR
+ ├── Unit test
+ ├── 3-unit test
+ ├── Half-book test
+ ├── Full-book test
+ ├── Simulated Year 1...Year 20
+ └── Hard / Worst-case paper
+```
+Every generated paper should reference existing question IDs rather than duplicate question text.
+
+## Module 6A — Exhaustive / Worst-Case Exam Preparation
+The goal is not merely to predict the real paper. Build enough coverage that an unfamiliar question is still answerable. For each reading-unit, cover:
+- every major concept and sub-concept
+- key terms, names, places, events and sequence
+- important claim statements
+- claim → reasoning → example → lesson
+- distinctions and apparent contradictions
+- cross-unit connections
+- recall, explanation and synthesis questions
+- plausible MCQ distractors and fill-in-the-blank variants
+
+Then generate many **interleaved simulated papers** from the same master universe. If the real exam has a small number of questions, practice should still be much larger so that the learner is prepared for the worst case.
+
+## Module 6B — Generic Study Engine
+Use a locked separation of concerns:
+```
+Source
+  ↓
+Structured JSON
+  ↓
+Generic study engine
+  ↓
+Book-specific rendering
+  ↓
+study.html / exam.html
+```
+
+A book data file should contain:
+- `book_id`
+- reading units
+- concepts
+- terms
+- quotes
+- claim/example structures
+- questions and answers
+- difficulty / importance
+- source traceability
+- cross-unit connections
+
+The same engine must be able to render Book 01, Book 02 and future books by changing `book_id` / data, without copying the study logic.
+
+The study UI should support, where applicable:
+- chapter/unit accordion
+- key concepts, terms and quotes
+- claim → reasoning → example → lesson
+- click-to-reveal answers
+- self-marking and running score
+- progress bar and total score
+- unit tests and cumulative tests
+- spaced-review tracking
+- dark/light mode
+- responsive/mobile layout
+
+
 Generate multiple full papers by **shuffling and cycling through the Module 4 bank**, not writing new questions each time. Mix chapters within every paper — never one paper per chapter. This is what makes practice resemble the actual exam experience (which never tests chapters in isolation) and is one of the most evidence-backed techniques in the entire framework.
 
 ### Module 7 — Book Index Page
@@ -84,6 +163,25 @@ We'll build genre-specific templates properly once we've run this pipeline on 2�
 
 ---
 
+## Source-of-Truth and Traceability
+
+Never invent source content to fill a missing field. If extraction is incomplete, return to the source and acquire the missing material before building the study layer. Keep raw source chunks separate from the final pedagogical JSON.
+
+Recommended layers:
+```
+data/chunks.json        ← source-understanding layer
+data/meta.json          ← source inventory/status
+data/study_bookXX.json  ← structured pedagogical layer
+study_guide/            ← rendered study experience
+exam_bank/              ← master questions + generated exams
+mind_maps/              ← visual review
+teaching_materials/     ← teaching outputs
+```
+
+Each extracted item should retain enough source information to trace it back to its reading-unit/source page.
+
+---
+
 ## Reusing This Framework
 
 To run this pipeline on a new book, the working instruction is:
@@ -94,19 +192,23 @@ Everything after that follows the modules above in order.
 
 ---
 
-## Google Drive Folder Structure (website-ready)
+## Repository Folder Structure (website-ready)
 
 ```
-📁 Learning Library
+📁 Library
   📄 00_FRAMEWORK.md                    ← this file
   📁 Book 01 - Polarization Around 'Ali
       📄 index.md
       📁 study_guide      (chapter-by-chapter HTML)
       📁 mind_maps        (static + interactive)
-      📁 exam_bank        (26 papers HTML + the 30Q hard exam)
+      📁 exam_bank        (master question universe + generated papers)
       📁 teaching_materials (outline, script, slides)
   📁 Book 02 - Survey of the Lives of the Infallible Imams
-      (same structure, once built)
+      📄 data/                         ← source + structured JSON
+      📁 study_guide
+      📁 mind_maps
+      📁 exam_bank
+      📁 teaching_materials
 ```
 
 Every future book just adds one more numbered folder with the identical internal structure — this is what makes a public website trivial later: each book folder = one page, `index.md` = the landing content.
