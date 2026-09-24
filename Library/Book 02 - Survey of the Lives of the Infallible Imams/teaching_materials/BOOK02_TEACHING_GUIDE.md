@@ -248,3 +248,64 @@ Ask students to explain this chain from memory:
 → **active responsibility while awaiting**
 
 That chain is the conceptual backbone of the whole teaching package.
+
+
+# Live listener-question method
+
+Do not wait for students to ask questions spontaneously. Build the questions into the teaching itself.
+
+For each major idea, use this sequence:
+
+**State the claim → tell the example → pause → provoke an objection → make students explain the distinction → return to the claim.**
+
+Good prompts are questions such as:
+- “What exactly is the author trying to prove with this story?”
+- “What would change if the circumstances were different?”
+- “Does this example actually prove the claim, or only illustrate it?”
+- “What is the difference between these two cases?”
+- “What would be the wrong conclusion if we read this too literally?”
+- “Can someone challenge this argument before I answer it?”
+
+A student should not receive full credit merely for naming the person or event. Ask for **meaning + evidence + reason + implication**.
+
+## Session-specific provocation prompts
+
+### Session 1 — The puzzle
+**Question:** If the religion's principles are stable, why can two Imams act differently?
+
+**Challenge:** Does “different circumstances” explain everything, or do we need a rule for deciding which circumstances matter?
+
+### Session 2 — 'Ali and the Kharijites
+**Question:** Can a person look extremely religious and still fundamentally misunderstand religion?
+
+**Challenge:** Was the Kharijite problem only ignorance, or did certainty without understanding make the ignorance more dangerous?
+
+### Session 3 — al-Hassan and al-Husayn
+**Question:** If al-Husayn's refusal is courageous, what does that tell us about al-Hassan's peace?
+
+**Challenge:** Which single change in circumstances would most alter the judgment of the decision: military strength, allegiance demand, Kufah's support, or the ruler's conduct?
+
+### Session 4 — spiritual resistance
+**Question:** How can worship or serving strangers become a form of historical resistance?
+
+**Challenge:** What would be lost if we defined resistance only as fighting?
+
+### Session 5 — political openings
+**Question:** When does entering government become cooperation, and when does it become endorsement?
+
+**Challenge:** Why must we separate a documented event from an explanation of the ruler's motive?
+
+### Session 6 — al-'Askari
+**Question:** What changes when political surveillance becomes the dominant circumstance?
+
+**Challenge:** Does concealment mean weakness, or can concealment itself be a deliberate strategy of continuity?
+
+### Session 7 — justice
+**Question:** Is justice the same thing as treating everybody identically?
+
+**Challenge:** If human beings were driven only by self-interest, what would that do to the possibility of a just society?
+
+### Session 8 — Mahdism
+**Question:** If the future just order is promised, why should people reform the present?
+
+**Challenge:** Could deliberately allowing corruption ever be a valid form of “preparing” for reappearance? What argument does Mutahhari give against that?
