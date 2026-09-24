@@ -387,3 +387,26 @@ Without notes, answer:
 8. What does al-'Askari's chapter demonstrate?
 9. How does justice connect to Mahdism?
 10. Why does awaiting not cancel duty?
+
+
+# Built-in listener prompts
+
+Every conceptual slide should include one question the teacher asks before explaining the answer:
+
+**Puzzle:** “If the principles are one, why are the methods different?”
+
+**'Ali:** “Can impressive religious behavior hide serious misunderstanding?”
+
+**al-Hassan/al-Husayn:** “Which change in circumstances matters most to the difference between peace and revolt?”
+
+**Zayn al-'Abidin/Musa al-Kazim:** “What counts as resistance if there is no battlefield?”
+
+**al-Sadiq/al-Rida:** “Does a political opportunity or government appointment automatically determine what the Imam should do?”
+
+**al-'Askari:** “What does leadership look like when surveillance changes the available methods?”
+
+**Justice:** “What is the difference between equal treatment and justice?”
+
+**Mahdism:** “Why should awaiting the future not make us passive in the present?”
+
+These prompts are intentionally open enough to generate discussion, but specific enough that the teacher can bring the class back to the book's actual argument.
