@@ -24,5 +24,10 @@ function expandAll(){var again=true,guard=0;while(again&&guard<10){again=false;g
 function filterNodes(){var q=search.value.toLowerCase();document.querySelectorAll(".node").forEach(function(el){el.style.opacity=!q||el.textContent.toLowerCase().indexOf(q)>=0?"1":".2"})}
 function fit(){var ids=visible(),minx=Math.min.apply(null,ids.map(function(id){return N[id].x})),maxx=Math.max.apply(null,ids.map(function(id){return N[id].x+210})),miny=Math.min.apply(null,ids.map(function(id){return N[id].y})),maxy=Math.max.apply(null,ids.map(function(id){return N[id].y+80}));var cw=innerWidth,ch=innerHeight-72;scale=Math.min(cw/(maxx-minx+80),ch/(maxy-miny+80),1);px=(cw-(maxx-minx)*scale)/2-minx*scale;py=(ch-(maxy-miny)*scale)/2-miny*scale;world.style.transform="translate("+px+"px,"+py+"px) scale("+scale+")"}
 canvas.addEventListener("wheel",function(e){e.preventDefault();scale=Math.max(.4,Math.min(1.8,scale*(e.deltaY<0?1.08:.92)));world.style.transform="translate("+px+"px,"+py+"px) scale("+scale+")"},{passive:false});
+let drag=null;
+canvas.addEventListener("pointerdown",function(e){if(e.target.closest(".node"))return;drag={x:e.clientX,y:e.clientY,sx:px,sy:py};canvas.setPointerCapture(e.pointerId);canvas.style.cursor="grabbing"});
+canvas.addEventListener("pointermove",function(e){if(!drag)return;px=drag.sx+(e.clientX-drag.x);py=drag.sy+(e.clientY-drag.y);world.style.transform="translate("+px+"px,"+py+"px) scale("+scale+")"});
+canvas.addEventListener("pointerup",function(){drag=null;canvas.style.cursor="default"});
+canvas.addEventListener("pointercancel",function(){drag=null;canvas.style.cursor="default"});
 (async function(){try{D=await fetch("../data/study_book02.json").then(function(r){return r.json()});init();fit()}catch(e){info.innerHTML="<b>Could not load study data.</b> "+esc(e.message)}})();
 </script></body></html>
