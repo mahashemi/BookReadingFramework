@@ -1,0 +1,37 @@
+% ============================================================
+%  main.tex — A SURVEY INTO THE LIVES OF THE INFALLIBLE IMAMS
+%  Framework file, structured like the Book 01 / Polarization deck.
+%  Compile with: pdflatex main.tex   (run twice for page count)
+% ============================================================
+\documentclass[11pt,aspectratio=169]{beamer}
+\usepackage{talkstyle}
+
+% ---------------- EDIT THIS BLOCK ----------------
+\newcommand{\presentername}{Seyed Mohammad Abuzar Hashemi} % footer name
+\title{A Survey into the Lives of the Infallible Imams}
+\subtitle{Teaching Deck --- Ayatullah Murtadha Mutahhari}
+\author{\presentername}
+\date{}
+% --------------------------------------------------
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}{Table of Contents}
+  \tableofcontents
+\end{frame}
+
+% -------- Content sections (one file per teaching block) --------
+\input{sections/00_intro.tex}
+\input{sections/01_ali.tex}
+\input{sections/02_hassan.tex}
+\input{sections/03_spiritual_resistance.tex}
+\input{sections/04_political_openings.tex}
+\input{sections/05_askari.tex}
+\input{sections/06_justice_mahdi.tex}
+\input{sections/07_quickref.tex}
+
+\end{document}

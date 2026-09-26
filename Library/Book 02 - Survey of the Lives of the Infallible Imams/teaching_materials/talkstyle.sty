@@ -1,0 +1,151 @@
+% ============================================================
+%  talkstyle.sty
+%  Custom look & reusable commands for the Book 02 teaching deck
+%  ("A Survey into the Lives of the Infallible Imams"). Mirrors
+%  the style file used for the Book 01 / Polarization deck so
+%  both decks share one visual and structural language.
+%  Edit COLORS below to re-theme the whole deck. Content files
+%  should never need to touch this file.
+% ============================================================
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{talkstyle}[2026/01/01 Book 02 talk style]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[english]{babel}
+\RequirePackage{xcolor}
+\RequirePackage{enumitem}
+\RequirePackage{hyperref}
+\RequirePackage{pgfpages}
+\RequirePackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,mindmap,trees}
+\hypersetup{colorlinks=true, linkcolor=, urlcolor=deepteal}
+
+% ---------------------------------------------------------------
+% 1. COLOR PALETTE  (change these four lines to re-theme the deck)
+% ---------------------------------------------------------------
+\definecolor{deepteal}{RGB}{15,48,87}    % primary / headings
+\definecolor{gold}{RGB}{196,154,55}      % accent (bullets, rules)
+\definecolor{softgray}{RGB}{95,95,95}    % secondary text
+\definecolor{lightbg}{RGB}{243,240,232}  % quote / example box fill
+
+% ---------------------------------------------------------------
+% 2. BASE THEME
+% ---------------------------------------------------------------
+\usetheme{default}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+% NOTE: enumitem + beamer's overlay-aware \begin{enumerate} will
+% raise "TeX capacity exceeded, grouping levels=255" if enumerate
+% is ever used WITHOUT an explicit optional argument. Every
+% enumerate in this deck (see \qaframe below) supplies one via
+% enumitem's [label=...] syntax -- never use a bare \begin{enumerate}.
+\setlist[itemize,1]{label=\textcolor{gold}{$\rightarrow$}}
+\setbeamercolor{itemize item}{fg=gold}
+\setbeamercolor{itemize subitem}{fg=gold}
+\setbeamerfont{itemize item}{series=\bfseries}
+\setbeamerfont{note page}{size=\scriptsize}
+\setbeameroption{show notes on second screen=right}
+\setbeamercolor{title}{fg=deepteal}
+\setbeamerfont{title}{series=\bfseries,size=\Large}
+\setbeamercolor{subtitle}{fg=softgray}
+\setbeamercolor{author}{fg=deepteal}
+\setbeamercolor{normal text}{fg=black}
+
+\setbeamercolor{frametitle}{fg=white,bg=deepteal}
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamertemplate{frametitle}{%
+  \vskip2pt
+  \hspace{-1em}%
+  \begin{beamercolorbox}[wd=\paperwidth,sep=8pt,leftskip=1em]{frametitle}
+    \usebeamerfont{frametitle}\insertframetitle
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{frametitle continuation}{}
+
+\setbeamercolor{quotebox}{bg=lightbg,fg=deepteal}
+\setbeamercolor{examplebox}{bg=lightbg,fg=black}
+\setbeamercolor{section in toc}{fg=deepteal}
+
+% ---------------------------------------------------------------
+% 3. FOOTER
+% ---------------------------------------------------------------
+\setbeamercolor{author in head/foot}{bg=lightbg, fg=softgray}
+\setbeamercolor{date in head/foot}{bg=lightbg, fg=softgray}
+\setbeamertemplate{footline}{%
+  \leavevmode
+  \hbox{%
+    \begin{beamercolorbox}[wd=.75\paperwidth,ht=2.6ex,dp=1.1ex,leftskip=1em]{author in head/foot}
+      \usebeamerfont{author in head/foot}\footnotesize\color{softgray}\presentername
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.6ex,dp=1.1ex,right,rightskip=1em]{date in head/foot}
+      \usebeamerfont{date in head/foot}\footnotesize\color{softgray}\insertframenumber{} / \inserttotalframenumber
+    \end{beamercolorbox}%
+  }%
+}
+
+% ---------------------------------------------------------------
+% 4. TITLE PAGE
+% ---------------------------------------------------------------
+\setbeamertemplate{title page}{%
+  \begin{center}
+    \vspace{0.4cm}
+    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+    \vspace{0.5cm}
+    {\color{gold}\rule{0.35\paperwidth}{1.2pt}}\par
+    \vspace{0.5cm}
+    {\large\color{softgray}\insertsubtitle\par}
+    \vspace{1.4cm}
+    {\large\color{deepteal}\insertauthor\par}
+    \vspace{0.2cm}
+    {\small\color{softgray}\insertdate\par}
+  \end{center}
+}
+
+% ---------------------------------------------------------------
+% 5. CONTENT HELPER COMMANDS  — use these inside sections/*.tex
+% ---------------------------------------------------------------
+
+% \bigquote{quote text}{attribution}
+\newcommand{\bigquote}[2]{%
+  \par\vspace{2pt}
+  \begin{beamercolorbox}[wd=\linewidth,sep=5pt]{quotebox}
+    {\large\itshape\color{deepteal}``#1''}\\[2pt]
+    {\footnotesize\color{softgray}--- #2}
+  \end{beamercolorbox}%
+  \par\vspace{1pt}
+}
+
+% \examplenote{label}{text} -- narrated example / story box
+\newcommand{\examplenote}[2]{%
+  \par\vspace{1pt}
+  \begin{beamercolorbox}[wd=\linewidth,sep=4pt]{examplebox}
+    {\footnotesize\textbf{\color{deepteal}Example --- #1:} \footnotesize #2}
+  \end{beamercolorbox}%
+}
+
+% \delivernote{text} -- speaker-only cue, goes to notes page, not the slide
+\newcommand{\delivernote}[1]{\note{#1}}
+
+% ---------------------------------------------------------------
+% 6. Q&A SLIDE COMMAND
+%    \qaframe{Section Title}{ \qa{Q}{A} \qa{Q}{A} ... }
+%    Question shows on the slide; the answer goes to the speaker
+%    notes page only, so the room can be asked to answer first.
+% ---------------------------------------------------------------
+\newcommand{\qaframe}[2]{%
+  \begin{frame}{Key Questions --- #1}
+  \footnotesize
+  \begin{enumerate}[label=\textbf{Q\arabic*.},leftmargin=1.8em,itemsep=8pt]
+  #2
+  \end{enumerate}
+  \end{frame}
+}
+
+% \qa{question}{answer}
+\newcommand{\qa}[2]{%
+  \item {\color{deepteal}\bfseries #1}%
+  \note{Q: #1\\A: #2\par\vspace{0.8em}}
+}
+
+\endinput

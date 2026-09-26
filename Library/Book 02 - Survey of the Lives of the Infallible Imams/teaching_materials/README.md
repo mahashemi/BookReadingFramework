@@ -10,10 +10,11 @@ Teacher-facing material for **A Survey into the Lives of the Infallible Imams**.
 
 ### Build a lesson / lecture
 - **BOOK02_LECTURE_OUTLINE.md** — 60-minute whole-book overview.
-- **BOOK02_SLIDE_CONTENT.md** — slide-ready claims, punchy bullets, examples, transitions, and final retrieval.
 
 ### Present
-- **BOOK02_TEACHING_DECK.tex** — self-contained Beamer deck for the whole book.
+- **main.tex + talkstyle.sty + sections/*.tex** — the Beamer deck, split into one file per teaching block (mirrors the Book 01 / Polarization deck's own structure). Compile with `pdflatex main.tex` (run twice). Includes comparison tables (jihad categories, the five al-Hassan/al-Husayn contrasts, Ma'mun's five motive theories, wilayat al-ja'ir) and TikZ mind maps (essence vs. expression, the three rival theories of justice, the Mahdism historical chain, the whole-book chain). Speaker-only answers to the `\qaframe` questions are in the notes page (`pdflatex` + a PDF viewer with presenter mode, or just read `main.log`-free source directly).
+  - Previous single-file `BOOK02_TEACHING_DECK.tex` and its build artifacts (`.aux/.log/.out/.fls/.fdb_latexmk`) are removed: that file never actually compiled (a fatal `enumitem`/beamer `enumerate` conflict — see the fix note in `talkstyle.sty`), and this multi-file version replaces it entirely.
+  - `BOOK02_SLIDE_CONTENT.md` is removed: it was the raw markdown draft of the old deck's content, now fully superseded by the actual compiled deck above.
 
 ### Teach from the framework
 The recurring method is:
