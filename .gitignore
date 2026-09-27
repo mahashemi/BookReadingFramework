@@ -13,3 +13,6 @@
 *.vrb
 *.bbl
 *.blg
+
+# macOS metadata
+.DS_Store
