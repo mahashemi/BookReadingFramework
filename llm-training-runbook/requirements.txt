@@ -1,7 +1,6 @@
 torch
 transformers>=5.17.0
 datasets
-diffusers
 accelerate
 peft
 trl>=1.13.0
