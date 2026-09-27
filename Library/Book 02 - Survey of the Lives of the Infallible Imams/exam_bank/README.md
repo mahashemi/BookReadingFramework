@@ -1,6 +1,6 @@
 # Exam Bank
 
-The Book 02 master question universe contains **1,032 questions** spanning all 13 reading units.
+The Book 02 master question universe contains **1,192 questions** spanning all 13 reading units (including a restored FILL type -- fill-in-the-blank presented as multiple choice, matching how real exams do cloze questions).
 
 This is intentionally concept-first. The question skills are:
 - comprehension
