@@ -8,14 +8,11 @@ Mutahhari argues that attraction and repulsion is a universal law running throug
 Murtadha Mutahhari (1920–1979) was a leading modern Iranian Islamic scholar and student of 'Allamah Tabataba'i. This book began as four lectures delivered at the Husayniyah al-Irshad in Tehran in 1969.
 
 ## Start Here — Reading Order
-1. **study_guide/** — chapter-by-chapter interactive study guide (24 chapters, concepts, terms, quotes, click-to-reveal Q&A)
-2. **exam_bank/** — the 30-question hard exam, plus 26 full interleaved practice papers (4 objective + 7 written each)
-3. **teaching_materials/** — a ready-to-deliver 40-minute talk outline, full speaking script, and slide content, if you want to teach this book to others
+1. **[study_guide/](study_guide/study_guide_attraction_polarization.html)** — chapter-by-chapter interactive study guide (24 chapters, concepts, terms, quotes, click-to-reveal Q&A)
+2. **exam_bank/** — the 30-question hard exam ([markdown](exam_bank/exam_30_hard_questions.md)), [26 full interleaved practice papers](exam_bank/exam_papers_bank.html) (4 objective + 7 written each), and a [master workbook](exam_bank/Polarization_Ali_MASTER_Exam_Workbook_34_Chapters_20_Simulated_Years.html) of 20 simulated years
+3. **teaching_materials/** — a ready-to-deliver [40-minute talk outline](teaching_materials/40min_talk_outline.md), [full speaking script](teaching_materials/talk_script_and_exam_questions.md), and [slide content](teaching_materials/slide_content.md)
 
-## Note on the two large interactive HTML files
-`study_guide.html` and `exam_papers_bank.html` are large, fully interactive files (score tracking, click-to-reveal answers) — too large to paste directly into a Drive text file, so they weren't auto-uploaded here. Options:
-- Download them from the chat and drag them into the `study_guide/` and `exam_bank/` folders here manually (30 seconds)
-- Or ask Claude to upload them directly next time — it's possible, just costly to do inline for files this size
-- Or use the hosted links, which work identically without needing Drive at all:
-  - Study guide: https://claude.ai/artifact/PGV2mZyh7sUr7wGDAjLWhk
-  - Exam papers: https://claude.ai/artifact/GdK1zLh8rQVxUc6yNszcwh
+## Note on format
+Book 01 was built before the framework's data-driven architecture (see [`../00_FRAMEWORK.md`](../00_FRAMEWORK.md)): its study guide and exam papers are self-contained interactive HTML files, and it has no `data/` or `mind_maps/` folder yet. Book 02 shows the current architecture; bringing Book 01 onto it is planned work.
+
+The interactive HTML files are also reachable from the [learning hub](https://mahashemi.github.io/BookReadingFramework/).

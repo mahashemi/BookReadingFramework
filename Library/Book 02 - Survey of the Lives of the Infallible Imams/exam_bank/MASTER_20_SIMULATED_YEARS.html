@@ -7,7 +7,8 @@ body{margin:0;background:#faf8f4;color:#1c1a17;font:15px/1.55 Georgia,serif}.wra
 .q{margin:11px 0;padding:8px 0 8px 11px;border-left:3px solid #8b6f3e}.ans{display:none;background:#fdf3dc;padding:9px;border-radius:6px;margin-top:6px}
 .show .ans{display:block}.btn{padding:6px 9px;border:1px solid #cfc7ba;background:#fff;border-radius:5px;cursor:pointer}
 .controls{background:#fff;border:1px solid #e2dcd1;border-radius:10px;padding:12px;position:sticky;top:0;z-index:2}
-</style></head><body><div class="wrap">
+</style><link rel="stylesheet" href="../../../assets/toolbar.css"><script defer src="../../../assets/toolbar.js"></script>
+</head><body><div class="wrap">
 <h1>Book 02 — 20 Simulated Years Master Workbook</h1>
 <div class="controls">
 <button class="btn" onclick="window.print()">Print all</button>
@@ -19,7 +20,8 @@ body{margin:0;background:#faf8f4;color:#1c1a17;font:15px/1.55 Georgia,serif}.wra
 let Q=[];
 function rand(seed){let x=seed>>>0;return()=>{x=(x*1664525+1013904223)>>>0;return x/4294967296}}
 function sample(pool,n,seed){let a=[...pool],r=rand(seed),o=[];while(a.length&&o.length<n)o.push(a.splice(Math.floor(r()*a.length),1)[0]);return o}
-function qhtml(q){return '<div class="q" onclick="this.classList.toggle(\'show\')"><b>'+q.prompt+'</b>'+(q.options?'<br><ol>'+q.options.map(x=>'<li>'+x+'</li>').join('')+'</ol>':'')+'<button class="btn" onclick="event.stopPropagation();this.parentElement.classList.add(\'show\')">Show answer</button><div class="ans"><b>Answer:</b><br>'+String(q.answer).replace(/\n/g,'<br>')+'</div></div>'}
+function brfEsc(s){return String(s).replace(/[&<>"]/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]})}function brfOpts(q){return q.options?'<ol type="A" class="opts">'+q.options.map(function(x){return '<li>'+brfEsc(x)+'</li>'}).join('')+'</ol>':''}function brfAns(q){var a=String(q.answer);if(q.options){var i=q.options.indexOf(q.answer);if(i>=0)return String.fromCharCode(65+i)+'. '+a}return a}
+function qhtml(q){return '<div class="q" onclick="this.classList.toggle(\'show\')"><b>'+q.prompt+'</b>'+brfOpts(q)+'<button class="btn" onclick="event.stopPropagation();this.parentElement.classList.add(\'show\')">Show answer</button><div class="ans"><b>Answer:</b><br>'+brfAns(q).replace(/\n/g,'<br>')+'</div></div>'}
 function bySkill(pool,skills,n,seed){let out=[],used=new Set();for(let i=0;i<skills.length&&out.length<n;i++){let a=pool.filter(q=>q.skill===skills[i]&&!used.has(q.id));if(a.length){let x=sample(a,1,seed+i*997)[0];out.push(x);used.add(x.id)}}return out.concat(sample(pool.filter(q=>!used.has(q.id)),Math.max(0,n-out.length),seed+7777))}function makePaper(y){let obj=sample(Q.filter(q=>q.type==='MCQ'||q.type==='FILL'),4,1000+y),skills=['comprehension','reasoning','evidence','connection','listener_challenge','synthesis'],written=bySkill(Q.filter(q=>q.type==='SHORT'||q.type==='LONG'),skills,7,5000+y);return '<section class="paper"><h2>Simulated Year '+y+'</h2><p>Part A — 4 objective · Part B — 7 written · fully interleaved across the book.</p><h3>Part A — Objective</h3>'+obj.map(qhtml).join('')+'<h3>Part B — Written</h3>'+written.map(qhtml).join('')+'</section>'}
 fetch('questions.json').then(r=>r.json()).then(d=>{Q=d.questions;papers.innerHTML=Array.from({length:20},(_,i)=>makePaper(i+1)).join('')}).catch(e=>papers.innerHTML='<p>Could not load questions.json: '+e.message+'</p>');
 </script></body></html>

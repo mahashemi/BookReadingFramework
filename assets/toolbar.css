@@ -1,0 +1,11 @@
+/* Shared navigation bar for the standalone tool pages (study guide, exams, mind map). */
+.brf-bar { display: flex; gap: 18px; overflow-x: auto; white-space: nowrap; padding: 9px 16px; background: #fff; border-bottom: 1px solid #e3e7eb; font: 600 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; scrollbar-width: none; }
+.brf-bar::-webkit-scrollbar { display: none; }
+.brf-bar a { color: #245b74; text-decoration: none; padding: 2px 0; }
+.brf-bar a:hover { text-decoration: underline; }
+.brf-bar a[aria-current="page"] { color: #17202a; border-bottom: 2px solid #8f6516; }
+.brf-bar a:first-child { font-weight: 800; }
+.brf-float { position: fixed; left: 12px; bottom: 12px; z-index: 60; border: 1px solid #e3e7eb; border-radius: 999px; box-shadow: 0 4px 14px rgba(0,0,0,.18); padding: 7px 16px; overflow: visible; }
+ol.opts { margin: 8px 0 8px 4px; padding-left: 24px; }
+ol.opts li { margin: 3px 0; }
+@media print { .brf-bar { display: none; } }

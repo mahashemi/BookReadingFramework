@@ -1,0 +1,786 @@
+{
+  "book_id": "book02",
+  "note": "Hand-written one-line glosses. Each entry's `units` and `source_chunk_ids` are computed by searching data/chunks.json, so an entry cannot cite a unit where the term does not actually appear.",
+  "entries": [
+    {
+      "term": "Abbasids",
+      "kind": "term",
+      "gloss": "The dynasty that replaced the Umayyads, mobilising under the Prophet's Household's name without intending to install that Household in power.",
+      "units": [
+        "u06",
+        "u08",
+        "u09",
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u06-002",
+        "b02-u06-003",
+        "b02-u06-004",
+        "b02-u06-007",
+        "b02-u06-009",
+        "b02-u08-001",
+        "b02-u08-002",
+        "b02-u09-010",
+        "b02-u09-015",
+        "b02-u12-012"
+      ]
+    },
+    {
+      "term": "Abu Musa al-Ash'ari",
+      "kind": "person",
+      "gloss": "A former governor 'Ali had removed, forced on him by his own camp as arbitrator.",
+      "units": [
+        "u02"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-006"
+      ]
+    },
+    {
+      "term": "Abu Salmah al-Khallal",
+      "kind": "person",
+      "gloss": "Abbasid operator in Kufah who sent the identical secret offer to al-Sadiq and to 'Abd Allah al-Mahd; al-Sadiq burned the letter unread.",
+      "units": [
+        "u06"
+      ],
+      "source_chunk_ids": [
+        "b02-u06-003",
+        "b02-u06-004",
+        "b02-u06-005",
+        "b02-u06-006"
+      ]
+    },
+    {
+      "term": "Abwa'",
+      "kind": "event",
+      "gloss": "The place where Banu Hashim leaders gathered and Muhammad Nafs al-Zakiyyah was floated as a possible Mahdi.",
+      "units": [
+        "u06"
+      ],
+      "source_chunk_ids": [
+        "b02-u06-007"
+      ]
+    },
+    {
+      "term": "Ahl al-Bayt",
+      "kind": "term",
+      "gloss": "“People of the House”: the Prophet's Household, whose Imams this book studies.",
+      "units": [
+        "u00",
+        "u07",
+        "u08",
+        "u09",
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u00-001",
+        "b02-u07-007",
+        "b02-u08-005",
+        "b02-u09-006",
+        "b02-u09-018",
+        "b02-u12-008",
+        "b02-u12-018"
+      ]
+    },
+    {
+      "term": "Al-jam' al-'urfi",
+      "kind": "term",
+      "gloss": "“Conventional reconciliation”: resolving apparent contradictions between reports or practices by attending to the circumstances each answered, separating a fixed essence from its changing expression.",
+      "units": [
+        "u01"
+      ],
+      "source_chunk_ids": [
+        "b02-u01-005"
+      ]
+    },
+    {
+      "term": "Al-Mahdi",
+      "kind": "term",
+      "gloss": "The promised deliverer expected to establish universal justice; in Shi'ah belief, the twelfth Imam.",
+      "units": [
+        "u06",
+        "u10",
+        "u11",
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u06-007",
+        "b02-u06-008",
+        "b02-u10-005",
+        "b02-u10-006",
+        "b02-u10-007",
+        "b02-u11-015",
+        "b02-u11-017",
+        "b02-u12-001",
+        "b02-u12-003",
+        "b02-u12-004",
+        "b02-u12-006",
+        "b02-u12-007",
+        "b02-u12-009",
+        "b02-u12-010",
+        "b02-u12-011",
+        "b02-u12-012",
+        "b02-u12-013",
+        "b02-u12-014",
+        "b02-u12-015",
+        "b02-u12-016",
+        "b02-u12-017",
+        "b02-u12-019",
+        "b02-u12-020",
+        "b02-u12-021",
+        "b02-u12-024",
+        "b02-u12-026",
+        "b02-u12-028",
+        "b02-u12-029",
+        "b02-u12-030",
+        "b02-u12-032"
+      ]
+    },
+    {
+      "term": "Al-Qa'im",
+      "kind": "term",
+      "gloss": "“The one who rises”: a title of the promised Mahdi, linked with establishing justice and restoring religious guidance.",
+      "units": [
+        "u11"
+      ],
+      "source_chunk_ids": [
+        "b02-u11-018"
+      ]
+    },
+    {
+      "term": "'Ali ibn Yaqtin",
+      "kind": "person",
+      "gloss": "A Shi'ah official inside Harun's government, encouraged to stay there and conceal his Shi'ism because his position let him protect believers.",
+      "units": [
+        "u07",
+        "u09"
+      ],
+      "source_chunk_ids": [
+        "b02-u07-008",
+        "b02-u09-015"
+      ]
+    },
+    {
+      "term": "Allegiance (bay'ah)",
+      "kind": "term",
+      "gloss": "The formal oath of loyalty owed to a ruler (Arabic: bay'ah). Yazid's demand for al-Husayn's personal allegiance was the trigger al-Husayn refused; al-Hassan's treaty explicitly excluded any such oath.",
+      "units": [
+        "u02",
+        "u04",
+        "u06",
+        "u07",
+        "u09",
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-001",
+        "b02-u04-003",
+        "b02-u06-008",
+        "b02-u07-006",
+        "b02-u09-010",
+        "b02-u09-014",
+        "b02-u12-015"
+      ]
+    },
+    {
+      "term": "'Amr ibn al-'As",
+      "kind": "person",
+      "gloss": "Mu'awiyah's adviser who proposed the Qur'ans-on-spears stratagem and outmanoeuvred Abu Musa in the arbitration.",
+      "units": [
+        "u02",
+        "u03"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-005",
+        "b02-u02-006",
+        "b02-u02-010",
+        "b02-u02-012",
+        "b02-u03-003"
+      ]
+    },
+    {
+      "term": "Banu Hashim",
+      "kind": "term",
+      "gloss": "The Prophet's clan, whose leaders gathered at Abwa'.",
+      "units": [
+        "u06",
+        "u09"
+      ],
+      "source_chunk_ids": [
+        "b02-u06-007",
+        "b02-u09-002"
+      ]
+    },
+    {
+      "term": "Bishr Hafi",
+      "kind": "person",
+      "gloss": "A man reformed by a single indirect question from Musa al-Kazim about whether a house belonged to a free man or a slave.",
+      "units": [
+        "u07"
+      ],
+      "source_chunk_ids": [
+        "b02-u07-010"
+      ]
+    },
+    {
+      "term": "Enjoining good and forbidding evil",
+      "kind": "term",
+      "gloss": "The religious duty to promote right and oppose wrong; invoked by al-Husayn, by the Kharijites, and by al-Sadiq when distinguishing a righteous uprising from a false Mahdi claim.",
+      "units": [
+        "u02",
+        "u03",
+        "u06",
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-008",
+        "b02-u03-005",
+        "b02-u06-008",
+        "b02-u12-010",
+        "b02-u12-024"
+      ]
+    },
+    {
+      "term": "Fadl ibn Sahl",
+      "kind": "person",
+      "gloss": "Ma'mun's minister, a possible initiator of the crown-princeship; al-Rida distrusted him and warned Ma'mun about him.",
+      "units": [
+        "u08",
+        "u09"
+      ],
+      "source_chunk_ids": [
+        "b02-u08-004",
+        "b02-u08-007",
+        "b02-u08-012",
+        "b02-u09-008",
+        "b02-u09-013"
+      ]
+    },
+    {
+      "term": "Fourteen infallibles",
+      "kind": "term",
+      "gloss": "The Prophet, Fatimah and the twelve Imams, whose sayings and deeds the Shi'ah accept as authoritative guidance.",
+      "units": [
+        "u01"
+      ],
+      "source_chunk_ids": [
+        "b02-u01-002"
+      ]
+    },
+    {
+      "term": "Hajj",
+      "kind": "term",
+      "gloss": "The pilgrimage to Mecca; on Hajj Zayn al-'Abidin chose anonymity so he could serve his fellow travellers.",
+      "units": [
+        "u05",
+        "u07",
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u05-004",
+        "b02-u07-007",
+        "b02-u12-024"
+      ]
+    },
+    {
+      "term": "Hakimah Khatun",
+      "kind": "person",
+      "gloss": "The relative who explained the hidden-Imam arrangement by comparing it to al-Husayn's household after Karbala.",
+      "units": [
+        "u10"
+      ],
+      "source_chunk_ids": [
+        "b02-u10-011"
+      ]
+    },
+    {
+      "term": "Harun al-Rashid",
+      "kind": "person",
+      "gloss": "The Abbasid caliph who imprisoned Imam Musa al-Kazim for about four years.",
+      "units": [
+        "u07",
+        "u09"
+      ],
+      "source_chunk_ids": [
+        "b02-u07-002",
+        "b02-u07-003",
+        "b02-u07-004",
+        "b02-u07-005",
+        "b02-u07-006",
+        "b02-u07-007",
+        "b02-u07-008",
+        "b02-u07-011",
+        "b02-u07-012",
+        "b02-u09-015"
+      ]
+    },
+    {
+      "term": "Hudaybiyyah",
+      "kind": "event",
+      "gloss": "The apparently one-sided ten-year truce the Prophet accepted with the Quraysh; it produced more conversions in two years than the previous two decades of conflict.",
+      "units": [
+        "u03"
+      ],
+      "source_chunk_ids": [
+        "b02-u03-002",
+        "b02-u03-007"
+      ]
+    },
+    {
+      "term": "Hudayth (Jaddah)",
+      "kind": "person",
+      "gloss": "Mother of Imam al-'Askari, known as Jaddah (“grandmother”); her own learning made her a refuge for the community after his death.",
+      "units": [
+        "u10"
+      ],
+      "source_chunk_ids": [
+        "b02-u10-009",
+        "b02-u10-010",
+        "b02-u10-011"
+      ]
+    },
+    {
+      "term": "Ibn Muljam",
+      "kind": "person",
+      "gloss": "The Kharijite who assassinated 'Ali; a survivor of Nahrawan.",
+      "units": [
+        "u02"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-009",
+        "b02-u02-012",
+        "b02-u02-013"
+      ]
+    },
+    {
+      "term": "Istihsan",
+      "kind": "term",
+      "gloss": "Juristic preference: a jurist's discretionary judgment where no clear textual ruling exists.",
+      "units": [
+        "u01"
+      ],
+      "source_chunk_ids": [
+        "b02-u01-002"
+      ]
+    },
+    {
+      "term": "Jamal",
+      "kind": "event",
+      "gloss": "The Battle of the Camel, one of the two wars (with Siffin) that followed the outcry over 'Uthman's killing.",
+      "units": [
+        "u02",
+        "u04"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-002",
+        "b02-u04-006"
+      ]
+    },
+    {
+      "term": "Kaysanites",
+      "kind": "event",
+      "gloss": "Followers who maintained that Muhammad ibn Hanafiyyah had not died but was hidden at Mount Radwa.",
+      "units": [
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u12-007"
+      ]
+    },
+    {
+      "term": "Kharijites",
+      "kind": "event",
+      "gloss": "“Those who went out”: the faction that broke from 'Ali after the Siffin arbitration, holding that a single major sin expels a person from Islam.",
+      "units": [
+        "u02",
+        "u04"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-004",
+        "b02-u02-006",
+        "b02-u02-007",
+        "b02-u02-008",
+        "b02-u02-009",
+        "b02-u02-010",
+        "b02-u02-011",
+        "b02-u02-012",
+        "b02-u02-013",
+        "b02-u04-002",
+        "b02-u04-004"
+      ]
+    },
+    {
+      "term": "Khorasan",
+      "kind": "place",
+      "gloss": "The eastern province where the Abbasid missionary network was strongest, and Ma'mun's power base.",
+      "units": [
+        "u06",
+        "u09"
+      ],
+      "source_chunk_ids": [
+        "b02-u06-002",
+        "b02-u06-003",
+        "b02-u06-006",
+        "b02-u09-002",
+        "b02-u09-010"
+      ]
+    },
+    {
+      "term": "Kufah",
+      "kind": "place",
+      "gloss": "The Iraqi city that sent al-Husayn eighteen thousand letters, yet was exhausted and unreliable in al-Hassan's time.",
+      "units": [
+        "u02",
+        "u04",
+        "u06",
+        "u08"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-012",
+        "b02-u04-002",
+        "b02-u04-004",
+        "b02-u06-003",
+        "b02-u08-011"
+      ]
+    },
+    {
+      "term": "Laylat al-Qadr",
+      "kind": "event",
+      "gloss": "The Night of Power; the night the Kharijites chose to assassinate 'Ali, believing it would earn greater reward.",
+      "units": [
+        "u02"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-012"
+      ]
+    },
+    {
+      "term": "Ma'mun",
+      "kind": "person",
+      "gloss": "The Abbasid caliph who pressed Imam al-Rida, under threat of death, to accept the crown-princeship.",
+      "units": [
+        "u07",
+        "u08",
+        "u09"
+      ],
+      "source_chunk_ids": [
+        "b02-u07-007",
+        "b02-u08-001",
+        "b02-u08-004",
+        "b02-u08-005",
+        "b02-u08-006",
+        "b02-u08-007",
+        "b02-u08-008",
+        "b02-u08-009",
+        "b02-u08-012",
+        "b02-u08-013",
+        "b02-u08-014",
+        "b02-u08-015",
+        "b02-u08-016",
+        "b02-u09-001",
+        "b02-u09-002",
+        "b02-u09-003",
+        "b02-u09-004",
+        "b02-u09-006",
+        "b02-u09-007",
+        "b02-u09-008",
+        "b02-u09-010",
+        "b02-u09-011",
+        "b02-u09-012",
+        "b02-u09-013",
+        "b02-u09-018"
+      ]
+    },
+    {
+      "term": "Malik al-Ashtar",
+      "kind": "person",
+      "gloss": "'Ali's commander who was about to win at Siffin when he was recalled under threat.",
+      "units": [
+        "u02"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-005",
+        "b02-u02-006"
+      ]
+    },
+    {
+      "term": "Marw",
+      "kind": "place",
+      "gloss": "The city in Khorasan where Ma'mun's court sat and where al-Rida was brought and pressed to accept the crown-princeship.",
+      "units": [
+        "u08",
+        "u09"
+      ],
+      "source_chunk_ids": [
+        "b02-u08-011",
+        "b02-u08-012",
+        "b02-u09-001"
+      ]
+    },
+    {
+      "term": "Mu'awiyah",
+      "kind": "person",
+      "gloss": "Governor of Syria who opposed 'Ali and later ruled; exploited 'Uthman's death for political advantage.",
+      "units": [
+        "u02",
+        "u03",
+        "u04"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-002",
+        "b02-u02-003",
+        "b02-u02-005",
+        "b02-u02-008",
+        "b02-u02-010",
+        "b02-u02-012",
+        "b02-u02-013",
+        "b02-u03-001",
+        "b02-u03-003",
+        "b02-u04-002",
+        "b02-u04-003",
+        "b02-u04-005",
+        "b02-u04-006",
+        "b02-u04-007"
+      ]
+    },
+    {
+      "term": "Muhammad ibn 'Ijlan",
+      "kind": "person",
+      "gloss": "A Medinan scholar who pledged allegiance to a mistaken Mahdi claimant — Mutahhari's cautionary case for investigating before concluding.",
+      "units": [
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u12-015"
+      ]
+    },
+    {
+      "term": "Muhammad ibn Hanafiyyah",
+      "kind": "person",
+      "gloss": "A son of 'Ali whom Mukhtar presented as the Mahdi; his followers (the Kaysanites) held he was hidden, not dead.",
+      "units": [
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u12-006",
+        "b02-u12-007"
+      ]
+    },
+    {
+      "term": "Mukhtar",
+      "kind": "person",
+      "gloss": "Led the earliest recorded political use of the Mahdi idea, presenting Muhammad ibn Hanafiyyah as the Promised Mahdi.",
+      "units": [
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u12-006"
+      ]
+    },
+    {
+      "term": "Nafs al-Zakiyyah",
+      "kind": "person",
+      "gloss": "Muhammad ibn 'Abd Allah, presented as a possible Mahdi on the strength of his name and lineage; al-Sadiq rejected the claim while supporting a righteous cause.",
+      "units": [
+        "u06",
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u06-007",
+        "b02-u06-009",
+        "b02-u12-009"
+      ]
+    },
+    {
+      "term": "Nahj al-Balaghah",
+      "kind": "text",
+      "gloss": "The collection of Imam 'Ali's sermons, letters and sayings, cited in this book by sermon number.",
+      "units": [
+        "u02"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-001"
+      ]
+    },
+    {
+      "term": "Nahrawan",
+      "kind": "event",
+      "gloss": "The battle where 'Ali confronted the Kharijites: of about 12,000, roughly 8,000 repented and 4,000 died.",
+      "units": [
+        "u02"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-009",
+        "b02-u02-011",
+        "b02-u02-012"
+      ]
+    },
+    {
+      "term": "Occultation",
+      "kind": "term",
+      "gloss": "The concealment of the twelfth Imam from public view, during which his guidance is understood to continue.",
+      "units": [
+        "u10"
+      ],
+      "source_chunk_ids": [
+        "b02-u10-011"
+      ]
+    },
+    {
+      "term": "Qiyas",
+      "kind": "term",
+      "gloss": "Analogical reasoning: extending a known ruling to a new, similar case.",
+      "units": [
+        "u01"
+      ],
+      "source_chunk_ids": [
+        "b02-u01-002"
+      ]
+    },
+    {
+      "term": "Qur'ans on spears",
+      "kind": "event",
+      "gloss": "The stratagem at Siffin: with 'Ali's side near victory, Mu'awiyah's troops raised Qur'ans on their spear-points to force a halt.",
+      "units": [
+        "u02",
+        "u03"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-005",
+        "b02-u02-010",
+        "b02-u03-003"
+      ]
+    },
+    {
+      "term": "Safwan Jammal",
+      "kind": "person",
+      "gloss": "A companion condemned by Musa al-Kazim for quietly hoping Harun would live long enough to pay a camel-rental debt.",
+      "units": [
+        "u07",
+        "u09"
+      ],
+      "source_chunk_ids": [
+        "b02-u07-011",
+        "b02-u09-015"
+      ]
+    },
+    {
+      "term": "Samarra",
+      "kind": "place",
+      "gloss": "The seat of government where al-Hadi and al-'Askari were forced to reside in the military quarter (al-'Askar).",
+      "units": [
+        "u10"
+      ],
+      "source_chunk_ids": [
+        "b02-u10-001",
+        "b02-u10-002"
+      ]
+    },
+    {
+      "term": "Siffin",
+      "kind": "event",
+      "gloss": "The battle between 'Ali and Mu'awiyah that ended with Qur'ans raised on spears and an arbitration.",
+      "units": [
+        "u02",
+        "u03",
+        "u04"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-002",
+        "b02-u02-005",
+        "b02-u03-003",
+        "b02-u04-002",
+        "b02-u04-006"
+      ]
+    },
+    {
+      "term": "Sihah al-Sittah",
+      "kind": "text",
+      "gloss": "The “Six Authentic Books” — the six canonical Sunni hadith collections.",
+      "units": [
+        "u01"
+      ],
+      "source_chunk_ids": [
+        "b02-u01-002"
+      ]
+    },
+    {
+      "term": "Taqiyyah",
+      "kind": "term",
+      "gloss": "Concealing one's true belief or intention under pressure, to protect oneself or one's community from persecution.",
+      "units": [
+        "u01",
+        "u07"
+      ],
+      "source_chunk_ids": [
+        "b02-u01-001",
+        "b02-u01-002",
+        "b02-u07-001",
+        "b02-u07-014"
+      ]
+    },
+    {
+      "term": "Tawhid",
+      "kind": "term",
+      "gloss": "The oneness of God; the first of the two aims of every prophetic mission, alongside justice among people.",
+      "units": [
+        "u11"
+      ],
+      "source_chunk_ids": [
+        "b02-u11-001"
+      ]
+    },
+    {
+      "term": "Umayyads",
+      "kind": "term",
+      "gloss": "The dynasty of Mu'awiyah and Yazid, whose collapse opened the political opportunity al-Sadiq declined.",
+      "units": [
+        "u02",
+        "u04",
+        "u06"
+      ],
+      "source_chunk_ids": [
+        "b02-u02-013",
+        "b02-u04-003",
+        "b02-u06-001",
+        "b02-u06-002",
+        "b02-u06-007"
+      ]
+    },
+    {
+      "term": "Universal justice",
+      "kind": "term",
+      "gloss": "Mutahhari's name for the promised future in which tyranny, discrimination, war and exploitation no longer dominate human society — realised in this world, not deferred to the next.",
+      "units": [
+        "u11",
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u11-003",
+        "b02-u12-032"
+      ]
+    },
+    {
+      "term": "Wilayat al-ja'ir",
+      "kind": "term",
+      "gloss": "Holding office under an unjust ruler — ordinarily prohibited, but permissible, recommended or even obligatory when it genuinely serves believers and reduces oppression.",
+      "units": [
+        "u09"
+      ],
+      "source_chunk_ids": [
+        "b02-u09-017"
+      ]
+    },
+    {
+      "term": "Zakat",
+      "kind": "term",
+      "gloss": "Obligatory almsgiving; one of the duties Mutahhari insists remain fully in force while awaiting the Mahdi.",
+      "units": [
+        "u12"
+      ],
+      "source_chunk_ids": [
+        "b02-u12-024"
+      ]
+    }
+  ]
+}
