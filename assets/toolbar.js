@@ -10,7 +10,7 @@
   var book = new URL('Library/Book%2002%20-%20Survey%20of%20the%20Lives%20of%20the%20Infallible%20Imams/', root).href;
   var links = [
     ['\u2190 Hub', root.href],
-    ['Book 02', new URL('book-02/', root).href],
+    ['Book 02', new URL('book/?book_id=book02', root).href],
     ['Study guide', book + 'study_guide/study.html'],
     ['Unit tests', book + 'exam_bank/unit_tests.html'],
     ['Full-book exam', book + 'exam_bank/full_book_exam_generator.html'],

@@ -1,6 +1,6 @@
 # The Deep-Reading Framework
 ### A repeatable pipeline for turning any book into long-term memory
-*Version 1.1 — generic, data-driven framework; validated on Book 01 and Book 02*
+*Version 1.4 — generic, data-driven framework; validated on Book 01 and Book 02. (v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
 
 ---
 
@@ -29,13 +29,14 @@ For every chapter/reading-unit, extract five things:
 - **Key Concepts** — the claims and ideas, in the author's logic, not just topic labels
 - **Key Terms & Names** — anything a reader would need to look up, with a one-line gloss
 - **Key Quotes** — the sentences worth memorizing verbatim (usually the author's own claim-statements, not the illustrating examples)
-- **Questions** — tagged by type (see Module 4), designed to test understanding rather than recognition, designed to test understanding rather than recognition
+- **Claim → Reasoning → Example → Lesson structures** — the author's claim, the reasoning/evidence used to support it, and the lesson it teaches
+- **Questions** — tagged by type (see Module 4), designed to test understanding rather than recognition
 
 **The claim → example pattern.** Most serious non-fiction authors argue by stating a general claim, then proving it with a story, statistic, or historical case. Once you spot this pattern in a book, extraction becomes mechanical: the claim is the quote/slide material, the example is what you narrate or explain. Look for it explicitly in Module 2.
 
 **Deep-understanding rule.** A question should usually force the learner to combine at least two elements: cause + consequence, claim + evidence, comparison + reason, event + interpretation, or concept + application. Avoid questions whose answer is merely a section title or one isolated fact.
 
-**Deep-understanding rule.** A question should usually force the learner to combine at least two elements: cause + consequence, claim + evidence, comparison + reason, event + interpretation, or concept + application. Avoid questions whose answer is merely a section title or one isolated fact.
+**Claim/reasoning/evidence/lesson must actually be four different things.** Book 02's `claim_examples` layer was found (in a later review pass) to have `reasoning` duplicating the concept's own `explanation` verbatim in all 160 entries, `evidence` either duplicating it too or holding a truncated prefix of the same text in all 160, and `lesson` repeating one identical boilerplate sentence in all 160 — the exact same class of bug as the earlier question-bank duplication, just inside a single record instead of across files. It reads as a real four-part structure at a glance, which made it easy to ship without noticing nothing distinct was actually in three of the four fields. Check this explicitly when building a new book: pick several claim_examples at random and confirm `reasoning` and `evidence` are not the same string as `explanation` (or as each other), and that `lesson` genuinely varies entry to entry. A rendering layer should not display this structure until that check passes — Book 02's learning hub deliberately shows only `concepts` for this reason (see `data/README.md`).
 
 ### Module 3 — Mind Maps (Dual Coding)
 Two layers, per your preference:
@@ -61,16 +62,6 @@ Question design should be layered:
 
 The master universe should be dominated by levels 2–6. Recall is necessary, but it must not become the study method itself.
 
-Question design should be layered:
-1. **Recall** — names, sequence, precise terminology.
-2. **Comprehension** — explain what the author means in your own words.
-3. **Reasoning** — explain why the author reaches the conclusion.
-4. **Evidence** — show how a story/example supports the claim.
-5. **Connection** — connect two or more ideas/reading units.
-6. **Listener challenge** — answer a plausible objection or misconception raised during teaching.
-
-The master universe should be dominated by levels 2–6. Recall is necessary, but it must not become the study method itself.
-
 Build the bank *once*, deep enough to draw from repeatedly (target: 100+ items for a book this size; for exam-heavy preparation, build an intentionally exhaustive master universe rather than a representative sample). Every other module (exam papers, spaced review) draws from this single bank rather than duplicating content — one source of truth.
 
 ### Module 5 — Spaced Review Tracker
@@ -81,7 +72,7 @@ A simple, no-extra-app tracker embedded directly in the study guide HTML:
 - Persisted in the browser via `localStorage`, so it survives closing and reopening the file — no login, no separate app
 
 ### Module 6 — Interleaved Practice Exams
-Generate multiple full papers by **shuffling and cycling through the Module 4 bank**, not writing new questions each time. Mix chapters/reading-units within every paper — never one paper per chapter. This is what makes practice resemble the actual exam experience.
+Generate multiple full papers by **shuffling and cycling through the Module 4 bank**, not writing new questions each time. Mix chapters/reading-units within every paper — never one paper per chapter. This is what makes practice resemble the actual exam experience (which never tests chapters in isolation) and is one of the most evidence-backed techniques in the entire framework.
 
 ### Question-bank architecture
 The **master question universe is the source of truth**:
@@ -118,16 +109,6 @@ The goal is not merely to predict the real paper. Build enough coverage that an 
 - plausible MCQ distractors and fill-in-the-blank variants
 
 Then generate many **interleaved simulated papers** from the same master universe.
-
-### Module 6C — Teaching-First Concept Questions
-Teaching material and exam preparation should share the same conceptual question universe. For each major idea, create at least one question that a listener could naturally ask:
-- “Why does that follow?”
-- “How is this different from the previous case?”
-- “What would happen if the circumstances changed?”
-- “Isn't this example actually evidence for the opposite?”
-- “What exactly is the author trying to prove with this story?”
-
-These questions are not filler. They bridge live discussion, comprehension, and exam mastery.
 
 ### Module 6C — Teaching-First Concept Questions
 Teaching material and exam preparation should share the same conceptual question universe. For each major idea, create at least one question that a listener could naturally ask:
@@ -179,8 +160,7 @@ The study UI should support, where applicable:
 - dark/light mode
 - responsive/mobile layout
 
-
-Generate multiple full papers by **shuffling and cycling through the Module 4 bank**, not writing new questions each time. Mix chapters within every paper — never one paper per chapter. This is what makes practice resemble the actual exam experience (which never tests chapters in isolation) and is one of the most evidence-backed techniques in the entire framework.
+**Single source of truth, in practice, not just in principle.** Book 02's `study_bookXX.json` was found (during a later review pass) to embed its own full copy of every question, duplicated separately from `exam_bank/questions.json` — the exact thing "one source of truth" above says not to do. A third copy later turned up hardcoded inside an exam_bank HTML tool too. All three had drifted out of sync with each other before this was caught. **Resolved in Book 02**: `study_bookXX.json` no longer has a `questions` field or `cross_unit_questions` at all; `study.html` fetches `exam_bank/questions.json` directly and merges it in client-side by `unit_id` (per-unit) and `unit_ids` (cross-unit synthesis). `exam_bank/questions.json` is the only file in the project a question can exist in. When building a new book, set it up this way from the start rather than embedding a second copy anywhere for convenience — a live fetch removes the possibility of drift entirely, which is a stronger guarantee than remembering to regenerate a cached copy as a build step.
 
 ### Module 7 — Book Index Page
 One `index.md` per book, linking every module, plus:
@@ -189,6 +169,8 @@ One `index.md` per book, linking every module, plus:
 - A "start here" reading order for someone new to the material
 
 This is what turns a folder of study files into something a future website can render as a landing page with zero rework.
+
+**The GitHub Pages hub is one generic `/book/` shell for every book, not one folder per book.** The first working version of the Book 02 hub lived at `/book-02/`, with its own `index.html` and `unit.html`. That doesn't scale: a Book 03 would mean copy-pasting both files and then keeping every future fix applied to both copies — precisely the drift-between-copies mistake this document already warns about twice above, just at the page-template level instead of the data level. The fix: a single `/book/index.html` and `/book/unit.html`, parameterized by `?book_id=`, reading everything else — title, author, unit count, which links exist — from one manifest at `assets/books.json`. Adding a new book to the site is then one manifest entry, zero new HTML or JS files. If a future book doesn't yet have the full `data/` + `exam_bank/questions.json` architecture (see Book 01), give its manifest entry `"status": "legacy"` and a plain `links` map; the library page renders a simpler card for it instead of the full live-stats hub card, rather than the page breaking or silently showing wrong numbers.
 
 ---
 

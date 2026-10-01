@@ -1,0 +1,45 @@
+{
+  "books": [
+    {
+      "id": "book02",
+      "status": "full",
+      "title": "A Survey into the Lives of the Infallible Imams",
+      "author": "Ayatullah Murtadha Mutahhari",
+      "translator": "Zainab Muhammadi 'Araqi",
+      "dir": "Library/Book 02 - Survey of the Lives of the Infallible Imams/",
+      "data": {
+        "study": "data/study_book02.json",
+        "questions": "exam_bank/questions.json",
+        "glossary": "data/glossary.json",
+        "chunks": "data/chunks.json"
+      },
+      "links": {
+        "studyGuide": "study_guide/study.html",
+        "unitTests": "exam_bank/unit_tests.html",
+        "fullBookExam": "exam_bank/full_book_exam_generator.html",
+        "interleavedExam": "exam_bank/interleaved_exam_generator.html",
+        "masterYears": "exam_bank/MASTER_20_SIMULATED_YEARS.html",
+        "mindMap": "mind_maps/book02_interactive.html",
+        "mindMapOutline": "mind_maps/book02_static_outline.md",
+        "teachingDeck": "teaching_materials/main.pdf",
+        "teachingGuide": "teaching_materials/BOOK02_TEACHING_GUIDE.md",
+        "lectureOutline": "teaching_materials/BOOK02_LECTURE_OUTLINE.md",
+        "talkScript": "teaching_materials/BOOK02_TALK_SCRIPT_AND_EXAM_QUESTIONS.md",
+        "claimOutline": "teaching_materials/book02_claim_example_outline.md"
+      }
+    },
+    {
+      "id": "book01",
+      "status": "legacy",
+      "title": "Polarization Around the Character of 'Ali ibn Abi Talib",
+      "author": "Ayatullah Murtadha Mutahhari",
+      "dir": "Library/Book 01 - Polarization Around _Ali/",
+      "note": "Predates the framework's data-driven architecture -- no data/ or mind_maps/ folder yet. Self-contained interactive HTML files instead of a generated hub.",
+      "links": {
+        "studyGuide": "study_guide/study_guide_attraction_polarization.html",
+        "examPapers": "exam_bank/exam_papers_bank.html",
+        "masterWorkbook": "exam_bank/Polarization_Ali_MASTER_Exam_Workbook_34_Chapters_20_Simulated_Years.html"
+      }
+    }
+  ]
+}
