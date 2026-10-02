@@ -8,10 +8,9 @@
       "translator": "Zainab Muhammadi 'Araqi",
       "dir": "Library/Book 02 - Survey of the Lives of the Infallible Imams/",
       "data": {
-        "study": "data/study_book02.json",
+        "chunks": "data/chunks.json",
         "questions": "exam_bank/questions.json",
-        "glossary": "data/glossary.json",
-        "chunks": "data/chunks.json"
+        "glossary": "data/glossary.json"
       },
       "links": {
         "studyGuide": "study_guide/study.html",
