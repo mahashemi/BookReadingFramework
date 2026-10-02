@@ -1511,8 +1511,8 @@
       "order": 13,
       "text": "On his deathbed, 'Ali distinguished the danger of Mu'awiyah's hypocrites from that of the Kharijites and instructed his followers: 'After me, do not kill the Kharijites anymore, because whoever seeks truth and commits a mistake is not the same as the one who seeks falsehood from the beginning and has reached it' — since killing them further would only serve Mu'awiyah's interests, not truth and justice. When Ibn Muljam was captured and brought before the dying 'Ali, 'Ali asked him, 'Why did you do such a thing? Was I a bad Imam for you?' Ibn Muljam, unrepentant, said he had vowed to kill the worst of God's creatures with that sword; 'Ali replied that his prayer had indeed been answered, since he himself would be killed by that same sword. 'Ali died on the night of the 21st of Ramadan and was buried in secret by his closest family, his grave's location concealed for about a hundred years — out of fear the Kharijites would desecrate it — until Imam al-Sadiq revealed it publicly after the Umayyad dynasty's fall.",
       "source": {
-        "section_title": "‘Ali’s attitude towards Kharijites",
-        "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-1-alis-struggles#alis-attitude-towards-kharijites"
+        "section_title": "Ch1 — 'Ali's final instruction on the Kharijites and his death",
+        "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-1-alis-struggles"
       },
       "importance": "medium"
     },
@@ -2231,8 +2231,8 @@
       "order": 16,
       "text": "At the formal acceptance ceremony, Imam al-Rida delivered a short speech that did not flatter or thank Ma'mun in the conventional manner. Mutahhari interprets the speech as a concise declaration that accepting the position did not mean accepting Ma'mun's political legitimacy or becoming his collaborator.",
       "source": {
-        "section_title": "The Imam’s speech",
-        "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-rida-crown-prince-session-1#imams-speech"
+        "section_title": "Ch6 S1 — The acceptance ceremony and the Imam's independent stance",
+        "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-rida-crown-prince-session-1"
       },
       "importance": "medium"
     },
@@ -3231,7 +3231,7 @@
     ],
     "anchor_enrichment": {
       "status": "verified source-heading anchors",
-      "updated_chunk_count": 32,
+      "updated_chunk_count": 30,
       "rule": "Only anchors corresponding to headings verified on the live Al-Islam.org source pages were added; no synthetic anchors were invented."
     }
   }
