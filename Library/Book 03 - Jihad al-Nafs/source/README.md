@@ -2,44 +2,62 @@
 
 This directory is the **source layer** for Book 03. It contains a page-addressable Persian OCR transcription of the supplied 130-page PDF.
 
-## Authority and accuracy
+## Source authority
 
-- The supplied scanned PDF is the authoritative source.
-- The HTML files are an OCR transcription layer, not a proofread or translated edition.
-- Page boundaries are preserved with `data-pdf-page` attributes and stable `pdf-page-###` anchors.
-- OCR wording has **not** been silently corrected based on general knowledge or interpretation.
-- Arabic quotations and Persian text are retained in the OCR output as transcribed.
-- Later learning-framework work should cite these source pages rather than treating the OCR as independent evidence.
+- The supplied scanned PDF is the **authoritative source**.
+- The HTML files are a searchable transcription layer, **not** a proofread or translated edition.
+- Every source page retains its PDF page number through data-pdf-page and a stable pdf-page-### anchor.
+- Arabic quotations and Persian prose are retained as source text; later normalization or translation must not be treated as part of the original.
+- When OCR is ambiguous, the scan must be checked rather than silently reconstructing the author's intended wording.
 
-## Chapter map
+## Why these files are split this way
 
-| گفتار | عنوان | PDF start page |
-|---:|---|---:|
-| 1 | تعلیم و تربیت | 1 |
-| 2 | گناه و تعدیل غرائز | 6 |
-| 3 | جهاد با نفس | 11 |
-| 4 | انسان ملکوتی | 16 |
-| 5 | نفس اماره | 21 |
-| 6 | صبر | 27 |
-| 7 | ملکه صبر | 31 |
-| 8 | آثار صبر | 36 |
-| 9 | توبه (1) | 42 |
-| 10 | توبه (2) | 47 |
-| 11 | توبه (3) | 53 |
-| 12 | سعه صدر (1) | 56 |
-| 13 | سعه صدر (2) | 62 |
-| 14 | کفاره گناه | 66 |
-| 15 | بندگی خدا | 70 |
-| 16 | فعالیت، استقامت و توجه به جوانب کار | 75 |
-| 17 | اخلاص | 80 |
-| 18 | نمازشب | 84 |
-| 19 | پناه بردن به قرآن | 90 |
-| 20 | فوائد دعا | 96 |
-| 21 | دعا | 104 |
-| 22 | توسل به اهل‌بیت (علیهم‌السلام) | 108 |
-| 23 | یاد خدا | 114 |
-| 24 | توکل بر خدا | 119 |
+The book itself is organized into **24 explicitly numbered گفتار**. The split points are therefore source-defined: each HTML file begins at one of those گفتار headings and continues until the page immediately before the next گفتار.
 
-## Extraction
+So:
 
-The supplied PDF has a damaged/unusable Persian text layer, so the source pages were rendered and OCRed from the page images using Tesseract with Persian and Arabic language data. This was necessary to obtain searchable Persian text while preserving page provenance.
+- **24 گفتار = from the book itself.**
+- chapter-01.html … chapter-24.html = our **filesystem naming convention** for those source units; the book does not call them “chapters”.
+- The numeric file names are not a claim that the author used English/Arabic numerals.
+- The visible HTML headings have been aligned with the wording seen in the source (for example, گفتار اول, گفتار شانزدهم, گفتار بیست و سه).
+- Page 1 contains both the publisher's introduction and the beginning of گفتار اول; that is why the first source unit includes both rather than inventing a page boundary that does not exist.
+
+## Source map
+
+| Source unit | Title | PDF start page |
+|---|---|---:|
+| گفتار اول | تعلیم و تربیت | 1 |
+| گفتار دوم | گناه و تعدیل غرائز | 6 |
+| گفتار سوم | جهاد با نفس | 11 |
+| گفتار چهارم | انسان ملکوتی | 16 |
+| گفتار پنجم | نفس اماره | 21 |
+| گفتار ششم | صبر | 27 |
+| گفتار هفتم | ملکه صبر | 31 |
+| گفتار هشتم | آثار صبر | 36 |
+| گفتار نهم | توبه (1) | 42 |
+| گفتار دهم | توبه (2) | 47 |
+| گفتار یازدهم | توبه (3) | 53 |
+| گفتار دوازدهم | سعه صدر (1) | 56 |
+| گفتار سیزدهم | سعه صدر (2) | 62 |
+| گفتار چهاردهم | کفاره گناه | 66 |
+| گفتار پانزدهم | بندگی خدا | 70 |
+| گفتار شانزدهم | فعالیت، استقامت و توجه به جوانب کار | 75 |
+| گفتار هفدهم | اخلاص | 80 |
+| گفتار هجدهم | نمازشب | 84 |
+| گفتار نوزدهم | پناه بردن به قرآن | 90 |
+| گفتار بیستم | فوائد دعا | 96 |
+| گفتار بیست و یک | دعا | 104 |
+| گفتار بیست و دو | توسل به اهل‌بیت (علیهم‌السلام) | 108 |
+| گفتار بیست و سه | یاد خدا | 114 |
+| گفتار بیست و چهار | توکل بر خدا | 119 |
+
+## OCR audit
+
+The PDF's embedded Persian text layer is damaged/unusable, so the pages were rendered and OCRed from their images using Persian and Arabic OCR data.
+
+A first systematic audit has corrected high-confidence, mechanically identifiable OCR failures, including:
+
+- the recurring loss of the Persian می‌ prefix (for example, ی‌خواهند → می‌خواهند);
+- recurring OCR substitutions such as بيدا → پیدا, جه → چه, اكر → اگر, جني → چنین, and other directly recognizable cases.
+
+These are **transcription corrections**, not interpretations of the author's argument. More ambiguous words should continue to be checked against the scanned page before being used in the learning framework.
