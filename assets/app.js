@@ -112,7 +112,7 @@
     const sourceRows = units.map((u, i) => {
       const p = parts(u.title);
       const unitChunks = u.chunks || [];
-      return `<div class="source-row"><div><div class="chapter">${esc(p.label)}${p.label === p.name ? '' : ' \u2014 ' + esc(p.name)}</div><div class="coverage">${chunks} source chunks \u00b7 ${chunks.length} concepts</div></div><div class="pills"><a class="pill" href="${unitHref(meta.id, u.id)}">Unit ${pad(i + 1)}</a><a class="pill" href="${esc(u.source_url)}" target="_blank" rel="noopener">Original on al-islam.org \u2197</a></div></div>`;
+      return `<div class="source-row"><div><div class="chapter">${esc(p.label)}${p.label === p.name ? '' : ' \u2014 ' + esc(p.name)}</div><div class="coverage">${unitChunks.length} source chunks \u00b7 ${unitChunks.length} concepts</div></div><div class="pills"><a class="pill" href="${unitHref(meta.id, u.id)}">Unit ${pad(i + 1)}</a><a class="pill" href="${esc(u.source_url)}" target="_blank" rel="noopener">Original on al-islam.org \u2197</a></div></div>`;
     }).join('');
 
     const conceptRows = units.map((u, i) => {
