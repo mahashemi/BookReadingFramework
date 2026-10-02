@@ -43,5 +43,3 @@ This directory is the **source layer** for Book 03. It contains a page-addressab
 ## Extraction
 
 The supplied PDF has a damaged/unusable Persian text layer, so the source pages were rendered and OCRed from the page images using Tesseract with Persian and Arabic language data. This was necessary to obtain searchable Persian text while preserving page provenance.
-
-The PDF remains the authority. This source layer will be proofread against the scan before we use passages for translation, concepts, questions, or other learning-framework material.
