@@ -43,7 +43,9 @@ test.describe("Book 02 Study Guide", () => {
 test.describe("Book 02 Interactive Mind Map", () => {
   test("loads and expands a unit node", async ({ page }) => {
     await page.goto(bookPath + "/mind_maps/book02_interactive.html", { waitUntil: "networkidle" });
-    await expect(page.locator("#nodes .node")).toHaveCount(14);
+    await expect(page.locator("#nodes .node")).toHaveCount(1);
+    await page.locator("#nodes .node.root").click();
+    await expect(page.locator("#nodes .node.unit")).toHaveCount(13);
     await page.locator("#nodes .node.unit").first().click();
     await expect(page.locator("#nodes .node.concept")).toHaveCount(4);
   });
