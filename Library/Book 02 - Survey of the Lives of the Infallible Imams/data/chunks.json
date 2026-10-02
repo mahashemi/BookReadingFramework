@@ -9,13 +9,6 @@
       "id": "u00",
       "title": "Foreword",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/foreword",
-      "terms": [
-        {
-          "term": "Foreword",
-          "gloss": "The Foreword, written by the Ahl al-Bayt World Assembly (ABWA), frames the book as part of a broader project defending the sanctity of the Islamic message. It states that the arguments of scholars belonging to the School of the Ahl al-Bayt are based on genuine scholarship and appeal to reason, avoiding prejudice and bias.",
-          "source_chunk_id": "b02-u00-001"
-        }
-      ],
       "quotes": [],
       "connections": []
     },
@@ -23,33 +16,6 @@
       "id": "u01",
       "title": "Introduction: A Comparison between Imam al-Husayn's Path and That of Other Imams",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/introduction-comparison-between-imam-al-husayns",
-      "terms": [
-        {
-          "term": "The problem of dissimilar Imam methodologies",
-          "gloss": "Mutahhari opens by posing the central problem of the book: Imam al-Husayn's approach (open revolt against Yazid) appears to contradict the approach of the other Imams, including 'Ali, al-Hassan, al-Sajjad and al-Sadiq, all of whom practiced taqiyyah (dissimulation) at various points. If dissimulation was religiously justified, why did al-Husayn not use it despite having the grounds to do so?",
-          "source_chunk_id": "b02-u01-001"
-        },
-        {
-          "term": "Taqiyyah and the richness/danger of having many Imams",
-          "gloss": "Taqiyyah (dissimulation, hiding one's beliefs under pressure) is closely associated with Shi'ism. Because the Shi'ah accept the sayings and deeds of fourteen infallibles as testament (more numerous even than the hadiths in the Sunni Sihah al-Sittah — Al-Kafi alone reportedly contains more than 16,000 hadiths), Shi'ism has never needed qiyas (analogical reasoning) or istihsan (juristic preference).",
-          "source_chunk_id": "b02-u01-002"
-        },
-        {
-          "term": "Imam al-Sadiq and the wealthy man's house",
-          "gloss": "Apparent contradictions between the Imams' lifestyles (the Prophet and 'Ali living in poverty and patched clothing vs. Imam al-Hassan, al-Sadiq and al-Rida living well) are resolved by recognizing that religion adapts its expression to the exigencies of time, while its essence (sympathy, compassion, equality, justice, fairness) stays constant.",
-          "source_chunk_id": "b02-u01-003"
-        },
-        {
-          "term": "Sufyan al-Thawri's objection to Imam al-Sadiq's fine clothing",
-          "gloss": "Sufyan al-Thawri objected to Imam al-Sadiq wearing fine clothing, since the Prophet did not. The Imam replied that the Prophet lived a middle-class lifestyle appropriate to his own time and that Islam does not command any particular manner of dress; it commands sympathy, compassion, equality, justice and fairness.",
-          "source_chunk_id": "b02-u01-004"
-        },
-        {
-          "term": "'Ali and the tradition on dyeing the beard",
-          "gloss": "A second example: 'Ali used to narrate the hadith 'Color the white hairs in the beard and do not let yourselves resemble the Jews' but never acted upon it himself. He explained that the order was a wartime tactic specific to the Prophet's time (so the enemy could not distinguish old soldiers from young in the army), not a permanent religious commandment.",
-          "source_chunk_id": "b02-u01-005"
-        }
-      ],
       "quotes": [
         {
           "id": "u01-quote-1",
@@ -86,73 +52,6 @@
       "id": "u02",
       "title": "Chapter 1: 'Ali's Struggles",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-1-alis-struggles",
-      "terms": [
-        {
-          "term": "'Ali's reluctance to accept the caliphate",
-          "gloss": "'Ali initially refused the caliphate after 'Uthman's assassination despite people insisting on swearing allegiance to him, saying (Nahj al-Balaghah, Sermon 91): 'Leave me and seek someone else. We are facing a matter that has several sides and colors, which neither hearts can bear nor intelligence fathom.",
-          "source_chunk_id": "b02-u02-001"
-        },
-        {
-          "term": "'Uthman's assassination and the problem of hypocrisy",
-          "gloss": "'Ali inherited a caliphate poisoned by 'Uthman's assassination. 'Ali had acted as mediator between 'Uthman and the revolutionaries, disagreeing with 'Uthman's favoritism toward relatives but also opposing 'opening the door' to killing a caliph.",
-          "source_chunk_id": "b02-u02-002"
-        },
-        {
-          "term": "Inflexibility in justice and bluntness in politics",
-          "gloss": "'Ali refused to allocate special subsidies to influential people (a custom that had crept in after the Prophet's death), saying: 'Are you asking me to gain victory and success in politics at the price of oppression and destroying the rights of powerless people?! I swear upon the Almighty, as long as there is day and night in this world, I will not do such a thing.",
-          "source_chunk_id": "b02-u02-003"
-        },
-        {
-          "term": "Why the Kharijites were 'Ali's fundamental problem: the Prophet's 13-year training period vs. 'Ali's untrained converts",
-          "gloss": "Mutahhari explains the structural cause of the Kharijite problem. During his 13 years in Mecca, the Prophet trained a small, deeply grounded core group before any war was permitted — even under torture, he refused permission for jihad, consenting only to emigration.",
-          "source_chunk_id": "b02-u02-004"
-        },
-        {
-          "term": "The Qur'ans-on-spears stratagem at Siffin",
-          "gloss": "At Siffin, when Mu'awiyah and 'Amr ibn al-'As realized they were losing, they ordered Qur'ans raised on spear-points, provoking the untrained pietist faction within 'Ali's own army to refuse to keep fighting ('We shall not fight the Qur'an'). 'Ali objected: 'They have not brought forward the Qur'an itself but its papers and cover so that they can rise up again against this very Qur'an.",
-          "source_chunk_id": "b02-u02-005"
-        },
-        {
-          "term": "Arbitration, Abu Musa al-Ash'ari, and the birth of Kharijite doctrine",
-          "gloss": "The faction insisted on arbitration and rejected 'Ali's proposed arbitrators (Ibn 'Abbas, then Malik al-Ashtar), instead forcing Abu Musa al-Ash'ari on him — a former governor 'Ali had removed, and 'in his heart an enemy of 'Ali.' Abu Musa was outmaneuvered by 'Amr ibn al-'As in the arbitration. Realizing they had been tricked, the faction did not conclude that they erred in halting the fight or in choosing Abu Mu…",
-          "source_chunk_id": "b02-u02-006"
-        },
-        {
-          "term": "'Ali's tolerance of the Kharijites before their armed revolt",
-          "gloss": "'Ali tolerated the Kharijites' open disrespect for a long period before they turned to armed insurrection: he never cut their share of the treasury or restricted their freedom. When a Kharijite in the crowd cursed him after a masterful answer to a question ('May Allah kill him, how knowledgeable he is'), 'Ali stopped his companions from retaliating: 'Leave him be.",
-          "source_chunk_id": "b02-u02-007"
-        },
-        {
-          "term": "The Kharijite sect's formal doctrines",
-          "gloss": "The Kharijites formalized their break into a religious sect with explicit doctrines: (1) 'Uthman, 'Ali, Mu'awiyah, and all who accepted arbitration are non-believers, except those who repented; (2) 'enjoining good and forbidding evil' is obligatory and unconditional — one must rise against any unlawful or cruel ruler even believing the rising will fail; (3) faith is inseparable from action — a single major sin (ly…",
-          "source_chunk_id": "b02-u02-008"
-        },
-        {
-          "term": "Nahrawan: negotiation, the banner, and the battle",
-          "gloss": "When the Kharijites' actions escalated from words to violence, 'Ali confronted them at Nahrawan. Ibn 'Abbas was sent first but achieved nothing.",
-          "source_chunk_id": "b02-u02-009"
-        },
-        {
-          "term": "Characteristics of the Kharijites: bravery, worship, ignorance",
-          "gloss": "Mutahhari lists their distinguishing traits: extraordinary bravery and devotion to their cause; excessive, dogmatic worship (the source of their apparent piety and the reason no ordinary Muslim dared oppose them); and above all ignorance and lack of real Islamic knowledge, which 'Ali called their defining vice: 'You are the worst of people... because you are spears in the hands of the devil.",
-          "source_chunk_id": "b02-u02-010"
-        },
-        {
-          "term": "The Iqbal/Ja'far-Sadiq rumor as a modern parable of Kharijite-style ignorance",
-          "gloss": "Mutahhari recounts a contemporary anecdote: a rumor spread that the poet Muhammad Iqbal had cursed Imam Ja'far al-Sadiq in his writing, based on a couplet actually condemning two historical traitors coincidentally also named Ja'far (of Bengal) and Sadiq (of Deccan) who betrayed Muslim rulers to British colonizers. Mutahhari traces the rumor to its source and shows it to be a complete misreading, using it as a dire…",
-          "source_chunk_id": "b02-u02-011"
-        },
-        {
-          "term": "Ibn Muljam, Qatam, and the assassination plot",
-          "gloss": "'Abd al-Rahman ibn Muljam was one of nine ascetic Kharijites who vowed in Mecca that 'Ali, Mu'awiyah and 'Amr ibn al-'As were the causes of all the Muslim world's strife, and drew lots to assassinate each; Ibn Muljam was assigned 'Ali. In Kufah he fell in love with a Kharijite woman, Qatam, whose father and brother 'Ali had killed at Nahrawan.",
-          "source_chunk_id": "b02-u02-012"
-        },
-        {
-          "term": "'Ali's final instruction on the Kharijites and his death",
-          "gloss": "On his deathbed, 'Ali distinguished the danger of Mu'awiyah's hypocrites from that of the Kharijites and instructed his followers: 'After me, do not kill the Kharijites anymore, because whoever seeks truth and commits a mistake is not the same as the one who seeks falsehood from the beginning and has reached it' — since killing them further would only serve Mu'awiyah's interests, not truth and justice. When Ibn Mu…",
-          "source_chunk_id": "b02-u02-013"
-        }
-      ],
       "quotes": [
         {
           "id": "u02-quote-1",
@@ -193,48 +92,6 @@
       "id": "u03",
       "title": "Chapter 2: Imam al-Hassan's Pacifism (Session 1)",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1",
-      "terms": [
-        {
-          "term": "Framing the question of al-Hassan's peace vs al-Husayn's revolt",
-          "gloss": "Mutahhari opens Session 1 by posing the puzzle directly: why did Imam al-Hassan make peace with Mu'awiyah while Imam al-Husayn refused to submit to Yazid? He rejects the easy explanation that the two Imams simply had different temperaments (one peace-loving, one rebellious), arguing instead that a proper answer requires first laying out Islam's general jurisprudential rules on jihad and peace, since both men's cho…",
-          "source_chunk_id": "b02-u03-001"
-        },
-        {
-          "term": "The Prophet's own alternation between peace and war",
-          "gloss": "Mutahhari shows that pacifism was not unique to al-Hassan: the Prophet himself avoided armed retaliation throughout the Meccan period even as Muslims were tortured, and permission to fight was only revealed after the migration to Medina (citing Qur'an 22:39). The Prophet later both fought polytheists, Jews and Christians at times and signed treaties with them at other times (e.",
-          "source_chunk_id": "b02-u03-002"
-        },
-        {
-          "term": "'Ali's own record of restraint and arbitration",
-          "gloss": "Mutahhari traces the same pattern in 'Ali: he refused to fight for the caliphate after the Prophet's death (drawing even Fatimah's objection), mediated between the rebels and 'Uthman to try to prevent his murder, and later accepted arbitration at Siffin after Mu'awiyah's side raised the Qur'an on spearheads — even though 'Amr ibn al-'As then manipulated the arbitration to a fruitless outcome. Mutahhari uses this t…",
-          "source_chunk_id": "b02-u03-003"
-        },
-        {
-          "term": "The categories of jihad in Shi'ah jurisprudence",
-          "gloss": "Mutahhari outlines, citing the jurists Muhaqqiq al-Hilli and Shahid Thani, several distinct categories of jihad: (1) 'antecedent' offensive jihad against non-Muslims, which requires the presence of an imam or his appointee and is not permitted even to a religious authority acting alone; (2) defensive jihad when Islamic land, people, or property are attacked, which becomes obligatory on all Muslims regardless of an…",
-          "source_chunk_id": "b02-u03-004"
-        },
-        {
-          "term": "Fighting rebels against a just ruler",
-          "gloss": "A further category is fighting rebels: when two Muslim factions clash, the Qur'an (49:9) commands the community first to seek reconciliation, and only to fight the side that refuses to comply. Mutahhari notes this applies especially when a group rises against a just imam, in which case Muslims are obligated to fight in the imam's favor, and mentions a related but separately debated category of righteous armed upri…",
-          "source_chunk_id": "b02-u03-005"
-        },
-        {
-          "term": "Jurisprudential conditions for a peace treaty (armistice)",
-          "gloss": "Mutahhari then turns to the jurisprudence of peace/truce, quoting Muhaqqiq's Shara'i' al-Islam: a truce with non-Muslims is permissible only if it serves Muslim interests — e.g., the Muslims are currently too few or weak to win, they need time to gather strength or allies, or the pause in hostilities is likely to lead the other side toward Islam — and even then it must run for a fixed, specified term rather than a…",
-          "source_chunk_id": "b02-u03-006"
-        },
-        {
-          "term": "The Hudaybiyyah precedent",
-          "gloss": "Mutahhari retells the Hudaybiyyah episode at length as the model for al-Hassan's later peace: the Prophet marched to Mecca unarmed as a pilgrim, was blocked by the Quraysh, and accepted an apparently one-sided ten-year truce (including a clause requiring the return of any Muslim who fled to Medina, but not vice versa) purely to secure freedom to preach — a decision many companions, including 'Umar, initially resen…",
-          "source_chunk_id": "b02-u03-007"
-        },
-        {
-          "term": "Q&A: does citing jurisprudence beg the question, and is Sunni fiqh on jihad different?",
-          "gloss": "In the Q&A, a listener presses Mutahhari on whether it is circular to judge al-Hassan's conduct by a jurisprudence that is itself built on the Imams' precedents; Mutahhari clarifies he is testing whether the jurisprudence as a whole is internally logical, not claiming al-Hassan consciously followed later fiqh manuals. Asked whether Sunni jurisprudence differs on jihad, he says the substantive rules are close, with…",
-          "source_chunk_id": "b02-u03-008"
-        }
-      ],
       "quotes": [
         {
           "id": "u03-quote-1",
@@ -275,43 +132,6 @@
       "id": "u04",
       "title": "Chapter 2: Imam al-Hassan's Pacifism (Session 2)",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-2",
-      "terms": [
-        {
-          "term": "First contrast: al-Hassan held the caliphate, al-Husayn did not",
-          "gloss": "Opening Session 2, Mutahhari lists the concrete differences between the two Imams' situations, starting with political position: al-Hassan was the sitting caliph facing a rebellion, so his death in battle would have meant the death of the established leader of the Muslims, similar in kind to 'Uthman's assassination. Al-Husayn, by contrast, held no office and was killed as a protester against an already-entrenched …",
-          "source_chunk_id": "b02-u04-001"
-        },
-        {
-          "term": "Second contrast: military balance and a demoralized Kufah",
-          "gloss": "Mutahhari argues that even a large Iraqi army under al-Hassan (estimated at 30,000-100,000) would not have matched Mu'awiyah's roughly 150,000 troops, especially given that 'Ali's larger and stronger force had still failed to defeat Mu'awiyah at Siffin. Kufah itself was riddled with hypocrisy, bribery by Mu'awiyah's agents, and the aftermath of Kharijite unrest, so a war would likely have dragged on for years, cos…",
-          "source_chunk_id": "b02-u04-002"
-        },
-        {
-          "term": "Third contrast: no demand for allegiance was made of al-Hassan",
-          "gloss": "Mutahhari identifies the first of three elements behind al-Husayn's uprising: the Umayyad regime's demand that he personally swear allegiance to Yazid, which al-Husayn flatly refused. He notes that Mu'awiyah never demanded such an oath from al-Hassan — in fact the peace treaty explicitly excluded any pledge of allegiance — so this trigger for revolt simply did not exist in al-Hassan's case.",
-          "source_chunk_id": "b02-u04-003"
-        },
-        {
-          "term": "Fourth contrast: Kufah's invitation to al-Husayn vs its exhaustion under al-Hassan",
-          "gloss": "The second element was Kufah's mass invitation: some eighteen thousand letters urged al-Husayn to lead an uprising, creating what Mutahhari calls an 'ultimatum' he could not ignore without being faulted by history. Under al-Hassan, conditions were the opposite — Kufah was exhausted, riddled with Kharijite hostility (he reportedly wore armor even to lead prayers after being shot at), and its people showed no readin…",
-          "source_chunk_id": "b02-u04-004"
-        },
-        {
-          "term": "Fifth contrast: Mu'awiyah's proven tyranny under Yazid vs. his still-unproven record under al-Hassan",
-          "gloss": "The third element was the duty to 'enjoin good and forbid evil' against manifest, ongoing oppression: by al-Husayn's time Mu'awiyah's rule (and Yazid's dissolute succession) had two decades of documented corruption and injustice behind it. When al-Hassan negotiated, Mu'awiyah had not yet shown his true character and in fact offered a signed blank paper promising to rule by the Qur'an and the Prophet's practice — c…",
-          "source_chunk_id": "b02-u04-005"
-        },
-        {
-          "term": "Terms of the peace treaty",
-          "gloss": "Mutahhari summarizes the treaty's key clauses: governance would pass to Mu'awiyah only on condition he follow the Qur'an, the Prophet's practice, and the conduct of earlier caliphs; succession after Mu'awiyah would revert to al-Hassan and then al-Husayn (i.e., the peace was explicitly temporary); Mu'awiyah had to stop the public cursing of 'Ali in Syria; treasury funds were earmarked for al-Hassan, the Shi'ah comm…",
-          "source_chunk_id": "b02-u04-006"
-        },
-        {
-          "term": "Q&A: would 'Ali have made peace, and did al-Husayn endorse the treaty?",
-          "gloss": "Asked whether 'Ali would have made peace in al-Hassan's shoes, Mutahhari says yes, given identical circumstances, since 'Ali's own refusal to accept Mu'awiyah applied to being ruled by him, not to the different situation of stepping aside entirely as al-Hassan did. Asked whether al-Husayn signed or objected to the treaty, Mutahhari states there is no record of his signature (none was required) and that historicall…",
-          "source_chunk_id": "b02-u04-007"
-        }
-      ],
       "quotes": [
         {
           "id": "u04-quote-1",
@@ -348,38 +168,6 @@
       "id": "u05",
       "title": "Chapter 3: A Discourse on Imam Zayn al-'Abidin",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-3-discourse-imam-zayn-al-abidin",
-      "terms": [
-        {
-          "term": "Zayn al-'Abidin as champion of spirituality",
-          "gloss": "Mutahhari presents Imam Zayn al-'Abidin ('Ali ibn al-Husayn) as a model of authentic Islamic spirituality, using the Prophet's Household as an example of belief becoming deeply embodied. His worship is described as a genuine journey of the soul toward Allah rather than merely an outward bodily act.",
-          "source_chunk_id": "b02-u05-001"
-        },
-        {
-          "term": "Absorption in worship",
-          "gloss": "Mutahhari illustrates the Imam's intense devotion through the incident of his child suffering a broken bone while the Imam was absorbed in worship. The family treated the child without interrupting him, and the next morning he noticed the bandage and asked what had happened.",
-          "source_chunk_id": "b02-u05-002"
-        },
-        {
-          "term": "The herald of affection",
-          "gloss": "Zayn al-'Abidin is described as a herald of affection who deliberately showed kindness to isolated people, strangers, the poor and those overlooked by society. He invited people such as lepers into his home and cared for them.",
-          "source_chunk_id": "b02-u05-003"
-        },
-        {
-          "term": "Service in the Hajj caravan",
-          "gloss": "During Hajj, Zayn al-'Abidin preferred to travel with a caravan whose members did not know his identity, so that he could serve them without being treated as a distinguished descendant of the Prophet. When they discovered who he was, they wanted to reverse the roles, but he explained that he had deliberately chosen an unfamiliar caravan to gain the opportunity to serve Muslims and friends.",
-          "source_chunk_id": "b02-u05-004"
-        },
-        {
-          "term": "Serving Islam through another form of mission",
-          "gloss": "Mutahhari contrasts Zayn al-'Abidin's circumstances with the opportunities given to Imam al-Husayn and Imam al-Sadiq. Although he did not rise with the sword, Mutahhari argues that service to Islam can take different forms and highlights the Imam's legacy through prayer and supplication as one such form.",
-          "source_chunk_id": "b02-u05-005"
-        },
-        {
-          "term": "Mourning Imam al-Husayn as preservation of Karbala's message",
-          "gloss": "Mutahhari rejects the interpretation that Zayn al-'Abidin's continual mourning meant merely uncontrolled grief or that he allowed Karbala to be forgotten. He interprets the mourning as a way of preserving the memory of Imam al-Husayn's tragedy and reminding people of why he rose and who was responsible for his death.",
-          "source_chunk_id": "b02-u05-006"
-        }
-      ],
       "quotes": [
         {
           "id": "u05-quote-1",
@@ -416,53 +204,6 @@
       "id": "u06",
       "title": "Chapter 4: Imam al-Sadiq and the Issue of Vicegerency (Sessions 1 & 2)",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-4-imam-al-sadiq-and-issue-vicegerency",
-      "terms": [
-        {
-          "term": "Why Imam al-Sadiq declined the political opening",
-          "gloss": "The end of Umayyad rule created a major political opening because opposition had accumulated among Arabs and Persians through religious discontent, oppression, and the memory of Alawid uprisings. Mutahhari's central question is why Imam al-Sadiq did not seize this opportunity.",
-          "source_chunk_id": "b02-u06-001"
-        },
-        {
-          "term": "Abbasid secret organization and the use of Islamic slogans",
-          "gloss": "The Abbasids exploited anti-Umayyad discontent through a secret, organized missionary network, especially in Khorasan. Their public slogans invoked the Household of the Prophet and Qur'anic ideas rather than an explicit Abbasid succession claim, allowing them to mobilize broad support.",
-          "source_chunk_id": "b02-u06-002"
-        },
-        {
-          "term": "Abu Muslim and Abu Salmah",
-          "gloss": "The Abbasid movement relied especially on Abu Muslim in Khorasan and Abu Salmah Khallal in Kufah. Mutahhari distinguishes political effectiveness from moral character and describes the two as important operators within the movement.",
-          "source_chunk_id": "b02-u06-003"
-        },
-        {
-          "term": "Abu Salmah's double letter",
-          "gloss": "Near the transition to Abbasid rule, Abu Salmah secretly sent essentially the same offer to Imam al-Sadiq and 'Abd Allah al-Mahd, offering to redirect the caliphate toward the family of Abu Talib. The parallel letters reveal the political nature of the proposal.",
-          "source_chunk_id": "b02-u06-004"
-        },
-        {
-          "term": "Imam al-Sadiq burns Abu Salmah's letter",
-          "gloss": "Imam al-Sadiq did not even read Abu Salmah's letter; he burned it and sent back a poem illustrating the danger of someone doing the work while another person reaps its outcome. Mutahhari interprets this as evidence that Abu Salmah was not acting as the Imam's sincere follower.",
-          "source_chunk_id": "b02-u06-005"
-        },
-        {
-          "term": "Imam al-Sadiq and 'Abd Allah al-Mahd",
-          "gloss": "'Abd Allah al-Mahd was enthusiastic about Abu Salmah's offer. Imam al-Sadiq challenged the claim that Khorasanis were his followers and warned that the proposed political venture lacked the necessary real conditions.",
-          "source_chunk_id": "b02-u06-006"
-        },
-        {
-          "term": "The Abwa' gathering and Muhammad Nafs al-Zakiyyah",
-          "gloss": "Before the Abbasid victory, leaders of Banu Hashim gathered at Abwa'. Muhammad, son of 'Abd Allah al-Mahd, was presented as a potential leader against the Umayyads and was associated by some with the promised Mahdi because of his name and other coincidental features.",
-          "source_chunk_id": "b02-u06-007"
-        },
-        {
-          "term": "Mahdism versus enjoining good and forbidding evil",
-          "gloss": "When asked to pledge allegiance to Muhammad as the promised Mahdi, Imam al-Sadiq refused the Mahdi claim but stated that he would pledge support if the movement were genuinely undertaken under the principle of enjoining good and forbidding evil and fighting oppression. This distinction is central to his political stance.",
-          "source_chunk_id": "b02-u06-008"
-        },
-        {
-          "term": "Imam al-Sadiq's foresight concerning the Abbasids",
-          "gloss": "Mutahhari presents Imam al-Sadiq as recognizing that the Abbasid political actors had their own ambitions and that Muhammad Nafs al-Zakiyyah would be killed rather than become caliph. The later historical outcome is presented as confirmation within the narrative.",
-          "source_chunk_id": "b02-u06-009"
-        }
-      ],
       "quotes": [
         {
           "id": "u06-quote-1",
@@ -499,78 +240,6 @@
       "id": "u07",
       "title": "Chapter 5: The Reasons for Imam Musa al-Kazim's Martyrdom",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-5-reasons-imam-musa-al-kazims-martyrdom",
-      "terms": [
-        {
-          "term": "Martyrdom as a shared pattern among the Imams",
-          "gloss": "Mutahhari opens by stressing that, in his account, the infallible Imams other than the living Imam of the Time all died as martyrs. He argues that their methods should not be contrasted as though Imam al-Husayn alone resisted oppression while the others accepted it: the objective was resistance to oppressive rule, while the form of combat changed according to circumstances.",
-          "source_chunk_id": "b02-u07-001"
-        },
-        {
-          "term": "Imam Musa al-Kazim's imprisonment and refusal to submit",
-          "gloss": "According to the text's account, Imam Musa al-Kazim spent about four years imprisoned and was moved among several prisons. Offers were repeatedly made that he could gain freedom by apologizing, confessing wrongdoing, or otherwise submitting to Harun.",
-          "source_chunk_id": "b02-u07-002"
-        },
-        {
-          "term": "Basrah prison: 'Isa ibn Ja'far's change of view",
-          "gloss": "The Imam was first held in Basrah under 'Isa ibn Ja'far. Although 'Isa initially accepted the government's portrayal of Musa al-Kazim as a political threat, personal contact changed his view: he came to see the Imam as a spiritual man and treated him well.",
-          "source_chunk_id": "b02-u07-003"
-        },
-        {
-          "term": "Baghdad prisons and the failure of Harun's pressure",
-          "gloss": "In Baghdad the Imam was successively placed with Fadl ibn Rabi' and Fadl ibn Yahya al-Barmaki. Each, according to the narrative, became impressed by him and improved his conditions, effectively treating him more like an honored guest than a prisoner.",
-          "source_chunk_id": "b02-u07-004"
-        },
-        {
-          "term": "Harun's demand for a confession and the Imam's final refusal",
-          "gloss": "Near the end of the imprisonment, Harun sent an intermediary with a private offer: if the Imam would simply confess wrongdoing and ask the caliph's forgiveness, he would be released. The text presents this as a test of whether the Imam would legitimize the ruler by an act of submission.",
-          "source_chunk_id": "b02-u07-005"
-        },
-        {
-          "term": "Why Harun regarded Imam al-Kazim as a threat",
-          "gloss": "Mutahhari argues that Harun's fear was not based on an overt military uprising by the Imam. Rather, Harun perceived the Imam's spiritual authority and popularity as a rival source of legitimacy, especially while arranging allegiance to his sons as future rulers.",
-          "source_chunk_id": "b02-u07-006"
-        },
-        {
-          "term": "Ma'mun's account of Harun's respect and political fear",
-          "gloss": "The chapter recounts a report attributed to Ma'mun in which Harun showed striking respect toward Musa ibn Ja'far during Hajj, welcomed him while remaining seated on horseback, asked about his family and financial circumstances, and arranged for him to be escorted out. In the account, Harun later explains that the Ahl al-Bayt were political rivals: if their material resources became strong, their supporters could p…",
-          "source_chunk_id": "b02-u07-007"
-        },
-        {
-          "term": "Spiritual influence as a form of propagation",
-          "gloss": "Mutahhari emphasizes that the Imam's influence did not depend on armies or formal propaganda. People who encountered his worship, generosity and character could be transformed by that example.",
-          "source_chunk_id": "b02-u07-008"
-        },
-        {
-          "term": "Worship and care for the vulnerable as recurring Imam traditions",
-          "gloss": "Mutahhari identifies two recurring characteristics among the Imams: profound worship, fear of Allah and monotheistic consciousness; and personal sympathy with the weak, oppressed, dispossessed and needy. He presents these not as abstract ideals but as habits repeatedly visible in the lives of the Imams.",
-          "source_chunk_id": "b02-u07-009"
-        },
-        {
-          "term": "Bishr Hafi: the Imam's indirect reform through a single question",
-          "gloss": "The story of Bishr Hafi illustrates the Imam's ability to reform without coercion. Passing a house where music, dancing and gambling were taking place, Musa al-Kazim asked a servant whether the house belonged to a free man or a slave.",
-          "source_chunk_id": "b02-u07-010"
-        },
-        {
-          "term": "Safwan Jammal and complicity with an oppressor",
-          "gloss": "Safwan Jammal, a companion of the Imam who rented camels, had contracted to provide transportation for Harun's pilgrimage. Musa al-Kazim challenged him about whether he inwardly wished Harun to remain alive long enough to complete the journey and pay the remaining rent.",
-          "source_chunk_id": "b02-u07-011"
-        },
-        {
-          "term": "Harun's attempts to break the Imam's resistance",
-          "gloss": "The chapter gives several examples of attempts to soften or compromise the Imam: promises of release, better accommodation, special food and private assurances that the caliph did not personally regard him as sinful. The Imam repeatedly refused to become dependent on Harun or to validate his authority through apology.",
-          "source_chunk_id": "b02-u07-012"
-        },
-        {
-          "term": "The reported method of Imam al-Kazim's martyrdom",
-          "gloss": "The final section reports that the Imam was held by Sindi ibn Shahik and that a poisoned preparation was administered to him. According to the narrative, officials then assembled respected people and attempted to demonstrate publicly that he was healthy and had not been harmed.",
-          "source_chunk_id": "b02-u07-013"
-        },
-        {
-          "term": "Mutahhari's three-part explanation of the martyrdom",
-          "gloss": "At the conclusion, Mutahhari summarizes three factors behind the martyrdom: first, the Imam's very presence and spiritual authority threatened the ruling caliphs; second, the Imams opposed and exposed oppression while practicing taqiyyah so that they did not unnecessarily leave evidence that could be exploited against them; and third, the Imams possessed an exceptional spirit of resistance and could not be induced…",
-          "source_chunk_id": "b02-u07-014"
-        }
-      ],
       "quotes": [
         {
           "id": "u07-quote-1",
@@ -603,88 +272,6 @@
       "id": "u08",
       "title": "Chapter 6: Imam al-Rida as the Crown Prince (Session 1)",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-rida-crown-prince-session-1",
-      "terms": [
-        {
-          "term": "The historical problem of al-Rida as crown prince",
-          "gloss": "The chapter examines why Imam al-Rida accepted the position of successor under Ma'mun even though the Abbasids had a long record of conflict with the Alawis. Mutahhari frames this as a historical problem comparable to Imam al-Hassan's peace: in both cases critics can argue that accepting an arrangement with an existing caliph amounted to compromise, while the Imam's defenders must explain the circumstances.",
-          "source_chunk_id": "b02-u08-001"
-        },
-        {
-          "term": "Abbasid hostility toward the Alawis",
-          "gloss": "Mutahhari describes sustained Abbasid persecution of the Alawis, including imprisonment and killing under Mansur and later rulers. He uses the treatment of their own rivals and even members of the Abbasid dynasty to establish that political power in this period was marked by severe internal rivalry as well as conflict with the Alawis.",
-          "source_chunk_id": "b02-u08-002"
-        },
-        {
-          "term": "The historical sources for the succession episode",
-          "gloss": "Mutahhari says the account should not be reconstructed solely from Shi'ah sources. He compares reports in Shaykh Mufid's al-Irshad and Shaykh Saduq's 'Uyun al-Akhbar al-Rida with Abu al-Faraj al-Isfahani's Maqatil al-Talibiyyin, which he identifies as a non-Shi'ah historical source.",
-          "source_chunk_id": "b02-u08-003"
-        },
-        {
-          "term": "Was Ma'mun sincere? Competing historical possibilities",
-          "gloss": "Mutahhari lays out several hypotheses rather than claiming certainty: Ma'mun may initially have sincerely intended to transfer authority; Fadl ibn Sahl may have initiated the policy; or Ma'mun may have adopted the proposal for political purposes from the beginning. The chapter explicitly says historical evidence does not establish one explanation with absolute certainty.",
-          "source_chunk_id": "b02-u08-004"
-        },
-        {
-          "term": "Ma'mun's reported Shi'ah sympathies versus political conduct",
-          "gloss": "The chapter presents reports of Ma'mun's intellectual interest in Shi'ism and his respect for the Ahl al-Bayt, alongside his father's harsh treatment of Imam Musa al-Kazim and Ma'mun's own political behavior. Mutahhari uses this tension to caution against treating intellectual sympathy or personal admiration as equivalent to political loyalty.",
-          "source_chunk_id": "b02-u08-005"
-        },
-        {
-          "term": "The oath Ma'mun said he made during his struggle with Amin",
-          "gloss": "One historical explanation accepted by Shaykh Saduq and others is that Ma'mun, fearing defeat by his brother Amin, performed purification, prayer and Qur'anic recitation and vowed that if Allah gave him victory he would return the caliphate to its rightful owners. After his victories, he presented the appointment of Imam al-Rida as fulfillment of that oath.",
-          "source_chunk_id": "b02-u08-006"
-        },
-        {
-          "term": "Fadl ibn Sahl as an alternative initiator",
-          "gloss": "Another hypothesis is that Fadl ibn Sahl, Ma'mun's powerful minister, proposed bringing Imam al-Rida into the succession. Mutahhari questions explanations that portray Fadl simply as a sincere Shi'ah supporter, noting reports that Imam al-Rida himself distrusted Fadl and warned Ma'mun about him.",
-          "source_chunk_id": "b02-u08-007"
-        },
-        {
-          "term": "Political theory: attracting Iranian support",
-          "gloss": "One proposed political explanation is that Ma'mun wanted to attract Iranian support by associating his government with the Alawis. Mutahhari notes the symbolic importance of the title 'al-Rida' and suggests that presenting the Imam as successor could make it appear that long-standing Iranian sympathy for the family of the Prophet had finally been accommodated.",
-          "source_chunk_id": "b02-u08-008"
-        },
-        {
-          "term": "Political theory: neutralizing Alawi rebellions",
-          "gloss": "A second political explanation is that placing Imam al-Rida inside the government could weaken recurring Alawi uprisings. If the most prominent Alawi were publicly incorporated into the succession, other rebels could lose a powerful argument that the Alawis were excluded from government.",
-          "source_chunk_id": "b02-u08-009"
-        },
-        {
-          "term": "Political theory: disarming Imam al-Rida's opposition",
-          "gloss": "A third proposed motive is to neutralize the Imam himself by giving him a government position. Critics could then say that the Alawi claim to justice changed once its representatives received office.",
-          "source_chunk_id": "b02-u08-010"
-        },
-        {
-          "term": "The journey from Medina to Marw",
-          "gloss": "The chapter identifies the forced summons of Imam al-Rida from Medina to Marw as a significant historical fact. He was brought with relatives under surveillance, and the route was deliberately selected through Basrah and Khuzistan toward Nishapur rather than through Kufah, where he might encounter Shi'ah supporters.",
-          "source_chunk_id": "b02-u08-011"
-        },
-        {
-          "term": "The Imam's initial refusal",
-          "gloss": "According to the historical reports discussed, Imam al-Rida rejected the proposal when it was presented in Marw. Fadl ibn Sahl and al-Hasan ibn Sahl reportedly warned that refusal meant execution; even after the threat was made explicit, the Imam continued to refuse until Ma'mun personally threatened his life.",
-          "source_chunk_id": "b02-u08-012"
-        },
-        {
-          "term": "Acceptance under threat",
-          "gloss": "Mutahhari interprets the eventual acceptance as compelled by a threat to the Imam's life. He compares Ma'mun's argument invoking Imam 'Ali's participation in the earlier council with the historical question of whether the Imam was voluntarily accepting the office or submitting to circumstances.",
-          "source_chunk_id": "b02-u08-013"
-        },
-        {
-          "term": "Imam al-Rida's condition of non-interference",
-          "gloss": "The Imam agreed on the explicit condition that he would not interfere in government affairs or assume responsibility for Ma'mun's actions. This preserved a distinction between accepting the title and cooperating with the government.",
-          "source_chunk_id": "b02-u08-014"
-        },
-        {
-          "term": "The 'Id prayer episode",
-          "gloss": "When Ma'mun later insisted that Imam al-Rida lead the 'Id prayer, the Imam initially objected that this violated the condition of non-involvement. He eventually agreed but proceeded in a manner that, according to the narrative, generated such popular excitement that Ma'mun and Fadl feared a political upheaval and stopped him before he reached the destination.",
-          "source_chunk_id": "b02-u08-015"
-        },
-        {
-          "term": "The acceptance ceremony and the Imam's independent stance",
-          "gloss": "At the formal acceptance ceremony, Imam al-Rida delivered a short speech that did not flatter or thank Ma'mun in the conventional manner. Mutahhari interprets the speech as a concise declaration that accepting the position did not mean accepting Ma'mun's political legitimacy or becoming his collaborator.",
-          "source_chunk_id": "b02-u08-016"
-        }
-      ],
       "quotes": [
         {
           "id": "u08-quote-1",
@@ -721,98 +308,6 @@
       "id": "u09",
       "title": "Chapter 6: Imam al-Rida as the Crown Prince (Session 2)",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-ridaa-crown-prince-session",
-      "terms": [
-        {
-          "term": "What is certain and what is doubtful",
-          "gloss": "Mutahhari separates the succession episode into definite historical facts and doubtful interpretations. He treats the forced summons to Marw, the initial refusal, the threat of death, the eventual acceptance, and the condition of non-interference as firm elements; the precise motives behind Ma'mun's policy remain matters for historical analysis.",
-          "source_chunk_id": "b02-u09-001"
-        },
-        {
-          "term": "The succession was initiated by Ma'mun, not Imam al-Rida",
-          "gloss": "The chapter states that the crown-prince arrangement was not initiated by Imam al-Rida. Ma'mun's agents gathered people from Khorasan and summoned Banu Hashim from Medina before discussing the proposal with the Imam.",
-          "source_chunk_id": "b02-u09-002"
-        },
-        {
-          "term": "Imam al-Rida's logical refusal of the caliphate offer",
-          "gloss": "When Ma'mun reportedly proposed transferring the caliphate, Imam al-Rida answered that Ma'mun could not legitimately give away something that was either rightfully his or not rightfully his. If it was divinely legitimate, Ma'mun had no right to surrender it; if it was illegitimate, he had no right to transfer it.",
-          "source_chunk_id": "b02-u09-003"
-        },
-        {
-          "term": "Ma'mun combines argument with threat",
-          "gloss": "After the Imam rejected the proposal, Ma'mun invoked Imam 'Ali's participation in the six-person council established by 'Umar and used that precedent as a justification for demanding compliance. The argument was accompanied by an explicit threat to kill Imam al-Rida.",
-          "source_chunk_id": "b02-u09-004"
-        },
-        {
-          "term": "The non-interference condition",
-          "gloss": "Imam al-Rida accepted the crown-prince title only with the condition that he would have no practical role in government: no judgments, appointments, dismissals, administration, or other governmental duties. Mutahhari treats this condition as evidence that the Imam did not regard the appointment as ordinary political collaboration.",
-          "source_chunk_id": "b02-u09-005"
-        },
-        {
-          "term": "The crown-prince speech",
-          "gloss": "At the formal ceremony, Ma'mun arranged an elaborate public event, but Imam al-Rida's speech was extremely brief and did not praise or thank Ma'mun. Its substance, as Mutahhari interprets it, was that the Ahl al-Bayt possessed the underlying right to the caliphate and that accepting the title did not mean receiving that right from Ma'mun.",
-          "source_chunk_id": "b02-u09-006"
-        },
-        {
-          "term": "The 'Id prayer demonstrates the separation",
-          "gloss": "When Ma'mun later asked Imam al-Rida to lead the 'Id prayer, the Imam reminded him of their agreement. When he finally agreed on the condition that he would follow his grandfather's manner rather than contemporary court custom, the public response became so intense that Ma'mun ordered him brought back.",
-          "source_chunk_id": "b02-u09-007"
-        },
-        {
-          "term": "The Fadl ibn Sahl hypothesis",
-          "gloss": "One disputed explanation is that Fadl ibn Sahl, Ma'mun's powerful minister, initiated the crown-prince arrangement. Some historians have attributed sincere Shi'ah motives to Fadl, but Mutahhari argues that this interpretation conflicts with Imam al-Rida's own distrust of Fadl and his refusal to cooperate with him.",
-          "source_chunk_id": "b02-u09-008"
-        },
-        {
-          "term": "The alternative Fadl hypothesis",
-          "gloss": "Mutahhari considers another hypothesis: if Fadl initiated the policy, his goal may have been to use the Alawi Imam for a larger political project involving Iranian interests. He stresses that this is an assumption, not an established historical fact, and examines it as one possible explanation for the Imam's refusal to cooperate with Fadl.",
-          "source_chunk_id": "b02-u09-009"
-        },
-        {
-          "term": "Baghdad's reaction to the appointment",
-          "gloss": "When news of Imam al-Rida's appointment reached Baghdad, Abbasid leaders rejected Ma'mun's decision and pledged allegiance to another Abbasid, Ibrahim ibn Shiklah. Mutahhari uses this reaction to argue that even a successful transfer of power in Khorasan would not automatically have produced unified control over the wider Islamic territories.",
-          "source_chunk_id": "b02-u09-010"
-        },
-        {
-          "term": "Ma'mun's motives remain disputed",
-          "gloss": "If Ma'mun initiated the appointment, Mutahhari considers two broad possibilities: he may initially have had a genuine intention to transfer authority, later changing his mind; or the entire arrangement may have been a political maneuver. He reports Shaykh Saduq's account of an oath Ma'mun made during his conflict with Amin while noting that many scholars reject the idea of sincere intentions from the beginning.",
-          "source_chunk_id": "b02-u09-011"
-        },
-        {
-          "term": "Possible political purpose: discrediting Imam al-Rida",
-          "gloss": "One political interpretation is that Ma'mun wanted to draw Imam al-Rida into the governmental system so that public dissatisfaction with the government would also damage the Imam's reputation. Mutahhari describes the general political tactic as giving a respected critic an official position and then making the position fail or become unpopular.",
-          "source_chunk_id": "b02-u09-012"
-        },
-        {
-          "term": "Imam al-Rida's opposition to Fadl ibn Sahl",
-          "gloss": "The chapter reports traditions in which Fadl ibn Sahl and Hisham ibn Ibrahim approached Imam al-Rida and proposed killing Ma'mun so that the Imam could become caliph. The Imam rejected the proposal and later warned Ma'mun about them.",
-          "source_chunk_id": "b02-u09-013"
-        },
-        {
-          "term": "Why acceptance could still be religiously justified",
-          "gloss": "Mutahhari asks whether Imam al-Rida should simply have accepted death rather than the crown-prince title. He distinguishes this from Imam al-Husayn's situation: al-Husayn faced an explicit demand for allegiance to Yazid and a historical need for public awakening, whereas al-Rida faced a different choice in which accepting a formal position under coercion did not necessarily constitute the same kind of religious co…",
-          "source_chunk_id": "b02-u09-014"
-        },
-        {
-          "term": "Cooperation with rulers: Safwan Jammal and 'Ali ibn Yaqtin",
-          "gloss": "The chapter compares two apparently opposite examples. Imam Musa al-Kazim condemned Safwan Jammal's cooperation with Harun when it served Safwan's personal financial interest and included wishing for Harun's survival.",
-          "source_chunk_id": "b02-u09-015"
-        },
-        {
-          "term": "The example of Prophet Yusuf",
-          "gloss": "Imam al-Rida is reported to have defended his position by comparing it with Prophet Yusuf's acceptance of administrative authority under the Egyptian ruler. Yusuf sought responsibility over the storehouses in order to use the position for a beneficial purpose; Imam al-Rida contrasted that voluntary request with his own forced acceptance.",
-          "source_chunk_id": "b02-u09-016"
-        },
-        {
-          "term": "Wilayat al-ja'ir and conditional cooperation",
-          "gloss": "Mutahhari connects the discussion to the jurisprudential concept of undertaking a position under an unjust ruler. Although such cooperation is ordinarily prohibited, he explains that it can become permissible, recommended, or obligatory when the position is genuinely necessary to enjoin good, prevent evil, reduce oppression, or serve the Muslim community.",
-          "source_chunk_id": "b02-u09-017"
-        },
-        {
-          "term": "The practical result of Imam al-Rida's appointment",
-          "gloss": "Mutahhari argues that the crown-prince episode did not accomplish Ma'mun's presumed purpose of making Imam al-Rida a normal participant in government. Instead, the Imam retained his independence, his qualifications became more publicly visible, and the Ahl al-Bayt's standing was strengthened.",
-          "source_chunk_id": "b02-u09-018"
-        }
-      ],
       "quotes": [
         {
           "id": "u09-quote-1",
@@ -849,68 +344,6 @@
       "id": "u10",
       "title": "Chapter 7: On the Topic of Imam al-Hassan al-'Askari",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-7-topic-imam-al-hassan-al-askari",
-      "terms": [
-        {
-          "term": "Imam al-'Askari under extreme pressure",
-          "gloss": "Mutahhari presents Imam al-Hassan al-'Askari as an Imam who lived under unusually severe surveillance. His residence in Samarra was imposed by the authorities and located in the military quarter, allowing close monitoring.",
-          "source_chunk_id": "b02-u10-001"
-        },
-        {
-          "term": "Samarra and the military quarter",
-          "gloss": "The government center had been transferred to Samarra, and Imam al-Hadi and Imam al-'Askari were compelled to reside in the area called al-'Askar/al-'Askari, associated with the army. The location itself functioned as a mechanism of surveillance.",
-          "source_chunk_id": "b02-u10-002"
-        },
-        {
-          "term": "Six years of Imamate",
-          "gloss": "Imam al-'Askari's Imamate lasted six years. Mutahhari states that during this period he was either imprisoned or, when free, prevented from normal social contact and visits.",
-          "source_chunk_id": "b02-u10-003"
-        },
-        {
-          "term": "Dignity as a defining quality",
-          "gloss": "Mutahhari highlights dignity and impressive bearing as especially characteristic of Imam al-'Askari. Reports describe even opponents and officials being affected by his presence and showing respect toward him.",
-          "source_chunk_id": "b02-u10-004"
-        },
-        {
-          "term": "Why surveillance intensified",
-          "gloss": "According to the chapter, people knew that the awaited Imam al-Mahdi was expected to emerge from Imam al-'Askari's lineage. Mutahhari compares the authorities' surveillance with Pharaoh's attempt to prevent the birth foretold among Bani Isra'il.",
-          "source_chunk_id": "b02-u10-005"
-        },
-        {
-          "term": "Searches for the promised child",
-          "gloss": "Authorities repeatedly searched the Imam's house, particularly around his death, because they had heard reports that his son, the future Imam al-Mahdi, had already been born.",
-          "source_chunk_id": "b02-u10-006"
-        },
-        {
-          "term": "Concealed birth of Imam al-Mahdi",
-          "gloss": "The chapter describes the birth as concealed from the general public, with only a limited group aware of it. Imam al-Mahdi was about six years old when his father died, according to the account presented.",
-          "source_chunk_id": "b02-u10-007"
-        },
-        {
-          "term": "Searches of the women in the household",
-          "gloss": "After Imam al-'Askari's death, officials searched the household and examined women to identify a possible pregnancy. One slave girl was detained for a year because officials suspected she was pregnant, but the suspicion proved mistaken.",
-          "source_chunk_id": "b02-u10-008"
-        },
-        {
-          "term": "Lady Hudayth and the title Jaddah",
-          "gloss": "The mother of Imam al-'Askari is identified as Hudayth and was known as Jaddah, 'grandmother,' because of her relationship to the Imam of the Time. Mutahhari emphasizes that her reputation rested on her own status and learning, not merely her family relationship.",
-          "source_chunk_id": "b02-u10-009"
-        },
-        {
-          "term": "Jaddah as a Shi'ah refuge",
-          "gloss": "After Imam al-'Askari's death, Jaddah is described as a learned refuge for Shi'ahs. People brought religious and doctrinal questions to her.",
-          "source_chunk_id": "b02-u10-010"
-        },
-        {
-          "term": "Hakimah Khatun and the hidden Imam",
-          "gloss": "Hakimah Khatun explained that Imam al-'Askari's hidden son was the true Imam during occultation, while people should refer to Jaddah for practical questions. She compared this arrangement with Imam al-Husayn leaving much of his outward trust to Zaynab while the true successor was Imam Zayn al-'Abidin.",
-          "source_chunk_id": "b02-u10-011"
-        },
-        {
-          "term": "The central paradox of the chapter",
-          "gloss": "Mutahhari's central lesson is that extraordinary political surveillance could not prevent the succession that Shi'ah belief understood as divinely ordained. The authorities attempted to control the circumstances surrounding the birth and succession, while the Imam's spiritual authority continued through concealment and trusted intermediaries.",
-          "source_chunk_id": "b02-u10-012"
-        }
-      ],
       "quotes": [
         {
           "id": "u10-quote-1",
@@ -943,98 +376,6 @@
       "id": "u11",
       "title": "Chapter 8, Part 1: The Universal Justice",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-1-universal-justice",
-      "terms": [
-        {
-          "term": "Two essential prophetic missions",
-          "gloss": "Mutahhari presents two central purposes for the prophets: establishing the correct relationship between human beings and God through tawhid, and establishing just relations among people through justice, peace, cooperation, benevolence, affection and service.",
-          "source_chunk_id": "b02-u11-001"
-        },
-        {
-          "term": "Justice as the general prophetic mission",
-          "gloss": "Using Qur'anic language about the Book, Balance and establishing justice, Mutahhari argues that justice among humanity is a general aim of prophetic missions.",
-          "source_chunk_id": "b02-u11-002"
-        },
-        {
-          "term": "Universal justice defined",
-          "gloss": "Universal justice means a future in which tyranny, oppression, discrimination, war, hatred, bloodshed, exploitation and their associated deception no longer dominate human society.",
-          "source_chunk_id": "b02-u11-003"
-        },
-        {
-          "term": "Justice is not merely an afterlife promise",
-          "gloss": "Mutahhari contrasts the idea that justice belongs only to the next world with the Islamic expectation of a future transformation of earthly human society.",
-          "source_chunk_id": "b02-u11-004"
-        },
-        {
-          "term": "Three questions about justice",
-          "gloss": "The discussion is organized around three questions: What is justice? Is the inclination toward justice present in human nature?",
-          "source_chunk_id": "b02-u11-005"
-        },
-        {
-          "term": "Definition of justice",
-          "gloss": "Justice is presented as giving each person what they are entitled to on the basis of their creation, qualifications and activities; it is contrasted with oppression and discrimination.",
-          "source_chunk_id": "b02-u11-006"
-        },
-        {
-          "term": "Justice versus discrimination",
-          "gloss": "Justice does not mean mechanically giving everyone identical treatment. Mutahhari distinguishes equal status from cases where differing eligibility or merit can justify differing outcomes.",
-          "source_chunk_id": "b02-u11-007"
-        },
-        {
-          "term": "Is justice instinctive?",
-          "gloss": "Mutahhari asks whether humans can value justice for its own sake, even where personal benefit is absent, just as humans naturally appreciate beauty and seek knowledge.",
-          "source_chunk_id": "b02-u11-008"
-        },
-        {
-          "term": "Nietzsche and Machiavelli's position as presented",
-          "gloss": "Mutahhari describes one philosophical position as treating power as fundamental and justice as a concept produced by the weak. He associates this position with Nietzsche and Machiavelli.",
-          "source_chunk_id": "b02-u11-009"
-        },
-        {
-          "term": "Bertrand Russell's position as presented",
-          "gloss": "Mutahhari describes another position as accepting justice because enlightened self-interest eventually shows that individual interests depend on justice for all.",
-          "source_chunk_id": "b02-u11-010"
-        },
-        {
-          "term": "Critique of self-interest alone",
-          "gloss": "Mutahhari argues that a justice system based only on calculated self-interest becomes vulnerable when an individual or group acquires enough power to act without fear of retaliation.",
-          "source_chunk_id": "b02-u11-011"
-        },
-        {
-          "term": "Marxist theory as presented",
-          "gloss": "Mutahhari describes a third approach in which economic and productive conditions are expected to produce justice automatically through historical development toward socialism.",
-          "source_chunk_id": "b02-u11-012"
-        },
-        {
-          "term": "The Islamic view of human nature",
-          "gloss": "Mutahhari presents the Islamic position as rejecting pessimism about human nature: people can be educated and spiritually developed until justice becomes genuinely desired, even against personal interest.",
-          "source_chunk_id": "b02-u11-013"
-        },
-        {
-          "term": "'Ali ibn Abi Talib as an example",
-          "gloss": "Mutahhari invokes Imam 'Ali as an example of a person whose commitment to justice was not reducible to personal advantage, arguing that such examples demonstrate the possibility of justice-oriented human beings.",
-          "source_chunk_id": "b02-u11-014"
-        },
-        {
-          "term": "Mahdism as human perfection",
-          "gloss": "Mutahhari argues that the reappearance of the Imam of the Time should not be understood as humanity returning to primitive conditions. He describes it as an intellectual, moral and scientific elevation of humanity.",
-          "source_chunk_id": "b02-u11-015"
-        },
-        {
-          "term": "The question of the Imam's long life",
-          "gloss": "Mutahhari addresses doubts about the Imam's long lifespan by arguing that current scientific knowledge does not establish the complete limits of natural possibility and that major transitions in the history of life are not fully explained.",
-          "source_chunk_id": "b02-u11-016"
-        },
-        {
-          "term": "Characteristics of the Mahdi's age",
-          "gloss": "The promised age is described through traditions as an age of justice, security, spiritual wealth, reduced poverty and hatred, fair distribution, and renewed vitality of Qur'an and Sunnah.",
-          "source_chunk_id": "b02-u11-017"
-        },
-        {
-          "term": "Al-Qa'im and the meaning of rising",
-          "gloss": "The title al-Qa'im is connected to the one who rises. Mutahhari links the title with the establishment of justice and the restoration of religious guidance.",
-          "source_chunk_id": "b02-u11-018"
-        }
-      ],
       "quotes": [
         {
           "id": "u11-quote-1",
@@ -1071,173 +412,6 @@
       "id": "u12",
       "title": "Chapter 8, Part 2: The Promised al-Mahdi",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi",
-      "terms": [
-        {
-          "term": "Mahdism predates the third century AH",
-          "gloss": "Mutahhari's historical argument begins by rejecting the idea that belief in Mahdism originated only around the birth of Imam al-Mahdi in the middle of the third century AH.",
-          "source_chunk_id": "b02-u12-001"
-        },
-        {
-          "term": "Qur'anic foundations",
-          "gloss": "Mutahhari points to Qur'anic promises concerning the inheritance of the earth by righteous servants and the eventual triumph of true religion as general foundations for belief in a future righteous order.",
-          "source_chunk_id": "b02-u12-002"
-        },
-        {
-          "term": "Sunni as well as Shi'ah narrations",
-          "gloss": "Mutahhari emphasizes that reports concerning the Promised al-Mahdi are not confined to Shi'ah collections; he cites the existence of substantial Sunni-source material as part of his historical argument.",
-          "source_chunk_id": "b02-u12-003"
-        },
-        {
-          "term": "The historical effect is the main question",
-          "gloss": "Rather than simply cataloguing Qur'anic verses and hadith, Mutahhari says his principal concern is how belief in the Promised al-Mahdi affected Islamic history.",
-          "source_chunk_id": "b02-u12-004"
-        },
-        {
-          "term": "Imam 'Ali and the earth never being empty of God's proof",
-          "gloss": "Mutahhari quotes the report of Imam 'Ali's conversation with Kumayl, emphasizing the principle that the earth is never empty of God's proof, whether that proof is manifest or hidden.",
-          "source_chunk_id": "b02-u12-005"
-        },
-        {
-          "term": "Mukhtar and the Mahdi claim",
-          "gloss": "Mutahhari identifies Mukhtar's movement as an early historical example in which the Mahdi concept was used politically. Mukhtar presented Muhammad ibn Hanafiyyah as the Promised Mahdi and himself as his representative.",
-          "source_chunk_id": "b02-u12-006"
-        },
-        {
-          "term": "The Kaysanite development",
-          "gloss": "After Muhammad ibn Hanafiyyah's death, followers associated with this movement maintained that he had not died and was hidden at Mount Radwa. Mutahhari presents this as part of the historical development of Mahdist ideas.",
-          "source_chunk_id": "b02-u12-007"
-        },
-        {
-          "term": "Zuhri's statement about the Ahl al-Bayt",
-          "gloss": "Mutahhari cites Zuhri's reaction to Zayd ibn 'Ali's uprising as evidence that expectation of a future successful rising from the Prophet's family was already a recognizable idea in early Islamic discourse.",
-          "source_chunk_id": "b02-u12-008"
-        },
-        {
-          "term": "Nafs al-Zakiyyah and Mahdism",
-          "gloss": "The chapter discusses Muhammad ibn 'Abd Allah, known as Nafs al-Zakiyyah, and the way people connected claims about him with Mahdism because of lineage, name and other reported signs.",
-          "source_chunk_id": "b02-u12-009"
-        },
-        {
-          "term": "Imam al-Sadiq rejects a false Mahdi claim",
-          "gloss": "When invited to support Muhammad ibn 'Abd Allah's uprising, Imam al-Sadiq distinguished between supporting an uprising for enjoining good and forbidding evil and accepting the claim that Muhammad was the Promised Mahdi. He rejected the latter identification.",
-          "source_chunk_id": "b02-u12-010"
-        },
-        {
-          "term": "Why Mahdist claims repeatedly appeared",
-          "gloss": "Mutahhari argues that the recurrence of Mahdist claims around various Alawi figures itself indicates how deeply established expectation of a future Mahdi was in the Muslim community.",
-          "source_chunk_id": "b02-u12-011"
-        },
-        {
-          "term": "The Abbasid use of the name al-Mahdi",
-          "gloss": "The chapter notes that an Abbasid caliph was also named al-Mahdi, illustrating how the Mahdi concept had political and historical resonance beyond one specific doctrinal community.",
-          "source_chunk_id": "b02-u12-012"
-        },
-        {
-          "term": "Distinguishing historical claims from proof",
-          "gloss": "A recurring exam point is that the existence of historical claims about a person being Mahdi does not itself prove the claim. Mutahhari distinguishes what people claimed from what he presents as the underlying doctrinal/historical evidence.",
-          "source_chunk_id": "b02-u12-013"
-        },
-        {
-          "term": "Mansur's political use of the Mahdi name",
-          "gloss": "Mutahhari reports that Mansur named his son Mahdi and, according to the historical accounts he cites, sometimes used the name politically while privately acknowledging that neither his son nor 'Abd Allah al-Mahdi was the promised figure.",
-          "source_chunk_id": "b02-u12-014"
-        },
-        {
-          "term": "Muhammad ibn 'Ijlan's allegiance",
-          "gloss": "The case of the Medinan scholar Muhammad ibn 'Ijlan illustrates the danger of confusing a claimant with the promised Mahdi. He pledged allegiance to 'Abd Allah al-Mahdi because he believed him to be the promised figure; scholars intervened on his behalf.",
-          "source_chunk_id": "b02-u12-015"
-        },
-        {
-          "term": "Early Muslim disputes were about identity, not existence",
-          "gloss": "Mutahhari argues that early disagreements generally concerned which individual was the Mahdi, rather than whether the promised Mahdi existed at all. He cites disputes concerning Imam al-Kazim, Imam al-Baqir, Imam al-Sadiq and others.",
-          "source_chunk_id": "b02-u12-016"
-        },
-        {
-          "term": "Imam al-Sadiq and Isma'il's death",
-          "gloss": "The chapter recounts how Imam al-Sadiq publicly demonstrated that his son Isma'il had died, specifically to prevent people from later claiming that Isma'il was the hidden Mahdi.",
-          "source_chunk_id": "b02-u12-017"
-        },
-        {
-          "term": "Di'bil's lamentation and Imam al-Rida",
-          "gloss": "Di'bil recited a lamentation before Imam al-Rida naming tragedies suffered by the Ahl al-Bayt. Imam al-Rida added a reference to a grave in Tus, identifying it as his own future grave, and the poem also connected the history of suffering with the eventual reappearance of an Imam.",
-          "source_chunk_id": "b02-u12-018"
-        },
-        {
-          "term": "Mahdism as a Sunni historical phenomenon",
-          "gloss": "Mutahhari argues that Mahdism cannot be treated as exclusively Shi'ah by pointing to Sunni populations and historical figures who accepted or claimed Mahdist ideas.",
-          "source_chunk_id": "b02-u12-019"
-        },
-        {
-          "term": "False Mahdis",
-          "gloss": "The existence of false claimants is presented as another historical consequence of widespread belief in the promised Mahdi. Mutahhari distinguishes the existence of impostors from the truth of the underlying belief.",
-          "source_chunk_id": "b02-u12-020"
-        },
-        {
-          "term": "Historical references in Hafiz's poetry",
-          "gloss": "Mutahhari notes Mahdist imagery in poems attributed to Hafiz, while explicitly saying he cannot establish whether Hafiz was Shi'ah or Sunni. The point is the presence of Mahdist expectation in Persian literary culture.",
-          "source_chunk_id": "b02-u12-021"
-        },
-        {
-          "term": "Reform is not the enemy of reappearance",
-          "gloss": "Mutahhari addresses a dangerous interpretation: some people might think society must become maximally corrupt before the Imam can reappear, and therefore reform should be opposed. He rejects this reasoning.",
-          "source_chunk_id": "b02-u12-022"
-        },
-        {
-          "term": "The 'abscess' analogy",
-          "gloss": "Mutahhari uses an abscess analogy to explain a revolutionary model in which accumulated corruption must reach a breaking point. He then contrasts this with the Islamic obligation to pursue reform rather than deliberately increase corruption.",
-          "source_chunk_id": "b02-u12-023"
-        },
-        {
-          "term": "Reappearance does not suspend religious duties",
-          "gloss": "Waiting for Imam al-Mahdi does not cancel prayer, fasting, zakat, Hajj, enjoining good, forbidding evil, or other personal and social obligations. Mutahhari presents this as a direct rejection of passive or destructive interpretations of waiting.",
-          "source_chunk_id": "b02-u12-024"
-        },
-        {
-          "term": "Awaiting the Imam requires action",
-          "gloss": "The correct expectation of reappearance is compatible with fulfilling religious duties and training individuals and society. The believer does not create corruption in order to accelerate the promised transformation.",
-          "source_chunk_id": "b02-u12-025"
-        },
-        {
-          "term": "The end of the historical discussion",
-          "gloss": "Mutahhari closes the historical survey by moving from evidence for widespread Mahdist belief to the philosophical and practical meaning of awaiting the reappearance.",
-          "source_chunk_id": "b02-u12-026"
-        },
-        {
-          "term": "Justice after tyranny is not a command to produce tyranny",
-          "gloss": "The promise that justice will follow oppression does not mean believers should permit or create oppression. The promised future is not a justification for abandoning present moral responsibility.",
-          "source_chunk_id": "b02-u12-027"
-        },
-        {
-          "term": "The core practical implication",
-          "gloss": "The chapter connects Mahdism to active religious responsibility: personal worship, social obligations and moral reform remain valid while awaiting the Imam.",
-          "source_chunk_id": "b02-u12-028"
-        },
-        {
-          "term": "Core evidence chain",
-          "gloss": "Mutahhari's historical chain is: Qur'anic promises → Prophetic reports → Imam 'Ali's statements → early Islamic Mahdist movements and claims → Sunni and Shi'ah historical evidence → practical meaning of awaiting reappearance.",
-          "source_chunk_id": "b02-u12-029"
-        },
-        {
-          "term": "Distinguish belief from political appropriation",
-          "gloss": "A major exam distinction is between the doctrinal belief in a promised Mahdi and historical actors who appropriated the concept to legitimize political movements or particular claimants.",
-          "source_chunk_id": "b02-u12-030"
-        },
-        {
-          "term": "Distinguish evidence from interpretation",
-          "gloss": "Mutahhari repeatedly separates historical reports from his interpretation of their significance. Statements such as why a claimant acted, whether someone privately believed a claim, or how a movement should be judged may remain matters of interpretation.",
-          "source_chunk_id": "b02-u12-031"
-        },
-        {
-          "term": "Overall conclusion of Chapter 8",
-          "gloss": "The two-part chapter connects universal justice with Mahdism: justice is presented as the long-term direction of prophetic history, while the promised reappearance represents the culmination of that trajectory in a transformed human society.",
-          "source_chunk_id": "b02-u12-032"
-        },
-        {
-          "term": "Awaiting as faith and responsibility",
-          "gloss": "The closing emphasis is that genuine awaiting is not passive pessimism. Mutahhari describes awaiting the reappearance as an expression of faith that coexists with worship, moral discipline, social responsibility and hope for humanity.",
-          "source_chunk_id": "b02-u12-033"
-        }
-      ],
       "quotes": [
         {
           "id": "u12-quote-1",
@@ -3213,12 +2387,11 @@
     "status": "canonical chunk learning data",
     "source": "Al-Islam.org",
     "source_chunk_count": 160,
-    "concept_count": 160,
     "claim_example_count": 0,
     "connection_count": 20,
     "quote_count": 36,
     "question_count": "see exam_bank/questions.json",
-    "note": "One canonical file: units contain unit-level terms, phrases, and connections; chunks contain the learning text and source provenance. Concepts are derived from chunks; claim_examples are intentionally not stored because their reasoning/evidence duplicated chunk explanations.",
+    "note": "Single sources of truth: chunks contain learning text and provenance; glossary.json contains glossary terms and glosses; units contain only unit structure/navigation metadata and non-duplicative quotes/connections.",
     "question_skills": [
       "comprehension",
       "reasoning",
