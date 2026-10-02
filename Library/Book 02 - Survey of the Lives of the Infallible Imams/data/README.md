@@ -2,7 +2,7 @@
 
 - `chunks.json` is the **single canonical learning-data file** for Book 02.
 - It contains the 13 learning units and 160 learning chunks. Chunks are nested directly under the unit they belong to, so the data hierarchy is explicit: **book → unit → chunk**.
-- Each unit stores its structural metadata, key phrases, cross-unit connections, and its canonical `chunks[]` learning objects. Each chunk stores its learning text once, its source section title, source page URL, and importance where available.
+- Each unit stores its structural metadata, key phrases, cross-unit connections, and its canonical `chunks[]` learning objects. Each chunk stores its learning text once, its `source_url` (including a verified section anchor when available), and importance where available.
 - The glossary is separate: `glossary.json` is the single canonical home for term definitions and their traceability metadata.
 - Concepts are rendered directly from each unit's `chunks[]`; there is no second concept/explanation copy.
 - Questions remain in `../exam_bank/questions.json` as the single question-bank source of truth.
