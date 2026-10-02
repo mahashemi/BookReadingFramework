@@ -46,8 +46,8 @@
   function library(manifest, live) {
     const cards = manifest.books.map(b => {
       if (b.status === 'full' && live[b.id]) {
-        const { study, qd } = live[b.id];
-        const t = { units: study.units.length, concepts: sum(study.units, u => u.concepts.length), questions: qd ? qd.questions.length : null };
+        const { data, qd } = live[b.id];
+        const t = { units: data.units.length, concepts: data.chunks.length, questions: qd ? qd.questions.length : null };
         return `<a class="card book-card" href="${bookPage(b.id)}">
   <div class="eyebrow">Full learning hub</div>
   <h3>${esc(b.title)}</h3>
@@ -87,31 +87,34 @@
   }
 
   /* ---------- book home ---------- */
-  function bookHome(meta, study, qd, gl) {
+  function bookHome(meta, data, qd, gl) {
     document.title = meta.title + ' \u00b7 BookReadingFramework';
     const dir = SITE + dirEnc(meta.dir);
     const L = k => dir + meta.links[k];
-    const units = study.units;
-    const t = { units: units.length, concepts: sum(units, u => u.concepts.length), chunks: new Set(units.flatMap(u => u.concepts.map(c => c.source_chunk_id))).size, questions: qd ? qd.questions.length : null, cross: qd ? qd.questions.filter(q => Array.isArray(q.unit_ids)).length : null };
+    const units = data.units;
+    const allChunks = data.chunks;
+    const chunksForUnit = id => allChunks.filter(c => c.unit === id);
+    const t = { units: units.length, concepts: allChunks.length, chunks: allChunks.length, questions: qd ? qd.questions.length : null, cross: qd ? qd.questions.filter(q => Array.isArray(q.unit_ids)).length : null };
     const unitQuestions = id => (qd ? qd.questions.filter(q => q.unit_id === id) : null);
     const glossary = gl ? gl.entries : [];
 
     const unitCards = units.map((u, i) => {
       const p = parts(u.title);
       const n = unitQuestions(u.id);
-      return `<a class="card unit" href="${unitHref(meta.id, u.id)}"><div class="num">Unit ${pad(i + 1)}${p.label === p.name ? '' : ' \u00b7 ' + esc(p.label)}</div><h3>${esc(p.name)}</h3><p>${u.concepts.length} concepts${n ? ' \u00b7 ' + n.length + ' questions' : ''}</p><span class="more">Open learning unit \u2192</span></a>`;
+      return `<a class="card unit" href="${unitHref(meta.id, u.id)}"><div class="num">Unit ${pad(i + 1)}${p.label === p.name ? '' : ' \u00b7 ' + esc(p.label)}</div><h3>${esc(p.name)}</h3><p>${chunksForUnit(u.id).length} concepts${n ? ' \u00b7 ' + n.length + ' questions' : ''}</p><span class="more">Open learning unit \u2192</span></a>`;
     }).join('');
 
     const sourceRows = units.map((u, i) => {
       const p = parts(u.title);
-      const chunks = new Set(u.concepts.map(c => c.source_chunk_id)).size;
-      return `<div class="source-row"><div><div class="chapter">${esc(p.label)}${p.label === p.name ? '' : ' \u2014 ' + esc(p.name)}</div><div class="coverage">${chunks} source chunks \u00b7 ${u.concepts.length} concepts</div></div><div class="pills"><a class="pill" href="${unitHref(meta.id, u.id)}">Unit ${pad(i + 1)}</a><a class="pill" href="${esc(u.source_url)}" target="_blank" rel="noopener">Original on al-islam.org \u2197</a></div></div>`;
+      const chunks = chunksForUnit(u.id).length;
+      return `<div class="source-row"><div><div class="chapter">${esc(p.label)}${p.label === p.name ? '' : ' \u2014 ' + esc(p.name)}</div><div class="coverage">${chunks} source chunks \u00b7 ${chunksForUnit(u.id).length} concepts</div></div><div class="pills"><a class="pill" href="${unitHref(meta.id, u.id)}">Unit ${pad(i + 1)}</a><a class="pill" href="${esc(u.source_url)}" target="_blank" rel="noopener">Original on al-islam.org \u2197</a></div></div>`;
     }).join('');
 
     const conceptRows = units.map((u, i) => {
       const p = parts(u.title);
-      const pills = u.concepts.slice(0, 3).map(c => `<a class="pill" href="${unitHref(meta.id, u.id, '#concepts')}">${esc(c.title)}</a>`).join('');
-      return `<div class="source-row"><div><div class="chapter">Unit ${pad(i + 1)} \u00b7 ${esc(p.label)}</div><div class="coverage">${u.concepts.length} source-linked concepts</div></div><div class="pills">${pills}<a class="pill" href="${unitHref(meta.id, u.id, '#concepts')}">All concepts \u2192</a></div></div>`;
+      const unitChunks = chunksForUnit(u.id);
+      const pills = unitChunks.slice(0, 3).map(c => `<a class="pill" href="${unitHref(meta.id, u.id, '#concepts')}">${esc(c.title)}</a>`).join('');
+      return `<div class="source-row"><div><div class="chapter">Unit ${pad(i + 1)} \u00b7 ${esc(p.label)}</div><div class="coverage">${chunksForUnit(u.id).length} source-linked concepts</div></div><div class="pills">${pills}<a class="pill" href="${unitHref(meta.id, u.id, '#concepts')}">All concepts \u2192</a></div></div>`;
     }).join('');
 
     const glossaryHTML = glossary.length ? `
@@ -216,17 +219,17 @@ ${glossaryHTML}
      .lesson is the same boilerplate line repeated 160 times -- displaying
      it anywhere would show a student the same duplicated bug, just lower
      on the page. See data/README.md. */
-  function unitPage(meta, study, qd, gl, chunkData, id) {
+  function unitPage(meta, data, qd, gl, id) {
     const dir = SITE + dirEnc(meta.dir);
-    const units = study.units;
+    const units = data.units;
+    const chunks = data.chunks.filter(c => c.unit === id);
     const i = units.findIndex(u => u.id === id);
     if (i < 0) { location.replace(bookPage(meta.id)); return; }
     const u = units[i];
     const p = parts(u.title);
     const prev = units[i - 1], next = units[i + 1];
-    const chunkText = new Map((chunkData || []).map(c => [c.id, c.text]));
     const qList = qd ? qd.questions.filter(q => q.unit_id === u.id) : null;
-    const chunkCount = new Set(u.concepts.map(c => c.source_chunk_id)).size;
+    const chunkCount = chunks.length;
     const terms = gl ? gl.entries.filter(e => e.units.includes(u.id)) : [];
     const testHref = meta.links.unitTests ? dir + meta.links.unitTests + '?unit=' + encodeURIComponent(u.id) : null;
     const nameOf = uid => { const k = units.findIndex(x => x.id === uid); return k < 0 ? uid : 'Unit ' + pad(k + 1) + ' \u00b7 ' + parts(units[k].title).label; };
@@ -240,9 +243,8 @@ ${glossaryHTML}
        "explanation" paragraph and a separate collapsed "source passage"
        reveal would show a student the same text twice under two labels.
        Render the title plus a single reveal of the passage instead. */
-    const concepts = u.concepts.map(c => {
-      const text = chunkText.get(c.source_chunk_id) || c.explanation;
-      return `<article class="card unit"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><p>${esc(text)}</p></details></article>`;
+    const concepts = chunks.map(c => {
+      return `<article class="card unit"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><p>${esc(c.text)}</p></details><div class="source-note"><a href="${esc(c.source.url)}" target="_blank" rel="noopener">${esc(c.source.section_title)} ↗</a></div></article>`;
     }).join('');
 
     const phrases = u.quotes.length ? `<section class="section"><div class="section-head compact"><div><h2>Key phrases</h2><p>Short phrases worth remembering verbatim. Consult the original page for full context.</p></div></div>${u.quotes.map(q => `<blockquote class="phrase">${esc(q.text)}</blockquote>`).join('')}</section>` : '';
@@ -256,14 +258,14 @@ ${glossaryHTML}
 <section class="unit-hero">
   <div class="eyebrow">Learning unit ${pad(i + 1)} \u00b7 ${esc(p.label)}</div>
   <h1>${esc(p.name)}</h1>
-  <div class="meta-line">${u.concepts.length} concepts \u00b7 ${chunkCount} source chunks${qList ? ' \u00b7 ' + qList.length + ' questions' : ''}</div>
+  <div class="meta-line">${chunksForUnit(u.id).length} concepts \u00b7 ${chunkCount} source chunks${qList ? ' \u00b7 ' + qList.length + ' questions' : ''}</div>
   <div class="actions">
     <a class="btn primary" href="${esc(u.source_url)}" target="_blank" rel="noopener">Read the original \u2197</a>
     ${testHref ? `<a class="btn" href="${testHref}">Take unit test</a>` : ''}
     ${meta.links.mindMap ? `<a class="btn" href="${dir + meta.links.mindMap}">Mind map</a>` : ''}
   </div>
 </section>
-<section class="section" id="concepts"><div class="section-head compact"><div><h2>Concepts</h2><p>${chunkData ? 'Open "Source passage" on any concept to read the exact text it came from.' : "The book's ideas, one at a time, tied to their source."}</p></div></div><div class="grid">${concepts}</div></section>
+<section class="section" id="concepts"><div class="section-head compact"><div><h2>Concepts</h2><p>Each concept is a canonical learning chunk tied directly to its source.</p></div></div><div class="grid">${concepts}</div></section>
 ${phrases}
 ${termsHTML}
 ${links}
@@ -272,7 +274,7 @@ ${links}
   <div class="metadata-grid">
     <div><span>Source location</span><strong>${esc(p.label)}</strong></div>
     <div><span>Source chunks</span><strong>${chunkCount}</strong></div>
-    <div><span>Concepts</span><strong>${u.concepts.length}</strong></div>
+    <div><span>Concepts</span><strong>${chunksForUnit(u.id).length}</strong></div>
     <div><span>Questions</span><strong>${qList ? qList.length : '\u2014'}</strong></div>
     <div><span>Question mix</span><strong style="font-size:13px">${qList ? esc(breakdown(qList)) : '\u2014'}</strong></div>
     <div><span>Original text</span><strong><a href="${esc(u.source_url)}" target="_blank" rel="noopener">al-islam.org \u2197</a></strong></div>
@@ -313,8 +315,8 @@ ${links}
         const live = {};
         await Promise.all(manifest.books.filter(b => b.status === 'full').map(async b => {
           const dir = SITE + dirEnc(b.dir);
-          const [study, qd] = await Promise.all([optional(getJSON(dir + b.data.study)), optional(getJSON(dir + b.data.questions))]);
-          if (study) live[b.id] = { study, qd };
+          const [data, qd] = await Promise.all([optional(getJSON(dir + b.data.chunks)), optional(getJSON(dir + b.data.questions))]);
+          if (data) live[b.id] = { data, qd };
         }));
         library(manifest, live);
       } else {
@@ -322,13 +324,12 @@ ${links}
         if (!meta) throw new Error('Unknown book_id: ' + bookId);
         if (meta.status !== 'full') { legacyNotice(meta); app.setAttribute('aria-busy', 'false'); return; }
         const dir = SITE + dirEnc(meta.dir);
-        const [study, qd, gl] = await Promise.all([getJSON(dir + meta.data.study), optional(getJSON(dir + meta.data.questions)), optional(getJSON(dir + meta.data.glossary))]);
+        const [data, qd, gl] = await Promise.all([getJSON(dir + meta.data.chunks), optional(getJSON(dir + meta.data.questions)), optional(getJSON(dir + meta.data.glossary))]);
         const unit = qs.get('unit');
         if (unit) {
-          const chunks = await optional(getJSON(dir + meta.data.chunks));
-          unitPage(meta, study, qd, gl, chunks, unit);
+          unitPage(meta, data, qd, gl, unit);
         } else {
-          bookHome(meta, study, qd, gl);
+          bookHome(meta, data, qd, gl);
         }
       }
       app.setAttribute('aria-busy', 'false');
