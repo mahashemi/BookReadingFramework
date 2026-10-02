@@ -234,9 +234,15 @@ ${glossaryHTML}
 
     document.title = (p.label === p.name ? p.name : p.label + ' \u2014 ' + p.name) + ' \u00b7 ' + meta.title;
 
+    /* In this book's data, concept.explanation is verbatim identical to the
+       source chunk text (confirmed across all 160 concepts) -- it is the
+       passage, not a distillation of it. Showing both an always-visible
+       "explanation" paragraph and a separate collapsed "source passage"
+       reveal would show a student the same text twice under two labels.
+       Render the title plus a single reveal of the passage instead. */
     const concepts = u.concepts.map(c => {
-      const src = chunkText.get(c.source_chunk_id);
-      return `<article class="card unit"><div class="num">Concept</div><h3>${esc(c.title)}</h3><p>${esc(c.explanation)}</p>${src ? `<details class="passage"><summary>Source passage</summary><p>${esc(src)}</p></details>` : ''}</article>`;
+      const text = chunkText.get(c.source_chunk_id) || c.explanation;
+      return `<article class="card unit"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><p>${esc(text)}</p></details></article>`;
     }).join('');
 
     const phrases = u.quotes.length ? `<section class="section"><div class="section-head compact"><div><h2>Key phrases</h2><p>Short phrases worth remembering verbatim. Consult the original page for full context.</p></div></div>${u.quotes.map(q => `<blockquote class="phrase">${esc(q.text)}</blockquote>`).join('')}</section>` : '';
