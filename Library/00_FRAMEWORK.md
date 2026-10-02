@@ -1,6 +1,6 @@
 # The Deep-Reading Framework
 ### A repeatable pipeline for turning any book into long-term memory
-*Version 1.5 — generic, data-driven framework; validated on Book 01 and Book 02. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
+*Version 1.6 — generic, data-driven framework; validated on Book 01 and Book 02. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
 
 ---
 
@@ -24,6 +24,27 @@ If a study method doesn't map to one of these four, it's probably just re-readin
 ### Module 1 — Full-Text Acquisition
 Read the *entire* book before extracting anything. Partial coverage produces confident-sounding gaps — the single biggest risk in this whole process. If a source is split across editions, uploads, or missing chapters, actively search/fetch the rest before starting Module 2. Verify page/chapter counts against the book's own table of contents.
 
+### Canonical learning-data schema
+Book data follows one stable hierarchy so the UI does not need a different architecture for each book:
+
+~~~
+Book
+└── units[]
+    ├── unit metadata
+    ├── quotes[]
+    ├── connections[]
+    └── chunks[]
+        ├── id
+        ├── title
+        ├── order
+        ├── text
+        ├── source_url
+        └── importance
+~~~
+
+For the current framework, **`units[].chunks[]` is the canonical learning-data structure**. Do not invent parallel chunk collections or duplicate the same chunk data in another JSON file. The UI reads this nested structure directly.
+
+Other data has its own source of truth where needed: the glossary is kept separately in `data/glossary.json`, and questions are kept separately in `exam_bank/questions.json`. Do not add fields merely because a conceptually useful distinction can be named; add schema fields only when the project has an actual need and the schema has been deliberately updated.
 ### Module 2 — Chapter-by-Chapter Extraction
 For every chapter/reading-unit, extract five things:
 - **Key Concepts** — the claims and ideas, in the author's logic, not just topic labels
@@ -195,22 +216,36 @@ We'll build genre-specific templates properly once we've run this pipeline on 2�
 
 ## Source-of-Truth and Traceability
 
-Never invent source content to fill a missing field. If extraction is incomplete, return to the source and acquire the missing material before building the study layer. Keep raw source chunks separate from the final pedagogical JSON.
+Never invent source content to fill a missing field. If extraction is incomplete, return to the source and acquire the missing material before building the study layer.
 
-Recommended layers:
-```
-data/chunks.json        ← source-understanding layer
-data/meta.json          ← source inventory/status
-data/study_bookXX.json  ← structured pedagogical layer
-study_guide/            ← rendered study experience
-exam_bank/              ← master questions + generated exams
-mind_maps/              ← visual review
-teaching_materials/     ← teaching outputs
-```
+### Current canonical data architecture
 
-Each extracted item should retain enough source information to trace it back to its reading-unit/source page.
+For books using the current architecture:
 
----
+~~~
+data/chunks.json        ← canonical book learning data
+  └── units[]
+      └── chunks[]       ← canonical learning/provenance objects
+
+data/glossary.json      ← canonical glossary
+data/meta.json          ← source inventory/status, when needed
+exam_bank/questions.json ← canonical question universe
+study_guide/             ← rendered study experience
+mind_maps/               ← visual review
+teaching_materials/      ← teaching outputs
+~~~
+
+The important rule is **one canonical representation for each kind of information**. In particular, the current chunk schema is the one documented above; do not introduce alternative names such as a second "learning text" field or a parallel chunk schema without first deliberately changing this framework.
+
+Each chunk should retain enough source information to trace it back to its reading-unit/source location. The current chunk-level source locator is `source_url`.
+
+### PDF / book-source rule
+
+When a future book comes from a PDF, the **actual source text must be extracted and retained** so it can later be indexed for search/RAG. Preserve the original source language and retain the page/chapter/section location needed to trace the text back to the book. If the PDF is scanned, OCR is part of the extraction step.
+
+This requirement does **not** change the current UI schema. We will decide deliberately where the extracted PDF source text belongs when the first PDF book is processed, rather than adding speculative fields to every book now.
+
+If the source is Persian, Arabic, Urdu, English, or another language, preserve the original text as the source of truth. A translation may be created when needed for the learning experience, but it must not replace the original source text.
 
 ## Reusing This Framework
 
