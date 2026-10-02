@@ -47,7 +47,8 @@
     const cards = manifest.books.map(b => {
       if (b.status === 'full' && live[b.id]) {
         const { data, qd } = live[b.id];
-        const t = { units: data.units.length, concepts: data.chunks.length, questions: qd ? qd.questions.length : null };
+        const concepts = data.units.reduce((n, u) => n + (u.chunks || []).length, 0);
+        const t = { units: data.units.length, concepts, questions: qd ? qd.questions.length : null };
         return `<a class="card book-card" href="${bookPage(b.id)}">
   <div class="eyebrow">Full learning hub</div>
   <h3>${esc(b.title)}</h3>
@@ -92,8 +93,11 @@
     const dir = SITE + dirEnc(meta.dir);
     const L = k => dir + meta.links[k];
     const units = data.units;
-    const allChunks = data.chunks;
-    const chunksForUnit = id => allChunks.filter(c => c.unit === id);
+    const allChunks = units.flatMap(u => u.chunks || []);
+    const chunksForUnit = id => {
+      const unit = units.find(u => u.id === id);
+      return unit ? (unit.chunks || []) : [];
+    };
     const t = { units: units.length, concepts: allChunks.length, chunks: allChunks.length, questions: qd ? qd.questions.length : null, cross: qd ? qd.questions.filter(q => Array.isArray(q.unit_ids)).length : null };
     const unitQuestions = id => (qd ? qd.questions.filter(q => q.unit_id === id) : null);
     const glossary = gl ? gl.entries : [];
@@ -101,20 +105,20 @@
     const unitCards = units.map((u, i) => {
       const p = parts(u.title);
       const n = unitQuestions(u.id);
-      return `<a class="card unit" href="${unitHref(meta.id, u.id)}"><div class="num">Unit ${pad(i + 1)}${p.label === p.name ? '' : ' \u00b7 ' + esc(p.label)}</div><h3>${esc(p.name)}</h3><p>${chunksForUnit(u.id).length} concepts${n ? ' \u00b7 ' + n.length + ' questions' : ''}</p><span class="more">Open learning unit \u2192</span></a>`;
+      return `<a class="card unit" href="${unitHref(meta.id, u.id)}"><div class="num">Unit ${pad(i + 1)}${p.label === p.name ? '' : ' \u00b7 ' + esc(p.label)}</div><h3>${esc(p.name)}</h3><p>${chunks.length} concepts${n ? ' \u00b7 ' + n.length + ' questions' : ''}</p><span class="more">Open learning unit \u2192</span></a>`;
     }).join('');
 
     const sourceRows = units.map((u, i) => {
       const p = parts(u.title);
-      const chunks = chunksForUnit(u.id).length;
-      return `<div class="source-row"><div><div class="chapter">${esc(p.label)}${p.label === p.name ? '' : ' \u2014 ' + esc(p.name)}</div><div class="coverage">${chunks} source chunks \u00b7 ${chunksForUnit(u.id).length} concepts</div></div><div class="pills"><a class="pill" href="${unitHref(meta.id, u.id)}">Unit ${pad(i + 1)}</a><a class="pill" href="${esc(u.source_url)}" target="_blank" rel="noopener">Original on al-islam.org \u2197</a></div></div>`;
+      const chunks = chunks.length;
+      return `<div class="source-row"><div><div class="chapter">${esc(p.label)}${p.label === p.name ? '' : ' \u2014 ' + esc(p.name)}</div><div class="coverage">${chunks} source chunks \u00b7 ${chunks.length} concepts</div></div><div class="pills"><a class="pill" href="${unitHref(meta.id, u.id)}">Unit ${pad(i + 1)}</a><a class="pill" href="${esc(u.source_url)}" target="_blank" rel="noopener">Original on al-islam.org \u2197</a></div></div>`;
     }).join('');
 
     const conceptRows = units.map((u, i) => {
       const p = parts(u.title);
       const unitChunks = chunksForUnit(u.id);
       const pills = unitChunks.slice(0, 3).map(c => `<a class="pill" href="${unitHref(meta.id, u.id, '#concepts')}">${esc(c.title)}</a>`).join('');
-      return `<div class="source-row"><div><div class="chapter">Unit ${pad(i + 1)} \u00b7 ${esc(p.label)}</div><div class="coverage">${chunksForUnit(u.id).length} source-linked concepts</div></div><div class="pills">${pills}<a class="pill" href="${unitHref(meta.id, u.id, '#concepts')}">All concepts \u2192</a></div></div>`;
+      return `<div class="source-row"><div><div class="chapter">Unit ${pad(i + 1)} \u00b7 ${esc(p.label)}</div><div class="coverage">${chunks.length} source-linked concepts</div></div><div class="pills">${pills}<a class="pill" href="${unitHref(meta.id, u.id, '#concepts')}">All concepts \u2192</a></div></div>`;
     }).join('');
 
     const glossaryHTML = glossary.length ? `
@@ -222,10 +226,10 @@ ${glossaryHTML}
   function unitPage(meta, data, qd, gl, id) {
     const dir = SITE + dirEnc(meta.dir);
     const units = data.units;
-    const chunks = data.chunks.filter(c => c.unit === id);
     const i = units.findIndex(u => u.id === id);
     if (i < 0) { location.replace(bookPage(meta.id)); return; }
     const u = units[i];
+    const chunks = u.chunks || [];
     const p = parts(u.title);
     const prev = units[i - 1], next = units[i + 1];
     const qList = qd ? qd.questions.filter(q => q.unit_id === u.id) : null;
@@ -258,7 +262,7 @@ ${glossaryHTML}
 <section class="unit-hero">
   <div class="eyebrow">Learning unit ${pad(i + 1)} \u00b7 ${esc(p.label)}</div>
   <h1>${esc(p.name)}</h1>
-  <div class="meta-line">${chunksForUnit(u.id).length} concepts \u00b7 ${chunkCount} source chunks${qList ? ' \u00b7 ' + qList.length + ' questions' : ''}</div>
+  <div class="meta-line">${chunks.length} concepts \u00b7 ${chunkCount} source chunks${qList ? ' \u00b7 ' + qList.length + ' questions' : ''}</div>
   <div class="actions">
     <a class="btn primary" href="${esc(u.source_url)}" target="_blank" rel="noopener">Read the original \u2197</a>
     ${testHref ? `<a class="btn" href="${testHref}">Take unit test</a>` : ''}
@@ -274,7 +278,7 @@ ${links}
   <div class="metadata-grid">
     <div><span>Source location</span><strong>${esc(p.label)}</strong></div>
     <div><span>Source chunks</span><strong>${chunkCount}</strong></div>
-    <div><span>Concepts</span><strong>${chunksForUnit(u.id).length}</strong></div>
+    <div><span>Concepts</span><strong>${chunks.length}</strong></div>
     <div><span>Questions</span><strong>${qList ? qList.length : '\u2014'}</strong></div>
     <div><span>Question mix</span><strong style="font-size:13px">${qList ? esc(breakdown(qList)) : '\u2014'}</strong></div>
     <div><span>Original text</span><strong><a href="${esc(u.source_url)}" target="_blank" rel="noopener">al-islam.org \u2197</a></strong></div>
