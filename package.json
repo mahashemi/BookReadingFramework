@@ -1,0 +1,9 @@
+{
+  "name": "book-reading-framework",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Validation tests for the BookReadingFramework repository.",
+  "scripts": {
+    "test": "node --test tests"
+  }
+}
