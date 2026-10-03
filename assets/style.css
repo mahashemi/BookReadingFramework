@@ -169,3 +169,26 @@ blockquote.phrase small { display: block; margin-top: 6px; font-style: normal; f
 }
 @media print { .topbar, .footer, .actions, .unit-nav { display: none; } .card { box-shadow: none; } }
 .term[hidden] { display: none; }
+
+
+/* ---------- source PDF page markers ---------- */
+.pdf-page-marker {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  margin: 1.35rem 0 .7rem;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.2;
+  letter-spacing: .05em;
+  text-transform: none;
+  text-align: center;
+  direction: ltr;
+  opacity: .62;
+}
+.pdf-page-marker::before,
+.pdf-page-marker::after {
+  content: "";
+  flex: 1 1 auto;
+  border-top: 1px solid var(--line);
+}
