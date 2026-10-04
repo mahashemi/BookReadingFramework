@@ -91,7 +91,7 @@ def extract_page_label(soup: BeautifulSoup, url: str) -> str | None:
 
     # Try common attributes/text without assuming a particular site markup.
     patterns = (
-        re.compile(r"page-label\s*[:=]\s*["']?([^"'&<> ]+)", re.I),
+        re.compile(r"""page-label\s*[:=]\s*[\'"]?([^\'"&<> ]+)""", re.I),
         re.compile(r"(?:صفحه|صفحة|page)\s*[-:]?\s*([\d۰-۹]+)", re.I),
     )
     html = str(soup)
