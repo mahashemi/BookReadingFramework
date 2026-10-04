@@ -15,8 +15,7 @@
 
   const tools = document.createElement('div');
   tools.className = 'reader-tools';
-  tools.innerHTML = '<span class="reader-status">برای برجسته‌کردن، متن را انتخاب کنید.</span>' +
-    '<button type="button" data-action="clear">پاک‌کردن برجسته‌ها</button>';
+  tools.innerHTML = '<button type="button" data-action="clear">پاک‌کردن برجسته‌ها</button>';
   root.parentNode.insertBefore(tools, root);
 
   const normalize = s => String(s || '').replace(/\s+/g, ' ').trim();
@@ -72,10 +71,8 @@
       items.push(snippet);
       save([...new Set(items)]);
       sel.removeAllRanges();
-      tools.querySelector('.reader-status').textContent = 'برجسته شد؛ در همین دستگاه ذخیره می‌شود.';
-    } catch (_) {
-      tools.querySelector('.reader-status').textContent = 'این انتخاب را نمی‌توان برجسته کرد؛ بخش کوتاه‌تری را انتخاب کنید.';
-    }
+      return;
+    } catch (_) {}
   });
 
   root.addEventListener('click', event => {
@@ -90,6 +87,5 @@
       mark.replaceWith(document.createTextNode(mark.textContent));
     });
     localStorage.removeItem(key);
-    tools.querySelector('.reader-status').textContent = 'برجسته‌ها پاک شدند.';
   });
 })();
