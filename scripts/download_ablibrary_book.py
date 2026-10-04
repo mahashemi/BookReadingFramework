@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 """
-Download scan pages from ablibrary.net for local OCR/source verification.
+Download textual pages from Ahlulbayt Library for Book 3 source verification.
 
 Example:
     python scripts/download_ablibrary_book.py \
-      --url "https://ablibrary.net/books/17168?page=11&page-label=4" \
-      --output "Library/Book 03 - Jihad al-Nafs/reference/ablibrary"
+      --book-id 17168 \
+      --start-page 1 \
+      --max-pages 200 \
+      --output "reference/ablibrary"
 
-The supplied URL is treated as the page corresponding to the first requested
-download. The script discovers the page image from the HTML, then walks the
-book's ?page=N URLs, saving images and a manifest. It is resumable: existing
-files are skipped unless --force is used.
+For each internal page the script saves:
+    html/page-0001.html   # exact downloaded HTML
+    text/page-0001.txt    # extracted book text
+    manifest.json         # page/source metadata
 
-Notes:
-- ablibrary uses an internal page number and a separate printed page label.
-- We preserve both in manifest.json rather than assuming they are identical.
-- The script does not attempt OCR; the downloaded scans remain the source of truth.
+The HTML is retained so the extraction can be re-run if the site's DOM
+changes. The script does not OCR or silently correct spelling.
 """
 
 from __future__ import annotations
@@ -25,8 +25,8 @@ import json
 import re
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import parse_qs, urlencode, urljoin, urlparse, urlunparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -34,12 +34,15 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 
+BASE_URL = "https://ablibrary.net/book_content/b/{book_id}/{page}"
 DEFAULT_TIMEOUT = 30
 DEFAULT_DELAY = 0.8
 DEFAULT_MAX_PAGES = 500
+
 USER_AGENT = (
-    "Mozilla/5.0 (compatible; BookReadingFramework source downloader/1.0; "
-    "+https://github.com/mahashemi/BookReadingFramework)"
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/140 Safari/537.36"
 )
 
 
@@ -51,7 +54,7 @@ def make_session() -> requests.Session:
         read=5,
         backoff_factor=1.0,
         status_forcelist=(429, 500, 502, 503, 504),
-        allowed_methods=frozenset({"GET", "HEAD"}),
+        allowed_methods=frozenset({"GET"}),
         respect_retry_after_header=True,
     )
     adapter = HTTPAdapter(max_retries=retry)
@@ -60,249 +63,346 @@ def make_session() -> requests.Session:
     session.headers.update(
         {
             "User-Agent": USER_AGENT,
-            "Accept": "text/html,application/xhtml+xml,image/avif,image/webp,*/*;q=0.8",
-            "Accept-Language": "fa,en;q=0.8",
+            "Accept": (
+                "text/html,application/xhtml+xml,application/xml;"
+                "q=0.9,*/*;q=0.8"
+            ),
+            "Accept-Language": "fa,en;q=0.9",
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
         }
     )
     return session
 
 
-def page_url(base_url: str, page_number: int) -> str:
-    parsed = urlparse(base_url)
-    query = parse_qs(parsed.query, keep_blank_values=True)
-    query["page"] = [str(page_number)]
-    # page-label is deliberately removed: the server should derive the label
-    # from the requested internal page, rather than us guessing it.
-    query.pop("page-label", None)
-    return urlunparse(parsed._replace(query=urlencode(query, doseq=True)))
+def normalize_text(text: str) -> str:
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r" *\n *", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
 
 
-def first_int(value: str | None) -> int | None:
-    if not value:
-        return None
-    match = re.search(r"\d+", value)
-    return int(match.group()) if match else None
+def page_url(book_id: str, page: int) -> str:
+    return BASE_URL.format(book_id=book_id, page=page)
 
 
-def extract_page_label(soup: BeautifulSoup, url: str) -> str | None:
-    parsed = parse_qs(urlparse(url).query)
-    if parsed.get("page-label"):
-        return parsed["page-label"][0]
+def extract_metadata(soup: BeautifulSoup, page: int) -> dict:
+    title = None
+    description = None
+    printed_page = None
 
-    # Try common attributes/text without assuming a particular site markup.
-    patterns = (
-        re.compile(r"""page-label\s*[:=]\s*[\'"]?([^\'"&<> ]+)""", re.I),
-        re.compile(r"(?:صفحه|صفحة|page)\s*[-:]?\s*([\d۰-۹]+)", re.I),
-    )
-    html = str(soup)
-    for pattern in patterns:
-        match = pattern.search(html)
+    tag = soup.find("title")
+    if tag:
+        title = tag.get_text(" ", strip=True)
+
+    tag = soup.find("meta", attrs={"name": "description"})
+    if tag:
+        description = tag.get("content")
+
+    if title:
+        match = re.search(r"(?:صفحة|صفحه)\s*([0-9۰-۹]+)", title)
         if match:
-            return match.group(1)
-    return None
+            printed_page = match.group(1)
 
-
-def score_image(url: str, attrs: dict[str, str]) -> int:
-    haystack = " ".join(
-        [
-            url,
-            attrs.get("class", ""),
-            attrs.get("id", ""),
-            attrs.get("alt", ""),
-            attrs.get("data-testid", ""),
-        ]
-    ).lower()
-    score = 0
-    for token, points in (
-        ("page", 8),
-        ("book", 4),
-        ("reader", 4),
-        ("scan", 5),
-        ("image", 2),
-        ("cover", -8),
-        ("logo", -10),
-        ("icon", -10),
-        ("avatar", -10),
-    ):
-        if token in haystack:
-            score += points
-    return score
-
-
-def extract_image_url(soup: BeautifulSoup, page_url_value: str) -> str | None:
-    candidates: list[tuple[int, str]] = []
-
-    for tag in soup.find_all(["img", "source"]):
-        attrs = {str(k): " ".join(v) if isinstance(v, list) else str(v)
-                 for k, v in tag.attrs.items()}
-
-        urls: list[str] = []
-        for key in ("src", "data-src", "data-lazy-src", "data-original", "href"):
-            if attrs.get(key):
-                urls.append(attrs[key])
-
-        srcset = attrs.get("srcset", "")
-        if srcset:
-            urls.extend(item.strip().split(" ")[0] for item in srcset.split(","))
-
-        for raw in urls:
-            if not raw or raw.startswith("data:"):
-                continue
-            absolute = urljoin(page_url_value, raw)
-            if absolute.startswith(("http://", "https://")):
-                candidates.append((score_image(absolute, attrs), absolute))
-
-    if not candidates:
-        return None
-
-    # Prefer likely scan/page images and avoid tiny UI assets.
-    candidates.sort(key=lambda item: item[0], reverse=True)
-    return candidates[0][1]
-
-
-def infer_extension(content_type: str, image_url: str) -> str:
-    content_type = content_type.lower().split(";")[0]
-    mapping = {
-        "image/jpeg": ".jpg",
-        "image/jpg": ".jpg",
-        "image/png": ".png",
-        "image/webp": ".webp",
-        "image/tiff": ".tif",
-        "image/bmp": ".bmp",
+    return {
+        "internal_page": page,
+        "printed_page": printed_page,
+        "title": title,
+        "description": description,
     }
-    if content_type in mapping:
-        return mapping[content_type]
-    suffix = Path(urlparse(image_url).path).suffix.lower()
-    return suffix if suffix in {".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff", ".bmp"} else ".bin"
+
+
+def clean_container(element) -> str:
+    # Remove site chrome and executable content before extracting text.
+    for tag in element.find_all(
+        ["script", "style", "noscript", "svg", "nav", "header", "footer"]
+    ):
+        tag.decompose()
+
+    return normalize_text(element.get_text("\n", strip=True))
+
+
+def find_book_content(soup: BeautifulSoup) -> tuple[str | None, str]:
+    """
+    Find the actual book text rather than blindly extracting the whole body.
+
+    The exact Next.js class names may change, so this uses several signals
+    and chooses the strongest substantial candidate.
+    """
+
+    candidates = []
+
+    selectors = [
+        "article",
+        "main",
+        '[class*="book-content"]',
+        '[class*="bookContent"]',
+        '[class*="reader-content"]',
+        '[class*="readerContent"]',
+        '[class*="page-content"]',
+        '[class*="pageContent"]',
+        '[id*="book-content"]',
+        '[id*="bookContent"]',
+        '[id*="reader-content"]',
+        '[id*="readerContent"]',
+    ]
+
+    for selector in selectors:
+        for element in soup.select(selector):
+            text = clean_container(element)
+            if len(text) < 100:
+                continue
+
+            score = len(text)
+
+            # Reward Persian/Arabic-heavy content.
+            arabic_chars = len(
+                re.findall(r"[\u0600-\u06ff]", text)
+            )
+            score += arabic_chars * 3
+
+            # Penalize obvious site/navigation containers.
+            lowered = text.lower()
+            for token in (
+                "login",
+                "sign in",
+                "facebook",
+                "instagram",
+                "telegram",
+                "search",
+            ):
+                if token in lowered:
+                    score -= 500
+
+            candidates.append((score, text, selector))
+
+    if candidates:
+        candidates.sort(key=lambda x: x[0], reverse=True)
+        _, text, selector = candidates[0]
+        return text, selector
+
+    # Last-resort body extraction. This is deliberately labeled as fallback
+    # in the manifest so it is easy to audit.
+    if soup.body:
+        text = clean_container(soup.body)
+        if len(text) >= 100:
+            return text, "body-fallback"
+
+    return None, "none"
 
 
 def download_page(
     session: requests.Session,
-    url: str,
-    output_dir: Path,
-    page_number: int,
+    book_id: str,
+    page: int,
+    html_dir: Path,
+    text_dir: Path,
     timeout: int,
     force: bool,
 ) -> dict:
+    url = page_url(book_id, page)
+
     response = session.get(url, timeout=timeout)
+
+    if response.status_code == 404:
+        raise FileNotFoundError(f"HTTP 404: {url}")
+
     response.raise_for_status()
 
-    soup = BeautifulSoup(response.text, "html.parser")
-    image_url = extract_image_url(soup, response.url)
-    label = extract_page_label(soup, response.url)
-
-    if not image_url:
+    content_type = response.headers.get("Content-Type", "")
+    if "html" not in content_type.lower():
         raise RuntimeError(
-            "Could not find a page image in the HTML. "
-            "The site may require browser-rendered JavaScript; "
-            "inspect this page before adding a browser-specific adapter: "
-            + response.url
+            f"Unexpected Content-Type {content_type!r} for {url}"
         )
 
-    image_response = session.get(image_url, timeout=timeout, stream=True)
-    image_response.raise_for_status()
+    html = response.text
+    soup = BeautifulSoup(html, "html.parser")
 
-    extension = infer_extension(
-        image_response.headers.get("Content-Type", ""),
-        image_url,
-    )
-    filename = f"page-{page_number:04d}{extension}"
-    destination = output_dir / filename
+    metadata = extract_metadata(soup, page)
+    text, extraction_method = find_book_content(soup)
 
-    if force or not destination.exists() or destination.stat().st_size == 0:
-        with destination.open("wb") as handle:
-            for chunk in image_response.iter_content(chunk_size=1024 * 256):
-                if chunk:
-                    handle.write(chunk)
+    if not text:
+        # Description is useful for diagnostics, but it is often truncated
+        # and therefore is never presented as a successful full extraction.
+        description = metadata.get("description")
+        if description:
+            text = normalize_text(description)
+            extraction_method = "meta-description-fallback"
+        else:
+            raise RuntimeError(
+                "Could not locate book text in the downloaded HTML."
+            )
+
+    html_file = html_dir / f"page-{page:04d}.html"
+    text_file = text_dir / f"page-{page:04d}.txt"
+
+    if force or not html_file.exists():
+        html_file.write_text(html, encoding="utf-8")
+
+    if force or not text_file.exists():
+        text_file.write_text(text, encoding="utf-8")
 
     return {
-        "page": page_number,
-        "page_label": label,
-        "page_url": response.url,
-        "image_url": image_url,
-        "file": filename,
-        "bytes": destination.stat().st_size,
+        "internal_page": page,
+        "printed_page": metadata["printed_page"],
+        "title": metadata["title"],
+        "url": response.url,
+        "html_file": str(html_file),
+        "text_file": str(text_file),
+        "extraction_method": extraction_method,
+        "characters": len(text),
+        "retrieved_at": datetime.now(timezone.utc).isoformat(),
     }
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--url", required=True, help="A valid ablibrary book page URL.")
-    parser.add_argument("--output", required=True, type=Path, help="Local output directory.")
-    parser.add_argument("--start-page", type=int, help="Internal page number to start from.")
-    parser.add_argument("--max-pages", type=int, default=DEFAULT_MAX_PAGES)
-    parser.add_argument("--delay", type=float, default=DEFAULT_DELAY)
-    parser.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT)
-    parser.add_argument("--force", action="store_true", help="Redownload existing files.")
+
+    parser.add_argument(
+        "--book-id",
+        default="17168",
+        help="Ahlulbayt Library book ID (default: 17168).",
+    )
+    parser.add_argument(
+        "--start-page",
+        type=int,
+        default=1,
+        help="First internal page to download (default: 1).",
+    )
+    parser.add_argument(
+        "--max-pages",
+        type=int,
+        default=DEFAULT_MAX_PAGES,
+        help=f"Maximum pages to attempt (default: {DEFAULT_MAX_PAGES}).",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=Path("reference/ablibrary"),
+        help="Output directory.",
+    )
+    parser.add_argument(
+        "--delay",
+        type=float,
+        default=DEFAULT_DELAY,
+        help=f"Delay between requests in seconds (default: {DEFAULT_DELAY}).",
+    )
+    parser.add_argument(
+        "--timeout",
+        type=int,
+        default=DEFAULT_TIMEOUT,
+        help=f"HTTP timeout in seconds (default: {DEFAULT_TIMEOUT}).",
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-download and re-extract existing pages.",
+    )
+
     args = parser.parse_args()
 
-    parsed = urlparse(args.url)
-    book_match = re.search(r"/books/(\d+)", parsed.path)
-    if not book_match:
-        parser.error("--url must look like https://ablibrary.net/books/<book-id>?...")
-
-    start_page = args.start_page
-    if start_page is None:
-        start_page = first_int(parse_qs(parsed.query).get("page", [None])[0])
-    if start_page is None:
-        parser.error("Could not determine the internal page number; pass --start-page.")
+    if args.start_page < 1:
+        parser.error("--start-page must be >= 1")
 
     args.output.mkdir(parents=True, exist_ok=True)
-    manifest_path = args.output / "manifest.json"
-    session = make_session()
+    html_dir = args.output / "html"
+    text_dir = args.output / "text"
+    html_dir.mkdir(exist_ok=True)
+    text_dir.mkdir(exist_ok=True)
 
-    if manifest_path.exists():
+    manifest_path = args.output / "manifest.json"
+
+    if manifest_path.exists() and not args.force:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     else:
         manifest = {
-            "book_id": book_match.group(1),
+            "book_id": str(args.book_id),
             "source": "https://ablibrary.net",
-            "seed_url": args.url,
+            "endpoint": BASE_URL,
             "pages": [],
         }
 
-    existing = {entry["page"]: entry for entry in manifest["pages"]}
+    pages = {
+        item["internal_page"]: item
+        for item in manifest.get("pages", [])
+    }
 
-    print(f"Book {manifest['book_id']}: starting at internal page {start_page}")
+    session = make_session()
+
+    print(f"Book ID: {args.book_id}")
+    print(f"Pages: {args.start_page}.."
+          f"{args.start_page + args.max_pages - 1}")
     print(f"Output: {args.output}")
 
-    consecutive_failures = 0
+    consecutive_404s = 0
 
-    for page_number in range(start_page, start_page + args.max_pages):
-        url = page_url(args.url, page_number)
+    for page in range(
+        args.start_page,
+        args.start_page + args.max_pages,
+    ):
         try:
             entry = download_page(
                 session=session,
-                url=url,
-                output_dir=args.output,
-                page_number=page_number,
+                book_id=str(args.book_id),
+                page=page,
+                html_dir=html_dir,
+                text_dir=text_dir,
                 timeout=args.timeout,
                 force=args.force,
             )
-            existing[page_number] = entry
-            consecutive_failures = 0
-            manifest["pages"] = [existing[n] for n in sorted(existing)]
+
+            pages[page] = entry
+
+            manifest["pages"] = [
+                pages[n] for n in sorted(pages)
+            ]
+            manifest["updated_at"] = datetime.now(
+                timezone.utc
+            ).isoformat()
+
             manifest_path.write_text(
-                json.dumps(manifest, ensure_ascii=False, indent=2),
+                json.dumps(
+                    manifest,
+                    ensure_ascii=False,
+                    indent=2,
+                ),
                 encoding="utf-8",
             )
+
             print(
-                f"✓ page={page_number} label={entry['page_label']} "
-                f"file={entry['file']} bytes={entry['bytes']}"
+                f"✓ internal={page} "
+                f"printed={entry['printed_page']} "
+                f"chars={entry['characters']} "
+                f"via={entry['extraction_method']}"
             )
-        except Exception as exc:
-            consecutive_failures += 1
-            print(f"✗ page={page_number}: {exc}", file=sys.stderr)
-            # A short run of missing pages can be a transient failure. Three
-            # consecutive failures is a safer stopping point than one.
-            if consecutive_failures >= 3:
-                print("Stopping after 3 consecutive failures.", file=sys.stderr)
+
+            consecutive_404s = 0
+
+        except FileNotFoundError as exc:
+            consecutive_404s += 1
+            print(f"✗ {exc}", file=sys.stderr)
+
+            # A few missing pages in a row is a reasonable indication that
+            # we reached the end. Transient HTTP errors are not treated this way.
+            if consecutive_404s >= 3:
+                print(
+                    "Stopping after 3 consecutive 404 pages.",
+                    file=sys.stderr,
+                )
                 break
+
+        except Exception as exc:
+            print(
+                f"✗ internal={page}: {exc}",
+                file=sys.stderr,
+            )
 
         time.sleep(max(0.0, args.delay))
 
+    print()
     print(f"Manifest: {manifest_path}")
-    print(f"Downloaded/recorded pages: {len(existing)}")
+    print(f"Pages recorded: {len(pages)}")
     return 0
 
 
