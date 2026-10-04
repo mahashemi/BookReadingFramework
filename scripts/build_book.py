@@ -21,7 +21,8 @@ import re
 from pathlib import Path
 
 FA_RTL = re.compile(r"[\u0600-\u06ff]")
-ARABIC = re.compile(r"[\u0600-\u06ff]")
+ARABIC = re.compile(r"[\u0621-\u064a]")
+PERSIAN_SPECIFIC = re.compile(r"[پچژگ]")
 HEADING = re.compile(r"^\s*(گفتار\s+.+?)\s*$")
 
 DEFAULT_TEMPLATE = """<!doctype html>
