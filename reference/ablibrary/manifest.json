@@ -2521,7 +2521,227 @@
       "extraction_method": "article",
       "characters": 1141,
       "retrieved_at": "2026-10-04T19:13:01.414357+00:00"
+    },
+    {
+      "internal_page": 231,
+      "printed_page": "224",
+      "title": "جهاد با نفس (فارسى) — صفحة 224 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/231",
+      "html_file": "reference/ablibrary/html/page-0231.html",
+      "text_file": "reference/ablibrary/text/page-0231.txt",
+      "extraction_method": "article",
+      "characters": 1143,
+      "retrieved_at": "2026-10-04T19:15:18.792176+00:00"
+    },
+    {
+      "internal_page": 232,
+      "printed_page": "225",
+      "title": "جهاد با نفس (فارسى) — صفحة 225 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/232",
+      "html_file": "reference/ablibrary/html/page-0232.html",
+      "text_file": "reference/ablibrary/text/page-0232.txt",
+      "extraction_method": "article",
+      "characters": 1176,
+      "retrieved_at": "2026-10-04T19:15:32.680446+00:00"
+    },
+    {
+      "internal_page": 233,
+      "printed_page": "226",
+      "title": "جهاد با نفس (فارسى) — صفحة 226 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/233",
+      "html_file": "reference/ablibrary/html/page-0233.html",
+      "text_file": "reference/ablibrary/text/page-0233.txt",
+      "extraction_method": "article",
+      "characters": 1038,
+      "retrieved_at": "2026-10-04T19:15:25.980628+00:00"
+    },
+    {
+      "internal_page": 234,
+      "printed_page": "227",
+      "title": "جهاد با نفس (فارسى) — صفحة 227 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/234",
+      "html_file": "reference/ablibrary/html/page-0234.html",
+      "text_file": "reference/ablibrary/text/page-0234.txt",
+      "extraction_method": "article",
+      "characters": 1021,
+      "retrieved_at": "2026-10-04T19:15:18.792091+00:00"
+    },
+    {
+      "internal_page": 235,
+      "printed_page": "228",
+      "title": "جهاد با نفس (فارسى) — صفحة 228 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/235",
+      "html_file": "reference/ablibrary/html/page-0235.html",
+      "text_file": "reference/ablibrary/text/page-0235.txt",
+      "extraction_method": "article",
+      "characters": 916,
+      "retrieved_at": "2026-10-04T19:14:16.353824+00:00"
+    },
+    {
+      "internal_page": 236,
+      "printed_page": "229",
+      "title": "جهاد با نفس (فارسى) — صفحة 229 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/236",
+      "html_file": "reference/ablibrary/html/page-0236.html",
+      "text_file": "reference/ablibrary/text/page-0236.txt",
+      "extraction_method": "article",
+      "characters": 940,
+      "retrieved_at": "2026-10-04T19:15:33.721350+00:00"
+    },
+    {
+      "internal_page": 237,
+      "printed_page": "230",
+      "title": "جهاد با نفس (فارسى) — صفحة 230 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/237",
+      "html_file": "reference/ablibrary/html/page-0237.html",
+      "text_file": "reference/ablibrary/text/page-0237.txt",
+      "extraction_method": "article",
+      "characters": 1027,
+      "retrieved_at": "2026-10-04T19:15:33.721160+00:00"
+    },
+    {
+      "internal_page": 238,
+      "printed_page": "231",
+      "title": "جهاد با نفس (فارسى) — صفحة 231 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/238",
+      "html_file": "reference/ablibrary/html/page-0238.html",
+      "text_file": "reference/ablibrary/text/page-0238.txt",
+      "extraction_method": "article",
+      "characters": 1209,
+      "retrieved_at": "2026-10-04T19:16:50.213960+00:00"
+    },
+    {
+      "internal_page": 239,
+      "printed_page": "232",
+      "title": "جهاد با نفس (فارسى) — صفحة 232 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/239",
+      "html_file": "reference/ablibrary/html/page-0239.html",
+      "text_file": "reference/ablibrary/text/page-0239.txt",
+      "extraction_method": "article",
+      "characters": 1070,
+      "retrieved_at": "2026-10-04T19:16:48.625726+00:00"
+    },
+    {
+      "internal_page": 240,
+      "printed_page": "233",
+      "title": "جهاد با نفس (فارسى) — صفحة 233 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/240",
+      "html_file": "reference/ablibrary/html/page-0240.html",
+      "text_file": "reference/ablibrary/text/page-0240.txt",
+      "extraction_method": "article",
+      "characters": 1141,
+      "retrieved_at": "2026-10-04T19:16:44.522634+00:00"
+    },
+    {
+      "internal_page": 241,
+      "printed_page": "234",
+      "title": "جهاد با نفس (فارسى) — صفحة 234 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/241",
+      "html_file": "reference/ablibrary/html/page-0241.html",
+      "text_file": "reference/ablibrary/text/page-0241.txt",
+      "extraction_method": "article",
+      "characters": 1165,
+      "retrieved_at": "2026-10-04T19:17:34.277872+00:00"
+    },
+    {
+      "internal_page": 242,
+      "printed_page": "235",
+      "title": "جهاد با نفس (فارسى) — صفحة 235 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/242",
+      "html_file": "reference/ablibrary/html/page-0242.html",
+      "text_file": "reference/ablibrary/text/page-0242.txt",
+      "extraction_method": "article",
+      "characters": 1071,
+      "retrieved_at": "2026-10-04T19:17:32.821860+00:00"
+    },
+    {
+      "internal_page": 243,
+      "printed_page": "236",
+      "title": "جهاد با نفس (فارسى) — صفحة 236 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/243",
+      "html_file": "reference/ablibrary/html/page-0243.html",
+      "text_file": "reference/ablibrary/text/page-0243.txt",
+      "extraction_method": "article",
+      "characters": 1128,
+      "retrieved_at": "2026-10-04T19:16:51.247475+00:00"
+    },
+    {
+      "internal_page": 244,
+      "printed_page": "237",
+      "title": "جهاد با نفس (فارسى) — صفحة 237 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/244",
+      "html_file": "reference/ablibrary/html/page-0244.html",
+      "text_file": "reference/ablibrary/text/page-0244.txt",
+      "extraction_method": "article",
+      "characters": 1172,
+      "retrieved_at": "2026-10-04T19:17:34.277547+00:00"
+    },
+    {
+      "internal_page": 245,
+      "printed_page": "238",
+      "title": "جهاد با نفس (فارسى) — صفحة 238 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/245",
+      "html_file": "reference/ablibrary/html/page-0245.html",
+      "text_file": "reference/ablibrary/text/page-0245.txt",
+      "extraction_method": "article",
+      "characters": 930,
+      "retrieved_at": "2026-10-04T19:17:32.477888+00:00"
+    },
+    {
+      "internal_page": 246,
+      "printed_page": "239",
+      "title": "جهاد با نفس (فارسى) — صفحة 239 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/246",
+      "html_file": "reference/ablibrary/html/page-0246.html",
+      "text_file": "reference/ablibrary/text/page-0246.txt",
+      "extraction_method": "article",
+      "characters": 1037,
+      "retrieved_at": "2026-10-04T19:18:38.318707+00:00"
+    },
+    {
+      "internal_page": 247,
+      "printed_page": "240",
+      "title": "جهاد با نفس (فارسى) — صفحة 240 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/247",
+      "html_file": "reference/ablibrary/html/page-0247.html",
+      "text_file": "reference/ablibrary/text/page-0247.txt",
+      "extraction_method": "article",
+      "characters": 202,
+      "retrieved_at": "2026-10-04T19:17:35.276327+00:00"
+    },
+    {
+      "internal_page": 248,
+      "printed_page": "241",
+      "title": "جهاد با نفس (فارسى) — صفحة 241 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/248",
+      "html_file": "reference/ablibrary/html/page-0248.html",
+      "text_file": "reference/ablibrary/text/page-0248.txt",
+      "extraction_method": "article",
+      "characters": 628,
+      "retrieved_at": "2026-10-04T19:18:42.188217+00:00"
+    },
+    {
+      "internal_page": 249,
+      "printed_page": "242",
+      "title": "جهاد با نفس (فارسى) — صفحة 242 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/249",
+      "html_file": "reference/ablibrary/html/page-0249.html",
+      "text_file": "reference/ablibrary/text/page-0249.txt",
+      "extraction_method": "article",
+      "characters": 1071,
+      "retrieved_at": "2026-10-04T19:18:42.188086+00:00"
+    },
+    {
+      "internal_page": 250,
+      "printed_page": "243",
+      "title": "جهاد با نفس (فارسى) — صفحة 243 | الشيخ حسين المظاهري",
+      "url": "https://ablibrary.net/book_content/b/17168/250",
+      "html_file": "reference/ablibrary/html/page-0250.html",
+      "text_file": "reference/ablibrary/text/page-0250.txt",
+      "extraction_method": "article",
+      "characters": 1109,
+      "retrieved_at": "2026-10-04T19:18:42.335554+00:00"
     }
   ],
-  "updated_at": "2026-10-04T19:14:15.335215+00:00"
+  "updated_at": "2026-10-04T19:18:42.345033+00:00"
 }
