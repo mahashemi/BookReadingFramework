@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Download textual pages from Ahlulbayt Library for Book 3 source verification.
+Download and canonically extract textual pages from Ahlulbayt Library for Book 3.
 
 Example:
     python scripts/download_ablibrary_book.py \
@@ -14,8 +14,10 @@ For each internal page the script saves:
     text/page-0001.txt    # extracted book text
     manifest.json         # page/source metadata
 
-The HTML is retained so the extraction can be re-run if the site's DOM
-changes. The script does not OCR or silently correct spelling.
+The HTML is retained as the retrieval layer so extraction can be re-run if
+the site's DOM changes. Extracted text is a candidate canonical source only
+when every page uses the same successful DOM extraction path. The script does
+not OCR or silently correct spelling.
 """
 
 from __future__ import annotations
@@ -24,7 +26,9 @@ import argparse
 import json
 import re
 import sys
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -38,6 +42,7 @@ BASE_URL = "https://ablibrary.net/book_content/b/{book_id}/{page}"
 DEFAULT_TIMEOUT = 30
 DEFAULT_DELAY = 0.8
 DEFAULT_MAX_PAGES = 500
+DEFAULT_WORKERS = 5
 
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -192,16 +197,33 @@ def find_book_content(soup: BeautifulSoup) -> tuple[str | None, str]:
     return None, "none"
 
 
+thread_local = threading.local()
+
+
+def get_worker_session() -> requests.Session:
+    """Give each worker its own requests.Session for safe connection reuse."""
+    if not hasattr(thread_local, "session"):
+        thread_local.session = make_session()
+    return thread_local.session
+
+
 def download_page(
-    session: requests.Session,
+    session: requests.Session | None,
     book_id: str,
     page: int,
     html_dir: Path,
     text_dir: Path,
     timeout: int,
     force: bool,
+    delay: float = 0.0,
 ) -> dict:
     url = page_url(book_id, page)
+
+    if session is None:
+        session = get_worker_session()
+
+    if delay > 0:
+        time.sleep(delay)
 
     response = session.get(url, timeout=timeout)
 
@@ -295,6 +317,12 @@ def main() -> int:
         help=f"HTTP timeout in seconds (default: {DEFAULT_TIMEOUT}).",
     )
     parser.add_argument(
+        "--workers",
+        type=int,
+        default=DEFAULT_WORKERS,
+        help=f"Number of parallel download workers (default: {DEFAULT_WORKERS}).",
+    )
+    parser.add_argument(
         "--force",
         action="store_true",
         help="Re-download and re-extract existing pages.",
@@ -304,6 +332,8 @@ def main() -> int:
 
     if args.start_page < 1:
         parser.error("--start-page must be >= 1")
+    if args.workers < 1:
+        parser.error("--workers must be >= 1")
 
     args.output.mkdir(parents=True, exist_ok=True)
     html_dir = args.output / "html"
@@ -328,77 +358,111 @@ def main() -> int:
         for item in manifest.get("pages", [])
     }
 
-    session = make_session()
-
     print(f"Book ID: {args.book_id}")
     print(f"Pages: {args.start_page}.."
           f"{args.start_page + args.max_pages - 1}")
+    print(f"Workers: {args.workers}")
     print(f"Output: {args.output}")
 
+    # Work in batches so we can still detect the end of the book without
+    # scheduling hundreds of speculative requests after the final page.
     consecutive_404s = 0
+    attempted = 0
 
-    for page in range(
-        args.start_page,
-        args.start_page + args.max_pages,
-    ):
-        try:
-            entry = download_page(
-                session=session,
-                book_id=str(args.book_id),
-                page=page,
-                html_dir=html_dir,
-                text_dir=text_dir,
-                timeout=args.timeout,
-                force=args.force,
-            )
+    with ThreadPoolExecutor(max_workers=args.workers) as executor:
+        batch_start = args.start_page
 
-            pages[page] = entry
+        while attempted < args.max_pages:
+            batch_size = min(args.workers, args.max_pages - attempted)
+            batch_pages = list(range(batch_start, batch_start + batch_size))
 
-            manifest["pages"] = [
-                pages[n] for n in sorted(pages)
-            ]
-            manifest["updated_at"] = datetime.now(
-                timezone.utc
-            ).isoformat()
+            futures = {
+                executor.submit(
+                    download_page,
+                    None,
+                    str(args.book_id),
+                    page,
+                    html_dir,
+                    text_dir,
+                    args.timeout,
+                    args.force,
+                    args.delay,
+                ): page
+                for page in batch_pages
+            }
 
-            manifest_path.write_text(
-                json.dumps(
-                    manifest,
-                    ensure_ascii=False,
-                    indent=2,
-                ),
-                encoding="utf-8",
-            )
+            results = {}
+            for future in as_completed(futures):
+                page = futures[future]
+                try:
+                    results[page] = ("ok", future.result())
+                except FileNotFoundError as exc:
+                    results[page] = ("404", str(exc))
+                except Exception as exc:
+                    results[page] = ("error", str(exc))
 
-            print(
-                f"✓ internal={page} "
-                f"printed={entry['printed_page']} "
-                f"chars={entry['characters']} "
-                f"via={entry['extraction_method']}"
-            )
+            for page in batch_pages:
+                status, value = results[page]
 
-            consecutive_404s = 0
+                if status == "ok":
+                    pages[page] = value
+                    print(
+                        f"✓ internal={page} "
+                        f"printed={value['printed_page']} "
+                        f"chars={value['characters']} "
+                        f"via={value['extraction_method']}"
+                    )
+                    consecutive_404s = 0
+                elif status == "404":
+                    print(f"✗ {value}", file=sys.stderr)
+                    consecutive_404s += 1
+                else:
+                    print(f"✗ internal={page}: {value}", file=sys.stderr)
+                    consecutive_404s = 0
 
-        except FileNotFoundError as exc:
-            consecutive_404s += 1
-            print(f"✗ {exc}", file=sys.stderr)
-
-            # A few missing pages in a row is a reasonable indication that
-            # we reached the end. Transient HTTP errors are not treated this way.
-            if consecutive_404s >= 3:
-                print(
-                    "Stopping after 3 consecutive 404 pages.",
-                    file=sys.stderr,
+                attempted += 1
+                manifest["pages"] = [pages[n] for n in sorted(pages)]
+                manifest["updated_at"] = datetime.now(timezone.utc).isoformat()
+                manifest_path.write_text(
+                    json.dumps(manifest, ensure_ascii=False, indent=2),
+                    encoding="utf-8",
                 )
+
+                if consecutive_404s >= 3:
+                    break
+
+            if consecutive_404s >= 3:
+                print("Stopping after 3 consecutive 404 pages.", file=sys.stderr)
                 break
 
-        except Exception as exc:
-            print(
-                f"✗ internal={page}: {exc}",
-                file=sys.stderr,
-            )
+            batch_start += batch_size
 
-        time.sleep(max(0.0, args.delay))
+    extraction_counts = {}
+    for entry in pages.values():
+        method = entry.get("extraction_method", "unknown")
+        extraction_counts[method] = extraction_counts.get(method, 0) + 1
+
+    manifest["extraction_audit"] = {
+        "page_count": len(pages),
+        "methods": extraction_counts,
+        "all_pages_have_text": all(
+            Path(entry["text_file"]).exists() for entry in pages.values()
+        ),
+        "all_pages_have_html": all(
+            Path(entry["html_file"]).exists() for entry in pages.values()
+        ),
+        "canonical_candidate": (
+            len(extraction_counts) == 1
+            and "meta-description-fallback" not in extraction_counts
+            and "body-fallback" not in extraction_counts
+            and "none" not in extraction_counts
+        ),
+    }
+
+    manifest_path.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
 
     print()
     print(f"Manifest: {manifest_path}")
