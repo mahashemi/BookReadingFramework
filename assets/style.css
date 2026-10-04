@@ -203,3 +203,11 @@ pre {
   overflow-wrap: anywhere;
   word-break: normal;
 }
+
+/* Keep source-chapter headings inside the same reading margins as the transcription. */
+body:has(.pdf-page-marker) > article > h1 {
+  width: 90%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
