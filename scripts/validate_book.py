@@ -4,10 +4,11 @@
 from __future__ import annotations
 
 import argparse
-import html as html_lib
 import json
 import re
 from pathlib import Path
+
+from bs4 import BeautifulSoup
 
 MARKER = re.compile(r'data-source-internal-page="(\d+)"')
 
@@ -71,9 +72,42 @@ def main() -> int:
         if 'data-source-book=' not in raw:
             failures.append(f"Chapter {n}: source-book provenance missing")
 
+    # Verify generated HTML contains the actual canonical text for every
+    # source page, not merely a page-number marker.
+    for c in chapters:
+        n = int(c["number"])
+        target = args.output / f"chapter-{n:02d}.html"
+        if not target.exists():
+            continue
+        soup = BeautifulSoup(target.read_text(encoding="utf-8"), "html.parser")
+        markers = soup.select(".pdf-page-marker[data-source-internal-page]")
+        for i, marker in enumerate(markers):
+            page = int(marker["data-source-internal-page"])
+            next_marker = markers[i + 1] if i + 1 < len(markers) else None
+            pieces = []
+            node = marker.next_sibling
+            while node is not None and node is not next_marker:
+                if getattr(node, "get_text", None):
+                    pieces.append(node.get_text(" ", strip=True))
+                node = node.next_sibling
+            generated = norm(" ".join(pieces))
+            expected = pages.get(page)
+            if expected is not None and generated != expected:
+                failures.append(
+                    f"Chapter {n}, source page {page}: generated text differs from canonical text"
+                )
+
     duplicates = sorted({p for p in seen_pages if seen_pages.count(p) > 1})
     if duplicates:
         failures.append(f"Source pages assigned to multiple chapters: {duplicates}")
+
+    if seen_pages:
+        ordered = sorted(set(seen_pages))
+        if ordered != list(range(ordered[0], ordered[-1] + 1)):
+            failures.append(
+                f"Assigned source-page coverage has gaps: expected contiguous range "
+                f"{ordered[0]}–{ordered[-1]}, got {ordered}"
+            )
 
     if failures:
         print("VALIDATION FAILED")
