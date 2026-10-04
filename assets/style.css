@@ -261,3 +261,12 @@ body:has(.pdf-page-marker) > article > h1 {
     font-size: 15px;
   }
 }
+
+
+/* ---------- source-text presentation ---------- */
+.source-page { max-width: 90%; margin: 0 auto; }
+.source-arabic { margin: 1.25rem 0; padding: .85rem 1rem; border-inline-start: 4px solid #3f8f63; background: #eef8f1; color: #246b47; border-radius: 8px; font-family: Georgia, "Noto Naskh Arabic", serif; line-height: 2; }
+.source-arabic strong { color: inherit; }
+.source-footnotes { margin: 1.4rem 0 .4rem; padding: .7rem .9rem; background: var(--soft); border: 1px solid var(--line); border-radius: 8px; color: var(--muted); font-size: .78rem; line-height: 1.7; }
+.source-footnotes strong { display:block; color: var(--gold); margin-bottom: .2rem; font-size: .76rem; }
+.pdf-page-marker { margin: 1.5rem 0 .75rem; color: var(--muted); font-size: .72rem; opacity: .65; text-align: center; }
