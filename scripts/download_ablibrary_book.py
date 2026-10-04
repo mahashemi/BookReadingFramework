@@ -7,7 +7,7 @@ Example:
       --book-id 17168 \
       --start-page 1 \
       --max-pages 200 \
-      --output "reference/ablibrary"
+      --output "reference/ablibrary/jehad-bil-nafs-vol-1-and-2-ayatollah-mazaheri"
 
 For each internal page the script saves:
     html/page-0001.html   # exact downloaded HTML
@@ -258,12 +258,23 @@ def download_page(
 
     html_file = html_dir / f"page-{page:04d}.html"
     text_file = text_dir / f"page-{page:04d}.txt"
+    page_file = pages_dir / f"page-{page:04d}.json"
 
     if force or not html_file.exists():
         html_file.write_text(html, encoding="utf-8")
 
     if force or not text_file.exists():
         text_file.write_text(text, encoding="utf-8")
+
+    page_record = {
+        **metadata,
+        "url": response.url,
+        "extraction_method": extraction_method,
+        "characters": len(text),
+        "text_file": str(text_file),
+    }
+    if force or not page_file.exists():
+        page_file.write_text(json.dumps(page_record, ensure_ascii=False, indent=2), encoding="utf-8")
 
     return {
         "internal_page": page,
@@ -272,6 +283,7 @@ def download_page(
         "url": response.url,
         "html_file": str(html_file),
         "text_file": str(text_file),
+        "page_file": str(page_file),
         "extraction_method": extraction_method,
         "characters": len(text),
         "retrieved_at": datetime.now(timezone.utc).isoformat(),
@@ -301,7 +313,7 @@ def main() -> int:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("reference/ablibrary"),
+        default=Path("reference/ablibrary/jehad-bil-nafs-vol-1-and-2-ayatollah-mazaheri"),
         help="Output directory.",
     )
     parser.add_argument(
@@ -338,8 +350,10 @@ def main() -> int:
     args.output.mkdir(parents=True, exist_ok=True)
     html_dir = args.output / "html"
     text_dir = args.output / "text"
+    pages_dir = args.output / "pages"
     html_dir.mkdir(exist_ok=True)
     text_dir.mkdir(exist_ok=True)
+    pages_dir.mkdir(exist_ok=True)
 
     manifest_path = args.output / "manifest.json"
 
