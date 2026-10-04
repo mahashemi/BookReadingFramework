@@ -270,3 +270,53 @@ body:has(.pdf-page-marker) > article > h1 {
 .source-footnotes { margin: 1.4rem 0 .4rem; padding: .7rem .9rem; background: var(--soft); border: 1px solid var(--line); border-radius: 8px; color: var(--muted); font-size: .78rem; line-height: 1.7; }
 .source-footnotes strong { display:block; color: var(--gold); margin-bottom: .2rem; font-size: .76rem; }
 .pdf-page-marker { margin: 1.5rem 0 .75rem; color: var(--muted); font-size: .72rem; opacity: .65; text-align: center; }
+
+
+/* ---------- focused reading / highlighting ---------- */
+.reader-tools {
+  position: sticky;
+  top: 74px;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+  margin: 0 auto 14px;
+  width: 90%;
+  max-width: 90%;
+  direction: rtl;
+}
+.reader-tools button {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--muted);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.reader-tools button:hover { color: var(--accent); border-color: var(--accent); }
+.reader-tools .reader-status { margin-inline-end: auto; font-size: 11px; color: var(--muted); }
+.reader-highlight {
+  background: #fff1a8;
+  color: inherit;
+  border-radius: 3px;
+  padding: 0 .08em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.reader-focus {
+  background: color-mix(in srgb, var(--accent2) 72%, transparent);
+  border-radius: 8px;
+  padding: .18rem .35rem;
+  margin-inline: -.35rem;
+  transition: background .15s ease;
+}
+@media (prefers-color-scheme: dark) {
+  .reader-highlight { background: #6e5b1b; }
+}
+@media (max-width: 800px) {
+  .reader-tools { width: 94%; max-width: 94%; top: 72px; }
+  .reader-tools .reader-status { display: none; }
+}
