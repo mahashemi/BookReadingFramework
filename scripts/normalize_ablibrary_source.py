@@ -46,6 +46,32 @@ def page_number(path: Path) -> int:
     return int(match.group(1))
 
 
+
+def extract_text_and_paragraphs(html: str) -> tuple[str, list[str]]:
+    soup = BeautifulSoup(html, "html.parser")
+    body = soup.select_one('[itemprop="articleBody"]')
+    if not body:
+        return "", []
+
+    paragraphs = []
+    for child in body.find_all(recursive=False):
+        if child.name == "section" and child.get("data-abl-content") == "footnote":
+            continue
+        nodes = child.find_all(["h1", "h2", "h3", "p", "span"], recursive=True)
+        if not nodes:
+            nodes = [child]
+        for node in nodes:
+            if node.name == "span" and node.find_parent(["h1", "h2", "h3", "p"]):
+                continue
+            raw = node.get_text("\n", strip=True)
+            for line in raw.split("\n"):
+                line = normalize_text(line)
+                if line:
+                    paragraphs.append(line)
+
+    text = normalize_text("\n".join(paragraphs))
+    return text, paragraphs
+
 def extract_references(html: str) -> list[dict]:
     soup = BeautifulSoup(html, "html.parser")
     section = soup.select_one('[data-abl-content="footnote"]')
@@ -152,8 +178,17 @@ def main() -> int:
 
         html = html_file.read_text(encoding="utf-8")
         references = extract_references(html)
+        extracted_text, paragraphs = extract_text_and_paragraphs(html)
 
         record = json.loads(json_file.read_text(encoding="utf-8"))
+        if extracted_text:
+            text_file.write_text(extracted_text, encoding="utf-8")
+            record["characters"] = len(extracted_text)
+            record["description"] = extracted_text
+            record["text"] = extracted_text
+            record["paragraphs"] = paragraphs
+            record["extraction_method"] = "articleBody"
+        record["meta_description"] = record.get("meta_description", record.get("description"))
         record["references"] = references
         record["reference_count"] = len(references)
         json_file.write_text(
