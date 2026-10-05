@@ -132,6 +132,30 @@ def main() -> int:
             elif record["reference_count"] != len(record["references"]):
                 failures.append(f"Source page {p}: reference_count mismatch")
             else:
+                expected_text = source_text
+                if record["references"]:
+                    expected_refs = "\n".join(
+                        [
+                            "هامش",
+                            *[
+                                f"( {ref['marker']} ) . {ref['text']}"
+                                for ref in record["references"]
+                            ],
+                        ]
+                    )
+                    expected_text = norm(
+                        source_text.split("\nهامش\n", 1)[0]
+                        + "\n\n"
+                        + expected_refs
+                    )
+                if expected_text != source_text:
+                    failures.append(
+                        f"Source page {p}: text-file footnotes differ from JSON references"
+                    )
+                if record.get("characters") != len(source_text):
+                    failures.append(
+                        f"Source page {p}: characters does not match canonical text length"
+                    )
                 # References are structural metadata. Their markers may
                 # legitimately remain inline in the prose.
                 for reference in record["references"]:
