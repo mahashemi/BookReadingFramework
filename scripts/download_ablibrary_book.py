@@ -118,6 +118,33 @@ def extract_metadata(soup: BeautifulSoup, page: int) -> dict:
     }
 
 
+def extract_references(soup: BeautifulSoup) -> list[dict]:
+    """Extract the source's cited references from Ahlulbayt footnotes.
+
+    Ahlulbayt marks the reference section with:
+        data-abl-content="footnote"
+    We preserve the displayed footnote text rather than interpreting or
+    normalizing the cited work, chapter, verse, volume, or page.
+    """
+    section = soup.select_one('[data-abl-content="footnote"]')
+    if not section:
+        return []
+
+    references = []
+    for raw in section.get_text("\n", strip=True).splitlines():
+        line = normalize_text(raw)
+        if not line or line == "هامش":
+            continue
+        match = re.match(r"^\(\s*([0-9۰-۹]+)\s*\)\s*[.\-–—]?\s*(.*)$", line)
+        if not match:
+            continue
+        references.append({
+            "marker": match.group(1),
+            "text": match.group(2).strip(),
+        })
+    return references
+
+
 def clean_container(element) -> str:
     # Remove site chrome and executable content before extracting text.
     for tag in element.find_all(
@@ -243,6 +270,7 @@ def download_page(
     soup = BeautifulSoup(html, "html.parser")
 
     metadata = extract_metadata(soup, page)
+    references = extract_references(soup)
     text, extraction_method = find_book_content(soup)
 
     if not text:
@@ -272,6 +300,8 @@ def download_page(
         "url": response.url,
         "extraction_method": extraction_method,
         "characters": len(text),
+        "references": references,
+        "reference_count": len(references),
         "text_file": str(text_file),
     }
     if force or not page_file.exists():
