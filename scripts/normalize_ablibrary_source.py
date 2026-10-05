@@ -49,15 +49,19 @@ def page_number(path: Path) -> int:
 
 
 def extract_text_and_paragraphs(html: str) -> tuple[str, list[str]]:
-    """Extract clean book prose from articleBody.
+    """Extract only the rendered book prose from articleBody.
 
-    The footnote block is the end of the book prose for a page. Everything
-    after it is reader/navigation chrome, even if the site has placed that
-    chrome inside articleBody. References are stored separately.
+    Ahlulbayt puts the book prose, footnotes, and page-navigation UI inside
+    the same articleBody container. The footnote section is the hard boundary:
+    prose before it is retained; the footnote definitions and everything after
+    it are excluded from canonical text/paragraphs.
+
+    We intentionally extract from the rendered DOM rather than JSON-LD
+    articleBody because the rendered DOM preserves the source's line breaks.
     """
     soup = BeautifulSoup(html, "html.parser")
     body = soup.select_one('[itemprop="articleBody"]')
-    if not body:
+    if body is None:
         return "", []
 
     work = BeautifulSoup(str(body), "html.parser").select_one(
@@ -68,6 +72,9 @@ def extract_text_and_paragraphs(html: str) -> tuple[str, list[str]]:
 
     footnote = work.select_one('[data-abl-content="footnote"]')
     if footnote is not None:
+        # Remove everything after the footnote at each ancestor level, then
+        # remove the footnote itself. This prevents navigation/chrome from
+        # leaking into the book text.
         node = footnote
         while node is not work:
             for sibling in list(node.next_siblings):
@@ -75,34 +82,19 @@ def extract_text_and_paragraphs(html: str) -> tuple[str, list[str]]:
             node = node.parent
         footnote.extract()
 
-    paragraphs = []
-    for child in work.find_all(recursive=False):
-        if child.name in {
-            "nav", "header", "footer", "script", "style", "noscript", "svg"
-        }:
-            continue
+    for tag in work.find_all(
+        ["script", "style", "noscript", "svg", "nav", "header", "footer"]
+    ):
+        tag.decompose()
 
-        nodes = child.find_all(["h1", "h2", "h3", "p"], recursive=True)
-        if not nodes:
-            nodes = [child]
+    raw = work.get_text("\n", strip=True)
+    lines = []
+    for line in raw.splitlines():
+        line = normalize_text(line)
+        if line:
+            lines.append(line)
 
-        for node in nodes:
-            raw = node.get_text("\\n", strip=True)
-            for line in raw.split("\\n"):
-                line = normalize_text(line)
-                if line:
-                    paragraphs.append(line)
-
-    if not paragraphs:
-        for node in work.find_all(["h1", "h2", "h3", "p"], recursive=True):
-            raw = node.get_text("\\n", strip=True)
-            for line in raw.split("\\n"):
-                line = normalize_text(line)
-                if line:
-                    paragraphs.append(line)
-
-    return normalize_text("\\n".join(paragraphs)), paragraphs
-
+    return normalize_text("\n".join(lines)), lines
 
 def extract_references(html: str) -> list[dict]:
     soup = BeautifulSoup(html, "html.parser")
