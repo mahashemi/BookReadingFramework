@@ -203,10 +203,6 @@ def main() -> int:
         html = html_file.read_text(encoding="utf-8")
         references = extract_references(html)
         extracted_text, paragraphs = extract_text_and_paragraphs(html)
-        soup = BeautifulSoup(html, "html.parser")
-        meta_tag = soup.find("meta", attrs={"name": "description"})
-        meta_description = meta_tag.get("content") if meta_tag else None
-
         record = json.loads(json_file.read_text(encoding="utf-8"))
         # The .txt file is the canonical page text. Keep page JSON metadata
         # lightweight: paragraphs are useful structure, while duplicating the
