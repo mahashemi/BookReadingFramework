@@ -106,6 +106,16 @@ def main() -> int:
                 failures.append(f"Chapter {n}: missing page JSON {json_path}")
                 continue
             record = json.loads(json_path.read_text(encoding="utf-8"))
+            source_text = pages.get(p, "")
+            if "text" not in record or "paragraphs" not in record:
+                failures.append(f"Source page {p}: full text/paragraph metadata missing")
+            else:
+                json_text = norm(record["text"])
+                paragraph_text = norm("\n".join(record["paragraphs"]))
+                if json_text != source_text:
+                    failures.append(f"Source page {p}: JSON text differs from canonical text file")
+                if paragraph_text != source_text:
+                    failures.append(f"Source page {p}: JSON paragraphs do not reconstruct canonical text")
             if "references" not in record or "reference_count" not in record:
                 failures.append(f"Source page {p}: references metadata missing")
             elif record["reference_count"] != len(record["references"]):
