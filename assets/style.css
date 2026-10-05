@@ -320,3 +320,295 @@ body:has(.pdf-page-marker) > article > h1 {
   .reader-tools { width: 94%; max-width: 94%; top: 72px; }
   .reader-tools .reader-status { display: none; }
 }
+
+
+/* ================================================================
+   Book 03 source reading edition
+   A quiet, book-like reading surface for Persian + Arabic.
+   ================================================================ */
+
+body.source-reading {
+  background: #f5f1e8;
+  color: #292722;
+  font-family: "Vazirmatn", system-ui, sans-serif;
+}
+
+.source-shell {
+  padding-top: 34px;
+  padding-bottom: 72px;
+}
+
+.source-transcription {
+  width: min(100%, 78ch);
+  max-width: 78ch;
+  margin: 0 auto;
+  direction: rtl;
+  text-align: right;
+  font-family: "Vazirmatn", system-ui, sans-serif;
+  font-size: 19px;
+  line-height: 2.15;
+  color: #292722;
+}
+
+.source-chapter-header {
+  text-align: center;
+  margin: 8px auto 46px;
+  padding: 34px 20px 28px;
+}
+
+.source-eyebrow {
+  margin-bottom: 13px;
+  color: #8a6b43;
+  font-family: "Vazirmatn", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .06em;
+}
+
+.source-chapter-title {
+  margin: 0;
+  color: #28231e;
+  font-family: "Noto Serif Arabic", Georgia, serif;
+  font-size: clamp(30px, 4vw, 43px);
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.source-chapter-rule {
+  width: 92px;
+  height: 2px;
+  margin: 22px auto 0;
+  background: #a68a5b;
+  border-radius: 99px;
+}
+
+.source-content {
+  width: 100%;
+}
+
+.source-page {
+  margin: 0;
+  padding: 0 0 8px;
+}
+
+.source-page + .source-page {
+  margin-top: 18px;
+}
+
+.source-page::after {
+  content: "";
+  display: block;
+  width: 42px;
+  margin: 35px auto 8px;
+  border-top: 1px solid #d7cfbf;
+}
+
+.pdf-page-marker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin: 32px 0 22px;
+  color: #958d80;
+  font-family: "Vazirmatn", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: .04em;
+  direction: rtl;
+  opacity: .8;
+}
+
+.pdf-page-marker::before,
+.pdf-page-marker::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #ddd5c7;
+}
+
+.pdf-page-marker span {
+  flex: 0 0 auto;
+  padding: 0 3px;
+}
+
+.source-persian {
+  margin: 0 0 1.15em;
+  color: #292722;
+  font-family: "Noto Serif Arabic", Georgia, serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2.25;
+  letter-spacing: 0;
+  text-align: justify;
+  text-justify: inter-word;
+  hanging-punctuation: allow-end;
+}
+
+.source-arabic {
+  margin: 1.5em 0 1.65em;
+  padding: 1.05em 1.35em 1.1em;
+  border: 0;
+  border-inline-start: 4px solid #8b4d4d;
+  border-radius: 0 10px 10px 0;
+  background: #eee7dc;
+  color: #693b3b;
+  box-shadow: none;
+  font-family: "Noto Serif Arabic", "Amiri", Georgia, serif;
+  font-size: 1.04em;
+  font-weight: 600;
+  line-height: 2.25;
+  text-align: right;
+  direction: rtl;
+}
+
+.source-arabic div {
+  max-width: 100%;
+}
+
+.source-subheading {
+  margin: 2.2em 0 .85em;
+  padding: 0 .9em 0 0;
+  border-inline-start: 3px solid #a68a5b;
+  color: #594a39;
+  font-family: "Noto Serif Arabic", Georgia, serif;
+  font-size: 1.18em;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.source-footnotes {
+  margin: 1.8em 0 1.1em;
+  padding: 1em 1.2em 1.1em;
+  border: 1px solid #ddd5c7;
+  border-radius: 10px;
+  background: #eee9df;
+  color: #6f685e;
+  font-family: "Vazirmatn", sans-serif;
+  font-size: .72em;
+  line-height: 1.9;
+}
+
+.source-footnotes-title {
+  margin-bottom: .45em;
+  color: #8a6b43;
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.source-footnotes ol {
+  margin: 0;
+  padding-inline-start: 1.5em;
+}
+
+.source-footnotes li {
+  padding-inline-start: .25em;
+  margin: .25em 0;
+}
+
+@media (max-width: 800px) {
+  body.source-reading {
+    background: #f8f5ee;
+  }
+
+  .source-shell {
+    padding: 18px 17px 48px;
+  }
+
+  .source-transcription {
+    width: 100%;
+    max-width: 100%;
+    font-size: 17px;
+    line-height: 2.12;
+  }
+
+  .source-chapter-header {
+    margin-bottom: 32px;
+    padding: 25px 8px 20px;
+  }
+
+  .source-chapter-title {
+    font-size: 29px;
+  }
+
+  .source-persian {
+    line-height: 2.18;
+    text-align: right;
+  }
+
+  .source-arabic {
+    padding: .85em 1em;
+    line-height: 2.15;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.source-reading {
+    background: #191816;
+    color: #e9e3d8;
+  }
+
+  .source-transcription,
+  .source-persian {
+    color: #e9e3d8;
+  }
+
+  .source-chapter-title {
+    color: #f1ece3;
+  }
+
+  .source-eyebrow,
+  .source-footnotes-title {
+    color: #c2a77a;
+  }
+
+  .source-chapter-rule {
+    background: #9e855f;
+  }
+
+  .source-arabic {
+    background: #302625;
+    color: #e2bcbc;
+    border-inline-start-color: #9f6666;
+  }
+
+  .source-subheading {
+    color: #d5c19e;
+    border-inline-start-color: #aa9064;
+  }
+
+  .source-footnotes {
+    background: #25231f;
+    border-color: #3b3832;
+    color: #aaa298;
+  }
+
+  .pdf-page-marker {
+    color: #8f897f;
+  }
+
+  .pdf-page-marker::before,
+  .pdf-page-marker::after,
+  .source-page::after {
+    border-color: #393630;
+  }
+}
+
+@media print {
+  body.source-reading {
+    background: white;
+  }
+
+  .source-transcription {
+    width: 100%;
+    max-width: none;
+    font-size: 14pt;
+  }
+
+  .source-chapter-header {
+    break-after: avoid;
+  }
+
+  .source-page {
+    break-inside: auto;
+  }
+}
