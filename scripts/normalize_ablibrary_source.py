@@ -7,6 +7,7 @@ updates page JSON metadata without re-downloading the book.
 It:
   * extracts cited references from the site's data-abl-content="footnote"
     section;
+  * keeps references out of paragraphs[] while retaining them in full text;
   * adds references/reference_count to every page JSON and manifest entry;
   * optionally removes front matter before the chosen internal page;
   * audits JSON/HTML/text/manifest page coverage and reports missing pages.
@@ -69,15 +70,20 @@ def extract_text_and_paragraphs(html: str) -> tuple[str, list[str]]:
                 if line:
                     paragraphs.append(line)
 
+    # References are deliberately NOT part of paragraphs[]. They are
+    # represented structurally in references[]. The lossless page text still
+    # includes them below the body text, matching the canonical .txt file.
+    footnote_lines = []
     footnote = body.select_one('[data-abl-content="footnote"]')
     if footnote:
         raw = footnote.get_text("\n", strip=True)
         for line in raw.split("\n"):
             line = normalize_text(line)
             if line and line != "هامش":
-                paragraphs.append(line)
+                footnote_lines.append(line)
 
-    text = normalize_text("\n".join(paragraphs))
+    full_lines = paragraphs + (["هامش"] + footnote_lines if footnote_lines else [])
+    text = normalize_text("\n".join(full_lines))
     return text, paragraphs
 
 
