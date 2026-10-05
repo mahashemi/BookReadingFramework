@@ -49,42 +49,59 @@ def page_number(path: Path) -> int:
 
 
 def extract_text_and_paragraphs(html: str) -> tuple[str, list[str]]:
+    """Extract clean book prose from articleBody.
+
+    The footnote block is the end of the book prose for a page. Everything
+    after it is reader/navigation chrome, even if the site has placed that
+    chrome inside articleBody. References are stored separately.
+    """
     soup = BeautifulSoup(html, "html.parser")
     body = soup.select_one('[itemprop="articleBody"]')
     if not body:
         return "", []
 
+    work = BeautifulSoup(str(body), "html.parser").select_one(
+        '[itemprop="articleBody"]'
+    )
+    if work is None:
+        return "", []
+
+    footnote = work.select_one('[data-abl-content="footnote"]')
+    if footnote is not None:
+        node = footnote
+        while node is not work:
+            for sibling in list(node.next_siblings):
+                sibling.extract()
+            node = node.parent
+        footnote.extract()
+
     paragraphs = []
-    for child in body.find_all(recursive=False):
-        if child.name == "section" and child.get("data-abl-content") == "footnote":
+    for child in work.find_all(recursive=False):
+        if child.name in {
+            "nav", "header", "footer", "script", "style", "noscript", "svg"
+        }:
             continue
-        nodes = child.find_all(["h1", "h2", "h3", "p", "span"], recursive=True)
+
+        nodes = child.find_all(["h1", "h2", "h3", "p"], recursive=True)
         if not nodes:
             nodes = [child]
+
         for node in nodes:
-            if node.name == "span" and node.find_parent(["h1", "h2", "h3", "p"]):
-                continue
-            raw = node.get_text("\n", strip=True)
-            for line in raw.split("\n"):
+            raw = node.get_text("\\n", strip=True)
+            for line in raw.split("\\n"):
                 line = normalize_text(line)
                 if line:
                     paragraphs.append(line)
 
-    # References are deliberately NOT part of paragraphs[]. They are
-    # represented structurally in references[]. The lossless page text still
-    # includes them below the body text, matching the canonical .txt file.
-    footnote_lines = []
-    footnote = body.select_one('[data-abl-content="footnote"]')
-    if footnote:
-        raw = footnote.get_text("\n", strip=True)
-        for line in raw.split("\n"):
-            line = normalize_text(line)
-            if line and line != "هامش":
-                footnote_lines.append(line)
+    if not paragraphs:
+        for node in work.find_all(["h1", "h2", "h3", "p"], recursive=True):
+            raw = node.get_text("\\n", strip=True)
+            for line in raw.split("\\n"):
+                line = normalize_text(line)
+                if line:
+                    paragraphs.append(line)
 
-    full_lines = paragraphs + (["هامش"] + footnote_lines if footnote_lines else [])
-    text = normalize_text("\n".join(full_lines))
-    return text, paragraphs
+    return normalize_text("\\n".join(paragraphs)), paragraphs
 
 
 def extract_references(html: str) -> list[dict]:
