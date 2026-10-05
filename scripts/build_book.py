@@ -38,11 +38,17 @@ DEFAULT_TEMPLATE = """<!doctype html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-<main class="shell">
+<body class="source-reading">
+<main class="shell source-shell">
 <article class="source-transcription" data-source-book="{book}" data-source-volume="{volume}">
-<h1>{title}</h1>
+<header class="source-chapter-header">
+  <div class="source-eyebrow">جهاد با نفس</div>
+  <h1 class="source-chapter-title">{title}</h1>
+  <div class="source-chapter-rule" aria-hidden="true"></div>
+</header>
+<div class="source-content">
 {body}
+</div>
 </article>
 </main>
 <script src="../../../assets/reader.js"></script>
