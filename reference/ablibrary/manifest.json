@@ -54,7 +54,7 @@
       "text_file": "reference/ablibrary/text/page-0011.txt",
       "page_file": "reference/ablibrary/pages/page-0011.json",
       "extraction_method": "article",
-      "characters": 673,
+      "characters": 599,
       "retrieved_at": "2026-10-05T01:20:29.325876+00:00",
       "references": [
         {
@@ -77,7 +77,7 @@
       "text_file": "reference/ablibrary/text/page-0012.txt",
       "page_file": "reference/ablibrary/pages/page-0012.json",
       "extraction_method": "article",
-      "characters": 1075,
+      "characters": 1041,
       "retrieved_at": "2026-10-05T01:20:29.334505+00:00",
       "references": [
         {
@@ -96,7 +96,7 @@
       "text_file": "reference/ablibrary/text/page-0013.txt",
       "page_file": "reference/ablibrary/pages/page-0013.json",
       "extraction_method": "article",
-      "characters": 1156,
+      "characters": 1120,
       "retrieved_at": "2026-10-05T01:20:29.334412+00:00",
       "references": [
         {
@@ -129,7 +129,7 @@
       "text_file": "reference/ablibrary/text/page-0015.txt",
       "page_file": "reference/ablibrary/pages/page-0015.json",
       "extraction_method": "article",
-      "characters": 1276,
+      "characters": 1136,
       "retrieved_at": "2026-10-05T01:20:29.353104+00:00",
       "references": [
         {
@@ -148,7 +148,7 @@
       "text_file": "reference/ablibrary/text/page-0016.txt",
       "page_file": "reference/ablibrary/pages/page-0016.json",
       "extraction_method": "article",
-      "characters": 1242,
+      "characters": 1120,
       "retrieved_at": "2026-10-05T01:20:30.322084+00:00",
       "references": [
         {
@@ -223,7 +223,7 @@
       "text_file": "reference/ablibrary/text/page-0021.txt",
       "page_file": "reference/ablibrary/pages/page-0021.json",
       "extraction_method": "article",
-      "characters": 1045,
+      "characters": 997,
       "retrieved_at": "2026-10-05T01:20:31.399129+00:00",
       "references": [
         {
@@ -242,7 +242,7 @@
       "text_file": "reference/ablibrary/text/page-0022.txt",
       "page_file": "reference/ablibrary/pages/page-0022.json",
       "extraction_method": "article",
-      "characters": 1145,
+      "characters": 1074,
       "retrieved_at": "2026-10-05T01:20:31.348815+00:00",
       "references": [
         {
@@ -261,7 +261,7 @@
       "text_file": "reference/ablibrary/text/page-0023.txt",
       "page_file": "reference/ablibrary/pages/page-0023.json",
       "extraction_method": "article",
-      "characters": 1045,
+      "characters": 1009,
       "retrieved_at": "2026-10-05T01:20:31.362086+00:00",
       "references": [
         {
@@ -280,7 +280,7 @@
       "text_file": "reference/ablibrary/text/page-0024.txt",
       "page_file": "reference/ablibrary/pages/page-0024.json",
       "extraction_method": "article",
-      "characters": 1130,
+      "characters": 972,
       "retrieved_at": "2026-10-05T01:20:31.362156+00:00",
       "references": [
         {
@@ -317,7 +317,7 @@
       "text_file": "reference/ablibrary/text/page-0026.txt",
       "page_file": "reference/ablibrary/pages/page-0026.json",
       "extraction_method": "article",
-      "characters": 1025,
+      "characters": 989,
       "retrieved_at": "2026-10-05T01:20:32.394541+00:00",
       "references": [
         {
@@ -350,7 +350,7 @@
       "text_file": "reference/ablibrary/text/page-0028.txt",
       "page_file": "reference/ablibrary/pages/page-0028.json",
       "extraction_method": "article",
-      "characters": 1141,
+      "characters": 901,
       "retrieved_at": "2026-10-05T01:20:32.394343+00:00",
       "references": [
         {
@@ -369,7 +369,7 @@
       "text_file": "reference/ablibrary/text/page-0029.txt",
       "page_file": "reference/ablibrary/pages/page-0029.json",
       "extraction_method": "article",
-      "characters": 1100,
+      "characters": 1056,
       "retrieved_at": "2026-10-05T01:20:32.408630+00:00",
       "references": [
         {
@@ -416,7 +416,7 @@
       "text_file": "reference/ablibrary/text/page-0032.txt",
       "page_file": "reference/ablibrary/pages/page-0032.json",
       "extraction_method": "article",
-      "characters": 1099,
+      "characters": 1023,
       "retrieved_at": "2026-10-05T01:20:33.472753+00:00",
       "references": [
         {
@@ -443,7 +443,7 @@
       "text_file": "reference/ablibrary/text/page-0033.txt",
       "page_file": "reference/ablibrary/pages/page-0033.json",
       "extraction_method": "article",
-      "characters": 1116,
+      "characters": 1051,
       "retrieved_at": "2026-10-05T01:20:33.472923+00:00",
       "references": [
         {
@@ -466,7 +466,7 @@
       "text_file": "reference/ablibrary/text/page-0034.txt",
       "page_file": "reference/ablibrary/pages/page-0034.json",
       "extraction_method": "article",
-      "characters": 1200,
+      "characters": 1141,
       "retrieved_at": "2026-10-05T01:20:33.394432+00:00",
       "references": [
         {
@@ -485,7 +485,7 @@
       "text_file": "reference/ablibrary/text/page-0035.txt",
       "page_file": "reference/ablibrary/pages/page-0035.json",
       "extraction_method": "article",
-      "characters": 1014,
+      "characters": 967,
       "retrieved_at": "2026-10-05T01:20:33.367727+00:00",
       "references": [
         {
@@ -588,7 +588,7 @@
       "text_file": "reference/ablibrary/text/page-0042.txt",
       "page_file": "reference/ablibrary/pages/page-0042.json",
       "extraction_method": "article",
-      "characters": 1061,
+      "characters": 1025,
       "retrieved_at": "2026-10-05T01:20:35.472406+00:00",
       "references": [
         {
@@ -607,7 +607,7 @@
       "text_file": "reference/ablibrary/text/page-0043.txt",
       "page_file": "reference/ablibrary/pages/page-0043.json",
       "extraction_method": "article",
-      "characters": 1029,
+      "characters": 994,
       "retrieved_at": "2026-10-05T01:20:35.472494+00:00",
       "references": [
         {
@@ -640,7 +640,7 @@
       "text_file": "reference/ablibrary/text/page-0045.txt",
       "page_file": "reference/ablibrary/pages/page-0045.json",
       "extraction_method": "article",
-      "characters": 1039,
+      "characters": 1005,
       "retrieved_at": "2026-10-05T01:20:35.472437+00:00",
       "references": [
         {
@@ -659,7 +659,7 @@
       "text_file": "reference/ablibrary/text/page-0046.txt",
       "page_file": "reference/ablibrary/pages/page-0046.json",
       "extraction_method": "article",
-      "characters": 1075,
+      "characters": 1041,
       "retrieved_at": "2026-10-05T01:20:36.429080+00:00",
       "references": [
         {
@@ -692,7 +692,7 @@
       "text_file": "reference/ablibrary/text/page-0048.txt",
       "page_file": "reference/ablibrary/pages/page-0048.json",
       "extraction_method": "article",
-      "characters": 1137,
+      "characters": 1056,
       "retrieved_at": "2026-10-05T01:20:36.472650+00:00",
       "references": [
         {
@@ -771,7 +771,7 @@
       "text_file": "reference/ablibrary/text/page-0053.txt",
       "page_file": "reference/ablibrary/pages/page-0053.json",
       "extraction_method": "article",
-      "characters": 1075,
+      "characters": 1036,
       "retrieved_at": "2026-10-05T01:20:37.457906+00:00",
       "references": [
         {
@@ -790,7 +790,7 @@
       "text_file": "reference/ablibrary/text/page-0054.txt",
       "page_file": "reference/ablibrary/pages/page-0054.json",
       "extraction_method": "article",
-      "characters": 1114,
+      "characters": 1073,
       "retrieved_at": "2026-10-05T01:20:37.513449+00:00",
       "references": [
         {
@@ -823,7 +823,7 @@
       "text_file": "reference/ablibrary/text/page-0056.txt",
       "page_file": "reference/ablibrary/pages/page-0056.json",
       "extraction_method": "article",
-      "characters": 1102,
+      "characters": 1070,
       "retrieved_at": "2026-10-05T01:20:38.471060+00:00",
       "references": [
         {
@@ -870,7 +870,7 @@
       "text_file": "reference/ablibrary/text/page-0059.txt",
       "page_file": "reference/ablibrary/pages/page-0059.json",
       "extraction_method": "article",
-      "characters": 1157,
+      "characters": 1120,
       "retrieved_at": "2026-10-05T01:20:38.603873+00:00",
       "references": [
         {
@@ -889,7 +889,7 @@
       "text_file": "reference/ablibrary/text/page-0060.txt",
       "page_file": "reference/ablibrary/pages/page-0060.json",
       "extraction_method": "article",
-      "characters": 1027,
+      "characters": 928,
       "retrieved_at": "2026-10-05T01:20:38.589944+00:00",
       "references": [
         {
@@ -922,7 +922,7 @@
       "text_file": "reference/ablibrary/text/page-0062.txt",
       "page_file": "reference/ablibrary/pages/page-0062.json",
       "extraction_method": "article",
-      "characters": 1017,
+      "characters": 981,
       "retrieved_at": "2026-10-05T01:20:39.583450+00:00",
       "references": [
         {
@@ -941,7 +941,7 @@
       "text_file": "reference/ablibrary/text/page-0063.txt",
       "page_file": "reference/ablibrary/pages/page-0063.json",
       "extraction_method": "article",
-      "characters": 1006,
+      "characters": 970,
       "retrieved_at": "2026-10-05T01:20:39.593989+00:00",
       "references": [
         {
@@ -974,7 +974,7 @@
       "text_file": "reference/ablibrary/text/page-0065.txt",
       "page_file": "reference/ablibrary/pages/page-0065.json",
       "extraction_method": "article",
-      "characters": 1046,
+      "characters": 995,
       "retrieved_at": "2026-10-05T01:20:39.583789+00:00",
       "references": [
         {
@@ -1035,7 +1035,7 @@
       "text_file": "reference/ablibrary/text/page-0069.txt",
       "page_file": "reference/ablibrary/pages/page-0069.json",
       "extraction_method": "article",
-      "characters": 285,
+      "characters": 249,
       "retrieved_at": "2026-10-05T01:20:40.587833+00:00",
       "references": [
         {
@@ -1096,7 +1096,7 @@
       "text_file": "reference/ablibrary/text/page-0073.txt",
       "page_file": "reference/ablibrary/pages/page-0073.json",
       "extraction_method": "article",
-      "characters": 997,
+      "characters": 931,
       "retrieved_at": "2026-10-05T01:20:41.634323+00:00",
       "references": [
         {
@@ -1161,7 +1161,7 @@
       "text_file": "reference/ablibrary/text/page-0077.txt",
       "page_file": "reference/ablibrary/pages/page-0077.json",
       "extraction_method": "article",
-      "characters": 1126,
+      "characters": 1092,
       "retrieved_at": "2026-10-05T01:20:42.636760+00:00",
       "references": [
         {
@@ -1194,7 +1194,7 @@
       "text_file": "reference/ablibrary/text/page-0079.txt",
       "page_file": "reference/ablibrary/pages/page-0079.json",
       "extraction_method": "article",
-      "characters": 1067,
+      "characters": 1024,
       "retrieved_at": "2026-10-05T01:20:42.636850+00:00",
       "references": [
         {
@@ -1213,7 +1213,7 @@
       "text_file": "reference/ablibrary/text/page-0080.txt",
       "page_file": "reference/ablibrary/pages/page-0080.json",
       "extraction_method": "article",
-      "characters": 982,
+      "characters": 956,
       "retrieved_at": "2026-10-05T01:20:42.636894+00:00",
       "references": [
         {
@@ -1246,7 +1246,7 @@
       "text_file": "reference/ablibrary/text/page-0082.txt",
       "page_file": "reference/ablibrary/pages/page-0082.json",
       "extraction_method": "article",
-      "characters": 1073,
+      "characters": 1039,
       "retrieved_at": "2026-10-05T01:20:43.633340+00:00",
       "references": [
         {
@@ -1279,7 +1279,7 @@
       "text_file": "reference/ablibrary/text/page-0084.txt",
       "page_file": "reference/ablibrary/pages/page-0084.json",
       "extraction_method": "article",
-      "characters": 1104,
+      "characters": 1028,
       "retrieved_at": "2026-10-05T01:20:43.633285+00:00",
       "references": [
         {
@@ -1298,7 +1298,7 @@
       "text_file": "reference/ablibrary/text/page-0085.txt",
       "page_file": "reference/ablibrary/pages/page-0085.json",
       "extraction_method": "article",
-      "characters": 1024,
+      "characters": 987,
       "retrieved_at": "2026-10-05T01:20:43.633112+00:00",
       "references": [
         {
@@ -1331,7 +1331,7 @@
       "text_file": "reference/ablibrary/text/page-0087.txt",
       "page_file": "reference/ablibrary/pages/page-0087.json",
       "extraction_method": "article",
-      "characters": 742,
+      "characters": 654,
       "retrieved_at": "2026-10-05T01:20:44.637633+00:00",
       "references": [
         {
@@ -1350,7 +1350,7 @@
       "text_file": "reference/ablibrary/text/page-0088.txt",
       "page_file": "reference/ablibrary/pages/page-0088.json",
       "extraction_method": "article",
-      "characters": 1099,
+      "characters": 1063,
       "retrieved_at": "2026-10-05T01:20:44.637749+00:00",
       "references": [
         {
@@ -1369,7 +1369,7 @@
       "text_file": "reference/ablibrary/text/page-0089.txt",
       "page_file": "reference/ablibrary/pages/page-0089.json",
       "extraction_method": "article",
-      "characters": 1042,
+      "characters": 979,
       "retrieved_at": "2026-10-05T01:20:44.637671+00:00",
       "references": [
         {
@@ -1406,7 +1406,7 @@
       "text_file": "reference/ablibrary/text/page-0091.txt",
       "page_file": "reference/ablibrary/pages/page-0091.json",
       "extraction_method": "article",
-      "characters": 1070,
+      "characters": 1033,
       "retrieved_at": "2026-10-05T01:20:45.613565+00:00",
       "references": [
         {
@@ -1425,7 +1425,7 @@
       "text_file": "reference/ablibrary/text/page-0092.txt",
       "page_file": "reference/ablibrary/pages/page-0092.json",
       "extraction_method": "article",
-      "characters": 973,
+      "characters": 886,
       "retrieved_at": "2026-10-05T01:20:45.614141+00:00",
       "references": [
         {
@@ -1448,7 +1448,7 @@
       "text_file": "reference/ablibrary/text/page-0093.txt",
       "page_file": "reference/ablibrary/pages/page-0093.json",
       "extraction_method": "article",
-      "characters": 1078,
+      "characters": 1044,
       "retrieved_at": "2026-10-05T01:20:45.651639+00:00",
       "references": [
         {
@@ -1467,7 +1467,7 @@
       "text_file": "reference/ablibrary/text/page-0094.txt",
       "page_file": "reference/ablibrary/pages/page-0094.json",
       "extraction_method": "article",
-      "characters": 1018,
+      "characters": 981,
       "retrieved_at": "2026-10-05T01:20:45.641942+00:00",
       "references": [
         {
@@ -1500,7 +1500,7 @@
       "text_file": "reference/ablibrary/text/page-0096.txt",
       "page_file": "reference/ablibrary/pages/page-0096.json",
       "extraction_method": "article",
-      "characters": 1126,
+      "characters": 1058,
       "retrieved_at": "2026-10-05T01:20:46.617169+00:00",
       "references": [
         {
@@ -1537,7 +1537,7 @@
       "text_file": "reference/ablibrary/text/page-0098.txt",
       "page_file": "reference/ablibrary/pages/page-0098.json",
       "extraction_method": "article",
-      "characters": 1063,
+      "characters": 994,
       "retrieved_at": "2026-10-05T01:20:46.703120+00:00",
       "references": [
         {
@@ -1556,7 +1556,7 @@
       "text_file": "reference/ablibrary/text/page-0099.txt",
       "page_file": "reference/ablibrary/pages/page-0099.json",
       "extraction_method": "article",
-      "characters": 1168,
+      "characters": 1068,
       "retrieved_at": "2026-10-05T01:20:46.628593+00:00",
       "references": [
         {
@@ -1597,7 +1597,7 @@
       "text_file": "reference/ablibrary/text/page-0101.txt",
       "page_file": "reference/ablibrary/pages/page-0101.json",
       "extraction_method": "article",
-      "characters": 1148,
+      "characters": 1044,
       "retrieved_at": "2026-10-05T01:20:47.641174+00:00",
       "references": [
         {
@@ -1630,7 +1630,7 @@
       "text_file": "reference/ablibrary/text/page-0103.txt",
       "page_file": "reference/ablibrary/pages/page-0103.json",
       "extraction_method": "article",
-      "characters": 980,
+      "characters": 944,
       "retrieved_at": "2026-10-05T01:20:47.670790+00:00",
       "references": [
         {
@@ -1677,7 +1677,7 @@
       "text_file": "reference/ablibrary/text/page-0106.txt",
       "page_file": "reference/ablibrary/pages/page-0106.json",
       "extraction_method": "article",
-      "characters": 1111,
+      "characters": 1075,
       "retrieved_at": "2026-10-05T01:20:48.643853+00:00",
       "references": [
         {
@@ -1696,7 +1696,7 @@
       "text_file": "reference/ablibrary/text/page-0107.txt",
       "page_file": "reference/ablibrary/pages/page-0107.json",
       "extraction_method": "article",
-      "characters": 1088,
+      "characters": 1039,
       "retrieved_at": "2026-10-05T01:20:48.682683+00:00",
       "references": [
         {
@@ -1715,7 +1715,7 @@
       "text_file": "reference/ablibrary/text/page-0108.txt",
       "page_file": "reference/ablibrary/pages/page-0108.json",
       "extraction_method": "article",
-      "characters": 1075,
+      "characters": 1040,
       "retrieved_at": "2026-10-05T01:20:48.682663+00:00",
       "references": [
         {
@@ -1790,7 +1790,7 @@
       "text_file": "reference/ablibrary/text/page-0113.txt",
       "page_file": "reference/ablibrary/pages/page-0113.json",
       "extraction_method": "article",
-      "characters": 1115,
+      "characters": 1082,
       "retrieved_at": "2026-10-05T01:20:49.731875+00:00",
       "references": [
         {
@@ -1809,7 +1809,7 @@
       "text_file": "reference/ablibrary/text/page-0114.txt",
       "page_file": "reference/ablibrary/pages/page-0114.json",
       "extraction_method": "article",
-      "characters": 1046,
+      "characters": 998,
       "retrieved_at": "2026-10-05T01:20:49.680275+00:00",
       "references": [
         {
@@ -1884,7 +1884,7 @@
       "text_file": "reference/ablibrary/text/page-0119.txt",
       "page_file": "reference/ablibrary/pages/page-0119.json",
       "extraction_method": "article",
-      "characters": 1084,
+      "characters": 1049,
       "retrieved_at": "2026-10-05T01:20:50.788735+00:00",
       "references": [
         {
@@ -1945,7 +1945,7 @@
       "text_file": "reference/ablibrary/text/page-0123.txt",
       "page_file": "reference/ablibrary/pages/page-0123.json",
       "extraction_method": "article",
-      "characters": 1093,
+      "characters": 1057,
       "retrieved_at": "2026-10-05T01:20:51.785288+00:00",
       "references": [
         {
@@ -1964,7 +1964,7 @@
       "text_file": "reference/ablibrary/text/page-0124.txt",
       "page_file": "reference/ablibrary/pages/page-0124.json",
       "extraction_method": "article",
-      "characters": 1103,
+      "characters": 1064,
       "retrieved_at": "2026-10-05T01:20:51.778974+00:00",
       "references": [
         {
@@ -1983,7 +1983,7 @@
       "text_file": "reference/ablibrary/text/page-0125.txt",
       "page_file": "reference/ablibrary/pages/page-0125.json",
       "extraction_method": "article",
-      "characters": 1151,
+      "characters": 1079,
       "retrieved_at": "2026-10-05T01:20:51.798336+00:00",
       "references": [
         {
@@ -2006,7 +2006,7 @@
       "text_file": "reference/ablibrary/text/page-0126.txt",
       "page_file": "reference/ablibrary/pages/page-0126.json",
       "extraction_method": "article",
-      "characters": 1159,
+      "characters": 1083,
       "retrieved_at": "2026-10-05T01:20:52.795643+00:00",
       "references": [
         {
@@ -2029,7 +2029,7 @@
       "text_file": "reference/ablibrary/text/page-0127.txt",
       "page_file": "reference/ablibrary/pages/page-0127.json",
       "extraction_method": "article",
-      "characters": 1062,
+      "characters": 1026,
       "retrieved_at": "2026-10-05T01:20:52.791982+00:00",
       "references": [
         {
@@ -2076,7 +2076,7 @@
       "text_file": "reference/ablibrary/text/page-0130.txt",
       "page_file": "reference/ablibrary/pages/page-0130.json",
       "extraction_method": "article",
-      "characters": 1069,
+      "characters": 972,
       "retrieved_at": "2026-10-05T01:20:52.765695+00:00",
       "references": [
         {
@@ -2109,7 +2109,7 @@
       "text_file": "reference/ablibrary/text/page-0132.txt",
       "page_file": "reference/ablibrary/pages/page-0132.json",
       "extraction_method": "article",
-      "characters": 1009,
+      "characters": 973,
       "retrieved_at": "2026-10-05T01:20:53.774555+00:00",
       "references": [
         {
@@ -2170,7 +2170,7 @@
       "text_file": "reference/ablibrary/text/page-0136.txt",
       "page_file": "reference/ablibrary/pages/page-0136.json",
       "extraction_method": "article",
-      "characters": 1331,
+      "characters": 1256,
       "retrieved_at": "2026-10-05T01:20:54.759874+00:00",
       "references": [
         {
@@ -2193,7 +2193,7 @@
       "text_file": "reference/ablibrary/text/page-0137.txt",
       "page_file": "reference/ablibrary/pages/page-0137.json",
       "extraction_method": "article",
-      "characters": 1088,
+      "characters": 1054,
       "retrieved_at": "2026-10-05T01:20:54.772176+00:00",
       "references": [
         {
@@ -2240,7 +2240,7 @@
       "text_file": "reference/ablibrary/text/page-0140.txt",
       "page_file": "reference/ablibrary/pages/page-0140.json",
       "extraction_method": "article",
-      "characters": 1061,
+      "characters": 1026,
       "retrieved_at": "2026-10-05T01:20:54.800270+00:00",
       "references": [
         {
@@ -2329,7 +2329,7 @@
       "text_file": "reference/ablibrary/text/page-0146.txt",
       "page_file": "reference/ablibrary/pages/page-0146.json",
       "extraction_method": "article",
-      "characters": 1182,
+      "characters": 1116,
       "retrieved_at": "2026-10-05T01:20:56.736845+00:00",
       "references": [
         {
@@ -2394,7 +2394,7 @@
       "text_file": "reference/ablibrary/text/page-0150.txt",
       "page_file": "reference/ablibrary/pages/page-0150.json",
       "extraction_method": "article",
-      "characters": 1123,
+      "characters": 1088,
       "retrieved_at": "2026-10-05T01:20:56.777807+00:00",
       "references": [
         {
@@ -2427,7 +2427,7 @@
       "text_file": "reference/ablibrary/text/page-0152.txt",
       "page_file": "reference/ablibrary/pages/page-0152.json",
       "extraction_method": "article",
-      "characters": 1071,
+      "characters": 1007,
       "retrieved_at": "2026-10-05T01:20:57.773377+00:00",
       "references": [
         {
@@ -2450,7 +2450,7 @@
       "text_file": "reference/ablibrary/text/page-0153.txt",
       "page_file": "reference/ablibrary/pages/page-0153.json",
       "extraction_method": "article",
-      "characters": 1042,
+      "characters": 1009,
       "retrieved_at": "2026-10-05T01:20:57.783089+00:00",
       "references": [
         {
@@ -2483,7 +2483,7 @@
       "text_file": "reference/ablibrary/text/page-0155.txt",
       "page_file": "reference/ablibrary/pages/page-0155.json",
       "extraction_method": "article",
-      "characters": 1053,
+      "characters": 990,
       "retrieved_at": "2026-10-05T01:20:57.773449+00:00",
       "references": [
         {
@@ -2506,7 +2506,7 @@
       "text_file": "reference/ablibrary/text/page-0156.txt",
       "page_file": "reference/ablibrary/pages/page-0156.json",
       "extraction_method": "article",
-      "characters": 995,
+      "characters": 962,
       "retrieved_at": "2026-10-05T01:20:58.745166+00:00",
       "references": [
         {
@@ -2525,7 +2525,7 @@
       "text_file": "reference/ablibrary/text/page-0157.txt",
       "page_file": "reference/ablibrary/pages/page-0157.json",
       "extraction_method": "article",
-      "characters": 1082,
+      "characters": 1046,
       "retrieved_at": "2026-10-05T01:20:58.790337+00:00",
       "references": [
         {
@@ -2544,7 +2544,7 @@
       "text_file": "reference/ablibrary/text/page-0158.txt",
       "page_file": "reference/ablibrary/pages/page-0158.json",
       "extraction_method": "article",
-      "characters": 958,
+      "characters": 891,
       "retrieved_at": "2026-10-05T01:20:58.790302+00:00",
       "references": [
         {
@@ -2567,7 +2567,7 @@
       "text_file": "reference/ablibrary/text/page-0159.txt",
       "page_file": "reference/ablibrary/pages/page-0159.json",
       "extraction_method": "article",
-      "characters": 1039,
+      "characters": 974,
       "retrieved_at": "2026-10-05T01:20:58.790397+00:00",
       "references": [
         {
@@ -2590,7 +2590,7 @@
       "text_file": "reference/ablibrary/text/page-0160.txt",
       "page_file": "reference/ablibrary/pages/page-0160.json",
       "extraction_method": "article",
-      "characters": 996,
+      "characters": 933,
       "retrieved_at": "2026-10-05T01:20:58.790358+00:00",
       "references": [
         {
@@ -2613,7 +2613,7 @@
       "text_file": "reference/ablibrary/text/page-0161.txt",
       "page_file": "reference/ablibrary/pages/page-0161.json",
       "extraction_method": "article",
-      "characters": 975,
+      "characters": 939,
       "retrieved_at": "2026-10-05T01:20:59.788443+00:00",
       "references": [
         {
@@ -2646,7 +2646,7 @@
       "text_file": "reference/ablibrary/text/page-0163.txt",
       "page_file": "reference/ablibrary/pages/page-0163.json",
       "extraction_method": "article",
-      "characters": 1039,
+      "characters": 1012,
       "retrieved_at": "2026-10-05T01:20:59.772639+00:00",
       "references": [
         {
@@ -2665,7 +2665,7 @@
       "text_file": "reference/ablibrary/text/page-0164.txt",
       "page_file": "reference/ablibrary/pages/page-0164.json",
       "extraction_method": "article",
-      "characters": 1046,
+      "characters": 1017,
       "retrieved_at": "2026-10-05T01:20:59.788535+00:00",
       "references": [
         {
@@ -2698,7 +2698,7 @@
       "text_file": "reference/ablibrary/text/page-0166.txt",
       "page_file": "reference/ablibrary/pages/page-0166.json",
       "extraction_method": "article",
-      "characters": 1078,
+      "characters": 1003,
       "retrieved_at": "2026-10-05T01:21:00.762185+00:00",
       "references": [
         {
@@ -2791,7 +2791,7 @@
       "text_file": "reference/ablibrary/text/page-0172.txt",
       "page_file": "reference/ablibrary/pages/page-0172.json",
       "extraction_method": "article",
-      "characters": 1059,
+      "characters": 1004,
       "retrieved_at": "2026-10-05T01:21:01.778152+00:00",
       "references": [
         {
@@ -2852,7 +2852,7 @@
       "text_file": "reference/ablibrary/text/page-0176.txt",
       "page_file": "reference/ablibrary/pages/page-0176.json",
       "extraction_method": "article",
-      "characters": 1174,
+      "characters": 1078,
       "retrieved_at": "2026-10-05T01:21:02.779996+00:00",
       "references": [
         {
@@ -2871,7 +2871,7 @@
       "text_file": "reference/ablibrary/text/page-0177.txt",
       "page_file": "reference/ablibrary/pages/page-0177.json",
       "extraction_method": "article",
-      "characters": 1075,
+      "characters": 1062,
       "retrieved_at": "2026-10-05T01:21:02.779843+00:00",
       "references": [
         {
@@ -2904,7 +2904,7 @@
       "text_file": "reference/ablibrary/text/page-0180.txt",
       "page_file": "reference/ablibrary/pages/page-0180.json",
       "extraction_method": "article",
-      "characters": 1171,
+      "characters": 915,
       "retrieved_at": "2026-10-05T01:21:02.779933+00:00",
       "references": [
         {
@@ -2923,7 +2923,7 @@
       "text_file": "reference/ablibrary/text/page-0181.txt",
       "page_file": "reference/ablibrary/pages/page-0181.json",
       "extraction_method": "article",
-      "characters": 1107,
+      "characters": 883,
       "retrieved_at": "2026-10-05T01:21:03.806300+00:00",
       "references": [
         {
@@ -2946,7 +2946,7 @@
       "text_file": "reference/ablibrary/text/page-0182.txt",
       "page_file": "reference/ablibrary/pages/page-0182.json",
       "extraction_method": "article",
-      "characters": 1109,
+      "characters": 873,
       "retrieved_at": "2026-10-05T01:21:03.806260+00:00",
       "references": [
         {
@@ -2965,7 +2965,7 @@
       "text_file": "reference/ablibrary/text/page-0183.txt",
       "page_file": "reference/ablibrary/pages/page-0183.json",
       "extraction_method": "article",
-      "characters": 1024,
+      "characters": 927,
       "retrieved_at": "2026-10-05T01:21:03.806369+00:00",
       "references": [
         {
@@ -3002,7 +3002,7 @@
       "text_file": "reference/ablibrary/text/page-0185.txt",
       "page_file": "reference/ablibrary/pages/page-0185.json",
       "extraction_method": "article",
-      "characters": 1006,
+      "characters": 945,
       "retrieved_at": "2026-10-05T01:21:03.816028+00:00",
       "references": [
         {
@@ -3025,7 +3025,7 @@
       "text_file": "reference/ablibrary/text/page-0186.txt",
       "page_file": "reference/ablibrary/pages/page-0186.json",
       "extraction_method": "article",
-      "characters": 1049,
+      "characters": 926,
       "retrieved_at": "2026-10-05T01:21:04.828666+00:00",
       "references": [
         {
@@ -3044,7 +3044,7 @@
       "text_file": "reference/ablibrary/text/page-0187.txt",
       "page_file": "reference/ablibrary/pages/page-0187.json",
       "extraction_method": "article",
-      "characters": 767,
+      "characters": 746,
       "retrieved_at": "2026-10-05T01:21:04.824883+00:00",
       "references": [
         {
@@ -3109,7 +3109,7 @@
       "text_file": "reference/ablibrary/text/page-0191.txt",
       "page_file": "reference/ablibrary/pages/page-0191.json",
       "extraction_method": "article",
-      "characters": 1279,
+      "characters": 1213,
       "retrieved_at": "2026-10-05T01:21:05.824825+00:00",
       "references": [
         {
@@ -3174,7 +3174,7 @@
       "text_file": "reference/ablibrary/text/page-0195.txt",
       "page_file": "reference/ablibrary/pages/page-0195.json",
       "extraction_method": "article",
-      "characters": 1117,
+      "characters": 1077,
       "retrieved_at": "2026-10-05T01:21:05.785922+00:00",
       "references": [
         {
@@ -3249,7 +3249,7 @@
       "text_file": "reference/ablibrary/text/page-0200.txt",
       "page_file": "reference/ablibrary/pages/page-0200.json",
       "extraction_method": "article",
-      "characters": 1149,
+      "characters": 1113,
       "retrieved_at": "2026-10-05T01:21:06.800065+00:00",
       "references": [
         {
@@ -3324,7 +3324,7 @@
       "text_file": "reference/ablibrary/text/page-0205.txt",
       "page_file": "reference/ablibrary/pages/page-0205.json",
       "extraction_method": "article",
-      "characters": 1086,
+      "characters": 1022,
       "retrieved_at": "2026-10-05T01:21:07.779132+00:00",
       "references": [
         {
@@ -3375,7 +3375,7 @@
       "text_file": "reference/ablibrary/text/page-0208.txt",
       "page_file": "reference/ablibrary/pages/page-0208.json",
       "extraction_method": "article",
-      "characters": 1098,
+      "characters": 1063,
       "retrieved_at": "2026-10-05T01:21:08.839534+00:00",
       "references": [
         {
@@ -3394,7 +3394,7 @@
       "text_file": "reference/ablibrary/text/page-0209.txt",
       "page_file": "reference/ablibrary/pages/page-0209.json",
       "extraction_method": "article",
-      "characters": 1116,
+      "characters": 1078,
       "retrieved_at": "2026-10-05T01:21:08.831026+00:00",
       "references": [
         {
@@ -3441,7 +3441,7 @@
       "text_file": "reference/ablibrary/text/page-0212.txt",
       "page_file": "reference/ablibrary/pages/page-0212.json",
       "extraction_method": "article",
-      "characters": 780,
+      "characters": 740,
       "retrieved_at": "2026-10-05T01:21:09.835702+00:00",
       "references": [
         {
@@ -3460,7 +3460,7 @@
       "text_file": "reference/ablibrary/text/page-0213.txt",
       "page_file": "reference/ablibrary/pages/page-0213.json",
       "extraction_method": "article",
-      "characters": 1087,
+      "characters": 1052,
       "retrieved_at": "2026-10-05T01:21:09.816767+00:00",
       "references": [
         {
@@ -3535,7 +3535,7 @@
       "text_file": "reference/ablibrary/text/page-0218.txt",
       "page_file": "reference/ablibrary/pages/page-0218.json",
       "extraction_method": "article",
-      "characters": 1017,
+      "characters": 982,
       "retrieved_at": "2026-10-05T01:21:10.845467+00:00",
       "references": [
         {
@@ -3568,7 +3568,7 @@
       "text_file": "reference/ablibrary/text/page-0220.txt",
       "page_file": "reference/ablibrary/pages/page-0220.json",
       "extraction_method": "article",
-      "characters": 1115,
+      "characters": 1076,
       "retrieved_at": "2026-10-05T01:21:10.836414+00:00",
       "references": [
         {
@@ -3587,7 +3587,7 @@
       "text_file": "reference/ablibrary/text/page-0221.txt",
       "page_file": "reference/ablibrary/pages/page-0221.json",
       "extraction_method": "article",
-      "characters": 923,
+      "characters": 890,
       "retrieved_at": "2026-10-05T01:21:11.830063+00:00",
       "references": [
         {
@@ -3732,7 +3732,7 @@
       "text_file": "reference/ablibrary/text/page-0231.txt",
       "page_file": "reference/ablibrary/pages/page-0231.json",
       "extraction_method": "article",
-      "characters": 1143,
+      "characters": 1071,
       "retrieved_at": "2026-10-05T01:21:13.789146+00:00",
       "references": [
         {
@@ -3797,7 +3797,7 @@
       "text_file": "reference/ablibrary/text/page-0235.txt",
       "page_file": "reference/ablibrary/pages/page-0235.json",
       "extraction_method": "article",
-      "characters": 916,
+      "characters": 883,
       "retrieved_at": "2026-10-05T01:21:13.808066+00:00",
       "references": [
         {
@@ -3928,7 +3928,7 @@
       "text_file": "reference/ablibrary/text/page-0244.txt",
       "page_file": "reference/ablibrary/pages/page-0244.json",
       "extraction_method": "article",
-      "characters": 1172,
+      "characters": 1060,
       "retrieved_at": "2026-10-05T01:21:15.863076+00:00",
       "references": [
         {
@@ -3961,7 +3961,7 @@
       "text_file": "reference/ablibrary/text/page-0246.txt",
       "page_file": "reference/ablibrary/pages/page-0246.json",
       "extraction_method": "article",
-      "characters": 1037,
+      "characters": 856,
       "retrieved_at": "2026-10-05T01:21:16.815883+00:00",
       "references": [
         {
@@ -4008,7 +4008,7 @@
       "text_file": "reference/ablibrary/text/page-0249.txt",
       "page_file": "reference/ablibrary/pages/page-0249.json",
       "extraction_method": "article",
-      "characters": 1071,
+      "characters": 1003,
       "retrieved_at": "2026-10-05T01:21:16.852161+00:00",
       "references": [
         {
@@ -4031,7 +4031,7 @@
       "text_file": "reference/ablibrary/text/page-0250.txt",
       "page_file": "reference/ablibrary/pages/page-0250.json",
       "extraction_method": "article",
-      "characters": 1109,
+      "characters": 1074,
       "retrieved_at": "2026-10-05T01:21:16.852240+00:00",
       "references": [
         {
@@ -4092,7 +4092,7 @@
       "text_file": "reference/ablibrary/text/page-0254.txt",
       "page_file": "reference/ablibrary/pages/page-0254.json",
       "extraction_method": "article",
-      "characters": 1110,
+      "characters": 1071,
       "retrieved_at": "2026-10-05T01:21:17.972193+00:00",
       "references": [
         {
@@ -4111,7 +4111,7 @@
       "text_file": "reference/ablibrary/text/page-0255.txt",
       "page_file": "reference/ablibrary/pages/page-0255.json",
       "extraction_method": "article",
-      "characters": 1060,
+      "characters": 1026,
       "retrieved_at": "2026-10-05T01:21:17.877641+00:00",
       "references": [
         {
@@ -4242,7 +4242,7 @@
       "text_file": "reference/ablibrary/text/page-0264.txt",
       "page_file": "reference/ablibrary/pages/page-0264.json",
       "extraction_method": "article",
-      "characters": 1044,
+      "characters": 1003,
       "retrieved_at": "2026-10-05T01:21:19.969259+00:00",
       "references": [
         {
@@ -4261,7 +4261,7 @@
       "text_file": "reference/ablibrary/text/page-0265.txt",
       "page_file": "reference/ablibrary/pages/page-0265.json",
       "extraction_method": "article",
-      "characters": 1059,
+      "characters": 1026,
       "retrieved_at": "2026-10-05T01:21:19.959384+00:00",
       "references": [
         {
@@ -4420,7 +4420,7 @@
       "text_file": "reference/ablibrary/text/page-0276.txt",
       "page_file": "reference/ablibrary/pages/page-0276.json",
       "extraction_method": "article",
-      "characters": 989,
+      "characters": 950,
       "retrieved_at": "2026-10-05T01:21:23.007221+00:00",
       "references": [
         {
@@ -4453,7 +4453,7 @@
       "text_file": "reference/ablibrary/text/page-0278.txt",
       "page_file": "reference/ablibrary/pages/page-0278.json",
       "extraction_method": "article",
-      "characters": 715,
+      "characters": 678,
       "retrieved_at": "2026-10-05T01:21:23.007376+00:00",
       "references": [
         {
@@ -4486,7 +4486,7 @@
       "text_file": "reference/ablibrary/text/page-0280.txt",
       "page_file": "reference/ablibrary/pages/page-0280.json",
       "extraction_method": "article",
-      "characters": 1035,
+      "characters": 991,
       "retrieved_at": "2026-10-05T01:21:23.007424+00:00",
       "references": [
         {
@@ -4505,7 +4505,7 @@
       "text_file": "reference/ablibrary/text/page-0281.txt",
       "page_file": "reference/ablibrary/pages/page-0281.json",
       "extraction_method": "article",
-      "characters": 1081,
+      "characters": 941,
       "retrieved_at": "2026-10-05T01:21:24.179549+00:00",
       "references": [
         {
@@ -4524,7 +4524,7 @@
       "text_file": "reference/ablibrary/text/page-0282.txt",
       "page_file": "reference/ablibrary/pages/page-0282.json",
       "extraction_method": "article",
-      "characters": 999,
+      "characters": 960,
       "retrieved_at": "2026-10-05T01:21:24.179674+00:00",
       "references": [
         {
@@ -4599,7 +4599,7 @@
       "text_file": "reference/ablibrary/text/page-0287.txt",
       "page_file": "reference/ablibrary/pages/page-0287.json",
       "extraction_method": "article",
-      "characters": 1086,
+      "characters": 952,
       "retrieved_at": "2026-10-05T01:21:25.193793+00:00",
       "references": [
         {
@@ -4622,7 +4622,7 @@
       "text_file": "reference/ablibrary/text/page-0288.txt",
       "page_file": "reference/ablibrary/pages/page-0288.json",
       "extraction_method": "article",
-      "characters": 1020,
+      "characters": 984,
       "retrieved_at": "2026-10-05T01:21:25.184562+00:00",
       "references": [
         {
@@ -4641,7 +4641,7 @@
       "text_file": "reference/ablibrary/text/page-0289.txt",
       "page_file": "reference/ablibrary/pages/page-0289.json",
       "extraction_method": "article",
-      "characters": 1111,
+      "characters": 1079,
       "retrieved_at": "2026-10-05T01:21:25.184496+00:00",
       "references": [
         {
@@ -4660,7 +4660,7 @@
       "text_file": "reference/ablibrary/text/page-0290.txt",
       "page_file": "reference/ablibrary/pages/page-0290.json",
       "extraction_method": "article",
-      "characters": 1044,
+      "characters": 993,
       "retrieved_at": "2026-10-05T01:21:25.184403+00:00",
       "references": [
         {
@@ -4721,7 +4721,7 @@
       "text_file": "reference/ablibrary/text/page-0294.txt",
       "page_file": "reference/ablibrary/pages/page-0294.json",
       "extraction_method": "article",
-      "characters": 1072,
+      "characters": 1036,
       "retrieved_at": "2026-10-05T01:21:26.211714+00:00",
       "references": [
         {
@@ -4782,7 +4782,7 @@
       "text_file": "reference/ablibrary/text/page-0298.txt",
       "page_file": "reference/ablibrary/pages/page-0298.json",
       "extraction_method": "article",
-      "characters": 1180,
+      "characters": 1146,
       "retrieved_at": "2026-10-05T01:21:27.236447+00:00",
       "references": [
         {
@@ -4829,7 +4829,7 @@
       "text_file": "reference/ablibrary/text/page-0301.txt",
       "page_file": "reference/ablibrary/pages/page-0301.json",
       "extraction_method": "article",
-      "characters": 1019,
+      "characters": 957,
       "retrieved_at": "2026-10-05T01:21:28.239254+00:00",
       "references": [
         {
@@ -4876,7 +4876,7 @@
       "text_file": "reference/ablibrary/text/page-0304.txt",
       "page_file": "reference/ablibrary/pages/page-0304.json",
       "extraction_method": "article",
-      "characters": 1088,
+      "characters": 1053,
       "retrieved_at": "2026-10-05T01:21:28.238857+00:00",
       "references": [
         {
@@ -4951,7 +4951,7 @@
       "text_file": "reference/ablibrary/text/page-0309.txt",
       "page_file": "reference/ablibrary/pages/page-0309.json",
       "extraction_method": "article",
-      "characters": 1042,
+      "characters": 1008,
       "retrieved_at": "2026-10-05T01:21:29.257236+00:00",
       "references": [
         {
@@ -4970,7 +4970,7 @@
       "text_file": "reference/ablibrary/text/page-0310.txt",
       "page_file": "reference/ablibrary/pages/page-0310.json",
       "extraction_method": "article",
-      "characters": 1104,
+      "characters": 1071,
       "retrieved_at": "2026-10-05T01:21:29.257081+00:00",
       "references": [
         {
@@ -4989,7 +4989,7 @@
       "text_file": "reference/ablibrary/text/page-0311.txt",
       "page_file": "reference/ablibrary/pages/page-0311.json",
       "extraction_method": "article",
-      "characters": 1119,
+      "characters": 1086,
       "retrieved_at": "2026-10-05T01:21:30.295265+00:00",
       "references": [
         {
@@ -5050,7 +5050,7 @@
       "text_file": "reference/ablibrary/text/page-0315.txt",
       "page_file": "reference/ablibrary/pages/page-0315.json",
       "extraction_method": "article",
-      "characters": 1076,
+      "characters": 1008,
       "retrieved_at": "2026-10-05T01:21:30.285289+00:00",
       "references": [
         {
@@ -5073,7 +5073,7 @@
       "text_file": "reference/ablibrary/text/page-0316.txt",
       "page_file": "reference/ablibrary/pages/page-0316.json",
       "extraction_method": "article",
-      "characters": 1049,
+      "characters": 1012,
       "retrieved_at": "2026-10-05T01:21:31.289298+00:00",
       "references": [
         {
@@ -5092,7 +5092,7 @@
       "text_file": "reference/ablibrary/text/page-0317.txt",
       "page_file": "reference/ablibrary/pages/page-0317.json",
       "extraction_method": "article",
-      "characters": 301,
+      "characters": 265,
       "retrieved_at": "2026-10-05T01:21:31.312878+00:00",
       "references": [
         {
@@ -5111,7 +5111,7 @@
       "text_file": "reference/ablibrary/text/page-0318.txt",
       "page_file": "reference/ablibrary/pages/page-0318.json",
       "extraction_method": "article",
-      "characters": 735,
+      "characters": 696,
       "retrieved_at": "2026-10-05T01:21:31.303281+00:00",
       "references": [
         {
@@ -5144,7 +5144,7 @@
       "text_file": "reference/ablibrary/text/page-0320.txt",
       "page_file": "reference/ablibrary/pages/page-0320.json",
       "extraction_method": "article",
-      "characters": 987,
+      "characters": 892,
       "retrieved_at": "2026-10-05T01:21:31.303316+00:00",
       "references": [
         {
@@ -5213,7 +5213,7 @@
       "text_file": "reference/ablibrary/text/page-0324.txt",
       "page_file": "reference/ablibrary/pages/page-0324.json",
       "extraction_method": "article",
-      "characters": 981,
+      "characters": 946,
       "retrieved_at": "2026-10-05T01:21:32.533682+00:00",
       "references": [
         {
@@ -5274,7 +5274,7 @@
       "text_file": "reference/ablibrary/text/page-0328.txt",
       "page_file": "reference/ablibrary/pages/page-0328.json",
       "extraction_method": "article",
-      "characters": 1114,
+      "characters": 1080,
       "retrieved_at": "2026-10-05T01:21:33.687494+00:00",
       "references": [
         {
@@ -5335,7 +5335,7 @@
       "text_file": "reference/ablibrary/text/page-0332.txt",
       "page_file": "reference/ablibrary/pages/page-0332.json",
       "extraction_method": "article",
-      "characters": 1114,
+      "characters": 1045,
       "retrieved_at": "2026-10-05T01:21:34.674619+00:00",
       "references": [
         {
@@ -5358,7 +5358,7 @@
       "text_file": "reference/ablibrary/text/page-0333.txt",
       "page_file": "reference/ablibrary/pages/page-0333.json",
       "extraction_method": "article",
-      "characters": 1025,
+      "characters": 989,
       "retrieved_at": "2026-10-05T01:21:34.694976+00:00",
       "references": [
         {
@@ -5405,7 +5405,7 @@
       "text_file": "reference/ablibrary/text/page-0336.txt",
       "page_file": "reference/ablibrary/pages/page-0336.json",
       "extraction_method": "article",
-      "characters": 1079,
+      "characters": 1007,
       "retrieved_at": "2026-10-05T01:21:35.742786+00:00",
       "references": [
         {
@@ -5428,7 +5428,7 @@
       "text_file": "reference/ablibrary/text/page-0337.txt",
       "page_file": "reference/ablibrary/pages/page-0337.json",
       "extraction_method": "article",
-      "characters": 1098,
+      "characters": 1023,
       "retrieved_at": "2026-10-05T01:21:35.711649+00:00",
       "references": [
         {
@@ -5451,7 +5451,7 @@
       "text_file": "reference/ablibrary/text/page-0338.txt",
       "page_file": "reference/ablibrary/pages/page-0338.json",
       "extraction_method": "article",
-      "characters": 1097,
+      "characters": 1057,
       "retrieved_at": "2026-10-05T01:21:35.742878+00:00",
       "references": [
         {
@@ -5470,7 +5470,7 @@
       "text_file": "reference/ablibrary/text/page-0339.txt",
       "page_file": "reference/ablibrary/pages/page-0339.json",
       "extraction_method": "article",
-      "characters": 1153,
+      "characters": 1114,
       "retrieved_at": "2026-10-05T01:21:35.742722+00:00",
       "references": [
         {
@@ -5489,7 +5489,7 @@
       "text_file": "reference/ablibrary/text/page-0340.txt",
       "page_file": "reference/ablibrary/pages/page-0340.json",
       "extraction_method": "article",
-      "characters": 1090,
+      "characters": 1057,
       "retrieved_at": "2026-10-05T01:21:35.711370+00:00",
       "references": [
         {
@@ -5662,7 +5662,7 @@
       "text_file": "reference/ablibrary/text/page-0352.txt",
       "page_file": "reference/ablibrary/pages/page-0352.json",
       "extraction_method": "article",
-      "characters": 1037,
+      "characters": 1003,
       "retrieved_at": "2026-10-05T01:21:38.873330+00:00",
       "references": [
         {
@@ -5709,7 +5709,7 @@
       "text_file": "reference/ablibrary/text/page-0355.txt",
       "page_file": "reference/ablibrary/pages/page-0355.json",
       "extraction_method": "article",
-      "characters": 1062,
+      "characters": 1028,
       "retrieved_at": "2026-10-05T01:21:38.831401+00:00",
       "references": [
         {
@@ -5770,7 +5770,7 @@
       "text_file": "reference/ablibrary/text/page-0359.txt",
       "page_file": "reference/ablibrary/pages/page-0359.json",
       "extraction_method": "article",
-      "characters": 1059,
+      "characters": 1015,
       "retrieved_at": "2026-10-05T01:21:39.869872+00:00",
       "references": [
         {
@@ -5793,7 +5793,7 @@
       "text_file": "reference/ablibrary/text/page-0360.txt",
       "page_file": "reference/ablibrary/pages/page-0360.json",
       "extraction_method": "article",
-      "characters": 980,
+      "characters": 874,
       "retrieved_at": "2026-10-05T01:21:39.889505+00:00",
       "references": [
         {
@@ -5834,7 +5834,7 @@
       "text_file": "reference/ablibrary/text/page-0362.txt",
       "page_file": "reference/ablibrary/pages/page-0362.json",
       "extraction_method": "article",
-      "characters": 1122,
+      "characters": 1057,
       "retrieved_at": "2026-10-05T01:21:40.870799+00:00",
       "references": [
         {
@@ -5857,7 +5857,7 @@
       "text_file": "reference/ablibrary/text/page-0363.txt",
       "page_file": "reference/ablibrary/pages/page-0363.json",
       "extraction_method": "article",
-      "characters": 1170,
+      "characters": 1135,
       "retrieved_at": "2026-10-05T01:21:40.902872+00:00",
       "references": [
         {
@@ -5876,7 +5876,7 @@
       "text_file": "reference/ablibrary/text/page-0364.txt",
       "page_file": "reference/ablibrary/pages/page-0364.json",
       "extraction_method": "article",
-      "characters": 1154,
+      "characters": 1118,
       "retrieved_at": "2026-10-05T01:21:40.902830+00:00",
       "references": [
         {
@@ -5895,7 +5895,7 @@
       "text_file": "reference/ablibrary/text/page-0365.txt",
       "page_file": "reference/ablibrary/pages/page-0365.json",
       "extraction_method": "article",
-      "characters": 1151,
+      "characters": 1051,
       "retrieved_at": "2026-10-05T01:21:40.883258+00:00",
       "references": [
         {
@@ -5936,7 +5936,7 @@
       "text_file": "reference/ablibrary/text/page-0367.txt",
       "page_file": "reference/ablibrary/pages/page-0367.json",
       "extraction_method": "article",
-      "characters": 1119,
+      "characters": 1079,
       "retrieved_at": "2026-10-05T01:21:41.918743+00:00",
       "references": [
         {
@@ -5969,7 +5969,7 @@
       "text_file": "reference/ablibrary/text/page-0369.txt",
       "page_file": "reference/ablibrary/pages/page-0369.json",
       "extraction_method": "article",
-      "characters": 1069,
+      "characters": 1007,
       "retrieved_at": "2026-10-05T01:21:41.918806+00:00",
       "references": [
         {
@@ -6006,7 +6006,7 @@
       "text_file": "reference/ablibrary/text/page-0371.txt",
       "page_file": "reference/ablibrary/pages/page-0371.json",
       "extraction_method": "article",
-      "characters": 1104,
+      "characters": 1039,
       "retrieved_at": "2026-10-05T01:21:42.932589+00:00",
       "references": [
         {
@@ -6057,7 +6057,7 @@
       "text_file": "reference/ablibrary/text/page-0374.txt",
       "page_file": "reference/ablibrary/pages/page-0374.json",
       "extraction_method": "article",
-      "characters": 1164,
+      "characters": 1100,
       "retrieved_at": "2026-10-05T01:21:42.902231+00:00",
       "references": [
         {
@@ -6108,7 +6108,7 @@
       "text_file": "reference/ablibrary/text/page-0377.txt",
       "page_file": "reference/ablibrary/pages/page-0377.json",
       "extraction_method": "article",
-      "characters": 1014,
+      "characters": 982,
       "retrieved_at": "2026-10-05T01:21:43.913592+00:00",
       "references": [
         {
@@ -6127,7 +6127,7 @@
       "text_file": "reference/ablibrary/text/page-0378.txt",
       "page_file": "reference/ablibrary/pages/page-0378.json",
       "extraction_method": "article",
-      "characters": 1026,
+      "characters": 990,
       "retrieved_at": "2026-10-05T01:21:43.934349+00:00",
       "references": [
         {
@@ -6188,7 +6188,7 @@
       "text_file": "reference/ablibrary/text/page-0382.txt",
       "page_file": "reference/ablibrary/pages/page-0382.json",
       "extraction_method": "article",
-      "characters": 1006,
+      "characters": 972,
       "retrieved_at": "2026-10-05T01:21:44.954653+00:00",
       "references": [
         {
@@ -6207,7 +6207,7 @@
       "text_file": "reference/ablibrary/text/page-0383.txt",
       "page_file": "reference/ablibrary/pages/page-0383.json",
       "extraction_method": "article",
-      "characters": 1117,
+      "characters": 1082,
       "retrieved_at": "2026-10-05T01:21:44.954582+00:00",
       "references": [
         {
@@ -6226,7 +6226,7 @@
       "text_file": "reference/ablibrary/text/page-0384.txt",
       "page_file": "reference/ablibrary/pages/page-0384.json",
       "extraction_method": "article",
-      "characters": 951,
+      "characters": 913,
       "retrieved_at": "2026-10-05T01:21:44.949488+00:00",
       "references": [
         {
@@ -6245,7 +6245,7 @@
       "text_file": "reference/ablibrary/text/page-0385.txt",
       "page_file": "reference/ablibrary/pages/page-0385.json",
       "extraction_method": "article",
-      "characters": 1190,
+      "characters": 1098,
       "retrieved_at": "2026-10-05T01:21:44.954553+00:00",
       "references": [
         {
@@ -6328,7 +6328,7 @@
       "text_file": "reference/ablibrary/text/page-0390.txt",
       "page_file": "reference/ablibrary/pages/page-0390.json",
       "extraction_method": "article",
-      "characters": 1113,
+      "characters": 1078,
       "retrieved_at": "2026-10-05T01:21:45.993405+00:00",
       "references": [
         {
@@ -6347,7 +6347,7 @@
       "text_file": "reference/ablibrary/text/page-0391.txt",
       "page_file": "reference/ablibrary/pages/page-0391.json",
       "extraction_method": "article",
-      "characters": 1144,
+      "characters": 1104,
       "retrieved_at": "2026-10-05T01:21:47.064683+00:00",
       "references": [
         {
@@ -6394,7 +6394,7 @@
       "text_file": "reference/ablibrary/text/page-0394.txt",
       "page_file": "reference/ablibrary/pages/page-0394.json",
       "extraction_method": "article",
-      "characters": 1171,
+      "characters": 1135,
       "retrieved_at": "2026-10-05T01:21:47.077210+00:00",
       "references": [
         {
@@ -6413,7 +6413,7 @@
       "text_file": "reference/ablibrary/text/page-0395.txt",
       "page_file": "reference/ablibrary/pages/page-0395.json",
       "extraction_method": "article",
-      "characters": 1055,
+      "characters": 1020,
       "retrieved_at": "2026-10-05T01:21:47.077253+00:00",
       "references": [
         {
@@ -6432,7 +6432,7 @@
       "text_file": "reference/ablibrary/text/page-0396.txt",
       "page_file": "reference/ablibrary/pages/page-0396.json",
       "extraction_method": "article",
-      "characters": 1102,
+      "characters": 1067,
       "retrieved_at": "2026-10-05T01:21:48.103146+00:00",
       "references": [
         {
@@ -6451,7 +6451,7 @@
       "text_file": "reference/ablibrary/text/page-0397.txt",
       "page_file": "reference/ablibrary/pages/page-0397.json",
       "extraction_method": "article",
-      "characters": 1007,
+      "characters": 971,
       "retrieved_at": "2026-10-05T01:21:48.028554+00:00",
       "references": [
         {
@@ -6470,7 +6470,7 @@
       "text_file": "reference/ablibrary/text/page-0398.txt",
       "page_file": "reference/ablibrary/pages/page-0398.json",
       "extraction_method": "article",
-      "characters": 1041,
+      "characters": 1006,
       "retrieved_at": "2026-10-05T01:21:48.083128+00:00",
       "references": [
         {
@@ -6503,7 +6503,7 @@
       "text_file": "reference/ablibrary/text/page-0400.txt",
       "page_file": "reference/ablibrary/pages/page-0400.json",
       "extraction_method": "article",
-      "characters": 1059,
+      "characters": 995,
       "retrieved_at": "2026-10-05T01:21:48.103113+00:00",
       "references": [
         {
@@ -6526,7 +6526,7 @@
       "text_file": "reference/ablibrary/text/page-0401.txt",
       "page_file": "reference/ablibrary/pages/page-0401.json",
       "extraction_method": "article",
-      "characters": 1115,
+      "characters": 1052,
       "retrieved_at": "2026-10-05T01:21:49.090727+00:00",
       "references": [
         {
@@ -6549,7 +6549,7 @@
       "text_file": "reference/ablibrary/text/page-0402.txt",
       "page_file": "reference/ablibrary/pages/page-0402.json",
       "extraction_method": "article",
-      "characters": 1010,
+      "characters": 977,
       "retrieved_at": "2026-10-05T01:21:49.111688+00:00",
       "references": [
         {
@@ -6568,7 +6568,7 @@
       "text_file": "reference/ablibrary/text/page-0403.txt",
       "page_file": "reference/ablibrary/pages/page-0403.json",
       "extraction_method": "article",
-      "characters": 989,
+      "characters": 956,
       "retrieved_at": "2026-10-05T01:21:49.120343+00:00",
       "references": [
         {
@@ -6671,7 +6671,7 @@
       "text_file": "reference/ablibrary/text/page-0410.txt",
       "page_file": "reference/ablibrary/pages/page-0410.json",
       "extraction_method": "article",
-      "characters": 1175,
+      "characters": 1098,
       "retrieved_at": "2026-10-05T01:21:50.136685+00:00",
       "references": [
         {
@@ -6694,7 +6694,7 @@
       "text_file": "reference/ablibrary/text/page-0411.txt",
       "page_file": "reference/ablibrary/pages/page-0411.json",
       "extraction_method": "article",
-      "characters": 1050,
+      "characters": 1015,
       "retrieved_at": "2026-10-05T01:21:51.270668+00:00",
       "references": [
         {
@@ -6713,7 +6713,7 @@
       "text_file": "reference/ablibrary/text/page-0412.txt",
       "page_file": "reference/ablibrary/pages/page-0412.json",
       "extraction_method": "article",
-      "characters": 1144,
+      "characters": 1080,
       "retrieved_at": "2026-10-05T01:21:51.270623+00:00",
       "references": [
         {
@@ -6750,7 +6750,7 @@
       "text_file": "reference/ablibrary/text/page-0414.txt",
       "page_file": "reference/ablibrary/pages/page-0414.json",
       "extraction_method": "article",
-      "characters": 1933,
+      "characters": 1869,
       "retrieved_at": "2026-10-05T01:21:51.233191+00:00",
       "references": [
         {
@@ -6829,7 +6829,7 @@
       "text_file": "reference/ablibrary/text/page-0419.txt",
       "page_file": "reference/ablibrary/pages/page-0419.json",
       "extraction_method": "article",
-      "characters": 1102,
+      "characters": 1068,
       "retrieved_at": "2026-10-05T01:21:52.323861+00:00",
       "references": [
         {
@@ -6974,7 +6974,7 @@
       "text_file": "reference/ablibrary/text/page-0429.txt",
       "page_file": "reference/ablibrary/pages/page-0429.json",
       "extraction_method": "article",
-      "characters": 1038,
+      "characters": 972,
       "retrieved_at": "2026-10-05T01:21:54.319313+00:00",
       "references": [
         {
@@ -6997,7 +6997,7 @@
       "text_file": "reference/ablibrary/text/page-0430.txt",
       "page_file": "reference/ablibrary/pages/page-0430.json",
       "extraction_method": "article",
-      "characters": 987,
+      "characters": 936,
       "retrieved_at": "2026-10-05T01:21:54.342549+00:00",
       "references": [
         {
@@ -7114,7 +7114,7 @@
       "text_file": "reference/ablibrary/text/page-0438.txt",
       "page_file": "reference/ablibrary/pages/page-0438.json",
       "extraction_method": "article",
-      "characters": 1067,
+      "characters": 1034,
       "retrieved_at": "2026-10-05T01:21:56.487222+00:00",
       "references": [
         {
@@ -7287,7 +7287,7 @@
       "text_file": "reference/ablibrary/text/page-0450.txt",
       "page_file": "reference/ablibrary/pages/page-0450.json",
       "extraction_method": "article",
-      "characters": 1164,
+      "characters": 1101,
       "retrieved_at": "2026-10-05T01:21:58.528914+00:00",
       "references": [
         {
@@ -7310,7 +7310,7 @@
       "text_file": "reference/ablibrary/text/page-0451.txt",
       "page_file": "reference/ablibrary/pages/page-0451.json",
       "extraction_method": "article",
-      "characters": 1174,
+      "characters": 1109,
       "retrieved_at": "2026-10-05T01:21:59.558494+00:00",
       "references": [
         {
@@ -7333,7 +7333,7 @@
       "text_file": "reference/ablibrary/text/page-0452.txt",
       "page_file": "reference/ablibrary/pages/page-0452.json",
       "extraction_method": "article",
-      "characters": 1163,
+      "characters": 1123,
       "retrieved_at": "2026-10-05T01:21:59.562445+00:00",
       "references": [
         {
@@ -7506,7 +7506,7 @@
       "text_file": "reference/ablibrary/text/page-0464.txt",
       "page_file": "reference/ablibrary/pages/page-0464.json",
       "extraction_method": "article",
-      "characters": 1096,
+      "characters": 1035,
       "retrieved_at": "2026-10-05T01:22:01.704626+00:00",
       "references": [
         {
@@ -7585,7 +7585,7 @@
       "text_file": "reference/ablibrary/text/page-0469.txt",
       "page_file": "reference/ablibrary/pages/page-0469.json",
       "extraction_method": "article",
-      "characters": 1173,
+      "characters": 1108,
       "retrieved_at": "2026-10-05T01:22:02.704978+00:00",
       "references": [
         {
@@ -7608,7 +7608,7 @@
       "text_file": "reference/ablibrary/text/page-0470.txt",
       "page_file": "reference/ablibrary/pages/page-0470.json",
       "extraction_method": "article",
-      "characters": 1126,
+      "characters": 1093,
       "retrieved_at": "2026-10-05T01:22:02.705037+00:00",
       "references": [
         {
@@ -7655,7 +7655,7 @@
       "text_file": "reference/ablibrary/text/page-0473.txt",
       "page_file": "reference/ablibrary/pages/page-0473.json",
       "extraction_method": "article",
-      "characters": 1009,
+      "characters": 971,
       "retrieved_at": "2026-10-05T01:22:03.730592+00:00",
       "references": [
         {
@@ -7688,7 +7688,7 @@
       "text_file": "reference/ablibrary/text/page-0475.txt",
       "page_file": "reference/ablibrary/pages/page-0475.json",
       "extraction_method": "article",
-      "characters": 1202,
+      "characters": 1138,
       "retrieved_at": "2026-10-05T01:22:03.773116+00:00",
       "references": [
         {
@@ -7711,7 +7711,7 @@
       "text_file": "reference/ablibrary/text/page-0476.txt",
       "page_file": "reference/ablibrary/pages/page-0476.json",
       "extraction_method": "article",
-      "characters": 1108,
+      "characters": 1074,
       "retrieved_at": "2026-10-05T01:22:04.774121+00:00",
       "references": [
         {
@@ -7772,7 +7772,7 @@
       "text_file": "reference/ablibrary/text/page-0480.txt",
       "page_file": "reference/ablibrary/pages/page-0480.json",
       "extraction_method": "article",
-      "characters": 1010,
+      "characters": 976,
       "retrieved_at": "2026-10-05T01:22:04.755976+00:00",
       "references": [
         {
@@ -7791,7 +7791,7 @@
       "text_file": "reference/ablibrary/text/page-0481.txt",
       "page_file": "reference/ablibrary/pages/page-0481.json",
       "extraction_method": "article",
-      "characters": 908,
+      "characters": 895,
       "retrieved_at": "2026-10-05T01:22:05.777621+00:00",
       "references": [
         {
@@ -7880,7 +7880,7 @@
       "text_file": "reference/ablibrary/text/page-0487.txt",
       "page_file": "reference/ablibrary/pages/page-0487.json",
       "extraction_method": "article",
-      "characters": 696,
+      "characters": 661,
       "retrieved_at": "2026-10-05T01:22:06.804312+00:00",
       "references": [
         {
@@ -7899,7 +7899,7 @@
       "text_file": "reference/ablibrary/text/page-0488.txt",
       "page_file": "reference/ablibrary/pages/page-0488.json",
       "extraction_method": "article",
-      "characters": 1007,
+      "characters": 970,
       "retrieved_at": "2026-10-05T01:22:06.784236+00:00",
       "references": [
         {
@@ -7918,7 +7918,7 @@
       "text_file": "reference/ablibrary/text/page-0489.txt",
       "page_file": "reference/ablibrary/pages/page-0489.json",
       "extraction_method": "article",
-      "characters": 1048,
+      "characters": 987,
       "retrieved_at": "2026-10-05T01:22:06.804353+00:00",
       "references": [
         {
@@ -7937,7 +7937,7 @@
       "text_file": "reference/ablibrary/text/page-0490.txt",
       "page_file": "reference/ablibrary/pages/page-0490.json",
       "extraction_method": "article",
-      "characters": 1055,
+      "characters": 1019,
       "retrieved_at": "2026-10-05T01:22:06.784651+00:00",
       "references": [
         {
@@ -7970,7 +7970,7 @@
       "text_file": "reference/ablibrary/text/page-0492.txt",
       "page_file": "reference/ablibrary/pages/page-0492.json",
       "extraction_method": "article",
-      "characters": 1089,
+      "characters": 1050,
       "retrieved_at": "2026-10-05T01:22:07.818116+00:00",
       "references": [
         {
@@ -8059,7 +8059,7 @@
       "text_file": "reference/ablibrary/text/page-0498.txt",
       "page_file": "reference/ablibrary/pages/page-0498.json",
       "extraction_method": "article",
-      "characters": 1058,
+      "characters": 1021,
       "retrieved_at": "2026-10-05T01:22:08.818293+00:00",
       "references": [
         {
@@ -8078,7 +8078,7 @@
       "text_file": "reference/ablibrary/text/page-0499.txt",
       "page_file": "reference/ablibrary/pages/page-0499.json",
       "extraction_method": "article",
-      "characters": 1032,
+      "characters": 996,
       "retrieved_at": "2026-10-05T01:22:08.787320+00:00",
       "references": [
         {
@@ -8097,7 +8097,7 @@
       "text_file": "reference/ablibrary/text/page-0500.txt",
       "page_file": "reference/ablibrary/pages/page-0500.json",
       "extraction_method": "article",
-      "characters": 1094,
+      "characters": 1062,
       "retrieved_at": "2026-10-05T01:22:08.871635+00:00",
       "references": [
         {
@@ -8116,7 +8116,7 @@
       "text_file": "reference/ablibrary/text/page-0501.txt",
       "page_file": "reference/ablibrary/pages/page-0501.json",
       "extraction_method": "article",
-      "characters": 1102,
+      "characters": 1063,
       "retrieved_at": "2026-10-05T01:22:09.921389+00:00",
       "references": [
         {
@@ -8149,7 +8149,7 @@
       "text_file": "reference/ablibrary/text/page-0503.txt",
       "page_file": "reference/ablibrary/pages/page-0503.json",
       "extraction_method": "article",
-      "characters": 1202,
+      "characters": 1078,
       "retrieved_at": "2026-10-05T01:22:09.897292+00:00",
       "references": [
         {
@@ -8180,7 +8180,7 @@
       "text_file": "reference/ablibrary/text/page-0504.txt",
       "page_file": "reference/ablibrary/pages/page-0504.json",
       "extraction_method": "article",
-      "characters": 1139,
+      "characters": 1104,
       "retrieved_at": "2026-10-05T01:22:09.930485+00:00",
       "references": [
         {
@@ -8199,7 +8199,7 @@
       "text_file": "reference/ablibrary/text/page-0505.txt",
       "page_file": "reference/ablibrary/pages/page-0505.json",
       "extraction_method": "article",
-      "characters": 1057,
+      "characters": 1023,
       "retrieved_at": "2026-10-05T01:22:09.921339+00:00",
       "references": [
         {
@@ -8218,7 +8218,7 @@
       "text_file": "reference/ablibrary/text/page-0506.txt",
       "page_file": "reference/ablibrary/pages/page-0506.json",
       "extraction_method": "article",
-      "characters": 1035,
+      "characters": 1003,
       "retrieved_at": "2026-10-05T01:22:10.935355+00:00",
       "references": [
         {
@@ -8237,7 +8237,7 @@
       "text_file": "reference/ablibrary/text/page-0507.txt",
       "page_file": "reference/ablibrary/pages/page-0507.json",
       "extraction_method": "article",
-      "characters": 1169,
+      "characters": 1071,
       "retrieved_at": "2026-10-05T01:22:10.925784+00:00",
       "references": [
         {
@@ -8264,7 +8264,7 @@
       "text_file": "reference/ablibrary/text/page-0508.txt",
       "page_file": "reference/ablibrary/pages/page-0508.json",
       "extraction_method": "article",
-      "characters": 1120,
+      "characters": 1053,
       "retrieved_at": "2026-10-05T01:22:11.006456+00:00",
       "references": [
         {
@@ -8338,6 +8338,6 @@
     "references_extracted": true,
     "pages_with_references": 203,
     "total_references": 268,
-    "page_jsons_updated": 510
+    "page_jsons_updated": 503
   }
 }
