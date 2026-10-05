@@ -263,335 +263,287 @@ body:has(.pdf-page-marker) > article > h1 {
 }
 
 
-/* ---------- source-text presentation ---------- */
-.source-page { max-width: 90%; margin: 0 auto; }
-.source-arabic { margin: 1.25rem 0; padding: .85rem 1rem; border-inline-start: 4px solid #3f8f63; background: #eef8f1; color: #246b47; border-radius: 8px; font-family: Georgia, "Noto Naskh Arabic", serif; line-height: 2; }
-.source-arabic strong { color: inherit; }
-.source-footnotes { margin: 1.4rem 0 .4rem; padding: .7rem .9rem; background: var(--soft); border: 1px solid var(--line); border-radius: 8px; color: var(--muted); font-size: .78rem; line-height: 1.7; }
-.source-footnotes strong { display:block; color: var(--gold); margin-bottom: .2rem; font-size: .76rem; }
-.pdf-page-marker { margin: 1.5rem 0 .75rem; color: var(--muted); font-size: .72rem; opacity: .65; text-align: center; }
-
-
-/* ---------- focused reading / highlighting ---------- */
-.reader-tools {
-  position: sticky;
-  top: 74px;
-  z-index: 8;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 7px;
-  margin: 0 auto 14px;
-  width: 90%;
-  max-width: 90%;
-  direction: rtl;
-}
-.reader-tools button {
-  border: 1px solid var(--line);
-  background: var(--paper);
-  color: var(--muted);
-  border-radius: 8px;
-  padding: 6px 10px;
-  font: inherit;
-  font-size: 12px;
-  cursor: pointer;
-}
-.reader-tools button:hover { color: var(--accent); border-color: var(--accent); }
-.reader-tools .reader-status { margin-inline-end: auto; font-size: 11px; color: var(--muted); }
-.reader-highlight {
-  background: #fff1a8;
-  color: inherit;
-  border-radius: 3px;
-  padding: 0 .08em;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-}
-.reader-focus {
-  background: color-mix(in srgb, var(--accent2) 72%, transparent);
-  border-radius: 8px;
-  padding: .18rem .35rem;
-  margin-inline: -.35rem;
-  transition: background .15s ease;
-}
-@media (prefers-color-scheme: dark) {
-  .reader-highlight { background: #6e5b1b; }
-}
-@media (max-width: 800px) {
-  .reader-tools { width: 94%; max-width: 94%; top: 72px; }
-  .reader-tools .reader-status { display: none; }
-}
-
-
 /* ================================================================
    Book 03 source reading edition
-   A quiet, book-like reading surface for Persian + Arabic.
+   One coherent reading system: warm paper, black text, restrained
+   Arabic differentiation, and Noto Sans Arabic Variable throughout.
    ================================================================ */
 
 body.source-reading {
-  background: #f5f1e8;
-  color: #292722;
-  font-family: "Vazirmatn", system-ui, sans-serif;
+  background: #f1e5c8;
+  color: #171717;
+  font-family: "Noto Sans Arabic", sans-serif;
 }
 
-.source-shell {
-  padding-top: 34px;
-  padding-bottom: 72px;
-}
-
-.source-transcription {
-  width: min(100%, 72ch);
-  max-width: 72ch;
+.source-reading .source-shell {
+  width: min(100%, 920px);
   margin: 0 auto;
+  padding: 38px 28px 80px;
+}
+
+.source-reading .source-transcription {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  color: #171717;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 2.18;
   direction: rtl;
   text-align: right;
-  font-family: "Vazirmatn", system-ui, sans-serif;
-  font-size: 19px;
-  line-height: 2.15;
-  color: #292722;
 }
 
-.source-chapter-header {
+.source-reading .source-chapter-header {
+  margin: 0 auto 42px;
+  padding: 28px 0 26px;
   text-align: center;
-  margin: 8px auto 46px;
-  padding: 34px 20px 28px;
 }
 
-.source-eyebrow {
-  margin-bottom: 13px;
-  color: #8a6b43;
-  font-family: "Vazirmatn", sans-serif;
+.source-reading .source-eyebrow {
+  margin: 0 0 10px;
+  color: #6f5b3d;
+  font-family: "Noto Sans Arabic", sans-serif;
   font-size: 12px;
-  font-weight: 600;
-  letter-spacing: .06em;
+  font-weight: 400;
 }
 
-.source-chapter-title {
+.source-reading .source-chapter-title {
   margin: 0;
-  color: #28231e;
-  font-family: "Noto Serif Arabic", Georgia, serif;
-  font-size: clamp(30px, 4vw, 43px);
-  font-weight: 700;
+  color: #171717;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: clamp(29px, 4vw, 40px);
+  font-weight: 600;
   line-height: 1.55;
 }
 
-.source-chapter-rule {
-  width: 92px;
-  height: 2px;
-  margin: 22px auto 0;
-  background: #a68a5b;
-  border-radius: 99px;
+.source-reading .source-chapter-rule {
+  width: 72px;
+  height: 1px;
+  margin: 18px auto 0;
+  background: #8f7955;
 }
 
-.source-content {
+.source-reading .source-content {
   width: 100%;
 }
 
-.source-page {
+.source-reading .source-page {
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 0 0 8px;
+  padding: 0;
 }
 
-.source-page + .source-page {
-  margin-top: 18px;
+.source-reading .source-page + .source-page {
+  margin-top: 30px;
 }
 
-.source-page::after {
-  content: "";
-  display: block;
-  width: 42px;
-  margin: 35px auto 8px;
-  border-top: 1px solid #d7cfbf;
-}
-
-.pdf-page-marker {
+.source-reading .pdf-page-marker {
   display: flex;
   align-items: center;
   gap: 12px;
   width: 100%;
-  margin: 32px 0 22px;
-  color: #958d80;
-  font-family: "Vazirmatn", sans-serif;
+  margin: 34px 0 24px;
+  color: #786d5c;
+  font-family: "Noto Sans Arabic", sans-serif;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1;
-  letter-spacing: .04em;
   direction: rtl;
-  opacity: .8;
+  opacity: .78;
 }
 
-.pdf-page-marker::before,
-.pdf-page-marker::after {
+.source-reading .pdf-page-marker::before,
+.source-reading .pdf-page-marker::after {
   content: "";
   flex: 1;
-  border-top: 1px solid #ddd5c7;
+  border-top: 1px solid #d5c6a5;
 }
 
-.pdf-page-marker span {
+.source-reading .pdf-page-marker span {
   flex: 0 0 auto;
   padding: 0 3px;
 }
 
-.source-persian {
+.source-reading .source-persian {
   margin: 0 0 1.15em;
-  color: #292722;
-  font-family: "Noto Serif Arabic", Georgia, serif;
+  color: #171717;
+  font-family: "Noto Sans Arabic", sans-serif;
   font-size: 1em;
   font-weight: 400;
-  line-height: 2.25;
+  line-height: 2.18;
   letter-spacing: 0;
-  text-align: justify;
-  text-justify: inter-word;
-  hanging-punctuation: allow-end;
-}
-
-.source-arabic {
-  margin: 1.5em 0 1.65em;
-  padding: 1.05em 1.35em 1.1em;
-  border: 0;
-  border-inline-start: 4px solid #8b4d4d;
-  border-radius: 0 10px 10px 0;
-  background: #eee7dc;
-  color: #693b3b;
-  box-shadow: none;
-  font-family: "Noto Serif Arabic", "Amiri", Georgia, serif;
-  font-size: 1.04em;
-  font-weight: 600;
-  line-height: 2.25;
   text-align: right;
-  direction: rtl;
 }
 
-.source-arabic div {
-  max-width: 100%;
+.source-reading .source-persian + .source-persian {
+  margin-top: .05em;
 }
 
-.source-subheading {
-  margin: 2.2em 0 .85em;
-  padding: 0 .9em 0 0;
-  border-inline-start: 3px solid #a68a5b;
-  color: #594a39;
-  font-family: "Noto Serif Arabic", Georgia, serif;
-  font-size: 1.18em;
-  font-weight: 700;
+.source-reading .source-arabic-inline {
+  display: inline;
+  color: #171717;
+  background: #e4d3a9;
+  border-radius: .22em;
+  padding: .02em .16em .08em;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: .98em;
+  font-weight: 400;
+  line-height: inherit;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.source-reading .source-arabic {
+  margin: 1.45em 0 1.6em;
+  padding: .85em 1.05em;
+  border: 0;
+  border-inline-start: 2px solid #927950;
+  border-radius: 0;
+  background: #e8d9b7;
+  color: #171717;
+  box-shadow: none;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2.15;
+  text-align: right;
+}
+
+.source-reading .source-arabic div {
+  margin: 0;
+}
+
+.source-reading .source-subheading {
+  margin: 2.1em 0 .85em;
+  padding: 0 .75em 0 0;
+  border-inline-start: 2px solid #927950;
+  color: #28231d;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 1.16em;
+  font-weight: 600;
   line-height: 1.8;
 }
 
-.source-footnotes {
-  margin: 1.8em 0 1.1em;
-  padding: 1em 1.2em 1.1em;
-  border: 1px solid #ddd5c7;
-  border-radius: 10px;
-  background: #eee9df;
-  color: #6f685e;
-  font-family: "Vazirmatn", sans-serif;
+.source-reading .source-footnotes {
+  margin: 1.8em 0 1em;
+  padding: .95em 1.1em 1em;
+  border: 1px solid #d4c5a5;
+  border-radius: 6px;
+  background: #eadfc4;
+  color: #4c463d;
+  font-family: "Noto Sans Arabic", sans-serif;
   font-size: .72em;
+  font-weight: 400;
   line-height: 1.9;
 }
 
-.source-footnotes-title {
-  margin-bottom: .45em;
-  color: #8a6b43;
+.source-reading .source-footnotes-title {
+  margin-bottom: .4em;
+  color: #5e4d34;
   font-size: .82rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
-.source-footnotes ol {
+.source-reading .source-footnotes ol {
   margin: 0;
   padding-inline-start: 1.5em;
 }
 
-.source-footnotes li {
-  padding-inline-start: .25em;
+.source-reading .source-footnotes li {
   margin: .25em 0;
+  padding-inline-start: .25em;
+}
+
+.source-reading .source-page::after {
+  content: "";
+  display: block;
+  width: 28px;
+  margin: 38px auto 8px;
+  border-top: 1px solid #d5c6a5;
 }
 
 @media (max-width: 800px) {
   body.source-reading {
-    background: #f8f5ee;
+    background: #f4e9d0;
   }
 
-  .source-shell {
-    padding: 18px 17px 48px;
+  .source-reading .source-shell {
+    padding: 20px 18px 52px;
   }
 
-  .source-transcription {
-    width: 100%;
-    max-width: 100%;
+  .source-reading .source-transcription {
+    max-width: none;
     font-size: 17px;
     line-height: 2.12;
   }
 
-  .source-chapter-header {
-    margin-bottom: 32px;
-    padding: 25px 8px 20px;
+  .source-reading .source-chapter-header {
+    margin-bottom: 30px;
+    padding: 20px 0;
   }
 
-  .source-chapter-title {
+  .source-reading .source-chapter-title {
     font-size: 29px;
   }
 
-  .source-persian {
-    line-height: 2.18;
-    text-align: right;
-  }
-
-  .source-arabic {
-    padding: .85em 1em;
-    line-height: 2.15;
+  .source-reading .source-arabic {
+    padding: .7em .85em;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body.source-reading {
-    background: #191816;
-    color: #e9e3d8;
+    background: #1c1914;
+    color: #eee8dc;
   }
 
-  .source-transcription,
-  .source-persian {
-    color: #e9e3d8;
+  .source-reading .source-transcription,
+  .source-reading .source-persian,
+  .source-reading .source-arabic {
+    color: #eee8dc;
   }
 
-  .source-chapter-title {
-    color: #f1ece3;
+  .source-reading .source-chapter-title,
+  .source-reading .source-subheading {
+    color: #f0e9dc;
   }
 
-  .source-eyebrow,
-  .source-footnotes-title {
-    color: #c2a77a;
+  .source-reading .source-eyebrow,
+  .source-reading .source-footnotes-title {
+    color: #c4aa7a;
   }
 
-  .source-chapter-rule {
-    background: #9e855f;
+  .source-reading .source-chapter-rule,
+  .source-reading .source-subheading {
+    border-color: #9c845b;
   }
 
-  .source-arabic {
-    background: #302625;
-    color: #e2bcbc;
-    border-inline-start-color: #9f6666;
+  .source-reading .source-arabic-inline {
+    color: #eee8dc;
+    background: #3b3020;
   }
 
-  .source-subheading {
-    color: #d5c19e;
-    border-inline-start-color: #aa9064;
+  .source-reading .source-arabic {
+    background: #332b20;
+    border-inline-start-color: #a78c61;
   }
 
-  .source-footnotes {
-    background: #25231f;
-    border-color: #3b3832;
-    color: #aaa298;
+  .source-reading .source-footnotes {
+    background: #29251f;
+    border-color: #443d32;
+    color: #b9b0a2;
   }
 
-  .pdf-page-marker {
-    color: #8f897f;
+  .source-reading .pdf-page-marker {
+    color: #9d9383;
   }
 
-  .pdf-page-marker::before,
-  .pdf-page-marker::after,
-  .source-page::after {
-    border-color: #393630;
+  .source-reading .pdf-page-marker::before,
+  .source-reading .pdf-page-marker::after,
+  .source-reading .source-page::after {
+    border-color: #40392f;
   }
 }
 
@@ -600,120 +552,17 @@ body.source-reading {
     background: white;
   }
 
-  .source-transcription {
+  .source-reading .source-transcription {
     width: 100%;
     max-width: none;
     font-size: 14pt;
   }
 
-  .source-chapter-header {
+  .source-reading .source-chapter-header {
     break-after: avoid;
   }
 
-  .source-page {
+  .source-reading .source-page {
     break-inside: auto;
-  }
-}
-
-
-/* ---------- Book 03 readability refinement ---------- */
-body.source-reading {
-  background: #f2e6c9;
-  color: #171717;
-  font-family: "Noto Sans Arabic", sans-serif;
-}
-
-.source-transcription {
-  font-family: "Noto Sans Arabic", sans-serif;
-  color: #171717;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 2.12;
-}
-
-.source-chapter-title {
-  font-family: "Noto Sans Arabic", sans-serif;
-  color: #171717;
-  font-weight: 600;
-}
-
-.source-eyebrow {
-  font-family: "Noto Sans Arabic", sans-serif;
-  color: #725b38;
-  font-weight: 500;
-}
-
-.source-persian {
-  color: #171717;
-  font-family: "Noto Sans Arabic", sans-serif;
-  font-weight: 400;
-  line-height: 2.18;
-}
-
-.source-arabic {
-  background: #e8d7ad;
-  color: #171717;
-  border-inline-start: 3px solid #8a6a3f;
-  font-family: "Noto Sans Arabic", sans-serif;
-  font-weight: 400;
-  box-shadow: none;
-}
-
-.source-arabic-inline {
-  display: inline;
-  color: #5b3826;
-  background: #e8d7ad;
-  border-radius: .18em;
-  padding: .02em .16em .08em;
-  font-family: "Noto Sans Arabic", sans-serif;
-  font-weight: 400;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-}
-
-.source-subheading {
-  font-family: "Noto Sans Arabic", sans-serif;
-  color: #3b3328;
-  font-weight: 600;
-}
-
-.source-footnotes {
-  background: #eadfc3;
-  border-color: #d2c19d;
-  color: #514b42;
-  font-family: "Noto Sans Arabic", sans-serif;
-  font-weight: 400;
-}
-
-.pdf-page-marker {
-  color: #786d5d;
-  font-family: "Noto Sans Arabic", sans-serif;
-}
-
-@media (max-width: 800px) {
-  body.source-reading { background: #f4e9d0; }
-  .source-transcription { font-size: 17px; }
-}
-
-@media (prefers-color-scheme: dark) {
-  body.source-reading {
-    background: #1d1a15;
-    color: #eee8dc;
-  }
-  .source-transcription,
-  .source-persian {
-    color: #eee8dc;
-  }
-  .source-chapter-title {
-    color: #f1eadc;
-  }
-  .source-arabic {
-    background: #332b20;
-    color: #eee8dc;
-    border-inline-start-color: #a88a5b;
-  }
-  .source-arabic-inline {
-    color: #ead5ad;
-    background: #332b20;
   }
 }
