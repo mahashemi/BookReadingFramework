@@ -81,3 +81,22 @@ python3 scripts/validate_book.py \
   --source reference/ablibrary \
   --output "Library/Book 03 - Jihad al-Nafs/source"
 ```
+
+
+## Recovering a missing page
+
+The current audit found internal page **179** missing from the downloaded
+source while pages 178 and 180 are present. Recover that exact page before
+running chapter discovery/build:
+
+```bash
+python3 scripts/download_ablibrary_book.py \
+  --book-id 17168 \
+  --start-page 179 \
+  --max-pages 1 \
+  --workers 1 \
+  --output reference/ablibrary
+```
+
+Then rerun the normalization/audit command above. The downloader is resumable,
+so this fills the missing page without redownloading the rest of the book.
