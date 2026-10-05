@@ -158,28 +158,22 @@ def clean_container(element) -> str:
 def extract_book_body(soup: BeautifulSoup):
     """Return the visible book body, full text, and logical paragraphs.
 
-    Ahlulbayt exposes the rendered book content under itemProp="articleBody".
-    Within it, each prose block is represented by a div/span pair and the
-    span preserves paragraph breaks as literal newlines. This is much safer
-    than using the site's clipped HTML meta-description or blindly selecting
-    the outer article.
+    The visible prose is under itemProp="articleBody". Footnotes are retained
+    at the end of the page text, while also being represented separately in
+    references[].
     """
     body = soup.select_one('[itemprop="articleBody"]')
     if not body:
         return None, None, []
 
-    blocks = []
+    paragraphs = []
     for child in body.find_all(recursive=False):
         if child.name == "section" and child.get("data-abl-content") == "footnote":
             continue
-        blocks.append(child)
 
-    paragraphs = []
-    for block in blocks:
-        # The visible content has an inner wrapper around the actual blocks.
-        nodes = block.find_all(["h1", "h2", "h3", "p", "span"], recursive=True)
+        nodes = child.find_all(["h1", "h2", "h3", "p", "span"], recursive=True)
         if not nodes:
-            nodes = [block]
+            nodes = [child]
 
         for node in nodes:
             if node.name == "span" and node.find_parent(["h1", "h2", "h3", "p"]):
@@ -190,7 +184,14 @@ def extract_book_body(soup: BeautifulSoup):
                 if line:
                     paragraphs.append(line)
 
-    # If the DOM changes, retain a conservative fallback from articleBody.
+    footnote = body.select_one('[data-abl-content="footnote"]')
+    if footnote:
+        raw = footnote.get_text("\n", strip=True)
+        for line in raw.split("\n"):
+            line = normalize_text(line)
+            if line and line != "هامش":
+                paragraphs.append(line)
+
     if not paragraphs:
         raw = clean_container(body)
         paragraphs = [line for line in raw.split("\n") if line.strip()]
