@@ -44,6 +44,9 @@ DEFAULT_DELAY = 0.8
 DEFAULT_MAX_PAGES = 500
 DEFAULT_WORKERS = 5
 
+# One requests.Session per worker thread for connection reuse.
+thread_local = threading.local()
+
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
