@@ -97,16 +97,11 @@ def page_url(book_id: str, page: int) -> str:
 
 def extract_metadata(soup: BeautifulSoup, page: int) -> dict:
     title = None
-    description = None
     printed_page = None
 
     tag = soup.find("title")
     if tag:
         title = tag.get_text(" ", strip=True)
-
-    tag = soup.find("meta", attrs={"name": "description"})
-    if tag:
-        description = tag.get("content")
 
     if title:
         match = re.search(r"(?:صفحة|صفحه)\s*([0-9۰-۹]+)", title)
@@ -117,7 +112,6 @@ def extract_metadata(soup: BeautifulSoup, page: int) -> dict:
         "internal_page": page,
         "printed_page": printed_page,
         "title": title,
-        "description": description,
     }
 
 
@@ -311,17 +305,25 @@ def download_page(
     text, extraction_method, paragraphs = find_book_content(soup)
 
     if not text:
-        # Description is useful for diagnostics, but it is often truncated
-        # and therefore is never presented as a successful full extraction.
-        description = metadata.get("description")
-        if description:
-            text = normalize_text(description)
-            paragraphs = [text]
-            extraction_method = "meta-description-fallback"
-        else:
-            raise RuntimeError(
-                "Could not locate book text in the downloaded HTML."
+        raise RuntimeError(
+            "Could not locate book text in the downloaded HTML."
+        )
+
+    complete_text = text
+    if references:
+        complete_text = normalize_text(
+            "\n".join(
+                [
+                    text,
+                    "",
+                    "هامش",
+                    *[
+                        f"( {ref['marker']} ) . {ref['text']}"
+                        for ref in references
+                    ],
+                ]
             )
+        )
 
     html_file = html_dir / f"page-{page:04d}.html"
     text_file = text_dir / f"page-{page:04d}.txt"
@@ -331,7 +333,7 @@ def download_page(
         html_file.write_text(html, encoding="utf-8")
 
     if force or not text_file.exists():
-        text_file.write_text(text, encoding="utf-8")
+        text_file.write_text(complete_text, encoding="utf-8")
 
     # Keep page JSON lightweight. The .txt file is the canonical page text;
     # paragraphs preserve useful structure without duplicating the full text.
@@ -339,7 +341,7 @@ def download_page(
         **metadata,
         "url": response.url,
         "extraction_method": extraction_method,
-        "characters": len(text),
+        "characters": len(complete_text),
         "paragraphs": paragraphs,
         "references": references,
         "reference_count": len(references),
