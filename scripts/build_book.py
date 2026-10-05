@@ -187,42 +187,22 @@ def render_footnotes(lines: list[str]) -> str:
 
 
 def render_text_blocks(lines: list[str]) -> str:
-    """Render source prose with clearly separated Persian and Arabic typography."""
+    """Render each source paragraph with distinct Persian/Arabic typography."""
     out: list[str] = []
-    buffer: list[str] = []
-    kind: str | None = None
-
-    def flush() -> None:
-        nonlocal buffer, kind
-        if not buffer:
-            return
-        value = html.escape(" ".join(buffer).strip())
-        if kind == "arabic":
-            out.append(
-                '<blockquote class="source-arabic" lang="ar" dir="rtl">'
-                f"<div>{value}</div></blockquote>"
-            )
-        else:
-            out.append(
-                f'<p class="source-persian" lang="fa" dir="rtl">{value}</p>'
-            )
-        buffer = []
-        kind = None
-
     for line in lines:
         if HEADING.match(line):
-            flush()
             out.append(
                 f'<h2 class="source-subheading">{html.escape(line)}</h2>'
             )
-            continue
-        next_kind = "arabic" if is_arabic(line) else "persian"
-        if kind is not None and next_kind != kind:
-            flush()
-        kind = next_kind
-        buffer.append(line)
-
-    flush()
+        elif is_arabic(line):
+            out.append(
+                '<blockquote class="source-arabic" lang="ar" dir="rtl">'
+                f'<div>{html.escape(line)}</div></blockquote>'
+            )
+        else:
+            out.append(
+                f'<p class="source-persian" lang="fa" dir="rtl">{html.escape(line)}</p>'
+            )
     return "\n".join(out)
 
 
