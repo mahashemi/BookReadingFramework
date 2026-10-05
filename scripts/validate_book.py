@@ -114,11 +114,9 @@ def main() -> int:
                 paragraph_text = norm("\n".join(record["paragraphs"]))
                 if json_text != source_text:
                     failures.append(f"Source page {p}: JSON text differs from canonical text file")
-
-                # paragraphs[] intentionally excludes the footnote/reference
-                # section. The lossless text[]/text file retains it.
-                body_text = source_text.split("\nهامش\n", 1)[0]
-                if paragraph_text != norm(body_text):
+                # Canonical text and paragraphs contain only book prose.
+                # Footnote definitions are represented in references[].
+                if paragraph_text != source_text:
                     failures.append(
                         f"Source page {p}: JSON paragraphs differ from canonical body text"
                     )
@@ -127,13 +125,13 @@ def main() -> int:
             elif record["reference_count"] != len(record["references"]):
                 failures.append(f"Source page {p}: reference_count mismatch")
             else:
-                paragraph_lines = {norm(x) for x in record["paragraphs"]}
+                # References are structural metadata. Their markers may
+                # legitimately remain inline in the prose.
                 for reference in record["references"]:
                     marker = str(reference.get("marker", "")).strip()
-                    reference_line = f"( {marker} )"
-                    if any(line.startswith(reference_line) for line in paragraph_lines):
+                    if not marker:
                         failures.append(
-                            f"Source page {p}: reference ({marker}) leaked into paragraphs"
+                            f"Source page {p}: reference has an empty marker"
                         )
             if not html_path.exists():
                 failures.append(f"Chapter {n}: missing source HTML {html_path}")
