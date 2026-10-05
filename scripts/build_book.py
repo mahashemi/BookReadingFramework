@@ -157,36 +157,102 @@ def source_lines(text: str) -> list[str]:
     return [norm(x) for x in text.splitlines() if norm(x)]
 
 
-def is_arabic_quote(line: str) -> bool:
+def is_arabic(line: str) -> bool:
+    """Identify standalone Arabic quotations without mistaking Persian prose."""
     chars = ARABIC.findall(line)
     if len(chars) < 12:
         return False
-    persian_specific = len(re.findall(r"[پچژگ]", line))
-    return len(chars) >= max(12, persian_specific * 4)
+    persian_specific = len(PERSIAN_SPECIFIC.findall(line))
+    return persian_specific <= max(1, len(chars) // 20)
 
 
-def render_page(page: int, text: str, printed_page: str | None = None) -> str:
-    label = f"صفحه چاپی {printed_page}" if printed_page else f"صفحه منبع {page}"
-    out = [f'<div class="pdf-page-marker" data-source-internal-page="{page}">{html.escape(label)}</div>']
-    lines = source_lines(text)
-    paragraph = []
+def split_footnotes(lines: list[str]) -> tuple[list[str], list[str]]:
+    for i, line in enumerate(lines):
+        if re.match(r"^\s*هامش\s*$", line):
+            return lines[:i], lines[i + 1:]
+    return lines, []
+
+
+def render_footnotes(lines: list[str]) -> str:
+    if not lines:
+        return ""
+    items = "".join(f"<li>{html.escape(line)}</li>" for line in lines if line)
+    if not items:
+        return ""
+    return (
+        '<aside class="source-footnotes" aria-label="حاشیه‌ها">'
+        '<div class="source-footnotes-title">هامش</div>'
+        f"<ol>{items}</ol></aside>"
+    )
+
+
+def render_text_blocks(lines: list[str]) -> str:
+    """Render source prose with clearly separated Persian and Arabic typography."""
+    out: list[str] = []
+    buffer: list[str] = []
+    kind: str | None = None
 
     def flush() -> None:
-        if paragraph:
-            value = " ".join(paragraph).strip()
-            if value:
-                klass = "source-arabic" if is_arabic_quote(value) else "source-page"
-                out.append(f'<p class="{klass}">{html.escape(value)}</p>')
-            paragraph.clear()
+        nonlocal buffer, kind
+        if not buffer:
+            return
+        value = html.escape(" ".join(buffer).strip())
+        if kind == "arabic":
+            out.append(
+                '<blockquote class="source-arabic" lang="ar" dir="rtl">'
+                f"<div>{value}</div></blockquote>"
+            )
+        else:
+            out.append(
+                f'<p class="source-persian" lang="fa" dir="rtl">{value}</p>'
+            )
+        buffer = []
+        kind = None
 
     for line in lines:
         if HEADING.match(line):
             flush()
-            out.append(f"<h2>{html.escape(line)}</h2>")
-        else:
-            paragraph.append(line)
+            out.append(
+                f'<h2 class="source-subheading">{html.escape(line)}</h2>'
+            )
+            continue
+        next_kind = "arabic" if is_arabic(line) else "persian"
+        if kind is not None and next_kind != kind:
+            flush()
+        kind = next_kind
+        buffer.append(line)
+
     flush()
     return "\n".join(out)
+
+
+def render_page(
+    page: int,
+    text: str,
+    printed_page: str | None = None,
+    *,
+    chapter_title: str | None = None,
+) -> str:
+    label = f"صفحه {printed_page}" if printed_page else f"صفحه منبع {page}"
+    lines = source_lines(text)
+
+    # The chapter title is already rendered once as the document heading.
+    # Suppress only exact duplicates from the source page; preserve everything else.
+    if chapter_title:
+        chapter_title = norm(chapter_title)
+        lines = [line for line in lines if norm(line) != chapter_title]
+
+    prose, footnotes = split_footnotes(lines)
+    body = render_text_blocks(prose)
+    notes = render_footnotes(footnotes)
+
+    return (
+        f'<section id="source-page-{page:04d}" class="source-page" '
+        f'data-source-internal-page="{page}">'
+        f'<div class="pdf-page-marker" role="doc-pagebreak" '
+        f'aria-label="{html.escape(label)}"><span>{html.escape(label)}</span></div>'
+        f'{body}{notes}</section>'
+    )
 
 
 def build(source: Path, output: Path) -> None:
@@ -218,7 +284,7 @@ def build(source: Path, output: Path) -> None:
                 if meta_file.exists():
                     meta = json.loads(meta_file.read_text(encoding="utf-8"))
                     printed = meta.get("printed_page")
-                body.append(render_page(p, pages[p], printed))
+                body.append(render_page(p, pages[p], printed, chapter_title=chapter["title"]))
 
             title = chapter["title"]
             volume_label = volume.get("label", volume.get("id", ""))
