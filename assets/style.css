@@ -339,8 +339,8 @@ body.source-reading {
 }
 
 .source-transcription {
-  width: min(100%, 78ch);
-  max-width: 78ch;
+  width: min(100%, 72ch);
+  max-width: 72ch;
   margin: 0 auto;
   direction: rtl;
   text-align: right;
@@ -387,6 +387,8 @@ body.source-reading {
 }
 
 .source-page {
+  width: 100%;
+  max-width: none;
   margin: 0;
   padding: 0 0 8px;
 }
