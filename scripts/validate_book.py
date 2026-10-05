@@ -96,6 +96,8 @@ def main() -> int:
         if start > end:
             failures.append(f"Chapter {n}: start > end")
         for p in range(start, end + 1):
+            if p in KNOWN_SOURCE_GAPS and p not in pages:
+                continue
             seen_pages.append(p)
             if p not in pages:
                 failures.append(f"Chapter {n}: missing source page {p}")
@@ -183,10 +185,14 @@ def main() -> int:
 
     if seen_pages:
         ordered = sorted(set(seen_pages))
-        if ordered != list(range(ordered[0], ordered[-1] + 1)):
+        expected = [
+            p for p in range(ordered[0], ordered[-1] + 1)
+            if p not in KNOWN_SOURCE_GAPS
+        ]
+        if ordered != expected:
             failures.append(
-                f"Assigned source-page coverage has gaps: expected contiguous range "
-                f"{ordered[0]}–{ordered[-1]}, got {ordered}"
+                f"Assigned source-page coverage has unexpected gaps: expected "
+                f"{expected}, got {ordered}"
             )
 
     if failures:
