@@ -69,8 +69,17 @@ def extract_text_and_paragraphs(html: str) -> tuple[str, list[str]]:
                 if line:
                     paragraphs.append(line)
 
+    footnote = body.select_one('[data-abl-content="footnote"]')
+    if footnote:
+        raw = footnote.get_text("\n", strip=True)
+        for line in raw.split("\n"):
+            line = normalize_text(line)
+            if line and line != "هامش":
+                paragraphs.append(line)
+
     text = normalize_text("\n".join(paragraphs))
     return text, paragraphs
+
 
 def extract_references(html: str) -> list[dict]:
     soup = BeautifulSoup(html, "html.parser")
