@@ -160,13 +160,31 @@ def source_lines(text: str) -> list[str]:
     return [norm(x) for x in text.splitlines() if norm(x)]
 
 
-def is_arabic(line: str) -> bool:
-    """Identify standalone Arabic quotations without mistaking Persian prose."""
-    chars = ARABIC.findall(line)
-    if len(chars) < 12:
+ARABIC_DIACRITICS = re.compile(r"[\u064b-\u065f\u0670]")
+ARABIC_MARKERS = (
+    "الله", "رسول", "النبي", "الذين", "الذي", "التي", "هذا", "هذه",
+    "ذلك", "تلك", "إن", "أن", "يا", "ابن", "بن", "قال", "قلت",
+    "عليه", "عليهم", "عليها", "منه", "فيه", "به", "صلى", "وسلم",
+)
+
+
+def is_arabic(line: str, *, quoted: bool = False) -> bool:
+    """Conservative Arabic classifier for source transcription."""
+    text = norm(line)
+    if not text:
         return False
-    persian_specific = len(PERSIAN_SPECIFIC.findall(line))
-    return persian_specific <= max(1, len(chars) // 20)
+    chars = ARABIC.findall(text)
+    if len(chars) < 5:
+        return False
+    if PERSIAN_SPECIFIC.search(text):
+        return False
+    if ARABIC_DIACRITICS.search(text):
+        return True
+    if any(marker in text for marker in ARABIC_MARKERS):
+        return True
+    if quoted:
+        return True
+    return len(chars) >= 12
 
 
 def split_footnotes(lines: list[str]) -> tuple[list[str], list[str]]:
@@ -198,7 +216,7 @@ def render_mixed_paragraph(line: str) -> str:
         quoted = match.group(1)
         if before:
             parts.append(html.escape(before))
-        if is_arabic(quoted):
+        if is_arabic(quoted, quoted=True):
             parts.append(
                 '<span class="source-arabic-inline" lang="ar" dir="rtl">'
                 f'«{html.escape(quoted)}»</span>'
