@@ -7,7 +7,7 @@ Example:
       --book-id 17168 \
       --start-page 1 \
       --max-pages 200 \
-      --output "reference/ablibrary/jehad-bil-nafs-vol-1-and-2-ayatollah-mazaheri"
+      --output "reference/ablibrary"
 
 For each internal page the script saves:
     html/page-0001.html   # exact downloaded HTML
@@ -159,17 +159,14 @@ def clean_container(element) -> str:
 
 
 def extract_book_body(soup: BeautifulSoup):
-    """Extract only the book prose from articleBody.
+    """Extract only the rendered book prose from articleBody.
 
-    The site sometimes places its footnote block and then reader/navigation
-    chrome inside the same articleBody container. The footnote block is the
-    hard boundary of the book prose; anything after it is site chrome.
-
-    Footnote definitions are represented structurally in references[] rather
-    than duplicated in the canonical page text.
+    The footnote section is the hard boundary of the book prose. Footnote
+    definitions and all navigation/chrome after it are excluded from text and
+    paragraphs; references[] keeps the footnote definitions separately.
     """
     body = soup.select_one('[itemprop="articleBody"]')
-    if not body:
+    if body is None:
         return None, None, []
 
     work = BeautifulSoup(str(body), "html.parser").select_one(
@@ -187,35 +184,20 @@ def extract_book_body(soup: BeautifulSoup):
             node = node.parent
         footnote.extract()
 
+    for tag in work.find_all(
+        ["script", "style", "noscript", "svg", "nav", "header", "footer"]
+    ):
+        tag.decompose()
+
+    raw = work.get_text("\n", strip=True)
     paragraphs = []
-    for child in work.find_all(recursive=False):
-        if child.name in {
-            "nav", "header", "footer", "script", "style", "noscript", "svg"
-        }:
-            continue
+    for line in raw.splitlines():
+        line = normalize_text(line)
+        if line:
+            paragraphs.append(line)
 
-        nodes = child.find_all(["h1", "h2", "h3", "p"], recursive=True)
-        if not nodes:
-            nodes = [child]
-
-        for node in nodes:
-            raw = node.get_text("\\n", strip=True)
-            for line in raw.split("\\n"):
-                line = normalize_text(line)
-                if line:
-                    paragraphs.append(line)
-
-    if not paragraphs:
-        for node in work.find_all(["h1", "h2", "h3", "p"], recursive=True):
-            raw = node.get_text("\\n", strip=True)
-            for line in raw.split("\\n"):
-                line = normalize_text(line)
-                if line:
-                    paragraphs.append(line)
-
-    text = normalize_text("\\n".join(paragraphs))
+    text = normalize_text("\n".join(paragraphs))
     return body, text, paragraphs
-
 
 def find_book_content(soup: BeautifulSoup) -> tuple[str | None, str, list[str]]:
     """Find the actual rendered book text and preserve logical paragraphs."""
@@ -404,7 +386,7 @@ def main() -> int:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("reference/ablibrary/jehad-bil-nafs-vol-1-and-2-ayatollah-mazaheri"),
+        default=Path("reference/ablibrary"),
         help="Output directory.",
     )
     parser.add_argument(
