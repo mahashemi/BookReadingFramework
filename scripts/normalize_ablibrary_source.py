@@ -208,14 +208,17 @@ def main() -> int:
         meta_description = meta_tag.get("content") if meta_tag else None
 
         record = json.loads(json_file.read_text(encoding="utf-8"))
+        # The .txt file is the canonical page text. Keep page JSON metadata
+        # lightweight: paragraphs are useful structure, while duplicating the
+        # full text (and site meta descriptions) only bloats the source tree.
+        record.pop("description", None)
+        record.pop("meta_description", None)
+        record.pop("text", None)
         if extracted_text:
             text_file.write_text(extracted_text, encoding="utf-8")
             record["characters"] = len(extracted_text)
-            record["description"] = extracted_text
-            record["text"] = extracted_text
             record["paragraphs"] = paragraphs
             record["extraction_method"] = "articleBody"
-        record["meta_description"] = meta_description
         record["references"] = references
         record["reference_count"] = len(references)
         json_file.write_text(
