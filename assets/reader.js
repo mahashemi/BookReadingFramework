@@ -59,9 +59,22 @@
   root.addEventListener('mouseup', () => {
     const sel = window.getSelection();
     const snippet = normalize(sel && sel.toString());
-    if (!snippet || snippet.length < 2) return;
+    if (!snippet || snippet.length < 2 || !sel.rangeCount) return;
     const range = sel.getRangeAt(0);
     if (!root.contains(range.commonAncestorContainer)) return;
+
+    // Re-selecting an existing highlight toggles it off.
+    const existing = range.commonAncestorContainer.nodeType === Node.TEXT_NODE
+      ? range.commonAncestorContainer.parentElement?.closest('.reader-highlight')
+      : range.commonAncestorContainer.closest?.('.reader-highlight');
+    if (existing && existing.closest('.source-transcription')) {
+      const text = normalize(existing.textContent);
+      existing.replaceWith(document.createTextNode(existing.textContent));
+      const remaining = load().filter(item => normalize(item) !== text);
+      save(remaining);
+      sel.removeAllRanges();
+      return;
+    }
 
     const mark = document.createElement('mark');
     mark.className = 'reader-highlight';
@@ -71,7 +84,6 @@
       items.push(snippet);
       save([...new Set(items)]);
       sel.removeAllRanges();
-      return;
     } catch (_) {}
   });
 
