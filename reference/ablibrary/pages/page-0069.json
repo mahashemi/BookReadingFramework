@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/69",
   "extraction_method": "article",
   "characters": 285,
-  "text_file": "reference/ablibrary/text/page-0069.txt"
+  "text_file": "reference/ablibrary/text/page-0069.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره اعراف - آيه 178 ."
+    }
+  ],
+  "reference_count": 1
 }

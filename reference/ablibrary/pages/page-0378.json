@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/378",
   "extraction_method": "article",
   "characters": 1026,
-  "text_file": "reference/ablibrary/text/page-0378.txt"
+  "text_file": "reference/ablibrary/text/page-0378.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره عنكبوت - آيه 45 ."
+    }
+  ],
+  "reference_count": 1
 }

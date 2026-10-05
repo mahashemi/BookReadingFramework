@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/288",
   "extraction_method": "article",
   "characters": 1020,
-  "text_file": "reference/ablibrary/text/page-0288.txt"
+  "text_file": "reference/ablibrary/text/page-0288.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره نساء - آيهء 143 ."
+    }
+  ],
+  "reference_count": 1
 }

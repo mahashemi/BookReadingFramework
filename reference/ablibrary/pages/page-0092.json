@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/92",
   "extraction_method": "article",
   "characters": 973,
-  "text_file": "reference/ablibrary/text/page-0092.txt"
+  "text_file": "reference/ablibrary/text/page-0092.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره اعراف - آيهء 186 ."
+    },
+    {
+      "marker": "2",
+      "text": "من لا يحضره الفقيه - ج 4 ص 138 - حديث 1 ."
+    }
+  ],
+  "reference_count": 2
 }

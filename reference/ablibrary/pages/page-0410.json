@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/410",
   "extraction_method": "article",
   "characters": 1175,
-  "text_file": "reference/ablibrary/text/page-0410.txt"
+  "text_file": "reference/ablibrary/text/page-0410.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره المزمل - آيه 1 - 5 و آيه 8 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره المزمل - آيه 6 ."
+    }
+  ],
+  "reference_count": 2
 }

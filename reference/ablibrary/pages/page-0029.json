@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/29",
   "extraction_method": "article",
   "characters": 1100,
-  "text_file": "reference/ablibrary/text/page-0029.txt"
+  "text_file": "reference/ablibrary/text/page-0029.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "« نمىدانم نيمى از دانش است » ."
+    }
+  ],
+  "reference_count": 1
 }

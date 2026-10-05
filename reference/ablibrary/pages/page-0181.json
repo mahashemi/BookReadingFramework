@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/181",
   "extraction_method": "article",
   "characters": 1107,
-  "text_file": "reference/ablibrary/text/page-0181.txt"
+  "text_file": "reference/ablibrary/text/page-0181.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "« مگر كسى كه توبه كند و ايمان آورد و كار شايسته انجام دهد . پس خدا گناهان آنان را به ثواب تبديل مىكند و خدا آمرزنده مهربان است » . سوره فرقان آيه 70 ."
+    },
+    {
+      "marker": "2",
+      "text": "زناى محصنه عبارت از زناى زن شوهردار يا مرد زن‌دار ."
+    }
+  ],
+  "reference_count": 2
 }

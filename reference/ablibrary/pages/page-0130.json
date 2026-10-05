@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/130",
   "extraction_method": "article",
   "characters": 1069,
-  "text_file": "reference/ablibrary/text/page-0130.txt"
+  "text_file": "reference/ablibrary/text/page-0130.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "يهرم ابن آدم و يشب منه اثنتان الحرص على المال و الحرص على العمر نهج الفصامه : 648 ."
+    }
+  ],
+  "reference_count": 1
 }

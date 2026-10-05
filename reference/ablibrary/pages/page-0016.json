@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/16",
   "extraction_method": "article",
   "characters": 1242,
-  "text_file": "reference/ablibrary/text/page-0016.txt"
+  "text_file": "reference/ablibrary/text/page-0016.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "« سعادتمند در شكم مادرش نيز سعادتمند است انسان شقى در شكم مادرش نيز شقى است » . سفينه البحار - ج 1 - ص 709 ."
+    }
+  ],
+  "reference_count": 1
 }

@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/209",
   "extraction_method": "article",
   "characters": 1116,
-  "text_file": "reference/ablibrary/text/page-0209.txt"
+  "text_file": "reference/ablibrary/text/page-0209.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "بحارالانوار : 10 / 123 ."
+    }
+  ],
+  "reference_count": 1
 }

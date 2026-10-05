@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/281",
   "extraction_method": "article",
   "characters": 1081,
-  "text_file": "reference/ablibrary/text/page-0281.txt"
+  "text_file": "reference/ablibrary/text/page-0281.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "« همانا بدترين جانوران نزد خدا كسانى هستند كه از شنيدن و گفتن حرف حق كر و لالند و اصلًا تعقل نمىكنند » . سوره انفال - آيه 22 ."
+    }
+  ],
+  "reference_count": 1
 }

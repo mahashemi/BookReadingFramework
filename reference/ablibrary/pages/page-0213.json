@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/213",
   "extraction_method": "article",
   "characters": 1087,
-  "text_file": "reference/ablibrary/text/page-0213.txt"
+  "text_file": "reference/ablibrary/text/page-0213.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره نساء - آيهء 17 ."
+    }
+  ],
+  "reference_count": 1
 }

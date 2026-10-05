@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/362",
   "extraction_method": "article",
   "characters": 1122,
-  "text_file": "reference/ablibrary/text/page-0362.txt"
+  "text_file": "reference/ablibrary/text/page-0362.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره اسراء - آيه 82 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره اسراء - آيه 57 ."
+    }
+  ],
+  "reference_count": 2
 }

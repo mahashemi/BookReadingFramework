@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/337",
   "extraction_method": "article",
   "characters": 1098,
-  "text_file": "reference/ablibrary/text/page-0337.txt"
+  "text_file": "reference/ablibrary/text/page-0337.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره مدثر - آيه 34 و 23 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره بنى اسرائيل - آيه 78 ."
+    }
+  ],
+  "reference_count": 2
 }

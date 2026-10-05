@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/186",
   "extraction_method": "article",
   "characters": 1049,
-  "text_file": "reference/ablibrary/text/page-0186.txt"
+  "text_file": "reference/ablibrary/text/page-0186.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "توبه در لغت به معنى مراجعت است ؛ اگر كسى از اطاقى بيرون برود و بعد برگردد ، عرب مىگويد : « تاب » يعنى برگشت ."
+    }
+  ],
+  "reference_count": 1
 }

@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/411",
   "extraction_method": "article",
   "characters": 1050,
-  "text_file": "reference/ablibrary/text/page-0411.txt"
+  "text_file": "reference/ablibrary/text/page-0411.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره المزمل - آيه 8 ."
+    }
+  ],
+  "reference_count": 1
 }

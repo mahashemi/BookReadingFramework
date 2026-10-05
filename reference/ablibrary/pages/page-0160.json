@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/160",
   "extraction_method": "article",
   "characters": 996,
-  "text_file": "reference/ablibrary/text/page-0160.txt"
+  "text_file": "reference/ablibrary/text/page-0160.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره نور - آيه 40 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره توبه - آيه 109 ."
+    }
+  ],
+  "reference_count": 2
 }

@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/108",
   "extraction_method": "article",
   "characters": 1075,
-  "text_file": "reference/ablibrary/text/page-0108.txt"
+  "text_file": "reference/ablibrary/text/page-0108.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره بقره - آيه 138 ."
+    }
+  ],
+  "reference_count": 1
 }

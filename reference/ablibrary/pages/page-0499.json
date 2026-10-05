@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/499",
   "extraction_method": "article",
   "characters": 1032,
-  "text_file": "reference/ablibrary/text/page-0499.txt"
+  "text_file": "reference/ablibrary/text/page-0499.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره انبياء - آيه 22 ."
+    }
+  ],
+  "reference_count": 1
 }

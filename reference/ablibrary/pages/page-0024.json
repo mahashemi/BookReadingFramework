@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/24",
   "extraction_method": "article",
   "characters": 1130,
-  "text_file": "reference/ablibrary/text/page-0024.txt"
+  "text_file": "reference/ablibrary/text/page-0024.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "« و كسى كه عمداً مؤمنى را بكشد ، پس جزاى او جهنم است و هميشه در آنجا خواهد بود » . سوره نساء - آيه 96 ."
+    },
+    {
+      "marker": "2",
+      "text": "وسائل - ج 11 - ص 194 - حديث 13 ."
+    }
+  ],
+  "reference_count": 2
 }

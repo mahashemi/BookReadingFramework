@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/311",
   "extraction_method": "article",
   "characters": 1119,
-  "text_file": "reference/ablibrary/text/page-0311.txt"
+  "text_file": "reference/ablibrary/text/page-0311.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره روم - آيه 10 ."
+    }
+  ],
+  "reference_count": 1
 }

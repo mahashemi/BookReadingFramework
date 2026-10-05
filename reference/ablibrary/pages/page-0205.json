@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/205",
   "extraction_method": "article",
   "characters": 1086,
-  "text_file": "reference/ablibrary/text/page-0205.txt"
+  "text_file": "reference/ablibrary/text/page-0205.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره روم - آيهء 10 ."
+    },
+    {
+      "marker": "2",
+      "text": "سورهء زمر - آيهء 53 ."
+    }
+  ],
+  "reference_count": 2
 }

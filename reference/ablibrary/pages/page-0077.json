@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/77",
   "extraction_method": "article",
   "characters": 1126,
-  "text_file": "reference/ablibrary/text/page-0077.txt"
+  "text_file": "reference/ablibrary/text/page-0077.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره بقره - آيه 45 ."
+    }
+  ],
+  "reference_count": 1
 }

@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/87",
   "extraction_method": "article",
   "characters": 742,
-  "text_file": "reference/ablibrary/text/page-0087.txt"
+  "text_file": "reference/ablibrary/text/page-0087.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "نهج‌الفصاحه - ص 66 . ( بزرگترين دشمن تو همان نفس است كه در كنار تو است ) ."
+    }
+  ],
+  "reference_count": 1
 }

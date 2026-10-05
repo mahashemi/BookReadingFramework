@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/26",
   "extraction_method": "article",
   "characters": 1025,
-  "text_file": "reference/ablibrary/text/page-0026.txt"
+  "text_file": "reference/ablibrary/text/page-0026.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سورهء اسراء - آيه 84 ."
+    }
+  ],
+  "reference_count": 1
 }

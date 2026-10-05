@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/200",
   "extraction_method": "article",
   "characters": 1149,
-  "text_file": "reference/ablibrary/text/page-0200.txt"
+  "text_file": "reference/ablibrary/text/page-0200.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره جاثيه - آيهء 23 ."
+    }
+  ],
+  "reference_count": 1
 }

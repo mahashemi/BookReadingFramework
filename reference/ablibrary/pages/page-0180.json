@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/180",
   "extraction_method": "article",
   "characters": 1171,
-  "text_file": "reference/ablibrary/text/page-0180.txt"
+  "text_file": "reference/ablibrary/text/page-0180.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "« و هر گاه آنان كه به آيات ما ايمان مىآورند ، نزد تو آيند ، بگو سلام عليكم . خداوند رحمت و مهربانى را بر خود فرض نمود كه هر كسى از شما از روى نادانى كار زشتى انجام داد و بعد آن خود را اصلاح و توبه كرد ، پس همانا خداوند بخشنده و مهربان است » ."
+    }
+  ],
+  "reference_count": 1
 }

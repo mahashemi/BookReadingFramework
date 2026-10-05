@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/113",
   "extraction_method": "article",
   "characters": 1115,
-  "text_file": "reference/ablibrary/text/page-0113.txt"
+  "text_file": "reference/ablibrary/text/page-0113.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره زمر - آيه 10 ."
+    }
+  ],
+  "reference_count": 1
 }

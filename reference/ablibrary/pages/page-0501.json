@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/501",
   "extraction_method": "article",
   "characters": 1102,
-  "text_file": "reference/ablibrary/text/page-0501.txt"
+  "text_file": "reference/ablibrary/text/page-0501.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "نهج البلاغه - خطبهء اول ."
+    }
+  ],
+  "reference_count": 1
 }

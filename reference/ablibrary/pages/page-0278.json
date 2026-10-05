@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/278",
   "extraction_method": "article",
   "characters": 715,
-  "text_file": "reference/ablibrary/text/page-0278.txt"
+  "text_file": "reference/ablibrary/text/page-0278.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره اعراف - آيهء 204 ."
+    }
+  ],
+  "reference_count": 1
 }

@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/54",
   "extraction_method": "article",
   "characters": 1114,
-  "text_file": "reference/ablibrary/text/page-0054.txt"
+  "text_file": "reference/ablibrary/text/page-0054.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سورهء فصلت - آيات 30 و 31 ."
+    }
+  ],
+  "reference_count": 1
 }

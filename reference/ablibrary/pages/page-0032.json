@@ -6,5 +6,20 @@
   "url": "https://ablibrary.net/book_content/b/17168/32",
   "extraction_method": "article",
   "characters": 1099,
-  "text_file": "reference/ablibrary/text/page-0032.txt"
+  "text_file": "reference/ablibrary/text/page-0032.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "ناسخ التواريخ ."
+    },
+    {
+      "marker": "2",
+      "text": "همان ."
+    },
+    {
+      "marker": "3",
+      "text": "تحت العقول - صفحه 177 ."
+    }
+  ],
+  "reference_count": 3
 }

@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/156",
   "extraction_method": "article",
   "characters": 995,
-  "text_file": "reference/ablibrary/text/page-0156.txt"
+  "text_file": "reference/ablibrary/text/page-0156.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره حج - آيهء 31 ."
+    }
+  ],
+  "reference_count": 1
 }

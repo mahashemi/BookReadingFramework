@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/282",
   "extraction_method": "article",
   "characters": 999,
-  "text_file": "reference/ablibrary/text/page-0282.txt"
+  "text_file": "reference/ablibrary/text/page-0282.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره فجر - آيات 26 و 30 ."
+    }
+  ],
+  "reference_count": 1
 }

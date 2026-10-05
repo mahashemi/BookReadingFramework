@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/84",
   "extraction_method": "article",
   "characters": 1104,
-  "text_file": "reference/ablibrary/text/page-0084.txt"
+  "text_file": "reference/ablibrary/text/page-0084.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "الله الله فى الصلوه و ما ملكت ايمانكم - بحارالانوار 48 / 147 ."
+    }
+  ],
+  "reference_count": 1
 }

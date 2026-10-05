@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/221",
   "extraction_method": "article",
   "characters": 923,
-  "text_file": "reference/ablibrary/text/page-0221.txt"
+  "text_file": "reference/ablibrary/text/page-0221.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره فجر - آيه 14 ."
+    }
+  ],
+  "reference_count": 1
 }

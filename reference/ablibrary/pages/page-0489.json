@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/489",
   "extraction_method": "article",
   "characters": 1048,
-  "text_file": "reference/ablibrary/text/page-0489.txt"
+  "text_file": "reference/ablibrary/text/page-0489.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "ميزان الحكمه - نقل از نور الثقلين - ج 5 - ص 4 ."
+    }
+  ],
+  "reference_count": 1
 }

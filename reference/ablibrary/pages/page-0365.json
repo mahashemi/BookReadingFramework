@@ -6,5 +6,20 @@
   "url": "https://ablibrary.net/book_content/b/17168/365",
   "extraction_method": "article",
   "characters": 1151,
-  "text_file": "reference/ablibrary/text/page-0365.txt"
+  "text_file": "reference/ablibrary/text/page-0365.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره طه - آيات 126 - 125 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره فرقان - آيه 27 ."
+    },
+    {
+      "marker": "3",
+      "text": "سوره فرقان - آيه 30 ."
+    }
+  ],
+  "reference_count": 3
 }

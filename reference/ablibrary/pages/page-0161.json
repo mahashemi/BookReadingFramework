@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/161",
   "extraction_method": "article",
   "characters": 975,
-  "text_file": "reference/ablibrary/text/page-0161.txt"
+  "text_file": "reference/ablibrary/text/page-0161.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره انعام - آيهء 18 ."
+    }
+  ],
+  "reference_count": 1
 }

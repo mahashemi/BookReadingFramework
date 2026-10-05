@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/505",
   "extraction_method": "article",
   "characters": 1057,
-  "text_file": "reference/ablibrary/text/page-0505.txt"
+  "text_file": "reference/ablibrary/text/page-0505.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره يونس - آيه 18 ."
+    }
+  ],
+  "reference_count": 1
 }

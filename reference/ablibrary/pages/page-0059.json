@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/59",
   "extraction_method": "article",
   "characters": 1157,
-  "text_file": "reference/ablibrary/text/page-0059.txt"
+  "text_file": "reference/ablibrary/text/page-0059.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سورهء احزاب - آيهء 72 ."
+    }
+  ],
+  "reference_count": 1
 }

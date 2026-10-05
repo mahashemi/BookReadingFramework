@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/401",
   "extraction_method": "article",
   "characters": 1115,
-  "text_file": "reference/ablibrary/text/page-0401.txt"
+  "text_file": "reference/ablibrary/text/page-0401.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره نساء - آيه 10 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره يوسف - آيه 87 ."
+    }
+  ],
+  "reference_count": 2
 }

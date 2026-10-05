@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/94",
   "extraction_method": "article",
   "characters": 1018,
-  "text_file": "reference/ablibrary/text/page-0094.txt"
+  "text_file": "reference/ablibrary/text/page-0094.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سورهء توبه - آيهء 109 ."
+    }
+  ],
+  "reference_count": 1
 }

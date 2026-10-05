@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/430",
   "extraction_method": "article",
   "characters": 987,
-  "text_file": "reference/ablibrary/text/page-0430.txt"
+  "text_file": "reference/ablibrary/text/page-0430.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "الميزان - ج 8 - ص 38 به نقل از كافى ."
+    }
+  ],
+  "reference_count": 1
 }

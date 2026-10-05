@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/34",
   "extraction_method": "article",
   "characters": 1200,
-  "text_file": "reference/ablibrary/text/page-0034.txt"
+  "text_file": "reference/ablibrary/text/page-0034.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "هر كه از سنت من روى برگرداند از امت من نيست ."
+    }
+  ],
+  "reference_count": 1
 }

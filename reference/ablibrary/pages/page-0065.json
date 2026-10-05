@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/65",
   "extraction_method": "article",
   "characters": 1046,
-  "text_file": "reference/ablibrary/text/page-0065.txt"
+  "text_file": "reference/ablibrary/text/page-0065.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "نهج البلاغه طبع مصر - ج 1 - صفحه 56 ."
+    }
+  ],
+  "reference_count": 1
 }

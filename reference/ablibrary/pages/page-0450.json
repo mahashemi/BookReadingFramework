@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/450",
   "extraction_method": "article",
   "characters": 1164,
-  "text_file": "reference/ablibrary/text/page-0450.txt"
+  "text_file": "reference/ablibrary/text/page-0450.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره عنكبوت - آيه 45 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره طه - آيه 14 ."
+    }
+  ],
+  "reference_count": 2
 }

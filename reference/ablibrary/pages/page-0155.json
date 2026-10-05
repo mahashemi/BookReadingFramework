@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/155",
   "extraction_method": "article",
   "characters": 1053,
-  "text_file": "reference/ablibrary/text/page-0155.txt"
+  "text_file": "reference/ablibrary/text/page-0155.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره صف - آيهء 5 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره مائده - آيهء 67 ."
+    }
+  ],
+  "reference_count": 2
 }

@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/195",
   "extraction_method": "article",
   "characters": 1117,
-  "text_file": "reference/ablibrary/text/page-0195.txt"
+  "text_file": "reference/ablibrary/text/page-0195.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره نساء - آيات 17 و 18 ."
+    }
+  ],
+  "reference_count": 1
 }

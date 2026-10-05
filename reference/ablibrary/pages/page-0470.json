@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/470",
   "extraction_method": "article",
   "characters": 1126,
-  "text_file": "reference/ablibrary/text/page-0470.txt"
+  "text_file": "reference/ablibrary/text/page-0470.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره طلاق - آيه 3 ."
+    }
+  ],
+  "reference_count": 1
 }

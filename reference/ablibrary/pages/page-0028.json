@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/28",
   "extraction_method": "article",
   "characters": 1141,
-  "text_file": "reference/ablibrary/text/page-0028.txt"
+  "text_file": "reference/ablibrary/text/page-0028.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "« كسى كه روش نيكويى را بنا گذارد ، پس براى او است پاداش آن روش و پاداش كسى كه به آن عمل مىكند ، و كسى كه روش ناصوابى را بنا گذارد ، براى اوست گناه آن روش ، و گناه كسى كه بدان عمل مىكند » . بحار - ج 2 جديد - صفحه 24 - حديث 15 ."
+    }
+  ],
+  "reference_count": 1
 }

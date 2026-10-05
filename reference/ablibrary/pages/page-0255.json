@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/255",
   "extraction_method": "article",
   "characters": 1060,
-  "text_file": "reference/ablibrary/text/page-0255.txt"
+  "text_file": "reference/ablibrary/text/page-0255.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره نور - آيهء 19 ."
+    }
+  ],
+  "reference_count": 1
 }

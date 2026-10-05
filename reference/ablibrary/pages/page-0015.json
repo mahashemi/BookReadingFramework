@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/15",
   "extraction_method": "article",
   "characters": 1276,
-  "text_file": "reference/ablibrary/text/page-0015.txt"
+  "text_file": "reference/ablibrary/text/page-0015.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "« يا على اگر خداوند به وسيله تو شخصى را هدايت كند ، براى تو از دنيا و آنچه در دنياست بهتر است » . سفينه البحار - ج 2 - ص 700 ."
+    }
+  ],
+  "reference_count": 1
 }

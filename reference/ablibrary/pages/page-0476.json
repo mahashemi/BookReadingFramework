@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/476",
   "extraction_method": "article",
   "characters": 1108,
-  "text_file": "reference/ablibrary/text/page-0476.txt"
+  "text_file": "reference/ablibrary/text/page-0476.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره يونس - آيه 62 ."
+    }
+  ],
+  "reference_count": 1
 }

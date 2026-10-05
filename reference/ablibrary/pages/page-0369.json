@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/369",
   "extraction_method": "article",
   "characters": 1069,
-  "text_file": "reference/ablibrary/text/page-0369.txt"
+  "text_file": "reference/ablibrary/text/page-0369.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره حشر - آيه 21 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره حديد - آيه 16 ."
+    }
+  ],
+  "reference_count": 2
 }

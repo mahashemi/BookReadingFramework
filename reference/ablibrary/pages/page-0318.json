@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/318",
   "extraction_method": "article",
   "characters": 735,
-  "text_file": "reference/ablibrary/text/page-0318.txt"
+  "text_file": "reference/ablibrary/text/page-0318.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره محمد ( ص ) - آيه 7 ."
+    }
+  ],
+  "reference_count": 1
 }

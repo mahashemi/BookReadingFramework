@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/231",
   "extraction_method": "article",
   "characters": 1143,
-  "text_file": "reference/ablibrary/text/page-0231.txt"
+  "text_file": "reference/ablibrary/text/page-0231.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره معارج - آيهء 19 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره معارج - آيات 20 و 21 ."
+    }
+  ],
+  "reference_count": 2
 }

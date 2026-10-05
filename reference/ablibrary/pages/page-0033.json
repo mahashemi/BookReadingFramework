@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/33",
   "extraction_method": "article",
   "characters": 1116,
-  "text_file": "reference/ablibrary/text/page-0033.txt"
+  "text_file": "reference/ablibrary/text/page-0033.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سورهء قصص - آيه 77 ."
+    },
+    {
+      "marker": "2",
+      "text": "سورهء اعراف - آيه 32 ."
+    }
+  ],
+  "reference_count": 2
 }

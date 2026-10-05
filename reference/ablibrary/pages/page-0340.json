@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/340",
   "extraction_method": "article",
   "characters": 1090,
-  "text_file": "reference/ablibrary/text/page-0340.txt"
+  "text_file": "reference/ablibrary/text/page-0340.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره مزمل - آيه 6 ."
+    }
+  ],
+  "reference_count": 1
 }

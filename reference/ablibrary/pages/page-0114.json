@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/114",
   "extraction_method": "article",
   "characters": 1046,
-  "text_file": "reference/ablibrary/text/page-0114.txt"
+  "text_file": "reference/ablibrary/text/page-0114.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره بقره - آيات 155 ، 156 و 157 ."
+    }
+  ],
+  "reference_count": 1
 }

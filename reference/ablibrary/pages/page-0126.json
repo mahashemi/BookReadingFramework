@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/126",
   "extraction_method": "article",
   "characters": 1159,
-  "text_file": "reference/ablibrary/text/page-0126.txt"
+  "text_file": "reference/ablibrary/text/page-0126.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره قصص - آيه 24 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره طه - آيات 25 ، 26 ، 27 و 28 ."
+    }
+  ],
+  "reference_count": 2
 }

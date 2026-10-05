@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/276",
   "extraction_method": "article",
   "characters": 989,
-  "text_file": "reference/ablibrary/text/page-0276.txt"
+  "text_file": "reference/ablibrary/text/page-0276.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره آل عمران - آيهء 30 ."
+    }
+  ],
+  "reference_count": 1
 }

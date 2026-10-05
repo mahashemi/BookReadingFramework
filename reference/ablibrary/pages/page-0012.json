@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/12",
   "extraction_method": "article",
   "characters": 1075,
-  "text_file": "reference/ablibrary/text/page-0012.txt"
+  "text_file": "reference/ablibrary/text/page-0012.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سورهء جمعه - آيه 2 ."
+    }
+  ],
+  "reference_count": 1
 }

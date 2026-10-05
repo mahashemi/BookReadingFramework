@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/487",
   "extraction_method": "article",
   "characters": 696,
-  "text_file": "reference/ablibrary/text/page-0487.txt"
+  "text_file": "reference/ablibrary/text/page-0487.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره المزمل - آيه 9 ."
+    }
+  ],
+  "reference_count": 1
 }

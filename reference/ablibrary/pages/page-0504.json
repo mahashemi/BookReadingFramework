@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/504",
   "extraction_method": "article",
   "characters": 1139,
-  "text_file": "reference/ablibrary/text/page-0504.txt"
+  "text_file": "reference/ablibrary/text/page-0504.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره انعام - آيه 57 ."
+    }
+  ],
+  "reference_count": 1
 }

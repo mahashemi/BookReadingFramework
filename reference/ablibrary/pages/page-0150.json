@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/150",
   "extraction_method": "article",
   "characters": 1123,
-  "text_file": "reference/ablibrary/text/page-0150.txt"
+  "text_file": "reference/ablibrary/text/page-0150.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره غايشه - آيهء 7 ."
+    }
+  ],
+  "reference_count": 1
 }

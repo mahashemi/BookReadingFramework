@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/182",
   "extraction_method": "article",
   "characters": 1109,
-  "text_file": "reference/ablibrary/text/page-0182.txt"
+  "text_file": "reference/ablibrary/text/page-0182.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "« ظاهراً در اينجا ثواب توبه است ؛ مثلًا كسى كه غيبت كرده ، تهمت زده و نماز نخوانده است . وقتى توبه مىكند گناهانش محو مىشود ، و چون در اسلام ثواب توبه از ثواب همهء عبادات بالاتر است ، در نامهء عمل گناهكار ثواب نوشته مىشود ."
+    }
+  ],
+  "reference_count": 1
 }

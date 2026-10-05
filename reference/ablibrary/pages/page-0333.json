@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/333",
   "extraction_method": "article",
   "characters": 1025,
-  "text_file": "reference/ablibrary/text/page-0333.txt"
+  "text_file": "reference/ablibrary/text/page-0333.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره ص - آيه 83 و 82 ."
+    }
+  ],
+  "reference_count": 1
 }

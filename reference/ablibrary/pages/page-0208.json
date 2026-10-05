@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/208",
   "extraction_method": "article",
   "characters": 1098,
-  "text_file": "reference/ablibrary/text/page-0208.txt"
+  "text_file": "reference/ablibrary/text/page-0208.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره غافر - آيهء 19 ."
+    }
+  ],
+  "reference_count": 1
 }

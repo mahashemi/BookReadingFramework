@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/85",
   "extraction_method": "article",
   "characters": 1024,
-  "text_file": "reference/ablibrary/text/page-0085.txt"
+  "text_file": "reference/ablibrary/text/page-0085.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "السفينه - ج 1 - ص 133 ."
+    }
+  ],
+  "reference_count": 1
 }

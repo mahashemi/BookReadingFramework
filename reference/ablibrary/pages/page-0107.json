@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/107",
   "extraction_method": "article",
   "characters": 1088,
-  "text_file": "reference/ablibrary/text/page-0107.txt"
+  "text_file": "reference/ablibrary/text/page-0107.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره واقعه - آيات 8 ، 9 ، 10 و 11 ."
+    }
+  ],
+  "reference_count": 1
 }

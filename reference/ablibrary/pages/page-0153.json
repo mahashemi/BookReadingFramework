@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/153",
   "extraction_method": "article",
   "characters": 1042,
-  "text_file": "reference/ablibrary/text/page-0153.txt"
+  "text_file": "reference/ablibrary/text/page-0153.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره حج - آيهء 30 ."
+    }
+  ],
+  "reference_count": 1
 }

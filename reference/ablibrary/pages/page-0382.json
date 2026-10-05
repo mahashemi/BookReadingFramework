@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/382",
   "extraction_method": "article",
   "characters": 1006,
-  "text_file": "reference/ablibrary/text/page-0382.txt"
+  "text_file": "reference/ablibrary/text/page-0382.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره غافر - آيه 60 ."
+    }
+  ],
+  "reference_count": 1
 }

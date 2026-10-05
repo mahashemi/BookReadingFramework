@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/158",
   "extraction_method": "article",
   "characters": 958,
-  "text_file": "reference/ablibrary/text/page-0158.txt"
+  "text_file": "reference/ablibrary/text/page-0158.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره ابراهيم - آيهء 18 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره رعد - آيهء 31 ."
+    }
+  ],
+  "reference_count": 2
 }

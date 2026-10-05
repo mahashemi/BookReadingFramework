@@ -6,5 +6,12 @@
   "url": "https://ablibrary.net/book_content/b/17168/254",
   "extraction_method": "article",
   "characters": 1110,
-  "text_file": "reference/ablibrary/text/page-0254.txt"
+  "text_file": "reference/ablibrary/text/page-0254.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره الشمس - آيات 7 و 8 ."
+    }
+  ],
+  "reference_count": 1
 }

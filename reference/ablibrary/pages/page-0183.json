@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/183",
   "extraction_method": "article",
   "characters": 1024,
-  "text_file": "reference/ablibrary/text/page-0183.txt"
+  "text_file": "reference/ablibrary/text/page-0183.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "« همانا خدا توبه‌كنندگان و پاك‌شدگان را دوست دارد » ."
+    },
+    {
+      "marker": "2",
+      "text": "سفينه - ج 1 - ص 126 ."
+    }
+  ],
+  "reference_count": 2
 }

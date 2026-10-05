@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/315",
   "extraction_method": "article",
   "characters": 1076,
-  "text_file": "reference/ablibrary/text/page-0315.txt"
+  "text_file": "reference/ablibrary/text/page-0315.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره نساء - آيه 56 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره همزه - آيات 1 تا 7 ."
+    }
+  ],
+  "reference_count": 2
 }

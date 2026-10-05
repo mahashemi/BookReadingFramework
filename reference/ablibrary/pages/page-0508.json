@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/508",
   "extraction_method": "article",
   "characters": 1120,
-  "text_file": "reference/ablibrary/text/page-0508.txt"
+  "text_file": "reference/ablibrary/text/page-0508.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره يونس - آيه 62 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره طلاق - آيات 3 و 2 ."
+    }
+  ],
+  "reference_count": 2
 }

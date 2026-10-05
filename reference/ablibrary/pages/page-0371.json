@@ -6,5 +6,16 @@
   "url": "https://ablibrary.net/book_content/b/17168/371",
   "extraction_method": "article",
   "characters": 1104,
-  "text_file": "reference/ablibrary/text/page-0371.txt"
+  "text_file": "reference/ablibrary/text/page-0371.txt",
+  "references": [
+    {
+      "marker": "1",
+      "text": "سوره الاسرى - آيه 45 ."
+    },
+    {
+      "marker": "2",
+      "text": "سوره مزمل - آيه 20 ."
+    }
+  ],
+  "reference_count": 2
 }
