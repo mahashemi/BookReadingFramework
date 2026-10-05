@@ -159,46 +159,63 @@ def clean_container(element) -> str:
 
 
 def extract_book_body(soup: BeautifulSoup):
-    """Return the visible book body, full text, and body paragraphs.
+    """Extract only the book prose from articleBody.
 
-    The visible prose is under itemProp="articleBody". Footnotes are retained
-    at the end of the page text, while represented separately in references[];
-    they are deliberately excluded from paragraphs[].
+    The site sometimes places its footnote block and then reader/navigation
+    chrome inside the same articleBody container. The footnote block is the
+    hard boundary of the book prose; anything after it is site chrome.
+
+    Footnote definitions are represented structurally in references[] rather
+    than duplicated in the canonical page text.
     """
     body = soup.select_one('[itemprop="articleBody"]')
     if not body:
         return None, None, []
 
+    work = BeautifulSoup(str(body), "html.parser").select_one(
+        '[itemprop="articleBody"]'
+    )
+    if work is None:
+        return None, None, []
+
+    footnote = work.select_one('[data-abl-content="footnote"]')
+    if footnote is not None:
+        node = footnote
+        while node is not work:
+            for sibling in list(node.next_siblings):
+                sibling.extract()
+            node = node.parent
+        footnote.extract()
+
     paragraphs = []
-    for child in body.find_all(recursive=False):
-        if child.name == "section" and child.get("data-abl-content") == "footnote":
+    for child in work.find_all(recursive=False):
+        if child.name in {
+            "nav", "header", "footer", "script", "style", "noscript", "svg"
+        }:
             continue
 
-        nodes = child.find_all(["h1", "h2", "h3", "p", "span"], recursive=True)
+        nodes = child.find_all(["h1", "h2", "h3", "p"], recursive=True)
         if not nodes:
             nodes = [child]
 
         for node in nodes:
-            if node.name == "span" and node.find_parent(["h1", "h2", "h3", "p"]):
-                continue
             raw = node.get_text("\\n", strip=True)
             for line in raw.split("\\n"):
                 line = normalize_text(line)
                 if line:
                     paragraphs.append(line)
 
-    footnote_lines = []
-    footnote = body.select_one('[data-abl-content="footnote"]')
-    if footnote:
-        raw = footnote.get_text("\\n", strip=True)
-        for line in raw.split("\\n"):
-            line = normalize_text(line)
-            if line and line != "هامش":
-                footnote_lines.append(line)
+    if not paragraphs:
+        for node in work.find_all(["h1", "h2", "h3", "p"], recursive=True):
+            raw = node.get_text("\\n", strip=True)
+            for line in raw.split("\\n"):
+                line = normalize_text(line)
+                if line:
+                    paragraphs.append(line)
 
-    full_lines = paragraphs + (["هامش"] + footnote_lines if footnote_lines else [])
-    text = normalize_text("\\n".join(full_lines))
+    text = normalize_text("\\n".join(paragraphs))
     return body, text, paragraphs
+
 
 def find_book_content(soup: BeautifulSoup) -> tuple[str | None, str, list[str]]:
     """Find the actual rendered book text and preserve logical paragraphs."""
