@@ -179,6 +179,9 @@ def main() -> int:
         html = html_file.read_text(encoding="utf-8")
         references = extract_references(html)
         extracted_text, paragraphs = extract_text_and_paragraphs(html)
+        soup = BeautifulSoup(html, "html.parser")
+        meta_tag = soup.find("meta", attrs={"name": "description"})
+        meta_description = meta_tag.get("content") if meta_tag else None
 
         record = json.loads(json_file.read_text(encoding="utf-8"))
         if extracted_text:
@@ -188,7 +191,7 @@ def main() -> int:
             record["text"] = extracted_text
             record["paragraphs"] = paragraphs
             record["extraction_method"] = "articleBody"
-        record["meta_description"] = record.get("meta_description", record.get("description"))
+        record["meta_description"] = meta_description
         record["references"] = references
         record["reference_count"] = len(references)
         json_file.write_text(
