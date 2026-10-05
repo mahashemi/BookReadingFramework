@@ -96,6 +96,18 @@ def extract_text_and_paragraphs(html: str) -> tuple[str, list[str]]:
 
     return normalize_text("\n".join(lines)), lines
 
+def append_references_to_text(text: str, references: list[dict]) -> str:
+    """Make the canonical .txt self-contained by appending footnote definitions."""
+    if not references:
+        return text
+    lines = [text, "", "هامش"]
+    lines.extend(
+        f"( {ref['marker']} ) . {ref['text']}"
+        for ref in references
+    )
+    return normalize_text("\n".join(lines))
+
+
 def extract_references(html: str) -> list[dict]:
     soup = BeautifulSoup(html, "html.parser")
     section = soup.select_one('[data-abl-content="footnote"]')
@@ -203,6 +215,7 @@ def main() -> int:
         html = html_file.read_text(encoding="utf-8")
         references = extract_references(html)
         extracted_text, paragraphs = extract_text_and_paragraphs(html)
+        complete_text = append_references_to_text(extracted_text, references)
         record = json.loads(json_file.read_text(encoding="utf-8"))
         # The .txt file is the canonical page text. Keep page JSON metadata
         # lightweight: paragraphs are useful structure, while duplicating the
@@ -211,8 +224,8 @@ def main() -> int:
         record.pop("meta_description", None)
         record.pop("text", None)
         if extracted_text:
-            text_file.write_text(extracted_text, encoding="utf-8")
-            record["characters"] = len(extracted_text)
+            text_file.write_text(complete_text, encoding="utf-8")
+            record["characters"] = len(complete_text)
             record["paragraphs"] = paragraphs
             record["extraction_method"] = "articleBody"
         record["references"] = references
