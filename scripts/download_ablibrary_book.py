@@ -155,7 +155,28 @@ def clean_container(element) -> str:
     return normalize_text(element.get_text("\n", strip=True))
 
 
-def find_book_content(soup: BeautifulSoup) -> tuple[str | None, str]:
+def extract_paragraphs(element) -> list[str]:
+    """Extract readable block paragraphs from the selected book container.
+
+    We prefer actual block elements when the site provides them. If the page
+    uses div/span wrappers instead, fall back to line-separated text. The
+    resulting list is stored in JSON so the JSON remains a self-contained,
+    machine-readable representation of the extracted page.
+    """
+    blocks = []
+    for node in element.find_all(["p", "blockquote", "pre", "li"]):
+        text = normalize_text(node.get_text(" ", strip=True))
+        if text and text not in blocks:
+            blocks.append(text)
+
+    if blocks:
+        return blocks
+
+    text = clean_container(element)
+    return [line for line in text.split("\n") if line.strip()]
+
+
+def find_book_content(soup: BeautifulSoup) -> tuple[str | None, str, list[str]]:
     """
     Find the actual book text rather than blindly extracting the whole body.
 
@@ -212,16 +233,22 @@ def find_book_content(soup: BeautifulSoup) -> tuple[str | None, str]:
     if candidates:
         candidates.sort(key=lambda x: x[0], reverse=True)
         _, text, selector = candidates[0]
-        return text, selector
+        return text, selector, extract_paragraphs(
+            next(
+                element
+                for element in soup.select(selector)
+                if clean_container(element) == text
+            )
+        )
 
     # Last-resort body extraction. This is deliberately labeled as fallback
     # in the manifest so it is easy to audit.
     if soup.body:
         text = clean_container(soup.body)
         if len(text) >= 100:
-            return text, "body-fallback"
+            return text, "body-fallback", [line for line in text.split("\n") if line.strip()]
 
-    return None, "none"
+    return None, "none", []
 
 
 thread_local = threading.local()
@@ -271,7 +298,7 @@ def download_page(
 
     metadata = extract_metadata(soup, page)
     references = extract_references(soup)
-    text, extraction_method = find_book_content(soup)
+    text, extraction_method, paragraphs = find_book_content(soup)
 
     if not text:
         # Description is useful for diagnostics, but it is often truncated
@@ -279,6 +306,7 @@ def download_page(
         description = metadata.get("description")
         if description:
             text = normalize_text(description)
+            paragraphs = [text]
             extraction_method = "meta-description-fallback"
         else:
             raise RuntimeError(
@@ -300,6 +328,8 @@ def download_page(
         "url": response.url,
         "extraction_method": extraction_method,
         "characters": len(text),
+        "text": text,
+        "paragraphs": paragraphs,
         "references": references,
         "reference_count": len(references),
         "text_file": str(text_file),
