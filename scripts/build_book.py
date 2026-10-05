@@ -34,6 +34,9 @@ DEFAULT_TEMPLATE = """<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title>
 <link rel="stylesheet" href="../../../assets/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 <main class="shell">
@@ -186,8 +189,34 @@ def render_footnotes(lines: list[str]) -> str:
     )
 
 
+def render_mixed_paragraph(line: str) -> str:
+    """Render Persian prose while visually separating inline Arabic quotations."""
+    parts: list[str] = []
+    pos = 0
+    for match in re.finditer(r"«([^»]+)»", line):
+        before = line[pos:match.start()]
+        quoted = match.group(1)
+        if before:
+            parts.append(html.escape(before))
+        if is_arabic(quoted):
+            parts.append(
+                '<span class="source-arabic-inline" lang="ar" dir="rtl">'
+                f'«{html.escape(quoted)}»</span>'
+            )
+        else:
+            parts.append(html.escape(match.group(0)))
+        pos = match.end()
+    if pos < len(line):
+        parts.append(html.escape(line[pos:]))
+    return (
+        '<p class="source-persian" lang="fa" dir="rtl">'
+        + "".join(parts)
+        + "</p>"
+    )
+
+
 def render_text_blocks(lines: list[str]) -> str:
-    """Render each source paragraph with distinct Persian/Arabic typography."""
+    """Render source paragraphs, including mixed Persian/Arabic paragraphs."""
     out: list[str] = []
     for line in lines:
         if HEADING.match(line):
@@ -200,9 +229,7 @@ def render_text_blocks(lines: list[str]) -> str:
                 f'<div>{html.escape(line)}</div></blockquote>'
             )
         else:
-            out.append(
-                f'<p class="source-persian" lang="fa" dir="rtl">{html.escape(line)}</p>'
-            )
+            out.append(render_mixed_paragraph(line))
     return "\n".join(out)
 
 
