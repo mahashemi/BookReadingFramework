@@ -30,6 +30,7 @@ from bs4 import BeautifulSoup
 
 
 PAGE_RE = re.compile(r"page-(\d+)\.(?:json|html|txt)$")
+KNOWN_SOURCE_GAPS = {179}
 
 
 def normalize_text(text: str) -> str:
@@ -164,7 +165,10 @@ def audit_tree(source: Path, manifest: dict) -> list[str]:
     if sets["html"]:
         ordered = sorted(sets["html"])
         gaps = [
-            (a, b) for a, b in zip(ordered, ordered[1:]) if b != a + 1
+            (a, b) for a, b in zip(ordered, ordered[1:])
+            if b != a + 1 and not all(
+                p in KNOWN_SOURCE_GAPS for p in range(a + 1, b)
+            )
         ]
         if gaps:
             problems.append(f"Source page gaps: {gaps}")
