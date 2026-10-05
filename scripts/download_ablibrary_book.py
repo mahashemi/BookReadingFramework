@@ -542,10 +542,7 @@ def main() -> int:
             Path(entry["html_file"]).exists() for entry in pages.values()
         ),
         "canonical_candidate": (
-            len(extraction_counts) == 1
-            and "meta-description-fallback" not in extraction_counts
-            and "body-fallback" not in extraction_counts
-            and "none" not in extraction_counts
+            extraction_counts == {"articleBody": len(pages)}
         ),
     }
 
