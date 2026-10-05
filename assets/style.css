@@ -614,3 +614,106 @@ body.source-reading {
     break-inside: auto;
   }
 }
+
+
+/* ---------- Book 03 readability refinement ---------- */
+body.source-reading {
+  background: #f2e6c9;
+  color: #171717;
+  font-family: "Noto Sans Arabic", sans-serif;
+}
+
+.source-transcription {
+  font-family: "Noto Sans Arabic", sans-serif;
+  color: #171717;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 2.12;
+}
+
+.source-chapter-title {
+  font-family: "Noto Sans Arabic", sans-serif;
+  color: #171717;
+  font-weight: 600;
+}
+
+.source-eyebrow {
+  font-family: "Noto Sans Arabic", sans-serif;
+  color: #725b38;
+  font-weight: 500;
+}
+
+.source-persian {
+  color: #171717;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-weight: 400;
+  line-height: 2.18;
+}
+
+.source-arabic {
+  background: #e8d7ad;
+  color: #171717;
+  border-inline-start: 3px solid #8a6a3f;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-weight: 400;
+  box-shadow: none;
+}
+
+.source-arabic-inline {
+  display: inline;
+  color: #5b3826;
+  background: #e8d7ad;
+  border-radius: .18em;
+  padding: .02em .16em .08em;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-weight: 400;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.source-subheading {
+  font-family: "Noto Sans Arabic", sans-serif;
+  color: #3b3328;
+  font-weight: 600;
+}
+
+.source-footnotes {
+  background: #eadfc3;
+  border-color: #d2c19d;
+  color: #514b42;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-weight: 400;
+}
+
+.pdf-page-marker {
+  color: #786d5d;
+  font-family: "Noto Sans Arabic", sans-serif;
+}
+
+@media (max-width: 800px) {
+  body.source-reading { background: #f4e9d0; }
+  .source-transcription { font-size: 17px; }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.source-reading {
+    background: #1d1a15;
+    color: #eee8dc;
+  }
+  .source-transcription,
+  .source-persian {
+    color: #eee8dc;
+  }
+  .source-chapter-title {
+    color: #f1eadc;
+  }
+  .source-arabic {
+    background: #332b20;
+    color: #eee8dc;
+    border-inline-start-color: #a88a5b;
+  }
+  .source-arabic-inline {
+    color: #ead5ad;
+    background: #332b20;
+  }
+}
