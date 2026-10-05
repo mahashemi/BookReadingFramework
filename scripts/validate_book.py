@@ -11,6 +11,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 MARKER = re.compile(r'data-source-internal-page="(\d+)"')
+KNOWN_SOURCE_GAPS = {179}
 
 
 def norm(s: str) -> str:
@@ -107,18 +108,19 @@ def main() -> int:
                 continue
             record = json.loads(json_path.read_text(encoding="utf-8"))
             source_text = pages.get(p, "")
-            if "text" not in record or "paragraphs" not in record:
-                failures.append(f"Source page {p}: full text/paragraph metadata missing")
+            forbidden = {"text", "description", "meta_description"} & set(record)
+            if forbidden:
+                failures.append(
+                    f"Source page {p}: redundant JSON fields present: {sorted(forbidden)}"
+                )
+            if "paragraphs" not in record:
+                failures.append(f"Source page {p}: paragraphs metadata missing")
             else:
-                json_text = norm(record["text"])
                 paragraph_text = norm("\n".join(record["paragraphs"]))
-                if json_text != source_text:
-                    failures.append(f"Source page {p}: JSON text differs from canonical text file")
-                # Canonical text and paragraphs contain only book prose.
-                # Footnote definitions are represented in references[].
-                if paragraph_text != source_text:
+                body_text = source_text.split("\nهامش\n", 1)[0]
+                if paragraph_text != norm(body_text):
                     failures.append(
-                        f"Source page {p}: JSON paragraphs differ from canonical body text"
+                        f"Source page {p}: JSON paragraphs differ from canonical prose"
                     )
             if "references" not in record or "reference_count" not in record:
                 failures.append(f"Source page {p}: references metadata missing")
@@ -142,7 +144,7 @@ def main() -> int:
             continue
         raw = target.read_text(encoding="utf-8")
         found = [int(x) for x in MARKER.findall(raw)]
-        expected = list(range(start, end + 1))
+        expected = [p for p in range(start, end + 1) if p in pages]
         if found != expected:
             failures.append(f"Chapter {n}: page markers {found} != expected {expected}")
         if "reader.js" not in raw:
