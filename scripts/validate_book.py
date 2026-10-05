@@ -80,7 +80,10 @@ def main() -> int:
 
     if text_pages:
         start = int(manifest.get("content_start_internal_page", min(text_pages)))
-        expected_source_pages = set(range(start, max(text_pages) + 1))
+        expected_source_pages = {
+            p for p in range(start, max(text_pages) + 1)
+            if p not in KNOWN_SOURCE_GAPS
+        }
         missing_source_pages = sorted(expected_source_pages - text_pages)
         if missing_source_pages:
             failures.append(
