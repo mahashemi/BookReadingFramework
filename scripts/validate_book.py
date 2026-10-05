@@ -40,11 +40,52 @@ def main() -> int:
         if m:
             pages[int(m.group(1))] = norm(p.read_text(encoding="utf-8"))
 
+    html_pages = {
+        int(re.search(r"(\d+)", p.stem).group(1))
+        for p in (args.source / "html").glob("page-*.html")
+        if re.search(r"(\d+)", p.stem)
+    }
+    json_pages = {
+        int(re.search(r"(\d+)", p.stem).group(1))
+        for p in (args.source / "pages").glob("page-*.json")
+        if re.search(r"(\d+)", p.stem)
+    }
+    text_pages = set(pages)
+    if html_pages != text_pages:
+        failures.append(
+            f"Source HTML/text mismatch: html-only={sorted(html_pages-text_pages)}, "
+            f"text-only={sorted(text_pages-html_pages)}"
+        )
+    if json_pages != text_pages:
+        failures.append(
+            f"Source JSON/text mismatch: json-only={sorted(json_pages-text_pages)}, "
+            f"text-only={sorted(text_pages-json_pages)}"
+        )
+
     manifest = load_manifest(args.source)
     chapters = [c for v in manifest.get("volumes", []) for c in v.get("chapters", [])]
 
     if not chapters:
         failures.append("Manifest contains no chapters.")
+
+    manifest_pages = {
+        int(p["internal_page"]) for p in manifest.get("pages", [])
+    }
+    if manifest_pages != text_pages:
+        failures.append(
+            f"Manifest/source mismatch: manifest-only={sorted(manifest_pages-text_pages)}, "
+            f"source-only={sorted(text_pages-manifest_pages)}"
+        )
+
+    if text_pages:
+        start = int(manifest.get("content_start_internal_page", min(text_pages)))
+        expected_source_pages = set(range(start, max(text_pages) + 1))
+        missing_source_pages = sorted(expected_source_pages - text_pages)
+        if missing_source_pages:
+            failures.append(
+                f"Missing source pages in retained range {start}–{max(text_pages)}: "
+                f"{missing_source_pages}"
+            )
 
     seen_pages = []
     for c in chapters:
@@ -57,6 +98,20 @@ def main() -> int:
             seen_pages.append(p)
             if p not in pages:
                 failures.append(f"Chapter {n}: missing source page {p}")
+
+        for p in range(start, end + 1):
+            json_path = args.source / "pages" / f"page-{p:04d}.json"
+            html_path = args.source / "html" / f"page-{p:04d}.html"
+            if not json_path.exists():
+                failures.append(f"Chapter {n}: missing page JSON {json_path}")
+                continue
+            record = json.loads(json_path.read_text(encoding="utf-8"))
+            if "references" not in record or "reference_count" not in record:
+                failures.append(f"Source page {p}: references metadata missing")
+            elif record["reference_count"] != len(record["references"]):
+                failures.append(f"Source page {p}: reference_count mismatch")
+            if not html_path.exists():
+                failures.append(f"Chapter {n}: missing source HTML {html_path}")
 
         target = args.output / f"chapter-{n:02d}.html"
         if not target.exists():
