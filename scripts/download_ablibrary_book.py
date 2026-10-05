@@ -187,7 +187,7 @@ def extract_book_body(soup: BeautifulSoup):
             raw = node.get_text("\n", strip=True)
             for line in raw.split("\n"):
                 line = normalize_text(line)
-                if line and line not in paragraphs:
+                if line:
                     paragraphs.append(line)
 
     # If the DOM changes, retain a conservative fallback from articleBody.
