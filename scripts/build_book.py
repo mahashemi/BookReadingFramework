@@ -20,6 +20,8 @@ import json
 import re
 from pathlib import Path
 
+KNOWN_SOURCE_GAPS = {179}
+
 FA_RTL = re.compile(r"[\u0600-\u06ff]")
 ARABIC = re.compile(r"[\u0621-\u064a]")
 PERSIAN_SPECIFIC = re.compile(r"[پچژگ]")
@@ -199,12 +201,17 @@ def build(source: Path, output: Path) -> None:
             end = int(chapter["end_internal_page"])
             if start > end:
                 raise SystemExit(f"Chapter {n}: start > end.")
-            missing = [p for p in range(start, end + 1) if p not in pages]
+            missing = [
+                p for p in range(start, end + 1)
+                if p not in pages and p not in KNOWN_SOURCE_GAPS
+            ]
             if missing:
                 raise SystemExit(f"Chapter {n}: missing source pages {missing}")
 
             body = []
             for p in range(start, end + 1):
+                if p not in pages:
+                    continue
                 meta_file = source / "pages" / f"page-{p:04d}.json"
                 printed = None
                 if meta_file.exists():
