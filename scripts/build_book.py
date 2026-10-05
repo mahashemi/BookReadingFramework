@@ -78,7 +78,8 @@ def find_headings(pages: dict[int, str]) -> list[dict]:
     found = []
     seen = set()
     for page, text in pages.items():
-        for line_no, raw in enumerate(text.splitlines(), 1):
+        prose = text.split("\nهامش\n", 1)[0]
+        for line_no, raw in enumerate(prose.splitlines(), 1):
             line = norm(raw)
             if not line or not HEADING.match(line):
                 continue
