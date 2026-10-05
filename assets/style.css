@@ -265,12 +265,12 @@ body:has(.pdf-page-marker) > article > h1 {
 
 /* ================================================================
    Book 03 source reading edition
-   One coherent reading system: warm paper, black text, restrained
-   Arabic differentiation, and Noto Sans Arabic Variable throughout.
+   Clean reading palette: paper-white Persian, green Quranic Arabic,
+   and a restrained gray footnote panel.
    ================================================================ */
 
 body.source-reading {
-  background: #f1e5c8;
+  background: #f7f6f2;
   color: #171717;
   font-family: "Noto Sans Arabic", sans-serif;
 }
@@ -302,8 +302,7 @@ body.source-reading {
 
 .source-reading .source-eyebrow {
   margin: 0 0 10px;
-  color: #6f5b3d;
-  font-family: "Noto Sans Arabic", sans-serif;
+  color: #6b665d;
   font-size: 12px;
   font-weight: 400;
 }
@@ -311,7 +310,6 @@ body.source-reading {
 .source-reading .source-chapter-title {
   margin: 0;
   color: #171717;
-  font-family: "Noto Sans Arabic", sans-serif;
   font-size: clamp(29px, 4vw, 40px);
   font-weight: 600;
   line-height: 1.55;
@@ -321,7 +319,7 @@ body.source-reading {
   width: 72px;
   height: 1px;
   margin: 18px auto 0;
-  background: #8f7955;
+  background: #bdb9af;
 }
 
 .source-reading .source-content {
@@ -345,8 +343,7 @@ body.source-reading {
   gap: 12px;
   width: 100%;
   margin: 34px 0 24px;
-  color: #786d5c;
-  font-family: "Noto Sans Arabic", sans-serif;
+  color: #88847b;
   font-size: 10px;
   font-weight: 400;
   line-height: 1;
@@ -358,7 +355,7 @@ body.source-reading {
 .source-reading .pdf-page-marker::after {
   content: "";
   flex: 1;
-  border-top: 1px solid #d5c6a5;
+  border-top: 1px solid #dedbd4;
 }
 
 .source-reading .pdf-page-marker span {
@@ -369,7 +366,6 @@ body.source-reading {
 .source-reading .source-persian {
   margin: 0 0 1.15em;
   color: #171717;
-  font-family: "Noto Sans Arabic", sans-serif;
   font-size: 1em;
   font-weight: 400;
   line-height: 2.18;
@@ -377,17 +373,13 @@ body.source-reading {
   text-align: right;
 }
 
-.source-reading .source-persian + .source-persian {
-  margin-top: .05em;
-}
-
+/* Quran / Arabic source text: green, but not heavy or oversized. */
 .source-reading .source-arabic-inline {
   display: inline;
-  color: #171717;
-  background: #e4d3a9;
-  border-radius: .22em;
+  color: #17643f;
+  background: #edf5ef;
+  border-radius: .2em;
   padding: .02em .16em .08em;
-  font-family: "Noto Sans Arabic", sans-serif;
   font-size: .98em;
   font-weight: 400;
   line-height: inherit;
@@ -397,14 +389,13 @@ body.source-reading {
 
 .source-reading .source-arabic {
   margin: 1.45em 0 1.6em;
-  padding: .85em 1.05em;
+  padding: .8em 1.05em;
   border: 0;
-  border-inline-start: 2px solid #927950;
+  border-inline-start: 2px solid #2f7a55;
   border-radius: 0;
-  background: #e8d9b7;
-  color: #171717;
+  background: #eef5ef;
+  color: #17643f;
   box-shadow: none;
-  font-family: "Noto Sans Arabic", sans-serif;
   font-size: 1em;
   font-weight: 400;
   line-height: 2.15;
@@ -418,22 +409,21 @@ body.source-reading {
 .source-reading .source-subheading {
   margin: 2.1em 0 .85em;
   padding: 0 .75em 0 0;
-  border-inline-start: 2px solid #927950;
-  color: #28231d;
-  font-family: "Noto Sans Arabic", sans-serif;
+  border-inline-start: 2px solid #b7b3aa;
+  color: #262626;
   font-size: 1.16em;
   font-weight: 600;
   line-height: 1.8;
 }
 
+/* Footnotes: neutral gray panel with soft off-white text. */
 .source-reading .source-footnotes {
   margin: 1.8em 0 1em;
   padding: .95em 1.1em 1em;
-  border: 1px solid #d4c5a5;
+  border: 0;
   border-radius: 6px;
-  background: #eadfc4;
-  color: #4c463d;
-  font-family: "Noto Sans Arabic", sans-serif;
+  background: #74736e;
+  color: #f3f1eb;
   font-size: .72em;
   font-weight: 400;
   line-height: 1.9;
@@ -441,7 +431,7 @@ body.source-reading {
 
 .source-reading .source-footnotes-title {
   margin-bottom: .4em;
-  color: #5e4d34;
+  color: #ffffff;
   font-size: .82rem;
   font-weight: 500;
 }
@@ -461,12 +451,44 @@ body.source-reading {
   display: block;
   width: 28px;
   margin: 38px auto 8px;
-  border-top: 1px solid #d5c6a5;
+  border-top: 1px solid #dedbd4;
+}
+
+/* User text highlights are warm and legible without fighting the source palette. */
+.source-reading .reader-highlight {
+  background: #f4df72;
+  color: #111111;
+  border-radius: .14em;
+  padding: .02em .08em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.source-reading .reader-tools {
+  width: min(100%, 760px);
+  margin: 0 auto 18px;
+  text-align: left;
+}
+
+.source-reading .reader-tools button {
+  border: 1px solid #d2cfc7;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #4f4d48;
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.source-reading .reader-tools button:hover {
+  border-color: #aaa69d;
+  background: #f2f1ed;
 }
 
 @media (max-width: 800px) {
   body.source-reading {
-    background: #f4e9d0;
+    background: #f7f6f2;
   }
 
   .source-reading .source-shell {
@@ -495,55 +517,69 @@ body.source-reading {
 
 @media (prefers-color-scheme: dark) {
   body.source-reading {
-    background: #1c1914;
-    color: #eee8dc;
+    background: #151714;
+    color: #eee;
   }
 
   .source-reading .source-transcription,
-  .source-reading .source-persian,
-  .source-reading .source-arabic {
-    color: #eee8dc;
+  .source-reading .source-persian {
+    color: #eee;
   }
 
   .source-reading .source-chapter-title,
   .source-reading .source-subheading {
-    color: #f0e9dc;
+    color: #f1f1ed;
   }
 
-  .source-reading .source-eyebrow,
-  .source-reading .source-footnotes-title {
-    color: #c4aa7a;
+  .source-reading .source-eyebrow {
+    color: #aaa89f;
   }
 
   .source-reading .source-chapter-rule,
   .source-reading .source-subheading {
-    border-color: #9c845b;
+    border-color: #77766f;
   }
 
   .source-reading .source-arabic-inline {
-    color: #eee8dc;
-    background: #3b3020;
+    color: #8fd0a8;
+    background: #1d3025;
   }
 
   .source-reading .source-arabic {
-    background: #332b20;
-    border-inline-start-color: #a78c61;
+    background: #1d3025;
+    border-inline-start-color: #5e9f79;
+    color: #8fd0a8;
   }
 
   .source-reading .source-footnotes {
-    background: #29251f;
-    border-color: #443d32;
-    color: #b9b0a2;
+    background: #3f403c;
+    color: #f0eee8;
   }
 
-  .source-reading .pdf-page-marker {
-    color: #9d9383;
+  .source-reading .source-footnotes-title {
+    color: #ffffff;
+  }
+
+  .source-reading .pdf-page-marker,
+  .source-reading .source-eyebrow {
+    color: #a6a49b;
   }
 
   .source-reading .pdf-page-marker::before,
   .source-reading .pdf-page-marker::after,
   .source-reading .source-page::after {
-    border-color: #40392f;
+    border-color: #3a3b37;
+  }
+
+  .source-reading .reader-highlight {
+    background: #a99524;
+    color: #ffffff;
+  }
+
+  .source-reading .reader-tools button {
+    background: #22231f;
+    border-color: #4a4b46;
+    color: #e9e8e2;
   }
 }
 
