@@ -156,11 +156,11 @@ def clean_container(element) -> str:
 
 
 def extract_book_body(soup: BeautifulSoup):
-    """Return the visible book body, full text, and logical paragraphs.
+    """Return the visible book body, full text, and body paragraphs.
 
     The visible prose is under itemProp="articleBody". Footnotes are retained
-    at the end of the page text, while also being represented separately in
-    references[].
+    at the end of the page text, while represented separately in references[];
+    they are deliberately excluded from paragraphs[].
     """
     body = soup.select_one('[itemprop="articleBody"]')
     if not body:
@@ -178,27 +178,24 @@ def extract_book_body(soup: BeautifulSoup):
         for node in nodes:
             if node.name == "span" and node.find_parent(["h1", "h2", "h3", "p"]):
                 continue
-            raw = node.get_text("\n", strip=True)
-            for line in raw.split("\n"):
+            raw = node.get_text("\\n", strip=True)
+            for line in raw.split("\\n"):
                 line = normalize_text(line)
                 if line:
                     paragraphs.append(line)
 
+    footnote_lines = []
     footnote = body.select_one('[data-abl-content="footnote"]')
     if footnote:
-        raw = footnote.get_text("\n", strip=True)
-        for line in raw.split("\n"):
+        raw = footnote.get_text("\\n", strip=True)
+        for line in raw.split("\\n"):
             line = normalize_text(line)
             if line and line != "هامش":
-                paragraphs.append(line)
+                footnote_lines.append(line)
 
-    if not paragraphs:
-        raw = clean_container(body)
-        paragraphs = [line for line in raw.split("\n") if line.strip()]
-
-    text = normalize_text("\n".join(paragraphs))
+    full_lines = paragraphs + (["هامش"] + footnote_lines if footnote_lines else [])
+    text = normalize_text("\\n".join(full_lines))
     return body, text, paragraphs
-
 
 def find_book_content(soup: BeautifulSoup) -> tuple[str | None, str, list[str]]:
     """Find the actual rendered book text and preserve logical paragraphs."""
