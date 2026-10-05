@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Validation and browser tests for the BookReadingFramework repository.",
   "scripts": {
-    "test": "node --test tests",
+    "test": "node --test",
     "test:e2e": "playwright test"
   },
   "devDependencies": {
