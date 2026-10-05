@@ -333,19 +333,19 @@ def download_page(
     if force or not text_file.exists():
         text_file.write_text(text, encoding="utf-8")
 
+    # Keep page JSON lightweight. The .txt file is the canonical page text;
+    # paragraphs preserve useful structure without duplicating the full text.
     page_record = {
         **metadata,
-        "meta_description": metadata.get("description"),
-        "description": text,
         "url": response.url,
         "extraction_method": extraction_method,
         "characters": len(text),
-        "text": text,
         "paragraphs": paragraphs,
         "references": references,
         "reference_count": len(references),
         "text_file": str(text_file),
     }
+    page_record.pop("description", None)
     if force or not page_file.exists():
         page_file.write_text(json.dumps(page_record, ensure_ascii=False, indent=2), encoding="utf-8")
 
