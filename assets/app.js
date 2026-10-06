@@ -383,7 +383,7 @@ ${links}
         if (!meta) throw new Error('Unknown book_id: ' + bookId);
         if (meta.status === 'legacy') { legacyNotice(meta); app.setAttribute('aria-busy', 'false'); return; }
         const dir = SITE + dirEnc(meta.dir);
-        const [data, qd, gl, audioManifest] = await Promise.all([getJSON(dir + meta.data.chunks), optional(getJSON(dir + meta.data.questions)), optional(getJSON(dir + meta.data.glossary)), optional(getJSON(dir + 'audio/manifest.json'))]);
+        const [data, qd, gl, audioManifest] = await Promise.all([getJSON(dir + meta.data.chunks), optional(getJSON(dir + meta.data.questions)), optional(getJSON(dir + meta.data.glossary)), meta.audio?.manifest ? optional(getJSON(dir + meta.audio.manifest)) : Promise.resolve(null)]);
         const unit = qs.get('unit');
         if (unit) {
           unitPage(meta, data, qd, gl, unit, audioManifest);
