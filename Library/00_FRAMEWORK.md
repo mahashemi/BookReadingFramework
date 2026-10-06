@@ -1,6 +1,6 @@
 # The Deep-Reading Framework
 ### A repeatable pipeline for turning any book into long-term memory
-*Version 1.9 — generic, data-driven framework; validated across Books 01–03. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
+*Version 2.0 — generic, data-driven framework; validated across Books 01–03. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
 
 ---
 
@@ -46,6 +46,22 @@ Book
 For the current framework, **`units[].chunks[]` is the canonical learning-data structure**. Do not invent parallel chunk collections or duplicate the same chunk data in another JSON file. The UI reads this nested structure directly.
 
 Other data has its own source of truth where needed: the glossary is kept separately in `data/glossary.json`, and questions are kept separately in `exam_bank/questions.json`. Do not add fields merely because a conceptually useful distinction can be named; add schema fields only when the project has an actual need and the schema has been deliberately updated.
+
+### Book manifest metadata
+
+The site-level `assets/books.json` is the canonical source for **library ordering and book classification**. Each book entry should carry:
+
+~~~json
+{"id":"book03","order":3,"status":"full","primary_category":"Akhlaq","subjects":["Spirituality","Self-Discipline","Jihad al-Nafs"]}
+~~~
+
+- **`order`** is an explicit integer used for deterministic library ordering. Do not infer order from titles, filenames, or object insertion order.
+- **`primary_category`** is one controlled top-level classification for the book's main Islamic discipline or field (for example `Akhlaq`, `Aqaid`, `Fiqh`, `Usul al-Fiqh`, `Tafsir`, `Hadith`, or `Islamic History`).
+- **`subjects`** are secondary descriptors that make the book discoverable without turning the primary classification into a list.
+- This metadata is semantic application data, not merely HTML `<meta>` tags. The generic renderer may expose the primary category in the library UI, while the manifest remains the source of truth.
+- A legacy book must receive the same metadata even if it has not yet been migrated to the full data-driven learning architecture. Legacy status describes the **implementation maturity**, not the book's subject.
+
+The distinction matters: a book can contain substantial theological, historical, or devotional material without that making every book an Akhlaq book. Classification should describe the book's principal field, while `subjects` capture important secondary themes.
 ### Module 2 — Chapter-by-Chapter Extraction
 For every chapter/reading-unit, extract five things:
 - **Key Concepts** — the claims and ideas, in the author's logic, not just topic labels

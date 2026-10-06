@@ -45,13 +45,14 @@
 
   /* ---------- library (site root) ---------- */
   function library(manifest, live) {
-    const cards = manifest.books.map(b => {
+    const books = [...manifest.books].sort((a, b) => Number(a.order ?? Number.MAX_SAFE_INTEGER) - Number(b.order ?? Number.MAX_SAFE_INTEGER));
+    const cards = books.map(b => {
       if (b.status === 'full' && live[b.id]) {
         const { data, qd } = live[b.id];
         const concepts = data.units.reduce((n, u) => n + (u.chunks || []).length, 0);
         const t = { units: data.units.length, concepts, questions: qd ? qd.questions.length : null };
         return `<a class="card book-card" href="${bookPage(b.id)}">
-  <div class="eyebrow">Full learning hub</div>
+  <div class="eyebrow">Full learning hub · ${esc(b.primary_category || 'Unclassified')}</div>
   <h3>${esc(b.title)}</h3>
   <p>${esc(b.author)}${b.translator ? ' \u00b7 translated by ' + esc(b.translator) : ''}</p>
   <div class="stats">${stat(t.units, 'Learning units')}${stat(t.concepts, 'Concepts')}${stat(fmt(t.questions), 'Questions')}</div>
