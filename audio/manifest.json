@@ -49,27 +49,27 @@
     "book02": {
       "units": {
         "u00": {
-          "title": "Book 02 Unit 00",
+          "title": "Unit 00",
           "script": "audio/book02/scripts/u00.md"
         },
         "u01": {
-          "title": "Book 02 Unit 01",
+          "title": "Unit 01",
           "script": "audio/book02/scripts/u01.md"
         },
         "u02": {
-          "title": "Book 02 Unit 02",
+          "title": "Unit 02",
           "script": "audio/book02/scripts/u02.md"
         },
         "u03": {
-          "title": "Book 02 Unit 03",
+          "title": "Unit 03",
           "script": "audio/book02/scripts/u03.md"
         },
         "u04": {
-          "title": "Book 02 Unit 04",
+          "title": "Unit 04",
           "script": "audio/book02/scripts/u04.md"
         },
         "u05": {
-          "title": "Book 02 Unit 05",
+          "title": "Unit 05",
           "script": "audio/book02/scripts/u05.md"
         }
       }
