@@ -5,7 +5,7 @@ This folder applies the **Deep Reading Framework v1.8** to Ayatollah Mazaheri's 
 ## Source → study → exam pipeline
 
 ```
-Authoritative scanned source
+Authoritative Ahlulbayt Library source
         ↓
 source/                         page-addressable Persian transcription
         ↓
