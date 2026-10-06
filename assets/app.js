@@ -224,15 +224,15 @@ ${glossaryHTML}
      intentionally not shown here: in this book's data every
      old claim-example layer's reasoning/evidence entry was identical to (or a
      truncated copy of) the matching concept's own explanation, and every
-     .lesson is the same boilerplate line repeated 160 times -- displaying
-     it anywhere would show a student the same duplicated bug, just lower
-     on the page. See data/README.md. */
+     The canonical chunk text is rendered directly; derived Akhlaq lessons
+     are now displayed separately when a book provides them. */
   function unitPage(meta, data, qd, gl, id) {
     const dir = SITE + dirEnc(meta.dir);
     const units = data.units;
     const i = units.findIndex(u => u.id === id);
     if (i < 0) { location.replace(bookPage(meta.id)); return; }
     const u = units[i];
+    const sourceHref = u.source_url || (dir + (u.source_file || ''));
     const chunks = u.chunks || [];
     const p = parts(u.title);
     const prev = units[i - 1], next = units[i + 1];
