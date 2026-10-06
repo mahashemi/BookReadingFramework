@@ -43,3 +43,19 @@ test("footer attribution uses the canonical capitalized name", () => {
   assert.match(app, /Seyed Mohammad Abuzar/);
   assert.doesNotMatch(app, /seyed mohammad abuzar/);
 });
+
+
+test("library ordering and book taxonomy are explicit and deterministic", () => {
+  const manifestPath = path.join(__dirname, "..", "assets", "books.json");
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  const books = manifest.books;
+  assert.equal(books.length, 3);
+  assert.deepEqual(books.map(b => b.order), [1, 2, 3]);
+  assert.deepEqual(books.map(b => b.id), ["book01", "book02", "book03"]);
+  assert.deepEqual(books.map(b => b.primary_category), ["Akhlaq", "Islamic History", "Akhlaq"]);
+  for (const book of books) {
+    assert.ok(Array.isArray(book.subjects) && book.subjects.length > 0, book.id + " must have subject metadata");
+  }
+  assert.match(app, /const books = \\[\.\.\.manifest\.books\\]\.sort/);
+  assert.match(app, /b\.primary_category \|\| 'Unclassified'/);
+});
