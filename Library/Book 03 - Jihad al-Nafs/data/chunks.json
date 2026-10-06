@@ -780,6 +780,267 @@
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
         }
       ]
+    },
+    {
+      "id": "u11",
+      "title": "گفتار يازدهم : توبه ( 3 )",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html",
+      "quotes": [
+        "انما التوبة على الله للذين يعملون السوء بجهالة ثم يتوبون من قريب",
+        "التائب من الذنب كمن لا ذنب له"
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u09",
+          "label": "This chapter deepens the earlier warning against delaying repentance"
+        },
+        {
+          "to_unit_id": "u10",
+          "label": "Persistent vices can prevent a person from recognizing the need to repent"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincere action requires repairing harm rather than merely expressing regret"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u11-001",
+          "title": "Repentance is meant to happen before moral numbness sets in",
+          "order": 1,
+          "text": "The chapter revisits Qur'an 4:17–18 as a warning: postponing repentance allows repeated sin to make wrongdoing feel ordinary and can weaken the person's ability to recognize his need for return.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+        },
+        {
+          "id": "b03-u11-002",
+          "title": "The barrier is often loss of moral awareness, not lack of divine mercy",
+          "order": 2,
+          "text": "Mazaheri distinguishes between God's willingness to forgive and a sinner's capacity to make a sincere return. A person who no longer regards the act as wrong may not generate genuine repentance.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+        },
+        {
+          "id": "b03-u11-003",
+          "title": "Sincere repentance is remorse before God, not merely fear of punishment",
+          "order": 3,
+          "text": "The discussion of final-moment regret emphasizes that being afraid of hell is not identical to regretting disobedience itself. Genuine tawbah is a moral and relational return.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+        },
+        {
+          "id": "b03-u11-004",
+          "title": "Rights owed to God require both remorse and practical repair",
+          "order": 4,
+          "text": "For neglected obligations such as prayer and fasting, repentance includes making up what was missed rather than treating regret alone as sufficient.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+        },
+        {
+          "id": "b03-u11-005",
+          "title": "Rights owed to people are especially demanding",
+          "order": 5,
+          "text": "The chapter gives حق الناس special weight: repentance requires addressing the human harm or property right involved, not merely asking God privately for forgiveness.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+        },
+        {
+          "id": "b03-u11-006",
+          "title": "Islamic repentance has no dead end when the return is sincere",
+          "order": 6,
+          "text": "The repeated examples of serious sinners who changed direction are used to reinforce the book's central claim that the door of return remains open while genuine repentance is possible.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+        },
+        {
+          "id": "b03-u11-007",
+          "title": "The best time for repentance is immediately after the wrong",
+          "order": 7,
+          "text": "Immediate correction prevents the sin from becoming a repeated pattern and preserves the person's sensitivity to wrongdoing.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+        }
+      ]
+    },
+    {
+      "id": "u12",
+      "title": "گفتار دوازدهم :",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html",
+      "quotes": [],
+      "connections": [
+        {
+          "to_unit_id": "u11",
+          "label": "Immediate correction is the practical antidote to moral drift"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Intention is central to sincere action"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u12-001",
+          "title": "The chapter applies self-jihad to ordinary moral choices",
+          "order": 1,
+          "text": "The struggle with the self is shown in everyday decisions rather than only extraordinary spiritual states.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html"
+        },
+        {
+          "id": "b03-u12-002",
+          "title": "Intention changes the moral meaning of an outward action",
+          "order": 2,
+          "text": "A person's inner motive can transform an apparently good action into self-serving behavior, making examination of intention part of practical self-discipline.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html"
+        },
+        {
+          "id": "b03-u12-003",
+          "title": "Repeated choices gradually reveal the dominant direction of the self",
+          "order": 3,
+          "text": "The chapter treats habits as evidence of what a person has allowed to become stronger inside him. Self-knowledge therefore comes from watching repeated choices.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html"
+        },
+        {
+          "id": "b03-u12-004",
+          "title": "The remedy is deliberate correction before the habit hardens",
+          "order": 4,
+          "text": "Once a person notices a recurring tendency, he should intervene through contrary practice instead of waiting for the problem to disappear by itself.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html"
+        }
+      ]
+    },
+    {
+      "id": "u13",
+      "title": "گفتار سيزدهم :",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html",
+      "quotes": [],
+      "connections": [
+        {
+          "to_unit_id": "u07",
+          "label": "The malakah of patience is the clearest example of repeated practice"
+        },
+        {
+          "to_unit_id": "u10",
+          "label": "Vices also become stable dispositions through repetition"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u13-001",
+          "title": "Moral character is built through repeated conduct",
+          "order": 1,
+          "text": "The chapter continues the malakah framework: actions are not isolated events but exercises that strengthen a disposition.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html"
+        },
+        {
+          "id": "b03-u13-002",
+          "title": "The same mechanism can create virtue or vice",
+          "order": 2,
+          "text": "Repeated patience can become patience as a stable quality, while repeated anger, harshness or selfishness can become equally stable vices.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html"
+        },
+        {
+          "id": "b03-u13-003",
+          "title": "Self-jihad therefore requires behavioral practice",
+          "order": 3,
+          "text": "Knowing a virtue intellectually is insufficient. The person must deliberately create situations in which the desired response is practiced until it becomes easier and more natural.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html"
+        },
+        {
+          "id": "b03-u13-004",
+          "title": "A stable disposition eventually changes what feels pleasurable",
+          "order": 4,
+          "text": "The mature stage of moral training is not merely forcing oneself to do the right thing; the right action gradually becomes the action the person wants.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html"
+        }
+      ]
+    },
+    {
+      "id": "u14",
+      "title": "گفتار چهاردهم :",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html",
+      "quotes": [
+        "الانسان مخبوء تحت لسانه"
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u01",
+          "label": "Teachers influence students through conduct, including speech"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "Controlling speech requires the same repeated practice that creates patience"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Fulfilling one's duty includes protecting others from avoidable harm"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u14-001",
+          "title": "Speech is a major arena of jihad with the self",
+          "order": 1,
+          "text": "The chapter turns strongly toward the moral consequences of speech: words can build relationships and education, but careless speech can create lasting damage.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+        },
+        {
+          "id": "b03-u14-002",
+          "title": "A true statement can still be unwise to say",
+          "order": 2,
+          "text": "Mazaheri distinguishes truthfulness from indiscriminate speaking. A statement may be factually true yet needlessly harmful, inflammatory or inappropriate to the setting.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+        },
+        {
+          "id": "b03-u14-003",
+          "title": "Unnecessary speech creates consequences beyond the moment",
+          "order": 3,
+          "text": "Stories in the chapter illustrate how a casual joke, insult or unnecessary claim can produce resentment, humiliation, conflict and even serious retaliation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+        },
+        {
+          "id": "b03-u14-004",
+          "title": "The tongue can manufacture a person's social identity",
+          "order": 4,
+          "text": "Repeated mockery, sarcasm, backbiting, accusation or excessive talk can become a recognizable character trait. What begins as speech becomes a disposition and eventually shapes how others experience the person.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+        },
+        {
+          "id": "b03-u14-005",
+          "title": "Words can damage family relationships irreversibly",
+          "order": 5,
+          "text": "The chapter emphasizes that a wound caused by a sharp remark can be difficult to repair. Repeated verbal injury can accumulate until affection is replaced by resentment and family life collapses.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+        },
+        {
+          "id": "b03-u14-006",
+          "title": "People with influence have a higher obligation to control speech",
+          "order": 6,
+          "text": "Teachers, respected figures and public-facing people can magnify the effects of careless words. Mazaheri therefore calls for thinking before speaking and exercising particular restraint at home.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+        },
+        {
+          "id": "b03-u14-007",
+          "title": "The practical rule is simple: think before speaking",
+          "order": 7,
+          "text": "The chapter's broad discipline is to ask whether a statement has a useful worldly or spiritual purpose before saying it. Silence is often safer than speech that merely satisfies impulse.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+        }
+      ]
     }
   ]
 }
