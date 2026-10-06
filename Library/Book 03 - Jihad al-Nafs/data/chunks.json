@@ -1,0 +1,3194 @@
+{
+  "schema_version": "1.1",
+  "book_id": "book03",
+  "title": "Jihad bil-Nafs",
+  "author": "Ayatollah Mazaheri",
+  "units": [
+    {
+      "id": "u01",
+      "title": "گفتار اول : تعليم و تربيت",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html",
+      "quotes": [
+        {
+          "id": "u01-q01",
+          "text": "كفى بالمرء جهلا ان لا يعرف قدره"
+        },
+        {
+          "id": "u01-q02",
+          "text": "كونوا دعاه الى الله به غير السنتكم"
+        },
+        {
+          "id": "u01-q03",
+          "text": "لاادري نصف العلم"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u02",
+          "label": "Self-control begins with directing natural desires rather than suppressing them"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Self-building and fulfilling one's duty"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincere action and the responsibility of influence"
+        },
+        {
+          "to_unit_id": "u06",
+          "label": "Teaching responsibility requires the patience and endurance developed in the later treatment of sabr"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u01-001",
+          "title": "The teacher's role is an extension of teaching and prophetic formation",
+          "order": 1,
+          "text": "Mazaheri frames teaching as a morally elevated vocation: the teacher participates in the work of divine and prophetic education. The Qur'anic emphasis on teaching is presented together with purification and formation, so education is not merely transferring information.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#source-page-0011"
+        },
+        {
+          "id": "b03-u01-002",
+          "title": "Guiding one person can be greater than worldly gain",
+          "order": 2,
+          "text": "The lesson of the Khaybar narration is that guiding a person toward the straight path carries extraordinary value. Mazaheri uses it to shift the teacher's measure of success from ordinary worldly achievement to transforming a human life.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#source-page-0015"
+        },
+        {
+          "id": "b03-u01-003",
+          "title": "Education can counter inherited and environmental influences",
+          "order": 3,
+          "text": "The chapter identifies four powerful formative influences: heredity, family upbringing, environment, and nourishment. The teacher's influence can counteract these forces, so education is presented as a genuine intervention in a person's formation rather than a passive reflection of circumstances.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#source-page-0015"
+        },
+        {
+          "id": "b03-u01-004",
+          "title": "A teacher can become a turning point in a person's moral development",
+          "order": 4,
+          "text": "The stories of Umar ibn Abd al-Aziz and the son of Yazid are used to show how a teacher's influence can become the decisive spark that changes a person's moral direction even when family, environment, and upbringing point elsewhere.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#source-page-0019"
+        },
+        {
+          "id": "b03-u01-005",
+          "title": "Great influence creates great responsibility",
+          "order": 5,
+          "text": "Because a teacher can build or damage a student's beliefs and character, teaching carries a correspondingly heavy moral responsibility. Mazaheri warns that harmful instruction can have consequences comparable to causing a person's spiritual destruction.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#source-page-0023"
+        },
+        {
+          "id": "b03-u01-006",
+          "title": "Example is more powerful than speech alone",
+          "order": 6,
+          "text": "The advice to call people toward God through conduct as well as speech establishes a practical principle of education: students absorb the teacher's behavior, not merely the teacher's explicit lessons.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#source-page-0024"
+        },
+        {
+          "id": "b03-u01-007",
+          "title": "Self-building precedes building others",
+          "order": 7,
+          "text": "The chapter applies the principle of self-construction to teachers and other people with influence over others. A person who has not worked on himself cannot reliably produce the same formation in someone else.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#source-page-0026"
+        },
+        {
+          "id": "b03-u01-008",
+          "title": "Intellectual humility is part of responsible teaching",
+          "order": 8,
+          "text": "Mazaheri insists that a teacher must distinguish knowledge from ignorance. Saying 'I do not know' is presented as a form of intellectual honesty that prevents an uninformed answer from becoming a false foundation in a student's mind.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#source-page-0027"
+        },
+        {
+          "id": "b03-u01-009",
+          "title": "Duty must be fulfilled carefully because entrusted time is not recoverable",
+          "order": 9,
+          "text": "The chapter closes by connecting educational responsibility with faithful performance of duty. Teachers should use their opportunity well, prepare for class, think before speaking, and recognize that the trust placed in them includes both teaching and moral formation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#source-page-0029"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Teaching is a moral trust: build yourself before trying to build others, lead by example, and treat influence over another person's formation as a responsibility rather than a privilege.",
+        "evidence_chunk_ids": [
+          "b03-u01-001",
+          "b03-u01-006"
+        ]
+      }
+    },
+    {
+      "id": "u02",
+      "title": "گفتار دوم : گناه و تعديل غرايز",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html",
+      "quotes": [
+        {
+          "id": "u02-q01",
+          "text": "من حاول أمراً بمعصية الله فهو أفوت لما يرجوا و أسرع لما يحذر"
+        },
+        {
+          "id": "u02-q02",
+          "text": "لا رهبانيه فى الاسلام"
+        },
+        {
+          "id": "u02-q03",
+          "text": "عليك بصدق الحديث و أداء الامانه"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u01",
+          "label": "Moral formation and responsibility for how desires are directed"
+        },
+        {
+          "to_unit_id": "u03",
+          "label": "The inner struggle between desire and spiritual agency"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Duty, self-discipline and lawful fulfillment of life"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincere action versus self-serving motives"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u02-001",
+          "title": "The governing rule: a goal pursued through sin turns against the seeker",
+          "order": 1,
+          "text": "Mazaheri builds the chapter around Imam al-Husayn's maxim that a person who tries to obtain something through disobedience to God will lose what he seeks and move rapidly toward what he fears. The principle is presented as a practical law of life, not merely an abstract moral warning.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#source-page-0032"
+        },
+        {
+          "id": "b03-u02-002",
+          "title": "Islam does not require destroying natural desires",
+          "order": 2,
+          "text": "Human beings possess natural drives and inclinations, and Mazaheri argues that Islam does not command their elimination. The Qur'anic balance is to seek the hereafter without forgetting one's lawful share of worldly life.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#source-page-0033"
+        },
+        {
+          "id": "b03-u02-003",
+          "title": "The problem is not desire but the way desire is satisfied",
+          "order": 3,
+          "text": "Natural drives such as wealth, status, family provision and social standing can be fulfilled through lawful effort or through sin. The same desire may therefore lead either toward constructive development or toward moral collapse depending on the method used to satisfy it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#source-page-0035"
+        },
+        {
+          "id": "b03-u02-004",
+          "title": "Umar ibn Sa'd illustrates desire overpowering moral judgment",
+          "order": 4,
+          "text": "Umar ibn Sa'd's decision before Karbala is presented as an example of the conflict between spiritual judgment and animal desire. His attraction to political authority and material benefit gradually overcomes his moral hesitation, after which he rationalizes the decision by promising himself future repentance.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#source-page-0037"
+        },
+        {
+          "id": "b03-u02-005",
+          "title": "Sin can produce the opposite of the worldly benefit it promises",
+          "order": 5,
+          "text": "The later humiliation of Umar ibn Sa'd is used as the concrete fulfillment of Imam al-Husayn's maxim: the attempt to obtain worldly authority through wrongdoing not only destroys the person's moral future but also brings humiliation and loss in the very worldly sphere he sought to secure.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#source-page-0039"
+        },
+        {
+          "id": "b03-u02-006",
+          "title": "Righteousness protects one's descendants better than sinful accumulation",
+          "order": 6,
+          "text": "The story of Moses and al-Khidr's wall is interpreted as evidence that a parent's righteousness can become protection for vulnerable descendants. Mazaheri contrasts this with the attempt to secure children materially through lies, slander, injustice or unlawful wealth.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#source-page-0043"
+        },
+        {
+          "id": "b03-u02-007",
+          "title": "A good life is linked to righteous action and faith",
+          "order": 7,
+          "text": "The chapter connects a wholesome worldly life and the afterlife reward to righteous action joined with faith. Wealth, comfort and apparent success are not treated as reliable measures of a good life when the person's relationship with God is broken.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#source-page-0045"
+        },
+        {
+          "id": "b03-u02-008",
+          "title": "Trust and honest work are part of lawful desire-management",
+          "order": 8,
+          "text": "The story of Abd al-Rahman ibn Sababah illustrates the practical virtues of truthful dealing and returning entrusted property. Mazaheri applies the principle to teachers: accepting money while failing to deliver the entrusted work becomes a form of cheating and moral betrayal.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#source-page-0047"
+        },
+        {
+          "id": "b03-u02-009",
+          "title": "Preparation and faithful performance are moral obligations",
+          "order": 9,
+          "text": "The chapter extends the warning against cheating to professional responsibility. A person who accepts compensation but deliberately underperforms has taken more than he gives, making the Qur'anic warning against fraud relevant to ordinary work as well as commerce.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#source-page-0048"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Good character does not require destroying natural desires; it requires governing them lawfully and honestly so that desire serves a worthy end rather than becoming its master.",
+        "evidence_chunk_ids": [
+          "b03-u02-002",
+          "b03-u02-003"
+        ]
+      }
+    },
+    {
+      "id": "u03",
+      "title": "گفتار سوم : جهاد با نفس",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html",
+      "quotes": [
+        {
+          "id": "u03-q01",
+          "text": "إنسان مركب از « روح و جسم »"
+        },
+        {
+          "id": "u03-q02",
+          "text": "ثم دنا فتدلى فكان قاب قوسين أو أدنى"
+        },
+        {
+          "id": "u03-q03",
+          "text": "يا أيتها النفس المطمئنة ارجعي إلى ربك"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u02",
+          "label": "The regulation of natural desires becomes the concrete discipline required by the two-dimensional human constitution"
+        },
+        {
+          "to_unit_id": "u04",
+          "label": "The human inner duality becomes the explicit battlefield of jihad al-akbar in the next unit"
+        },
+        {
+          "to_unit_id": "u05",
+          "label": "The lower self later becomes the named adversary whose demands must be governed"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Self-mastery must ultimately be joined to sincerity rather than becoming another form of ego achievement"
+        },
+        {
+          "to_unit_id": "u19",
+          "label": "The Qur'an is presented here as a source of knowledge and formation and later as a refuge in the inner struggle"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u03-001",
+          "title": "Human formation depends on the tension between two dimensions",
+          "order": 1,
+          "text": "Mazaheri begins the chapter by defining the human being as two-dimensional: a material/animal side expressed through bodily drives and a spiritual side associated with reason, conscience, heart and the inner self. Human moral development begins from this unusual combination rather than from either side alone.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0050"
+        },
+        {
+          "id": "b03-u03-002",
+          "title": "The spiritual dimension is described as the basis of uniquely human ascent",
+          "order": 2,
+          "text": "The spiritual dimension is what makes genuine human ascent possible. Mazaheri contrasts human beings with angels, who possess the spiritual dimension without the same developmental tension, and with animals, whose organized behavior does not amount to the moral and spiritual growth he attributes to the human being.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0051"
+        },
+        {
+          "id": "b03-u03-003",
+          "title": "The human constitution combines two opposed kinds of inclination",
+          "order": 3,
+          "text": "The two dimensions often pull in opposite directions. Truth-seeking, knowledge, generosity and sacrifice can demand effort from the bodily self, while eating, rest and sensual satisfaction may please the body while weakening the spiritual dimension. The struggle is therefore built into ordinary human life.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0052"
+        },
+        {
+          "id": "b03-u03-004",
+          "title": "Spiritual growth requires accepting difficulty that bodily desire resists",
+          "order": 4,
+          "text": "Mazaheri presents spiritual development as requiring the person to tolerate forms of difficulty that natural appetite dislikes. Seeking truth, learning and self-restraint can impose effort on the body, so growth cannot be reduced to following whatever feels immediately pleasant.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0053"
+        },
+        {
+          "id": "b03-u03-005",
+          "title": "The body can become a vehicle for spiritual ascent when it is governed rather than obeyed",
+          "order": 5,
+          "text": "The bodily side is not portrayed as something to destroy. Mazaheri's image is that the body and its desires can become a mount for the spirit when they are moderated and directed. The same human embodiment that creates conflict can therefore become the means of higher movement.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0053"
+        },
+        {
+          "id": "b03-u03-006",
+          "title": "Faith and steadfastness are presented as conditions for higher spiritual perception",
+          "order": 6,
+          "text": "The discussion of those who say they believe and then remain steadfast connects spiritual elevation with both conviction and practice. Mazaheri presents steadfastness as what allows faith to become a lived orientation, and he associates this state with assistance and contact with the unseen.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0054"
+        },
+        {
+          "id": "b03-u03-007",
+          "title": "The Jaber al-Ju'fi narrative illustrates the author's claim about disciplined spiritual capacity",
+          "order": 7,
+          "text": "The story of Jaber al-Ju'fi is used as an illustration of the unusual capacities Mazaheri attributes to a person who has disciplined the lower dimension of the self. The narrative is presented as an example within the author's religious framework, not merely as a psychological metaphor.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0055"
+        },
+        {
+          "id": "b03-u03-008",
+          "title": "Qur'anic knowledge is presented as a source of illumination and formation",
+          "order": 8,
+          "text": "Mazaheri immediately grounds the discussion in Qur'anic examples, especially the story of the one who possessed knowledge of the Book and brought the throne of Bilqis. His practical exhortation is that sustained engagement with the Qur'an is part of the path by which the self is educated and refined.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0056"
+        },
+        {
+          "id": "b03-u03-009",
+          "title": "The chapter culminates in an upward or downward movement of the self",
+          "order": 9,
+          "text": "The chapter's central choice is directional: the person can govern bodily inclinations and move upward toward the spiritual dimension, or allow the lower side to dominate. Jihad al-nafs is therefore not self-hatred; it is the disciplined ordering of the self toward the higher end the author identifies.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0063"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Moral character is formed through self-mastery: accept the difficulty of disciplining desire, strengthen the spiritual side of the person, and use the body as an instrument rather than an authority.",
+        "evidence_chunk_ids": [
+          "b03-u03-004",
+          "b03-u03-005"
+        ]
+      }
+    },
+    {
+      "id": "u04",
+      "title": "گفتار چهارم : انسان ملكوتى",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html",
+      "quotes": [
+        {
+          "id": "u04-q01",
+          "text": "عليك بالجهاد الاكبر"
+        },
+        {
+          "id": "u04-q02",
+          "text": "اشجع الناس من غلب هواه"
+        },
+        {
+          "id": "u04-q03",
+          "text": "واستعينوا بالصبر و الصلاة"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u03",
+          "label": "The two dimensions of the human being become a concrete inner battle between the spiritual and animal dimensions"
+        },
+        {
+          "to_unit_id": "u05",
+          "label": "The next chapter identifies the lower self as the central adversary in this inner battle"
+        },
+        {
+          "to_unit_id": "u06",
+          "label": "Prayer and patience become concrete external supports for strengthening the spiritual side"
+        },
+        {
+          "to_unit_id": "u18",
+          "label": "Night prayer later develops the same idea of using worship as strength for jihad al-akbar"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u04-001",
+          "title": "The inner war is jihad al-akbar",
+          "order": 1,
+          "text": "Mazaheri describes a permanent struggle inside the human being between the spiritual/angelic dimension and the bodily/animal dimension. He presents this as the arena the Prophet calls the greater jihad, so moral life is not occasional conflict but a continuing contest.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0070"
+        },
+        {
+          "id": "b03-u04-002",
+          "title": "Real courage is mastery over one's own desire",
+          "order": 2,
+          "text": "The chapter distinguishes physical strength from moral courage. Lifting a heavy stone may demonstrate bodily strength, but the greater courage is to overcome hawa and refuse the demand of the lower self when it conflicts with what is right.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0071"
+        },
+        {
+          "id": "b03-u04-003",
+          "title": "Victory and defeat are experienced within the same person",
+          "order": 3,
+          "text": "When the spiritual side overcomes a sinful impulse, the person experiences dignity and victory; when the lower side wins, the person experiences shame. Mazaheri emphasizes that in this battle the person is simultaneously the combatant and the territory being fought over.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0072"
+        },
+        {
+          "id": "b03-u04-004",
+          "title": "Humanity is located in the spiritual dimension",
+          "order": 4,
+          "text": "The chapter argues that human dignity is not exhausted by having a body, senses or intelligence as mere capacity. What makes a person fully human is the active spiritual and moral dimension: conscience, reflection and responsiveness to what is right.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0073"
+        },
+        {
+          "id": "b03-u04-005",
+          "title": "Loss of moral perception is worse than loss of physical ability",
+          "order": 5,
+          "text": "Using Qur'anic descriptions of people who have hearts, eyes and ears but do not understand, see or hear spiritually, Mazaheri presents moral numbness as a deeper form of human degradation than ordinary physical weakness.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0073"
+        },
+        {
+          "id": "b03-u04-006",
+          "title": "The higher side is outnumbered and needs reinforcement",
+          "order": 6,
+          "text": "The lower side is portrayed as supported by many forces: wealth, status, attachment to children, resentment, envy, inherited tendencies, environment and nourishment. The practical implication is that willpower alone is insufficient; the spiritual side needs deliberate reinforcement.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0076"
+        },
+        {
+          "id": "b03-u04-007",
+          "title": "Obligations are the first external source of strength",
+          "order": 7,
+          "text": "Mazaheri's first major practical support is giving serious importance to obligations. When a duty genuinely matters to a person and failure to perform it creates inner resistance, worship becomes a source of strength in the larger battle.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0076"
+        },
+        {
+          "id": "b03-u04-008",
+          "title": "Prayer is a central weapon in the greater jihad",
+          "order": 8,
+          "text": "The chapter applies Qur'an 2:45 to the inner struggle: patience and prayer are requested as help. Prayer is therefore presented not merely as a legal requirement but as a disciplined means of strengthening the spiritual side against the lower self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0077"
+        },
+        {
+          "id": "b03-u04-009",
+          "title": "Neglecting prayer can sever the person's protective relationship with God",
+          "order": 9,
+          "text": "The later warning about treating prayer lightly makes the practical stakes explicit. The chapter presents prayer as spiritual nourishment and argues that persistent neglect leaves a person increasingly exposed to the forces of the lower self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0085"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Real courage begins with governing oneself. Prayer and obligation are not merely rituals here; they are disciplines that reinforce the character needed to resist the inner enemy.",
+        "evidence_chunk_ids": [
+          "b03-u04-002",
+          "b03-u04-008"
+        ]
+      }
+    },
+    {
+      "id": "u05",
+      "title": "گفتار پنجم : نفس اماره",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html",
+      "quotes": [
+        {
+          "id": "u05-q01",
+          "text": "اعْدي عَدوُّكَ نَفْسَكَ الَّتي بَيْنَ جَنْبَيْكَ"
+        },
+        {
+          "id": "u05-q02",
+          "text": "اللهم لاتكلني الى نفسي طرفه عين"
+        },
+        {
+          "id": "u05-q03",
+          "text": "الم اعهد اليكم يا بني آدم ان لاتعبدوا الشيطان انه لكم عدو مبين"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u04",
+          "label": "The inner battle described as jihad al-akbar becomes concrete when the lower self is identified as the nearest enemy"
+        },
+        {
+          "to_unit_id": "u06",
+          "label": "Patience is one of the disciplines needed when the lower self demands immediate gratification"
+        },
+        {
+          "to_unit_id": "u08",
+          "label": "The effects of patience and resistance become visible in the person's later spiritual and worldly state"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincerity requires refusing to let the ego become the hidden object of worship"
+        },
+        {
+          "to_unit_id": "u19",
+          "label": "The Qur'an later becomes a major refuge against the same inner and satanic pressures"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u05-001",
+          "title": "The nearest enemy is the self that lives within us",
+          "order": 1,
+          "text": "Mazaheri begins with the striking warning that the most dangerous enemy is the النفس between one's sides. The point is proximity: the lower self does not need an external battlefield because it accompanies the person everywhere.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0087"
+        },
+        {
+          "id": "b03-u05-002",
+          "title": "The lower self is not identical to the whole human being",
+          "order": 2,
+          "text": "The chapter distinguishes the moral agent from the lower self. The person's spiritual dimension can govern or resist the impulses that arise from the animal side, so 'following the self' is a choice rather than an unavoidable identity.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0087"
+        },
+        {
+          "id": "b03-u05-003",
+          "title": "Desire becomes dangerous when it becomes an object of worship",
+          "order": 3,
+          "text": "The Qur'anic warning against taking one's own desire as an object of worship is used to describe a person whose preferences begin to overrule revelation, reason and conscience.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0089"
+        },
+        {
+          "id": "b03-u05-004",
+          "title": "Satan and the lower self reinforce one another",
+          "order": 4,
+          "text": "Mazaheri places satanic suggestion alongside the person's own lower tendencies. The practical danger is a feedback loop: suggestion finds an existing weakness, the weakness is indulged, and indulgence makes the next suggestion easier to accept.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0089"
+        },
+        {
+          "id": "b03-u05-005",
+          "title": "Losing divine help makes self-reliance spiritually dangerous",
+          "order": 5,
+          "text": "The prayer 'do not entrust me to myself even for an instant' expresses the chapter's concern that a person who relies entirely on his own uncontrolled self is vulnerable to rapid deviation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0092"
+        },
+        {
+          "id": "b03-u05-006",
+          "title": "Spiritual deviation can accumulate until the person loses moral direction",
+          "order": 6,
+          "text": "The chapter uses Qur'anic images of darkness and misguidance to show how repeated wrong choices can remove clarity. The danger is cumulative: one concession can prepare the conditions for another.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0093"
+        },
+        {
+          "id": "b03-u05-007",
+          "title": "The remedy is to strengthen the relationship with God through disciplined worship",
+          "order": 7,
+          "text": "Mazaheri repeatedly returns to prayer, obligations and religious practice as external supports. The lower self is not defeated by abstract knowledge alone; it must be trained through repeated acts that place God above immediate desire.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0096"
+        },
+        {
+          "id": "b03-u05-008",
+          "title": "Neglect of communal worship is treated as a symptom of spiritual withdrawal",
+          "order": 8,
+          "text": "The warning about hearing the call to prayer but avoiding the mosque is used to illustrate how the lower self can rationalize isolation. Worship is presented as a discipline that keeps the person connected to a community of obedience.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0097"
+        },
+        {
+          "id": "b03-u05-009",
+          "title": "Patience turns resistance into a stable response",
+          "order": 9,
+          "text": "The chapter closes by moving toward the broader discussion of sabr: resisting the lower self requires endurance in hardship, obedience and temptation. Immediate comfort cannot be the measure of a successful spiritual life.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0100"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Protect the heart from becoming ruled by desire. Dependence on God, disciplined worship, communal responsibility, and patience gradually turn resistance to the lower self into character.",
+        "evidence_chunk_ids": [
+          "b03-u05-003",
+          "b03-u05-007"
+        ]
+      }
+    },
+    {
+      "id": "u06",
+      "title": "گفتار ششم : صبر",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html",
+      "quotes": [
+        {
+          "id": "u06-q01",
+          "text": "وَاسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ"
+        },
+        {
+          "id": "u06-q02",
+          "text": "إِنَّمَا يُوَفَّى الصَّابِرُونَ أَجْرَهُمْ بِغَيْرِ حِسَابٍ"
+        },
+        {
+          "id": "u06-q03",
+          "text": "الصبر من الإيمان"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u03",
+          "label": "Patience is one of the concrete disciplines by which the spiritual dimension gains control over the animal dimension"
+        },
+        {
+          "to_unit_id": "u04",
+          "label": "The external supports for jihad al-akbar are developed here after the inner battle is defined"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "This chapter establishes patience as a practice; the next turns repeated practice into a stable disposition"
+        },
+        {
+          "to_unit_id": "u08",
+          "label": "The following unit examines the consequences and fruits of sustained patience"
+        },
+        {
+          "to_unit_id": "u24",
+          "label": "Later tawakkul adds trust in God to the endurance and agency developed through patience"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u06-001",
+          "title": "Patience is introduced as an external source of strength for the inner war",
+          "order": 1,
+          "text": "Mazaheri introduces sabr as a major external aid in jihad al-nafs. The person fighting inner impulses needs a capacity that can hold the line when temptation, hardship or fatigue pushes toward surrender. Patience therefore functions as practical spiritual strength, not passive waiting.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0112"
+        },
+        {
+          "id": "b03-u06-002",
+          "title": "Endurance in hardship strengthens resolve and transfers into the struggle against desires",
+          "order": 2,
+          "text": "The chapter treats hardship as training: when a person learns to remain steady through difficulty, that same capacity becomes available when the difficulty is internal. Patience in ordinary trials therefore prepares the will for resisting desires and maintaining commitments.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0113"
+        },
+        {
+          "id": "b03-u06-003",
+          "title": "Patience in teaching is a concrete moral test",
+          "order": 3,
+          "text": "For teachers, patience is tested through repeated encounters with students, mistakes and frustrating situations. Mazaheri makes the virtue concrete: the educator must continue to guide without allowing irritation to become humiliation, anger or abandonment of responsibility.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0114"
+        },
+        {
+          "id": "b03-u06-004",
+          "title": "The inevitability of hardship makes resilience part of ordinary life",
+          "order": 4,
+          "text": "Hardship is not presented as an exceptional interruption that can be avoided by a sufficiently careful life. Because difficulty is woven into human existence, the useful question is how a person responds to it. Sabr gives the person a disciplined way to remain oriented toward the good.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0115"
+        },
+        {
+          "id": "b03-u06-005",
+          "title": "Patience turns calamity into an occasion for divine reward and support",
+          "order": 5,
+          "text": "The chapter connects patient endurance in calamity with divine reward and assistance. The point is not that suffering becomes pleasant, but that the believer can refuse to let suffering dictate the final moral response and can therefore transform a trial into an occasion for spiritual gain.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0116"
+        },
+        {
+          "id": "b03-u06-006",
+          "title": "Divine mercy accompanies those who remain patient",
+          "order": 6,
+          "text": "Mazaheri places patience within a larger theological picture of divine mercy. The patient person is not merely enduring alone: remaining steady is presented as a condition under which divine favor, guidance and compensation become meaningful parts of the trial.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0117"
+        },
+        {
+          "id": "b03-u06-007",
+          "title": "Patience protects against despair and loss of inner stability",
+          "order": 7,
+          "text": "Without patience, hardship can produce despair, impulsive reactions and abandonment of responsibility. Sabr gives the person time and inner space to respond rather than merely react, preserving the possibility of faith and purposeful action when circumstances are painful.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0118"
+        },
+        {
+          "id": "b03-u06-008",
+          "title": "The story of Yusuf connects divine assistance with resisting temptation",
+          "order": 8,
+          "text": "The account of Prophet Yusuf is used to show that resisting temptation is not explained only by human willpower. At the point where desire becomes dangerous, divine assistance is part of the believer's struggle, while the person's own responsibility remains real.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0119"
+        },
+        {
+          "id": "b03-u06-009",
+          "title": "Patience is structurally related to faith",
+          "order": 9,
+          "text": "Mazaheri treats patience as inseparable from a serious life of faith. Belief is tested when it costs something: without the ability to endure difficulty, conviction can remain verbal. Sabr is therefore one of the ways faith becomes stable behavior under pressure.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0120"
+        },
+        {
+          "id": "b03-u06-010",
+          "title": "Patience applies to family, work, fear and difficult responsibilities",
+          "order": 10,
+          "text": "The chapter widens sabr beyond dramatic spiritual trials. Family obligations, professional duties, fear, fatigue and recurring frustrations all require the same basic capacity: continue doing what is right without allowing discomfort to determine the decision.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0123"
+        },
+        {
+          "id": "b03-u06-011",
+          "title": "Moses' prayer links expanded inner capacity with effective action",
+          "order": 11,
+          "text": "The prayer of Moses, asking God to expand his chest, ease his task and loosen the difficulty of his speech, illustrates the relationship between inner capacity and outward responsibility. Mazaheri uses it to show that asking for spiritual strength is compatible with taking action.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0127"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Patience is trained endurance: remain steady in hardship, responsibility, temptation, and family life, trusting that perseverance strengthens the capacity to choose what is right.",
+        "evidence_chunk_ids": [
+          "b03-u06-002",
+          "b03-u06-008"
+        ]
+      }
+    },
+    {
+      "id": "u07",
+      "title": "گفتار هفتم : ملكه صبر",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html",
+      "quotes": [
+        {
+          "id": "u07-q01",
+          "text": "وَاصْبِرْ عَلَىٰ مَا يَقُولُونَ وَاهْجُرْهُمْ هَجْرًا جَمِيلًا"
+        },
+        {
+          "id": "u07-q02",
+          "text": "يا بني اصبر على الحق و إن كان مراً"
+        },
+        {
+          "id": "u07-q03",
+          "text": "إِنَّ الَّذِينَ قَالُوا رَبُّنَا اللَّهُ ثُمَّ اسْتَقَامُوا"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u03",
+          "label": "The self-mastery introduced earlier becomes durable only when restraint is trained into character"
+        },
+        {
+          "to_unit_id": "u06",
+          "label": "Patience under hardship becomes a stable virtue through repeated practice"
+        },
+        {
+          "to_unit_id": "u08",
+          "label": "The fruits of patience depend on first turning occasional endurance into a lasting disposition"
+        },
+        {
+          "to_unit_id": "u01",
+          "label": "The teacher's influence requires practiced patience with immature and difficult students"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Stable virtue protects religious practice from becoming performance for recognition"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u07-001",
+          "title": "The inner battle is permanent rather than temporary",
+          "order": 1,
+          "text": "The chapter treats jihad al-nafs as an ongoing struggle. A person cannot assume that one successful act of restraint permanently settles the matter; new circumstances repeatedly expose the same weaknesses, so moral formation requires continued vigilance and practice.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0129"
+        },
+        {
+          "id": "b03-u07-002",
+          "title": "Patience requires training and repeated practice",
+          "order": 2,
+          "text": "Mazaheri argues that patience can become a stable disposition through deliberate repetition. Knowing that patience is good is not the same as possessing it. The person must repeatedly choose restraint in small situations until the response becomes easier and more reliable.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0131"
+        },
+        {
+          "id": "b03-u07-003",
+          "title": "Patience in avoiding sin is especially demanding because temptation is attractive",
+          "order": 3,
+          "text": "Avoiding a harmful act is difficult precisely when the act promises immediate pleasure, status or relief. Sabr in this setting means allowing the attractive impulse to remain unsatisfied rather than inventing a justification for following it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0132"
+        },
+        {
+          "id": "b03-u07-004",
+          "title": "The Qur'anic model for teachers is patient restraint rather than angry retaliation",
+          "order": 4,
+          "text": "In dealing with students and other people, the chapter emphasizes restraint. A teacher who responds to mistakes with uncontrolled anger may technically correct an error while damaging the person's character or willingness to learn, so patience is part of effective moral influence.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0133"
+        },
+        {
+          "id": "b03-u07-005",
+          "title": "Repeated acts strengthen the capacity that is repeatedly exercised",
+          "order": 5,
+          "text": "Mazaheri's practical psychology is habit-based: what a person repeatedly does becomes easier to do again. Choosing restraint strengthens restraint; repeatedly indulging anger strengthens anger. Moral character is therefore built through accumulated ordinary decisions.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0134"
+        },
+        {
+          "id": "b03-u07-006",
+          "title": "Forbearance is the mechanism by which patience becomes a stable disposition",
+          "order": 6,
+          "text": "Hilm or forbearance gives patience an interpersonal form. Instead of merely surviving an unpleasant event, the person learns not to retaliate impulsively. Repeatedly practicing this response gradually changes what feels natural in moments of provocation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0135"
+        },
+        {
+          "id": "b03-u07-007",
+          "title": "Patience on truth is tested when truth becomes bitter",
+          "order": 7,
+          "text": "The instruction to remain patient upon the truth becomes meaningful when truth is inconvenient, unpopular or personally costly. Sabr does not mean tolerating falsehood; it means refusing to abandon what one knows to be right simply because maintaining it has become difficult.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0136"
+        },
+        {
+          "id": "b03-u07-008",
+          "title": "Steadfastness is linked to reassurance and divine assistance",
+          "order": 8,
+          "text": "The chapter connects perseverance with the promise of divine support. The believer's task is to remain steadfast, while reassurance that God sees and assists the struggle prevents difficulty from being interpreted as evidence that the effort is pointless.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0136"
+        },
+        {
+          "id": "b03-u07-009",
+          "title": "Patience in worship can become genuine spiritual pleasure",
+          "order": 9,
+          "text": "At first, worship may require resistance to sleep, distraction or competing desires. Through repetition, however, the discipline can change the person's inner taste. Mazaheri presents the mature state as one in which acts that once required effort can become sources of genuine pleasure.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0138"
+        },
+        {
+          "id": "b03-u07-010",
+          "title": "Stable character is different from occasional correct behavior",
+          "order": 10,
+          "text": "A person may behave patiently once because circumstances happen to be favorable. The chapter's concern is deeper: patience becomes a moral quality when the person can respond correctly across repeated situations, including situations that strongly provoke the opposite response.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0139"
+        },
+        {
+          "id": "b03-u07-011",
+          "title": "Small acts of mercy and service train the inner self",
+          "order": 11,
+          "text": "Mercy toward people, helping others and ordinary acts of service are treated as practical exercises in character formation. They redirect attention away from self-interest and repeatedly train the person to respond to another person's need rather than to immediate convenience.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0141"
+        },
+        {
+          "id": "b03-u07-012",
+          "title": "Fudayl ibn Iyad illustrates decisive moral reversal",
+          "order": 12,
+          "text": "The story of Fudayl ibn Iyad demonstrates that a person's established pattern does not have to be final. A moment of genuine awakening can redirect a life, but the significance of the story lies in sustained transformation rather than in the emotional moment alone.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0146"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Patience becomes akhlaq when repeated restraint turns into a stable disposition. Practice forbearance, truthfulness, mercy, and steady worship until good responses become more natural.",
+        "evidence_chunk_ids": [
+          "b03-u07-003",
+          "b03-u07-010"
+        ]
+      }
+    },
+    {
+      "id": "u08",
+      "title": "گفتار هشتم : آثار صبر",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html",
+      "quotes": [
+        {
+          "id": "u08-q01",
+          "text": "اشجع الناس من غلب هواه"
+        },
+        {
+          "id": "u08-q02",
+          "text": "و من يشرك بالله فكانما خر من السماء فتخطفه الطير او تهوي به الريح في مكان سحيق"
+        },
+        {
+          "id": "u08-q03",
+          "text": "اولئك لهم الامن"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u06",
+          "label": "Patience is the discipline whose long-term effects are examined here"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "A repeated act of patience can become a stable disposition and shape the outcomes described in this chapter"
+        },
+        {
+          "to_unit_id": "u09",
+          "label": "The consequences of sin create the need for repentance and return"
+        },
+        {
+          "to_unit_id": "u18",
+          "label": "Night worship later appears as one of the practices that protects and strengthens the inner life"
+        },
+        {
+          "to_unit_id": "u24",
+          "label": "Tawakkul later provides another source of security when the person faces fear and temptation"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u08-001",
+          "title": "The value of patience is measured by what it produces",
+          "order": 1,
+          "text": "The chapter is not satisfied with defining sabr. It examines its آثار: patience changes the person's moral trajectory, strengthens resistance and protects against consequences that follow impulsive wrongdoing.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0148"
+        },
+        {
+          "id": "b03-u08-002",
+          "title": "Patience has three arenas of practice",
+          "order": 2,
+          "text": "Mazaheri identifies patience in hardship, patience in obedience and patience in avoiding sin. The classification matters because a person may be patient in one arena while repeatedly failing in another.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0149"
+        },
+        {
+          "id": "b03-u08-003",
+          "title": "Patience turns suffering into an occasion for formation",
+          "order": 3,
+          "text": "Hardship is presented as something that can either crush the person or be used for growth. The believer is asked to extract meaning and discipline from difficulty rather than treating every pain as proof that life has gone wrong.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0151"
+        },
+        {
+          "id": "b03-u08-004",
+          "title": "The history of earlier peoples is used as a moral laboratory",
+          "order": 4,
+          "text": "Qur'anic commands to travel through the earth and observe the fate of deniers are presented as practical education. Looking at consequences trains judgment before a person repeats the same patterns.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0152"
+        },
+        {
+          "id": "b03-u08-005",
+          "title": "Uncontrolled desire can destroy the structure built by earlier good work",
+          "order": 5,
+          "text": "The chapter repeatedly returns to the way sin damages what has been built. A person may have faith or good intentions, but indulging a serious vice can undermine that structure from within.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0159"
+        },
+        {
+          "id": "b03-u08-006",
+          "title": "Shirk and attachment to desire are depicted as catastrophic descent",
+          "order": 6,
+          "text": "The imagery of falling from the sky and being carried away is used to communicate how severe the consequences can become when a person makes desire or another rival object the governing center of life.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0156"
+        },
+        {
+          "id": "b03-u08-007",
+          "title": "Moral safety is connected with keeping faith free from ظلم",
+          "order": 7,
+          "text": "The discussion of those who believe without mixing faith with ظلم connects inner security to the quality of the person's moral life. Security is not presented as mere absence of external trouble.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0163"
+        },
+        {
+          "id": "b03-u08-008",
+          "title": "Family and social conduct are also tests of patience",
+          "order": 8,
+          "text": "The chapter applies patience beyond private worship: relationships, speech and responsibilities expose whether the person can remain composed rather than transferring inner pressure into harmful behavior.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0164"
+        },
+        {
+          "id": "b03-u08-009",
+          "title": "Patience requires vigilance, not a one-time victory",
+          "order": 9,
+          "text": "The chapter's overall logic is that a person can lose ground through a moment of negligence. The practical lesson is sustained attention to the inner battle rather than confidence based on yesterday's success.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0167"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Patience is proven by its fruits: vigilance, moral safety, and the ability to withstand pressure without abandoning faith or harming others. It is a continuing discipline, not a one-time victory.",
+        "evidence_chunk_ids": [
+          "b03-u08-003",
+          "b03-u08-009"
+        ]
+      }
+    },
+    {
+      "id": "u09",
+      "title": "گفتار نهم : توبه ( 1 )",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html",
+      "quotes": [
+        {
+          "id": "u09-q01",
+          "text": "إِنَّمَا التَّوْبَةُ عَلَى اللَّهِ لِلَّذِينَ يَعْمَلُونَ السُّوءَ بِجَهَالَةٍ ثُمَّ يَتُوبُونَ مِنْ قَرِيبٍ"
+        },
+        {
+          "id": "u09-q02",
+          "text": "يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَى أَنْفُسِهِمْ لَا تَقْنَطُوا مِنْ رَحْمَةِ اللَّهِ"
+        },
+        {
+          "id": "u09-q03",
+          "text": "إِنَّ اللَّهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ الْمُتَطَهِّرِينَ"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u07",
+          "label": "Repentance requires the same repeated self-training that turns good actions into a stable disposition"
+        },
+        {
+          "to_unit_id": "u08",
+          "label": "The harmful effects of wrongdoing create the need for a disciplined return rather than passive regret"
+        },
+        {
+          "to_unit_id": "u10",
+          "label": "This opening treatment of repentance leads into a more detailed examination of the specific conditions of moral repair"
+        },
+        {
+          "to_unit_id": "u14",
+          "label": "Repentance removes guilt while later discussions examine additional forms of expiation and repair"
+        },
+        {
+          "to_unit_id": "u20",
+          "label": "The later treatment of supplication gives the repentant person another practice for sustaining dependence on God"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u09-001",
+          "title": "Repentance is a major aid in strengthening the spirit and will",
+          "order": 1,
+          "text": "Mazaheri introduces tawbah as a direct aid in jihad al-nafs. Turning back from sin is not merely the cancellation of a past offense; it strengthens the spirit, rebuilds the will and clears a path for continued movement toward God after moral failure.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0172"
+        },
+        {
+          "id": "b03-u09-002",
+          "title": "Sincere repentance requires regret and a decision to stop",
+          "order": 2,
+          "text": "The chapter defines repentance through an inward upheaval: the person recognizes the wrong, genuinely regrets it and decides not to repeat it. Repentance is therefore more than saying words of apology while leaving the underlying intention unchanged.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0173"
+        },
+        {
+          "id": "b03-u09-003",
+          "title": "Divine forgiveness remains open to the sincere returner",
+          "order": 3,
+          "text": "Mazaheri emphasizes that even serious wrongdoing does not create an Islamic dead end when genuine repentance occurs. The returner's task is real—regret and resolve are required—but the theological posture of the chapter is hope rather than permanent exclusion.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0174"
+        },
+        {
+          "id": "b03-u09-004",
+          "title": "Divine readiness to reconcile becomes a model for education and parenting",
+          "order": 4,
+          "text": "The chapter moves from theology to pedagogy: if God accepts the sincere return of a wrongdoer, parents and teachers should be careful not to make a person's mistake into a permanent identity. Correction should leave room for return and improvement.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0175"
+        },
+        {
+          "id": "b03-u09-005",
+          "title": "Correction should avoid humiliation because humiliation can reverse moral education",
+          "order": 5,
+          "text": "Mazaheri warns against insulting or degrading the person being corrected. Humiliation can produce stubbornness, resentment or despair, undermining the very repentance that the educator is trying to produce. Moral correction should therefore preserve dignity while naming the wrong.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0176"
+        },
+        {
+          "id": "b03-u09-006",
+          "title": "The Prophet's response to abusive speech illustrates restraint",
+          "order": 6,
+          "text": "The prophetic example is used to distinguish moral strength from retaliation. A person does not prove righteousness by answering every insult with another insult; restraint can interrupt the cycle of harm and preserve the possibility of a better response.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0177"
+        },
+        {
+          "id": "b03-u09-007",
+          "title": "Repentance includes a practical duty to repair conduct",
+          "order": 7,
+          "text": "Tawbah is not complete as a private feeling of guilt. Once the person recognizes the wrong, the next task is to change the behavior and, where the wrongdoing affected others, take seriously the need for repair rather than treating inward regret as sufficient.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0179"
+        },
+        {
+          "id": "b03-u09-008",
+          "title": "The Qur'anic address to sinners begins with welcome and mercy",
+          "order": 8,
+          "text": "Mazaheri highlights the Qur'anic call that addresses people who have wronged themselves without telling them to give up. The invitation to return works against despair: the person is asked to turn back precisely because mercy remains available.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0180"
+        },
+        {
+          "id": "b03-u09-009",
+          "title": "Repentance can transform the moral meaning of the past",
+          "order": 9,
+          "text": "The chapter presents repentance as capable of changing what follows from earlier wrongdoing. The emphasis is not on pretending the act never happened, but on the possibility that sincere return and changed conduct can lead to a genuinely different moral trajectory.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0181"
+        },
+        {
+          "id": "b03-u09-010",
+          "title": "Repeated return remains possible after relapse",
+          "order": 10,
+          "text": "Mazaheri does not treat a failed attempt at repentance as proof that future repentance is worthless. A relapse is another moral failure to confront, but the door of return remains open; the person must again cultivate regret, resolve and changed conduct.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0183"
+        },
+        {
+          "id": "b03-u09-011",
+          "title": "Repentance is associated with improved worldly conditions as well as forgiveness",
+          "order": 11,
+          "text": "The chapter connects sin and repentance with consequences in worldly life as well as the hereafter. Mazaheri therefore treats tawbah as a transformation with practical effects, not merely a legal declaration concerning an abstract future reward.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0184"
+        },
+        {
+          "id": "b03-u09-012",
+          "title": "The 'two repentances' formulation emphasizes divine enabling and acceptance",
+          "order": 12,
+          "text": "The discussion of two acts of returning highlights God's role before and after human repentance: divine enabling helps the person turn back, and divine acceptance receives that return. Human agency is therefore situated inside a larger theology of grace.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0186"
+        },
+        {
+          "id": "b03-u09-013",
+          "title": "The three who remained behind at Tabuk illustrate painful but sincere return",
+          "order": 13,
+          "text": "The Tabuk narrative shows repentance unfolding through social consequences, isolation and eventual acceptance. The lesson is that sincere return may involve uncomfortable truth and accountability before reconciliation; mercy does not require pretending that the failure never occurred.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0187"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Repentance should produce mercy and repair, not humiliation or despair. Recognize wrongdoing honestly, return to God, correct conduct, and restore what can be restored.",
+        "evidence_chunk_ids": [
+          "b03-u09-002",
+          "b03-u09-007"
+        ]
+      }
+    },
+    {
+      "id": "u10",
+      "title": "گفتار دهم : توبه ( 2 )",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html",
+      "quotes": [
+        {
+          "id": "u10-q01",
+          "text": "آخر ما يخرج عن قلوب الصديقين حب الجاه"
+        },
+        {
+          "id": "u10-q02",
+          "text": "إِنَّمَا التَّوْبَةُ عَلَى اللَّهِ لِلَّذِينَ يَعْمَلُونَ السُّوءَ بِجَهَالَةٍ ثُمَّ يَتُوبُونَ مِنْ قَرِيبٍ"
+        },
+        {
+          "id": "u10-q03",
+          "text": "يتوبون من قريب"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u09",
+          "label": "The earlier invitation to repent becomes harder to act on when vice destroys the ability to recognize one's own wrongdoing"
+        },
+        {
+          "to_unit_id": "u11",
+          "label": "The next unit turns the chapter's warning about delayed repentance into a detailed account of repair and rights"
+        },
+        {
+          "to_unit_id": "u03",
+          "label": "The inner war is now analyzed through specific motives that can overpower spiritual agency"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Love of status is a direct test of whether action is for God or for recognition"
+        },
+        {
+          "to_unit_id": "u25",
+          "label": "The later discussion of tawhid of worship gives a deeper framework for identifying rival objects of attachment such as status and ego"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u10-001",
+          "title": "Repentance is one of the external strengths used to recover the inner battlefield",
+          "order": 1,
+          "text": "Mazaheri reconnects repentance to jihad al-akbar: return to God is not an isolated legal topic but a way of restoring the spiritual dimension's ability to govern the self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0190"
+        },
+        {
+          "id": "b03-u10-002",
+          "title": "Despair can become a larger danger than the original period of sin",
+          "order": 2,
+          "text": "The chapter sharply warns against concluding that forgiveness is impossible. In Mazaheri's presentation, despair removes the motivation needed for return and can itself become a grave spiritual danger.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0192"
+        },
+        {
+          "id": "b03-u10-003",
+          "title": "A corrupt inner motive can make repentance psychologically unavailable",
+          "order": 3,
+          "text": "The chapter distinguishes committing a wrong from becoming hardened toward the wrong. Where remorse has disappeared, the person may no longer possess the inner movement that makes tawbah possible.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0194"
+        },
+        {
+          "id": "b03-u10-004",
+          "title": "The chapter distinguishes ignorance-driven failure from deliberate defiance",
+          "order": 4,
+          "text": "Mazaheri reads Qur'an 4:17–18 as distinguishing wrongdoing committed under the dominance of ignorance or impulse from deliberate, defiant persistence. This distinction explains why immediate return matters.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0196"
+        },
+        {
+          "id": "b03-u10-005",
+          "title": "The warning against rejected repentance functions as a moral alarm",
+          "order": 5,
+          "text": "The four warnings are presented not to close the door of mercy but to prevent a person from reaching a state in which repentance is postponed until the capacity or opportunity for genuine return is gone.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0198"
+        },
+        {
+          "id": "b03-u10-006",
+          "title": "Envy can silence the conscience while preserving self-justification",
+          "order": 6,
+          "text": "Mazaheri presents envy as especially dangerous because the person may know the act is wrong yet construct a justification that quiets the remaining voice of conscience.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0201"
+        },
+        {
+          "id": "b03-u10-007",
+          "title": "Love of status can survive after many other attachments have weakened",
+          "order": 7,
+          "text": "The cited saying that love of position is among the last attachments to leave the hearts of the righteous is used to show how deeply recognition and power can survive within otherwise religious practice.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0202"
+        },
+        {
+          "id": "b03-u10-008",
+          "title": "Delayed repentance becomes a form of self-deception",
+          "order": 8,
+          "text": "The chapter's discussion of taswif shows how promising to repent later can allow memory and remorse to fade, turning a momentary failure into an established moral pattern.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0204"
+        },
+        {
+          "id": "b03-u10-009",
+          "title": "Material rationalization can replace moral repair",
+          "order": 9,
+          "text": "The discussion of withholding obligatory financial duties illustrates how a person can convert a moral obligation into a self-serving argument rather than accepting the need to repair what was withheld.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0205"
+        },
+        {
+          "id": "b03-u10-010",
+          "title": "Serious wrongdoing does not erase the possibility of decisive moral reversal",
+          "order": 10,
+          "text": "Stories of Hur ibn Yazid and others are used to reinforce that even grave histories can be followed by a sincere change of direction, provided the person actually turns back rather than merely wishing for forgiveness.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0207"
+        },
+        {
+          "id": "b03-u10-011",
+          "title": "Awareness of God's presence protects against recurrence",
+          "order": 11,
+          "text": "The chapter closes the moral loop by urging the reader to live as though God is present and observing. That awareness is meant to preserve shame before wrongdoing and reduce the likelihood of repeating it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0208"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Do not postpone moral repair while protecting the ego. Watch for envy, status-seeking, rationalization, and self-deception, because they can make a person defend the very fault that needs repentance.",
+        "evidence_chunk_ids": [
+          "b03-u10-005",
+          "b03-u10-008"
+        ]
+      }
+    },
+    {
+      "id": "u11",
+      "title": "گفتار يازدهم : توبه ( 3 )",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html",
+      "quotes": [
+        {
+          "id": "u11-q01",
+          "text": "التائب من الذنب كمن لا ذنب له"
+        },
+        {
+          "id": "u11-q02",
+          "text": "فويل للمصلين الذين هم عن صلاتهم ساهون"
+        },
+        {
+          "id": "u11-q03",
+          "text": "والغيبة إدام كلاب أهل النار"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u09",
+          "label": "The first repentance discussion establishes divine mercy; this unit specifies what genuine repair requires"
+        },
+        {
+          "to_unit_id": "u10",
+          "label": "The vices that block recognition of wrongdoing become concrete cases for the conditions of repentance"
+        },
+        {
+          "to_unit_id": "u14",
+          "label": "The distinction between repentance and practical repair prepares the later discussion of expiation and the consequences of speech"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Repairing neglected duties is part of fulfilling the servant's responsibility to God and people"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincerity is tested by whether repentance changes conduct and restores rights rather than remaining verbal"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u11-001",
+          "title": "The chapter begins by returning to the Qur'anic distinction between immediate and delayed repentance",
+          "order": 1,
+          "text": "Mazaheri revisits Qur'an 4:17–18 and makes timing central: repentance belongs to the period in which the person can still genuinely recognize the wrong and choose to return.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0212"
+        },
+        {
+          "id": "b03-u11-002",
+          "title": "Repeated sin can darken the heart and reduce sensitivity to wrongdoing",
+          "order": 2,
+          "text": "The image of successive black marks on the heart explains how failure to repair one sin can make the next easier and eventually obscure the moral seriousness of the behavior.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0214"
+        },
+        {
+          "id": "b03-u11-003",
+          "title": "Regret at the approach of death is not the same as repentance from the sin",
+          "order": 3,
+          "text": "Mazaheri distinguishes remorse about punishment from remorse about having disobeyed God. The latter is the morally meaningful return that should occur before the final crisis.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0216"
+        },
+        {
+          "id": "b03-u11-004",
+          "title": "Deathbed fear can be too late for deliberate moral reconstruction",
+          "order": 4,
+          "text": "The chapter treats the final moments as a warning: fear and shock may produce regret, but they do not necessarily produce the reflective, corrective process required for tawbah.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0217"
+        },
+        {
+          "id": "b03-u11-005",
+          "title": "Neglected obligations require practical compensation",
+          "order": 5,
+          "text": "The example of missed prayer and fasting makes the principle concrete: regret before God does not erase an obligation that the person is still capable of making up.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0220"
+        },
+        {
+          "id": "b03-u11-006",
+          "title": "Repentance from human rights requires restoring what was taken",
+          "order": 6,
+          "text": "Where another person's property or right was violated, Mazaheri explicitly treats repayment and obtaining the person's satisfaction as part of genuine repentance.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0223"
+        },
+        {
+          "id": "b03-u11-007",
+          "title": "Some interpersonal harms require repair without reopening the original injury",
+          "order": 7,
+          "text": "For forms of harm such as backbiting, the chapter discusses repentance through remorse, corrective service and seeking God's forgiveness rather than mechanically repeating the injury to the victim.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0224"
+        },
+        {
+          "id": "b03-u11-008",
+          "title": "The moral meaning of 'no sin' is compatible with responsibility for consequences",
+          "order": 8,
+          "text": "The saying that a repentant person is like one without sin is presented alongside stories such as Hur's, where forgiveness does not eliminate the need for the person to confront what he did.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0221"
+        },
+        {
+          "id": "b03-u11-009",
+          "title": "The chapter treats divine judgment as attentive to rights between people",
+          "order": 9,
+          "text": "The image of accountability at the 'ambush' emphasizes that private worship cannot simply cancel obligations owed to others.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0222"
+        },
+        {
+          "id": "b03-u11-010",
+          "title": "The closing principle is repair rather than despair",
+          "order": 10,
+          "text": "Mazaheri ends by insisting that every class of wrongdoing has some form of corrective path, while warning that neglect and indifference can make small sins grow into a destructive character.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0225"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Repentance includes responsibility toward other people: restore rights, repair harm where possible, and do not use fear of judgment as an excuse for either despair or inaction.",
+        "evidence_chunk_ids": [
+          "b03-u11-006",
+          "b03-u11-008"
+        ]
+      }
+    },
+    {
+      "id": "u12",
+      "title": "گفتار دوازدهم : سعه صدر ( 1 )",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html",
+      "quotes": [
+        {
+          "id": "u12-q01",
+          "text": "بسم الله الرحمن الرحيم ، الم نشرح لك صدرك"
+        },
+        {
+          "id": "u12-q02",
+          "text": "فان مع العسر يسرا ، ان مع العسر يسرا ، فاذا فرغت فانصب ، و الى ربك فارغب"
+        },
+        {
+          "id": "u12-q03",
+          "text": "من دخل في شبر الاول تكبر و من دخل من شبر الثاني تواضع من دخل في شبر الثالث ، يعلم انه لا يعلم شيئا"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u04",
+          "label": "Prayer is one of the external supports that strengthens the inner person; this chapter develops another support, expanded spiritual capacity"
+        },
+        {
+          "to_unit_id": "u06",
+          "label": "Patience becomes sustainable when the person develops the inner capacity to absorb difficulty"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "Repeated patience can become a stable character rather than a temporary reaction"
+        },
+        {
+          "to_unit_id": "u13",
+          "label": "The next chapter develops the formation mechanism through which expanded capacity and conduct reinforce one another"
+        },
+        {
+          "to_unit_id": "u16",
+          "label": "Activity and perseverance later turn the same principle into a broader discipline of carrying responsibilities"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u12-001",
+          "title": "Sabr alone is not enough if the person cannot absorb pressure",
+          "order": 1,
+          "text": "Mazaheri introduces sadr/sharh al-sadr as the capacity needed to remain steady when difficulty, criticism and competing demands arrive. The point is not simply tolerating pain but having enough inner breadth that pressure does not dictate one's behavior.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0226"
+        },
+        {
+          "id": "b03-u12-002",
+          "title": "Expanded capacity is especially necessary for a teacher and reformer",
+          "order": 2,
+          "text": "The chapter repeatedly applies expanded spiritual capacity to educators. A person responsible for guiding others must be able to absorb difficult personalities and setbacks without allowing anger or discouragement to destroy the work.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0229"
+        },
+        {
+          "id": "b03-u12-003",
+          "title": "The Qur'an's language of شرح الصدر describes an inward expansion",
+          "order": 3,
+          "text": "The opening of Surat al-Sharh is used as a conceptual model: expanded capacity is associated with removal of burdens, ease amid difficulty and renewed orientation toward God after completing one task.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0228"
+        },
+        {
+          "id": "b03-u12-004",
+          "title": "Difficulty becomes manageable when the person has the right inner capacity",
+          "order": 4,
+          "text": "The repeated promise that with hardship comes ease is connected to the practical need for endurance. Mazaheri does not portray difficulty as disappearing; rather, a stronger inner state changes how the person carries it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0228"
+        },
+        {
+          "id": "b03-u12-005",
+          "title": "The person should keep moving after one task is finished",
+          "order": 5,
+          "text": "The command فاذا فرغت فانصب is interpreted as continued effort rather than permanent rest after a single success. Self-building therefore requires continuity: one completed responsibility becomes the starting point for the next.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0228"
+        },
+        {
+          "id": "b03-u12-006",
+          "title": "Sabr and expanded capacity reinforce one another",
+          "order": 6,
+          "text": "A person who repeatedly resists anger, temptation and discouragement gradually develops greater capacity; that greater capacity then makes the next act of patience easier. The chapter therefore treats spiritual traits as trainable rather than fixed.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0231"
+        },
+        {
+          "id": "b03-u12-007",
+          "title": "Knowledge requires humility as it deepens",
+          "order": 7,
+          "text": "The three-span saying illustrates a progression: shallow knowledge can produce pride, deeper knowledge produces humility, and still deeper knowledge produces recognition of one's limits. Expanded capacity therefore includes intellectual humility.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0233"
+        },
+        {
+          "id": "b03-u12-008",
+          "title": "Prophetic and Imam Ali examples show capacity under pressure",
+          "order": 8,
+          "text": "The discussion of Moses and examples from the religious struggle are used to show that confronting a powerful opponent requires an inner state capable of remaining composed rather than being psychologically defeated before acting.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0235"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "A good character needs enough inner capacity to carry pressure without becoming harsh or defeated. Patience, humility, and continued effort enlarge the person who must serve others.",
+        "evidence_chunk_ids": [
+          "b03-u12-002",
+          "b03-u12-007"
+        ]
+      }
+    },
+    {
+      "id": "u13",
+      "title": "گفتار سيزدهم : سعه صدر ( 2 )",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html",
+      "quotes": [
+        {
+          "id": "u13-q01",
+          "text": "افمن شرح الله صدره للإسلام فهو علي نور من ربه"
+        },
+        {
+          "id": "u13-q02",
+          "text": "فمن يرد الله ان يهديه يشرح صدره للإسلام"
+        },
+        {
+          "id": "u13-q03",
+          "text": "فاذا فرغت فانصب"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u12",
+          "label": "Expanded capacity is not merely a feeling; repeated conduct can strengthen or weaken it"
+        },
+        {
+          "to_unit_id": "u06",
+          "label": "Patience is both an expression of inner capacity and a practice that builds it"
+        },
+        {
+          "to_unit_id": "u14",
+          "label": "Speech and restraint become tests of whether expanded capacity survives real interpersonal pressure"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincerity requires enough inner stability to resist status and recognition"
+        },
+        {
+          "to_unit_id": "u24",
+          "label": "Tawakkul later supplies another source of stability when outcomes remain outside one's control"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u13-001",
+          "title": "Expanded capacity is described as light and guidance",
+          "order": 1,
+          "text": "The chapter uses Qur'anic language to connect شرح الصدر with divine light. The practical implication is that spiritual breadth changes perception: a person can face difficulty without interpreting every obstacle as a reason to collapse.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0249"
+        },
+        {
+          "id": "b03-u13-002",
+          "title": "Narrowness turns ordinary difficulty into psychological suffocation",
+          "order": 2,
+          "text": "The contrasting Qur'anic image of a constricted chest describes a person for whom the world becomes unbearably narrow. Mazaheri connects this to losing the ability to absorb problems, temptation and criticism.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0249"
+        },
+        {
+          "id": "b03-u13-003",
+          "title": "Faith and action form a feedback loop",
+          "order": 3,
+          "text": "Mazaheri explicitly describes a reciprocal process: good qualities produce good actions, and good actions strengthen those qualities. The same mechanism works negatively when vice produces bad action and bad action deepens vice.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0250"
+        },
+        {
+          "id": "b03-u13-004",
+          "title": "Self-building therefore requires changing behavior, not only understanding",
+          "order": 4,
+          "text": "Because conduct feeds back into character, merely knowing that pride, envy or desire is wrong is insufficient. The person must deliberately interrupt the behavior through which the trait is being reinforced.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0250"
+        },
+        {
+          "id": "b03-u13-005",
+          "title": "Repeated practice is the mechanism of moral formation",
+          "order": 5,
+          "text": "The chapter compares self-building to repeated charging and repeated suggestion. Repetition is not accidental: the person becomes what he repeatedly does, says and attends to.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0255"
+        },
+        {
+          "id": "b03-u13-006",
+          "title": "Attention is a condition of victory",
+          "order": 6,
+          "text": "The discussion of Uhud and moments of forgetting is used to show that a person can lose ground through a brief lapse of attention. Moral vigilance is therefore part of the discipline, not an optional extra.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0258"
+        },
+        {
+          "id": "b03-u13-007",
+          "title": "The work is difficult because acting is harder than understanding",
+          "order": 7,
+          "text": "Ethical principles may be easy to explain, while removing a deeply rooted vice can require years of sustained effort. The chapter deliberately separates intellectual comprehension from embodied self-reform.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0254"
+        },
+        {
+          "id": "b03-u13-008",
+          "title": "Steadiness means continuing after a good day",
+          "order": 8,
+          "text": "The command فاذا فرغت فانصب is reused as a rule for self-building: one successful act does not finish the struggle. A person must continue while remaining oriented toward God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0253"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Moral growth requires practice, not merely insight. Build good habits repeatedly, stay attentive, and continue after setbacks or ordinary days until steadiness becomes part of character.",
+        "evidence_chunk_ids": [
+          "b03-u13-005",
+          "b03-u13-008"
+        ]
+      }
+    },
+    {
+      "id": "u14",
+      "title": "گفتار چهاردهم : كفاره گناه",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html",
+      "quotes": [
+        {
+          "id": "u14-q01",
+          "text": "الإنسان مخبوء تحت لسانه"
+        },
+        {
+          "id": "u14-q02",
+          "text": "فاجتنبوا الرجس من الأوثان واجتنبوا قول الزور"
+        },
+        {
+          "id": "u14-q03",
+          "text": "ليس كل ما يعلم يقال"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u01",
+          "label": "The teacher's moral influence includes the discipline of speech because students absorb conduct as well as lessons"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "Controlling the tongue requires repeated forbearance until restraint becomes a stable disposition"
+        },
+        {
+          "to_unit_id": "u11",
+          "label": "Speech can create rights and harms that later require repentance and practical repair"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Responsible service includes refusing to impose avoidable harm on others through careless words"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Speech becomes a test of sincerity when the desire to impress, mock or dominate competes with the intention to serve God"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u14-001",
+          "title": "The chapter frames speech as a moral form of self-control",
+          "order": 1,
+          "text": "The opening example uses an apparently ordinary interaction to show how ridicule and careless words can accumulate into multiple moral failures. The tongue is therefore treated as a frontline of jihad with the self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0263"
+        },
+        {
+          "id": "b03-u14-002",
+          "title": "Ridiculing another person can combine several separate wrongs",
+          "order": 2,
+          "text": "Mazaheri dissects an insulting remark into humiliation, false judgment and loss of respect for another Muslim, showing why a single sentence can carry layered moral consequences.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0264"
+        },
+        {
+          "id": "b03-u14-003",
+          "title": "A person's statement should not be evaluated only by whether it is factually true",
+          "order": 3,
+          "text": "The chapter distinguishes truth from the broader question of whether speech is appropriate, useful and respectful. A true statement can still be delivered in a way that produces unnecessary harm.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0265"
+        },
+        {
+          "id": "b03-u14-004",
+          "title": "Religious speech requires attention to audience and consequence",
+          "order": 4,
+          "text": "The discussion emphasizes that even accurate claims may be unsuitable to repeat when listeners cannot receive them properly or when the result is needless confusion and conflict.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0267"
+        },
+        {
+          "id": "b03-u14-005",
+          "title": "A disciplined speaker does not need to prove every claim",
+          "order": 5,
+          "text": "The maxim about a statement requiring forty witnesses illustrates a practical restraint: not every surprising assertion needs to be voiced merely because the speaker believes it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0268"
+        },
+        {
+          "id": "b03-u14-006",
+          "title": "Speech can leave consequences long after the moment has passed",
+          "order": 6,
+          "text": "The broken-glass analogy is used to explain why verbal injury can be difficult to repair: once affection and trust have been damaged, apology does not always restore the previous relationship.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0272"
+        },
+        {
+          "id": "b03-u14-007",
+          "title": "Mockery can become a stable social identity",
+          "order": 7,
+          "text": "The stories about Ibn Muqaffa' show how repeated jokes, sarcasm and public embarrassment can create enemies and eventually expose the speaker himself to serious consequences.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0273"
+        },
+        {
+          "id": "b03-u14-008",
+          "title": "Careless cleverness can become self-destruction",
+          "order": 8,
+          "text": "The chapter uses the fate of Ibn Muqaffa' to connect verbal brilliance with moral danger when wit, pride and political carelessness override prudence.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0274"
+        },
+        {
+          "id": "b03-u14-009",
+          "title": "A sharp tongue can destroy influence at home",
+          "order": 9,
+          "text": "Mazaheri explicitly brings the lesson into family life: someone who constantly uses cutting speech may lose authority over hearts even if his factual arguments are correct.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0276"
+        },
+        {
+          "id": "b03-u14-010",
+          "title": "The final discipline is to restrain speech before it becomes harm",
+          "order": 10,
+          "text": "The practical conclusion is preventive rather than merely reparative: think before speaking, avoid needless verbal injury, and especially remove cutting speech from the home.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0276"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Speech is an ethical act. Restrain ridicule, unnecessary cleverness, and careless claims; consider the dignity of the listener and the consequences that words can leave behind.",
+        "evidence_chunk_ids": [
+          "b03-u14-002",
+          "b03-u14-010"
+        ]
+      }
+    },
+    {
+      "id": "u15",
+      "title": "گفتار پانزدهم : بندگى خدا",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-15.html",
+      "quotes": [
+        {
+          "id": "u15-q01",
+          "text": "جنگ درون ، جهاد اكبر است"
+        },
+        {
+          "id": "u15-q02",
+          "text": "بدان كه تو عبدى و او مولاست"
+        },
+        {
+          "id": "u15-q03",
+          "text": "العبد و ما في يده كان لمولاه"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u03",
+          "label": "The inner struggle becomes concrete submission to God rather than merely resisting desire"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "Patience and steadiness depend on the believer's response to hardship and ease"
+        },
+        {
+          "to_unit_id": "u12",
+          "label": "Expanded inner capacity makes obedience and self-control sustainable"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Servitude is the foundation from which sincerity and God-directed action become possible"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u15-001",
+          "title": "Respect for the Qur'an is itself part of spiritual discipline",
+          "order": 1,
+          "text": "The discourse begins by insisting that the Qur'an must be heard with silence, attention and respect. Mazaheri treats the manner in which a person approaches revelation as morally significant, not as a merely ceremonial detail.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-15.html#source-page-0285"
+        },
+        {
+          "id": "b03-u15-002",
+          "title": "The Qur'an is presented as a refuge when life becomes confusing or dark",
+          "order": 2,
+          "text": "The prophetic narration cited in the chapter presents the Qur'an as a guide and refuge during fitnah. Making the Qur'an one's guide is therefore described as something that shapes the direction of one's life, not merely something consulted for information.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-15.html#source-page-0286"
+        },
+        {
+          "id": "b03-u15-003",
+          "title": "The inner battle is the central arena of jihad",
+          "order": 3,
+          "text": "Mazaheri describes the conflict between the human/spiritual dimension and the animal/desiring dimension as a permanent inner war, calling victory in this arena jihad al-akbar. Losing this struggle means allowing the lower side of the person to govern the whole self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-15.html#source-page-0288"
+        },
+        {
+          "id": "b03-u15-004",
+          "title": "The goal of inner victory is the tranquil soul",
+          "order": 4,
+          "text": "The chapter contrasts collapse in the inner struggle with the Qur'anic image of al-nafs al-mutma'innah. The mature endpoint is not simply avoiding sins but reaching a state of tranquility in which the person is accepted by God and willingly returns to Him.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-15.html#source-page-0289"
+        },
+        {
+          "id": "b03-u15-005",
+          "title": "Servitude begins with recognizing the Creator-servant relationship",
+          "order": 5,
+          "text": "In the counsel attributed to Imam al-Sadiq, the first condition for expanded spiritual capacity is recognizing that one is a servant and God is the Master. Mazaheri presents genuine servitude as radical orientation toward God's will rather than treating oneself as autonomous.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-15.html#source-page-0291"
+        },
+        {
+          "id": "b03-u15-006",
+          "title": "Submission to God is compatible with confidence in His justice and mercy",
+          "order": 6,
+          "text": "The slave-and-master story is explicitly qualified: unconditional obedience is appropriate to God because God is just and merciful, not because human masters may legitimately abuse servants. Trust in divine wisdom changes how a believer interprets both hardship and blessing.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-15.html#source-page-0294"
+        },
+        {
+          "id": "b03-u15-007",
+          "title": "The believer should be stable in hardship and prosperity",
+          "order": 7,
+          "text": "Mazaheri contrasts the unstable person who is carried away by either calamity or prosperity with the believer described as firm like a mountain. Servitude means receiving both difficulty and ease within the larger frame of submission to God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-15.html#source-page-0295"
+        },
+        {
+          "id": "b03-u15-008",
+          "title": "Obedience is a practical expression of servitude",
+          "order": 8,
+          "text": "The second counsel to Sufyan al-Thawri connects servitude to pursuing God's pleasure, taking obligations seriously and avoiding what brings divine displeasure. Jihad with the self is therefore translated into concrete daily obedience rather than vague spiritual feeling.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-15.html#source-page-0278"
+        },
+        {
+          "id": "b03-u15-009",
+          "title": "Everything a person possesses is entrusted by God and should be used accordingly",
+          "order": 9,
+          "text": "The third counsel states that the servant and whatever is in his possession belong to the Master. Mazaheri applies this to money, health, intellect, safety and knowledge: recognizing them as divine gifts makes using them for God's purposes and for other people a natural consequence of servitude.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-15.html#source-page-0278"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Servitude to God reshapes how one treats everything else: obey with trust, remain steady in hardship and prosperity, and treat possessions, abilities, and responsibilities as entrusted rather than owned absolutely.",
+        "evidence_chunk_ids": [
+          "b03-u15-006",
+          "b03-u15-009"
+        ]
+      }
+    },
+    {
+      "id": "u16",
+      "title": "گفتار شانزدهم : فعاليت ، استقامت و توبه به جوانب كار",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-16.html",
+      "quotes": [
+        {
+          "id": "u16-q01",
+          "text": "فعاليت ، استقامت و توجه به جوانب كار"
+        },
+        {
+          "id": "u16-q02",
+          "text": "اگر انسان بخواهد مىتواند"
+        },
+        {
+          "id": "u16-q03",
+          "text": "بحث اخلاقى گفتن و شنيدنش آسان است ، اما عمل كردن به بحث اخلاقى دشوار است"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u06",
+          "label": "Patience becomes perseverance when it is translated into sustained action"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "Repeated effort turns a virtue from an idea into a stable disposition"
+        },
+        {
+          "to_unit_id": "u09",
+          "label": "Repentance is presented as an active force that interrupts moral decline"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Servitude requires disciplined use of one's abilities rather than passivity"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sustained work needs a God-directed motive so effort does not become ego-driven ambition"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u16-001",
+          "title": "Faith, patience, repentance and expanded capacity are supports for defeating the self",
+          "order": 1,
+          "text": "The chapter gathers earlier lessons into a practical system: deepened faith through serious worship, patience in difficulty and obedience, repentance as an inner upheaval, and sadr expansion as capacities that strengthen a person in the inner struggle.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-16.html#source-page-0304"
+        },
+        {
+          "id": "b03-u16-002",
+          "title": "Victory requires activity, perseverance and attention to the whole task",
+          "order": 2,
+          "text": "Mazaheri identifies three practical requirements for success: activity, perseverance and attention to the different sides of a task. Talent alone is not treated as decisive; sustained effort and careful attention can compensate for limited natural ability.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-16.html#source-page-0306"
+        },
+        {
+          "id": "b03-u16-003",
+          "title": "The example of Maytham al-Tammar illustrates rapid growth through disciplined effort",
+          "order": 3,
+          "text": "Maytham is presented as an example of someone whose sustained activity, perseverance and attention transformed his capacities. His closeness to Imam Ali and his later courage are used to show what disciplined spiritual development can produce.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-16.html#source-page-0307"
+        },
+        {
+          "id": "b03-u16-004",
+          "title": "Extraordinary spiritual abilities are not the real measure of human success",
+          "order": 4,
+          "text": "The chapter uses stories of people with unusual abilities to make a larger distinction: feats such as extraordinary physical or spiritual capacities are not the highest achievement. Becoming genuinely human by mastering the commanding self is the more important victory.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-16.html#source-page-0310"
+        },
+        {
+          "id": "b03-u16-005",
+          "title": "The same principle applies to worldly and spiritual work",
+          "order": 5,
+          "text": "Mazaheri argues that a believer should actively pursue both worldly responsibilities and the afterlife. The Qur'anic balance is not withdrawal from productive life but using one's God-given intellect, health, youth, security and wealth for both domains.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-16.html#source-page-0317"
+        },
+        {
+          "id": "b03-u16-006",
+          "title": "Moral decline accelerates when the person stops guarding the inner struggle",
+          "order": 6,
+          "text": "The chapter describes decline as progressive: neglect begins with losing the sweetness of worship, then can reach denial of religious truth, pleasure in sin and eventually pleasure in ظلم and cruelty. The warning is that the self does not have a natural stopping point once disciplined resistance is abandoned.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-16.html#source-page-0297"
+        },
+        {
+          "id": "b03-u16-007",
+          "title": "Repeated wrongdoing can make serious sin feel ordinary",
+          "order": 7,
+          "text": "Mazaheri uses backbiting, slander and attacking people's dignity to illustrate a lower-level form of moral collapse. A person may remain sensitive to physical violence while becoming insensitive to harming reputations, showing that habituation can normalize grave wrongdoing.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-16.html#source-page-0297"
+        },
+        {
+          "id": "b03-u16-008",
+          "title": "The practical conclusion is to keep working against the self rather than assuming safety",
+          "order": 8,
+          "text": "The chapter closes by treating jihad with the self as an ongoing activity. Without activity, perseverance and attention, the person moves toward decline; with them, even a difficult starting point can become a path of ascent.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-16.html#source-page-0297"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Character is protected by continued work. Activity, perseverance, repentance, and attention keep the inner struggle alive instead of allowing repeated wrongdoing to become normal.",
+        "evidence_chunk_ids": [
+          "b03-u16-002",
+          "b03-u16-007"
+        ]
+      }
+    },
+    {
+      "id": "u17",
+      "title": "گفتار هفدهم : اخلاص",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-17.html",
+      "quotes": [
+        {
+          "id": "u17-q01",
+          "text": "اگر با خدا باشيد خدا با شماست"
+        },
+        {
+          "id": "u17-q02",
+          "text": "انما نطعمكم لوجه الله نريد منكم جزاء و لاشكورا"
+        },
+        {
+          "id": "u17-q03",
+          "text": "صبغه الله و من احسن من الله صبغه"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u15",
+          "label": "Servitude becomes sincere when the person's real motive is God rather than the self"
+        },
+        {
+          "to_unit_id": "u16",
+          "label": "Activity and perseverance need a purified motive to become spiritual progress rather than egoic ambition"
+        },
+        {
+          "to_unit_id": "u18",
+          "label": "Night prayer is presented as one practical means of building a God-centered inner life"
+        },
+        {
+          "to_unit_id": "u01",
+          "label": "The teacher's influence becomes trustworthy when teaching is done for God rather than recognition"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u17-001",
+          "title": "Sincerity means giving one's thoughts, speech and actions a God-directed orientation",
+          "order": 1,
+          "text": "Mazaheri defines the practical direction of ikhlas broadly: not only outward actions but thoughts, speech, intentions and motives should be oriented toward God. This turns sincerity into a governing orientation of life rather than a property of a few religious acts.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-17.html#source-page-0325"
+        },
+        {
+          "id": "b03-u17-002",
+          "title": "God-centered action is presented as the source of divine assistance",
+          "order": 2,
+          "text": "The chapter links sincere orientation to the promise that God supports those who support His cause. In the context of jihad with the self, reliance on divine help is presented as necessary because the person cannot reliably defeat the lower self through isolated willpower.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-17.html#source-page-0326"
+        },
+        {
+          "id": "b03-u17-003",
+          "title": "Taking desire, ego or worldly recognition as the ultimate motive is a form of misplaced worship",
+          "order": 3,
+          "text": "Mazaheri argues that when desire, Satan or worldly interests become the controlling motive of thought and action, the person has effectively made them an object of worship. Ikhlas therefore requires examining what actually moves a person, not merely what the action looks like externally.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-17.html#source-page-0327"
+        },
+        {
+          "id": "b03-u17-004",
+          "title": "Sincerity changes ordinary family work into worship",
+          "order": 4,
+          "text": "The chapter applies ikhlas to domestic life: caring for children, serving a spouse and enduring household work can become worship when performed for God rather than for praise, repayment or recognition. The same outward action can therefore have a radically different spiritual meaning depending on its motive.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-17.html#source-page-0328"
+        },
+        {
+          "id": "b03-u17-005",
+          "title": "Expecting recognition creates resentment when recognition fails",
+          "order": 5,
+          "text": "Mazaheri repeatedly contrasts God-directed action with the expectation of thanks. When a person works for praise, unmet expectations generate anger, jealousy, hurt and conflict; when God is the motive, the absence of human recognition does not invalidate the work.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-17.html#source-page-0329"
+        },
+        {
+          "id": "b03-u17-006",
+          "title": "Sincerity can turn difficult service into something spiritually bearable",
+          "order": 6,
+          "text": "The chapter applies the same logic to earning for one's family and teaching students. If the purpose is God and the fulfillment of responsibility, ordinary frustrations such as status, salary comparison or lack of appreciation lose their power to determine one's emotional state.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-17.html#source-page-0330"
+        },
+        {
+          "id": "b03-u17-007",
+          "title": "The standard of sincere giving is to seek no repayment or praise",
+          "order": 7,
+          "text": "The example of the governor of Homs and the Qur'anic phrase 'for the face of God' illustrate the mature form of giving: even when a person is criticized by the people he serves, he can respond with further good because the act was not purchased by their praise.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-17.html#source-page-0318"
+        },
+        {
+          "id": "b03-u17-008",
+          "title": "Divine coloration is presented as a durable identity rather than a temporary performance",
+          "order": 8,
+          "text": "Mazaheri uses the Qur'anic image of God's color to distinguish lasting spiritual formation from a temporary outward appearance. When God's orientation becomes the motive of thought, intention and action, the person gradually becomes harder for Satan and the commanding self to manipulate.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-17.html#source-page-0318"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Sincerity means directing thought, speech, work, and family life toward God rather than applause. When recognition is no longer the reward, service becomes steadier and less resentful.",
+        "evidence_chunk_ids": [
+          "b03-u17-001",
+          "b03-u17-007"
+        ]
+      }
+    },
+    {
+      "id": "u18",
+      "title": "گفتار هجدهم : نماز شب",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad al-Nafs/source/chapter-18.html",
+      "quotes": [
+        {
+          "id": "u18-q01",
+          "text": "آخر شب كارها مىكند"
+        },
+        {
+          "id": "u18-q02",
+          "text": "بحث اخلاقى گفتن و شنيدنش آسان است ... اما عمل كردن به بحث اخلاقى دشوار است"
+        },
+        {
+          "id": "u18-q03",
+          "text": "مواظب باشيد نفس اماره را خسته نكنيد"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u15",
+          "label": "Night prayer is presented as practical training in servitude and submission"
+        },
+        {
+          "to_unit_id": "u16",
+          "label": "Consistent night worship requires gradual activity and perseverance rather than a burst of effort"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Hidden worship provides a concrete arena for sincerity because it is less dependent on public recognition"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "Gradual practice is what turns a difficult discipline into a stable habit"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u18-001",
+          "title": "Night prayer is presented as a practical instrument for inner victory",
+          "order": 1,
+          "text": "The chapter argues that late-night worship is not an ornamental extra: it strengthens the person in the struggle against the commanding self, brings vitality and helps loosen the grip of worldly anxiety.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-18.html#source-page-0352"
+        },
+        {
+          "id": "b03-u18-002",
+          "title": "The recommended practice is gradual rather than self-destructive",
+          "order": 2,
+          "text": "Mazaheri explicitly warns against exhausting the self through an extreme initial schedule. He recommends starting with a manageable period before dawn and gradually extending wakefulness as the discipline becomes sustainable.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-18.html#source-page-0352"
+        },
+        {
+          "id": "b03-u18-003",
+          "title": "The Qur'an's language about night worship supports flexibility in how much one performs",
+          "order": 3,
+          "text": "The discussion of al-Muzzammil is used to emphasize that night worship can be practiced according to one's capacity. The point is persistent participation, not an all-or-nothing standard that causes a person to abandon the practice.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-18.html#source-page-0353"
+        },
+        {
+          "id": "b03-u18-004",
+          "title": "Prayer at its proper time, especially morning prayer, is tied to the discipline of night worship",
+          "order": 4,
+          "text": "The chapter connects night prayer with maintaining the obligatory morning prayer and emphasizes the special importance assigned to Fajr. Night worship is therefore framed within a larger rhythm of timely obligatory worship rather than as a substitute for it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-18.html#source-page-0354"
+        },
+        {
+          "id": "b03-u18-005",
+          "title": "Knowing the value of a practice is easier than actually performing it",
+          "order": 5,
+          "text": "Mazaheri distinguishes intellectual agreement from moral action: people may readily understand that night worship is valuable while still failing to rise when the alarm rings. This illustrates the broader framework of jihad with the self—knowledge must become repeated behavior.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-18.html#source-page-0355"
+        },
+        {
+          "id": "b03-u18-006",
+          "title": "Daytime conduct can affect whether a person succeeds in rising at night",
+          "order": 6,
+          "text": "The chapter links daytime sins and unlawful or careless conduct with difficulty waking for night prayer. The broader lesson is that spiritual practices are interconnected: what a person does during the day can either strengthen or weaken the next act of worship.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-18.html#source-page-0356"
+        },
+        {
+          "id": "b03-u18-007",
+          "title": "Night worship is described as having consequences beyond the private moment",
+          "order": 7,
+          "text": "The chapter presents the possibility that consistent worship changes the person's standing in the unseen world, including divine and angelic assistance. Whether understood as spiritual formation or as the chapter's narration of unseen effects, the teaching is that hidden discipline has consequences larger than the immediate act.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-18.html#source-page-0335"
+        },
+        {
+          "id": "b03-u18-008",
+          "title": "Spiritual discipline must remain balanced and guided",
+          "order": 8,
+          "text": "Mazaheri warns that self-improvement can itself become excessive if pursued without balance or guidance. The proper path combines worship with moderation, and he recommends learning ethical practice under knowledgeable guidance rather than turning a good discipline into harmful extremism.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-18.html#source-page-0335"
+        },
+        {
+          "id": "b03-u18-009",
+          "title": "The chapter's final method is to train the self patiently until worship becomes sustainable",
+          "order": 9,
+          "text": "The closing advice returns to gradual training: regulate sleep, begin with a manageable amount, keep the obligatory prayers central, and increase practice over time. The same 'bridle the difficult horse without exhausting it' principle from earlier discussions is applied directly to night worship.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-18.html#source-page-0335"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Spiritual discipline should be sustainable. Build worship gradually, protect obligatory duties, and let repeated practice form a durable relationship with God rather than a short-lived burst of effort.",
+        "evidence_chunk_ids": [
+          "b03-u18-003",
+          "b03-u18-009"
+        ]
+      }
+    },
+    {
+      "id": "u19",
+      "title": "گفتار نوزدهم : پناه بردن به قرآن",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html",
+      "quotes": [
+        {
+          "id": "u19-q01",
+          "text": "فاقرؤا ما تيسر من القرآن"
+        },
+        {
+          "id": "u19-q02",
+          "text": "و شفاء لما فى الصدور"
+        },
+        {
+          "id": "u19-q03",
+          "text": "فمن جعله امامه ساقه الى الجنه و من جعله خلقه ساقه الى النار"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u18",
+          "label": "Night prayer and Qur'an recitation are paired disciplines for strengthening the person in the inner struggle"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "The Qur'an gives concrete direction to the servant who is trying to submit to God"
+        },
+        {
+          "to_unit_id": "u16",
+          "label": "Consistent Qur'an engagement turns spiritual intention into a repeatable practice"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Reciting and following the Qur'an shifts the motive of life from ego and desire toward God"
+        },
+        {
+          "to_unit_id": "u14",
+          "label": "Qur'anic guidance also disciplines the tongue, thought and conduct rather than remaining merely informational"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u19-001",
+          "title": "The Qur'an is introduced as an eighth external force in jihad al-akbar",
+          "order": 1,
+          "text": "Mazaheri resumes the model of the inner war between the spiritual and animal dimensions and adds taking refuge in the Qur'an as another force that can help the person win that struggle.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#source-page-0358"
+        },
+        {
+          "id": "b03-u19-002",
+          "title": "Taking refuge in the Qur'an means maintaining contact even under pressure",
+          "order": 2,
+          "text": "The command to recite what is possible is presented as flexible but persistent: illness, work and even difficult circumstances do not make abandoning the Qur'an the default.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#source-page-0359"
+        },
+        {
+          "id": "b03-u19-003",
+          "title": "Recitation is meant to become reflection, not mere sound",
+          "order": 3,
+          "text": "The question 'why do they not ponder the Qur'an?' is used to connect reading with opening a heart that has become closed by heedlessness or disbelief.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#source-page-0360"
+        },
+        {
+          "id": "b03-u19-004",
+          "title": "Measured recitation is linked to stronger will and steadiness",
+          "order": 4,
+          "text": "Mazaheri connects tartil, especially recitation around the night and dawn, with strengthened will, wider patience and greater ability to withstand opposing pressures.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#source-page-0361"
+        },
+        {
+          "id": "b03-u19-005",
+          "title": "The Qur'an is presented as healing for inner disorders",
+          "order": 5,
+          "text": "The chapter applies the Qur'anic language of healing to grief, anxiety, worry and moral diseases such as envy, pride and stinginess. The key idea is that revelation is treated as a remedy for the inner life.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#source-page-0362"
+        },
+        {
+          "id": "b03-u19-006",
+          "title": "The Qur'an becomes a refuge during major trials",
+          "order": 6,
+          "text": "When fitnah becomes dark and overwhelming, the cited prophetic teaching directs the believer toward the Qur'an. The chapter contrasts this active refuge with the danger of abandoning it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#source-page-0363"
+        },
+        {
+          "id": "b03-u19-007",
+          "title": "Qur'an in the home changes the spiritual environment",
+          "order": 7,
+          "text": "The chapter extends recitation beyond the individual: a home where Qur'an is recited is described as illuminated and welcoming to angels, while neglect creates an environment vulnerable to satanic influence.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#source-page-0364"
+        },
+        {
+          "id": "b03-u19-008",
+          "title": "Abandoning the Qur'an is described as a source of regret",
+          "order": 8,
+          "text": "The discussion of being spiritually blind and regretting neglect in the hereafter turns Qur'an engagement into a serious accountability issue rather than a minor devotional preference.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#source-page-0365"
+        },
+        {
+          "id": "b03-u19-009",
+          "title": "Following the Qur'an is distinguished from merely possessing it",
+          "order": 9,
+          "text": "The chapter imagines the Qur'an both as an accuser of neglect and as a witness for the person who lived with it. The difference is whether the Qur'an became an imam and practical guide.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#source-page-0366"
+        },
+        {
+          "id": "b03-u19-010",
+          "title": "Qur'an recitation is presented as a ladder of spiritual elevation",
+          "order": 10,
+          "text": "The closing teaching uses the image 'read and rise': Qur'anic engagement is connected to degrees of ascent, so the value of recitation is measured by its long-term spiritual trajectory.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#source-page-0367"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Treat the Qur'an as a source of moral formation, not merely recitation. Read with reflection, return to it under pressure, and let its guidance shape conduct in the home and in difficulty.",
+        "evidence_chunk_ids": [
+          "b03-u19-003",
+          "b03-u19-009"
+        ]
+      }
+    },
+    {
+      "id": "u20",
+      "title": "گفتار بيستم : فوائد دعا",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html",
+      "quotes": [
+        {
+          "id": "u20-q01",
+          "text": "فاذكر اسم ربك و تبتل اليه تبتيلا"
+        },
+        {
+          "id": "u20-q02",
+          "text": "و اذكر اسم ربك و تبتل اليه تبتيلا"
+        },
+        {
+          "id": "u20-q03",
+          "text": "اللّه ولى الذين آمنوا يخرجهم من الظلمات الى النور"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u18",
+          "label": "Night prayer supplies the setting in which intimate supplication becomes a practical discipline"
+        },
+        {
+          "to_unit_id": "u19",
+          "label": "Qur'an and supplication are paired ways of turning toward God for strength in the inner struggle"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Dua deepens servitude by training the believer to approach God as servant to Master"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "The deepest benefit of dua is God-directed intimacy rather than getting worldly outcomes"
+        },
+        {
+          "to_unit_id": "u21",
+          "label": "The next chapter sharpens these benefits by examining when a dua appears not to be answered"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u20-001",
+          "title": "Dua is presented as a force for carrying a heavy responsibility",
+          "order": 1,
+          "text": "The chapter places supplication beside night prayer and Qur'an as an external source of strength for carrying the burdens of prophetic, social and personal responsibility.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#source-page-0381"
+        },
+        {
+          "id": "b03-u20-002",
+          "title": "Dua means remembering God and becoming inwardly detached from everything else",
+          "order": 2,
+          "text": "The command to remember God and practice tabattul is interpreted as cultivating a state of turning away from dependence on creation toward direct reliance on the Creator.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#source-page-0382"
+        },
+        {
+          "id": "b03-u20-003",
+          "title": "The absence of dua is treated as a serious spiritual loss",
+          "order": 3,
+          "text": "Mazaheri links abandoning supplication with loss of divine attention and with the danger of despair. Dua is therefore not an optional technique but part of the believer's relationship with God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#source-page-0383"
+        },
+        {
+          "id": "b03-u20-004",
+          "title": "Dua belongs inside the larger work of purification",
+          "order": 4,
+          "text": "The chapter places supplication beside tazkiyah: the same person who wants freedom from pride, envy, suspicion and hardness must use dua as part of that self-reform.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#source-page-0384"
+        },
+        {
+          "id": "b03-u20-005",
+          "title": "God's nearness is the foundation of supplication",
+          "order": 5,
+          "text": "The verses about God being near and answering the caller are used to establish that dua begins from divine accessibility, not from a distant or reluctant deity.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#source-page-0385"
+        },
+        {
+          "id": "b03-u20-006",
+          "title": "The first benefit of dua is that God has accepted the servant's approach",
+          "order": 6,
+          "text": "Mazaheri argues that the fact of being able to enter a private conversation with God is itself an honor and benefit, even before considering whether a requested outcome occurs.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#source-page-0387"
+        },
+        {
+          "id": "b03-u20-007",
+          "title": "Dua is described as the intimate joy of lover and beloved",
+          "order": 7,
+          "text": "The examples of Imam Ali and Lady Fatima are used to frame deep supplication as more than fear of punishment: it is an intimate encounter whose joy can itself transform the worshipper.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#source-page-0389"
+        },
+        {
+          "id": "b03-u20-008",
+          "title": "Nighttime supplication can produce joy that worldly pleasures cannot explain",
+          "order": 8,
+          "text": "The Qur'anic image of people leaving their beds to call on God is used to contrast spiritual delight with ordinary gratification and to suggest that its value is experiential.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#source-page-0391"
+        },
+        {
+          "id": "b03-u20-009",
+          "title": "Dua helps release accumulated grief and anxiety",
+          "order": 9,
+          "text": "Mazaheri compares supplication with confiding in a trustworthy and compassionate person: articulating pain before God can prevent worries from becoming buried and destructive.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#source-page-0393"
+        },
+        {
+          "id": "b03-u20-010",
+          "title": "Dua builds a state of dependence on God and weakens competing masters of the heart",
+          "order": 10,
+          "text": "The chapter describes fear, ambition, status, desire and worldly attachment as rival rulers of the heart. Persistent supplication gradually removes these rulers and restores God-centered guardianship.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#source-page-0396"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Dua cultivates humility and dependence on God. It teaches the heart to release competing masters, carry difficulty without isolation, and find joy in turning toward God rather than only in receiving outcomes.",
+        "evidence_chunk_ids": [
+          "b03-u20-002",
+          "b03-u20-009"
+        ]
+      }
+    },
+    {
+      "id": "u21",
+      "title": "گفتار بيست و يكم : دعا",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html",
+      "quotes": [
+        {
+          "id": "u21-q01",
+          "text": "ادعونى استجب لكم"
+        },
+        {
+          "id": "u21-q02",
+          "text": "اسمع دعائى ، و اسمع ندائى ، و اسمع مناجاتى"
+        },
+        {
+          "id": "u21-q03",
+          "text": "اللهم اغفرلي الذنوب التي تحبس الدعاء"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u20",
+          "label": "The previous chapter explains the benefits of dua; this chapter asks how to understand apparent non-response"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Dua is purified when it seeks God rather than making worldly desire the final object"
+        },
+        {
+          "to_unit_id": "u16",
+          "label": "Repentance and sustained moral effort are treated as conditions that keep the path of dua open"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Servitude changes what the believer means by 'answered': God's wisdom, not personal preference, becomes the standard"
+        },
+        {
+          "to_unit_id": "u22",
+          "label": "Tawassul is presented as a further condition and means within the practice of supplication"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u21-001",
+          "title": "Dua is another external force in the ongoing inner war",
+          "order": 1,
+          "text": "The chapter explicitly returns to jihad al-akbar and frames dua as one of the forces from outside the self that enables the spiritual dimension to overcome lower desires.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#source-page-0409"
+        },
+        {
+          "id": "b03-u21-002",
+          "title": "The Qur'an commands dua and warns against abandoning it",
+          "order": 2,
+          "text": "The verses 'call Me, I will answer you' and 'what concern would your Lord have for you without your dua' are used to make supplication a defining part of the believer's relationship with God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#source-page-0412"
+        },
+        {
+          "id": "b03-u21-003",
+          "title": "An answered prayer is not identical to receiving the exact imagined object",
+          "order": 3,
+          "text": "Drawing on Allameh Tabataba'i, Mazaheri distinguishes genuine human nature and welfare from the person's temporary imagination. A request may be harmful even when the person strongly believes it is good.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#source-page-0413"
+        },
+        {
+          "id": "b03-u21-004",
+          "title": "Divine response can take a different form from the requested outcome",
+          "order": 4,
+          "text": "If wealth, children or another desired outcome is not beneficial, the chapter says divine generosity can appear as dignity, influence, another worldly good or reward in the hereafter.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#source-page-0414"
+        },
+        {
+          "id": "b03-u21-005",
+          "title": "The highest benefit of dua is not outcome acquisition",
+          "order": 5,
+          "text": "Mazaheri returns to the previous chapter's point that the value of dua exceeds success or failure in obtaining a request. The mature servant approaches God because being accepted into divine conversation is itself the benefit.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#source-page-0415"
+        },
+        {
+          "id": "b03-u21-006",
+          "title": "Dua should free the person from making bodily and worldly appetite the center of prayer",
+          "order": 6,
+          "text": "The chapter criticizes reducing supplication to repeated requests for money, status, family or comfort. Its purpose is to move the human being beyond being governed by the animal dimension.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#source-page-0418"
+        },
+        {
+          "id": "b03-u21-007",
+          "title": "Despair is itself a misunderstanding of dua",
+          "order": 7,
+          "text": "The chapter treats hopelessness about divine mercy as a major spiritual error. Even when the requested object is not received, the act of turning toward God should not be abandoned.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#source-page-0419"
+        },
+        {
+          "id": "b03-u21-008",
+          "title": "Sin can obstruct dua by creating a barrier between servant and Master",
+          "order": 8,
+          "text": "Drawing on the supplication of Imam Ali, Mazaheri presents wrongdoing as something that can 'hold back' dua. Repentance before and within supplication therefore becomes a practical discipline.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#source-page-0420"
+        },
+        {
+          "id": "b03-u21-009",
+          "title": "A person who sins makes himself spiritually unavailable to the response he seeks",
+          "order": 9,
+          "text": "The child-and-parent analogy is used to explain estrangement: repeated wrongdoing can make a person morally rejected and inattentive to the relationship that dua presupposes.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#source-page-0421"
+        },
+        {
+          "id": "b03-u21-010",
+          "title": "A polluted heart can block receptivity even when divine generosity is abundant",
+          "order": 10,
+          "text": "Envy, suspicion, stinginess, self-love and stubbornness are described as closing the heart. The ocean and closed-bottle analogy makes the point that the limitation is in the recipient, not in divine generosity.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#source-page-0424"
+        },
+        {
+          "id": "b03-u21-011",
+          "title": "The practical conditions for dua include repentance and purification of the heart",
+          "order": 11,
+          "text": "The chapter closes by bringing together the causes of apparent non-response: mistaken desire, sin and an unpurified heart. The remedy is not abandoning dua but repairing the person who is praying.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#source-page-0426"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Prayer is not a claim upon a desired outcome; it is a purified relationship with God. Repentance and cleansing the heart make supplication an exercise in humility rather than entitlement.",
+        "evidence_chunk_ids": [
+          "b03-u21-003",
+          "b03-u21-011"
+        ]
+      }
+    },
+    {
+      "id": "u22",
+      "title": "گفتار بيست و دوم : توسل به اهلبيت ( عليهم‌السلام )",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html",
+      "quotes": [
+        {
+          "id": "u22-q01",
+          "text": "يا ايها الذين آمنوا اتقوا الله وابتغوا اليه الوسيله"
+        },
+        {
+          "id": "u22-q02",
+          "text": "نحن الوسيله"
+        },
+        {
+          "id": "u22-q03",
+          "text": "نحن والله الاسماء الحسنى"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u21",
+          "label": "Tawassul is presented as a condition within the same practice of dua and divine seeking"
+        },
+        {
+          "to_unit_id": "u20",
+          "label": "Supplication's relational purpose is extended through a means of approaching God with those presented as close to Him"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Tawassul is framed as God-directed rather than as replacing God, preserving the orientation of worship"
+        },
+        {
+          "to_unit_id": "u19",
+          "label": "The chapter treats Qur'anic evidence as the basis for a devotional practice rather than separating scripture from lived worship"
+        },
+        {
+          "to_unit_id": "u18",
+          "label": "Daily devotional routines such as Ziyarat can become repeatable training in remembrance and spiritual attachment"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u22-001",
+          "title": "Tawassul is introduced as a major condition of dua",
+          "order": 1,
+          "text": "Following the previous discussion of supplication, Mazaheri presents turning to the Ahl al-Bayt as a central means within the act of asking God, not as a separate spiritual topic.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0428"
+        },
+        {
+          "id": "b03-u22-002",
+          "title": "The chapter grounds tawassul in the Qur'anic idea of seeking a means",
+          "order": 2,
+          "text": "The verse commanding believers to seek al-wasilah is interpreted as support for approaching God through a means. The chapter then identifies the Ahl al-Bayt as that means through cited narrations.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0429"
+        },
+        {
+          "id": "b03-u22-003",
+          "title": "The Ahl al-Bayt are presented as the means through which the believer approaches God",
+          "order": 3,
+          "text": "The repeated formulation 'we are the means' is used to make tawassul relational: the believer does not stop at the intermediary but seeks God through those described as specially connected to Him.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0429"
+        },
+        {
+          "id": "b03-u22-004",
+          "title": "Tawassul is also linked to invoking God's beautiful names",
+          "order": 4,
+          "text": "The narration 'we are, by God, the beautiful names' is used to connect tawassul with Qur'anic language about calling upon God through His names.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0430"
+        },
+        {
+          "id": "b03-u22-005",
+          "title": "Tawassul is presented as part of the practice of the Prophet and the Imams",
+          "order": 5,
+          "text": "Mazaheri cites reports of the Prophet and the Imams invoking God through the Ahl al-Bayt, presenting this as a lived devotional precedent rather than a purely theoretical claim.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0430"
+        },
+        {
+          "id": "b03-u22-006",
+          "title": "The chapter extends the principle to respected religious scholars",
+          "order": 6,
+          "text": "The discussion of scholars argues that spiritual learning can include seeking help through people regarded as having standing before God. The purpose is to cultivate humility and connection rather than intellectual isolation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0431"
+        },
+        {
+          "id": "b03-u22-007",
+          "title": "Increasing knowledge should increase, not decrease, religious submission",
+          "order": 7,
+          "text": "The examples of Mulla Sadra and Ibn Sina are used to challenge the assumption that intellectual sophistication makes embodied devotion unnecessary. In the chapter's framework, genuine knowledge should deepen ta'abbud.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0432"
+        },
+        {
+          "id": "b03-u22-008",
+          "title": "The 'spirit of simple devotion' is presented as compatible with serious scholarship",
+          "order": 8,
+          "text": "Mazaheri praises a devotional posture that includes visiting shrines, respectful conduct and asking God through the Ahl al-Bayt. The key contrast is not reason versus devotion but pride versus submission.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0434"
+        },
+        {
+          "id": "b03-u22-009",
+          "title": "Tawassul is defended as having both scriptural roots and lived experiential testimony",
+          "order": 9,
+          "text": "Stories of healing and answered need are presented as experiential illustrations, while the story of Solomon's servant is used to argue that extraordinary effects can occur through a person with a strong relationship to God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0436"
+        },
+        {
+          "id": "b03-u22-010",
+          "title": "A strong relationship with God is presented as the deeper source behind spiritual agency",
+          "order": 10,
+          "text": "The chapter interprets the Qur'anic story of Asif ibn Barqiya as evidence that closeness to God can be associated with extraordinary action, then applies the argument to the spiritual status attributed to the Ahl al-Bayt.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0438"
+        },
+        {
+          "id": "b03-u22-011",
+          "title": "Ziyarat and regular remembrance turn tawassul into a durable practice",
+          "order": 11,
+          "text": "The chapter recommends regular attention to Imam al-Zaman and Ziyarat al-Jami'a, portraying repeated devotional practice as a way to strengthen the heart and maintain relationship with the Ahl al-Bayt.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0441"
+        },
+        {
+          "id": "b03-u22-012",
+          "title": "The chapter closes by treating devotional opportunities as gifts that must be acted upon",
+          "order": 12,
+          "text": "The narration about divine 'breezes' or opportunities is used as a practical conclusion: spiritual openings are temporary, so the believer should expose himself to them through remembrance, visitation and action.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0446"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Tawassul is presented as devotional humility: seek God through the means He has taught, respect spiritual exemplars, and let knowledge deepen submission rather than inflate the ego.",
+        "evidence_chunk_ids": [
+          "b03-u22-002",
+          "b03-u22-007"
+        ]
+      }
+    },
+    {
+      "id": "u23",
+      "title": "گفتار بيست و سه : ياد خدا",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html",
+      "quotes": [
+        {
+          "id": "u23-q01",
+          "text": "و لذكر الله اكبر"
+        },
+        {
+          "id": "u23-q02",
+          "text": "يا ايها الذين آمنوا اذكروا الله ذكرا كثيرا"
+        },
+        {
+          "id": "u23-q03",
+          "text": "لا إله الا الله"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u18",
+          "label": "Night prayer provides a practical setting for the remembrance that this chapter calls a major force in inner struggle"
+        },
+        {
+          "to_unit_id": "u19",
+          "label": "Qur'an recitation and dhikr are presented as mutually reinforcing ways of keeping God present in the heart"
+        },
+        {
+          "to_unit_id": "u20",
+          "label": "Dua turns remembrance into direct conversation with God"
+        },
+        {
+          "to_unit_id": "u22",
+          "label": "Devotional remembrance can include attachment to the Ahl al-Bayt and their transmitted forms of invocation"
+        },
+        {
+          "to_unit_id": "u25",
+          "label": "The remembrance of God becomes concrete when trust in God replaces dependence on competing objects of the heart"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u23-001",
+          "title": "Dhikr is introduced as the ninth external force in jihad al-akbar",
+          "order": 1,
+          "text": "Mazaheri places remembrance of God after the previously discussed spiritual supports and explicitly calls it a powerful outside force that helps the spiritual side defeat the commanding self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#source-page-0450"
+        },
+        {
+          "id": "b03-u23-002",
+          "title": "Remembrance is the deeper purpose behind other acts of worship",
+          "order": 2,
+          "text": "The chapter reads 'and the remembrance of God is greater' as showing that prayer, fasting and pilgrimage ultimately aim at keeping the tongue and heart turned toward God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#source-page-0451"
+        },
+        {
+          "id": "b03-u23-003",
+          "title": "Dhikr is both verbal and inward",
+          "order": 3,
+          "text": "The ideal is not merely repeating words. The chapter repeatedly pairs a tongue that remembers with a heart that is attentive, making inner orientation the substance behind verbal practice.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#source-page-0452"
+        },
+        {
+          "id": "b03-u23-004",
+          "title": "The Prophetic and Ahl al-Bayt example is continuous remembrance",
+          "order": 4,
+          "text": "Examples of the Prophet, Imam Husayn, Lady Zaynab and the Imams are used to show that remembrance is not restricted to a special ritual moment; it can accompany ordinary activity and extreme hardship.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#source-page-0453"
+        },
+        {
+          "id": "b03-u23-005",
+          "title": "The believer should build a realistic habit of frequent remembrance",
+          "order": 5,
+          "text": "Mazaheri suggests integrating simple invocations into walking and ordinary transitions. The practical point is to make remembrance frequent enough that it becomes part of the person's normal mental environment.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#source-page-0454"
+        },
+        {
+          "id": "b03-u23-006",
+          "title": "Different states call for different forms of dhikr",
+          "order": 6,
+          "text": "The chapter distinguishes between purposes: 'la ilaha illa Allah' is recommended for confronting whispers and anxiety, 'la hawla wa la quwwata illa billah' for strengthening resolve, and basmalah for protection.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#source-page-0455"
+        },
+        {
+          "id": "b03-u23-007",
+          "title": "Remembrance works through repeated inner formation",
+          "order": 7,
+          "text": "The chapter compares repeated verbal remembrance with psychological suggestion: even when the conscious mind is not focused on every repetition, repeated words can gradually affect the heart and disposition.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#source-page-0462"
+        },
+        {
+          "id": "b03-u23-008",
+          "title": "Dhikr is presented as a defense against social and satanic suggestion",
+          "order": 8,
+          "text": "The final part warns about subtle temptation arriving through attractive language and bad companionship. Remembering God is presented as a way to resist those influences rather than being carried away by them.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#source-page-0458"
+        },
+        {
+          "id": "b03-u23-009",
+          "title": "Devotional identity matters in the choice of remembrance",
+          "order": 9,
+          "text": "The discussion of 'Ya Allah', 'Ya Ali' and other invocations connects dhikr with the believer's inherited devotional identity while insisting on understanding the theological meaning of those invocations.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#source-page-0461"
+        },
+        {
+          "id": "b03-u23-010",
+          "title": "The goal is not a numerical performance but God-consciousness",
+          "order": 10,
+          "text": "The chapter's practical recommendations ultimately point beyond counting repetitions: the value of dhikr lies in producing a heart and life that are remembered by God and resistant to the commanding self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#source-page-0462"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Remembering God is meant to become a disposition of God-consciousness. Repetition, inward attention, and appropriate forms of remembrance train the heart to resist distraction and harmful suggestion.",
+        "evidence_chunk_ids": [
+          "b03-u23-003",
+          "b03-u23-010"
+        ]
+      }
+    },
+    {
+      "id": "u24",
+      "title": "گفتار بيست و چهارم : توكل بر خدا",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html",
+      "quotes": [
+        {
+          "id": "u24-q01",
+          "text": "رب المشرق و المغرب لا إله الا هو فاتخذه وكيلا"
+        },
+        {
+          "id": "u24-q02",
+          "text": "و من يتوكل على الله فهو حسبه"
+        },
+        {
+          "id": "u24-q03",
+          "text": "الا ان اولياء الله لا خوف عليهم و لا هم يحزنون"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u23",
+          "label": "Dhikr keeps God present; tawakkul turns that presence into practical reliance on God"
+        },
+        {
+          "to_unit_id": "u21",
+          "label": "Dua expresses dependence on God while tawakkul stabilizes the person when the requested outcome remains uncertain"
+        },
+        {
+          "to_unit_id": "u16",
+          "label": "Tawakkul does not replace activity, perseverance or attention; the person must do what lies within their responsibility"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincere action becomes freer from ego and recognition when its ultimate outcome is entrusted to God"
+        },
+        {
+          "to_unit_id": "u25",
+          "label": "The next chapter develops tawakkul further by connecting it to the stages of tawhid"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u24-001",
+          "title": "Tawakkul is the tenth external force for winning the inner war",
+          "order": 1,
+          "text": "Mazaheri presents trust in God as another major source of strength for the spiritual side and links it to carrying heavy responsibilities without being crushed by anxiety.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#source-page-0468"
+        },
+        {
+          "id": "b03-u24-002",
+          "title": "Tawakkul means separating responsibility from outcome",
+          "order": 2,
+          "text": "The core analogy is agency: a person must perform the tasks that belong to them, while effects beyond their control are entrusted to God. Trust is therefore not passivity.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#source-page-0469"
+        },
+        {
+          "id": "b03-u24-003",
+          "title": "A concrete example: effort is ours, effectiveness is God's",
+          "order": 3,
+          "text": "The lecture example of teaching shows the distinction clearly: coming to class, speaking and listening are human responsibilities, while actual comprehension and spiritual effect are not fully under human control.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#source-page-0470"
+        },
+        {
+          "id": "b03-u24-004",
+          "title": "Healthy self-confidence and trust in God are complementary",
+          "order": 4,
+          "text": "Mazaheri rejects the idea that tawakkul means refusing to act. Confidence in one's responsibility, activity and preparation is necessary; dependence on God concerns what lies beyond one's control.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#source-page-0471"
+        },
+        {
+          "id": "b03-u24-005",
+          "title": "Trust in God reduces anxiety because the believer has a reliable ultimate agent",
+          "order": 5,
+          "text": "When a person knows that God controls causes and can arrange what the person cannot, the uncertainty that produces sleeplessness and dread is reduced.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#source-page-0472"
+        },
+        {
+          "id": "b03-u24-006",
+          "title": "Tawakkul rests on confidence in God's mercy, wisdom and knowledge",
+          "order": 6,
+          "text": "The chapter develops trust psychologically and theologically: God is not stingy, ignorant or cruel, so handing over what exceeds one's control is reasonable rather than blind resignation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#source-page-0475"
+        },
+        {
+          "id": "b03-u24-007",
+          "title": "Trust can create courage under immediate danger",
+          "order": 7,
+          "text": "The airplane story illustrates the author's point that trust can prevent panic and preserve practical action when danger is real. The contrast is between fear that immobilizes and reliance that permits useful action.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#source-page-0476"
+        },
+        {
+          "id": "b03-u24-008",
+          "title": "Tawakkul protects the person at the point where desires become overwhelming",
+          "order": 8,
+          "text": "The story of Prophet Yusuf is used to show that divine help matters precisely in moral dead ends, when temptation becomes powerful and ordinary willpower is under severe pressure.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#source-page-0479"
+        },
+        {
+          "id": "b03-u24-009",
+          "title": "The same principle applies to food, sexuality, status and other strong desires",
+          "order": 9,
+          "text": "Mazaheri's examples of hunger, sexual temptation and ambition show that inner drives can become overwhelming. Trust in God is presented as a source of strength for refusing to let those drives rule.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#source-page-0481"
+        },
+        {
+          "id": "b03-u24-010",
+          "title": "The practical culmination is 'God is enough'",
+          "order": 10,
+          "text": "The repeated instruction to internalize 'whoever relies on God, He is sufficient for him' is meant to become a lived psychological state: when God is truly treated as one's support, fear and despair lose their authority.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#source-page-0485"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Tawakkul joins responsibility with trust: do the work you are responsible for, but do not make your own power the ultimate source of security. This produces courage without arrogance and calm without passivity.",
+        "evidence_chunk_ids": [
+          "b03-u24-002",
+          "b03-u24-006"
+        ]
+      }
+    },
+    {
+      "id": "u25",
+      "title": "گفتار بيست و پنجم : مراحل توحيد و توكل",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html",
+      "quotes": [
+        {
+          "id": "u25-q01",
+          "text": "افى الله شك فاطر السموات و الارض"
+        },
+        {
+          "id": "u25-q02",
+          "text": "و من يتوكل على الله فهو حسبه"
+        },
+        {
+          "id": "u25-q03",
+          "text": "لا إله الا الله"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u24",
+          "label": "Tawakkul is grounded in the theological claim that God is the ultimate agent, not merely a psychological coping technique"
+        },
+        {
+          "to_unit_id": "u23",
+          "label": "Dhikr of 'la ilaha illa Allah' becomes deeper when remembrance is understood as a claim about who truly acts in existence"
+        },
+        {
+          "to_unit_id": "u20",
+          "label": "Dua expresses dependence on God; tawhid explains why that dependence is rational within the chapter's framework"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Servitude reaches its doctrinal foundation when the servant recognizes God's exclusive lordship and authority"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Ikhlas requires removing rival objects of worship and recognition from the heart, which the chapter describes as practical tawhid"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u25-001",
+          "title": "The final chapter connects tawakkul to the foundations of tawhid",
+          "order": 1,
+          "text": "Mazaheri returns to the unfinished discussion of trust and argues that stable reliance on God depends on understanding who God is and what it means for Him to be the ultimate Lord.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#source-page-0487"
+        },
+        {
+          "id": "b03-u25-002",
+          "title": "The existence of God is treated as a starting point rather than the main endpoint",
+          "order": 2,
+          "text": "The chapter says Islamic belief ordinarily begins with tawhid rather than separately counting proof of God's existence as an independent principle. The point is that recognition of God should quickly become recognition of His oneness.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#source-page-0488"
+        },
+        {
+          "id": "b03-u25-003",
+          "title": "Fitrah is presented as an immediate human recognition of God",
+          "order": 3,
+          "text": "Mazaheri argues that when distractions, stubbornness and mental contamination fall away, the human fitrah recognizes a wise manager of the universe. Moments of crisis are used as illustrations of this innate orientation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#source-page-0490"
+        },
+        {
+          "id": "b03-u25-004",
+          "title": "The argument from order points from coordinated creation to a wise manager",
+          "order": 4,
+          "text": "The chapter uses the regularity of the heavens, earth and cycles of nature to argue that the universe's coordinated order is evidence of an intelligent and capable disposer.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#source-page-0492"
+        },
+        {
+          "id": "b03-u25-005",
+          "title": "Tawhid of essence: God is uniquely one",
+          "order": 5,
+          "text": "The first doctrinal stage discussed is divine unity at the level of essence: there is no second independent deity. The chapter distinguishes this from later levels of tawhid.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#source-page-0500"
+        },
+        {
+          "id": "b03-u25-006",
+          "title": "Tawhid of attributes: divine attributes are not separate additions to God's essence",
+          "order": 6,
+          "text": "Mazaheri contrasts human dependence on acquired knowledge and power with the theological claim that God's knowledge, power and other attributes are not external components added to His essence.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#source-page-0501"
+        },
+        {
+          "id": "b03-u25-007",
+          "title": "Tawhid of worship means removing rival rulers from the heart",
+          "order": 7,
+          "text": "The third level moves from doctrine to moral life: desires, status, wealth, fear and other attachments can become functional idols when they govern a person's heart instead of God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#source-page-0502"
+        },
+        {
+          "id": "b03-u25-008",
+          "title": "Tawhid of action means recognizing God as the ultimate effective agent",
+          "order": 8,
+          "text": "The fourth level is expressed through 'la ilaha illa Allah' understood as 'there is no independent effective agent except God.' Causes and means exist, but their efficacy is ultimately dependent on God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#source-page-0506"
+        },
+        {
+          "id": "b03-u25-009",
+          "title": "Everyday dependence can hide a subtle form of shirk",
+          "order": 9,
+          "text": "The chapter applies tawhid al-af'al to ordinary attachments: money, employment, insurance, family or influential people can become objects of inner reliance when the person forgets that their effects depend on God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#source-page-0507"
+        },
+        {
+          "id": "b03-u25-010",
+          "title": "Tawakkul is the practical consequence of tawhid of action",
+          "order": 10,
+          "text": "Once the person accepts that causes are subordinate to God, the conclusion is 'take Him as your trustee.' Tawhid therefore becomes a psychological and behavioral state of reliance rather than a purely intellectual proposition.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#source-page-0508"
+        },
+        {
+          "id": "b03-u25-011",
+          "title": "The progression is from belief to purification to trust",
+          "order": 11,
+          "text": "The chapter's final chain connects proof of God's existence to tawhid of essence, attributes, worship and action, and then to tawakkul. Practical trust is presented as the lived culmination of the theological progression.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#source-page-0510"
+        }
+      ],
+      "akhlaq": {
+        "lesson": "Tawhid reaches akhlaq when it changes dependence: recognize God as the ultimate source of efficacy, remove subtle rival masters from the heart, and let trust in God reshape action.",
+        "evidence_chunk_ids": [
+          "b03-u25-008",
+          "b03-u25-010"
+        ]
+      }
+    }
+  ]
+}

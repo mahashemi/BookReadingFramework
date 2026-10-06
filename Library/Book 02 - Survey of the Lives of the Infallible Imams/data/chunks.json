@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "book_id": "book02",
   "title": "A Survey into the Lives of the Infallible Imams",
   "author": "Ayatullah Murtadha Mutahhari",
@@ -20,7 +20,13 @@
           "importance": "high",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/foreword"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Seek truth with intellectual fairness: represent religious scholarship accurately, acknowledge those who contribute to it, and resist prejudice when evaluating a tradition.",
+        "evidence_chunk_ids": [
+          "b02-u00-001"
+        ]
+      }
     },
     {
       "id": "u01",
@@ -95,7 +101,14 @@
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/introduction-comparison-between-imam-al-husayns"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Keep moral principles stable while adapting their expression wisely to circumstances; do not confuse inherited custom, appearance, or habit with the underlying virtue.",
+        "evidence_chunk_ids": [
+          "b02-u01-003",
+          "b02-u01-005"
+        ]
+      }
     },
     {
       "id": "u02",
@@ -238,7 +251,14 @@
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-1-alis-struggles"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Justice and honesty must not be traded for political advantage. Moral courage also requires discernment, because zeal without understanding can turn worship into injustice.",
+        "evidence_chunk_ids": [
+          "b02-u02-003",
+          "b02-u02-010"
+        ]
+      }
     },
     {
       "id": "u03",
@@ -341,7 +361,14 @@
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Choose peace, restraint, or struggle according to responsible judgment and the preservation of legitimate good—not ego, reputation, anger, or the desire to appear strong.",
+        "evidence_chunk_ids": [
+          "b02-u03-006",
+          "b02-u03-007"
+        ]
+      }
     },
     {
       "id": "u04",
@@ -432,7 +459,14 @@
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-2"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Honor principled restraint, fidelity to commitments, and legitimate moral leadership; apparent passivity can be an act of courage when it prevents a greater wrong.",
+        "evidence_chunk_ids": [
+          "b02-u04-006",
+          "b02-u04-007"
+        ]
+      }
     },
     {
       "id": "u05",
@@ -515,7 +549,14 @@
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-3-discourse-imam-zayn-al-abidin#imams-prayers-tear-shedding"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Let spirituality become service: sincere worship should deepen affection, hospitality, humility, generosity, and care for people who are easily overlooked.",
+        "evidence_chunk_ids": [
+          "b02-u05-003",
+          "b02-u05-004"
+        ]
+      }
     },
     {
       "id": "u06",
@@ -622,7 +663,14 @@
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-4-imam-al-sadiq-and-issue-vicegerency"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Do not chase power merely because a political opening appears. Discern motives, resist manipulation, and keep truth and responsibility ahead of personal or factional advantage.",
+        "evidence_chunk_ids": [
+          "b02-u06-001",
+          "b02-u06-005"
+        ]
+      }
     },
     {
       "id": "u07",
@@ -765,7 +813,14 @@
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-5-reasons-imam-musa-al-kazims-martyrdom"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Integrity under pressure is itself moral strength: refuse corrupt bargains, remain steadfast when threatened, and use patient influence to reform others rather than dominate them.",
+        "evidence_chunk_ids": [
+          "b02-u07-002",
+          "b02-u07-010"
+        ]
+      }
     },
     {
       "id": "u08",
@@ -928,7 +983,14 @@
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-rida-crown-prince-session-1"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "When circumstances are constrained, distinguish responsible cooperation from moral endorsement. Serve legitimate good without surrendering independence, and do not let proximity to power corrupt the conscience.",
+        "evidence_chunk_ids": [
+          "b02-u08-013",
+          "b02-u08-014"
+        ]
+      }
     },
     {
       "id": "u09",
@@ -1107,7 +1169,14 @@
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-ridaa-crown-prince-session"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Maintain moral independence inside constrained roles: cooperate only within principled limits, distinguish service from endorsement, and preserve truth even when power tries to define the terms.",
+        "evidence_chunk_ids": [
+          "b02-u09-014",
+          "b02-u09-017"
+        ]
+      }
     },
     {
       "id": "u10",
@@ -1234,7 +1303,14 @@
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-7-topic-imam-al-hassan-al-askari"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Dignity, patience, and discretion can protect a community under surveillance and pressure. Moral character can influence others even before a person speaks.",
+        "evidence_chunk_ids": [
+          "b02-u10-004",
+          "b02-u10-012"
+        ]
+      }
     },
     {
       "id": "u11",
@@ -1413,7 +1489,14 @@
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-1-universal-justice"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Make justice a settled moral commitment rather than a slogan: reject discrimination, exploitation, deception, and oppression, and cultivate the human capacity to treat others fairly.",
+        "evidence_chunk_ids": [
+          "b02-u11-003",
+          "b02-u11-014"
+        ]
+      }
     },
     {
       "id": "u12",
@@ -1728,7 +1811,15 @@
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Do not turn hope for divine justice into political fantasy or passivity. Distinguish genuine evidence from claims, reject manipulation, and prepare for justice through responsible action now.",
+        "evidence_chunk_ids": [
+          "b02-u12-013",
+          "b02-u12-024",
+          "b02-u12-033"
+        ]
+      }
     }
   ],
   "metadata": {

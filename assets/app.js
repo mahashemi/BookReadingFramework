@@ -1,4 +1,4 @@
-/* BookReadingFramework learning hub.
+/* Deep Reading learning hub.
    Two static shells, both fully data-driven so a new book needs zero new
    HTML/JS -- just one entry in assets/books.json:
    - /                : the library (this file's `library()`)
@@ -36,6 +36,7 @@
     return r.json();
   };
   const optional = p => p.then(x => x, () => null);
+  const siteFooter = () => `<footer class="footer site-footer"><div class="shell">Deep Reading · <a href="${inBook ? '../' : ''}about.html">About us</a> · <a href="${inBook ? '../' : ''}citation.html">Cite this work</a> · <a href="https://github.com/mahashemi/BookReadingFramework">Source</a> · <span>seyed mohammad abuzar</span></div></footer>`;
 
   const stat = (value, label) => `<div class="stat"><strong>${esc(value)}</strong><small>${esc(label)}</small></div>`;
   const card = (num, title, text, href, cta, external) =>
@@ -69,7 +70,7 @@
     app.innerHTML = `
 <section class="hero">
   <div class="eyebrow">A scholarly digital learning library</div>
-  <h1>BookReadingFramework</h1>
+  <h1>Deep Reading</h1>
   <p>A reusable framework for turning serious reading into structured understanding, active recall, teaching, and assessment \u2014 every idea traceable to the passage it came from.</p>
 </section>
 <section class="section" id="books">
@@ -84,14 +85,15 @@
     ${card('3 \u00b7 Practice', 'One question bank, spaced review', 'A single source-of-truth bank powers unit tests, full-book exams, and a Day 1/3/7/16/35 review tracker.', bookPage('book02') + '#practice', 'Start practising \u2192')}
     ${card('4 \u00b7 Teach', 'Deck, guide and script', 'A Beamer deck, teaching guide, and lecture script let you deliver the book to others.', bookPage('book02') + '#teach', 'Open teaching materials \u2192')}
   </div>
-</section>`;
+</section>
+<footer class="footer site-footer"><div class="shell">Deep Reading · <a href="../about.html">About us</a> · <a href="../citation.html">Cite this work</a> · <a href="https://github.com/mahashemi/BookReadingFramework">Source</a> · <span>seyed mohammad abuzar</span></div></footer>`;
   }
 
   /* ---------- book home ---------- */
   function bookHome(meta, data, qd, gl) {
-    document.title = meta.title + ' \u00b7 BookReadingFramework';
+    document.title = meta.title + ' \u00b7 Deep Reading';
     const dir = SITE + dirEnc(meta.dir);
-    const L = k => dir + meta.links[k];
+    const L = k => meta.links?.[k] ? dir + meta.links[k] : null;
     const units = data.units;
     const allChunks = units.flatMap(u => u.chunks || []);
     const chunksForUnit = id => {
@@ -112,7 +114,8 @@
     const sourceRows = units.map((u, i) => {
       const p = parts(u.title);
       const unitChunks = u.chunks || [];
-      return `<div class="source-row"><div><div class="chapter">${esc(p.label)}${p.label === p.name ? '' : ' \u2014 ' + esc(p.name)}</div><div class="coverage">${unitChunks.length} source chunks \u00b7 ${unitChunks.length} concepts</div></div><div class="pills"><a class="pill" href="${unitHref(meta.id, u.id)}">Unit ${pad(i + 1)}</a><a class="pill" href="${esc(u.source_url)}" target="_blank" rel="noopener">Original on al-islam.org \u2197</a></div></div>`;
+      const sourceHref = u.source_url || (dir + (u.source_file || ''));
+      return `<div class="source-row"><div><div class="chapter">${esc(p.label)}${p.label === p.name ? '' : ' \u2014 ' + esc(p.name)}</div><div class="coverage">${unitChunks.length} source chunks \u00b7 ${unitChunks.length} concepts</div></div><div class="pills"><a class="pill" href="${unitHref(meta.id, u.id)}">Unit ${pad(i + 1)}</a><a class="pill" href="${esc(sourceHref)}" target="_blank" rel="noopener">Original source \u2197</a></div></div>`;
     }).join('');
 
     const conceptRows = units.map((u, i) => {
@@ -131,11 +134,11 @@
 </section>` : '';
 
     const teachCards = [
-      meta.links.teachingDeck ? card('Slides', 'Teaching deck', 'Beamer deck with comparison tables, mind maps, speaker notes, and a chapter link in every footer.', L('teachingDeck'), 'Open the PDF \u2192') : '',
-      meta.links.teachingGuide ? card('Guide', 'Teaching guide', 'How the book is organised for teaching, block by block.', REPO + meta.dir + meta.links.teachingGuide, 'Read guide \u2197', true) : '',
-      meta.links.lectureOutline ? card('Outline', 'Lecture outline', 'A timed whole-book lecture plan.', REPO + meta.dir + meta.links.lectureOutline, 'Read outline \u2197', true) : '',
-      meta.links.talkScript ? card('Script', 'Talk script', 'Speaker-ready explanations with exam bridges.', REPO + meta.dir + meta.links.talkScript, 'Read script \u2197', true) : '',
-      meta.links.claimOutline ? card('Reference', 'Claim \u2192 evidence outline', 'Item-by-item claims with explanation, evidence, a question, and an answer guide.', REPO + meta.dir + meta.links.claimOutline, 'Read outline \u2197', true) : '',
+      meta.links?.teachingDeck ? card('Slides', 'Teaching deck', 'Beamer deck with comparison tables, mind maps, speaker notes, and a chapter link in every footer.', L('teachingDeck'), 'Open the PDF \u2192') : '',
+      meta.links?.teachingGuide ? card('Guide', 'Teaching guide', 'How the book is organised for teaching, block by block.', REPO + meta.dir + meta.links.teachingGuide, 'Read guide \u2197', true) : '',
+      meta.links?.lectureOutline ? card('Outline', 'Lecture outline', 'A timed whole-book lecture plan.', REPO + meta.dir + meta.links.lectureOutline, 'Read outline \u2197', true) : '',
+      meta.links?.talkScript ? card('Script', 'Talk script', 'Speaker-ready explanations with exam bridges.', REPO + meta.dir + meta.links.talkScript, 'Read script \u2197', true) : '',
+      meta.links?.claimOutline ? card('Reference', 'Claim \u2192 evidence outline', 'Item-by-item claims with explanation, evidence, a question, and an answer guide.', REPO + meta.dir + meta.links.claimOutline, 'Read outline \u2197', true) : '',
     ].join('');
 
     app.innerHTML = `
@@ -146,9 +149,9 @@
   <p>${esc(meta.author)}${meta.translator ? ', translated by ' + esc(meta.translator) : ''}. A structured environment that keeps the original text, concepts, questions, review and assessment connected.</p>
   <div class="stats">${stat(t.units, 'Learning units')}${stat(t.concepts, 'Concepts')}${stat(fmt(t.questions), 'Questions')}${stat(t.chunks, 'Source chunks')}</div>
   <div class="actions">
-    <a class="btn primary" href="${L('studyGuide')}">Open the study guide</a>
+    ${L('studyGuide') ? `<a class="btn primary" href="${L('studyGuide')}">Open the study guide</a>` : ''}
     <a class="btn" href="${unitHref(meta.id, units[0].id)}">Start at Unit 01</a>
-    ${meta.links.teachingDeck ? `<a class="btn" href="${L('teachingDeck')}">Teaching deck (PDF)</a>` : ''}
+    ${meta.links?.teachingDeck ? `<a class="btn" href="${L('teachingDeck')}">Teaching deck (PDF)</a>` : ''}
   </div>
 </section>
 <section class="section" id="units">
@@ -167,23 +170,23 @@ ${glossaryHTML}
 <section class="section" id="mind-maps">
   ${head('mind-maps', 'Mind maps', 'Explore the book as a concept graph, or read it as a text outline.')}
   <div class="grid">
-    ${meta.links.mindMap ? card('Visual map', 'Interactive concept graph', 'Click through the structure of the book and expand relationships between units and concepts.', L('mindMap'), 'Open mind map \u2192') : ''}
-    ${meta.links.mindMapOutline ? card('Reference', 'Static outline', "Text overview of the book's conceptual structure.", REPO + meta.dir + meta.links.mindMapOutline, 'Read outline \u2197', true) : ''}
+    ${meta.links?.mindMap ? card('Visual map', 'Interactive concept graph', 'Click through the structure of the book and expand relationships between units and concepts.', L('mindMap'), 'Open mind map \u2192') : ''}
+    ${meta.links?.mindMapOutline ? card('Reference', 'Static outline', "Text overview of the book's conceptual structure.", REPO + meta.dir + meta.links.mindMapOutline, 'Read outline \u2197', true) : ''}
   </div>
 </section>
 <section class="section" id="practice">
   ${head('practice', 'Practice', 'All practice draws on one question bank' + (t.questions ? ' of ' + fmt(t.questions) + ' questions' + (t.cross ? ' (including ' + t.cross + ' cross-unit synthesis questions)' : '') : '') + '.')}
   <div class="grid">
-    ${meta.links.unitTests ? card('Practice', 'Unit tests', 'A mixed test for each learning unit: multiple choice, fill-in, short and long answer.', L('unitTests'), 'Open unit tests \u2192') : ''}
+    ${meta.links?.unitTests ? card('Practice', 'Unit tests', 'A mixed test for each learning unit: multiple choice, fill-in, short and long answer.', L('unitTests'), 'Open unit tests \u2192') : ''}
     ${card('Study', 'Interactive study guide', 'Concepts, claims, hidden answers, self-marking, and a Day 1 \u2192 3 \u2192 7 \u2192 16 \u2192 35 spaced-review tracker.', L('studyGuide'), 'Open study guide \u2192')}
   </div>
 </section>
 <section class="section" id="assessments">
   ${head('assessments', 'Assessments', 'Cumulative papers drawn from the same question bank.')}
   <div class="grid">
-    ${meta.links.fullBookExam ? card('Assessment', 'Full-book exam', 'Generate cumulative papers across the whole book.', L('fullBookExam'), 'Open exam generator \u2192') : ''}
-    ${meta.links.interleavedExam ? card('Assessment', 'Interleaved exam', 'A simulated exam interleaving all units, plus a hard worst-case paper.', L('interleavedExam'), 'Open interleaved exams \u2192') : ''}
-    ${meta.links.masterYears ? card('Exam library', '20 simulated years', 'Twenty complete practice papers, printable.', L('masterYears'), 'Open exam library \u2192') : ''}
+    ${meta.links?.fullBookExam ? card('Assessment', 'Full-book exam', 'Generate cumulative papers across the whole book.', L('fullBookExam'), 'Open exam generator \u2192') : ''}
+    ${meta.links?.interleavedExam ? card('Assessment', 'Interleaved exam', 'A simulated exam interleaving all units, plus a hard worst-case paper.', L('interleavedExam'), 'Open interleaved exams \u2192') : ''}
+    ${meta.links?.masterYears ? card('Exam library', '20 simulated years', 'Twenty complete practice papers, printable.', L('masterYears'), 'Open exam library \u2192') : ''}
   </div>
 </section>
 <section class="section" id="teach">
@@ -221,35 +224,30 @@ ${glossaryHTML}
      intentionally not shown here: in this book's data every
      old claim-example layer's reasoning/evidence entry was identical to (or a
      truncated copy of) the matching concept's own explanation, and every
-     .lesson is the same boilerplate line repeated 160 times -- displaying
-     it anywhere would show a student the same duplicated bug, just lower
-     on the page. See data/README.md. */
+     The canonical chunk text is rendered directly; derived Akhlaq lessons
+     are now displayed separately when a book provides them. */
   function unitPage(meta, data, qd, gl, id) {
     const dir = SITE + dirEnc(meta.dir);
     const units = data.units;
     const i = units.findIndex(u => u.id === id);
     if (i < 0) { location.replace(bookPage(meta.id)); return; }
     const u = units[i];
+    const sourceHref = u.source_url || (dir + (u.source_file || ''));
     const chunks = u.chunks || [];
     const p = parts(u.title);
     const prev = units[i - 1], next = units[i + 1];
     const qList = qd ? qd.questions.filter(q => q.unit_id === u.id) : null;
     const chunkCount = chunks.length;
     const terms = gl ? gl.entries.filter(e => e.units.includes(u.id)) : [];
-    const testHref = meta.links.unitTests ? dir + meta.links.unitTests + '?unit=' + encodeURIComponent(u.id) : null;
+    const testHref = meta.links?.unitTests ? dir + meta.links?.unitTests + '?unit=' + encodeURIComponent(u.id) : null;
     const nameOf = uid => { const k = units.findIndex(x => x.id === uid); return k < 0 ? uid : 'Unit ' + pad(k + 1) + ' \u00b7 ' + parts(units[k].title).label; };
     const breakdown = list => ['MCQ', 'FILL', 'SHORT', 'LONG'].map(t => t + ' ' + list.filter(q => q.type === t).length).join(' \u00b7 ');
 
     document.title = (p.label === p.name ? p.name : p.label + ' \u2014 ' + p.name) + ' \u00b7 ' + meta.title;
 
-    /* In this book's data, concept.explanation is verbatim identical to the
-       source chunk text (confirmed across all 160 concepts) -- it is the
-       passage, not a distillation of it. Showing both an always-visible
-       "explanation" paragraph and a separate collapsed "source passage"
-       reveal would show a student the same text twice under two labels.
-       Render the title plus a single reveal of the passage instead. */
+    /* The canonical chunk text is the source-grounded learning passage. Render one passage reveal per concept rather than inventing a second explanation field or duplicating the same source text under another label. */
     const concepts = chunks.map(c => {
-      return `<article class="card unit"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><p>${esc(c.text)}</p></details><div class="source-note"><a href="${esc(c.source_url)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></div></article>`;
+      return `<article class="card unit"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><p>${esc(c.text)}</p></details><div class="source-note"><a href="${esc(c.source_url || sourceHref)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></div></article>`;
     }).join('');
 
     const phrases = u.quotes.length ? `<section class="section"><div class="section-head compact"><div><h2>Key phrases</h2><p>Short phrases worth remembering verbatim. Consult the original page for full context.</p></div></div>${u.quotes.map(q => `<blockquote class="phrase">${esc(q.text)}</blockquote>`).join('')}</section>` : '';
@@ -265,11 +263,12 @@ ${glossaryHTML}
   <h1>${esc(p.name)}</h1>
   <div class="meta-line">${chunks.length} concepts \u00b7 ${chunkCount} source chunks${qList ? ' \u00b7 ' + qList.length + ' questions' : ''}</div>
   <div class="actions">
-    <a class="btn primary" href="${esc(u.source_url)}" target="_blank" rel="noopener">Read the original \u2197</a>
+    <a class="btn primary" href="${esc(sourceHref)}" target="_blank" rel="noopener">Read the original \u2197</a>
     ${testHref ? `<a class="btn" href="${testHref}">Take unit test</a>` : ''}
-    ${meta.links.mindMap ? `<a class="btn" href="${dir + meta.links.mindMap}">Mind map</a>` : ''}
+    ${meta.links?.mindMap ? `<a class="btn" href="${dir + meta.links.mindMap}">Mind map</a>` : ''}
   </div>
 </section>
+${u.akhlaq?.lesson ? `<section class="section" id="akhlaq"><div class="card panel"><div class="num">Akhlaq</div><h2>Akhlaq lesson</h2><p>${esc(u.akhlaq.lesson)}</p><p class="meta-line">Derived from the unit source-grounded concepts; evidence: ${u.akhlaq.evidence_chunk_ids.map(x => esc(x)).join(" · ")}</p></div></section>` : ""}
 <section class="section" id="concepts"><div class="section-head compact"><div><h2>Concepts</h2><p>Each concept is a canonical learning chunk tied directly to its source.</p></div></div><div class="grid">${concepts}</div></section>
 ${phrases}
 ${termsHTML}
@@ -282,12 +281,12 @@ ${links}
     <div><span>Concepts</span><strong>${chunks.length}</strong></div>
     <div><span>Questions</span><strong>${qList ? qList.length : '\u2014'}</strong></div>
     <div><span>Question mix</span><strong style="font-size:13px">${qList ? esc(breakdown(qList)) : '\u2014'}</strong></div>
-    <div><span>Original text</span><strong><a href="${esc(u.source_url)}" target="_blank" rel="noopener">al-islam.org \u2197</a></strong></div>
+    <div><span>Original text</span><strong><a href="${esc(sourceHref)}" target="_blank" rel="noopener">Original source \u2197</a></strong></div>
   </div>
 </div></section>
 <section class="section"><div class="card panel practice-panel">
   <div><div class="num">Practice</div><h2>Practise this unit</h2><p>Work through questions belonging to this learning unit, or use the full study guide with spaced review.</p></div>
-  <div class="actions">${testHref ? `<a class="btn primary" href="${testHref}">Take unit test</a>` : ''}<a class="btn" href="${dir + meta.links.studyGuide}">Study guide</a></div>
+  <div class="actions">${testHref ? `<a class="btn primary" href="${testHref}">Take unit test</a>` : ''}${L('studyGuide') ? `<a class="btn" href="${L('studyGuide')}">Study guide</a>` : ''}</div>
 </div></section>
 <nav class="unit-nav" aria-label="Unit navigation">
   <a ${prev ? `href="${unitHref(meta.id, prev.id)}"` : 'aria-disabled="true"'}>\u2190 ${prev ? esc(parts(prev.title).label) : 'Previous unit'}</a>
@@ -298,7 +297,7 @@ ${links}
 
   /* ---------- legacy book landing (no generated hub yet) ---------- */
   function legacyNotice(meta) {
-    document.title = meta.title + ' \u00b7 BookReadingFramework';
+    document.title = meta.title + ' \u00b7 Deep Reading';
     const dir = SITE + dirEnc(meta.dir);
     const links = Object.entries(meta.links || {}).map(([k, v]) =>
       `<a class="btn" href="${esc(dir + v)}">${esc(k.replace(/([A-Z])/g, ' $1'))}</a>`).join('');
@@ -327,7 +326,7 @@ ${links}
       } else {
         const meta = manifest.books.find(b => b.id === bookId);
         if (!meta) throw new Error('Unknown book_id: ' + bookId);
-        if (meta.status !== 'full') { legacyNotice(meta); app.setAttribute('aria-busy', 'false'); return; }
+        if (meta.status === 'legacy') { legacyNotice(meta); app.setAttribute('aria-busy', 'false'); return; }
         const dir = SITE + dirEnc(meta.dir);
         const [data, qd, gl] = await Promise.all([getJSON(dir + meta.data.chunks), optional(getJSON(dir + meta.data.questions)), optional(getJSON(dir + meta.data.glossary))]);
         const unit = qs.get('unit');
@@ -337,6 +336,7 @@ ${links}
           bookHome(meta, data, qd, gl);
         }
       }
+      if (inBook && !app.querySelector('.site-footer')) app.insertAdjacentHTML('beforeend', siteFooter());
       app.setAttribute('aria-busy', 'false');
       if (location.hash) {
         const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));

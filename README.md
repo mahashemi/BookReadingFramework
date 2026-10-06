@@ -1,31 +1,70 @@
-# BookReadingFramework
+# Deep Reading
 
-A reusable, data-driven framework for deep reading, active recall, exam preparation, and teaching — every idea traceable back to the exact passage it came from.
+A source-traceable digital learning library for serious books: read deeply, retrieve actively, connect ideas, and teach what you understand.
 
-## Learning Hub
+**Site:** https://mahashemi.github.io/BookReadingFramework/
 
-**[Open the learning hub →](https://mahashemi.github.io/BookReadingFramework/)**
+The repository remains named `BookReadingFramework`; **Deep Reading** is the public site and framework name.
 
-Browse by book, then by learning unit: source map, concepts with their original passages, a glossary of key terms and names, practice questions, full assessments, and teaching materials — all rendered live from the data files in this repository, not hand-written pages that can drift out of date.
+## What the library does
+
+Each book is built as a traceable learning environment rather than a summary:
+
+**source → learning units → concepts → source evidence → practice → assessment → teaching**
+
+The original source remains authoritative. Derived learning material is kept separate and every concept retains a path back to its source.
+
+For books centered on **akhlaq / character formation**, each unit also has an **Akhlaq lesson**: a concise statement of the moral quality the unit is cultivating, supported by explicit source-chunk IDs. This is a derived learning aid, not a replacement for the author's text.
 
 ## Books
 
 ### Book 02 — A Survey into the Lives of the Infallible Imams
+
 *Ayatullah Murtadha Mutahhari, translated by Zainab Muhammadi 'Araqi*
 
-Fully built on the current architecture: 13 learning units, 160 source-linked concepts, a 52-entry glossary, an interactive mind map, a 1,192-question bank (the single source of truth for every quiz, unit test, and exam), an interactive study guide with spaced review, and a Beamer teaching deck.
+- 13 learning units
+- 160 source-linked concepts
+- 52 glossary entries
+- interactive mind map
+- 1,192-question master bank
+- interactive study guide and spaced review
+- unit, cumulative, interleaved, and simulated exams
+- teaching materials
+- source-traceable Akhlaq lessons for every unit
 
-- [Study guide](<Library/Book 02 - Survey of the Lives of the Infallible Imams/study_guide/study.html>)
-- [Unit tests](<Library/Book 02 - Survey of the Lives of the Infallible Imams/exam_bank/unit_tests.html>) · [Full-book exam](<Library/Book 02 - Survey of the Lives of the Infallible Imams/exam_bank/full_book_exam_generator.html>) · [Interleaved exam](<Library/Book 02 - Survey of the Lives of the Infallible Imams/exam_bank/interleaved_exam_generator.html>)
-- [Teaching deck (PDF)](<Library/Book 02 - Survey of the Lives of the Infallible Imams/teaching_materials/main.pdf>)
+[Open Book 02 →](Library/Book%2002%20-%20Survey%20of%20the%20Lives%20of%20the%20Infallible%20Imams/)
 
-The pedagogical layer lives in `data/study_book02.json`; every question lives in exactly one place, `exam_bank/questions.json`, which the study guide and every exam tool fetch live.
+### Book 03 — Jihad bil-Nafs
+
+*Ayatollah Mazaheri*
+
+- 25 source-defined learning units
+- 245 learning concepts
+- 75 key phrases
+- 119 cross-unit conceptual connections
+- 22 glossary entries
+- 75 assessment questions
+- interactive mind map
+- study guide, unit tests, full-book and interleaved exams
+- teaching guide
+- source-traceable Akhlaq lessons for every unit
+
+[Open Book 03 →](Library/Book%2003%20-%20Jihad%20al-Nafs/)
 
 ### Book 01 — Polarization Around the Character of 'Ali ibn Abi Talib
+
 *Ayatullah Murtadha Mutahhari*
 
-Predates the current data-driven architecture — no `data/` folder, no `mind_maps/`. Its [study guide](<Library/Book 01 - Polarization Around _Ali/study_guide/study_guide_attraction_polarization.html>) and [exam papers](<Library/Book 01 - Polarization Around _Ali/exam_bank/exam_papers_bank.html>) are self-contained interactive HTML. Bringing it onto the current architecture is the main open item for this project.
+Book 01 predates the current data-driven architecture and remains marked as legacy until it is migrated deliberately.
 
 ## Framework
 
-See [`Library/00_FRAMEWORK.md`](Library/00_FRAMEWORK.md) for the full methodology — currently v1.3.
+**Deep Reading Framework v1.8**
+
+The methodology and canonical schema live in [`Library/00_FRAMEWORK.md`](Library/00_FRAMEWORK.md) — currently **v1.8**.
+
+The framework is designed to scale to future books without copying the study engine or inventing book-specific page architecture.
+
+## Attribution
+
+**Seyed Mohammad Abuzar Hashemi** develops and maintains the digital learning and provenance layer.

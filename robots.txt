@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mahashemi.github.io/BookReadingFramework/sitemap.xml
