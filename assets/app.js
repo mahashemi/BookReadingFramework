@@ -319,7 +319,7 @@ ${links}
   }
   function wireAudioPlayers() {
     document.querySelectorAll('[data-audio-player]').forEach(player => {
-      const play = player.querySelector('[data-audio-play');
+      const play = player.querySelector('[data-audio-play]');
       const stop = player.querySelector('[data-audio-stop]');
       const media = player.querySelector('[data-audio-media]');
       const fallback = player.querySelector('[data-audio-fallback]');
