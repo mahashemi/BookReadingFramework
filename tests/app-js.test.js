@@ -62,7 +62,8 @@ test("library ordering and book taxonomy are explicit and deterministic", () => 
 
 
 test("audio player prefers recorded media and falls back to browser voice", () => {
-  assert.match(app, /audio\/manifest\.json/);
+  assert.match(app, /meta\.audio\?\.manifest/);
+  assert.match(app, /meta\.audio\.manifest/);
   assert.match(app, /data-audio-media/);
   assert.match(app, /speechSynthesis/);
   assert.match(app, /media\.play\(\)\.catch/);
