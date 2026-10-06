@@ -36,7 +36,7 @@
     return r.json();
   };
   const optional = p => p.then(x => x, () => null);
-  const siteFooter = () => `<footer class="footer site-footer"><div class="shell">BookReadingFramework · <a href="${inBook ? '../' : ''}about.html">About us</a> · <a href="${inBook ? '../' : ''}citation.html">Cite this work</a> · <a href="https://github.com/mahashemi/BookReadingFramework">Source</a> · <span>seyed mohammad abuzar</span></div></footer>`;
+  const siteFooter = () => `<footer class="footer site-footer"><div class="shell">Deep Reading · <a href="${inBook ? '../' : ''}about.html">About us</a> · <a href="${inBook ? '../' : ''}citation.html">Cite this work</a> · <a href="https://github.com/mahashemi/BookReadingFramework">Source</a> · <span>seyed mohammad abuzar</span></div></footer>`;
 
   const stat = (value, label) => `<div class="stat"><strong>${esc(value)}</strong><small>${esc(label)}</small></div>`;
   const card = (num, title, text, href, cta, external) =>
@@ -70,7 +70,7 @@
     app.innerHTML = `
 <section class="hero">
   <div class="eyebrow">A scholarly digital learning library</div>
-  <h1>BookReadingFramework</h1>
+  <h1>Deep Reading</h1>
   <p>A reusable framework for turning serious reading into structured understanding, active recall, teaching, and assessment \u2014 every idea traceable to the passage it came from.</p>
 </section>
 <section class="section" id="books">
@@ -86,12 +86,12 @@
     ${card('4 \u00b7 Teach', 'Deck, guide and script', 'A Beamer deck, teaching guide, and lecture script let you deliver the book to others.', bookPage('book02') + '#teach', 'Open teaching materials \u2192')}
   </div>
 </section>
-<footer class="footer site-footer"><div class="shell">BookReadingFramework · <a href="../about.html">About us</a> · <a href="../citation.html">Cite this work</a> · <a href="https://github.com/mahashemi/BookReadingFramework">Source</a> · <span>seyed mohammad abuzar</span></div></footer>`;
+<footer class="footer site-footer"><div class="shell">Deep Reading · <a href="../about.html">About us</a> · <a href="../citation.html">Cite this work</a> · <a href="https://github.com/mahashemi/BookReadingFramework">Source</a> · <span>seyed mohammad abuzar</span></div></footer>`;
   }
 
   /* ---------- book home ---------- */
   function bookHome(meta, data, qd, gl) {
-    document.title = meta.title + ' \u00b7 BookReadingFramework';
+    document.title = meta.title + ' \u00b7 Deep Reading';
     const dir = SITE + dirEnc(meta.dir);
     const L = k => meta.links?.[k] ? dir + meta.links[k] : null;
     const units = data.units;
@@ -268,6 +268,7 @@ ${glossaryHTML}
     ${meta.links?.mindMap ? `<a class="btn" href="${dir + meta.links.mindMap}">Mind map</a>` : ''}
   </div>
 </section>
+${u.akhlaq?.lesson ? `<section class="section" id="akhlaq"><div class="card panel"><div class="num">Akhlaq</div><h2>Akhlaq lesson</h2><p>${esc(u.akhlaq.lesson)}</p><p class="meta-line">Derived from the unit source-grounded concepts; evidence: ${u.akhlaq.evidence_chunk_ids.map(x => esc(x)).join(" · ")}</p></div></section>` : ""}
 <section class="section" id="concepts"><div class="section-head compact"><div><h2>Concepts</h2><p>Each concept is a canonical learning chunk tied directly to its source.</p></div></div><div class="grid">${concepts}</div></section>
 ${phrases}
 ${termsHTML}
