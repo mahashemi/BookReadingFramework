@@ -93,7 +93,7 @@
   function bookHome(meta, data, qd, gl) {
     document.title = meta.title + ' \u00b7 BookReadingFramework';
     const dir = SITE + dirEnc(meta.dir);
-    const L = k => dir + meta.links[k];
+    const L = k => meta.links?.[k] ? dir + meta.links[k] : null;
     const units = data.units;
     const allChunks = units.flatMap(u => u.chunks || []);
     const chunksForUnit = id => {
@@ -148,9 +148,9 @@
   <p>${esc(meta.author)}${meta.translator ? ', translated by ' + esc(meta.translator) : ''}. A structured environment that keeps the original text, concepts, questions, review and assessment connected.</p>
   <div class="stats">${stat(t.units, 'Learning units')}${stat(t.concepts, 'Concepts')}${stat(fmt(t.questions), 'Questions')}${stat(t.chunks, 'Source chunks')}</div>
   <div class="actions">
-    <a class="btn primary" href="${L('studyGuide')}">Open the study guide</a>
+    ${L('studyGuide') ? `<a class="btn primary" href="${L('studyGuide')}">Open the study guide</a>` : ''}
     <a class="btn" href="${unitHref(meta.id, units[0].id)}">Start at Unit 01</a>
-    ${meta.links.teachingDeck ? `<a class="btn" href="${L('teachingDeck')}">Teaching deck (PDF)</a>` : ''}
+    ${meta.links?.teachingDeck ? `<a class="btn" href="${L('teachingDeck')}">Teaching deck (PDF)</a>` : ''}
   </div>
 </section>
 <section class="section" id="units">
@@ -269,7 +269,7 @@ ${glossaryHTML}
   <div class="actions">
     <a class="btn primary" href="${esc(u.source_url)}" target="_blank" rel="noopener">Read the original \u2197</a>
     ${testHref ? `<a class="btn" href="${testHref}">Take unit test</a>` : ''}
-    ${meta.links.mindMap ? `<a class="btn" href="${dir + meta.links.mindMap}">Mind map</a>` : ''}
+    ${meta.links?.mindMap ? `<a class="btn" href="${dir + meta.links.mindMap}">Mind map</a>` : ''}
   </div>
 </section>
 <section class="section" id="concepts"><div class="section-head compact"><div><h2>Concepts</h2><p>Each concept is a canonical learning chunk tied directly to its source.</p></div></div><div class="grid">${concepts}</div></section>
@@ -289,7 +289,7 @@ ${links}
 </div></section>
 <section class="section"><div class="card panel practice-panel">
   <div><div class="num">Practice</div><h2>Practise this unit</h2><p>Work through questions belonging to this learning unit, or use the full study guide with spaced review.</p></div>
-  <div class="actions">${testHref ? `<a class="btn primary" href="${testHref}">Take unit test</a>` : ''}<a class="btn" href="${dir + meta.links.studyGuide}">Study guide</a></div>
+  <div class="actions">${testHref ? `<a class="btn primary" href="${testHref}">Take unit test</a>` : ''}${L('studyGuide') ? `<a class="btn" href="${L('studyGuide')}">Study guide</a>` : ''}</div>
 </div></section>
 <nav class="unit-nav" aria-label="Unit navigation">
   <a ${prev ? `href="${unitHref(meta.id, prev.id)}"` : 'aria-disabled="true"'}>\u2190 ${prev ? esc(parts(prev.title).label) : 'Previous unit'}</a>
@@ -329,7 +329,7 @@ ${links}
       } else {
         const meta = manifest.books.find(b => b.id === bookId);
         if (!meta) throw new Error('Unknown book_id: ' + bookId);
-        if (meta.status !== 'full') { legacyNotice(meta); app.setAttribute('aria-busy', 'false'); return; }
+        if (meta.status === 'legacy') { legacyNotice(meta); app.setAttribute('aria-busy', 'false'); return; }
         const dir = SITE + dirEnc(meta.dir);
         const [data, qd, gl] = await Promise.all([getJSON(dir + meta.data.chunks), optional(getJSON(dir + meta.data.questions)), optional(getJSON(dir + meta.data.glossary))]);
         const unit = qs.get('unit');
@@ -339,7 +339,7 @@ ${links}
           bookHome(meta, data, qd, gl);
         }
       }
-      if (inBook) app.insertAdjacentHTML('beforeend', siteFooter());
+      if (inBook && !app.querySelector('.site-footer')) app.insertAdjacentHTML('beforeend', siteFooter());
       app.setAttribute('aria-busy', 'false');
       if (location.hash) {
         const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
