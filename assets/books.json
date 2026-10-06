@@ -48,7 +48,12 @@
       "translator": null,
       "dir": "Library/Book 03 - Jihad al-Nafs/",
       "data": {
-        "chunks": "data/chunks.json"
+        "chunks": "data/chunks.json",
+        "questions": "exam_bank/questions.json",
+        "glossary": "data/glossary.json"
+      },
+      "links": {
+        "studyGuide": "study_guide/study.html"
       }
     }
   ]
