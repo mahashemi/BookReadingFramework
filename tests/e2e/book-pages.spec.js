@@ -25,7 +25,7 @@ for (const book of books) {
   test(`${book.name} first unit renders without runtime errors`, async ({ page }) => {
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
-    await page.goto(book.path + "/unit.html?unit=${book.unit}", { waitUntil: "networkidle" });
+    await page.goto(book.path + "/unit.html?book_id=" + (book.name === "Book 02" ? "book02" : "book03") + "&unit=" + book.unit, { waitUntil: "networkidle" });
     await expect(page.locator("h1")).not.toHaveText("");
     await expect(page.locator("#concepts")).toBeVisible();
     await expect(page.locator("body")).not.toContainText("The learning data could not be loaded");
