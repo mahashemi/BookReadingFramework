@@ -221,6 +221,257 @@
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#pdf-page-041"
         }
       ]
+    },
+    {
+      "id": "u03",
+      "title": "گفتار سوم : جهاد با نفس",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html",
+      "quotes": [
+        "إنسان مركب از « روح و جسم »"
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u02",
+          "label": "Lawful regulation of natural desires becomes disciplined self-mastery"
+        },
+        {
+          "to_unit_id": "u04",
+          "label": "Jihad with the self develops through concrete virtues and resistance to desire"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincerity and spiritual agency depend on directing the self rather than serving it"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u03-001",
+          "title": "Human beings are uniquely capable of moral and spiritual development",
+          "order": 1,
+          "text": "Mazaheri describes the human being as having both an animal/material dimension and a spiritual/kingdom-like dimension. The tension between them creates the possibility of deliberate ascent rather than fixed instinctive behavior.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+        },
+        {
+          "id": "b03-u03-002",
+          "title": "The animal dimension is a vehicle, not an enemy to be destroyed",
+          "order": 2,
+          "text": "The body's desires are not presented as something to annihilate. The task of jihad with the self is to regulate them so that bodily life becomes a means for spiritual movement.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+        },
+        {
+          "id": "b03-u03-003",
+          "title": "Spiritual pleasures and bodily pleasures can pull in opposite directions",
+          "order": 3,
+          "text": "Truth-seeking, knowledge, sacrifice and self-restraint may be difficult for the bodily dimension while food, rest and sexual gratification satisfy it. Moral growth therefore requires learning to choose the higher good when the two directions conflict.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+        },
+        {
+          "id": "b03-u03-004",
+          "title": "Self-control is the mechanism of spiritual ascent",
+          "order": 4,
+          "text": "The recurring metaphor is riding and training a difficult mount: when a person controls desires rather than being controlled by them, the same human faculties become instruments of ascent.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+        },
+        {
+          "id": "b03-u03-005",
+          "title": "The chapter connects extraordinary spiritual capacities with disciplined self-control",
+          "order": 5,
+          "text": "Stories of Jaber al-Ju'fi and Asif ibn Barkhiya are presented as examples of capacities that Mazaheri connects to mastery of the self and Qur'anic knowledge. The practical lesson is not to chase miracles, but to understand the claimed relationship between spiritual discipline and human potential.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+        },
+        {
+          "id": "b03-u03-006",
+          "title": "The Qur'an is presented as a source of human knowledge and formation",
+          "order": 6,
+          "text": "The chapter repeatedly returns to Qur'anic evidence and argues that people who seek clarity, knowledge and spiritual development should maintain an active relationship with the Qur'an.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+        },
+        {
+          "id": "b03-u03-007",
+          "title": "The human being accepted a responsibility that other created beings did not carry",
+          "order": 7,
+          "text": "The discussion of the trust (amanah) in Qur'an 33:72 is used to emphasize both human potential and human liability: the same human being who can rise very high can also be profoundly unjust and ignorant toward himself.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+        },
+        {
+          "id": "b03-u03-008",
+          "title": "Knowing what a human being is is foundational to ethics and education",
+          "order": 8,
+          "text": "Mazaheri criticizes one-dimensional pictures of the human person. If a person is reduced to bodily or social needs alone, moral education cannot explain the full range of human aspiration.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+        },
+        {
+          "id": "b03-u03-009",
+          "title": "The practical beginning of jihad with the self is mastery rather than suppression",
+          "order": 9,
+          "text": "The chapter ultimately makes the central practical point: a person should not surrender to appetite, anger and other impulses, nor imagine that holiness requires becoming less human. The work is to place the animal dimension under rational and spiritual direction.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+        }
+      ]
+    },
+    {
+      "id": "u04",
+      "title": "گفتار چهارم :",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html",
+      "quotes": [],
+      "connections": [],
+      "chunks": [
+        {
+          "id": "b03-u04-001",
+          "title": "The chapter develops the practical discipline of jihad with the self",
+          "order": 1,
+          "text": "This unit continues the book's central movement from understanding the two dimensions of the human being toward the practical work required to govern the lower self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html"
+        },
+        {
+          "id": "b03-u04-002",
+          "title": "Self-mastery is gradual rather than instantaneous",
+          "order": 2,
+          "text": "The struggle with the self is presented as repeated training: the person strengthens will through practice, resistance and returning to the right course after failure.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html"
+        },
+        {
+          "id": "b03-u04-003",
+          "title": "The goal is transformation of the whole person",
+          "order": 3,
+          "text": "Jihad is not a narrow battle against one desire. It aims at a reordered person whose intellect, conscience, desires and conduct increasingly point in the same direction.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html"
+        }
+      ]
+    },
+    {
+      "id": "u05",
+      "title": "گفتار پنجم :",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html",
+      "quotes": [],
+      "connections": [],
+      "chunks": [
+        {
+          "id": "b03-u05-001",
+          "title": "The chapter treats persistence as essential to moral reform",
+          "order": 1,
+          "text": "Moral improvement cannot depend on temporary enthusiasm. The person must continue the struggle when the initial emotional motivation disappears.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html"
+        },
+        {
+          "id": "b03-u05-002",
+          "title": "Repeated practice turns difficult obedience into character",
+          "order": 2,
+          "text": "A virtue becomes stable when the person repeatedly chooses it. Jihad with the self therefore has a training dimension analogous to building strength through exercise.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html"
+        },
+        {
+          "id": "b03-u05-003",
+          "title": "Failure should trigger return rather than surrender",
+          "order": 3,
+          "text": "A person who falls should not convert one failure into an identity or a reason to abandon the struggle. The important movement is to recognize the failure, correct it and continue.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html"
+        }
+      ]
+    },
+    {
+      "id": "u06",
+      "title": "گفتار ششم : صبر",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html",
+      "quotes": [
+        "الصبر من الايمان",
+        "فان مع العسر يسرا"
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u03",
+          "label": "Patience is one of the concrete disciplines by which the self is mastered"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "Willpower and perseverance depend on the same inner training"
+        },
+        {
+          "to_unit_id": "u01",
+          "label": "The teacher's moral influence requires patience in practice"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u06-001",
+          "title": "Patience is an active form of strength",
+          "order": 1,
+          "text": "Mazaheri treats sabr as endurance with direction, not passive resignation. It allows a person to remain steady under hardship rather than allowing pain to dictate speech and action.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+        },
+        {
+          "id": "b03-u06-002",
+          "title": "Patience and gratitude form complementary foundations of faith",
+          "order": 2,
+          "text": "The chapter presents patience in hardship alongside gratitude in blessing. Together they keep the believer from being controlled by changing external circumstances.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+        },
+        {
+          "id": "b03-u06-003",
+          "title": "Patience protects family and professional relationships",
+          "order": 3,
+          "text": "The discussion applies sabr to marriage, parenting and teaching: where complete agreement is impossible, patience, forgiveness and perseverance prevent ordinary differences from becoming destructive conflict.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+        },
+        {
+          "id": "b03-u06-004",
+          "title": "Patience strengthens will and reduces impulsive reaction",
+          "order": 4,
+          "text": "The chapter connects endurance with stronger resolve. A person who immediately complains or panics gives temporary circumstances control over his inner state; patience preserves agency.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+        },
+        {
+          "id": "b03-u06-005",
+          "title": "Trust in God does not eliminate human responsibility",
+          "order": 5,
+          "text": "The examples of Moses and the recurring prayer for an expanded chest are used to combine reliance on God with preparation, courage and endurance. The person creates the conditions for action while asking God for the outcome.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+        },
+        {
+          "id": "b03-u06-006",
+          "title": "Patience is presented as part of faith itself",
+          "order": 6,
+          "text": "The chapter uses the image of patience as a structural component of faith, emphasizing that faith without endurance cannot remain stable when circumstances become difficult.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+        },
+        {
+          "id": "b03-u06-007",
+          "title": "The teacher especially needs patience",
+          "order": 7,
+          "text": "Because teaching involves repeated difficulty, imperfect students and emotionally demanding situations, sabr is presented as a practical protection against losing influence through anger, discouragement or harshness.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+        },
+        {
+          "id": "b03-u06-008",
+          "title": "A patient person can turn hardship into spiritual development",
+          "order": 8,
+          "text": "Hardship itself is not automatically beneficial; its value depends on how the person responds. Patience allows difficulty to become an occasion for strengthening character rather than merely a source of resentment.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+        }
+      ]
     }
   ]
 }
