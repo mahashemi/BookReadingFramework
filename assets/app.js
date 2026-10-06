@@ -233,6 +233,7 @@ ${glossaryHTML}
     if (i < 0) { location.replace(bookPage(meta.id)); return; }
     const u = units[i];
     const sourceHref = u.source_url || (dir + (u.source_file || ''));
+    const L = k => meta.links?.[k] ? dir + meta.links[k] : null;
     const chunks = u.chunks || [];
     const p = parts(u.title);
     const prev = units[i - 1], next = units[i + 1];
