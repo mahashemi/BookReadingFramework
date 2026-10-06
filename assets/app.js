@@ -1,4 +1,4 @@
-/* BookReadingFramework learning hub.
+/* Deep Reading learning hub.
    Two static shells, both fully data-driven so a new book needs zero new
    HTML/JS -- just one entry in assets/books.json:
    - /                : the library (this file's `library()`)
@@ -297,7 +297,7 @@ ${links}
 
   /* ---------- legacy book landing (no generated hub yet) ---------- */
   function legacyNotice(meta) {
-    document.title = meta.title + ' \u00b7 BookReadingFramework';
+    document.title = meta.title + ' \u00b7 Deep Reading';
     const dir = SITE + dirEnc(meta.dir);
     const links = Object.entries(meta.links || {}).map(([k, v]) =>
       `<a class="btn" href="${esc(dir + v)}">${esc(k.replace(/([A-Z])/g, ' $1'))}</a>`).join('');
