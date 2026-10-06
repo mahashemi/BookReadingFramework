@@ -71,6 +71,26 @@
         "u05": {
           "title": "Unit 05",
           "script": "audio/book02/scripts/u05.md"
+        },
+        "u06": {
+          "title": "Unit 06",
+          "script": "audio/book02/scripts/u06.md"
+        },
+        "u07": {
+          "title": "Unit 07",
+          "script": "audio/book02/scripts/u07.md"
+        },
+        "u08": {
+          "title": "Unit 08",
+          "script": "audio/book02/scripts/u08.md"
+        },
+        "u09": {
+          "title": "Unit 09",
+          "script": "audio/book02/scripts/u09.md"
+        },
+        "u10": {
+          "title": "Unit 10",
+          "script": "audio/book02/scripts/u10.md"
         }
       }
     }
