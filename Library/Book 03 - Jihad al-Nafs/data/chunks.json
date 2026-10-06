@@ -1473,6 +1473,522 @@
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-8-.html#pdf-page-356"
         }
       ]
+    },
+    {
+      "id": "u19",
+      "title": "گفتار نوزدهم : پناه بردن به قرآن",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html",
+      "quotes": [
+        {
+          "id": "u19-q01",
+          "text": "فاقرؤا ما تيسر من القرآن"
+        },
+        {
+          "id": "u19-q02",
+          "text": "و شفاء لما فى الصدور"
+        },
+        {
+          "id": "u19-q03",
+          "text": "فمن جعله امامه ساقه الى الجنه و من جعله خلقه ساقه الى النار"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u18",
+          "label": "Night prayer and Qur'an recitation are paired disciplines for strengthening the person in the inner struggle"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "The Qur'an gives concrete direction to the servant who is trying to submit to God"
+        },
+        {
+          "to_unit_id": "u16",
+          "label": "Consistent Qur'an engagement turns spiritual intention into a repeatable practice"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Reciting and following the Qur'an shifts the motive of life from ego and desire toward God"
+        },
+        {
+          "to_unit_id": "u14",
+          "label": "Qur'anic guidance also disciplines the tongue, thought and conduct rather than remaining merely informational"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u19-001",
+          "title": "The Qur'an is introduced as an eighth external force in jihad al-akbar",
+          "order": 1,
+          "text": "Mazaheri resumes the model of the inner war between the spiritual and animal dimensions and adds taking refuge in the Qur'an as another force that can help the person win that struggle.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#pdf-page-351"
+        },
+        {
+          "id": "b03-u19-002",
+          "title": "Taking refuge in the Qur'an means maintaining contact even under pressure",
+          "order": 2,
+          "text": "The command to recite what is possible is presented as flexible but persistent: illness, work and even difficult circumstances do not make abandoning the Qur'an the default.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#pdf-page-352"
+        },
+        {
+          "id": "b03-u19-003",
+          "title": "Recitation is meant to become reflection, not mere sound",
+          "order": 3,
+          "text": "The question 'why do they not ponder the Qur'an?' is used to connect reading with opening a heart that has become closed by heedlessness or disbelief.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#pdf-page-353"
+        },
+        {
+          "id": "b03-u19-004",
+          "title": "Measured recitation is linked to stronger will and steadiness",
+          "order": 4,
+          "text": "Mazaheri connects tartil, especially recitation around the night and dawn, with strengthened will, wider patience and greater ability to withstand opposing pressures.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#pdf-page-354"
+        },
+        {
+          "id": "b03-u19-005",
+          "title": "The Qur'an is presented as healing for inner disorders",
+          "order": 5,
+          "text": "The chapter applies the Qur'anic language of healing to grief, anxiety, worry and moral diseases such as envy, pride and stinginess. The key idea is that revelation is treated as a remedy for the inner life.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#pdf-page-355"
+        },
+        {
+          "id": "b03-u19-006",
+          "title": "The Qur'an becomes a refuge during major trials",
+          "order": 6,
+          "text": "When fitnah becomes dark and overwhelming, the cited prophetic teaching directs the believer toward the Qur'an. The chapter contrasts this active refuge with the danger of abandoning it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#pdf-page-356"
+        },
+        {
+          "id": "b03-u19-007",
+          "title": "Qur'an in the home changes the spiritual environment",
+          "order": 7,
+          "text": "The chapter extends recitation beyond the individual: a home where Qur'an is recited is described as illuminated and welcoming to angels, while neglect creates an environment vulnerable to satanic influence.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#pdf-page-357"
+        },
+        {
+          "id": "b03-u19-008",
+          "title": "Abandoning the Qur'an is described as a source of regret",
+          "order": 8,
+          "text": "The discussion of being spiritually blind and regretting neglect in the hereafter turns Qur'an engagement into a serious accountability issue rather than a minor devotional preference.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#pdf-page-358"
+        },
+        {
+          "id": "b03-u19-009",
+          "title": "Following the Qur'an is distinguished from merely possessing it",
+          "order": 9,
+          "text": "The chapter imagines the Qur'an both as an accuser of neglect and as a witness for the person who lived with it. The difference is whether the Qur'an became an imam and practical guide.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#pdf-page-359"
+        },
+        {
+          "id": "b03-u19-010",
+          "title": "Qur'an recitation is presented as a ladder of spiritual elevation",
+          "order": 10,
+          "text": "The closing teaching uses the image 'read and rise': Qur'anic engagement is connected to degrees of ascent, so the value of recitation is measured by its long-term spiritual trajectory.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#pdf-page-360"
+        }
+      ]
+    },
+    {
+      "id": "u20",
+      "title": "گفتار بيستم : فوائد دعا",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html",
+      "quotes": [
+        {
+          "id": "u20-q01",
+          "text": "فاذكر اسم ربك و تبتل اليه تبتيلا"
+        },
+        {
+          "id": "u20-q02",
+          "text": "و اذكر اسم ربك و تبتل اليه تبتيلا"
+        },
+        {
+          "id": "u20-q03",
+          "text": "اللّه ولى الذين آمنوا يخرجهم من الظلمات الى النور"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u18",
+          "label": "Night prayer supplies the setting in which intimate supplication becomes a practical discipline"
+        },
+        {
+          "to_unit_id": "u19",
+          "label": "Qur'an and supplication are paired ways of turning toward God for strength in the inner struggle"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Dua deepens servitude by training the believer to approach God as servant to Master"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "The deepest benefit of dua is God-directed intimacy rather than getting worldly outcomes"
+        },
+        {
+          "to_unit_id": "u21",
+          "label": "The next chapter sharpens these benefits by examining when a dua appears not to be answered"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u20-001",
+          "title": "Dua is presented as a force for carrying a heavy responsibility",
+          "order": 1,
+          "text": "The chapter places supplication beside night prayer and Qur'an as an external source of strength for carrying the burdens of prophetic, social and personal responsibility.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#pdf-page-374"
+        },
+        {
+          "id": "b03-u20-002",
+          "title": "Dua means remembering God and becoming inwardly detached from everything else",
+          "order": 2,
+          "text": "The command to remember God and practice tabattul is interpreted as cultivating a state of turning away from dependence on creation toward direct reliance on the Creator.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#pdf-page-375"
+        },
+        {
+          "id": "b03-u20-003",
+          "title": "The absence of dua is treated as a serious spiritual loss",
+          "order": 3,
+          "text": "Mazaheri links abandoning supplication with loss of divine attention and with the danger of despair. Dua is therefore not an optional technique but part of the believer's relationship with God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#pdf-page-376"
+        },
+        {
+          "id": "b03-u20-004",
+          "title": "Dua belongs inside the larger work of purification",
+          "order": 4,
+          "text": "The chapter places supplication beside tazkiyah: the same person who wants freedom from pride, envy, suspicion and hardness must use dua as part of that self-reform.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#pdf-page-377"
+        },
+        {
+          "id": "b03-u20-005",
+          "title": "God's nearness is the foundation of supplication",
+          "order": 5,
+          "text": "The verses about God being near and answering the caller are used to establish that dua begins from divine accessibility, not from a distant or reluctant deity.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#pdf-page-378"
+        },
+        {
+          "id": "b03-u20-006",
+          "title": "The first benefit of dua is that God has accepted the servant's approach",
+          "order": 6,
+          "text": "Mazaheri argues that the fact of being able to enter a private conversation with God is itself an honor and benefit, even before considering whether a requested outcome occurs.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#pdf-page-380"
+        },
+        {
+          "id": "b03-u20-007",
+          "title": "Dua is described as the intimate joy of lover and beloved",
+          "order": 7,
+          "text": "The examples of Imam Ali and Lady Fatima are used to frame deep supplication as more than fear of punishment: it is an intimate encounter whose joy can itself transform the worshipper.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#pdf-page-382"
+        },
+        {
+          "id": "b03-u20-008",
+          "title": "Nighttime supplication can produce joy that worldly pleasures cannot explain",
+          "order": 8,
+          "text": "The Qur'anic image of people leaving their beds to call on God is used to contrast spiritual delight with ordinary gratification and to suggest that its value is experiential.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#pdf-page-384"
+        },
+        {
+          "id": "b03-u20-009",
+          "title": "Dua helps release accumulated grief and anxiety",
+          "order": 9,
+          "text": "Mazaheri compares supplication with confiding in a trustworthy and compassionate person: articulating pain before God can prevent worries from becoming buried and destructive.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#pdf-page-386"
+        },
+        {
+          "id": "b03-u20-010",
+          "title": "Dua builds a state of dependence on God and weakens competing masters of the heart",
+          "order": 10,
+          "text": "The chapter describes fear, ambition, status, desire and worldly attachment as rival rulers of the heart. Persistent supplication gradually removes these rulers and restores God-centered guardianship.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#pdf-page-389"
+        }
+      ]
+    },
+    {
+      "id": "u21",
+      "title": "گفتار بيست و يكم : دعا",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html",
+      "quotes": [
+        {
+          "id": "u21-q01",
+          "text": "ادعونى استجب لكم"
+        },
+        {
+          "id": "u21-q02",
+          "text": "اسمع دعائى ، و اسمع ندائى ، و اسمع مناجاتى"
+        },
+        {
+          "id": "u21-q03",
+          "text": "اللهم اغفرلي الذنوب التي تحبس الدعاء"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u20",
+          "label": "The previous chapter explains the benefits of dua; this chapter asks how to understand apparent non-response"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Dua is purified when it seeks God rather than making worldly desire the final object"
+        },
+        {
+          "to_unit_id": "u16",
+          "label": "Repentance and sustained moral effort are treated as conditions that keep the path of dua open"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Servitude changes what the believer means by 'answered': God's wisdom, not personal preference, becomes the standard"
+        },
+        {
+          "to_unit_id": "u22",
+          "label": "Tawassul is presented as a further condition and means within the practice of supplication"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u21-001",
+          "title": "Dua is another external force in the ongoing inner war",
+          "order": 1,
+          "text": "The chapter explicitly returns to jihad al-akbar and frames dua as one of the forces from outside the self that enables the spiritual dimension to overcome lower desires.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#pdf-page-402"
+        },
+        {
+          "id": "b03-u21-002",
+          "title": "The Qur'an commands dua and warns against abandoning it",
+          "order": 2,
+          "text": "The verses 'call Me, I will answer you' and 'what concern would your Lord have for you without your dua' are used to make supplication a defining part of the believer's relationship with God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#pdf-page-405"
+        },
+        {
+          "id": "b03-u21-003",
+          "title": "An answered prayer is not identical to receiving the exact imagined object",
+          "order": 3,
+          "text": "Drawing on Allameh Tabataba'i, Mazaheri distinguishes genuine human nature and welfare from the person's temporary imagination. A request may be harmful even when the person strongly believes it is good.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#pdf-page-406"
+        },
+        {
+          "id": "b03-u21-004",
+          "title": "Divine response can take a different form from the requested outcome",
+          "order": 4,
+          "text": "If wealth, children or another desired outcome is not beneficial, the chapter says divine generosity can appear as dignity, influence, another worldly good or reward in the hereafter.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#pdf-page-407"
+        },
+        {
+          "id": "b03-u21-005",
+          "title": "The highest benefit of dua is not outcome acquisition",
+          "order": 5,
+          "text": "Mazaheri returns to the previous chapter's point that the value of dua exceeds success or failure in obtaining a request. The mature servant approaches God because being accepted into divine conversation is itself the benefit.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#pdf-page-408"
+        },
+        {
+          "id": "b03-u21-006",
+          "title": "Dua should free the person from making bodily and worldly appetite the center of prayer",
+          "order": 6,
+          "text": "The chapter criticizes reducing supplication to repeated requests for money, status, family or comfort. Its purpose is to move the human being beyond being governed by the animal dimension.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#pdf-page-411"
+        },
+        {
+          "id": "b03-u21-007",
+          "title": "Despair is itself a misunderstanding of dua",
+          "order": 7,
+          "text": "The chapter treats hopelessness about divine mercy as a major spiritual error. Even when the requested object is not received, the act of turning toward God should not be abandoned.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#pdf-page-412"
+        },
+        {
+          "id": "b03-u21-008",
+          "title": "Sin can obstruct dua by creating a barrier between servant and Master",
+          "order": 8,
+          "text": "Drawing on the supplication of Imam Ali, Mazaheri presents wrongdoing as something that can 'hold back' dua. Repentance before and within supplication therefore becomes a practical discipline.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#pdf-page-413"
+        },
+        {
+          "id": "b03-u21-009",
+          "title": "A person who sins makes himself spiritually unavailable to the response he seeks",
+          "order": 9,
+          "text": "The child-and-parent analogy is used to explain estrangement: repeated wrongdoing can make a person morally rejected and inattentive to the relationship that dua presupposes.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#pdf-page-414"
+        },
+        {
+          "id": "b03-u21-010",
+          "title": "A polluted heart can block receptivity even when divine generosity is abundant",
+          "order": 10,
+          "text": "Envy, suspicion, stinginess, self-love and stubbornness are described as closing the heart. The ocean and closed-bottle analogy makes the point that the limitation is in the recipient, not in divine generosity.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#pdf-page-417"
+        },
+        {
+          "id": "b03-u21-011",
+          "title": "The practical conditions for dua include repentance and purification of the heart",
+          "order": 11,
+          "text": "The chapter closes by bringing together the causes of apparent non-response: mistaken desire, sin and an unpurified heart. The remedy is not abandoning dua but repairing the person who is praying.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#pdf-page-419"
+        }
+      ]
+    },
+    {
+      "id": "u22",
+      "title": "گفتار بيست و دوم : توسل به اهلبيت ( عليهم‌السلام )",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html",
+      "quotes": [
+        {
+          "id": "u22-q01",
+          "text": "يا ايها الذين آمنوا اتقوا الله وابتغوا اليه الوسيله"
+        },
+        {
+          "id": "u22-q02",
+          "text": "نحن الوسيله"
+        },
+        {
+          "id": "u22-q03",
+          "text": "نحن والله الاسماء الحسنى"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u21",
+          "label": "Tawassul is presented as a condition within the same practice of dua and divine seeking"
+        },
+        {
+          "to_unit_id": "u20",
+          "label": "Supplication's relational purpose is extended through a means of approaching God with those presented as close to Him"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Tawassul is framed as God-directed rather than as replacing God, preserving the orientation of worship"
+        },
+        {
+          "to_unit_id": "u19",
+          "label": "The chapter treats Qur'anic evidence as the basis for a devotional practice rather than separating scripture from lived worship"
+        },
+        {
+          "to_unit_id": "u18",
+          "label": "Daily devotional routines such as Ziyarat can become repeatable training in remembrance and spiritual attachment"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u22-001",
+          "title": "Tawassul is introduced as a major condition of dua",
+          "order": 1,
+          "text": "Following the previous discussion of supplication, Mazaheri presents turning to the Ahl al-Bayt as a central means within the act of asking God, not as a separate spiritual topic.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-421"
+        },
+        {
+          "id": "b03-u22-002",
+          "title": "The chapter grounds tawassul in the Qur'anic idea of seeking a means",
+          "order": 2,
+          "text": "The verse commanding believers to seek al-wasilah is interpreted as support for approaching God through a means. The chapter then identifies the Ahl al-Bayt as that means through cited narrations.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-422"
+        },
+        {
+          "id": "b03-u22-003",
+          "title": "The Ahl al-Bayt are presented as the means through which the believer approaches God",
+          "order": 3,
+          "text": "The repeated formulation 'we are the means' is used to make tawassul relational: the believer does not stop at the intermediary but seeks God through those described as specially connected to Him.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-422"
+        },
+        {
+          "id": "b03-u22-004",
+          "title": "Tawassul is also linked to invoking God's beautiful names",
+          "order": 4,
+          "text": "The narration 'we are, by God, the beautiful names' is used to connect tawassul with Qur'anic language about calling upon God through His names.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-423"
+        },
+        {
+          "id": "b03-u22-005",
+          "title": "Tawassul is presented as part of the practice of the Prophet and the Imams",
+          "order": 5,
+          "text": "Mazaheri cites reports of the Prophet and the Imams invoking God through the Ahl al-Bayt, presenting this as a lived devotional precedent rather than a purely theoretical claim.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-423"
+        },
+        {
+          "id": "b03-u22-006",
+          "title": "The chapter extends the principle to respected religious scholars",
+          "order": 6,
+          "text": "The discussion of scholars argues that spiritual learning can include seeking help through people regarded as having standing before God. The purpose is to cultivate humility and connection rather than intellectual isolation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-424"
+        },
+        {
+          "id": "b03-u22-007",
+          "title": "Increasing knowledge should increase, not decrease, religious submission",
+          "order": 7,
+          "text": "The examples of Mulla Sadra and Ibn Sina are used to challenge the assumption that intellectual sophistication makes embodied devotion unnecessary. In the chapter's framework, genuine knowledge should deepen ta'abbud.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-425"
+        },
+        {
+          "id": "b03-u22-008",
+          "title": "The 'spirit of simple devotion' is presented as compatible with serious scholarship",
+          "order": 8,
+          "text": "Mazaheri praises a devotional posture that includes visiting shrines, respectful conduct and asking God through the Ahl al-Bayt. The key contrast is not reason versus devotion but pride versus submission.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-427"
+        },
+        {
+          "id": "b03-u22-009",
+          "title": "Tawassul is defended as having both scriptural roots and lived experiential testimony",
+          "order": 9,
+          "text": "Stories of healing and answered need are presented as experiential illustrations, while the story of Solomon's servant is used to argue that extraordinary effects can occur through a person with a strong relationship to God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-429"
+        },
+        {
+          "id": "b03-u22-010",
+          "title": "A strong relationship with God is presented as the deeper source behind spiritual agency",
+          "order": 10,
+          "text": "The chapter interprets the Qur'anic story of Asif ibn Barqiya as evidence that closeness to God can be associated with extraordinary action, then applies the argument to the spiritual status attributed to the Ahl al-Bayt.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-431"
+        },
+        {
+          "id": "b03-u22-011",
+          "title": "Ziyarat and regular remembrance turn tawassul into a durable practice",
+          "order": 11,
+          "text": "The chapter recommends regular attention to Imam al-Zaman and Ziyarat al-Jami'a, portraying repeated devotional practice as a way to strengthen the heart and maintain relationship with the Ahl al-Bayt.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-434"
+        },
+        {
+          "id": "b03-u22-012",
+          "title": "The chapter closes by treating devotional opportunities as gifts that must be acted upon",
+          "order": 12,
+          "text": "The narration about divine 'breezes' or opportunities is used as a practical conclusion: spiritual openings are temporary, so the believer should expose himself to them through remembrance, visitation and action.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-439"
+        }
+      ]
     }
   ]
 }
