@@ -59,3 +59,12 @@ test("library ordering and book taxonomy are explicit and deterministic", () => 
   assert.match(app, /const books = \[\.\.\.manifest\.books\]\.sort/);
   assert.match(app, /b\.primary_category \|\| 'Unclassified'/);
 });
+
+
+test("audio player prefers recorded media and falls back to browser voice", () => {
+  assert.match(app, /audio\/manifest\.json/);
+  assert.match(app, /data-audio-media/);
+  assert.match(app, /speechSynthesis/);
+  assert.match(app, /media\.play\(\)\.catch/);
+  assert.match(app, /Recorded audio failed.*browser voice fallback/);
+});
