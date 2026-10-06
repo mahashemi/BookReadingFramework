@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "description": "Optional Listen & Learn narration index. Only declared scripts are fetched.",
+  "books": {
+    "book03": {
+      "units": {
+        "u01": {
+          "title": "گفتار 01",
+          "script": "audio/book03/scripts/u01.md"
+        },
+        "u02": {
+          "title": "گفتار 02",
+          "script": "audio/book03/scripts/u02.md"
+        },
+        "u03": {
+          "title": "گفتار 03",
+          "script": "audio/book03/scripts/u03.md"
+        },
+        "u04": {
+          "title": "گفتار 04",
+          "script": "audio/book03/scripts/u04.md"
+        },
+        "u05": {
+          "title": "گفتار 05",
+          "script": "audio/book03/scripts/u05.md"
+        },
+        "u06": {
+          "title": "گفتار 06",
+          "script": "audio/book03/scripts/u06.md"
+        },
+        "u07": {
+          "title": "گفتار 07",
+          "script": "audio/book03/scripts/u07.md"
+        },
+        "u08": {
+          "title": "گفتار 08",
+          "script": "audio/book03/scripts/u08.md"
+        },
+        "u09": {
+          "title": "گفتار 09",
+          "script": "audio/book03/scripts/u09.md"
+        },
+        "u10": {
+          "title": "گفتار 10",
+          "script": "audio/book03/scripts/u10.md"
+        }
+      }
+    }
+  }
+}
