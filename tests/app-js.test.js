@@ -56,6 +56,6 @@ test("library ordering and book taxonomy are explicit and deterministic", () => 
   for (const book of books) {
     assert.ok(Array.isArray(book.subjects) && book.subjects.length > 0, book.id + " must have subject metadata");
   }
-  assert.match(app, /const books = \\[\.\.\.manifest\.books\\]\.sort/);
+  assert.match(app, /const books = \[\.\.\.manifest\.books\]\.sort/);
   assert.match(app, /b\.primary_category \|\| 'Unclassified'/);
 });
