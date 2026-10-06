@@ -433,32 +433,114 @@
       "id": "u05",
       "title": "گفتار پنجم : نفس اماره",
       "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html",
-      "quotes": [],
-      "connections": [],
+      "quotes": [
+        {
+          "id": "u05-q01",
+          "text": "اعْدي عَدوُّكَ نَفْسَكَ الَّتي بَيْنَ جَنْبَيْكَ"
+        },
+        {
+          "id": "u05-q02",
+          "text": "اللهم لاتكلني الى نفسي طرفه عين"
+        },
+        {
+          "id": "u05-q03",
+          "text": "الم اعهد اليكم يا بني آدم ان لاتعبدوا الشيطان انه لكم عدو مبين"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u04",
+          "label": "The inner battle described as jihad al-akbar becomes concrete when the lower self is identified as the nearest enemy"
+        },
+        {
+          "to_unit_id": "u06",
+          "label": "Patience is one of the disciplines needed when the lower self demands immediate gratification"
+        },
+        {
+          "to_unit_id": "u08",
+          "label": "The effects of patience and resistance become visible in the person's later spiritual and worldly state"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincerity requires refusing to let the ego become the hidden object of worship"
+        },
+        {
+          "to_unit_id": "u19",
+          "label": "The Qur'an later becomes a major refuge against the same inner and satanic pressures"
+        }
+      ],
       "chunks": [
         {
           "id": "b03-u05-001",
-          "title": "The chapter treats persistence as essential to moral reform",
+          "title": "The nearest enemy is the self that lives within us",
           "order": 1,
-          "text": "Moral improvement cannot depend on temporary enthusiasm. The person must continue the struggle when the initial emotional motivation disappears.",
+          "text": "Mazaheri begins with the striking warning that the most dangerous enemy is the النفس between one's sides. The point is proximity: the lower self does not need an external battlefield because it accompanies the person everywhere.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0087"
         },
         {
           "id": "b03-u05-002",
-          "title": "Repeated practice turns difficult obedience into character",
+          "title": "The lower self is not identical to the whole human being",
           "order": 2,
-          "text": "A virtue becomes stable when the person repeatedly chooses it. Jihad with the self therefore has a training dimension analogous to building strength through exercise.",
+          "text": "The chapter distinguishes the moral agent from the lower self. The person's spiritual dimension can govern or resist the impulses that arise from the animal side, so 'following the self' is a choice rather than an unavoidable identity.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0087"
         },
         {
           "id": "b03-u05-003",
-          "title": "Failure should trigger return rather than surrender",
+          "title": "Desire becomes dangerous when it becomes an object of worship",
           "order": 3,
-          "text": "A person who falls should not convert one failure into an identity or a reason to abandon the struggle. The important movement is to recognize the failure, correct it and continue.",
+          "text": "The Qur'anic warning against taking one's own desire as an object of worship is used to describe a person whose preferences begin to overrule revelation, reason and conscience.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0089"
+        },
+        {
+          "id": "b03-u05-004",
+          "title": "Satan and the lower self reinforce one another",
+          "order": 4,
+          "text": "Mazaheri places satanic suggestion alongside the person's own lower tendencies. The practical danger is a feedback loop: suggestion finds an existing weakness, the weakness is indulged, and indulgence makes the next suggestion easier to accept.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0089"
+        },
+        {
+          "id": "b03-u05-005",
+          "title": "Losing divine help makes self-reliance spiritually dangerous",
+          "order": 5,
+          "text": "The prayer 'do not entrust me to myself even for an instant' expresses the chapter's concern that a person who relies entirely on his own uncontrolled self is vulnerable to rapid deviation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0092"
+        },
+        {
+          "id": "b03-u05-006",
+          "title": "Spiritual deviation can accumulate until the person loses moral direction",
+          "order": 6,
+          "text": "The chapter uses Qur'anic images of darkness and misguidance to show how repeated wrong choices can remove clarity. The danger is cumulative: one concession can prepare the conditions for another.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0093"
+        },
+        {
+          "id": "b03-u05-007",
+          "title": "The remedy is to strengthen the relationship with God through disciplined worship",
+          "order": 7,
+          "text": "Mazaheri repeatedly returns to prayer, obligations and religious practice as external supports. The lower self is not defeated by abstract knowledge alone; it must be trained through repeated acts that place God above immediate desire.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0096"
+        },
+        {
+          "id": "b03-u05-008",
+          "title": "Neglect of communal worship is treated as a symptom of spiritual withdrawal",
+          "order": 8,
+          "text": "The warning about hearing the call to prayer but avoiding the mosque is used to illustrate how the lower self can rationalize isolation. Worship is presented as a discipline that keeps the person connected to a community of obedience.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0097"
+        },
+        {
+          "id": "b03-u05-009",
+          "title": "Patience turns resistance into a stable response",
+          "order": 9,
+          "text": "The chapter closes by moving toward the broader discussion of sabr: resisting the lower self requires endurance in hardship, obedience and temptation. Immediate comfort cannot be the measure of a successful spiritual life.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0100"
         }
       ]
     },
@@ -644,55 +726,112 @@
       "id": "u08",
       "title": "گفتار هشتم : آثار صبر",
       "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": "u08-q01",
+          "text": "اشجع الناس من غلب هواه"
+        },
+        {
+          "id": "u08-q02",
+          "text": "و من يشرك بالله فكانما خر من السماء فتخطفه الطير او تهوي به الريح في مكان سحيق"
+        },
+        {
+          "id": "u08-q03",
+          "text": "اولئك لهم الامن"
+        }
+      ],
       "connections": [
         {
+          "to_unit_id": "u06",
+          "label": "Patience is the discipline whose long-term effects are examined here"
+        },
+        {
           "to_unit_id": "u07",
-          "label": "Repeated actions form either virtue or vice"
+          "label": "A repeated act of patience can become a stable disposition and shape the outcomes described in this chapter"
         },
         {
           "to_unit_id": "u09",
-          "label": "Recognizing the dominant vice prepares the ground for repentance and reform"
+          "label": "The consequences of sin create the need for repentance and return"
+        },
+        {
+          "to_unit_id": "u18",
+          "label": "Night worship later appears as one of the practices that protects and strengthens the inner life"
+        },
+        {
+          "to_unit_id": "u24",
+          "label": "Tawakkul later provides another source of security when the person faces fear and temptation"
         }
       ],
       "chunks": [
         {
           "id": "b03-u08-001",
-          "title": "Jihad with the self includes identifying the forces that defeat judgment",
+          "title": "The value of patience is measured by what it produces",
           "order": 1,
-          "text": "The chapter continues the practical analysis by examining how desire, anger and inner tendencies can distort a person's ability to choose well.",
+          "text": "The chapter is not satisfied with defining sabr. It examines its آثار: patience changes the person's moral trajectory, strengthens resistance and protects against consequences that follow impulsive wrongdoing.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0148"
         },
         {
           "id": "b03-u08-002",
-          "title": "A desire becomes dangerous when it takes command of reason",
+          "title": "Patience has three arenas of practice",
           "order": 2,
-          "text": "The moral problem is not simply possessing an inclination. The danger begins when the inclination becomes the decision-maker and reason is recruited afterward to justify it.",
+          "text": "Mazaheri identifies patience in hardship, patience in obedience and patience in avoiding sin. The classification matters because a person may be patient in one arena while repeatedly failing in another.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0149"
         },
         {
           "id": "b03-u08-003",
-          "title": "Self-awareness is required before self-correction",
+          "title": "Patience turns suffering into an occasion for formation",
           "order": 3,
-          "text": "A person cannot fight an inner tendency that he refuses to recognize. The practical direction is to observe motives and reactions before attempting to reform them.",
+          "text": "Hardship is presented as something that can either crush the person or be used for growth. The believer is asked to extract meaning and discipline from difficulty rather than treating every pain as proof that life has gone wrong.",
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html"
         },
         {
           "id": "b03-u08-004",
-          "title": "Small repeated compromises can strengthen a vice",
+          "title": "The history of earlier peoples is used as a moral laboratory",
           "order": 4,
-          "text": "Like virtues, bad traits are built by repeated action. What begins as an occasional compromise can become a stable disposition that later feels normal.",
+          "text": "Qur'anic commands to travel through the earth and observe the fate of deniers are presented as practical education. Looking at consequences trains judgment before a person repeats the same patterns.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0152"
         },
         {
           "id": "b03-u08-005",
-          "title": "The struggle is both moral and psychological",
+          "title": "Uncontrolled desire can destroy the structure built by earlier good work",
           "order": 5,
-          "text": "Mazaheri repeatedly treats the inner battle as something visible in habits, reactions and choices. Spiritual reform therefore requires concrete behavioral discipline rather than abstract intention.",
+          "text": "The chapter repeatedly returns to the way sin damages what has been built. A person may have faith or good intentions, but indulging a serious vice can undermine that structure from within.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0159"
+        },
+        {
+          "id": "b03-u08-006",
+          "title": "Shirk and attachment to desire are depicted as catastrophic descent",
+          "order": 6,
+          "text": "The imagery of falling from the sky and being carried away is used to communicate how severe the consequences can become when a person makes desire or another rival object the governing center of life.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0156"
+        },
+        {
+          "id": "b03-u08-007",
+          "title": "Moral safety is connected with keeping faith free from ظلم",
+          "order": 7,
+          "text": "The discussion of those who believe without mixing faith with ظلم connects inner security to the quality of the person's moral life. Security is not presented as mere absence of external trouble.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0163"
+        },
+        {
+          "id": "b03-u08-008",
+          "title": "Family and social conduct are also tests of patience",
+          "order": 8,
+          "text": "The chapter applies patience beyond private worship: relationships, speech and responsibilities expose whether the person can remain composed rather than transferring inner pressure into harmful behavior.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0164"
+        },
+        {
+          "id": "b03-u08-009",
+          "title": "Patience requires vigilance, not a one-time victory",
+          "order": 9,
+          "text": "The chapter's overall logic is that a person can lose ground through a moment of negligence. The practical lesson is sustained attention to the inner battle rather than confidence based on yesterday's success.",
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html"
         }
