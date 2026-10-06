@@ -53,7 +53,10 @@
         "glossary": "data/glossary.json"
       },
       "links": {
-        "studyGuide": "study_guide/study.html"
+        "studyGuide": "study_guide/study.html",
+        "mindMap": "mind_maps/book03_interactive.html",
+        "mindMapOutline": "mind_maps/book03_static_outline.md",
+        "teachingGuide": "teaching_materials/BOOK03_TEACHING_GUIDE.md"
       }
     }
   ]
