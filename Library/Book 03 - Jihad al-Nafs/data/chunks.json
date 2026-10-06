@@ -1100,78 +1100,129 @@
       "title": "گفتار دهم : توبه ( 2 )",
       "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html",
       "quotes": [
-        "آخر ما يخرج عن قلوب الصديقين حب الجاه"
+        {
+          "id": "u10-q01",
+          "text": "آخر ما يخرج عن قلوب الصديقين حب الجاه"
+        },
+        {
+          "id": "u10-q02",
+          "text": "إِنَّمَا التَّوْبَةُ عَلَى اللَّهِ لِلَّذِينَ يَعْمَلُونَ السُّوءَ بِجَهَالَةٍ ثُمَّ يَتُوبُونَ مِنْ قَرِيبٍ"
+        },
+        {
+          "id": "u10-q03",
+          "text": "يتوبون من قريب"
+        }
       ],
       "connections": [
         {
           "to_unit_id": "u09",
-          "label": "Vice can block repentance; early recognition therefore matters"
+          "label": "The earlier invitation to repent becomes harder to act on when vice destroys the ability to recognize one's own wrongdoing"
         },
         {
           "to_unit_id": "u11",
-          "label": "The next stage applies self-jihad to specific inner vices"
+          "label": "The next unit turns the chapter's warning about delayed repentance into a detailed account of repair and rights"
+        },
+        {
+          "to_unit_id": "u03",
+          "label": "The inner war is now analyzed through specific motives that can overpower spiritual agency"
         },
         {
           "to_unit_id": "u17",
-          "label": "Status-seeking directly conflicts with sincerity"
+          "label": "Love of status is a direct test of whether action is for God or for recognition"
+        },
+        {
+          "to_unit_id": "u25",
+          "label": "The later discussion of tawhid of worship gives a deeper framework for identifying rival objects of attachment such as status and ego"
         }
       ],
       "chunks": [
         {
           "id": "b03-u10-001",
-          "title": "A vice can distort the person's interpretation of his own wrongdoing",
+          "title": "Repentance is one of the external strengths used to recover the inner battlefield",
           "order": 1,
-          "text": "The chapter emphasizes that moral danger grows when a person not only sins but becomes unable to see himself as wrong. The inner faculty of self-criticism is then weakened.",
+          "text": "Mazaheri reconnects repentance to jihad al-akbar: return to God is not an isolated legal topic but a way of restoring the spiritual dimension's ability to govern the self.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0190"
         },
         {
           "id": "b03-u10-002",
-          "title": "Envy can make another person's good feel like one's own loss",
+          "title": "Despair can become a larger danger than the original period of sin",
           "order": 2,
-          "text": "The discussion treats envy as a destructive inner condition because it changes the person's relationship with another person's success and can motivate unjust behavior.",
+          "text": "The chapter sharply warns against concluding that forgiveness is impossible. In Mazaheri's presentation, despair removes the motivation needed for return and can itself become a grave spiritual danger.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0192"
         },
         {
           "id": "b03-u10-003",
-          "title": "Love of status can become an engine of wrongdoing",
+          "title": "A corrupt inner motive can make repentance psychologically unavailable",
           "order": 3,
-          "text": "Ambition for position is presented as especially persistent. A person may knowingly sacrifice truth and justice when recognition or power becomes the overriding goal.",
+          "text": "The chapter distinguishes committing a wrong from becoming hardened toward the wrong. Where remorse has disappeared, the person may no longer possess the inner movement that makes tawbah possible.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0194"
         },
         {
           "id": "b03-u10-004",
-          "title": "Greed and suspicion can compound one another",
+          "title": "The chapter distinguishes ignorance-driven failure from deliberate defiance",
           "order": 4,
-          "text": "When avarice and سوء ظن reinforce each other, the person begins interpreting others through self-interest and becomes increasingly willing to justify unfair behavior.",
+          "text": "Mazaheri reads Qur'an 4:17–18 as distinguishing wrongdoing committed under the dominance of ignorance or impulse from deliberate, defiant persistence. This distinction explains why immediate return matters.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0196"
         },
         {
           "id": "b03-u10-005",
-          "title": "Vice can prevent repentance by producing self-justification",
+          "title": "The warning against rejected repentance functions as a moral alarm",
           "order": 5,
-          "text": "If a person interprets every wrongdoing as justified, he no longer experiences himself as a sinner who needs to return. The vice therefore becomes a barrier to the remedy itself.",
+          "text": "The four warnings are presented not to close the door of mercy but to prevent a person from reaching a state in which repentance is postponed until the capacity or opportunity for genuine return is gone.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0198"
         },
         {
           "id": "b03-u10-006",
-          "title": "Reform requires early intervention",
+          "title": "Envy can silence the conscience while preserving self-justification",
           "order": 6,
-          "text": "The chapter's warning is strongest around the beginning of a vice: once it has been repeated and rationalized for years, the person may lose the ability to recognize its seriousness.",
+          "text": "Mazaheri presents envy as especially dangerous because the person may know the act is wrong yet construct a justification that quiets the remaining voice of conscience.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0201"
         },
         {
           "id": "b03-u10-007",
-          "title": "Islamic repentance remains open even after serious failure",
+          "title": "Love of status can survive after many other attachments have weakened",
           "order": 7,
-          "text": "The warning about hardening the heart is not a doctrine of despair. The chapter pairs the danger of persistent vice with the continuing invitation to return before the habit becomes entrenched.",
+          "text": "The cited saying that love of position is among the last attachments to leave the hearts of the righteous is used to show how deeply recognition and power can survive within otherwise religious practice.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0202"
+        },
+        {
+          "id": "b03-u10-008",
+          "title": "Delayed repentance becomes a form of self-deception",
+          "order": 8,
+          "text": "The chapter's discussion of taswif shows how promising to repent later can allow memory and remorse to fade, turning a momentary failure into an established moral pattern.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0204"
+        },
+        {
+          "id": "b03-u10-009",
+          "title": "Material rationalization can replace moral repair",
+          "order": 9,
+          "text": "The discussion of withholding obligatory financial duties illustrates how a person can convert a moral obligation into a self-serving argument rather than accepting the need to repair what was withheld.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0205"
+        },
+        {
+          "id": "b03-u10-010",
+          "title": "Serious wrongdoing does not erase the possibility of decisive moral reversal",
+          "order": 10,
+          "text": "Stories of Hur ibn Yazid and others are used to reinforce that even grave histories can be followed by a sincere change of direction, provided the person actually turns back rather than merely wishing for forgiveness.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0207"
+        },
+        {
+          "id": "b03-u10-011",
+          "title": "Awareness of God's presence protects against recurrence",
+          "order": 11,
+          "text": "The chapter closes the moral loop by urging the reader to live as though God is present and observing. That awareness is meant to preserve shame before wrongdoing and reduce the likelihood of repeating it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0208"
         }
       ]
     },
@@ -1180,79 +1231,121 @@
       "title": "گفتار يازدهم : توبه ( 3 )",
       "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html",
       "quotes": [
-        "انما التوبة على الله للذين يعملون السوء بجهالة ثم يتوبون من قريب",
-        "التائب من الذنب كمن لا ذنب له"
+        {
+          "id": "u11-q01",
+          "text": "التائب من الذنب كمن لا ذنب له"
+        },
+        {
+          "id": "u11-q02",
+          "text": "فويل للمصلين الذين هم عن صلاتهم ساهون"
+        },
+        {
+          "id": "u11-q03",
+          "text": "والغيبة إدام كلاب أهل النار"
+        }
       ],
       "connections": [
         {
           "to_unit_id": "u09",
-          "label": "This chapter deepens the earlier warning against delaying repentance"
+          "label": "The first repentance discussion establishes divine mercy; this unit specifies what genuine repair requires"
         },
         {
           "to_unit_id": "u10",
-          "label": "Persistent vices can prevent a person from recognizing the need to repent"
+          "label": "The vices that block recognition of wrongdoing become concrete cases for the conditions of repentance"
+        },
+        {
+          "to_unit_id": "u14",
+          "label": "The distinction between repentance and practical repair prepares the later discussion of expiation and the consequences of speech"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Repairing neglected duties is part of fulfilling the servant's responsibility to God and people"
         },
         {
           "to_unit_id": "u17",
-          "label": "Sincere action requires repairing harm rather than merely expressing regret"
+          "label": "Sincerity is tested by whether repentance changes conduct and restores rights rather than remaining verbal"
         }
       ],
       "chunks": [
         {
           "id": "b03-u11-001",
-          "title": "Repentance is meant to happen before moral numbness sets in",
+          "title": "The chapter begins by returning to the Qur'anic distinction between immediate and delayed repentance",
           "order": 1,
-          "text": "The chapter revisits Qur'an 4:17–18 as a warning: postponing repentance allows repeated sin to make wrongdoing feel ordinary and can weaken the person's ability to recognize his need for return.",
+          "text": "Mazaheri revisits Qur'an 4:17–18 and makes timing central: repentance belongs to the period in which the person can still genuinely recognize the wrong and choose to return.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0212"
         },
         {
           "id": "b03-u11-002",
-          "title": "The barrier is often loss of moral awareness, not lack of divine mercy",
+          "title": "Repeated sin can darken the heart and reduce sensitivity to wrongdoing",
           "order": 2,
-          "text": "Mazaheri distinguishes between God's willingness to forgive and a sinner's capacity to make a sincere return. A person who no longer regards the act as wrong may not generate genuine repentance.",
+          "text": "The image of successive black marks on the heart explains how failure to repair one sin can make the next easier and eventually obscure the moral seriousness of the behavior.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0214"
         },
         {
           "id": "b03-u11-003",
-          "title": "Sincere repentance is remorse before God, not merely fear of punishment",
+          "title": "Regret at the approach of death is not the same as repentance from the sin",
           "order": 3,
-          "text": "The discussion of final-moment regret emphasizes that being afraid of hell is not identical to regretting disobedience itself. Genuine tawbah is a moral and relational return.",
+          "text": "Mazaheri distinguishes remorse about punishment from remorse about having disobeyed God. The latter is the morally meaningful return that should occur before the final crisis.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0216"
         },
         {
           "id": "b03-u11-004",
-          "title": "Rights owed to God require both remorse and practical repair",
+          "title": "Deathbed fear can be too late for deliberate moral reconstruction",
           "order": 4,
-          "text": "For neglected obligations such as prayer and fasting, repentance includes making up what was missed rather than treating regret alone as sufficient.",
+          "text": "The chapter treats the final moments as a warning: fear and shock may produce regret, but they do not necessarily produce the reflective, corrective process required for tawbah.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0217"
         },
         {
           "id": "b03-u11-005",
-          "title": "Rights owed to people are especially demanding",
+          "title": "Neglected obligations require practical compensation",
           "order": 5,
-          "text": "The chapter gives حق الناس special weight: repentance requires addressing the human harm or property right involved, not merely asking God privately for forgiveness.",
+          "text": "The example of missed prayer and fasting makes the principle concrete: regret before God does not erase an obligation that the person is still capable of making up.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0220"
         },
         {
           "id": "b03-u11-006",
-          "title": "Islamic repentance has no dead end when the return is sincere",
+          "title": "Repentance from human rights requires restoring what was taken",
           "order": 6,
-          "text": "The repeated examples of serious sinners who changed direction are used to reinforce the book's central claim that the door of return remains open while genuine repentance is possible.",
+          "text": "Where another person's property or right was violated, Mazaheri explicitly treats repayment and obtaining the person's satisfaction as part of genuine repentance.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0223"
         },
         {
           "id": "b03-u11-007",
-          "title": "The best time for repentance is immediately after the wrong",
+          "title": "Some interpersonal harms require repair without reopening the original injury",
           "order": 7,
-          "text": "Immediate correction prevents the sin from becoming a repeated pattern and preserves the person's sensitivity to wrongdoing.",
+          "text": "For forms of harm such as backbiting, the chapter discusses repentance through remorse, corrective service and seeking God's forgiveness rather than mechanically repeating the injury to the victim.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0224"
+        },
+        {
+          "id": "b03-u11-008",
+          "title": "The moral meaning of 'no sin' is compatible with responsibility for consequences",
+          "order": 8,
+          "text": "The saying that a repentant person is like one without sin is presented alongside stories such as Hur's, where forgiveness does not eliminate the need for the person to confront what he did.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0221"
+        },
+        {
+          "id": "b03-u11-009",
+          "title": "The chapter treats divine judgment as attentive to rights between people",
+          "order": 9,
+          "text": "The image of accountability at the 'ambush' emphasizes that private worship cannot simply cancel obligations owed to others.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0222"
+        },
+        {
+          "id": "b03-u11-010",
+          "title": "The closing principle is repair rather than despair",
+          "order": 10,
+          "text": "Mazaheri ends by insisting that every class of wrongdoing has some form of corrective path, while warning that neglect and indifference can make small sins grow into a destructive character.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0225"
         }
       ]
     },
@@ -1475,78 +1568,121 @@
       "title": "گفتار چهاردهم : كفاره گناه",
       "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html",
       "quotes": [
-        "الانسان مخبوء تحت لسانه"
+        {
+          "id": "u14-q01",
+          "text": "الإنسان مخبوء تحت لسانه"
+        },
+        {
+          "id": "u14-q02",
+          "text": "فاجتنبوا الرجس من الأوثان واجتنبوا قول الزور"
+        },
+        {
+          "id": "u14-q03",
+          "text": "ليس كل ما يعلم يقال"
+        }
       ],
       "connections": [
         {
           "to_unit_id": "u01",
-          "label": "Teachers influence students through conduct, including speech"
+          "label": "The teacher's moral influence includes the discipline of speech because students absorb conduct as well as lessons"
         },
         {
           "to_unit_id": "u07",
-          "label": "Controlling speech requires the same repeated practice that creates patience"
+          "label": "Controlling the tongue requires repeated forbearance until restraint becomes a stable disposition"
+        },
+        {
+          "to_unit_id": "u11",
+          "label": "Speech can create rights and harms that later require repentance and practical repair"
         },
         {
           "to_unit_id": "u15",
-          "label": "Fulfilling one's duty includes protecting others from avoidable harm"
+          "label": "Responsible service includes refusing to impose avoidable harm on others through careless words"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Speech becomes a test of sincerity when the desire to impress, mock or dominate competes with the intention to serve God"
         }
       ],
       "chunks": [
         {
           "id": "b03-u14-001",
-          "title": "Speech is a major arena of jihad with the self",
+          "title": "The chapter frames speech as a moral form of self-control",
           "order": 1,
-          "text": "The chapter turns strongly toward the moral consequences of speech: words can build relationships and education, but careless speech can create lasting damage.",
+          "text": "The opening example uses an apparently ordinary interaction to show how ridicule and careless words can accumulate into multiple moral failures. The tongue is therefore treated as a frontline of jihad with the self.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0263"
         },
         {
           "id": "b03-u14-002",
-          "title": "A true statement can still be unwise to say",
+          "title": "Ridiculing another person can combine several separate wrongs",
           "order": 2,
-          "text": "Mazaheri distinguishes truthfulness from indiscriminate speaking. A statement may be factually true yet needlessly harmful, inflammatory or inappropriate to the setting.",
+          "text": "Mazaheri dissects an insulting remark into humiliation, false judgment and loss of respect for another Muslim, showing why a single sentence can carry layered moral consequences.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0264"
         },
         {
           "id": "b03-u14-003",
-          "title": "Unnecessary speech creates consequences beyond the moment",
+          "title": "A person's statement should not be evaluated only by whether it is factually true",
           "order": 3,
-          "text": "Stories in the chapter illustrate how a casual joke, insult or unnecessary claim can produce resentment, humiliation, conflict and even serious retaliation.",
+          "text": "The chapter distinguishes truth from the broader question of whether speech is appropriate, useful and respectful. A true statement can still be delivered in a way that produces unnecessary harm.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0265"
         },
         {
           "id": "b03-u14-004",
-          "title": "The tongue can manufacture a person's social identity",
+          "title": "Religious speech requires attention to audience and consequence",
           "order": 4,
-          "text": "Repeated mockery, sarcasm, backbiting, accusation or excessive talk can become a recognizable character trait. What begins as speech becomes a disposition and eventually shapes how others experience the person.",
+          "text": "The discussion emphasizes that even accurate claims may be unsuitable to repeat when listeners cannot receive them properly or when the result is needless confusion and conflict.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0267"
         },
         {
           "id": "b03-u14-005",
-          "title": "Words can damage family relationships irreversibly",
+          "title": "A disciplined speaker does not need to prove every claim",
           "order": 5,
-          "text": "The chapter emphasizes that a wound caused by a sharp remark can be difficult to repair. Repeated verbal injury can accumulate until affection is replaced by resentment and family life collapses.",
+          "text": "The maxim about a statement requiring forty witnesses illustrates a practical restraint: not every surprising assertion needs to be voiced merely because the speaker believes it.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0268"
         },
         {
           "id": "b03-u14-006",
-          "title": "People with influence have a higher obligation to control speech",
+          "title": "Speech can leave consequences long after the moment has passed",
           "order": 6,
-          "text": "Teachers, respected figures and public-facing people can magnify the effects of careless words. Mazaheri therefore calls for thinking before speaking and exercising particular restraint at home.",
+          "text": "The broken-glass analogy is used to explain why verbal injury can be difficult to repair: once affection and trust have been damaged, apology does not always restore the previous relationship.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0272"
         },
         {
           "id": "b03-u14-007",
-          "title": "The practical rule is simple: think before speaking",
+          "title": "Mockery can become a stable social identity",
           "order": 7,
-          "text": "The chapter's broad discipline is to ask whether a statement has a useful worldly or spiritual purpose before saying it. Silence is often safer than speech that merely satisfies impulse.",
+          "text": "The stories about Ibn Muqaffa' show how repeated jokes, sarcasm and public embarrassment can create enemies and eventually expose the speaker himself to serious consequences.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0273"
+        },
+        {
+          "id": "b03-u14-008",
+          "title": "Careless cleverness can become self-destruction",
+          "order": 8,
+          "text": "The chapter uses the fate of Ibn Muqaffa' to connect verbal brilliance with moral danger when wit, pride and political carelessness override prudence.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0274"
+        },
+        {
+          "id": "b03-u14-009",
+          "title": "A sharp tongue can destroy influence at home",
+          "order": 9,
+          "text": "Mazaheri explicitly brings the lesson into family life: someone who constantly uses cutting speech may lose authority over hearts even if his factual arguments are correct.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0276"
+        },
+        {
+          "id": "b03-u14-010",
+          "title": "The final discipline is to restrain speech before it becomes harm",
+          "order": 10,
+          "text": "The practical conclusion is preventive rather than merely reparative: think before speaking, avoid needless verbal injury, and especially remove cutting speech from the home.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0276"
         }
       ]
     },
