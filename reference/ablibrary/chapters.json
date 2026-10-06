@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "book": {
+    "title": "Jihad bil-Nafs",
+    "author": "Ayatollah Mazaheri",
+    "source": "Ahlulbayt Library"
+  },
+  "volumes": [
+    {
+      "id": "vol-1-and-2",
+      "label": "Jild 1–2",
+      "chapters": [
+        {
+          "number": 1,
+          "title": "گفتار اول : تعليم و تربيت",
+          "start_internal_page": 11,
+          "end_internal_page": 30,
+          "discovered_from": {
+            "page": 11,
+            "line": 1
+          }
+        },
+        {
+          "number": 2,
+          "title": "گفتار دوم : گناه و تعديل غرايز",
+          "start_internal_page": 31,
+          "end_internal_page": 49,
+          "discovered_from": {
+            "page": 31,
+            "line": 1
+          }
+        },
+        {
+          "number": 3,
+          "title": "گفتار سوم : جهاد با نفس",
+          "start_internal_page": 50,
+          "end_internal_page": 69,
+          "discovered_from": {
+            "page": 50,
+            "line": 1
+          }
+        },
+        {
+          "number": 4,
+          "title": "گفتار چهارم : انسان ملكوتى",
+          "start_internal_page": 70,
+          "end_internal_page": 86,
+          "discovered_from": {
+            "page": 70,
+            "line": 1
+          }
+        },
+        {
+          "number": 5,
+          "title": "گفتار پنجم : نفس اماره",
+          "start_internal_page": 87,
+          "end_internal_page": 110,
+          "discovered_from": {
+            "page": 87,
+            "line": 1
+          }
+        },
+        {
+          "number": 6,
+          "title": "گفتار ششم : صبر",
+          "start_internal_page": 111,
+          "end_internal_page": 128,
+          "discovered_from": {
+            "page": 111,
+            "line": 1
+          }
+        },
+        {
+          "number": 7,
+          "title": "گفتار هفتم : ملكه صبر",
+          "start_internal_page": 129,
+          "end_internal_page": 147,
+          "discovered_from": {
+            "page": 129,
+            "line": 1
+          }
+        },
+        {
+          "number": 8,
+          "title": "گفتار هشتم : آثار صبر",
+          "start_internal_page": 148,
+          "end_internal_page": 167,
+          "discovered_from": {
+            "page": 148,
+            "line": 1
+          }
+        },
+        {
+          "number": 9,
+          "title": "گفتار نهم : توبه ( 1 )",
+          "start_internal_page": 168,
+          "end_internal_page": 189,
+          "discovered_from": {
+            "page": 168,
+            "line": 1
+          }
+        },
+        {
+          "number": 10,
+          "title": "گفتار دهم : توبه ( 2 )",
+          "start_internal_page": 190,
+          "end_internal_page": 211,
+          "discovered_from": {
+            "page": 190,
+            "line": 1
+          }
+        },
+        {
+          "number": 11,
+          "title": "گفتار يازدهم : توبه ( 3 )",
+          "start_internal_page": 212,
+          "end_internal_page": 225,
+          "discovered_from": {
+            "page": 212,
+            "line": 1
+          }
+        },
+        {
+          "number": 12,
+          "title": "گفتار دوازدهم : سعه صدر ( 1 )",
+          "start_internal_page": 226,
+          "end_internal_page": 247,
+          "discovered_from": {
+            "page": 226,
+            "line": 1
+          }
+        },
+        {
+          "number": 13,
+          "title": "گفتار سيزدهم : سعه صدر ( 2 )",
+          "start_internal_page": 248,
+          "end_internal_page": 262,
+          "discovered_from": {
+            "page": 248,
+            "line": 1
+          }
+        },
+        {
+          "number": 14,
+          "title": "گفتار چهاردهم : كفاره گناه",
+          "start_internal_page": 263,
+          "end_internal_page": 277,
+          "discovered_from": {
+            "page": 263,
+            "line": 1
+          }
+        },
+        {
+          "number": 15,
+          "title": "گفتار پانزدهم : بندگى خدا",
+          "start_internal_page": 278,
+          "end_internal_page": 296,
+          "discovered_from": {
+            "page": 278,
+            "line": 1
+          }
+        },
+        {
+          "number": 16,
+          "title": "گفتار شانزدهم : فعاليت ، استقامت و توبه به جوانب كار",
+          "start_internal_page": 297,
+          "end_internal_page": 317,
+          "discovered_from": {
+            "page": 297,
+            "line": 1
+          }
+        },
+        {
+          "number": 17,
+          "title": "گفتار هفدهم : اخلاص",
+          "start_internal_page": 318,
+          "end_internal_page": 334,
+          "discovered_from": {
+            "page": 318,
+            "line": 1
+          }
+        },
+        {
+          "number": 18,
+          "title": "گفتار هجدهم : نماز شب",
+          "start_internal_page": 335,
+          "end_internal_page": 357,
+          "discovered_from": {
+            "page": 335,
+            "line": 1
+          }
+        },
+        {
+          "number": 19,
+          "title": "گفتار نوزدهم : پناه بردن به قرآن",
+          "start_internal_page": 358,
+          "end_internal_page": 380,
+          "discovered_from": {
+            "page": 358,
+            "line": 1
+          }
+        },
+        {
+          "number": 20,
+          "title": "گفتار بيستم : فوائد دعا",
+          "start_internal_page": 381,
+          "end_internal_page": 408,
+          "discovered_from": {
+            "page": 381,
+            "line": 1
+          }
+        },
+        {
+          "number": 21,
+          "title": "گفتار بيست و يكم : دعا",
+          "start_internal_page": 409,
+          "end_internal_page": 427,
+          "discovered_from": {
+            "page": 409,
+            "line": 1
+          }
+        },
+        {
+          "number": 22,
+          "title": "گفتار بيست و دوم : توسل به اهلبيت ( عليهم‌السلام )",
+          "start_internal_page": 428,
+          "end_internal_page": 448,
+          "discovered_from": {
+            "page": 428,
+            "line": 1
+          }
+        },
+        {
+          "number": 23,
+          "title": "گفتار بيست و سه : ياد خدا",
+          "start_internal_page": 449,
+          "end_internal_page": 466,
+          "discovered_from": {
+            "page": 449,
+            "line": 1
+          }
+        },
+        {
+          "number": 24,
+          "title": "گفتار بيست و چهارم : توكل بر خدا",
+          "start_internal_page": 467,
+          "end_internal_page": 486,
+          "discovered_from": {
+            "page": 467,
+            "line": 1
+          }
+        },
+        {
+          "number": 25,
+          "title": "گفتار بيست و پنجم : مراحل توحيد و توكل",
+          "start_internal_page": 487,
+          "end_internal_page": 511,
+          "discovered_from": {
+            "page": 487,
+            "line": 1
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Deterministically discovered from standalone 'گفتار ...' lines.",
+    "Review this manifest once; build uses it exactly and never guesses.",
+    "If a heading is missed or false-positive, edit the range/title here."
+  ]
+}

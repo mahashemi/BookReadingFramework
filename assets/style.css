@@ -169,3 +169,436 @@ blockquote.phrase small { display: block; margin-top: 6px; font-style: normal; f
 }
 @media print { .topbar, .footer, .actions, .unit-nav { display: none; } .card { box-shadow: none; } }
 .term[hidden] { display: none; }
+
+
+/* ---------- source PDF page markers ---------- */
+.pdf-page-marker {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  margin: 1.35rem 0 .7rem;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.2;
+  letter-spacing: .05em;
+  text-transform: none;
+  text-align: center;
+  direction: ltr;
+  opacity: .62;
+}
+.pdf-page-marker::before,
+.pdf-page-marker::after {
+  content: "";
+  flex: 1 1 auto;
+  border-top: 1px solid var(--line);
+}
+
+/* ---------- source transcription pages ---------- */
+pre {
+  width: 90%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* Keep source-chapter headings inside the same reading margins as the transcription. */
+body:has(.pdf-page-marker) > article > h1 {
+  width: 90%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ---------- source-of-truth transcription typography ---------- */
+.source-transcription {
+  width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+  direction: rtl;
+  text-align: right;
+  font-size: 16px;
+  line-height: 2.05;
+}
+.source-transcription p {
+  margin: 0 0 1.05rem;
+}
+.source-transcription .source-arabic {
+  margin: 1.25rem 0 1.35rem;
+  padding: .8rem 1rem;
+  border-right: 3px solid var(--gold);
+  border-left: 0;
+  background: var(--soft);
+  border-radius: 10px 0 0 10px;
+  font-weight: 750;
+  line-height: 2;
+  text-align: right;
+  direction: rtl;
+}
+.source-transcription .source-numbered {
+  margin: 1.25rem 0;
+  padding: .75rem 1rem;
+  border-right: 3px solid var(--accent);
+  background: var(--soft);
+  border-radius: 10px 0 0 10px;
+}
+.source-transcription .source-numbered p {
+  margin-bottom: .65rem;
+}
+.source-transcription .source-numbered p:last-child {
+  margin-bottom: 0;
+}
+.source-transcription strong {
+  font-weight: 800;
+}
+@media (max-width: 800px) {
+  .source-transcription {
+    width: 94%;
+    max-width: 94%;
+    font-size: 15px;
+  }
+}
+
+
+/* ================================================================
+   Book 03 source reading edition
+   Clean reading palette: paper-white Persian, green Quranic Arabic,
+   and a restrained gray footnote panel.
+   ================================================================ */
+
+body.source-reading {
+  background: #f7f6f2;
+  color: #171717;
+  font-family: "Noto Sans Arabic", sans-serif;
+}
+
+.source-reading .source-shell {
+  width: min(100%, 920px);
+  margin: 0 auto;
+  padding: 38px 28px 80px;
+}
+
+.source-reading .source-transcription {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  color: #171717;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 2.18;
+  direction: rtl;
+  text-align: right;
+}
+
+.source-reading .source-chapter-header {
+  margin: 0 auto 42px;
+  padding: 28px 0 26px;
+  text-align: center;
+}
+
+.source-reading .source-eyebrow {
+  margin: 0 0 10px;
+  color: #6b665d;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.source-reading .source-chapter-title {
+  margin: 0;
+  color: #171717;
+  font-size: clamp(29px, 4vw, 40px);
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.source-reading .source-chapter-rule {
+  width: 72px;
+  height: 1px;
+  margin: 18px auto 0;
+  background: #bdb9af;
+}
+
+.source-reading .source-content {
+  width: 100%;
+}
+
+.source-reading .source-page {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.source-reading .source-page + .source-page {
+  margin-top: 30px;
+}
+
+.source-reading .pdf-page-marker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin: 34px 0 24px;
+  color: #88847b;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  direction: rtl;
+  opacity: .78;
+}
+
+.source-reading .pdf-page-marker::before,
+.source-reading .pdf-page-marker::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #dedbd4;
+}
+
+.source-reading .pdf-page-marker span {
+  flex: 0 0 auto;
+  padding: 0 3px;
+}
+
+.source-reading .source-persian {
+  margin: 0 0 1.15em;
+  color: #171717;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2.18;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+/* Quran / Arabic source text: green, but not heavy or oversized. */
+.source-reading .source-arabic-inline {
+  display: inline;
+  color: #17643f;
+  background: #edf5ef;
+  border-radius: .2em;
+  padding: .02em .16em .08em;
+  font-size: .98em;
+  font-weight: 400;
+  line-height: inherit;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.source-reading .source-arabic {
+  margin: 1.45em 0 1.6em;
+  padding: .8em 1.05em;
+  border: 0;
+  border-inline-start: 2px solid #2f7a55;
+  border-radius: 0;
+  background: #eef5ef;
+  color: #17643f;
+  box-shadow: none;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2.15;
+  text-align: right;
+}
+
+.source-reading .source-arabic div {
+  margin: 0;
+}
+
+.source-reading .source-subheading {
+  margin: 2.1em 0 .85em;
+  padding: 0 .75em 0 0;
+  border-inline-start: 2px solid #b7b3aa;
+  color: #262626;
+  font-size: 1.16em;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+/* Footnotes: neutral gray panel with soft off-white text. */
+.source-reading .source-footnotes {
+  margin: 1.8em 0 1em;
+  padding: .95em 1.1em 1em;
+  border: 0;
+  border-radius: 6px;
+  background: #74736e;
+  color: #f3f1eb;
+  font-size: .72em;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+.source-reading .source-footnotes-title {
+  margin-bottom: .4em;
+  color: #ffffff;
+  font-size: .82rem;
+  font-weight: 500;
+}
+
+.source-reading .source-footnotes ol {
+  margin: 0;
+  padding-inline-start: 1.5em;
+}
+
+.source-reading .source-footnotes li {
+  margin: .25em 0;
+  padding-inline-start: .25em;
+}
+
+.source-reading .source-page::after {
+  content: "";
+  display: block;
+  width: 28px;
+  margin: 38px auto 8px;
+  border-top: 1px solid #dedbd4;
+}
+
+/* User text highlights are warm and legible without fighting the source palette. */
+.source-reading .reader-highlight {
+  background: #f4df72;
+  color: #111111;
+  border-radius: .14em;
+  padding: .02em .08em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.source-reading .reader-tools {
+  width: min(100%, 760px);
+  margin: 0 auto 18px;
+  text-align: left;
+}
+
+.source-reading .reader-tools button {
+  border: 1px solid #d2cfc7;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #4f4d48;
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.source-reading .reader-tools button:hover {
+  border-color: #aaa69d;
+  background: #f2f1ed;
+}
+
+@media (max-width: 800px) {
+  body.source-reading {
+    background: #f7f6f2;
+  }
+
+  .source-reading .source-shell {
+    padding: 20px 18px 52px;
+  }
+
+  .source-reading .source-transcription {
+    max-width: none;
+    font-size: 17px;
+    line-height: 2.12;
+  }
+
+  .source-reading .source-chapter-header {
+    margin-bottom: 30px;
+    padding: 20px 0;
+  }
+
+  .source-reading .source-chapter-title {
+    font-size: 29px;
+  }
+
+  .source-reading .source-arabic {
+    padding: .7em .85em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.source-reading {
+    background: #151714;
+    color: #eee;
+  }
+
+  .source-reading .source-transcription,
+  .source-reading .source-persian {
+    color: #eee;
+  }
+
+  .source-reading .source-chapter-title,
+  .source-reading .source-subheading {
+    color: #f1f1ed;
+  }
+
+  .source-reading .source-eyebrow {
+    color: #aaa89f;
+  }
+
+  .source-reading .source-chapter-rule,
+  .source-reading .source-subheading {
+    border-color: #77766f;
+  }
+
+  .source-reading .source-arabic-inline {
+    color: #8fd0a8;
+    background: #1d3025;
+  }
+
+  .source-reading .source-arabic {
+    background: #1d3025;
+    border-inline-start-color: #5e9f79;
+    color: #8fd0a8;
+  }
+
+  .source-reading .source-footnotes {
+    background: #3f403c;
+    color: #f0eee8;
+  }
+
+  .source-reading .source-footnotes-title {
+    color: #ffffff;
+  }
+
+  .source-reading .pdf-page-marker,
+  .source-reading .source-eyebrow {
+    color: #a6a49b;
+  }
+
+  .source-reading .pdf-page-marker::before,
+  .source-reading .pdf-page-marker::after,
+  .source-reading .source-page::after {
+    border-color: #3a3b37;
+  }
+
+  .source-reading .reader-highlight {
+    background: #a99524;
+    color: #ffffff;
+  }
+
+  .source-reading .reader-tools button {
+    background: #22231f;
+    border-color: #4a4b46;
+    color: #e9e8e2;
+  }
+}
+
+@media print {
+  body.source-reading {
+    background: white;
+  }
+
+  .source-reading .source-transcription {
+    width: 100%;
+    max-width: none;
+    font-size: 14pt;
+  }
+
+  .source-reading .source-chapter-header {
+    break-after: avoid;
+  }
+
+  .source-reading .source-page {
+    break-inside: auto;
+  }
+}
