@@ -3,7 +3,7 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 
-const appPath = path.join(__dirname, "..", "..", "assets", "app.js");
+const appPath = path.join(__dirname, "..", "assets", "app.js");
 const app = fs.readFileSync(appPath, "utf8");
 
 test("app.js keeps the renderer entry points intact", () => {
