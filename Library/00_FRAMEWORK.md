@@ -1,6 +1,6 @@
 # The Deep-Reading Framework
 ### A repeatable pipeline for turning any book into long-term memory
-*Version 2.0 — generic, data-driven framework; validated across Books 01–03. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
+*Version 2.1 — generic, data-driven framework; validated across Books 01–03. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
 
 ---
 
@@ -235,6 +235,80 @@ One `index.md` per book, linking every module, plus:
 This is what turns a folder of study files into something a future website can render as a landing page with zero rework.
 
 **The GitHub Pages hub is one generic `/book/` shell for every book, not one folder per book.** The first working version of the Book 02 hub lived at `/book-02/`, with its own `index.html` and `unit.html`. That doesn't scale: a Book 03 would mean copy-pasting both files and then keeping every future fix applied to both copies — precisely the drift-between-copies mistake this document already warns about twice above, just at the page-template level instead of the data level. The fix: a single `/book/index.html` and `/book/unit.html`, parameterized by `?book_id=`, reading everything else — title, author, unit count, which links exist — from one manifest at `assets/books.json`. Adding a new book to the site is then one manifest entry, zero new HTML or JS files. If a future book doesn't yet have the full `data/` + `exam_bank/questions.json` architecture (see Book 01), give its manifest entry `"status": "legacy"` and a plain `links` map; the library page renders a simpler card for it instead of the full live-stats hub card, rather than the page breaking or silently showing wrong numbers.
+
+
+---
+
+## Module 9 — Listen & Learn, Narration, and Optional Audio
+
+Narration is an **optional learning layer**, not a second source of truth. A book must remain complete and usable when no audio exists.
+
+### Two narration modes
+
+1. **Listen to the Book** — source-oriented spoken paraphrase that follows the author's argument closely and clearly distinguishes paraphrase from quotation.
+2. **Listen & Learn** — source-oriented narration enriched with concise explanation, connections, practical insight, reflection, and transitions.
+
+The second mode may interpret and teach, but it must never silently turn framework interpretation into an author's claim.
+
+### Spoken narration versus editorial structure
+
+Narration files may use editorial sections such as `Narration`, `Deep Reading insight`, `Reflection`, `Transition`, and `Source map` to make the artifact auditable and editable.
+
+**Those labels are not automatically spoken.** The rendered transcript may show them, but the speech layer should concatenate the actual prose so a listener hears a natural teacher-like explanation rather than phrases such as “Deep Reading insight” or “Source map.”
+
+The narration should sound like one coherent journey:
+
+**question → source idea → explanation → consequence → connection → practice → reflection → transition**
+
+### Narration quality bar
+
+Every narration should:
+
+- be grounded in the canonical `units[].chunks[]` data and source map
+- explain important concepts rather than read headings or JSON
+- include meaningful insight where it improves understanding
+- distinguish interpretation from the author's wording
+- preserve important original-language terms
+- avoid invented quotations, citations, page references, or unsupported claims
+- contain practical reflection when appropriate
+- end naturally and, when useful, bridge into the next unit
+- remain an editorial learning artifact rather than becoming a duplicate concept/question database
+
+### Audio/runtime contract
+
+- Do **not** commit large recorded audio binaries to the repository.
+- Professionally recorded media may live externally and be referenced by a small optional manifest.
+- Narration scripts/transcripts are versioned in the repository.
+- The optional manifest is declarative and keyed by stable book/unit IDs.
+- The renderer must only fetch narration entries explicitly declared in the manifest; it must not probe guessed URLs for every unit.
+- Missing narration or missing recorded media must never make the book, unit, study guide, or assessment incomplete.
+- Browser speech synthesis may provide a fallback when a transcript exists but recorded media does not.
+
+### Unit-page experience
+
+When a unit has narration, the unit page should expose a clear **Listen & Learn** control near the unit's learning content and provide the transcript as a readable fallback.
+
+The player should:
+
+- start/stop playback cleanly
+- work on desktop and mobile
+- expose the transcript without requiring audio
+- stop playback when leaving the page
+- avoid uncaught browser-console errors when narration is absent
+- allow future recorded audio to replace browser speech without changing the learning-data schema
+
+### Validation
+
+Browser tests should cover at least:
+
+- a unit with narration shows the Listen & Learn control
+- a unit without narration remains clean and fully usable
+- transcript rendering contains substantive narration
+- playback controls do not throw runtime errors
+- optional narration does not create 404/network-console noise
+- mobile-sized unit pages remain usable
+- written learning content remains complete when audio is unavailable
+
 
 ---
 
