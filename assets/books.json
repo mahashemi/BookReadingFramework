@@ -1,11 +1,38 @@
 {
   "books": [
     {
+      "id": "book01",
+      "order": 1,
+      "status": "legacy",
+      "title": "Polarization Around the Character of 'Ali ibn Abi Talib",
+      "author": "Ayatullah Murtadha Mutahhari",
+      "primary_category": "Akhlaq",
+      "subjects": [
+        "Character",
+        "Imam Ali",
+        "Attraction and Repulsion"
+      ],
+      "dir": "Library/Book 01 - Polarization Around _Ali/",
+      "note": "Predates the framework's data-driven architecture -- no data/ or mind_maps/ folder yet. Self-contained interactive HTML files instead of a generated hub.",
+      "links": {
+        "studyGuide": "study_guide/study_guide_attraction_polarization.html",
+        "examPapers": "exam_bank/exam_papers_bank.html",
+        "masterWorkbook": "exam_bank/Polarization_Ali_MASTER_Exam_Workbook_34_Chapters_20_Simulated_Years.html"
+      }
+    },
+    {
       "id": "book02",
+      "order": 2,
       "status": "full",
       "title": "A Survey into the Lives of the Infallible Imams",
       "author": "Ayatullah Murtadha Mutahhari",
       "translator": "Zainab Muhammadi 'Araqi",
+      "primary_category": "Islamic History",
+      "subjects": [
+        "Sirah",
+        "Ahl al-Bayt",
+        "Imamate"
+      ],
       "dir": "Library/Book 02 - Survey of the Lives of the Infallible Imams/",
       "data": {
         "chunks": "data/chunks.json",
@@ -28,24 +55,18 @@
       }
     },
     {
-      "id": "book01",
-      "status": "legacy",
-      "title": "Polarization Around the Character of 'Ali ibn Abi Talib",
-      "author": "Ayatullah Murtadha Mutahhari",
-      "dir": "Library/Book 01 - Polarization Around _Ali/",
-      "note": "Predates the framework's data-driven architecture -- no data/ or mind_maps/ folder yet. Self-contained interactive HTML files instead of a generated hub.",
-      "links": {
-        "studyGuide": "study_guide/study_guide_attraction_polarization.html",
-        "examPapers": "exam_bank/exam_papers_bank.html",
-        "masterWorkbook": "exam_bank/Polarization_Ali_MASTER_Exam_Workbook_34_Chapters_20_Simulated_Years.html"
-      }
-    },
-    {
       "id": "book03",
+      "order": 3,
       "status": "full",
       "title": "Jihad bil-Nafs",
       "author": "Ayatollah Mazaheri",
       "translator": null,
+      "primary_category": "Akhlaq",
+      "subjects": [
+        "Spirituality",
+        "Self-Discipline",
+        "Jihad al-Nafs"
+      ],
       "dir": "Library/Book 03 - Jihad al-Nafs/",
       "data": {
         "chunks": "data/chunks.json",
