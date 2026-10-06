@@ -1,6 +1,6 @@
 # The Deep-Reading Framework
 ### A repeatable pipeline for turning any book into long-term memory
-*Version 1.6 — generic, data-driven framework; validated on Book 01 and Book 02. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
+*Version 1.7 — generic, data-driven framework; validated across Books 01–03. v1.7 adds the data-first Book 03 pattern and clarifies partial/in-progress book support. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
 
 ---
 
@@ -171,7 +171,7 @@ A book data file should contain:
 - source traceability
 - cross-unit connections
 
-The same engine must be able to render Book 01, Book 02 and future books by changing `book_id` / data, without copying the study logic.
+The same engine must be able to render Book 01, Book 02, Book 03 and future books by changing `book_id` / data, without copying the study logic. A book may enter the pipeline before every downstream module exists: the generic hub should render the source map and learning units from `data/chunks.json` without inventing placeholder exams, maps, or teaching links.
 
 The study UI should support, where applicable:
 - chapter/unit accordion
@@ -276,4 +276,4 @@ Everything after that follows the modules above in order.
       📁 teaching_materials
 ```
 
-Every future book just adds one more numbered folder with the identical internal structure — this is what makes a public website trivial later: each book folder = one page, `index.md` = the landing content.
+Every future book adds one numbered folder and progressively fills the same architecture. **Do not mark missing modules as complete:** a data-first book can be published with source + chunks + provenance first, while study, glossary, exam, mind-map, and teaching modules are added in later passes. The generic site must degrade gracefully rather than showing broken links or fabricated counts.
