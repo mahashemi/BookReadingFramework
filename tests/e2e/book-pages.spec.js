@@ -29,7 +29,7 @@ function attachRuntimeChecks(page) {
 for (const book of books) {
   test(book.name + " landing page loads learning data", async ({ page }) => {
     const errors = attachRuntimeChecks(page);
-    await page.goto(book.path + "/", { waitUntil: "networkidle" });
+    await page.goto("/book/?book_id=" + book.bookId, { waitUntil: "networkidle" });
     await expect(page.locator("body")).not.toContainText("The learning data could not be loaded");
     await expect(page.locator("#units .card.unit")).toHaveCount(book.units.length);
     expect(errors).toEqual([]);
@@ -39,7 +39,7 @@ for (const book of books) {
     test(book.name + " " + unit + " renders without runtime errors", async ({ page }) => {
       const errors = attachRuntimeChecks(page);
       await page.goto(
-        book.path + "/unit.html?book_id=" + book.bookId + "&unit=" + unit,
+        "/book/unit.html?book_id=" + book.bookId + "&unit=" + unit,
         { waitUntil: "networkidle" }
       );
       await expect(page.locator("h1")).not.toHaveText("");
