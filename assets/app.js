@@ -227,7 +227,8 @@ ${glossaryHTML}
      truncated copy of) the matching concept's own explanation, and every
      The canonical chunk text is rendered directly; derived Akhlaq lessons
      are now displayed separately when a book provides them. */
-  function unitPage(meta, data, qd, gl, id, audioManifest = null) {
+  function unitPage(meta, data, qd, gl, id) {
+    const audioManifest = arguments[5] || null;
     const dir = SITE + dirEnc(meta.dir);
     const units = data.units;
     const i = units.findIndex(u => u.id === id);
