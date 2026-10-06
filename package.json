@@ -1,0 +1,13 @@
+{
+  "name": "book-reading-framework",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Validation and browser tests for the BookReadingFramework repository.",
+  "scripts": {
+    "test": "node --test",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}

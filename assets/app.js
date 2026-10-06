@@ -219,7 +219,7 @@ ${glossaryHTML}
      Concepts are the primary content (a student opens this page to learn
      the concepts, not to read about the page). Claim/evidence data is
      intentionally not shown here: in this book's data every
-     claim_examples.reasoning/.evidence entry is identical to (or a
+     old claim-example layer's reasoning/evidence entry was identical to (or a
      truncated copy of) the matching concept's own explanation, and every
      .lesson is the same boilerplate line repeated 160 times -- displaying
      it anywhere would show a student the same duplicated bug, just lower
