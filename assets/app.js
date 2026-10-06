@@ -228,6 +228,7 @@ ${glossaryHTML}
      The canonical chunk text is rendered directly; derived Akhlaq lessons
      are now displayed separately when a book provides them. */
   function unitPage(meta, data, qd, gl, id) {
+    const audioManifest = arguments[5] || null;
     const dir = SITE + dirEnc(meta.dir);
     const units = data.units;
     const i = units.findIndex(u => u.id === id);
@@ -244,19 +245,21 @@ ${glossaryHTML}
     const testHref = meta.links?.unitTests ? dir + meta.links?.unitTests + '?unit=' + encodeURIComponent(u.id) : null;
     const nameOf = uid => { const k = units.findIndex(x => x.id === uid); return k < 0 ? uid : 'Unit ' + pad(k + 1) + ' \u00b7 ' + parts(units[k].title).label; };
     const breakdown = list => ['MCQ', 'FILL', 'SHORT', 'LONG'].map(t => t + ' ' + list.filter(q => q.type === t).length).join(' \u00b7 ');
+    const audioEntry = audioManifest?.units?.[u.id] || null;
+    const narrationText = [p.name, ...chunks.map(c => c.title + '. ' + c.text), u.akhlaq?.lesson || '', ...u.quotes.map(q => q.text)].filter(Boolean).join('\\n\\n');
+    const audioPlayer = buildAudioPlayer(meta, u, audioEntry, narrationText);
 
     document.title = (p.label === p.name ? p.name : p.label + ' \u2014 ' + p.name) + ' \u00b7 ' + meta.title;
 
     /* The canonical chunk text is the source-grounded learning passage. Render one passage reveal per concept rather than inventing a second explanation field or duplicating the same source text under another label. */
     const concepts = chunks.map(c => {
-      return `<article class="card unit" id="concept-${esc(c.id)}"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><p>${esc(c.text)}</p></details><div class="source-note"><a href="${esc(c.source_url || sourceHref)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></div></article>`;
+      return `<article class="card unit"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><p>${esc(c.text)}</p></details><div class="source-note"><a href="${esc(c.source_url || sourceHref)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></div></article>`;
     }).join('');
 
     const phrases = u.quotes.length ? `<section class="section"><div class="section-head compact"><div><h2>Key phrases</h2><p>Short phrases worth remembering verbatim. Consult the original page for full context.</p></div></div>${u.quotes.map(q => `<blockquote class="phrase">${esc(q.text)}</blockquote>`).join('')}</section>` : '';
 
     const termsHTML = terms.length ? `<section class="section"><div class="section-head compact"><div><h2>Key terms &amp; names in this unit</h2></div></div><div class="card term-list">${terms.map(e => termRow(e, meta.id, units)).join('')}</div></section>` : '';
 
-    const evidenceLinks = u.akhlaq?.evidence_chunk_ids?.length ? '<div class="evidence-links"><span class="meta-line">Evidence concepts:</span> ' + u.akhlaq.evidence_chunk_ids.map(cid => { const c = chunks.find(x => x.id === cid); return c ? '<a class="pill" href="#concept-' + encodeURIComponent(cid) + '">' + esc(c.title) + ' ↗</a>' : '<span class="pill">' + esc(cid) + '</span>'; }).join(' ') + '</div>' : '';
     const links = u.connections.length ? `<section class="section"><div class="section-head compact"><div><h2>Connections</h2><p>Where this unit's ideas reappear elsewhere in the book.</p></div></div><div class="grid">${u.connections.map(c => `<a class="card unit" href="${unitHref(meta.id, c.to_unit_id)}"><div class="num">${esc(nameOf(c.to_unit_id))}</div><h3>${esc(c.label)}</h3><span class="more">Go to unit \u2192</span></a>`).join('')}</div></section>` : '';
 
     app.innerHTML = `
@@ -270,8 +273,9 @@ ${glossaryHTML}
     ${testHref ? `<a class="btn" href="${testHref}">Take unit test</a>` : ''}
     ${meta.links?.mindMap ? `<a class="btn" href="${dir + meta.links.mindMap}">Mind map</a>` : ''}
   </div>
+  ${audioPlayer}
 </section>
-${u.akhlaq?.lesson ? `<section class="section" id="akhlaq"><div class="card panel"><div class="num">Akhlaq</div><h2>Akhlaq lesson</h2><p>${esc(u.akhlaq.lesson)}</p><p class="meta-line">Derived from the unit source-grounded concepts. Follow the evidence links below to read the exact concepts behind this lesson.</p>${evidenceLinks}<p class="meta-line"></p></div></section>` : ""}
+${u.akhlaq?.lesson ? `<section class="section" id="akhlaq"><div class="card panel"><div class="num">Akhlaq</div><h2>Akhlaq lesson</h2><p>${esc(u.akhlaq.lesson)}</p><p class="meta-line">Derived from the unit source-grounded concepts; evidence: ${u.akhlaq.evidence_chunk_ids.map(x => esc(x)).join(" · ")}</p></div></section>` : ""}
 <section class="section" id="concepts"><div class="section-head compact"><div><h2>Concepts</h2><p>Each concept is a canonical learning chunk tied directly to its source.</p></div></div><div class="grid">${concepts}</div></section>
 ${phrases}
 ${termsHTML}
@@ -296,6 +300,54 @@ ${links}
   <a href="${bookPage(meta.id)}#units">All learning units</a>
   <a ${next ? `href="${unitHref(meta.id, next.id)}"` : 'aria-disabled="true"'}>${next ? esc(parts(next.title).label) : 'Next unit'} \u2192</a>
 </nav>`;
+  }
+
+  /* ---------- audio player ---------- */
+  function buildAudioPlayer(meta, unit, entry, text) {
+    const mediaUrl = entry?.media_url || entry?.url || '';
+    const mime = entry?.mime || 'audio/mpeg';
+    const label = mediaUrl ? 'Recorded audio' : 'Browser voice';
+    const lang = entry?.lang || meta.language || 'fa-IR';
+    return `<section class="audio-player card" data-audio-player data-audio-text="${esc(text)}" data-audio-lang="${esc(lang)}">
+  <div class="audio-copy"><div class="num">Listen</div><h2>Listen to this unit</h2><p data-audio-status>${esc(label)}${mediaUrl ? ' · professional narration' : ' · temporary fallback until recorded narration is available'}</p></div>
+  <div class="audio-controls">
+    ${mediaUrl ? `<audio controls preload="metadata" data-audio-media><source src="${esc(mediaUrl)}" type="${esc(mime)}"></audio>` : ''}
+    <button class="btn primary" type="button" data-audio-play>${mediaUrl ? 'Play narration' : 'Play with browser voice'}</button>
+    <button class="btn" type="button" data-audio-stop>Stop</button>
+  </div>
+  <div class="audio-fallback" data-audio-fallback hidden>Recorded audio could not be played here. Switching to the browser voice.</div>
+</section>`;
+  }
+  function wireAudioPlayers() {
+    document.querySelectorAll('[data-audio-player]').forEach(player => {
+      const play = player.querySelector('[data-audio-play]');
+      const stop = player.querySelector('[data-audio-stop]');
+      const media = player.querySelector('[data-audio-media]');
+      const fallback = player.querySelector('[data-audio-fallback]');
+      const status = player.querySelector('[data-audio-status]');
+      const text = player.dataset.audioText || '';
+      const lang = player.dataset.audioLang || 'fa-IR';
+      let usingSpeech = !media;
+      const browserSpeak = () => {
+        if (!('speechSynthesis' in window) || !text) { status.textContent = 'Audio is not available in this browser.'; return; }
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = lang;
+        const voices = window.speechSynthesis.getVoices();
+        const preferred = voices.find(v => v.lang.toLowerCase().startsWith(lang.toLowerCase().split('-')[0]));
+        if (preferred) utterance.voice = preferred;
+        utterance.onstart = () => { status.textContent = 'Browser voice · temporary fallback'; };
+        utterance.onend = () => { status.textContent = 'Browser voice · finished'; };
+        utterance.onerror = () => { status.textContent = 'Browser voice could not start.'; };
+        window.speechSynthesis.speak(utterance);
+      };
+      if (media) media.addEventListener('error', () => { usingSpeech = true; fallback.hidden = false; status.textContent = 'Recorded audio failed · browser voice fallback'; play.textContent = 'Play with browser voice'; });
+      play.addEventListener('click', () => {
+        if (usingSpeech) return browserSpeak();
+        media.play().catch(() => { usingSpeech = true; fallback.hidden = false; status.textContent = 'Recorded audio failed · browser voice fallback'; play.textContent = 'Play with browser voice'; browserSpeak(); });
+      });
+      stop.addEventListener('click', () => { if (media) media.pause(); if ('speechSynthesis' in window) window.speechSynthesis.cancel(); });
+    });
   }
 
   /* ---------- legacy book landing (no generated hub yet) ---------- */
@@ -331,16 +383,17 @@ ${links}
         if (!meta) throw new Error('Unknown book_id: ' + bookId);
         if (meta.status === 'legacy') { legacyNotice(meta); app.setAttribute('aria-busy', 'false'); return; }
         const dir = SITE + dirEnc(meta.dir);
-        const [data, qd, gl] = await Promise.all([getJSON(dir + meta.data.chunks), optional(getJSON(dir + meta.data.questions)), optional(getJSON(dir + meta.data.glossary))]);
+        const [data, qd, gl, audioManifest] = await Promise.all([getJSON(dir + meta.data.chunks), optional(getJSON(dir + meta.data.questions)), optional(getJSON(dir + meta.data.glossary)), meta.audio?.manifest ? optional(getJSON(dir + meta.audio.manifest)) : Promise.resolve(null)]);
         const unit = qs.get('unit');
         if (unit) {
-          unitPage(meta, data, qd, gl, unit);
+          unitPage(meta, data, qd, gl, unit, audioManifest);
         } else {
           bookHome(meta, data, qd, gl);
         }
       }
       if (inBook && !app.querySelector('.site-footer')) app.insertAdjacentHTML('beforeend', siteFooter());
       app.setAttribute('aria-busy', 'false');
+      wireAudioPlayers();
       if (location.hash) {
         const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
         if (el) el.scrollIntoView();
