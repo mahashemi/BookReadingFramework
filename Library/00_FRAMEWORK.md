@@ -1,6 +1,6 @@
 # The Deep-Reading Framework
 ### A repeatable pipeline for turning any book into long-term memory
-*Version 1.7 — generic, data-driven framework; validated across Books 01–03. v1.7 adds the data-first Book 03 pattern and clarifies partial/in-progress book support. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
+*Version 1.8 — generic, data-driven framework; validated across Books 01–03. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
 
 ---
 
@@ -31,6 +31,7 @@ Book data follows one stable hierarchy so the UI does not need a different archi
 Book
 └── units[]
     ├── unit metadata
+    ├── akhlaq { lesson, evidence_chunk_ids }   ← when the book is an Akhlaq/character text
     ├── quotes[]
     ├── connections[]
     └── chunks[]
@@ -51,6 +52,7 @@ For every chapter/reading-unit, extract five things:
 - **Key Terms & Names** — anything a reader would need to look up, with a one-line gloss
 - **Key Quotes** — the sentences worth memorizing verbatim (usually the author's own claim-statements, not the illustrating examples)
 - **Claim → Reasoning → Example → Lesson structures** — the author's claim, the reasoning/evidence used to support it, and the lesson it teaches
+- **Akhlaq lesson** — for books centered on moral character, add one concise, derived statement of the character virtue/disposition the unit is cultivating, plus the source chunk IDs that support that interpretation. This is a learning-layer synthesis, **not** a quotation or a claim to be the author's exact wording.
 - **Questions** — tagged by type (see Module 4), designed to test understanding rather than recognition
 
 **The claim → example pattern.** Most serious non-fiction authors argue by stating a general claim, then proving it with a story, statistic, or historical case. Once you spot this pattern in a book, extraction becomes mechanical: the claim is the quote/slide material, the example is what you narrate or explain. Look for it explicitly in Module 2.
@@ -62,6 +64,27 @@ For every chapter/reading-unit, extract five things:
 - `concepts.explanation` itself — the field the first bullet's fix leaned on as "the genuinely distilled layer" — turned out to be **byte-for-byte identical to the raw chunk text in all 160 concepts**. It was never a distillation; it's the source passage wearing a second label. The unit page was showing the identical passage twice: once as an always-visible "explanation," once again in a collapsed "source passage" reveal.
 
 Both read as real, distinct content at a glance, which is exactly why both shipped without the duplication being noticed. **Verify every "explanation," "reasoning," "evidence," or "summary" field against the actual source chunk before trusting it's genuine distillation** — don't assume a field name describes what's actually in it. A quick check: for a sample of entries, confirm the field is neither byte-identical to, nor a truncated prefix of, the matching `source_chunk_id`'s text in `chunks.json`. A rendering layer should not display a field as if it adds information until that check passes. (Book 02's unit pages now show the concept title plus one single reveal of the passage — see `data/README.md`.)
+
+### Akhlaq layer — turning moral teaching into character formation
+
+For books whose subject is **akhlaq, character, spiritual discipline, or moral formation**, each learning unit should answer a second question alongside “What does the author teach?”:
+
+> **What quality of character is this unit trying to form in the reader?**
+
+Store this as:
+
+~~~json
+"akhlaq": {
+  "lesson": "A concise character-formation lesson derived from the unit",
+  "evidence_chunk_ids": ["bXX-uNN-NNN", "bXX-uNN-NNN"]
+}
+~~~
+
+The lesson should name a **settled quality of character and its practical direction**—for example patience under pressure, justice without expediency, sincere service, restraint in speech, repentance with repair, or trust in God without passivity. It should not become a generic motivational slogan.
+
+The evidence IDs make the interpretation auditable. They must point to existing canonical chunks in the same unit. The renderer may display the lesson as a learning aid, but the source passage remains authoritative. When the source does not support a moral interpretation confidently, leave the lesson out rather than inventing one.
+
+This layer is especially important for the current Books 02 and 03: both contain historical, theological, and devotional material whose **akhlaq significance can otherwise remain implicit**. The purpose is not to flatten the books into “moral of the story” summaries; it is to make the character being cultivated explicit while preserving the author's argument and evidence.
 
 ### Module 3 — Mind Maps (Dual Coding)
 Two layers, per your preference:
