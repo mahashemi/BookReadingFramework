@@ -263,7 +263,7 @@ ${glossaryHTML}
   <h1>${esc(p.name)}</h1>
   <div class="meta-line">${chunks.length} concepts \u00b7 ${chunkCount} source chunks${qList ? ' \u00b7 ' + qList.length + ' questions' : ''}</div>
   <div class="actions">
-    <a class="btn primary" href="${esc(u.source_url)}" target="_blank" rel="noopener">Read the original \u2197</a>
+    <a class="btn primary" href="${esc(sourceHref)}" target="_blank" rel="noopener">Read the original \u2197</a>
     ${testHref ? `<a class="btn" href="${testHref}">Take unit test</a>` : ''}
     ${meta.links?.mindMap ? `<a class="btn" href="${dir + meta.links.mindMap}">Mind map</a>` : ''}
   </div>
@@ -280,7 +280,7 @@ ${links}
     <div><span>Concepts</span><strong>${chunks.length}</strong></div>
     <div><span>Questions</span><strong>${qList ? qList.length : '\u2014'}</strong></div>
     <div><span>Question mix</span><strong style="font-size:13px">${qList ? esc(breakdown(qList)) : '\u2014'}</strong></div>
-    <div><span>Original text</span><strong><a href="${esc(u.source_url)}" target="_blank" rel="noopener">al-islam.org \u2197</a></strong></div>
+    <div><span>Original text</span><strong><a href="${esc(sourceHref)}" target="_blank" rel="noopener">Original source \u2197</a></strong></div>
   </div>
 </div></section>
 <section class="section"><div class="card panel practice-panel">
