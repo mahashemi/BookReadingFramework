@@ -56,7 +56,10 @@
         "studyGuide": "study_guide/study.html",
         "mindMap": "mind_maps/book03_interactive.html",
         "mindMapOutline": "mind_maps/book03_static_outline.md",
-        "teachingGuide": "teaching_materials/BOOK03_TEACHING_GUIDE.md"
+        "teachingGuide": "teaching_materials/BOOK03_TEACHING_GUIDE.md",
+        "unitTests": "exam_bank/unit_tests.html",
+        "fullBookExam": "exam_bank/full_book_exam.html",
+        "interleavedExam": "exam_bank/interleaved_exam.html"
       }
     }
   ]
