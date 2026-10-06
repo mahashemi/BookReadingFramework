@@ -59,6 +59,8 @@ Book 01 predates the current data-driven architecture and remains marked as lega
 
 ## Framework
 
+**Deep Reading Framework v1.8**
+
 The methodology and canonical schema live in [`Library/00_FRAMEWORK.md`](Library/00_FRAMEWORK.md) — currently **v1.8**.
 
 The framework is designed to scale to future books without copying the study engine or inventing book-specific page architecture.
