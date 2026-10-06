@@ -322,32 +322,110 @@
       "id": "u04",
       "title": "گفتار چهارم : انسان ملكوتى",
       "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html",
-      "quotes": [],
-      "connections": [],
+      "quotes": [
+        {
+          "id": "u04-q01",
+          "text": "عليك بالجهاد الاكبر"
+        },
+        {
+          "id": "u04-q02",
+          "text": "اشجع الناس من غلب هواه"
+        },
+        {
+          "id": "u04-q03",
+          "text": "واستعينوا بالصبر و الصلاة"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u03",
+          "label": "The two dimensions of the human being become a concrete inner battle between the spiritual and animal dimensions"
+        },
+        {
+          "to_unit_id": "u05",
+          "label": "The next chapter identifies the lower self as the central adversary in this inner battle"
+        },
+        {
+          "to_unit_id": "u06",
+          "label": "Prayer and patience become concrete external supports for strengthening the spiritual side"
+        },
+        {
+          "to_unit_id": "u18",
+          "label": "Night prayer later develops the same idea of using worship as strength for jihad al-akbar"
+        }
+      ],
       "chunks": [
         {
           "id": "b03-u04-001",
-          "title": "The chapter develops the practical discipline of jihad with the self",
+          "title": "The inner war is jihad al-akbar",
           "order": 1,
-          "text": "This unit continues the book's central movement from understanding the two dimensions of the human being toward the practical work required to govern the lower self.",
+          "text": "Mazaheri describes a permanent struggle inside the human being between the spiritual/angelic dimension and the bodily/animal dimension. He presents this as the arena the Prophet calls the greater jihad, so moral life is not occasional conflict but a continuing contest.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0070"
         },
         {
           "id": "b03-u04-002",
-          "title": "Self-mastery is gradual rather than instantaneous",
+          "title": "Real courage is mastery over one's own desire",
           "order": 2,
-          "text": "The struggle with the self is presented as repeated training: the person strengthens will through practice, resistance and returning to the right course after failure.",
+          "text": "The chapter distinguishes physical strength from moral courage. Lifting a heavy stone may demonstrate bodily strength, but the greater courage is to overcome hawa and refuse the demand of the lower self when it conflicts with what is right.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0071"
         },
         {
           "id": "b03-u04-003",
-          "title": "The goal is transformation of the whole person",
+          "title": "Victory and defeat are experienced within the same person",
           "order": 3,
-          "text": "Jihad is not a narrow battle against one desire. It aims at a reordered person whose intellect, conscience, desires and conduct increasingly point in the same direction.",
+          "text": "When the spiritual side overcomes a sinful impulse, the person experiences dignity and victory; when the lower side wins, the person experiences shame. Mazaheri emphasizes that in this battle the person is simultaneously the combatant and the territory being fought over.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0072"
+        },
+        {
+          "id": "b03-u04-004",
+          "title": "Humanity is located in the spiritual dimension",
+          "order": 4,
+          "text": "The chapter argues that human dignity is not exhausted by having a body, senses or intelligence as mere capacity. What makes a person fully human is the active spiritual and moral dimension: conscience, reflection and responsiveness to what is right.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0073"
+        },
+        {
+          "id": "b03-u04-005",
+          "title": "Loss of moral perception is worse than loss of physical ability",
+          "order": 5,
+          "text": "Using Qur'anic descriptions of people who have hearts, eyes and ears but do not understand, see or hear spiritually, Mazaheri presents moral numbness as a deeper form of human degradation than ordinary physical weakness.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0073"
+        },
+        {
+          "id": "b03-u04-006",
+          "title": "The higher side is outnumbered and needs reinforcement",
+          "order": 6,
+          "text": "The lower side is portrayed as supported by many forces: wealth, status, attachment to children, resentment, envy, inherited tendencies, environment and nourishment. The practical implication is that willpower alone is insufficient; the spiritual side needs deliberate reinforcement.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0076"
+        },
+        {
+          "id": "b03-u04-007",
+          "title": "Obligations are the first external source of strength",
+          "order": 7,
+          "text": "Mazaheri's first major practical support is giving serious importance to obligations. When a duty genuinely matters to a person and failure to perform it creates inner resistance, worship becomes a source of strength in the larger battle.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0076"
+        },
+        {
+          "id": "b03-u04-008",
+          "title": "Prayer is a central weapon in the greater jihad",
+          "order": 8,
+          "text": "The chapter applies Qur'an 2:45 to the inner struggle: patience and prayer are requested as help. Prayer is therefore presented not merely as a legal requirement but as a disciplined means of strengthening the spiritual side against the lower self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0077"
+        },
+        {
+          "id": "b03-u04-009",
+          "title": "Neglecting prayer can sever the person's protective relationship with God",
+          "order": 9,
+          "text": "The later warning about treating prayer lightly makes the practical stakes explicit. The chapter presents prayer as spiritual nourishment and argues that persistent neglect leaves a person increasingly exposed to the forces of the lower self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0085"
         }
       ]
     },
@@ -866,49 +944,106 @@
       "id": "u12",
       "title": "گفتار دوازدهم : سعه صدر ( 1 )",
       "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html",
-      "quotes": [],
-      "connections": [
+      "quotes": [
         {
-          "to_unit_id": "u11",
-          "label": "Immediate correction is the practical antidote to moral drift"
+          "id": "u12-q01",
+          "text": "بسم الله الرحمن الرحيم ، الم نشرح لك صدرك"
         },
         {
-          "to_unit_id": "u17",
-          "label": "Intention is central to sincere action"
+          "id": "u12-q02",
+          "text": "فان مع العسر يسرا ، ان مع العسر يسرا ، فاذا فرغت فانصب ، و الى ربك فارغب"
+        },
+        {
+          "id": "u12-q03",
+          "text": "من دخل في شبر الاول تكبر و من دخل من شبر الثاني تواضع من دخل في شبر الثالث ، يعلم انه لا يعلم شيئا"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u04",
+          "label": "Prayer is one of the external supports that strengthens the inner person; this chapter develops another support, expanded spiritual capacity"
+        },
+        {
+          "to_unit_id": "u06",
+          "label": "Patience becomes sustainable when the person develops the inner capacity to absorb difficulty"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "Repeated patience can become a stable character rather than a temporary reaction"
+        },
+        {
+          "to_unit_id": "u13",
+          "label": "The next chapter develops the formation mechanism through which expanded capacity and conduct reinforce one another"
+        },
+        {
+          "to_unit_id": "u16",
+          "label": "Activity and perseverance later turn the same principle into a broader discipline of carrying responsibilities"
         }
       ],
       "chunks": [
         {
           "id": "b03-u12-001",
-          "title": "The chapter applies self-jihad to ordinary moral choices",
+          "title": "Sabr alone is not enough if the person cannot absorb pressure",
           "order": 1,
-          "text": "The struggle with the self is shown in everyday decisions rather than only extraordinary spiritual states.",
+          "text": "Mazaheri introduces sadr/sharh al-sadr as the capacity needed to remain steady when difficulty, criticism and competing demands arrive. The point is not simply tolerating pain but having enough inner breadth that pressure does not dictate one's behavior.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0226"
         },
         {
           "id": "b03-u12-002",
-          "title": "Intention changes the moral meaning of an outward action",
+          "title": "Expanded capacity is especially necessary for a teacher and reformer",
           "order": 2,
-          "text": "A person's inner motive can transform an apparently good action into self-serving behavior, making examination of intention part of practical self-discipline.",
+          "text": "The chapter repeatedly applies expanded spiritual capacity to educators. A person responsible for guiding others must be able to absorb difficult personalities and setbacks without allowing anger or discouragement to destroy the work.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0229"
         },
         {
           "id": "b03-u12-003",
-          "title": "Repeated choices gradually reveal the dominant direction of the self",
+          "title": "The Qur'an's language of شرح الصدر describes an inward expansion",
           "order": 3,
-          "text": "The chapter treats habits as evidence of what a person has allowed to become stronger inside him. Self-knowledge therefore comes from watching repeated choices.",
+          "text": "The opening of Surat al-Sharh is used as a conceptual model: expanded capacity is associated with removal of burdens, ease amid difficulty and renewed orientation toward God after completing one task.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0228"
+        },
+        {
+          "id": "b03-u12-004",
+          "title": "Difficulty becomes manageable when the person has the right inner capacity",
+          "order": 4,
+          "text": "The repeated promise that with hardship comes ease is connected to the practical need for endurance. Mazaheri does not portray difficulty as disappearing; rather, a stronger inner state changes how the person carries it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0228"
+        },
+        {
+          "id": "b03-u12-005",
+          "title": "The person should keep moving after one task is finished",
+          "order": 5,
+          "text": "The command فاذا فرغت فانصب is interpreted as continued effort rather than permanent rest after a single success. Self-building therefore requires continuity: one completed responsibility becomes the starting point for the next.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0228"
+        },
+        {
+          "id": "b03-u12-006",
+          "title": "Sabr and expanded capacity reinforce one another",
+          "order": 6,
+          "text": "A person who repeatedly resists anger, temptation and discouragement gradually develops greater capacity; that greater capacity then makes the next act of patience easier. The chapter therefore treats spiritual traits as trainable rather than fixed.",
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html"
         },
         {
-          "id": "b03-u12-004",
-          "title": "The remedy is deliberate correction before the habit hardens",
-          "order": 4,
-          "text": "Once a person notices a recurring tendency, he should intervene through contrary practice instead of waiting for the problem to disappear by itself.",
+          "id": "b03-u12-007",
+          "title": "Knowledge requires humility as it deepens",
+          "order": 7,
+          "text": "The three-span saying illustrates a progression: shallow knowledge can produce pride, deeper knowledge produces humility, and still deeper knowledge produces recognition of one's limits. Expanded capacity therefore includes intellectual humility.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0233"
+        },
+        {
+          "id": "b03-u12-008",
+          "title": "Prophetic and Imam Ali examples show capacity under pressure",
+          "order": 8,
+          "text": "The discussion of Moses and examples from the religious struggle are used to show that confronting a powerful opponent requires an inner state capable of remaining composed rather than being psychologically defeated before acting.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0235"
         }
       ]
     },
@@ -916,49 +1051,106 @@
       "id": "u13",
       "title": "گفتار سيزدهم : سعه صدر ( 2 )",
       "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html",
-      "quotes": [],
-      "connections": [
+      "quotes": [
         {
-          "to_unit_id": "u07",
-          "label": "The malakah of patience is the clearest example of repeated practice"
+          "id": "u13-q01",
+          "text": "افمن شرح الله صدره للإسلام فهو علي نور من ربه"
         },
         {
-          "to_unit_id": "u10",
-          "label": "Vices also become stable dispositions through repetition"
+          "id": "u13-q02",
+          "text": "فمن يرد الله ان يهديه يشرح صدره للإسلام"
+        },
+        {
+          "id": "u13-q03",
+          "text": "فاذا فرغت فانصب"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u12",
+          "label": "Expanded capacity is not merely a feeling; repeated conduct can strengthen or weaken it"
+        },
+        {
+          "to_unit_id": "u06",
+          "label": "Patience is both an expression of inner capacity and a practice that builds it"
+        },
+        {
+          "to_unit_id": "u14",
+          "label": "Speech and restraint become tests of whether expanded capacity survives real interpersonal pressure"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincerity requires enough inner stability to resist status and recognition"
+        },
+        {
+          "to_unit_id": "u24",
+          "label": "Tawakkul later supplies another source of stability when outcomes remain outside one's control"
         }
       ],
       "chunks": [
         {
           "id": "b03-u13-001",
-          "title": "Moral character is built through repeated conduct",
+          "title": "Expanded capacity is described as light and guidance",
           "order": 1,
-          "text": "The chapter continues the malakah framework: actions are not isolated events but exercises that strengthen a disposition.",
+          "text": "The chapter uses Qur'anic language to connect شرح الصدر with divine light. The practical implication is that spiritual breadth changes perception: a person can face difficulty without interpreting every obstacle as a reason to collapse.",
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html"
         },
         {
           "id": "b03-u13-002",
-          "title": "The same mechanism can create virtue or vice",
+          "title": "Narrowness turns ordinary difficulty into psychological suffocation",
           "order": 2,
-          "text": "Repeated patience can become patience as a stable quality, while repeated anger, harshness or selfishness can become equally stable vices.",
+          "text": "The contrasting Qur'anic image of a constricted chest describes a person for whom the world becomes unbearably narrow. Mazaheri connects this to losing the ability to absorb problems, temptation and criticism.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0249"
         },
         {
           "id": "b03-u13-003",
-          "title": "Self-jihad therefore requires behavioral practice",
+          "title": "Faith and action form a feedback loop",
           "order": 3,
-          "text": "Knowing a virtue intellectually is insufficient. The person must deliberately create situations in which the desired response is practiced until it becomes easier and more natural.",
+          "text": "Mazaheri explicitly describes a reciprocal process: good qualities produce good actions, and good actions strengthen those qualities. The same mechanism works negatively when vice produces bad action and bad action deepens vice.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0250"
         },
         {
           "id": "b03-u13-004",
-          "title": "A stable disposition eventually changes what feels pleasurable",
+          "title": "Self-building therefore requires changing behavior, not only understanding",
           "order": 4,
-          "text": "The mature stage of moral training is not merely forcing oneself to do the right thing; the right action gradually becomes the action the person wants.",
+          "text": "Because conduct feeds back into character, merely knowing that pride, envy or desire is wrong is insufficient. The person must deliberately interrupt the behavior through which the trait is being reinforced.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0250"
+        },
+        {
+          "id": "b03-u13-005",
+          "title": "Repeated practice is the mechanism of moral formation",
+          "order": 5,
+          "text": "The chapter compares self-building to repeated charging and repeated suggestion. Repetition is not accidental: the person becomes what he repeatedly does, says and attends to.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0255"
+        },
+        {
+          "id": "b03-u13-006",
+          "title": "Attention is a condition of victory",
+          "order": 6,
+          "text": "The discussion of Uhud and moments of forgetting is used to show that a person can lose ground through a brief lapse of attention. Moral vigilance is therefore part of the discipline, not an optional extra.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0258"
+        },
+        {
+          "id": "b03-u13-007",
+          "title": "The work is difficult because acting is harder than understanding",
+          "order": 7,
+          "text": "Ethical principles may be easy to explain, while removing a deeply rooted vice can require years of sustained effort. The chapter deliberately separates intellectual comprehension from embodied self-reform.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0254"
+        },
+        {
+          "id": "b03-u13-008",
+          "title": "Steadiness means continuing after a good day",
+          "order": 8,
+          "text": "The command فاذا فرغت فانصب is reused as a rule for self-building: one successful act does not finish the struggle. A person must continue while remaining oriented toward God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0253"
         }
       ]
     },
