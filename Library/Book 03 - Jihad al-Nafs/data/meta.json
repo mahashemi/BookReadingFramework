@@ -1,0 +1,288 @@
+{
+  "book_id": "book03",
+  "title": "Jihad bil-Nafs",
+  "author": "Ayatollah Mazaheri",
+  "translator": null,
+  "source_title": "Jihad bil-Nafs",
+  "source": "Ahlulbayt Library",
+  "source_dir": "Library/Book 03 - Jihad al-Nafs/source/",
+  "source_manifest": "source/MANIFEST.json",
+  "source_chapter_manifest": "../../reference/ablibrary/chapters.json",
+  "reading_units": [
+    {
+      "id": "u01",
+      "number": 1,
+      "title": "گفتار اول : تعليم و تربيت",
+      "source_file": "source/chapter-01.html",
+      "source_internal_pages": [
+        11,
+        30
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u02",
+      "number": 2,
+      "title": "گفتار دوم : گناه و تعديل غرايز",
+      "source_file": "source/chapter-02.html",
+      "source_internal_pages": [
+        31,
+        49
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u03",
+      "number": 3,
+      "title": "گفتار سوم : جهاد با نفس",
+      "source_file": "source/chapter-03.html",
+      "source_internal_pages": [
+        50,
+        69
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u04",
+      "number": 4,
+      "title": "گفتار چهارم : انسان ملكوتى",
+      "source_file": "source/chapter-04.html",
+      "source_internal_pages": [
+        70,
+        86
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u05",
+      "number": 5,
+      "title": "گفتار پنجم : نفس اماره",
+      "source_file": "source/chapter-05.html",
+      "source_internal_pages": [
+        87,
+        110
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u06",
+      "number": 6,
+      "title": "گفتار ششم : صبر",
+      "source_file": "source/chapter-06.html",
+      "source_internal_pages": [
+        111,
+        128
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u07",
+      "number": 7,
+      "title": "گفتار هفتم : ملكه صبر",
+      "source_file": "source/chapter-07.html",
+      "source_internal_pages": [
+        129,
+        147
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u08",
+      "number": 8,
+      "title": "گفتار هشتم : آثار صبر",
+      "source_file": "source/chapter-08.html",
+      "source_internal_pages": [
+        148,
+        167
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u09",
+      "number": 9,
+      "title": "گفتار نهم : توبه ( 1 )",
+      "source_file": "source/chapter-09.html",
+      "source_internal_pages": [
+        168,
+        189
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u10",
+      "number": 10,
+      "title": "گفتار دهم : توبه ( 2 )",
+      "source_file": "source/chapter-10.html",
+      "source_internal_pages": [
+        190,
+        211
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u11",
+      "number": 11,
+      "title": "گفتار يازدهم : توبه ( 3 )",
+      "source_file": "source/chapter-11.html",
+      "source_internal_pages": [
+        212,
+        225
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u12",
+      "number": 12,
+      "title": "گفتار دوازدهم : سعه صدر ( 1 )",
+      "source_file": "source/chapter-12.html",
+      "source_internal_pages": [
+        226,
+        247
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u13",
+      "number": 13,
+      "title": "گفتار سيزدهم : سعه صدر ( 2 )",
+      "source_file": "source/chapter-13.html",
+      "source_internal_pages": [
+        248,
+        262
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u14",
+      "number": 14,
+      "title": "گفتار چهاردهم : كفاره گناه",
+      "source_file": "source/chapter-14.html",
+      "source_internal_pages": [
+        263,
+        277
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u15",
+      "number": 15,
+      "title": "گفتار پانزدهم : بندگى خدا",
+      "source_file": "source/chapter-15.html",
+      "source_internal_pages": [
+        278,
+        296
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u16",
+      "number": 16,
+      "title": "گفتار شانزدهم : فعاليت ، استقامت و توبه به جوانب كار",
+      "source_file": "source/chapter-16.html",
+      "source_internal_pages": [
+        297,
+        317
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u17",
+      "number": 17,
+      "title": "گفتار هفدهم : اخلاص",
+      "source_file": "source/chapter-17.html",
+      "source_internal_pages": [
+        318,
+        334
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u18",
+      "number": 18,
+      "title": "گفتار هجدهم : نماز شب",
+      "source_file": "source/chapter-18.html",
+      "source_internal_pages": [
+        335,
+        357
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u19",
+      "number": 19,
+      "title": "گفتار نوزدهم : پناه بردن به قرآن",
+      "source_file": "source/chapter-19.html",
+      "source_internal_pages": [
+        358,
+        380
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u20",
+      "number": 20,
+      "title": "گفتار بيستم : فوائد دعا",
+      "source_file": "source/chapter-20.html",
+      "source_internal_pages": [
+        381,
+        408
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u21",
+      "number": 21,
+      "title": "گفتار بيست و يكم : دعا",
+      "source_file": "source/chapter-21.html",
+      "source_internal_pages": [
+        409,
+        427
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u22",
+      "number": 22,
+      "title": "گفتار بيست و دوم : توسل به اهلبيت ( عليهم‌السلام )",
+      "source_file": "source/chapter-22.html",
+      "source_internal_pages": [
+        428,
+        448
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u23",
+      "number": 23,
+      "title": "گفتار بيست و سه : ياد خدا",
+      "source_file": "source/chapter-23.html",
+      "source_internal_pages": [
+        449,
+        466
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u24",
+      "number": 24,
+      "title": "گفتار بيست و چهارم : توكل بر خدا",
+      "source_file": "source/chapter-24.html",
+      "source_internal_pages": [
+        467,
+        486
+      ],
+      "status": "source_ready"
+    },
+    {
+      "id": "u25",
+      "number": 25,
+      "title": "گفتار بيست و پنجم : مراحل توحيد و توكل",
+      "source_file": "source/chapter-25.html",
+      "source_internal_pages": [
+        487,
+        511
+      ],
+      "status": "source_ready"
+    }
+  ]
+}
