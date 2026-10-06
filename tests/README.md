@@ -23,10 +23,6 @@ npm test
 
 The first suite intentionally uses Node's built-in test runner so structural checks require no third-party dependencies.
 
-## Future browser tests
-
-A later phase will add Playwright tests for real browser behavior: loading pages, expanding units, revealing answers, scoring, review persistence, navigation, and mind-map expansion.
-
 ## Deployment rule
 
-The test suite is intended to become a required GitHub Actions check before Pages deployment is allowed. Deployment configuration is deliberately not changed by this initial test-suite commit.
+The structural and browser suites are required CI gates before Pages deployment and PR merge. Deployment configuration is deliberately not changed by this initial test-suite commit.

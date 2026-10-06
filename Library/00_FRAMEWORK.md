@@ -1,6 +1,6 @@
 # The Deep-Reading Framework
 ### A repeatable pipeline for turning any book into long-term memory
-*Version 1.8 — generic, data-driven framework; validated across Books 01–03. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
+*Version 1.9 — generic, data-driven framework; validated across Books 01–03. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
 
 ---
 
@@ -300,3 +300,46 @@ Everything after that follows the modules above in order.
 ```
 
 Every future book adds one numbered folder and progressively fills the same architecture. **Do not mark missing modules as complete:** a data-first book can be published with source + chunks + provenance first, while study, glossary, exam, mind-map, and teaching modules are added in later passes. The generic site must degrade gracefully rather than showing broken links or fabricated counts.
+
+
+---
+
+## Module 8 — Application Runtime Quality Gate
+
+The learning data can be correct while the public application is broken. A generated page is not considered complete merely because its JSON validates or its HTML exists.
+
+**The shared JavaScript renderer is production application code and must be extensively tested before a PR can merge.** Every change to the renderer, routing, manifest loading, optional links, source-link fallbacks, unit rendering, or shared helpers must pass both structural tests and real-browser tests.
+
+### Required gates before merge
+
+1. **Static application-contract tests**
+   - Verify the renderer contains the required rendering paths and shared helpers.
+   - Verify optional manifest links remain guarded.
+   - Verify the runtime error boundary remains present.
+   - Verify the unit-page renderer defines every helper it uses locally or through an explicit shared scope.
+   - Fail the test when an obvious scope regression such as an undefined L(...) helper is reintroduced.
+
+2. **Browser smoke tests**
+   - Load the library and every registered full-book landing page.
+   - Load **every learning unit** for every full book.
+   - Fail on uncaught page errors and browser console errors.
+   - Assert that the runtime fallback message never appears.
+   - Assert that expected learning content is rendered, not just that HTTP navigation succeeds.
+
+3. **Feature/runtime tests**
+   - Exercise study-guide interactions, answer reveals, persistence, and theme persistence.
+   - Exercise interactive mind maps, including mobile-sized viewports.
+   - Add a regression test whenever a production bug is found; the bug must be reproducible by the test before the fix is accepted.
+
+4. **Deployment gate**
+   - Structural tests must pass before browser tests run.
+   - Browser tests must pass before the Pages deployment job can run.
+   - Required GitHub checks must be configured as branch-protection/ruleset requirements so a PR cannot be merged while any required application test is failing or pending.
+
+### Definition of ready to ship
+
+A change to the web application is ready to ship only when:
+
+> **Data validates + application contracts pass + all generated pages render in a real browser + runtime errors are zero + mobile behavior passes + deployment checks are green.**
+
+A page that has never been exercised by a browser test is not considered fully validated.
