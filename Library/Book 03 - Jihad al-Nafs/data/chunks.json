@@ -227,94 +227,113 @@
       "title": "گفتار سوم : جهاد با نفس",
       "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html",
       "quotes": [
-        "إنسان مركب از « روح و جسم »"
+        {
+          "id": "u03-q01",
+          "text": "إنسان مركب از « روح و جسم »"
+        },
+        {
+          "id": "u03-q02",
+          "text": "ثم دنا فتدلى فكان قاب قوسين أو أدنى"
+        },
+        {
+          "id": "u03-q03",
+          "text": "يا أيتها النفس المطمئنة ارجعي إلى ربك"
+        }
       ],
       "connections": [
         {
           "to_unit_id": "u02",
-          "label": "Lawful regulation of natural desires becomes disciplined self-mastery"
+          "label": "The regulation of natural desires becomes the concrete discipline required by the two-dimensional human constitution"
         },
         {
           "to_unit_id": "u04",
-          "label": "Jihad with the self develops through concrete virtues and resistance to desire"
+          "label": "The human inner duality becomes the explicit battlefield of jihad al-akbar in the next unit"
+        },
+        {
+          "to_unit_id": "u05",
+          "label": "The lower self later becomes the named adversary whose demands must be governed"
         },
         {
           "to_unit_id": "u17",
-          "label": "Sincerity and spiritual agency depend on directing the self rather than serving it"
+          "label": "Self-mastery must ultimately be joined to sincerity rather than becoming another form of ego achievement"
+        },
+        {
+          "to_unit_id": "u19",
+          "label": "The Qur'an is presented here as a source of knowledge and formation and later as a refuge in the inner struggle"
         }
       ],
       "chunks": [
         {
+          "t": "Human formation depends on the tension between two dimensions",
+          "p": "0050",
           "id": "b03-u03-001",
-          "title": "Human beings are uniquely capable of moral and spiritual development",
           "order": 1,
-          "text": "Mazaheri describes the human being as having both an animal/material dimension and a spiritual/kingdom-like dimension. The tension between them creates the possibility of deliberate ascent rather than fixed instinctive behavior.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0050"
         },
         {
+          "t": "The spiritual dimension is described as the basis of uniquely human ascent",
+          "p": "0051",
           "id": "b03-u03-002",
-          "title": "The animal dimension is a vehicle, not an enemy to be destroyed",
           "order": 2,
-          "text": "The body's desires are not presented as something to annihilate. The task of jihad with the self is to regulate them so that bodily life becomes a means for spiritual movement.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0051"
         },
         {
+          "t": "The human constitution combines two opposed kinds of inclination",
+          "p": "0052",
           "id": "b03-u03-003",
-          "title": "Spiritual pleasures and bodily pleasures can pull in opposite directions",
           "order": 3,
-          "text": "Truth-seeking, knowledge, sacrifice and self-restraint may be difficult for the bodily dimension while food, rest and sexual gratification satisfy it. Moral growth therefore requires learning to choose the higher good when the two directions conflict.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0052"
         },
         {
+          "t": "Spiritual growth requires accepting difficulty that bodily desire resists",
+          "p": "0053",
           "id": "b03-u03-004",
-          "title": "Self-control is the mechanism of spiritual ascent",
           "order": 4,
-          "text": "The recurring metaphor is riding and training a difficult mount: when a person controls desires rather than being controlled by them, the same human faculties become instruments of ascent.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0053"
         },
         {
+          "t": "The body can become a vehicle for spiritual ascent when it is governed rather than obeyed",
+          "p": "0053",
           "id": "b03-u03-005",
-          "title": "The chapter connects extraordinary spiritual capacities with disciplined self-control",
           "order": 5,
-          "text": "Stories of Jaber al-Ju'fi and Asif ibn Barkhiya are presented as examples of capacities that Mazaheri connects to mastery of the self and Qur'anic knowledge. The practical lesson is not to chase miracles, but to understand the claimed relationship between spiritual discipline and human potential.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0053"
         },
         {
+          "t": "Faith and steadfastness are presented as conditions for higher spiritual perception",
+          "p": "0054",
           "id": "b03-u03-006",
-          "title": "The Qur'an is presented as a source of human knowledge and formation",
           "order": 6,
-          "text": "The chapter repeatedly returns to Qur'anic evidence and argues that people who seek clarity, knowledge and spiritual development should maintain an active relationship with the Qur'an.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0054"
         },
         {
+          "t": "The Jaber al-Ju'fi narrative is used to illustrate the author's claim about disciplined spiritual capacity",
+          "p": "0055",
           "id": "b03-u03-007",
-          "title": "The human being accepted a responsibility that other created beings did not carry",
           "order": 7,
-          "text": "The discussion of the trust (amanah) in Qur'an 33:72 is used to emphasize both human potential and human liability: the same human being who can rise very high can also be profoundly unjust and ignorant toward himself.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0055"
         },
         {
+          "t": "Qur'anic knowledge is presented as a source of illumination and formation",
+          "p": "0056",
           "id": "b03-u03-008",
-          "title": "Knowing what a human being is is foundational to ethics and education",
           "order": 8,
-          "text": "Mazaheri criticizes one-dimensional pictures of the human person. If a person is reduced to bodily or social needs alone, moral education cannot explain the full range of human aspiration.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0056"
         },
         {
+          "t": "The chapter culminates in the contrast between upward and downward movement of the self",
+          "p": "0063",
           "id": "b03-u03-009",
-          "title": "The practical beginning of jihad with the self is mastery rather than suppression",
           "order": 9,
-          "text": "The chapter ultimately makes the central practical point: a person should not surrender to appetite, anger and other impulses, nor imagine that holiness requires becoming less human. The work is to place the animal dimension under rational and spiritual direction.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0063"
         }
       ]
     },
@@ -549,87 +568,129 @@
       "title": "گفتار ششم : صبر",
       "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html",
       "quotes": [
-        "الصبر من الايمان",
-        "فان مع العسر يسرا"
+        {
+          "id": "u06-q01",
+          "text": "وَاسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ"
+        },
+        {
+          "id": "u06-q02",
+          "text": "إِنَّمَا يُوَفَّى الصَّابِرُونَ أَجْرَهُمْ بِغَيْرِ حِسَابٍ"
+        },
+        {
+          "id": "u06-q03",
+          "text": "الصبر من الإيمان"
+        }
       ],
       "connections": [
         {
           "to_unit_id": "u03",
-          "label": "Patience is one of the concrete disciplines by which the self is mastered"
+          "label": "Patience is one of the concrete disciplines by which the spiritual dimension gains control over the animal dimension"
+        },
+        {
+          "to_unit_id": "u04",
+          "label": "The external supports for jihad al-akbar are developed here after the inner battle is defined"
         },
         {
           "to_unit_id": "u07",
-          "label": "Willpower and perseverance depend on the same inner training"
+          "label": "This chapter establishes patience as a practice; the next turns repeated practice into a stable disposition"
         },
         {
-          "to_unit_id": "u01",
-          "label": "The teacher's moral influence requires patience in practice"
+          "to_unit_id": "u08",
+          "label": "The following unit examines the consequences and fruits of sustained patience"
+        },
+        {
+          "to_unit_id": "u24",
+          "label": "Later tawakkul adds trust in God to the endurance and agency developed through patience"
         }
       ],
       "chunks": [
         {
+          "t": "Patience is introduced as an external source of strength for the inner war",
+          "p": "0112",
           "id": "b03-u06-001",
-          "title": "Patience is an active form of strength",
           "order": 1,
-          "text": "Mazaheri treats sabr as endurance with direction, not passive resignation. It allows a person to remain steady under hardship rather than allowing pain to dictate speech and action.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0112"
         },
         {
+          "t": "Endurance in hardship strengthens resolve and transfers into the struggle against desires",
+          "p": "0113",
           "id": "b03-u06-002",
-          "title": "Patience and gratitude form complementary foundations of faith",
           "order": 2,
-          "text": "The chapter presents patience in hardship alongside gratitude in blessing. Together they keep the believer from being controlled by changing external circumstances.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0113"
         },
         {
+          "t": "Patience in teaching is treated as a concrete moral test rather than an abstract virtue",
+          "p": "0114",
           "id": "b03-u06-003",
-          "title": "Patience protects family and professional relationships",
           "order": 3,
-          "text": "The discussion applies sabr to marriage, parenting and teaching: where complete agreement is impossible, patience, forgiveness and perseverance prevent ordinary differences from becoming destructive conflict.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0114"
         },
         {
+          "t": "The inevitability of hardship makes resilience a condition of ordinary life",
+          "p": "0115",
           "id": "b03-u06-004",
-          "title": "Patience strengthens will and reduces impulsive reaction",
           "order": 4,
-          "text": "The chapter connects endurance with stronger resolve. A person who immediately complains or panics gives temporary circumstances control over his inner state; patience preserves agency.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0115"
         },
         {
+          "t": "Patience turns calamity into an occasion for divine reward and support",
+          "p": "0116",
           "id": "b03-u06-005",
-          "title": "Trust in God does not eliminate human responsibility",
           "order": 5,
-          "text": "The examples of Moses and the recurring prayer for an expanded chest are used to combine reliance on God with preparation, courage and endurance. The person creates the conditions for action while asking God for the outcome.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0116"
         },
         {
+          "t": "Divine mercy is presented as a companion of those who remain patient",
+          "p": "0117",
           "id": "b03-u06-006",
-          "title": "Patience is presented as part of faith itself",
           "order": 6,
-          "text": "The chapter uses the image of patience as a structural component of faith, emphasizing that faith without endurance cannot remain stable when circumstances become difficult.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0117"
         },
         {
+          "t": "Patience is linked to protection from despair and loss of inner stability",
+          "p": "0118",
           "id": "b03-u06-007",
-          "title": "The teacher especially needs patience",
           "order": 7,
-          "text": "Because teaching involves repeated difficulty, imperfect students and emotionally demanding situations, sabr is presented as a practical protection against losing influence through anger, discouragement or harshness.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0118"
         },
         {
+          "t": "The story of Yusuf is used to connect divine assistance with resisting temptation",
+          "p": "0119",
           "id": "b03-u06-008",
-          "title": "A patient person can turn hardship into spiritual development",
           "order": 8,
-          "text": "Hardship itself is not automatically beneficial; its value depends on how the person responds. Patience allows difficulty to become an occasion for strengthening character rather than merely a source of resentment.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0119"
+        },
+        {
+          "t": "Patience is described as structurally related to faith itself",
+          "p": "0120",
+          "id": "b03-u06-009",
+          "order": 9,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0120"
+        },
+        {
+          "t": "The chapter closes by applying patience to family, work, fear and difficult responsibilities",
+          "p": "0123",
+          "id": "b03-u06-010",
+          "order": 10,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0123"
+        },
+        {
+          "t": "Moses' prayer illustrates the relationship between an expanded inner capacity and effective action",
+          "p": "0127",
+          "id": "b03-u06-011",
+          "order": 11,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0127"
         }
       ]
     },
@@ -638,87 +699,137 @@
       "title": "گفتار هفتم : ملكه صبر",
       "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html",
       "quotes": [
-        "يا بني اصبر على الحق و ان كان مراً",
-        "واستعينوا بالصبر و الصلاة"
+        {
+          "id": "u07-q01",
+          "text": "وَاصْبِرْ عَلَىٰ مَا يَقُولُونَ وَاهْجُرْهُمْ هَجْرًا جَمِيلًا"
+        },
+        {
+          "id": "u07-q02",
+          "text": "يا بني اصبر على الحق و إن كان مراً"
+        },
+        {
+          "id": "u07-q03",
+          "text": "إِنَّ الَّذِينَ قَالُوا رَبُّنَا اللَّهُ ثُمَّ اسْتَقَامُوا"
+        }
       ],
       "connections": [
         {
           "to_unit_id": "u03",
-          "label": "Self-mastery becomes durable when restraint is trained into a stable disposition"
+          "label": "The self-mastery introduced earlier becomes durable only when restraint is trained into character"
         },
         {
           "to_unit_id": "u06",
-          "label": "Patience in hardship is developed into a lasting virtue"
+          "label": "Patience under hardship becomes a stable virtue through repeated practice"
+        },
+        {
+          "to_unit_id": "u08",
+          "label": "The fruits of patience depend on first turning occasional endurance into a lasting disposition"
         },
         {
           "to_unit_id": "u01",
-          "label": "Teachers need practiced patience to protect their educational influence"
+          "label": "The teacher's influence requires practiced patience with immature and difficult students"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Stable virtue protects religious practice from becoming performance for recognition"
         }
       ],
       "chunks": [
         {
+          "t": "The inner battle is described as permanent rather than temporary",
+          "p": "0129",
           "id": "b03-u07-001",
-          "title": "A virtue becomes a character-trait through repeated action",
           "order": 1,
-          "text": "Mazaheri distinguishes merely knowing that patience is good from possessing patience as a stable inner disposition. Repeatedly choosing restraint gradually makes the response automatic.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0129"
         },
         {
+          "t": "Patience requires training and repeated practice rather than mere intellectual agreement",
+          "p": "0131",
           "id": "b03-u07-002",
-          "title": "Patience has three forms with increasing moral difficulty",
           "order": 2,
-          "text": "The chapter distinguishes patience in hardship, patience in worship, and patience in avoiding sin. The last is presented as especially difficult because the temptation is attractive rather than merely painful.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0131"
         },
         {
+          "t": "Patience in avoiding sin is especially demanding because the temptation is attractive",
+          "p": "0132",
           "id": "b03-u07-003",
-          "title": "Patience in teaching requires deliberate practice",
           "order": 3,
-          "text": "Teachers face immature, provocative and inexperienced students. The practical recommendation is to train patience in these ordinary encounters because repeated reactions shape character.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0132"
         },
         {
+          "t": "The Qur'anic model for teachers is patient restraint rather than angry retaliation",
+          "p": "0133",
           "id": "b03-u07-004",
-          "title": "Tahaqquq through tahallum: acting patiently before patience feels natural",
           "order": 4,
-          "text": "The chapter's practical method is to begin by restraining anger and practicing forbearance even before the inner disposition is fully formed. Action gradually creates the disposition.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0133"
         },
         {
+          "t": "Repeated acts strengthen the capacity that is repeatedly exercised",
+          "p": "0134",
           "id": "b03-u07-005",
-          "title": "Patience in worship turns obligation into stable practice",
           "order": 5,
-          "text": "The goal is not occasional religious enthusiasm but a condition in which obedience becomes natural and increasingly enjoyable. The chapter links this stability to spiritual elevation.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0134"
         },
         {
+          "t": "Forbearance is presented as the practical mechanism by which patience becomes a stable disposition",
+          "p": "0135",
           "id": "b03-u07-006",
-          "title": "Patience in avoiding sin is a decisive form of self-mastery",
           "order": 6,
-          "text": "The difficult moment is often the moment when desire is available but must be refused. Training oneself to tolerate that deprivation strengthens mastery over the animal dimension.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0135"
         },
         {
+          "t": "Patience on truth is tested precisely when truth becomes difficult or bitter",
+          "p": "0136",
           "id": "b03-u07-007",
-          "title": "The chapter connects steadfastness with divine assistance",
           "order": 7,
-          "text": "Qur'anic passages about those who say 'our Lord is God' and then remain steadfast are used to present perseverance as a condition for receiving reassurance and support.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0136"
         },
         {
+          "t": "Steadfastness is linked to reassurance and divine assistance",
+          "p": "0136",
           "id": "b03-u07-008",
-          "title": "Justice itself is described as a stable moral disposition",
           "order": 8,
-          "text": "The discussion of religious authority and testimony uses the concept of malakah: basic correctness is not enough; reliable moral conduct must become a stable trait.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0136"
+        },
+        {
+          "t": "Patience in worship can become a source of genuine spiritual pleasure",
+          "p": "0138",
+          "id": "b03-u07-009",
+          "order": 9,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0138"
+        },
+        {
+          "t": "Stable moral character is distinguished from occasional correct behavior",
+          "p": "0139",
+          "id": "b03-u07-010",
+          "order": 10,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0139"
+        },
+        {
+          "t": "Small acts of mercy and service are presented as training grounds for inner transformation",
+          "p": "0141",
+          "id": "b03-u07-011",
+          "order": 11,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0141"
+        },
+        {
+          "t": "The transformation story of Fudayl ibn Iyad illustrates a decisive moral reversal",
+          "p": "0146",
+          "id": "b03-u07-012",
+          "order": 12,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0146"
         }
       ]
     },
@@ -842,79 +953,145 @@
       "title": "گفتار نهم : توبه ( 1 )",
       "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html",
       "quotes": [
-        "إنما التوبة على الله للذين يعملون السوء بجهالة ثم يتوبون من قريب",
-        "يا عبادي الذين أسرفوا على أنفسهم لا تقنطوا من رحمة الله"
+        {
+          "id": "u09-q01",
+          "text": "إِنَّمَا التَّوْبَةُ عَلَى اللَّهِ لِلَّذِينَ يَعْمَلُونَ السُّوءَ بِجَهَالَةٍ ثُمَّ يَتُوبُونَ مِنْ قَرِيبٍ"
+        },
+        {
+          "id": "u09-q02",
+          "text": "يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَى أَنْفُسِهِمْ لَا تَقْنَطُوا مِنْ رَحْمَةِ اللَّهِ"
+        },
+        {
+          "id": "u09-q03",
+          "text": "إِنَّ اللَّهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ الْمُتَطَهِّرِينَ"
+        }
       ],
       "connections": [
         {
           "to_unit_id": "u07",
-          "label": "Stable virtue requires reversing repeated bad habits through immediate correction"
+          "label": "Repentance requires the same repeated self-training that turns good actions into a stable disposition"
         },
         {
-          "to_unit_id": "u03",
-          "label": "Repentance redirects the same human agency involved in self-mastery"
+          "to_unit_id": "u08",
+          "label": "The harmful effects of wrongdoing create the need for a disciplined return rather than passive regret"
         },
         {
           "to_unit_id": "u10",
-          "label": "Moral reform requires recognizing and confronting specific vices"
+          "label": "This opening treatment of repentance leads into a more detailed examination of the specific conditions of moral repair"
+        },
+        {
+          "to_unit_id": "u14",
+          "label": "Repentance removes guilt while later discussions examine additional forms of expiation and repair"
+        },
+        {
+          "to_unit_id": "u20",
+          "label": "The later treatment of supplication gives the repentant person another practice for sustaining dependence on God"
         }
       ],
       "chunks": [
         {
+          "t": "Repentance is introduced as a major aid in strengthening the spirit and will",
+          "p": "0172",
           "id": "b03-u09-001",
-          "title": "Repentance is a form of active self-reconstruction",
           "order": 1,
-          "text": "Repentance is not merely verbal regret. It is a return that changes the person's direction and requires recognition of wrongdoing.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0172"
         },
         {
+          "t": "Sincere repentance requires inner upheaval, regret and a decision not to repeat the wrongdoing",
+          "p": "0173",
           "id": "b03-u09-002",
-          "title": "Delay makes repentance harder",
           "order": 2,
-          "text": "The chapter warns against تسویف: postponing repentance on the assumption that there will be a later opportunity. Delay allows the sin to become forgotten, normalized or rationalized.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0173"
         },
         {
+          "t": "The chapter presents divine forgiveness as immediately available to the sincere returner",
+          "p": "0174",
           "id": "b03-u09-003",
-          "title": "Rationalization can become a barrier to repentance",
           "order": 3,
-          "text": "When a person builds an explanation that makes his wrongdoing seem justified, he loses the psychological condition necessary for sincere return.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0174"
         },
         {
+          "t": "Mazaheri applies the idea of God's quick reconciliation to education and parenting",
+          "p": "0175",
           "id": "b03-u09-004",
-          "title": "There is no spiritual dead end for the sincere returner",
           "order": 4,
-          "text": "Stories such as Bishr al-Hafi and Hur ibn Yazid are used to emphasize the breadth of divine mercy: even serious wrongdoing does not make sincere repentance impossible.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0175"
         },
         {
+          "t": "Correction should avoid insulting language because humiliation can reverse the intended moral effect",
+          "p": "0176",
           "id": "b03-u09-005",
-          "title": "Shame before God can coexist with forgiveness",
           "order": 5,
-          "text": "Hur's story illustrates an important distinction: forgiveness removes the barrier of guilt, but sincere remorse can remain as a moral memory that prevents returning to the same behavior.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0176"
         },
         {
+          "t": "The Prophet's response to abusive speech is used to distinguish restraint from retaliation",
+          "p": "0177",
           "id": "b03-u09-006",
-          "title": "Repentance should be followed by restitution and correction",
           "order": 6,
-          "text": "The chapter does not reduce repentance to feeling bad. The person should repair neglected duties and correct the practical consequences of wrongdoing where possible.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0177"
         },
         {
+          "t": "The chapter links repentance with a practical duty to repair one's conduct",
+          "p": "0179",
           "id": "b03-u09-007",
-          "title": "Awareness of God's presence supports moral restraint",
           "order": 7,
-          "text": "Seeing oneself as continually in God's presence is presented as a practical safeguard against hidden wrongdoing and as a source of genuine remorse after failure.",
           "importance": "high",
-          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0179"
+        },
+        {
+          "t": "The Qur'anic address to sinners begins with welcome and mercy rather than despair",
+          "p": "0180",
+          "id": "b03-u09-008",
+          "order": 8,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0180"
+        },
+        {
+          "t": "Repentance is described as capable of transforming prior wrongdoing into a new moral record",
+          "p": "0181",
+          "id": "b03-u09-009",
+          "order": 9,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0181"
+        },
+        {
+          "t": "Repeated return remains possible because divine mercy is not exhausted by a person's relapse",
+          "p": "0183",
+          "id": "b03-u09-010",
+          "order": 10,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0183"
+        },
+        {
+          "t": "The chapter connects repentance with improved worldly conditions as well as forgiveness",
+          "p": "0184",
+          "id": "b03-u09-011",
+          "order": 11,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0184"
+        },
+        {
+          "t": "The 'two repentances' formulation emphasizes divine enabling before and acceptance after human return",
+          "p": "0186",
+          "id": "b03-u09-012",
+          "order": 12,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0186"
+        },
+        {
+          "t": "The story of the three who remained behind at Tabuk illustrates social pressure followed by sincere return",
+          "p": "0187",
+          "id": "b03-u09-013",
+          "order": 13,
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0187"
         }
       ]
     },
