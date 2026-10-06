@@ -1041,6 +1041,438 @@
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html"
         }
       ]
+    },
+    {
+      "id": "u15",
+      "title": "گفتار پانزدهم : بندگى خدا",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-15.html",
+      "quotes": [
+        {
+          "id": "u15-q01",
+          "text": "جنگ درون ، جهاد اكبر است"
+        },
+        {
+          "id": "u15-q02",
+          "text": "بدان كه تو عبدى و او مولاست"
+        },
+        {
+          "id": "u15-q03",
+          "text": "العبد و ما في يده كان لمولاه"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u03",
+          "label": "The inner struggle becomes concrete submission to God rather than merely resisting desire"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "Patience and steadiness depend on the believer's response to hardship and ease"
+        },
+        {
+          "to_unit_id": "u12",
+          "label": "Expanded inner capacity makes obedience and self-control sustainable"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Servitude is the foundation from which sincerity and God-directed action become possible"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u15-001",
+          "title": "Respect for the Qur'an is itself part of spiritual discipline",
+          "order": 1,
+          "text": "The discourse begins by insisting that the Qur'an must be heard with silence, attention and respect. Mazaheri treats the manner in which a person approaches revelation as morally significant, not as a merely ceremonial detail.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-5-.html#pdf-page-278"
+        },
+        {
+          "id": "b03-u15-002",
+          "title": "The Qur'an is presented as a refuge when life becomes confusing or dark",
+          "order": 2,
+          "text": "The prophetic narration cited in the chapter presents the Qur'an as a guide and refuge during fitnah. Making the Qur'an one's guide is therefore described as something that shapes the direction of one's life, not merely something consulted for information.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-5-.html#pdf-page-279"
+        },
+        {
+          "id": "b03-u15-003",
+          "title": "The inner battle is the central arena of jihad",
+          "order": 3,
+          "text": "Mazaheri describes the conflict between the human/spiritual dimension and the animal/desiring dimension as a permanent inner war, calling victory in this arena jihad al-akbar. Losing this struggle means allowing the lower side of the person to govern the whole self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-5-.html#pdf-page-281"
+        },
+        {
+          "id": "b03-u15-004",
+          "title": "The goal of inner victory is the tranquil soul",
+          "order": 4,
+          "text": "The chapter contrasts collapse in the inner struggle with the Qur'anic image of al-nafs al-mutma'innah. The mature endpoint is not simply avoiding sins but reaching a state of tranquility in which the person is accepted by God and willingly returns to Him.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-5-.html#pdf-page-282"
+        },
+        {
+          "id": "b03-u15-005",
+          "title": "Servitude begins with recognizing the Creator-servant relationship",
+          "order": 5,
+          "text": "In the counsel attributed to Imam al-Sadiq, the first condition for expanded spiritual capacity is recognizing that one is a servant and God is the Master. Mazaheri presents genuine servitude as radical orientation toward God's will rather than treating oneself as autonomous.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-5-.html#pdf-page-284"
+        },
+        {
+          "id": "b03-u15-006",
+          "title": "Submission to God is compatible with confidence in His justice and mercy",
+          "order": 6,
+          "text": "The slave-and-master story is explicitly qualified: unconditional obedience is appropriate to God because God is just and merciful, not because human masters may legitimately abuse servants. Trust in divine wisdom changes how a believer interprets both hardship and blessing.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-5-.html#pdf-page-287"
+        },
+        {
+          "id": "b03-u15-007",
+          "title": "The believer should be stable in hardship and prosperity",
+          "order": 7,
+          "text": "Mazaheri contrasts the unstable person who is carried away by either calamity or prosperity with the believer described as firm like a mountain. Servitude means receiving both difficulty and ease within the larger frame of submission to God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-5-.html#pdf-page-288"
+        },
+        {
+          "id": "b03-u15-008",
+          "title": "Obedience is a practical expression of servitude",
+          "order": 8,
+          "text": "The second counsel to Sufyan al-Thawri connects servitude to pursuing God's pleasure, taking obligations seriously and avoiding what brings divine displeasure. Jihad with the self is therefore translated into concrete daily obedience rather than vague spiritual feeling.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-5-.html#pdf-page-290"
+        },
+        {
+          "id": "b03-u15-009",
+          "title": "Everything a person possesses is entrusted by God and should be used accordingly",
+          "order": 9,
+          "text": "The third counsel states that the servant and whatever is in his possession belong to the Master. Mazaheri applies this to money, health, intellect, safety and knowledge: recognizing them as divine gifts makes using them for God's purposes and for other people a natural consequence of servitude.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-5-.html#pdf-page-294"
+        }
+      ]
+    },
+    {
+      "id": "u16",
+      "title": "گفتار شانزدهم : فعاليت ، استقامت و توبه به جوانب كار",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-16.html",
+      "quotes": [
+        {
+          "id": "u16-q01",
+          "text": "فعاليت ، استقامت و توجه به جوانب كار"
+        },
+        {
+          "id": "u16-q02",
+          "text": "اگر انسان بخواهد مىتواند"
+        },
+        {
+          "id": "u16-q03",
+          "text": "بحث اخلاقى گفتن و شنيدنش آسان است ، اما عمل كردن به بحث اخلاقى دشوار است"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u06",
+          "label": "Patience becomes perseverance when it is translated into sustained action"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "Repeated effort turns a virtue from an idea into a stable disposition"
+        },
+        {
+          "to_unit_id": "u09",
+          "label": "Repentance is presented as an active force that interrupts moral decline"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Servitude requires disciplined use of one's abilities rather than passivity"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sustained work needs a God-directed motive so effort does not become ego-driven ambition"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u16-001",
+          "title": "Faith, patience, repentance and expanded capacity are supports for defeating the self",
+          "order": 1,
+          "text": "The chapter gathers earlier lessons into a practical system: deepened faith through serious worship, patience in difficulty and obedience, repentance as an inner upheaval, and sadr expansion as capacities that strengthen a person in the inner struggle.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-6-.html#pdf-page-297"
+        },
+        {
+          "id": "b03-u16-002",
+          "title": "Victory requires activity, perseverance and attention to the whole task",
+          "order": 2,
+          "text": "Mazaheri identifies three practical requirements for success: activity, perseverance and attention to the different sides of a task. Talent alone is not treated as decisive; sustained effort and careful attention can compensate for limited natural ability.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-6-.html#pdf-page-299"
+        },
+        {
+          "id": "b03-u16-003",
+          "title": "The example of Maytham al-Tammar illustrates rapid growth through disciplined effort",
+          "order": 3,
+          "text": "Maytham is presented as an example of someone whose sustained activity, perseverance and attention transformed his capacities. His closeness to Imam Ali and his later courage are used to show what disciplined spiritual development can produce.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-6-.html#pdf-page-300"
+        },
+        {
+          "id": "b03-u16-004",
+          "title": "Extraordinary spiritual abilities are not the real measure of human success",
+          "order": 4,
+          "text": "The chapter uses stories of people with unusual abilities to make a larger distinction: feats such as extraordinary physical or spiritual capacities are not the highest achievement. Becoming genuinely human by mastering the commanding self is the more important victory.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-6-.html#pdf-page-303"
+        },
+        {
+          "id": "b03-u16-005",
+          "title": "The same principle applies to worldly and spiritual work",
+          "order": 5,
+          "text": "Mazaheri argues that a believer should actively pursue both worldly responsibilities and the afterlife. The Qur'anic balance is not withdrawal from productive life but using one's God-given intellect, health, youth, security and wealth for both domains.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-6-.html#pdf-page-310"
+        },
+        {
+          "id": "b03-u16-006",
+          "title": "Moral decline accelerates when the person stops guarding the inner struggle",
+          "order": 6,
+          "text": "The chapter describes decline as progressive: neglect begins with losing the sweetness of worship, then can reach denial of religious truth, pleasure in sin and eventually pleasure in ظلم and cruelty. The warning is that the self does not have a natural stopping point once disciplined resistance is abandoned.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-6-.html#pdf-page-311"
+        },
+        {
+          "id": "b03-u16-007",
+          "title": "Repeated wrongdoing can make serious sin feel ordinary",
+          "order": 7,
+          "text": "Mazaheri uses backbiting, slander and attacking people's dignity to illustrate a lower-level form of moral collapse. A person may remain sensitive to physical violence while becoming insensitive to harming reputations, showing that habituation can normalize grave wrongdoing.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-6-.html#pdf-page-314"
+        },
+        {
+          "id": "b03-u16-008",
+          "title": "The practical conclusion is to keep working against the self rather than assuming safety",
+          "order": 8,
+          "text": "The chapter closes by treating jihad with the self as an ongoing activity. Without activity, perseverance and attention, the person moves toward decline; with them, even a difficult starting point can become a path of ascent.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-6-.html#pdf-page-317"
+        }
+      ]
+    },
+    {
+      "id": "u17",
+      "title": "گفتار هفدهم : اخلاص",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-17.html",
+      "quotes": [
+        {
+          "id": "u17-q01",
+          "text": "اگر با خدا باشيد خدا با شماست"
+        },
+        {
+          "id": "u17-q02",
+          "text": "انما نطعمكم لوجه الله نريد منكم جزاء و لاشكورا"
+        },
+        {
+          "id": "u17-q03",
+          "text": "صبغه الله و من احسن من الله صبغه"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u15",
+          "label": "Servitude becomes sincere when the person's real motive is God rather than the self"
+        },
+        {
+          "to_unit_id": "u16",
+          "label": "Activity and perseverance need a purified motive to become spiritual progress rather than egoic ambition"
+        },
+        {
+          "to_unit_id": "u18",
+          "label": "Night prayer is presented as one practical means of building a God-centered inner life"
+        },
+        {
+          "to_unit_id": "u01",
+          "label": "The teacher's influence becomes trustworthy when teaching is done for God rather than recognition"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u17-001",
+          "title": "Sincerity means giving one's thoughts, speech and actions a God-directed orientation",
+          "order": 1,
+          "text": "Mazaheri defines the practical direction of ikhlas broadly: not only outward actions but thoughts, speech, intentions and motives should be oriented toward God. This turns sincerity into a governing orientation of life rather than a property of a few religious acts.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-7-.html#pdf-page-318"
+        },
+        {
+          "id": "b03-u17-002",
+          "title": "God-centered action is presented as the source of divine assistance",
+          "order": 2,
+          "text": "The chapter links sincere orientation to the promise that God supports those who support His cause. In the context of jihad with the self, reliance on divine help is presented as necessary because the person cannot reliably defeat the lower self through isolated willpower.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-7-.html#pdf-page-319"
+        },
+        {
+          "id": "b03-u17-003",
+          "title": "Taking desire, ego or worldly recognition as the ultimate motive is a form of misplaced worship",
+          "order": 3,
+          "text": "Mazaheri argues that when desire, Satan or worldly interests become the controlling motive of thought and action, the person has effectively made them an object of worship. Ikhlas therefore requires examining what actually moves a person, not merely what the action looks like externally.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-7-.html#pdf-page-320"
+        },
+        {
+          "id": "b03-u17-004",
+          "title": "Sincerity changes ordinary family work into worship",
+          "order": 4,
+          "text": "The chapter applies ikhlas to domestic life: caring for children, serving a spouse and enduring household work can become worship when performed for God rather than for praise, repayment or recognition. The same outward action can therefore have a radically different spiritual meaning depending on its motive.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-7-.html#pdf-page-321"
+        },
+        {
+          "id": "b03-u17-005",
+          "title": "Expecting recognition creates resentment when recognition fails",
+          "order": 5,
+          "text": "Mazaheri repeatedly contrasts God-directed action with the expectation of thanks. When a person works for praise, unmet expectations generate anger, jealousy, hurt and conflict; when God is the motive, the absence of human recognition does not invalidate the work.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-7-.html#pdf-page-322"
+        },
+        {
+          "id": "b03-u17-006",
+          "title": "Sincerity can turn difficult service into something spiritually bearable",
+          "order": 6,
+          "text": "The chapter applies the same logic to earning for one's family and teaching students. If the purpose is God and the fulfillment of responsibility, ordinary frustrations such as status, salary comparison or lack of appreciation lose their power to determine one's emotional state.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-7-.html#pdf-page-323"
+        },
+        {
+          "id": "b03-u17-007",
+          "title": "The standard of sincere giving is to seek no repayment or praise",
+          "order": 7,
+          "text": "The example of the governor of Homs and the Qur'anic phrase 'for the face of God' illustrate the mature form of giving: even when a person is criticized by the people he serves, he can respond with further good because the act was not purchased by their praise.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-7-.html#pdf-page-328"
+        },
+        {
+          "id": "b03-u17-008",
+          "title": "Divine coloration is presented as a durable identity rather than a temporary performance",
+          "order": 8,
+          "text": "Mazaheri uses the Qur'anic image of God's color to distinguish lasting spiritual formation from a temporary outward appearance. When God's orientation becomes the motive of thought, intention and action, the person gradually becomes harder for Satan and the commanding self to manipulate.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-7-.html#pdf-page-334"
+        }
+      ]
+    },
+    {
+      "id": "u18",
+      "title": "گفتار هجدهم : نماز شب",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad al-Nafs/source/chapter-18.html",
+      "quotes": [
+        {
+          "id": "u18-q01",
+          "text": "آخر شب كارها مىكند"
+        },
+        {
+          "id": "u18-q02",
+          "text": "بحث اخلاقى گفتن و شنيدنش آسان است ... اما عمل كردن به بحث اخلاقى دشوار است"
+        },
+        {
+          "id": "u18-q03",
+          "text": "مواظب باشيد نفس اماره را خسته نكنيد"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u15",
+          "label": "Night prayer is presented as practical training in servitude and submission"
+        },
+        {
+          "to_unit_id": "u16",
+          "label": "Consistent night worship requires gradual activity and perseverance rather than a burst of effort"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Hidden worship provides a concrete arena for sincerity because it is less dependent on public recognition"
+        },
+        {
+          "to_unit_id": "u07",
+          "label": "Gradual practice is what turns a difficult discipline into a stable habit"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u18-001",
+          "title": "Night prayer is presented as a practical instrument for inner victory",
+          "order": 1,
+          "text": "The chapter argues that late-night worship is not an ornamental extra: it strengthens the person in the struggle against the commanding self, brings vitality and helps loosen the grip of worldly anxiety.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-8-.html#pdf-page-345"
+        },
+        {
+          "id": "b03-u18-002",
+          "title": "The recommended practice is gradual rather than self-destructive",
+          "order": 2,
+          "text": "Mazaheri explicitly warns against exhausting the self through an extreme initial schedule. He recommends starting with a manageable period before dawn and gradually extending wakefulness as the discipline becomes sustainable.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-8-.html#pdf-page-345"
+        },
+        {
+          "id": "b03-u18-003",
+          "title": "The Qur'an's language about night worship supports flexibility in how much one performs",
+          "order": 3,
+          "text": "The discussion of al-Muzzammil is used to emphasize that night worship can be practiced according to one's capacity. The point is persistent participation, not an all-or-nothing standard that causes a person to abandon the practice.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-8-.html#pdf-page-346"
+        },
+        {
+          "id": "b03-u18-004",
+          "title": "Prayer at its proper time, especially morning prayer, is tied to the discipline of night worship",
+          "order": 4,
+          "text": "The chapter connects night prayer with maintaining the obligatory morning prayer and emphasizes the special importance assigned to Fajr. Night worship is therefore framed within a larger rhythm of timely obligatory worship rather than as a substitute for it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-8-.html#pdf-page-347"
+        },
+        {
+          "id": "b03-u18-005",
+          "title": "Knowing the value of a practice is easier than actually performing it",
+          "order": 5,
+          "text": "Mazaheri distinguishes intellectual agreement from moral action: people may readily understand that night worship is valuable while still failing to rise when the alarm rings. This illustrates the broader framework of jihad with the self—knowledge must become repeated behavior.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-8-.html#pdf-page-348"
+        },
+        {
+          "id": "b03-u18-006",
+          "title": "Daytime conduct can affect whether a person succeeds in rising at night",
+          "order": 6,
+          "text": "The chapter links daytime sins and unlawful or careless conduct with difficulty waking for night prayer. The broader lesson is that spiritual practices are interconnected: what a person does during the day can either strengthen or weaken the next act of worship.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-8-.html#pdf-page-349"
+        },
+        {
+          "id": "b03-u18-007",
+          "title": "Night worship is described as having consequences beyond the private moment",
+          "order": 7,
+          "text": "The chapter presents the possibility that consistent worship changes the person's standing in the unseen world, including divine and angelic assistance. Whether understood as spiritual formation or as the chapter's narration of unseen effects, the teaching is that hidden discipline has consequences larger than the immediate act.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-8-.html#pdf-page-351"
+        },
+        {
+          "id": "b03-u18-008",
+          "title": "Spiritual discipline must remain balanced and guided",
+          "order": 8,
+          "text": "Mazaheri warns that self-improvement can itself become excessive if pursued without balance or guidance. The proper path combines worship with moderation, and he recommends learning ethical practice under knowledgeable guidance rather than turning a good discipline into harmful extremism.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-8-.html#pdf-page-353"
+        },
+        {
+          "id": "b03-u18-009",
+          "title": "The chapter's final method is to train the self patiently until worship becomes sustainable",
+          "order": 9,
+          "text": "The closing advice returns to gradual training: regulate sleep, begin with a manageable amount, keep the obligatory prayers central, and increase practice over time. The same 'bridle the difficult horse without exhausting it' principle from earlier discussions is applied directly to night worship.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-8-.html#pdf-page-356"
+        }
+      ]
     }
   ]
 }
