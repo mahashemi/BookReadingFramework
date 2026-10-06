@@ -36,6 +36,7 @@
     return r.json();
   };
   const optional = p => p.then(x => x, () => null);
+  const siteFooter = () => `<footer class="footer site-footer"><div class="shell">BookReadingFramework · <a href="${inBook ? '../' : ''}about.html">About us</a> · <a href="${inBook ? '../' : ''}citation.html">Cite this work</a> · <a href="https://github.com/mahashemi/BookReadingFramework">Source</a> · <span>seyed mohammad abuzar</span></div></footer>`;
 
   const stat = (value, label) => `<div class="stat"><strong>${esc(value)}</strong><small>${esc(label)}</small></div>`;
   const card = (num, title, text, href, cta, external) =>
@@ -338,6 +339,7 @@ ${links}
           bookHome(meta, data, qd, gl);
         }
       }
+      if (inBook) app.insertAdjacentHTML('beforeend', siteFooter());
       app.setAttribute('aria-busy', 'false');
       if (location.hash) {
         const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
