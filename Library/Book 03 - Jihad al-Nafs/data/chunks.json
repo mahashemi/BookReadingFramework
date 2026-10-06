@@ -472,6 +472,314 @@
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html"
         }
       ]
+    },
+    {
+      "id": "u07",
+      "title": "گفتار هفتم : ملكه صبر",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html",
+      "quotes": [
+        "يا بني اصبر على الحق و ان كان مراً",
+        "واستعينوا بالصبر و الصلاة"
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u03",
+          "label": "Self-mastery becomes durable when restraint is trained into a stable disposition"
+        },
+        {
+          "to_unit_id": "u06",
+          "label": "Patience in hardship is developed into a lasting virtue"
+        },
+        {
+          "to_unit_id": "u01",
+          "label": "Teachers need practiced patience to protect their educational influence"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u07-001",
+          "title": "A virtue becomes a character-trait through repeated action",
+          "order": 1,
+          "text": "Mazaheri distinguishes merely knowing that patience is good from possessing patience as a stable inner disposition. Repeatedly choosing restraint gradually makes the response automatic.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+        },
+        {
+          "id": "b03-u07-002",
+          "title": "Patience has three forms with increasing moral difficulty",
+          "order": 2,
+          "text": "The chapter distinguishes patience in hardship, patience in worship, and patience in avoiding sin. The last is presented as especially difficult because the temptation is attractive rather than merely painful.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+        },
+        {
+          "id": "b03-u07-003",
+          "title": "Patience in teaching requires deliberate practice",
+          "order": 3,
+          "text": "Teachers face immature, provocative and inexperienced students. The practical recommendation is to train patience in these ordinary encounters because repeated reactions shape character.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+        },
+        {
+          "id": "b03-u07-004",
+          "title": "Tahaqquq through tahallum: acting patiently before patience feels natural",
+          "order": 4,
+          "text": "The chapter's practical method is to begin by restraining anger and practicing forbearance even before the inner disposition is fully formed. Action gradually creates the disposition.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+        },
+        {
+          "id": "b03-u07-005",
+          "title": "Patience in worship turns obligation into stable practice",
+          "order": 5,
+          "text": "The goal is not occasional religious enthusiasm but a condition in which obedience becomes natural and increasingly enjoyable. The chapter links this stability to spiritual elevation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+        },
+        {
+          "id": "b03-u07-006",
+          "title": "Patience in avoiding sin is a decisive form of self-mastery",
+          "order": 6,
+          "text": "The difficult moment is often the moment when desire is available but must be refused. Training oneself to tolerate that deprivation strengthens mastery over the animal dimension.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+        },
+        {
+          "id": "b03-u07-007",
+          "title": "The chapter connects steadfastness with divine assistance",
+          "order": 7,
+          "text": "Qur'anic passages about those who say 'our Lord is God' and then remain steadfast are used to present perseverance as a condition for receiving reassurance and support.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+        },
+        {
+          "id": "b03-u07-008",
+          "title": "Justice itself is described as a stable moral disposition",
+          "order": 8,
+          "text": "The discussion of religious authority and testimony uses the concept of malakah: basic correctness is not enough; reliable moral conduct must become a stable trait.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html"
+        }
+      ]
+    },
+    {
+      "id": "u08",
+      "title": "گفتار هشتم :",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html",
+      "quotes": [],
+      "connections": [
+        {
+          "to_unit_id": "u07",
+          "label": "Repeated actions form either virtue or vice"
+        },
+        {
+          "to_unit_id": "u09",
+          "label": "Recognizing the dominant vice prepares the ground for repentance and reform"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u08-001",
+          "title": "Jihad with the self includes identifying the forces that defeat judgment",
+          "order": 1,
+          "text": "The chapter continues the practical analysis by examining how desire, anger and inner tendencies can distort a person's ability to choose well.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html"
+        },
+        {
+          "id": "b03-u08-002",
+          "title": "A desire becomes dangerous when it takes command of reason",
+          "order": 2,
+          "text": "The moral problem is not simply possessing an inclination. The danger begins when the inclination becomes the decision-maker and reason is recruited afterward to justify it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html"
+        },
+        {
+          "id": "b03-u08-003",
+          "title": "Self-awareness is required before self-correction",
+          "order": 3,
+          "text": "A person cannot fight an inner tendency that he refuses to recognize. The practical direction is to observe motives and reactions before attempting to reform them.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html"
+        },
+        {
+          "id": "b03-u08-004",
+          "title": "Small repeated compromises can strengthen a vice",
+          "order": 4,
+          "text": "Like virtues, bad traits are built by repeated action. What begins as an occasional compromise can become a stable disposition that later feels normal.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html"
+        },
+        {
+          "id": "b03-u08-005",
+          "title": "The struggle is both moral and psychological",
+          "order": 5,
+          "text": "Mazaheri repeatedly treats the inner battle as something visible in habits, reactions and choices. Spiritual reform therefore requires concrete behavioral discipline rather than abstract intention.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html"
+        }
+      ]
+    },
+    {
+      "id": "u09",
+      "title": "گفتار نهم :",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html",
+      "quotes": [
+        "إنما التوبة على الله للذين يعملون السوء بجهالة ثم يتوبون من قريب",
+        "يا عبادي الذين أسرفوا على أنفسهم لا تقنطوا من رحمة الله"
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u07",
+          "label": "Stable virtue requires reversing repeated bad habits through immediate correction"
+        },
+        {
+          "to_unit_id": "u03",
+          "label": "Repentance redirects the same human agency involved in self-mastery"
+        },
+        {
+          "to_unit_id": "u10",
+          "label": "Moral reform requires recognizing and confronting specific vices"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u09-001",
+          "title": "Repentance is a form of active self-reconstruction",
+          "order": 1,
+          "text": "Repentance is not merely verbal regret. It is a return that changes the person's direction and requires recognition of wrongdoing.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+        },
+        {
+          "id": "b03-u09-002",
+          "title": "Delay makes repentance harder",
+          "order": 2,
+          "text": "The chapter warns against تسویف: postponing repentance on the assumption that there will be a later opportunity. Delay allows the sin to become forgotten, normalized or rationalized.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+        },
+        {
+          "id": "b03-u09-003",
+          "title": "Rationalization can become a barrier to repentance",
+          "order": 3,
+          "text": "When a person builds an explanation that makes his wrongdoing seem justified, he loses the psychological condition necessary for sincere return.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+        },
+        {
+          "id": "b03-u09-004",
+          "title": "There is no spiritual dead end for the sincere returner",
+          "order": 4,
+          "text": "Stories such as Bishr al-Hafi and Hur ibn Yazid are used to emphasize the breadth of divine mercy: even serious wrongdoing does not make sincere repentance impossible.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+        },
+        {
+          "id": "b03-u09-005",
+          "title": "Shame before God can coexist with forgiveness",
+          "order": 5,
+          "text": "Hur's story illustrates an important distinction: forgiveness removes the barrier of guilt, but sincere remorse can remain as a moral memory that prevents returning to the same behavior.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+        },
+        {
+          "id": "b03-u09-006",
+          "title": "Repentance should be followed by restitution and correction",
+          "order": 6,
+          "text": "The chapter does not reduce repentance to feeling bad. The person should repair neglected duties and correct the practical consequences of wrongdoing where possible.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+        },
+        {
+          "id": "b03-u09-007",
+          "title": "Awareness of God's presence supports moral restraint",
+          "order": 7,
+          "text": "Seeing oneself as continually in God's presence is presented as a practical safeguard against hidden wrongdoing and as a source of genuine remorse after failure.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html"
+        }
+      ]
+    },
+    {
+      "id": "u10",
+      "title": "گفتار دهم :",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html",
+      "quotes": [
+        "آخر ما يخرج عن قلوب الصديقين حب الجاه"
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u09",
+          "label": "Vice can block repentance; early recognition therefore matters"
+        },
+        {
+          "to_unit_id": "u11",
+          "label": "The next stage applies self-jihad to specific inner vices"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Status-seeking directly conflicts with sincerity"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u10-001",
+          "title": "A vice can distort the person's interpretation of his own wrongdoing",
+          "order": 1,
+          "text": "The chapter emphasizes that moral danger grows when a person not only sins but becomes unable to see himself as wrong. The inner faculty of self-criticism is then weakened.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+        },
+        {
+          "id": "b03-u10-002",
+          "title": "Envy can make another person's good feel like one's own loss",
+          "order": 2,
+          "text": "The discussion treats envy as a destructive inner condition because it changes the person's relationship with another person's success and can motivate unjust behavior.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+        },
+        {
+          "id": "b03-u10-003",
+          "title": "Love of status can become an engine of wrongdoing",
+          "order": 3,
+          "text": "Ambition for position is presented as especially persistent. A person may knowingly sacrifice truth and justice when recognition or power becomes the overriding goal.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+        },
+        {
+          "id": "b03-u10-004",
+          "title": "Greed and suspicion can compound one another",
+          "order": 4,
+          "text": "When avarice and سوء ظن reinforce each other, the person begins interpreting others through self-interest and becomes increasingly willing to justify unfair behavior.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+        },
+        {
+          "id": "b03-u10-005",
+          "title": "Vice can prevent repentance by producing self-justification",
+          "order": 5,
+          "text": "If a person interprets every wrongdoing as justified, he no longer experiences himself as a sinner who needs to return. The vice therefore becomes a barrier to the remedy itself.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+        },
+        {
+          "id": "b03-u10-006",
+          "title": "Reform requires early intervention",
+          "order": 6,
+          "text": "The chapter's warning is strongest around the beginning of a vice: once it has been repeated and rationalized for years, the person may lose the ability to recognize its seriousness.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+        },
+        {
+          "id": "b03-u10-007",
+          "title": "Islamic repentance remains open even after serious failure",
+          "order": 7,
+          "text": "The warning about hardening the heart is not a doctrine of despair. The chapter pairs the danger of persistent vice with the continuing invitation to return before the habit becomes entrenched.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html"
+        }
+      ]
     }
   ]
 }
