@@ -1,6 +1,6 @@
 # The Deep-Reading Framework
 ### A repeatable pipeline for turning any book into long-term memory
-*Version 2.0 — generic, data-driven framework; validated across Books 01–03. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
+*Version 2.1 — generic, data-driven framework; validated across Books 01–03. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
 
 ---
 
@@ -235,6 +235,45 @@ One `index.md` per book, linking every module, plus:
 This is what turns a folder of study files into something a future website can render as a landing page with zero rework.
 
 **The GitHub Pages hub is one generic `/book/` shell for every book, not one folder per book.** The first working version of the Book 02 hub lived at `/book-02/`, with its own `index.html` and `unit.html`. That doesn't scale: a Book 03 would mean copy-pasting both files and then keeping every future fix applied to both copies — precisely the drift-between-copies mistake this document already warns about twice above, just at the page-template level instead of the data level. The fix: a single `/book/index.html` and `/book/unit.html`, parameterized by `?book_id=`, reading everything else — title, author, unit count, which links exist — from one manifest at `assets/books.json`. Adding a new book to the site is then one manifest entry, zero new HTML or JS files. If a future book doesn't yet have the full `data/` + `exam_bank/questions.json` architecture (see Book 01), give its manifest entry `"status": "legacy"` and a plain `links` map; the library page renders a simpler card for it instead of the full live-stats hub card, rather than the page breaking or silently showing wrong numbers.
+
+---
+
+## Module 9 — Narration and Optional Audio
+
+Narration is an optional learning layer, not a second source of truth. A book must remain complete and usable without audio.
+
+### Two narration modes
+
+1. **Listen to the Book** — source-oriented spoken paraphrase that follows the author's argument closely and distinguishes paraphrase from quotation.
+2. **Listen & Learn** — source-oriented narration enriched with concise explanation, connections, practical insight, reflection, and transitions.
+
+Interpretation must never silently become an author's claim.
+
+### Spoken narration versus editorial structure
+
+Narration files may use editorial sections such as Narration, Deep Reading insight, Reflection, Transition, and Source map so the artifact is auditable. **Those labels are not automatically spoken.** The transcript may show them, but the speech layer should concatenate the actual prose so the listener hears a natural explanation rather than phrases such as “Deep Reading insight” or “Source map.”
+
+The narration should feel like one coherent journey: **question → source idea → explanation → consequence → connection → practice → reflection → transition**.
+
+### Quality and runtime contract
+
+- Ground every script in canonical chunks and a source map.
+- Explain important concepts rather than read headings or JSON.
+- Distinguish interpretation from the author's wording.
+- Preserve important original-language terms.
+- Never invent quotations, citations, page references, or unsupported claims.
+- Keep scripts as editorial learning artifacts, not duplicate concept or question databases.
+- Do not commit large recorded audio binaries; professionally recorded media may live externally.
+- Keep a small optional manifest keyed by stable book/unit IDs.
+- Fetch only manifest-declared narration; never probe guessed URLs.
+- Missing narration or recorded media must never make the book incomplete.
+- Browser speech synthesis may provide the fallback when a transcript exists.
+
+### Unit-page experience and validation
+
+A narrated unit should expose a clear **Listen & Learn** control and a readable transcript. Playback must start/stop cleanly, work on desktop and mobile, stop when leaving the page, and produce no uncaught errors when narration is absent.
+
+Browser tests should verify narrated units show the control, non-narrated units remain clean, transcripts are substantive, playback controls do not throw errors, optional narration creates no 404 noise, and written learning content remains complete without audio.
 
 ---
 
