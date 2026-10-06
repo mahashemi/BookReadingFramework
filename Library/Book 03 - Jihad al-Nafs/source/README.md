@@ -12,12 +12,12 @@ This directory is the **source layer** for Book 03. It contains a page-addressab
 
 ## Why these files are split this way
 
-The book itself is organized into **24 explicitly numbered گفتار**. The split points are therefore source-defined: each HTML file begins at one of those گفتار headings and continues until the page immediately before the next گفتار.
+The book itself is organized into **25 explicitly numbered گفتار**. The split points are therefore source-defined: each HTML file begins at one of those گفتار headings and continues until the page immediately before the next گفتار.
 
 So:
 
-- **24 گفتار = from the book itself.**
-- chapter-01.html … chapter-24.html = our **filesystem naming convention** for those source units; the book does not call them “chapters”.
+- **25 گفتار = from the book itself.**
+- chapter-01.html … chapter-25.html = our **filesystem naming convention** for those source units; the book does not call them “chapters”.
 - The numeric file names are not a claim that the author used English/Arabic numerals.
 - The visible HTML headings have been aligned with the wording seen in the source (for example, گفتار اول, گفتار شانزدهم, گفتار بیست و سه).
 - Page 1 contains both the publisher's introduction and the beginning of گفتار اول; that is why the first source unit includes both rather than inventing a page boundary that does not exist.
