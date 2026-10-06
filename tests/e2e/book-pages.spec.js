@@ -6,14 +6,16 @@ const books = [
     bookId: "book02",
     path: "/Library/Book%2002%20-%20Survey%20of%20the%20Lives%20of%20the%20Infallible%20Imams",
     units: Array.from({ length: 13 }, (_, i) => "u" + String(i).padStart(2, "0")),
-    mindMap: "/Library/Book%2002%20-%20Survey%20of%20the%20Lives%20of%20the%20Infallible%20Imams/mind_maps/book02_interactive.html"
+    mindMap: "/Library/Book%2002%20-%20Survey%20of%20the%20Lives%20of%20the%20Infallible%20Imams/mind_maps/book02_interactive.html",
+    mindMapSelector: "#canvas"
   },
   {
     name: "Book 03",
     bookId: "book03",
     path: "/Library/Book%2003%20-%20Jihad%20al-Nafs",
     units: Array.from({ length: 25 }, (_, i) => "u" + String(i + 1).padStart(2, "0")),
-    mindMap: "/Library/Book%2003%20-%20Jihad%20al-Nafs/mind_maps/book03_interactive.html"
+    mindMap: "/Library/Book%2003%20-%20Jihad%20al-Nafs/mind_maps/book03_interactive.html",
+    mindMapSelector: "main"
   }
 ];
 
@@ -56,7 +58,7 @@ for (const book of books) {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto(book.mindMap, { waitUntil: "networkidle" });
     await expect(page.locator("body")).not.toContainText(/Could not load study data|Could not load/i);
-    await expect(page.locator("#canvas")).toBeVisible();
+    await expect(page.locator(book.mindMapSelector)).toBeVisible();
     expect(errors).toEqual([]);
   });
 }
