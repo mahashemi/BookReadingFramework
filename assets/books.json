@@ -39,6 +39,17 @@
         "examPapers": "exam_bank/exam_papers_bank.html",
         "masterWorkbook": "exam_bank/Polarization_Ali_MASTER_Exam_Workbook_34_Chapters_20_Simulated_Years.html"
       }
+    },
+    {
+      "id": "book03",
+      "status": "full",
+      "title": "Jihad bil-Nafs",
+      "author": "Ayatollah Mazaheri",
+      "translator": null,
+      "dir": "Library/Book 03 - Jihad al-Nafs/",
+      "data": {
+        "chunks": "data/chunks.json"
+      }
     }
   ]
 }
