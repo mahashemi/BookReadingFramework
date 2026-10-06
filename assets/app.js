@@ -238,18 +238,13 @@ ${glossaryHTML}
     const qList = qd ? qd.questions.filter(q => q.unit_id === u.id) : null;
     const chunkCount = chunks.length;
     const terms = gl ? gl.entries.filter(e => e.units.includes(u.id)) : [];
-    const testHref = meta.links.unitTests ? dir + meta.links.unitTests + '?unit=' + encodeURIComponent(u.id) : null;
+    const testHref = meta.links?.unitTests ? dir + meta.links.unitTests + '?unit=' + encodeURIComponent(u.id) : null;
     const nameOf = uid => { const k = units.findIndex(x => x.id === uid); return k < 0 ? uid : 'Unit ' + pad(k + 1) + ' \u00b7 ' + parts(units[k].title).label; };
     const breakdown = list => ['MCQ', 'FILL', 'SHORT', 'LONG'].map(t => t + ' ' + list.filter(q => q.type === t).length).join(' \u00b7 ');
 
     document.title = (p.label === p.name ? p.name : p.label + ' \u2014 ' + p.name) + ' \u00b7 ' + meta.title;
 
-    /* In this book's data, concept.explanation is verbatim identical to the
-       source chunk text (confirmed across all 160 concepts) -- it is the
-       passage, not a distillation of it. Showing both an always-visible
-       "explanation" paragraph and a separate collapsed "source passage"
-       reveal would show a student the same text twice under two labels.
-       Render the title plus a single reveal of the passage instead. */
+    /* The canonical chunk text is the source-grounded learning passage. Render one passage reveal per concept rather than inventing a second explanation field or duplicating the same source text under another label. */
     const concepts = chunks.map(c => {
       return `<article class="card unit"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><p>${esc(c.text)}</p></details><div class="source-note"><a href="${esc(c.source_url)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></div></article>`;
     }).join('');
