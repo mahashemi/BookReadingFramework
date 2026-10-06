@@ -1989,6 +1989,383 @@
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#pdf-page-439"
         }
       ]
+    },
+    {
+      "id": "u23",
+      "title": "گفتار بيست و سه : ياد خدا",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html",
+      "quotes": [
+        {
+          "id": "u23-q01",
+          "text": "و لذكر الله اكبر"
+        },
+        {
+          "id": "u23-q02",
+          "text": "يا ايها الذين آمنوا اذكروا الله ذكرا كثيرا"
+        },
+        {
+          "id": "u23-q03",
+          "text": "لا إله الا الله"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u18",
+          "label": "Night prayer provides a practical setting for the remembrance that this chapter calls a major force in inner struggle"
+        },
+        {
+          "to_unit_id": "u19",
+          "label": "Qur'an recitation and dhikr are presented as mutually reinforcing ways of keeping God present in the heart"
+        },
+        {
+          "to_unit_id": "u20",
+          "label": "Dua turns remembrance into direct conversation with God"
+        },
+        {
+          "to_unit_id": "u22",
+          "label": "Devotional remembrance can include attachment to the Ahl al-Bayt and their transmitted forms of invocation"
+        },
+        {
+          "to_unit_id": "u25",
+          "label": "The remembrance of God becomes concrete when trust in God replaces dependence on competing objects of the heart"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u23-001",
+          "title": "Dhikr is introduced as the ninth external force in jihad al-akbar",
+          "order": 1,
+          "text": "Mazaheri places remembrance of God after the previously discussed spiritual supports and explicitly calls it a powerful outside force that helps the spiritual side defeat the commanding self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#pdf-page-443"
+        },
+        {
+          "id": "b03-u23-002",
+          "title": "Remembrance is the deeper purpose behind other acts of worship",
+          "order": 2,
+          "text": "The chapter reads 'and the remembrance of God is greater' as showing that prayer, fasting and pilgrimage ultimately aim at keeping the tongue and heart turned toward God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#pdf-page-444"
+        },
+        {
+          "id": "b03-u23-003",
+          "title": "Dhikr is both verbal and inward",
+          "order": 3,
+          "text": "The ideal is not merely repeating words. The chapter repeatedly pairs a tongue that remembers with a heart that is attentive, making inner orientation the substance behind verbal practice.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#pdf-page-445"
+        },
+        {
+          "id": "b03-u23-004",
+          "title": "The Prophetic and Ahl al-Bayt example is continuous remembrance",
+          "order": 4,
+          "text": "Examples of the Prophet, Imam Husayn, Lady Zaynab and the Imams are used to show that remembrance is not restricted to a special ritual moment; it can accompany ordinary activity and extreme hardship.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#pdf-page-446"
+        },
+        {
+          "id": "b03-u23-005",
+          "title": "The believer should build a realistic habit of frequent remembrance",
+          "order": 5,
+          "text": "Mazaheri suggests integrating simple invocations into walking and ordinary transitions. The practical point is to make remembrance frequent enough that it becomes part of the person's normal mental environment.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#pdf-page-447"
+        },
+        {
+          "id": "b03-u23-006",
+          "title": "Different states call for different forms of dhikr",
+          "order": 6,
+          "text": "The chapter distinguishes between purposes: 'la ilaha illa Allah' is recommended for confronting whispers and anxiety, 'la hawla wa la quwwata illa billah' for strengthening resolve, and basmalah for protection.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#pdf-page-448"
+        },
+        {
+          "id": "b03-u23-007",
+          "title": "Remembrance works through repeated inner formation",
+          "order": 7,
+          "text": "The chapter compares repeated verbal remembrance with psychological suggestion: even when the conscious mind is not focused on every repetition, repeated words can gradually affect the heart and disposition.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#pdf-page-455"
+        },
+        {
+          "id": "b03-u23-008",
+          "title": "Dhikr is presented as a defense against social and satanic suggestion",
+          "order": 8,
+          "text": "The final part warns about subtle temptation arriving through attractive language and bad companionship. Remembering God is presented as a way to resist those influences rather than being carried away by them.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#pdf-page-451"
+        },
+        {
+          "id": "b03-u23-009",
+          "title": "Devotional identity matters in the choice of remembrance",
+          "order": 9,
+          "text": "The discussion of 'Ya Allah', 'Ya Ali' and other invocations connects dhikr with the believer's inherited devotional identity while insisting on understanding the theological meaning of those invocations.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#pdf-page-454"
+        },
+        {
+          "id": "b03-u23-010",
+          "title": "The goal is not a numerical performance but God-consciousness",
+          "order": 10,
+          "text": "The chapter's practical recommendations ultimately point beyond counting repetitions: the value of dhikr lies in producing a heart and life that are remembered by God and resistant to the commanding self.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#pdf-page-455"
+        }
+      ]
+    },
+    {
+      "id": "u24",
+      "title": "گفتار بيست و چهارم : توكل بر خدا",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html",
+      "quotes": [
+        {
+          "id": "u24-q01",
+          "text": "رب المشرق و المغرب لا إله الا هو فاتخذه وكيلا"
+        },
+        {
+          "id": "u24-q02",
+          "text": "و من يتوكل على الله فهو حسبه"
+        },
+        {
+          "id": "u24-q03",
+          "text": "الا ان اولياء الله لا خوف عليهم و لا هم يحزنون"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u23",
+          "label": "Dhikr keeps God present; tawakkul turns that presence into practical reliance on God"
+        },
+        {
+          "to_unit_id": "u21",
+          "label": "Dua expresses dependence on God while tawakkul stabilizes the person when the requested outcome remains uncertain"
+        },
+        {
+          "to_unit_id": "u16",
+          "label": "Tawakkul does not replace activity, perseverance or attention; the person must do what lies within their responsibility"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincere action becomes freer from ego and recognition when its ultimate outcome is entrusted to God"
+        },
+        {
+          "to_unit_id": "u25",
+          "label": "The next chapter develops tawakkul further by connecting it to the stages of tawhid"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u24-001",
+          "title": "Tawakkul is the tenth external force for winning the inner war",
+          "order": 1,
+          "text": "Mazaheri presents trust in God as another major source of strength for the spiritual side and links it to carrying heavy responsibilities without being crushed by anxiety.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#pdf-page-461"
+        },
+        {
+          "id": "b03-u24-002",
+          "title": "Tawakkul means separating responsibility from outcome",
+          "order": 2,
+          "text": "The core analogy is agency: a person must perform the tasks that belong to them, while effects beyond their control are entrusted to God. Trust is therefore not passivity.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#pdf-page-462"
+        },
+        {
+          "id": "b03-u24-003",
+          "title": "A concrete example: effort is ours, effectiveness is God's",
+          "order": 3,
+          "text": "The lecture example of teaching shows the distinction clearly: coming to class, speaking and listening are human responsibilities, while actual comprehension and spiritual effect are not fully under human control.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#pdf-page-463"
+        },
+        {
+          "id": "b03-u24-004",
+          "title": "Healthy self-confidence and trust in God are complementary",
+          "order": 4,
+          "text": "Mazaheri rejects the idea that tawakkul means refusing to act. Confidence in one's responsibility, activity and preparation is necessary; dependence on God concerns what lies beyond one's control.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#pdf-page-464"
+        },
+        {
+          "id": "b03-u24-005",
+          "title": "Trust in God reduces anxiety because the believer has a reliable ultimate agent",
+          "order": 5,
+          "text": "When a person knows that God controls causes and can arrange what the person cannot, the uncertainty that produces sleeplessness and dread is reduced.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#pdf-page-465"
+        },
+        {
+          "id": "b03-u24-006",
+          "title": "Tawakkul rests on confidence in God's mercy, wisdom and knowledge",
+          "order": 6,
+          "text": "The chapter develops trust psychologically and theologically: God is not stingy, ignorant or cruel, so handing over what exceeds one's control is reasonable rather than blind resignation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#pdf-page-468"
+        },
+        {
+          "id": "b03-u24-007",
+          "title": "Trust can create courage under immediate danger",
+          "order": 7,
+          "text": "The airplane story illustrates the author's point that trust can prevent panic and preserve practical action when danger is real. The contrast is between fear that immobilizes and reliance that permits useful action.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#pdf-page-469"
+        },
+        {
+          "id": "b03-u24-008",
+          "title": "Tawakkul protects the person at the point where desires become overwhelming",
+          "order": 8,
+          "text": "The story of Prophet Yusuf is used to show that divine help matters precisely in moral dead ends, when temptation becomes powerful and ordinary willpower is under severe pressure.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#pdf-page-472"
+        },
+        {
+          "id": "b03-u24-009",
+          "title": "The same principle applies to food, sexuality, status and other strong desires",
+          "order": 9,
+          "text": "Mazaheri's examples of hunger, sexual temptation and ambition show that inner drives can become overwhelming. Trust in God is presented as a source of strength for refusing to let those drives rule.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#pdf-page-474"
+        },
+        {
+          "id": "b03-u24-010",
+          "title": "The practical culmination is 'God is enough'",
+          "order": 10,
+          "text": "The repeated instruction to internalize 'whoever relies on God, He is sufficient for him' is meant to become a lived psychological state: when God is truly treated as one's support, fear and despair lose their authority.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#pdf-page-478"
+        }
+      ]
+    },
+    {
+      "id": "u25",
+      "title": "گفتار بيست و پنجم : مراحل توحيد و توكل",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html",
+      "quotes": [
+        {
+          "id": "u25-q01",
+          "text": "افى الله شك فاطر السموات و الارض"
+        },
+        {
+          "id": "u25-q02",
+          "text": "و من يتوكل على الله فهو حسبه"
+        },
+        {
+          "id": "u25-q03",
+          "text": "لا إله الا الله"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u24",
+          "label": "Tawakkul is grounded in the theological claim that God is the ultimate agent, not merely a psychological coping technique"
+        },
+        {
+          "to_unit_id": "u23",
+          "label": "Dhikr of 'la ilaha illa Allah' becomes deeper when remembrance is understood as a claim about who truly acts in existence"
+        },
+        {
+          "to_unit_id": "u20",
+          "label": "Dua expresses dependence on God; tawhid explains why that dependence is rational within the chapter's framework"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Servitude reaches its doctrinal foundation when the servant recognizes God's exclusive lordship and authority"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Ikhlas requires removing rival objects of worship and recognition from the heart, which the chapter describes as practical tawhid"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u25-001",
+          "title": "The final chapter connects tawakkul to the foundations of tawhid",
+          "order": 1,
+          "text": "Mazaheri returns to the unfinished discussion of trust and argues that stable reliance on God depends on understanding who God is and what it means for Him to be the ultimate Lord.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#pdf-page-480"
+        },
+        {
+          "id": "b03-u25-002",
+          "title": "The existence of God is treated as a starting point rather than the main endpoint",
+          "order": 2,
+          "text": "The chapter says Islamic belief ordinarily begins with tawhid rather than separately counting proof of God's existence as an independent principle. The point is that recognition of God should quickly become recognition of His oneness.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#pdf-page-481"
+        },
+        {
+          "id": "b03-u25-003",
+          "title": "Fitrah is presented as an immediate human recognition of God",
+          "order": 3,
+          "text": "Mazaheri argues that when distractions, stubbornness and mental contamination fall away, the human fitrah recognizes a wise manager of the universe. Moments of crisis are used as illustrations of this innate orientation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#pdf-page-483"
+        },
+        {
+          "id": "b03-u25-004",
+          "title": "The argument from order points from coordinated creation to a wise manager",
+          "order": 4,
+          "text": "The chapter uses the regularity of the heavens, earth and cycles of nature to argue that the universe's coordinated order is evidence of an intelligent and capable disposer.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#pdf-page-485"
+        },
+        {
+          "id": "b03-u25-005",
+          "title": "Tawhid of essence: God is uniquely one",
+          "order": 5,
+          "text": "The first doctrinal stage discussed is divine unity at the level of essence: there is no second independent deity. The chapter distinguishes this from later levels of tawhid.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#pdf-page-493"
+        },
+        {
+          "id": "b03-u25-006",
+          "title": "Tawhid of attributes: divine attributes are not separate additions to God's essence",
+          "order": 6,
+          "text": "Mazaheri contrasts human dependence on acquired knowledge and power with the theological claim that God's knowledge, power and other attributes are not external components added to His essence.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#pdf-page-494"
+        },
+        {
+          "id": "b03-u25-007",
+          "title": "Tawhid of worship means removing rival rulers from the heart",
+          "order": 7,
+          "text": "The third level moves from doctrine to moral life: desires, status, wealth, fear and other attachments can become functional idols when they govern a person's heart instead of God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#pdf-page-495"
+        },
+        {
+          "id": "b03-u25-008",
+          "title": "Tawhid of action means recognizing God as the ultimate effective agent",
+          "order": 8,
+          "text": "The fourth level is expressed through 'la ilaha illa Allah' understood as 'there is no independent effective agent except God.' Causes and means exist, but their efficacy is ultimately dependent on God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#pdf-page-499"
+        },
+        {
+          "id": "b03-u25-009",
+          "title": "Everyday dependence can hide a subtle form of shirk",
+          "order": 9,
+          "text": "The chapter applies tawhid al-af'al to ordinary attachments: money, employment, insurance, family or influential people can become objects of inner reliance when the person forgets that their effects depend on God.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#pdf-page-500"
+        },
+        {
+          "id": "b03-u25-010",
+          "title": "Tawakkul is the practical consequence of tawhid of action",
+          "order": 10,
+          "text": "Once the person accepts that causes are subordinate to God, the conclusion is 'take Him as your trustee.' Tawhid therefore becomes a psychological and behavioral state of reliance rather than a purely intellectual proposition.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#pdf-page-501"
+        },
+        {
+          "id": "b03-u25-011",
+          "title": "The progression is from belief to purification to trust",
+          "order": 11,
+          "text": "The chapter's final chain connects proof of God's existence to tawhid of essence, attributes, worship and action, and then to tawakkul. Practical trust is presented as the lived culmination of the theological progression.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#pdf-page-503"
+        }
+      ]
     }
   ]
 }
