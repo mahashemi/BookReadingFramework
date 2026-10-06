@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0",
+  "book_id": "book03",
+  "title": "Jihad bil-Nafs",
+  "author": "Ayatollah Mazaheri",
+  "units": [
+    {
+      "id": "u01",
+      "title": "گفتار اول : تعليم و تربيت",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html",
+      "quotes": [
+        {
+          "id": "u01-q01",
+          "text": "كفى بالمرء جهلا ان لا يعرف قدره"
+        },
+        {
+          "id": "u01-q02",
+          "text": "كونوا دعاه الى الله به غير السنتكم"
+        },
+        {
+          "id": "u01-q03",
+          "text": "لاادري نصف العلم"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u02",
+          "label": "Self-control begins with directing natural desires rather than suppressing them"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Self-building and fulfilling one's duty"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincere action and the responsibility of influence"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u01-001",
+          "title": "The teacher's role is an extension of teaching and prophetic formation",
+          "order": 1,
+          "text": "Mazaheri frames teaching as a morally elevated vocation: the teacher participates in the work of divine and prophetic education. The Qur'anic emphasis on teaching is presented together with purification and formation, so education is not merely transferring information.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#pdf-page-004"
+        },
+        {
+          "id": "b03-u01-002",
+          "title": "Guiding one person can be greater than worldly gain",
+          "order": 2,
+          "text": "The lesson of the Khaybar narration is that guiding a person toward the straight path carries extraordinary value. Mazaheri uses it to shift the teacher's measure of success from ordinary worldly achievement to transforming a human life.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#pdf-page-008"
+        },
+        {
+          "id": "b03-u01-003",
+          "title": "Education can counter inherited and environmental influences",
+          "order": 3,
+          "text": "The chapter identifies four powerful formative influences: heredity, family upbringing, environment, and nourishment. The teacher's influence can counteract these forces, so education is presented as a genuine intervention in a person's formation rather than a passive reflection of circumstances.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#pdf-page-008"
+        },
+        {
+          "id": "b03-u01-004",
+          "title": "A teacher can become a turning point in a person's moral development",
+          "order": 4,
+          "text": "The stories of Umar ibn Abd al-Aziz and the son of Yazid are used to show how a teacher's influence can become the decisive spark that changes a person's moral direction even when family, environment, and upbringing point elsewhere.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#pdf-page-012"
+        },
+        {
+          "id": "b03-u01-005",
+          "title": "Great influence creates great responsibility",
+          "order": 5,
+          "text": "Because a teacher can build or damage a student's beliefs and character, teaching carries a correspondingly heavy moral responsibility. Mazaheri warns that harmful instruction can have consequences comparable to causing a person's spiritual destruction.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#pdf-page-016"
+        },
+        {
+          "id": "b03-u01-006",
+          "title": "Example is more powerful than speech alone",
+          "order": 6,
+          "text": "The advice to call people toward God through conduct as well as speech establishes a practical principle of education: students absorb the teacher's behavior, not merely the teacher's explicit lessons.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#pdf-page-017"
+        },
+        {
+          "id": "b03-u01-007",
+          "title": "Self-building precedes building others",
+          "order": 7,
+          "text": "The chapter applies the principle of self-construction to teachers and other people with influence over others. A person who has not worked on himself cannot reliably produce the same formation in someone else.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#pdf-page-019"
+        },
+        {
+          "id": "b03-u01-008",
+          "title": "Intellectual humility is part of responsible teaching",
+          "order": 8,
+          "text": "Mazaheri insists that a teacher must distinguish knowledge from ignorance. Saying 'I do not know' is presented as a form of intellectual honesty that prevents an uninformed answer from becoming a false foundation in a student's mind.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#pdf-page-020"
+        },
+        {
+          "id": "b03-u01-009",
+          "title": "Duty must be fulfilled carefully because entrusted time is not recoverable",
+          "order": 9,
+          "text": "The chapter closes by connecting educational responsibility with faithful performance of duty. Teachers should use their opportunity well, prepare for class, think before speaking, and recognize that the trust placed in them includes both teaching and moral formation.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#pdf-page-22"
+        }
+      ]
+    },
+    {
+      "id": "u02",
+      "title": "گفتار دوم : گناه و تعديل غرايز",
+      "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html",
+      "quotes": [
+        {
+          "id": "u02-q01",
+          "text": "من حاول أمراً بمعصية الله فهو أفوت لما يرجوا و أسرع لما يحذر"
+        },
+        {
+          "id": "u02-q02",
+          "text": "لا رهبانيه فى الاسلام"
+        },
+        {
+          "id": "u02-q03",
+          "text": "عليك بصدق الحديث و أداء الامانه"
+        }
+      ],
+      "connections": [
+        {
+          "to_unit_id": "u01",
+          "label": "Moral formation and responsibility for how desires are directed"
+        },
+        {
+          "to_unit_id": "u03",
+          "label": "The inner struggle between desire and spiritual agency"
+        },
+        {
+          "to_unit_id": "u15",
+          "label": "Duty, self-discipline and lawful fulfillment of life"
+        },
+        {
+          "to_unit_id": "u17",
+          "label": "Sincere action versus self-serving motives"
+        }
+      ],
+      "chunks": [
+        {
+          "id": "b03-u02-001",
+          "title": "The governing rule: a goal pursued through sin turns against the seeker",
+          "order": 1,
+          "text": "Mazaheri builds the chapter around Imam al-Husayn's maxim that a person who tries to obtain something through disobedience to God will lose what he seeks and move rapidly toward what he fears. The principle is presented as a practical law of life, not merely an abstract moral warning.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#pdf-page-025"
+        },
+        {
+          "id": "b03-u02-002",
+          "title": "Islam does not require destroying natural desires",
+          "order": 2,
+          "text": "Human beings possess natural drives and inclinations, and Mazaheri argues that Islam does not command their elimination. The Qur'anic balance is to seek the hereafter without forgetting one's lawful share of worldly life.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#pdf-page-026"
+        },
+        {
+          "id": "b03-u02-003",
+          "title": "The problem is not desire but the way desire is satisfied",
+          "order": 3,
+          "text": "Natural drives such as wealth, status, family provision and social standing can be fulfilled through lawful effort or through sin. The same desire may therefore lead either toward constructive development or toward moral collapse depending on the method used to satisfy it.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#pdf-page-028"
+        },
+        {
+          "id": "b03-u02-004",
+          "title": "Umar ibn Sa'd illustrates desire overpowering moral judgment",
+          "order": 4,
+          "text": "Umar ibn Sa'd's decision before Karbala is presented as an example of the conflict between spiritual judgment and animal desire. His attraction to political authority and material benefit gradually overcomes his moral hesitation, after which he rationalizes the decision by promising himself future repentance.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#pdf-page-030"
+        },
+        {
+          "id": "b03-u02-005",
+          "title": "Sin can produce the opposite of the worldly benefit it promises",
+          "order": 5,
+          "text": "The later humiliation of Umar ibn Sa'd is used as the concrete fulfillment of Imam al-Husayn's maxim: the attempt to obtain worldly authority through wrongdoing not only destroys the person's moral future but also brings humiliation and loss in the very worldly sphere he sought to secure.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#pdf-page-032"
+        },
+        {
+          "id": "b03-u02-006",
+          "title": "Righteousness protects one's descendants better than sinful accumulation",
+          "order": 6,
+          "text": "The story of Moses and al-Khidr's wall is interpreted as evidence that a parent's righteousness can become protection for vulnerable descendants. Mazaheri contrasts this with the attempt to secure children materially through lies, slander, injustice or unlawful wealth.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#pdf-page-036"
+        },
+        {
+          "id": "b03-u02-007",
+          "title": "A good life is linked to righteous action and faith",
+          "order": 7,
+          "text": "The chapter connects a wholesome worldly life and the afterlife reward to righteous action joined with faith. Wealth, comfort and apparent success are not treated as reliable measures of a good life when the person's relationship with God is broken.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#pdf-page-038"
+        },
+        {
+          "id": "b03-u02-008",
+          "title": "Trust and honest work are part of lawful desire-management",
+          "order": 8,
+          "text": "The story of Abd al-Rahman ibn Sababah illustrates the practical virtues of truthful dealing and returning entrusted property. Mazaheri applies the principle to teachers: accepting money while failing to deliver the entrusted work becomes a form of cheating and moral betrayal.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#pdf-page-040"
+        },
+        {
+          "id": "b03-u02-009",
+          "title": "Preparation and faithful performance are moral obligations",
+          "order": 9,
+          "text": "The chapter extends the warning against cheating to professional responsibility. A person who accepts compensation but deliberately underperforms has taken more than he gives, making the Qur'anic warning against fraud relevant to ordinary work as well as commerce.",
+          "importance": "high",
+          "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#pdf-page-041"
+        }
+      ]
+    }
+  ]
+}
