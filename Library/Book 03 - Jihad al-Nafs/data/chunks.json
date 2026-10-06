@@ -113,7 +113,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-01.html#source-page-0029"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Teaching is a moral trust: build yourself before trying to build others, lead by example, and treat influence over another person's formation as a responsibility rather than a privilege.",
+        "evidence_chunk_ids": [
+          "b03-u01-001",
+          "b03-u01-006"
+        ]
+      }
     },
     {
       "id": "u02",
@@ -224,7 +231,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-02.html#source-page-0048"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Good character does not require destroying natural desires; it requires governing them lawfully and honestly so that desire serves a worthy end rather than becoming its master.",
+        "evidence_chunk_ids": [
+          "b03-u02-002",
+          "b03-u02-003"
+        ]
+      }
     },
     {
       "id": "u03",
@@ -339,7 +353,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-03.html#source-page-0063"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Moral character is formed through self-mastery: accept the difficulty of disciplining desire, strengthen the spiritual side of the person, and use the body as an instrument rather than an authority.",
+        "evidence_chunk_ids": [
+          "b03-u03-004",
+          "b03-u03-005"
+        ]
+      }
     },
     {
       "id": "u04",
@@ -450,7 +471,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-04.html#source-page-0085"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Real courage begins with governing oneself. Prayer and obligation are not merely rituals here; they are disciplines that reinforce the character needed to resist the inner enemy.",
+        "evidence_chunk_ids": [
+          "b03-u04-002",
+          "b03-u04-008"
+        ]
+      }
     },
     {
       "id": "u05",
@@ -565,7 +593,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-05.html#source-page-0100"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Protect the heart from becoming ruled by desire. Dependence on God, disciplined worship, communal responsibility, and patience gradually turn resistance to the lower self into character.",
+        "evidence_chunk_ids": [
+          "b03-u05-003",
+          "b03-u05-007"
+        ]
+      }
     },
     {
       "id": "u06",
@@ -696,7 +731,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-06.html#source-page-0127"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Patience is trained endurance: remain steady in hardship, responsibility, temptation, and family life, trusting that perseverance strengthens the capacity to choose what is right.",
+        "evidence_chunk_ids": [
+          "b03-u06-002",
+          "b03-u06-008"
+        ]
+      }
     },
     {
       "id": "u07",
@@ -835,7 +877,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-07.html#source-page-0146"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Patience becomes akhlaq when repeated restraint turns into a stable disposition. Practice forbearance, truthfulness, mercy, and steady worship until good responses become more natural.",
+        "evidence_chunk_ids": [
+          "b03-u07-003",
+          "b03-u07-010"
+        ]
+      }
     },
     {
       "id": "u08",
@@ -950,7 +999,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-08.html#source-page-0167"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Patience is proven by its fruits: vigilance, moral safety, and the ability to withstand pressure without abandoning faith or harming others. It is a continuing discipline, not a one-time victory.",
+        "evidence_chunk_ids": [
+          "b03-u08-003",
+          "b03-u08-009"
+        ]
+      }
     },
     {
       "id": "u09",
@@ -1097,7 +1153,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-09.html#source-page-0187"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Repentance should produce mercy and repair, not humiliation or despair. Recognize wrongdoing honestly, return to God, correct conduct, and restore what can be restored.",
+        "evidence_chunk_ids": [
+          "b03-u09-002",
+          "b03-u09-007"
+        ]
+      }
     },
     {
       "id": "u10",
@@ -1228,7 +1291,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-10.html#source-page-0208"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Do not postpone moral repair while protecting the ego. Watch for envy, status-seeking, rationalization, and self-deception, because they can make a person defend the very fault that needs repentance.",
+        "evidence_chunk_ids": [
+          "b03-u10-005",
+          "b03-u10-008"
+        ]
+      }
     },
     {
       "id": "u11",
@@ -1351,7 +1421,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-11.html#source-page-0225"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Repentance includes responsibility toward other people: restore rights, repair harm where possible, and do not use fear of judgment as an excuse for either despair or inaction.",
+        "evidence_chunk_ids": [
+          "b03-u11-006",
+          "b03-u11-008"
+        ]
+      }
     },
     {
       "id": "u12",
@@ -1458,7 +1535,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-12.html#source-page-0235"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "A good character needs enough inner capacity to carry pressure without becoming harsh or defeated. Patience, humility, and continued effort enlarge the person who must serve others.",
+        "evidence_chunk_ids": [
+          "b03-u12-002",
+          "b03-u12-007"
+        ]
+      }
     },
     {
       "id": "u13",
@@ -1565,7 +1649,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-13.html#source-page-0253"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Moral growth requires practice, not merely insight. Build good habits repeatedly, stay attentive, and continue after setbacks or ordinary days until steadiness becomes part of character.",
+        "evidence_chunk_ids": [
+          "b03-u13-005",
+          "b03-u13-008"
+        ]
+      }
     },
     {
       "id": "u14",
@@ -1688,7 +1779,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-14.html#source-page-0276"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Speech is an ethical act. Restrain ridicule, unnecessary cleverness, and careless claims; consider the dignity of the listener and the consequences that words can leave behind.",
+        "evidence_chunk_ids": [
+          "b03-u14-002",
+          "b03-u14-010"
+        ]
+      }
     },
     {
       "id": "u15",
@@ -1799,7 +1897,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-15.html#source-page-0278"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Servitude to God reshapes how one treats everything else: obey with trust, remain steady in hardship and prosperity, and treat possessions, abilities, and responsibilities as entrusted rather than owned absolutely.",
+        "evidence_chunk_ids": [
+          "b03-u15-006",
+          "b03-u15-009"
+        ]
+      }
     },
     {
       "id": "u16",
@@ -1906,7 +2011,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-16.html#source-page-0297"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Character is protected by continued work. Activity, perseverance, repentance, and attention keep the inner struggle alive instead of allowing repeated wrongdoing to become normal.",
+        "evidence_chunk_ids": [
+          "b03-u16-002",
+          "b03-u16-007"
+        ]
+      }
     },
     {
       "id": "u17",
@@ -2009,7 +2121,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-17.html#source-page-0318"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Sincerity means directing thought, speech, work, and family life toward God rather than applause. When recognition is no longer the reward, service becomes steadier and less resentful.",
+        "evidence_chunk_ids": [
+          "b03-u17-001",
+          "b03-u17-007"
+        ]
+      }
     },
     {
       "id": "u18",
@@ -2120,7 +2239,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-18.html#source-page-0335"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Spiritual discipline should be sustainable. Build worship gradually, protect obligatory duties, and let repeated practice form a durable relationship with God rather than a short-lived burst of effort.",
+        "evidence_chunk_ids": [
+          "b03-u18-003",
+          "b03-u18-009"
+        ]
+      }
     },
     {
       "id": "u19",
@@ -2243,7 +2369,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-19.html#source-page-0367"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Treat the Qur'an as a source of moral formation, not merely recitation. Read with reflection, return to it under pressure, and let its guidance shape conduct in the home and in difficulty.",
+        "evidence_chunk_ids": [
+          "b03-u19-003",
+          "b03-u19-009"
+        ]
+      }
     },
     {
       "id": "u20",
@@ -2366,7 +2499,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-20.html#source-page-0396"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Dua cultivates humility and dependence on God. It teaches the heart to release competing masters, carry difficulty without isolation, and find joy in turning toward God rather than only in receiving outcomes.",
+        "evidence_chunk_ids": [
+          "b03-u20-002",
+          "b03-u20-009"
+        ]
+      }
     },
     {
       "id": "u21",
@@ -2497,7 +2637,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-21.html#source-page-0426"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Prayer is not a claim upon a desired outcome; it is a purified relationship with God. Repentance and cleansing the heart make supplication an exercise in humility rather than entitlement.",
+        "evidence_chunk_ids": [
+          "b03-u21-003",
+          "b03-u21-011"
+        ]
+      }
     },
     {
       "id": "u22",
@@ -2636,7 +2783,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-22.html#source-page-0446"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Tawassul is presented as devotional humility: seek God through the means He has taught, respect spiritual exemplars, and let knowledge deepen submission rather than inflate the ego.",
+        "evidence_chunk_ids": [
+          "b03-u22-002",
+          "b03-u22-007"
+        ]
+      }
     },
     {
       "id": "u23",
@@ -2759,7 +2913,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-23.html#source-page-0462"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Remembering God is meant to become a disposition of God-consciousness. Repetition, inward attention, and appropriate forms of remembrance train the heart to resist distraction and harmful suggestion.",
+        "evidence_chunk_ids": [
+          "b03-u23-003",
+          "b03-u23-010"
+        ]
+      }
     },
     {
       "id": "u24",
@@ -2882,7 +3043,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-24.html#source-page-0485"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Tawakkul joins responsibility with trust: do the work you are responsible for, but do not make your own power the ultimate source of security. This produces courage without arrogance and calm without passivity.",
+        "evidence_chunk_ids": [
+          "b03-u24-002",
+          "b03-u24-006"
+        ]
+      }
     },
     {
       "id": "u25",
@@ -3013,7 +3181,14 @@
           "importance": "high",
           "source_url": "https://mahashemi.github.io/BookReadingFramework/Library/Book%2003%20-%20Jihad%20al-Nafs/source/chapter-25.html#source-page-0510"
         }
-      ]
+      ],
+      "akhlaq": {
+        "lesson": "Tawhid reaches akhlaq when it changes dependence: recognize God as the ultimate source of efficacy, remove subtle rival masters from the heart, and let trust in God reshape action.",
+        "evidence_chunk_ids": [
+          "b03-u25-008",
+          "b03-u25-010"
+        ]
+      }
     }
   ]
 }
