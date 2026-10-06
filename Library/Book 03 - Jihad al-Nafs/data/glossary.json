@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "book_id": "book03",
+  "title": "Jihad bil-Nafs — Glossary",
+  "description": "Reader-facing glossary with unit-level provenance.",
+  "entries": [
+    {
+      "term": "Jihad al-Nafs",
+      "kind": "core concept",
+      "gloss": "Striving against the lower or disordering tendencies of the self so the person is formed toward obedience, virtue, and nearness to God.",
+      "units": [
+        "u03",
+        "u05",
+        "u15"
+      ]
+    },
+    {
+      "term": "nafs",
+      "kind": "concept",
+      "gloss": "The self or inner dimension of the human person discussed in relation to desire, discipline, repentance, and spiritual formation.",
+      "units": [
+        "u03",
+        "u05",
+        "u07",
+        "u09"
+      ]
+    },
+    {
+      "term": "nafs ammarah",
+      "kind": "concept",
+      "gloss": "The commanding self: the tendency of desire to press a person toward what is forbidden or spiritually harmful when it is not governed.",
+      "units": [
+        "u05",
+        "u10"
+      ]
+    },
+    {
+      "term": "sabr",
+      "kind": "virtue",
+      "gloss": "Patience, endurance, and steadiness under difficulty, temptation, or duty; the book treats it as something that can become a stable disposition.",
+      "units": [
+        "u06",
+        "u07",
+        "u08"
+      ]
+    },
+    {
+      "term": "tawbah",
+      "kind": "virtue",
+      "gloss": "Repentance: recognizing wrongdoing, regretting it, turning away from it, and repairing what can be repaired.",
+      "units": [
+        "u09",
+        "u10",
+        "u11"
+      ]
+    },
+    {
+      "term": "sadr",
+      "kind": "virtue",
+      "gloss": "Inner expansiveness or breadth of chest: remaining open, composed, and constructive rather than narrowed by anger, insult, or pressure.",
+      "units": [
+        "u12",
+        "u13"
+      ]
+    },
+    {
+      "term": "kaffarah",
+      "kind": "concept",
+      "gloss": "A means by which wrongdoing or its consequences are addressed through prescribed or morally corrective acts.",
+      "units": [
+        "u14"
+      ]
+    },
+    {
+      "term": "ibadah",
+      "kind": "practice",
+      "gloss": "Worship and servitude to God, presented as a way of orienting the whole person toward God rather than as isolated rituals.",
+      "units": [
+        "u15",
+        "u23",
+        "u25"
+      ]
+    },
+    {
+      "term": "ikhlas",
+      "kind": "virtue",
+      "gloss": "Sincerity: orienting an act toward God rather than making reputation, praise, status, or approval its real purpose.",
+      "units": [
+        "u17"
+      ]
+    },
+    {
+      "term": "dhikr",
+      "kind": "practice",
+      "gloss": "Remembrance of God through verbal and inward attention; presented as a practical force for sustaining God-consciousness.",
+      "units": [
+        "u23"
+      ]
+    },
+    {
+      "term": "tawakkul",
+      "kind": "virtue",
+      "gloss": "Reliance upon God while still fulfilling responsibilities and taking appropriate means; trust in the outcome, not abandonment of effort.",
+      "units": [
+        "u24",
+        "u25"
+      ]
+    },
+    {
+      "term": "tawhid",
+      "kind": "doctrine",
+      "gloss": "Divine oneness; the final unit distinguishes dimensions including essence, attributes, worship, and action.",
+      "units": [
+        "u25"
+      ]
+    },
+    {
+      "term": "taqwa",
+      "kind": "virtue",
+      "gloss": "God-consciousness expressed as vigilance in choices and restraint from what distances a person from God.",
+      "units": [
+        "u23",
+        "u25"
+      ]
+    },
+    {
+      "term": "despair",
+      "kind": "spiritual danger",
+      "gloss": "Treating failure or sin as grounds for giving up hope, making further reform less likely.",
+      "units": [
+        "u10",
+        "u11"
+      ]
+    },
+    {
+      "term": "taswif",
+      "kind": "spiritual danger",
+      "gloss": "Putting repentance or necessary reform off until later, allowing delay itself to become a barrier to change.",
+      "units": [
+        "u10",
+        "u11"
+      ]
+    },
+    {
+      "term": "ghara'iz",
+      "kind": "human tendency",
+      "gloss": "Natural drives and inclinations. The book argues for their regulation and proper direction rather than indiscriminate destruction.",
+      "units": [
+        "u02",
+        "u03"
+      ]
+    },
+    {
+      "term": "spiritual formation",
+      "kind": "framework",
+      "gloss": "Long-term shaping of the person through knowledge, repeated practice, restraint, repentance, worship, and divine orientation.",
+      "units": [
+        "u01",
+        "u03",
+        "u07",
+        "u15"
+      ]
+    },
+    {
+      "term": "self-control",
+      "kind": "practice",
+      "gloss": "Governance of impulses and desires so a person can choose what is right instead of simply obeying the strongest immediate inclination.",
+      "units": [
+        "u02",
+        "u03",
+        "u05"
+      ]
+    },
+    {
+      "term": "repentance and repair",
+      "kind": "practice",
+      "gloss": "Repentance is incomplete when wrongdoing has created obligations toward other people that remain unaddressed.",
+      "units": [
+        "u11"
+      ]
+    },
+    {
+      "term": "speech as self-discipline",
+      "kind": "practice",
+      "gloss": "Treating speech as an arena of self-control: truth, timing, intention, audience, and consequences all matter.",
+      "units": [
+        "u14"
+      ]
+    },
+    {
+      "term": "education and purification",
+      "kind": "framework",
+      "gloss": "Education is more than information transfer: teaching should contribute to moral and spiritual formation.",
+      "units": [
+        "u01"
+      ]
+    },
+    {
+      "term": "trust and responsibility",
+      "kind": "distinction",
+      "gloss": "Tawakkul does not erase human responsibility; the person acts and uses means while entrusting ultimate effectiveness and outcome to God.",
+      "units": [
+        "u24",
+        "u25"
+      ]
+    }
+  ]
+}
