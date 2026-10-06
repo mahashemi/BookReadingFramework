@@ -28,7 +28,7 @@ test("source links have a canonical fallback", () => {
 });
 
 test("optional modules stay guarded", () => {
-  assert.match(app, /meta\.links\?\.studyGuide/);
+  assert.match(app, /meta\.links\?\.\[k\]/);
   assert.match(app, /meta\.links\?\.mindMap/);
   assert.match(app, /meta\.links\?\.unitTests/);
   assert.match(app, /meta\.links\?\.fullBookExam/);
