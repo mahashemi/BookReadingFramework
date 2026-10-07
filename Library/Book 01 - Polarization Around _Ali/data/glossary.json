@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "book_id": "book01",
+  "title": "Polarization Around the Character of 'Ali — Glossary",
+  "description": "Reader-facing glossary with unit-level provenance.",
+  "entries": [
+    {
+      "term": "attraction and repulsion",
+      "kind": "core concept",
+      "gloss": "The book's governing category: the forces by which people are drawn toward or pushed away from one another in social and moral life.",
+      "units": [
+        "u02",
+        "u03",
+        "u04",
+        "u05"
+      ],
+      "source_chunk_ids": [
+        "b01-u02-001",
+        "b01-u03-001"
+      ]
+    },
+    {
+      "term": "tadadd",
+      "kind": "concept",
+      "gloss": "Contrariety or opposition; Mutahhari presents resemblance and contrariety as basic causes of human attraction and repulsion.",
+      "units": [
+        "u03"
+      ],
+      "source_chunk_ids": [
+        "b01-u03-002"
+      ]
+    },
+    {
+      "term": "Shi'ism",
+      "kind": "tradition",
+      "gloss": "The school of devotion to 'Ali as presented by Mutahhari, whose spirit he connects with discernment of truth and principled attraction and repulsion.",
+      "units": [
+        "u07",
+        "u15",
+        "u22"
+      ],
+      "source_chunk_ids": [
+        "b01-u07-001",
+        "b01-u15-001",
+        "b01-u22-001"
+      ]
+    },
+    {
+      "term": "muwaddah wa rahmah",
+      "kind": "concept",
+      "gloss": "Love and mercy: the higher human sentiment contrasted with merely possessive or passionate love.",
+      "units": [
+        "u10"
+      ],
+      "source_chunk_ids": [
+        "b01-u10-001",
+        "b01-u10-002"
+      ]
+    },
+    {
+      "term": "love",
+      "kind": "core concept",
+      "gloss": "A transformative force whose moral effect depends on its object and the way the lover responds to it.",
+      "units": [
+        "u08",
+        "u10",
+        "u11",
+        "u12",
+        "u13"
+      ],
+      "source_chunk_ids": [
+        "b01-u08-001",
+        "b01-u10-001"
+      ]
+    },
+    {
+      "term": "self-love",
+      "kind": "concept",
+      "gloss": "The limiting defensive structure of the ego; the book's discipline is to expand the self's concern rather than simply despise the self.",
+      "units": [
+        "u09",
+        "u13"
+      ],
+      "source_chunk_ids": [
+        "b01-u09-001",
+        "b01-u13-001"
+      ]
+    },
+    {
+      "term": "Khawarij",
+      "kind": "historical movement",
+      "gloss": "The movement that emerged from the Siffin arbitration crisis and developed a rigid religious-political doctrine that Mutahhari treats as a recurring spirit as well as a historical sect.",
+      "units": [
+        "u18",
+        "u19",
+        "u20",
+        "u21",
+        "u22",
+        "u23"
+      ],
+      "source_chunk_ids": [
+        "b01-u18-001",
+        "b01-u19-001"
+      ]
+    },
+    {
+      "term": "Nakithun",
+      "kind": "historical group",
+      "gloss": "The people of Jamal whom 'Ali described as those who broke their allegiance.",
+      "units": [
+        "u17"
+      ],
+      "source_chunk_ids": [
+        "b01-u17-001"
+      ]
+    },
+    {
+      "term": "Qasitun",
+      "kind": "historical group",
+      "gloss": "The people of Siffin whom 'Ali described as those who deviated from the path.",
+      "units": [
+        "u17"
+      ],
+      "source_chunk_ids": [
+        "b01-u17-002"
+      ]
+    },
+    {
+      "term": "Mariqun",
+      "kind": "historical group",
+      "gloss": "The Khawarij of Nahrawan, described as those who passed beyond or missed the truth of the religion.",
+      "units": [
+        "u17",
+        "u18"
+      ],
+      "source_chunk_ids": [
+        "b01-u17-003",
+        "b01-u18-001"
+      ]
+    },
+    {
+      "term": "tahkim",
+      "kind": "historical concept",
+      "gloss": "The arbitration at Siffin that became the immediate setting for the emergence of the Khawarij.",
+      "units": [
+        "u18",
+        "u19"
+      ],
+      "source_chunk_ids": [
+        "b01-u18-002",
+        "b01-u19-001"
+      ]
+    },
+    {
+      "term": "amr bil-ma'ruf wa nahi 'an al-munkar",
+      "kind": "practice",
+      "gloss": "Bidding to good and forbidding evil; the book stresses that it requires knowledge and sound judgment about effective action and consequences.",
+      "units": [
+        "u18",
+        "u21",
+        "u23"
+      ],
+      "source_chunk_ids": [
+        "b01-u18-006",
+        "b01-u21-010"
+      ]
+    },
+    {
+      "term": "taqiyah",
+      "kind": "concept",
+      "gloss": "Dissimulation discussed in the historical treatment of the Khawarij and the reasons their inflexibility contributed to their decline.",
+      "units": [
+        "u18",
+        "u21"
+      ],
+      "source_chunk_ids": [
+        "b01-u18-009",
+        "b01-u21-004"
+      ]
+    },
+    {
+      "term": "hypocrisy",
+      "kind": "spiritual danger",
+      "gloss": "A form of outward conformity masking an opposing inner commitment; the book contrasts it with principled love that remains aligned with truth.",
+      "units": [
+        "u03",
+        "u23"
+      ],
+      "source_chunk_ids": [
+        "b01-u03-005",
+        "b01-u23-005"
+      ]
+    },
+    {
+      "term": "democracy of 'Ali",
+      "kind": "leadership principle",
+      "gloss": "The unusually broad tolerance 'Ali extended to the Khawarij while they remained within the sphere of criticism and speech, before armed revolt changed the situation.",
+      "units": [
+        "u20"
+      ],
+      "source_chunk_ids": [
+        "b01-u20-001",
+        "b01-u20-010"
+      ]
+    }
+  ]
+}

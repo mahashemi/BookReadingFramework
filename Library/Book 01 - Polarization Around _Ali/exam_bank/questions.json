@@ -1,0 +1,2379 @@
+{
+  "schema_version": "1.0",
+  "book_id": "book01",
+  "title": "Polarization Around the Character of 'Ali ibn Abi Talib",
+  "description": "Canonical question universe migrated from the original Book 01 study guide. Existing questions are preserved and tagged for the generic study engine.",
+  "questions": [
+    {
+      "id": "b01-u01-q01",
+      "type": "MCQ",
+      "unit_id": "u01",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The book was originally delivered as what?",
+      "answer": "Four lectures, at the Husayniyah al-Irshad in Tehran, 18–21 Ramadan 1388 AH (1969 CE). Written up 1971.",
+      "evidence": [
+        "b01-u01-004"
+      ]
+    },
+    {
+      "id": "b01-u01-q02",
+      "type": "FILL",
+      "unit_id": "u01",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Ibn Shahrashub reportedly had ______ books titled Manaqib about 'Ali in his library.",
+      "answer": "One thousand (1,000).",
+      "evidence": [
+        "b01-u01-003",
+        "b01-u01-004"
+      ]
+    },
+    {
+      "id": "b01-u01-q03",
+      "type": "SHORT",
+      "unit_id": "u01",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "What does the Ibn Sina anecdote prove, and why does Mutahhari open with it?",
+      "answer": "A student claimed Ibn Sina could pass for a prophet. Ibn Sina proved otherwise: his own student wouldn't leave a warm bed to fetch him water, yet the muezzin rose in the cold to obey a command four centuries old. Philosophers produce students; prophets produce hearts that obey. It sets up the whole book's claim that 'Ali's hold on people is of a different order from intellectual influence.",
+      "evidence": [
+        "b01-u01-004",
+        "b01-u01-001"
+      ]
+    },
+    {
+      "id": "b01-u01-q04",
+      "type": "SHORT",
+      "unit_id": "u01",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Distinguish philosophers, social leaders, and Sufi shaykhs as Mutahhari does — and where does 'Ali stand?",
+      "answer": "Philosophers produce students, not followers. Social leaders produce followers, but not complete men. Sufi shaykhs produce 'lords of submission', not active fighters. 'Ali uniquely combines the characteristics of all three plus something of the prophets: his school is at once intellect, revolution, discipline, and beauty/ecstasy/movement.",
+      "evidence": [
+        "b01-u01-004",
+        "b01-u01-005"
+      ]
+    },
+    {
+      "id": "b01-u01-q05",
+      "type": "LONG",
+      "unit_id": "u01",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Mutahhari says great personalities provoke reaction 'positive or negative'. Explain how this Foreword claim frames the entire book.",
+      "answer": "The Foreword establishes the book's governing principle before any argument: magnitude of personality is measured by magnitude of reaction, in either direction. A weak personality engages few minds; a powerful one agitates many, though the agitation may be love or hatred. This makes 'repulsion' not an embarrassment to be explained away but evidence of greatness — which is exactly what Part 2 will need. It also licenses the four-type taxonomy in the Introduction (where the man who provokes nothing is the most deficient), and it sets up the Foreword's self-critical sting: if we follow 'Ali properly we must have both powers, and must check whether we attract and repel the same kinds of people he did.",
+      "evidence": [
+        "b01-u01-006",
+        "b01-u01-002"
+      ]
+    },
+    {
+      "id": "b01-u02-q01",
+      "type": "MCQ",
+      "unit_id": "u02",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Which pair did ancient man recognise as symbolic of attraction?",
+      "answer": "Magnet/iron and amber/straw. He knew these particular relationships but not the universal law.",
+      "evidence": [
+        "b01-u02-002",
+        "b01-u02-001"
+      ]
+    },
+    {
+      "id": "b01-u02-q02",
+      "type": "FILL",
+      "unit_id": "u02",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The nutritive faculty was said to have four subsidiary faculties: attractive, repulsive, ______ and ______.",
+      "answer": "Digestive and retentive.",
+      "evidence": [
+        "b01-u02-004",
+        "b01-u02-003"
+      ]
+    },
+    {
+      "id": "b01-u02-q03",
+      "type": "SHORT",
+      "unit_id": "u02",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "What were the two ancient explanations for the earth staying fixed in space?",
+      "answer": "Either the heavens attract it equally from all sides, so it inclines nowhere; or the heavens repel it equally from all sides, with the same result. Both are equilibrium accounts.",
+      "evidence": [
+        "b01-u02-003",
+        "b01-u02-004"
+      ]
+    },
+    {
+      "id": "b01-u02-q04",
+      "type": "SHORT",
+      "unit_id": "u02",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Why does Mutahhari begin a book about 'Ali with physics and physiology?",
+      "answer": "To establish that attraction/repulsion is a structural law of existence, not a figure of speech. If it governs atoms, planets and even digestion, then finding it in human society — and at maximum intensity in 'Ali — is not poetic licence but the same law operating at a higher level. It gives the book's central category objective standing before he applies it.",
+      "evidence": [
+        "b01-u02-001",
+        "b01-u02-004"
+      ]
+    },
+    {
+      "id": "b01-u03-q01",
+      "type": "MCQ",
+      "unit_id": "u03",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "In the Rumi story, what did the raven and the stork share?",
+      "answer": "Both were lame in one leg. No similarity of shape or colour — the bond rested on a single hidden commonality.",
+      "evidence": [
+        "b01-u03-003",
+        "b01-u03-002"
+      ]
+    },
+    {
+      "id": "b01-u03-q02",
+      "type": "FILL",
+      "unit_id": "u03",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The basic cause of attraction and repulsion is general resemblance and ______.",
+      "answer": "Contrariety (tadadd).",
+      "evidence": [
+        "b01-u03-002",
+        "b01-u03-005"
+      ]
+    },
+    {
+      "id": "b01-u03-q03",
+      "type": "SHORT",
+      "unit_id": "u03",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "What two things does Mutahhari explicitly exclude from this discussion?",
+      "answer": "(1) Sexual attraction/repulsion — real, but an independent object of enquiry. (2) Cooperation based on sharing of benefits — also outside scope. What remains is friendship/affection versus enmity/hatred among individuals in social life.",
+      "evidence": [
+        "b01-u03-001",
+        "b01-u03-005"
+      ]
+    },
+    {
+      "id": "b01-u03-q04",
+      "type": "LONG",
+      "unit_id": "u03",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Set out both theories of human attraction (resemblance and need) and explain why Mutahhari's conclusion holds on either.",
+      "answer": "Resemblance theory: attraction springs from general resemblance, repulsion from contrariety (tadadd); metaphysics establishes resemblance as the cause of union. Rumi's raven and stork prove the point — two alien species bound by one shared lameness. Mutahhari's corollary: nearness between two people is itself evidence of similarity, and nobody becomes a friend or an enemy without cause.Need theory: man is created in want and labours to fill his emptiness; he cannot do so alone, so he allies himself with others. He is enthusiastic about whatever he reckons good for his life, keeps away whatever conflicts with his aims, and is unresponsive to whatever is neither. Every inclination springs from the instinct for advantage.Why the conclusion survives either: whichever mechanism one adopts, attraction and repulsion emerge as two fundamental pillars of the life of man — and to whatever degree they are reduced, disorder takes the place of order. The one who fills vacuums attracts; the one who enlarges them repels; the one who does neither is ignored. This last clause is what generates the four-type taxonomy in the next chapter.",
+      "evidence": [
+        "b01-u03-004",
+        "b01-u03-005"
+      ]
+    },
+    {
+      "id": "b01-u04-q01",
+      "type": "MCQ",
+      "unit_id": "u04",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Which of these is named as having strong attraction AND repulsion despite not being virtuous?",
+      "answer": "Nadir Shah — also Genghis Khan, Hajjaj and Mu'awiyah.",
+      "evidence": [
+        "b01-u04-007",
+        "b01-u04-008"
+      ]
+    },
+    {
+      "id": "b01-u04-q02",
+      "type": "FILL",
+      "unit_id": "u04",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "application"
+      ],
+      "prompt": "Type 1 goes among men as if a ______ were among them.",
+      "answer": "A slab of rock.",
+      "evidence": [
+        "b01-u04-001",
+        "b01-u04-002"
+      ]
+    },
+    {
+      "id": "b01-u04-q03",
+      "type": "FILL",
+      "unit_id": "u04",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "'Ali on Ibn Muljam: 'Should I punish before the ______?'",
+      "answer": "Crime.",
+      "evidence": [
+        "b01-u04-005"
+      ]
+    },
+    {
+      "id": "b01-u04-q04",
+      "type": "MCQ",
+      "unit_id": "u04",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The Zamzam/cremation poem illustrates which type?",
+      "answer": "Type 2 — attracts everyone, repels no one.",
+      "evidence": [
+        "b01-u04-002",
+        "b01-u04-001"
+      ]
+    },
+    {
+      "id": "b01-u04-q05",
+      "type": "SHORT",
+      "unit_id": "u04",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Why is Type 1 the most damning category, given Type 3 at least makes enemies?",
+      "answer": "Because Mutahhari defines 'positive' as covering wickedness as well as virtue — so Type 1 has no positive quality in either direction. Man is created needing to love and be loved, and also to hate and be hated; Type 1 satisfies neither need. He is an animal who eats, sleeps and walks; like a sheep looked after only because its meat will be consumed. He 'starts no wave of approval, nor any wave of disapproval'.",
+      "evidence": [
+        "b01-u04-001",
+        "b01-u04-003"
+      ]
+    },
+    {
+      "id": "b01-u04-q06",
+      "type": "SHORT",
+      "unit_id": "u04",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Why is Type 2 usually hypocrisy rather than virtue?",
+      "answer": "Because men do not all think or feel alike — society contains the just and the unjust, the equitable and the despotic. Anyone seriously pursuing one goal will necessarily collide with some of their interests. Therefore the only person who can attract every class and every idealism is one who dissimulates and lies, showing each person what suits their liking. A sincere man with a path automatically gains one group as friends and another as enemies.",
+      "evidence": [
+        "b01-u04-002",
+        "b01-u04-001"
+      ]
+    },
+    {
+      "id": "b01-u04-q07",
+      "type": "SHORT",
+      "unit_id": "u04",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "How does 'Ali's treatment of Ibn Muljam reconcile love with justice?",
+      "answer": "'Ali knew Ibn Muljam intended to kill him and was urged to remove him. He refused pre-emptive punishment — 'Should I punish before the crime? He is to murder me, not I him' — and said I want him to live; he wants to kill me. Love is real (he wishes his enemy life) but it neither blinds him to the danger nor licenses injustice. Mutahhari pairs this with the reminder that roughness is also necessary for some temperaments: Islam is the religion of attraction and of niqmah (retribution).",
+      "evidence": [
+        "b01-u04-005",
+        "b01-u04-003"
+      ]
+    },
+    {
+      "id": "b01-u04-q08",
+      "type": "LONG",
+      "unit_id": "u04",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "'It is not sufficient merely to have the powers of attracting and repelling.' Explain this qualification and why it is the hinge of the whole book.",
+      "answer": "Mutahhari has just argued that Type 4 — attracting and repelling both — is the mark of a man with a real path. He immediately blocks the obvious fallacy: possessing both powers, even strongly, is no proof of good character. All the world's leaders had them, including criminals — he names Genghis Khan, Hajjaj and Mu'awiyah. Indeed a man cannot subdue thousands of wills without some positive points in his spirit; Nadir Shah gouged eyes and severed heads yet drew fighting men to himself 'like a magnet attracts iron-filings' and carried Iranian arms to India.The criterion is therefore not the force but its objects: 'it must be seen what kinds of people are attracted and what kinds repelled'. Sometimes the knowledgeable are drawn and the ignorant repelled; sometimes the reverse. The noble and civilised, or the evil and wicked. 'Thus friends and enemies, the attracted and the repelled, each one is a clear proof of the essence of such a person.' Every person attracts his own kind and drives away his unlike: the just man draws the benevolent and repels the money-loving and hypocritical; the criminal draws criminals and repels the good.This is the hinge of the book for two reasons. First, it makes Part 1 and Part 2 a single argument: we learn who 'Ali was by examining Maytham and Ibn as-Sikkit on one side and the Khawarij on the other. Second, it supplies the Foreword's self-test — if the Shi'ah must be 'a copy of 'Ali's conduct' with two sides to his character, the question is whether we attract and repel the same kinds of people he did.",
+      "evidence": [
+        "b01-u04-007",
+        "b01-u04-006"
+      ]
+    },
+    {
+      "id": "b01-u05-q01",
+      "type": "MCQ",
+      "unit_id": "u05",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "How long after 'Ali's martyrdom did Maytham preach from the cross?",
+      "answer": "Twenty years.",
+      "evidence": [
+        "b01-u05-005",
+        "b01-u05-006"
+      ]
+    },
+    {
+      "id": "b01-u05-q02",
+      "type": "MCQ",
+      "unit_id": "u05",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Ibn as-Sikkit lived roughly how long after 'Ali's martyrdom?",
+      "answer": "About two hundred years, under the 'Abbasid caliph al-Mutawakkil.",
+      "evidence": [
+        "b01-u05-006",
+        "b01-u05-005"
+      ]
+    },
+    {
+      "id": "b01-u05-q03",
+      "type": "FILL",
+      "unit_id": "u05",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Ibn as-Sikkit said 'Ali's slave ______ was dearer to him than the caliph's two sons and their father.",
+      "answer": "Qanbar.",
+      "evidence": [
+        "b01-u05-006",
+        "b01-u05-001"
+      ]
+    },
+    {
+      "id": "b01-u05-q04",
+      "type": "SHORT",
+      "unit_id": "u05",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Why does Mutahhari insist 'Ali be seen as 'a whole philosophy' rather than an individual?",
+      "answer": "Because an individual attracts by personal charm, which dies with the body; a philosophy polarises. If 'Ali is a position on truth, justice and human life, then people divide over him necessarily — one group is drawn, another repelled — and the division persists for centuries because the philosophy persists. It also explains why the love survives punishment (Ch. 7) and why the hatred was so bold.",
+      "evidence": [
+        "b01-u05-007",
+        "b01-u05-004"
+      ]
+    },
+    {
+      "id": "b01-u05-q05",
+      "type": "LONG",
+      "unit_id": "u05",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Use Maytham and Ibn as-Sikkit to show what kind of attraction 'Ali possessed.",
+      "answer": "Both cases are chosen to isolate one variable: the absence of any self-interested motive.Maytham at-Tammar spoke twenty years after 'Ali's death, under Umayyad repression so total that 'the entire Islamic people were being suffocated, all freedoms quashed, souls prisoners in their own breasts'. He was already on the crucifix — with nothing to gain and nothing left to lose — and used his dying platform to recite 'Ali's virtues. Crowds gathered; the government, seeing its interests endangered, gagged him, then killed him days later.Ibn as-Sikkit was at the opposite end of the social scale — a celebrated philologist ranked with Sibawayh, tutor to the caliph's own children, with every incentive to flatter. Al-Mutawakkil, pleased with his sons' examination, asked the loaded question. Ibn as-Sikkit was 'greatly disturbed', reproaching himself for having educated them so well that their father now dared compare them with Hasan and Husayn — and answered with deliberate excess: 'Ali's slave Qanbar outranks them and their father. His tongue was cut out from his throat.Together they establish the three-dimensional claim of the next chapter: the attraction is not material (both men lost by it), not contemporaneous (20 and 200 years later), and reaches the depth of the soul (both preferred mutilation and death to silence). As Mutahhari puts it, history tells of 'completely overwhelmed people who involuntarily sacrificed their lives in the way of love for 'Ali. Where can such attraction be found?'",
+      "evidence": [
+        "b01-u05-006",
+        "b01-u05-005"
+      ]
+    },
+    {
+      "id": "b01-u06-q01",
+      "type": "MCQ",
+      "unit_id": "u06",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "A three-dimensional call is the exclusivity of whom?",
+      "answer": "The chain of the prophets.",
+      "evidence": [
+        "b01-u06-004",
+        "b01-u06-001"
+      ]
+    },
+    {
+      "id": "b01-u06-q02",
+      "type": "FILL",
+      "unit_id": "u06",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The three dimensions are breadth of people, the ______ dimension, and depth in the human spirit.",
+      "answer": "Temporal (time/era).",
+      "evidence": [
+        "b01-u06-004",
+        "b01-u06-003"
+      ]
+    },
+    {
+      "id": "b01-u06-q03",
+      "type": "MCQ",
+      "unit_id": "u06",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Who called 'Ali one of those personalities 'born before his time'?",
+      "answer": "Kahlil Gibran.",
+      "evidence": [
+        "b01-u06-010",
+        "b01-u06-008"
+      ]
+    },
+    {
+      "id": "b01-u06-q04",
+      "type": "FILL",
+      "unit_id": "u06",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "application"
+      ],
+      "prompt": "Had 'Ali lacked divine colouring, Mutahhari says he would have been ______.",
+      "answer": "Forgotten.",
+      "evidence": [
+        "b01-u06-008",
+        "b01-u06-010"
+      ]
+    },
+    {
+      "id": "b01-u06-q05",
+      "type": "SHORT",
+      "unit_id": "u06",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "State the three kinds of 'call' and place 'Ali.",
+      "answer": "One-dimensional: embraces a broad spectrum, millions become adherents, then its time ends and it is entrusted to oblivion. Two-dimensional: broad and enduring — it extends beyond space into the temporal dimension. Three-dimensional: broad, enduring, and it takes root in the depths of the human spirit, ruling the profundity of the soul and taking the reins of the emotions; exclusive to the prophets. 'Ali's power of attraction is of the last kind — still lighting up the centuries, still drawing tears, affecting even his enemies.",
+      "evidence": [
+        "b01-u06-004",
+        "b01-u06-006"
+      ]
+    },
+    {
+      "id": "b01-u06-q06",
+      "type": "SHORT",
+      "unit_id": "u06",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "What does 'he became more alive' mean, and what does it prove?",
+      "answer": "Ordinary champions — of speech, knowledge, philosophy, power, the battlefield — die and are forgotten or were never known. 'Ali was killed, yet his following and the love he excites grow more brilliant with the passing centuries. Mutahhari's inference: this cannot be explained by his human excellences alone (they die with everyone else), so it proves the divine colouring — the link is not material but of an order that connects nothing else to the human spirit. 'Ali anticipated it himself: 'after my place has been vacated… you will know me.'",
+      "evidence": [
+        "b01-u06-008",
+        "b01-u06-004"
+      ]
+    },
+    {
+      "id": "b01-u07-q01",
+      "type": "MCQ",
+      "unit_id": "u07",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Who tried to turn the amputated man against 'Ali?",
+      "answer": "Ibn al-Kawwa', a seditious Kharijite — approaching with feigned compassion to make political capital.",
+      "evidence": [
+        "b01-u07-007",
+        "b01-u07-004"
+      ]
+    },
+    {
+      "id": "b01-u07-q02",
+      "type": "FILL",
+      "unit_id": "u07",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The man replied that 'Ali's friendship is mixed with ______ and ______.",
+      "answer": "Flesh and blood.",
+      "evidence": [
+        "b01-u07-005"
+      ]
+    },
+    {
+      "id": "b01-u07-q03",
+      "type": "FILL",
+      "unit_id": "u07",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "'Ali is the standard and ______ for assaying human natures and temperaments.",
+      "answer": "Criterion.",
+      "evidence": [
+        "b01-u07-006",
+        "b01-u07-003"
+      ]
+    },
+    {
+      "id": "b01-u07-q04",
+      "type": "SHORT",
+      "unit_id": "u07",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning",
+        "application"
+      ],
+      "prompt": "Why can't a hypocrite love 'Ali even if 'Ali enriches him?",
+      "answer": "Because the alignment is not transactional but essential. 'Ali is 'nothing but the embodiment of truth', so a soul's response to him reveals what that soul is. A sound nature recognises truth even when truth's sword falls on its own head; a diseased nature cannot be bought into recognising it. 'Ali grounds this in the Prophet's decree: the believer will never be your enemy, the hypocrite will never love you.",
+      "evidence": [
+        "b01-u07-006",
+        "b01-u07-005"
+      ]
+    },
+    {
+      "id": "b01-u07-q05",
+      "type": "LONG",
+      "unit_id": "u07",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "How does the amputation story function as a proof rather than an anecdote?",
+      "answer": "It is constructed as a controlled test of the thesis that 'Ali is the criterion of human nature.The variables are set to make loyalty maximally costly and disloyalty maximally easy. The man is genuinely a believer and genuinely guilty — so this is not a miscarriage of justice he might nobly overlook. The loss is permanent and physical: the fingers of his right hand, blood still dripping as he holds it in his left. And a skilled antagonist is on hand at exactly the right moment: Ibn al-Kawwa' approaches 'with an air of utter compassion', offering the man a ready-made grievance and a political home with the Kharijite party.The response defeats the test twice over. First in content: not grudging acceptance but an extended, escalating eulogy — successor of the Prophet, Imam of right guidance, first to the Gardens of Felicity, champion of Mecca. Second in reasoning: 'he did not cut off my hand except with a right that God has established.' The man affirms the justice of his own mutilation. His closing line — 'his friendship is mixed with flesh and blood' — turns the injury itself into the emblem of the bond.This is precisely what 'Ali's saying predicted: striking a believer with the sword cannot create enmity. The story therefore does evidential work the abstract claim cannot — it shows the criterion operating, and it shows the Kharijite failing to find purchase, which prefigures the whole of Part 2.",
+      "evidence": [
+        "b01-u07-007",
+        "b01-u07-005"
+      ]
+    },
+    {
+      "id": "b01-u08-q01",
+      "type": "MCQ",
+      "unit_id": "u08",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "'People are mines, like gold-mines and silver-mines' establishes what?",
+      "answer": "That human natures differ, and love is the elixir that transmutes one nature into another.",
+      "evidence": [
+        "b01-u08-002",
+        "b01-u08-001"
+      ]
+    },
+    {
+      "id": "b01-u08-q02",
+      "type": "FILL",
+      "unit_id": "u08",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The Burhan-e Qati' says elixir melts down, combines, and ______.",
+      "answer": "Perfects.",
+      "evidence": [
+        "b01-u08-001"
+      ]
+    },
+    {
+      "id": "b01-u08-q03",
+      "type": "FILL",
+      "unit_id": "u08",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Love awakens sleeping powers, like the splitting of the ______.",
+      "answer": "Atom.",
+      "evidence": [
+        "b01-u08-007",
+        "b01-u08-002"
+      ]
+    },
+    {
+      "id": "b01-u08-q04",
+      "type": "MCQ",
+      "unit_id": "u08",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "In the body, love's effects are…",
+      "answer": "Destructive — melting and decomposition, pallor, emaciation, digestive and nervous disorder. The opposite of its effect on the spirit.",
+      "evidence": [
+        "b01-u08-009",
+        "b01-u08-003"
+      ]
+    },
+    {
+      "id": "b01-u08-q05",
+      "type": "SHORT",
+      "unit_id": "u08",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Explain the hen example precisely.",
+      "answer": "Alone, the hen keeps her wings folded, struts peaceably hunting worms, starts at the slightest noise, and will not stand her ground before even the weakest child. Once she has chicks, love 'takes up its dwelling at the centre of its being' and her character completely changes: wings lowered in readiness to defend, aggressive posture, clucking stronger and more courageous — and where she formerly fled at the possibility of danger, she now attacks bravely at that same possibility. Love displays the frightened hen in the form of a valiant animal.",
+      "evidence": [
+        "b01-u08-003",
+        "b01-u08-001"
+      ]
+    },
+    {
+      "id": "b01-u08-q06",
+      "type": "LONG",
+      "unit_id": "u08",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Set out the full catalogue of love's effects, including the body/spirit distinction and the qualifications.",
+      "answer": "Power and courage: love is 'the power of glory, it makes the coward courageous' — the hen transformed by having chicks.Agility and wit: it makes the heavy and lazy nimble and cunning, and even the slow-witted astute. Two young people who thought only of themselves become concerned for another; the radius of their wants extends; the lazy adolescent becomes active and the sleepy girl moves like lightning at her child's cry.Generosity and endurance: the miser becomes a benefactor, the impatient becomes tolerant; the hoarding bird calls its chicks to the grain; the spoiled girl endures hunger, sleeplessness and dishevelment as a mother.Purification and unification: tenderness is created and heaviness/coarseness removed; the feelings are purified; there is unification and singleness of purpose, and distraction and dispersion disappear.Inspiration: the most-cited effect in poetry — the nightingale and the rose, Majnun and Layla's glance. Love awakens sleeping powers like the splitting of the atom, builds heroes, and at its highest brings miracles and supernatural events.As cathartic: it purges egotism's base qualities — envy, avarice, cowardice, laziness, conceitedness, self-admiration — and removes grudges and malevolence; it removes dassa (Qur'an 91:10), destroys deceit, purifies the cheat.Qualifications, which the exam will reward: (1) deprivation or frustration in love may itself produce complexes and aversions. (2) Body and spirit run opposite: in the body love causes ruination — pallor, emaciation, digestive and nervous disorder, 'perhaps all the effects which it has in the body are destructive' — while in the spirit it is predominantly perfecting. (3) Even the spiritual benefit is conditional: 'it depends on the object of love and how the person responds to that object' — which is exactly what Ch. 9–10 and Ch. 13 go on to develop.",
+      "evidence": [
+        "b01-u08-004",
+        "b01-u08-008"
+      ]
+    },
+    {
+      "id": "b01-u09-q01",
+      "type": "MCQ",
+      "unit_id": "u09",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Does Mutahhari say self-esteem (amour-propre) must be eliminated?",
+      "answer": "No. It makes no sense to try not to like oneself; amour-propre was not mistakenly overlooked. The target is the limitation of the self, not the self.",
+      "evidence": [
+        "b01-u09-003",
+        "b01-u09-005"
+      ]
+    },
+    {
+      "id": "b01-u09-q02",
+      "type": "FILL",
+      "unit_id": "u09",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The personality must ______ to take in every other human being.",
+      "answer": "Expand.",
+      "evidence": [
+        "b01-u09-005",
+        "b01-u09-003"
+      ]
+    },
+    {
+      "id": "b01-u09-q03",
+      "type": "SHORT",
+      "unit_id": "u09",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "What exactly is 'the struggle with self-love' a struggle against?",
+      "answer": "Against the limitations of the self — the defensive structure built around the self that classifies everything not personally connected to the individual as foreign, 'not me', alien. Self-love is therefore 'nothing else but a limitation of the conceptual and motivational process'. The remedy is not subtraction but expansion: the personality must grow to take in every other human being, if not the whole of creation.",
+      "evidence": [
+        "b01-u09-005",
+        "b01-u09-006"
+      ]
+    },
+    {
+      "id": "b01-u09-q04",
+      "type": "LONG",
+      "unit_id": "u09",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Why does Mutahhari insist reform is 'adding' rather than 'reducing', and how does this shape his ethics?",
+      "answer": "He is blocking a specific ascetic misreading. One might think moral reform means identifying extraneous, detrimental things in a man's existence and excising them — treating the self as a contaminated object to be pared down. Mutahhari rejects the premise: 'self-love, in the sense of something which must be eliminated, is not something which really exists.' There is no free-standing vice called self-love to be surgically removed, and it is incoherent to instruct a human being not to like himself. Legitimate self-esteem (amour-propre) was never an oversight.His positive account grounds ethics in cosmology: 'the responsibility that creation has assigned to man's charge is in the direction of the course of creation, that is, in perfection and growth, not in decrease and reduction.' Moral reform must run with the grain of creation, which is expansive.The practical consequence is that the target shifts from the self to the boundary of the self. The wall that marks everything beyond the individual as alien is what must fall, so that 'the personality must expand to take in every other human being, if not the whole of the universe of creation'. Love accomplishes exactly this — it 'turns man's affections and drives towards what is outside his self, it enlarges his existence and changes the focal point of his being'.Note the closing condition, which the next chapter cashes out: love is a great moral and educative factor only if well guided and correctly used. Expansion toward the wrong object is not yet virtue — hence 'Constructive or Destructive?'",
+      "evidence": [
+        "b01-u09-005",
+        "b01-u09-003"
+      ]
+    },
+    {
+      "id": "b01-u10-q01",
+      "type": "MCQ",
+      "unit_id": "u10",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Which Qur'anic phrase names the noble kind of love?",
+      "answer": "Muwaddah wa rahmah — 'love and compassion', Qur'an 30:21.",
+      "evidence": [
+        "b01-u10-004",
+        "b01-u10-002"
+      ]
+    },
+    {
+      "id": "b01-u10-q02",
+      "type": "FILL",
+      "unit_id": "u10",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Of passionate love, Mutahhari says union is reckoned to be its ______.",
+      "answer": "Graveyard.",
+      "evidence": [
+        "b01-u10-005",
+        "b01-u10-009"
+      ]
+    },
+    {
+      "id": "b01-u10-q03",
+      "type": "MCQ",
+      "unit_id": "u10",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Which Western philosopher is quoted approvingly on love and the beloved's ego?",
+      "answer": "Bertrand Russell, Marriage and Morals.",
+      "evidence": [
+        "b01-u10-008",
+        "b01-u10-011"
+      ]
+    },
+    {
+      "id": "b01-u10-q04",
+      "type": "FILL",
+      "unit_id": "u10",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "application"
+      ],
+      "prompt": "Passionate love may profit a man only if met with the power of modesty and ______.",
+      "answer": "Piety.",
+      "evidence": [
+        "b01-u10-009",
+        "b01-u10-002"
+      ]
+    },
+    {
+      "id": "b01-u10-q05",
+      "type": "SHORT",
+      "unit_id": "u10",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "Give three contrasts between the two kinds of love.",
+      "answer": "(1) Origin: the first originates in sexuality and ends there, tied to the genital organs and youth; the second is noble sentiment, muwaddah wa rahmah. (2) Effect on character: the first creates crudeness, savagery and criminality and 'kills virtue'; the second creates purity, sincerity, tenderness, compassion and altruism. (3) Behaviour over time: the first comes and goes quickly, diminishes with age, satiation and separation — 'union is its graveyard'; the second is durable and grows stronger and warmer with union. A fourth if needed: the first seeks the self's profit or enjoyment from the beloved; the second gives the beloved respect and eminence and sacrifices for their happiness.",
+      "evidence": [
+        "b01-u10-004",
+        "b01-u10-003"
+      ]
+    },
+    {
+      "id": "b01-u10-q06",
+      "type": "LONG",
+      "unit_id": "u10",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Can passionate love ever be beneficial? Reconstruct Mutahhari's position exactly — this is the subtlest argument in the book.",
+      "answer": "His answer is a carefully fenced yes, but never recommend it.The concession. Passionate love is in itself 'a power which leads man towards no virtue'. But it can give strength and perfection to the spirit under strict conditions: it must be met with the power of modesty and piety, the man must not become abandoned to it, and the spirit must tolerate the pressure without succumbing. The productive setting is one of separation and inaccessibility combined with purity and modesty — the pains, anguishes and pressures then 'bear good and beneficial results'. This is the mystics' doctrine that allegorical love turns into real love, love of the Essence of the One, and it grounds the tradition that one who loves, conceals it, stays chaste and dies so dies a martyr.The prohibition on recommending it. 'It is a dangerous valley to enter.' The governing analogy is affliction: a misfortune met with patience and will can perfect and purify a soul — 'it cooks what is raw in it and clarifies what is turbid in it' — yet one cannot recommend an affliction. No one may manufacture an affliction for himself to harvest its benefits, nor inflict one on someone else on that pretext. Russell is cited to the same effect: suffering fills people with energy like a counterweight, but he refuses to make this a pretext for causing others suffering, because it often gives the opposite result and destroys the person; better to submit oneself to chance events that fall in one's way. Mutahhari notes Islamic teaching similarly emphasises the benefits of afflictions as signs of God — without permitting anyone to create them.The disanalogy that makes love worse than affliction. Love, 'more than any other factor, is against reason'. Wherever it sets foot it ousts reason from its governing position — which is why love and reason are rivals in mystic literature and why philosophers and mystics fell out. Rumi: it blows a man about 'like a blade of straw in the hands of a fierce wind'; Russell: it 'is something with propensity for anarchy'. A force that seizes the reins of the will cannot be prescribed.The payoff. 'It is one thing to happen to have useful results, but it is another to be advisable or recommendable.' With that distinction Mutahhari also acquits the philosophers whom certain jurists attacked for expounding love's benefits in metaphysics: those philosophers described the useful effects appearing under piety and chastity without recommending the thing — exactly as one may describe the fruits of affliction. So the jurists' objection rests on a misreading and is invalid.",
+      "evidence": [
+        "b01-u10-010",
+        "b01-u10-009"
+      ]
+    },
+    {
+      "id": "b01-u11-q01",
+      "type": "MCQ",
+      "unit_id": "u11",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "What did the Khurasani traveller say brought him on that journey?",
+      "answer": "Love of the Household — nothing else. He had walked so far his cut feet showed through his shoes.",
+      "evidence": [
+        "b01-u11-008",
+        "b01-u11-001"
+      ]
+    },
+    {
+      "id": "b01-u11-q02",
+      "type": "FILL",
+      "unit_id": "u11",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "application"
+      ],
+      "prompt": "Imam al-Baqir: 'If a ______ loved us, God would unite it with us.'",
+      "answer": "Stone.",
+      "evidence": [
+        "b01-u11-008",
+        "b01-u11-010"
+      ]
+    },
+    {
+      "id": "b01-u11-q03",
+      "type": "FILL",
+      "unit_id": "u11",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Is the religion other than ______?",
+      "answer": "Love.",
+      "evidence": [
+        "b01-u11-008",
+        "b01-u11-009"
+      ]
+    },
+    {
+      "id": "b01-u11-q04",
+      "type": "SHORT",
+      "unit_id": "u11",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "Set out the three groups of Qur'anic verses on mahabbah.",
+      "answer": "(1) Verses describing believers' love — for God (2:165, 'those that believe love Allah more ardently') and for each other (59:9, the Ansar loving the emigrants and preferring others above themselves). (2) Verses on God's love for believers — the repentant and self-cleansing (2:222), the good-doers (3:148; 5:13), the God-fearing (9:4,7), the just (49:9; 60:8). (3) Verses of reciprocal love — 3:31 ('if you love Allah, follow me, and Allah will love you'), 5:54 ('a people He loves, and who love Him'), 19:96, and 30:21.",
+      "evidence": [
+        "b01-u11-004",
+        "b01-u11-006"
+      ]
+    },
+    {
+      "id": "b01-u11-q05",
+      "type": "LONG",
+      "unit_id": "u11",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "'Is the religion other than love?' — explain what Mutahhari establishes with this chapter and how it prepares the next two.",
+      "answer": "This chapter supplies the scriptural warrant for what Chs. 8–10 argued philosophically, and narrows the target from love-in-general to love of those near to God.He first isolates the category: beyond sexual and parental love there is a love beyond matter entirely, springing from an instinct 'far above that of the preservation of generations' — and this, he says, is what separates the universe of man from the universe of animals. Its object is excellence, goodness, human virtue and the beauty of reality. Rumi supplies the selection criterion: loves 'for the sake of a colour' end in disgrace, and love of the dead cannot endure since the dead never return — therefore choose the everlasting Living One.He then marshals the Qur'an in three groups (believers' love; God's love for believers; reciprocal love), plus Ibrahim seeking it for his offspring (14:37) and the Prophet ordered to seek it for his kinsmen (42:23) — the verse that Ch. 13 will make everything turn on.The two traditions do the heaviest work. The Khurasani who walked until his feet were cut, professing that love alone brought him, receives the answer 'if a stone loved us God would unite it with us — is the religion other than love?' The man who named his children after the Imams is told 'Yes, by God' and pointed to 3:31. Together they make love not an accessory to religion but its spirit and essence.Finally the mechanism: love produces obedience, because 'the lover does not have the power to refuse the wishes of the one he loves' — illustrated by the youth who abandons everything for his beloved. Imam al-Sadiq's rebuke — 'Disobey God and show that you love Him; by my life, that is something amazing' — makes obedience the proof of love's reality. This is precisely the bridge to Ch. 13, where love of the pure ones will be shown to work by producing resemblance to them, and thus to be a means of refining the soul rather than an end in itself.",
+      "evidence": [
+        "b01-u11-001",
+        "b01-u11-010"
+      ]
+    },
+    {
+      "id": "b01-u12-q01",
+      "type": "MCQ",
+      "unit_id": "u12",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "To whom was 'Ali's firman on mercy towards subjects addressed?",
+      "answer": "Malik al-Ashtar, on his appointment as governor of Egypt — Nahj al-Balaghah, Letter 53.",
+      "evidence": [
+        "b01-u12-006",
+        "b01-u12-003"
+      ]
+    },
+    {
+      "id": "b01-u12-q02",
+      "type": "FILL",
+      "unit_id": "u12",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "People can be driven like ______ by power and force, but their inner strengths cannot be awakened.",
+      "answer": "Sheep.",
+      "evidence": [
+        "b01-u12-007",
+        "b01-u12-001"
+      ]
+    },
+    {
+      "id": "b01-u12-q03",
+      "type": "MCQ",
+      "unit_id": "u12",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "According to Mutahhari, is justice alone sufficient for good government?",
+      "answer": "No — 'even justice, if it is lifelessly enforced, is not enough.' Love must accompany it.",
+      "evidence": [
+        "b01-u12-007",
+        "b01-u12-001"
+      ]
+    },
+    {
+      "id": "b01-u12-q04",
+      "type": "SHORT",
+      "unit_id": "u12",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "What does 3:159 establish about leadership?",
+      "answer": "That the Prophet's gentleness is itself the instrument of his authority: had he been harsh and hard of heart the people would have scattered from him. The verse then orders pardon, seeking forgiveness for them, and consultation — all of which Mutahhari reads as effects of love, alongside tolerance, patience and forbearance. Affection is therefore not a supplement to governance but the cause of the people's cohesion around the leader.",
+      "evidence": [
+        "b01-u12-003",
+        "b01-u12-006"
+      ]
+    },
+    {
+      "id": "b01-u12-q05",
+      "type": "LONG",
+      "unit_id": "u12",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "'Power and force are not enough — even justice is not enough.' Explain Mutahhari's theory of loving leadership.",
+      "answer": "His claim is that a polity has two distinct problems, and coercion solves only the first.Compliance can be extracted by force: 'people can be driven like sheep by power and force'. But mobilisation cannot: 'their inner strengths cannot be awakened and put to use'. A ruler who commands only obedience gets bodies, not wills, ambitions, or 'great human strengths'. The striking escalation is that justice alone does not fix this either — justice 'lifelessly enforced' still fails to awaken anything. What awakens people is being loved.The mechanism is reciprocal. Love must flow from ruler to ruled and from ruled to ruler; the ruler's own affection is 'an important factor in the stability and longevity of a government', and the people, seeing that affection, are attracted to obedience and dutifulness rather than compelled into it. Until that factor exists the leader finds it very hard even to establish justice and equality.The scriptural spine: 3:159 tells the Prophet his gentleness is why people gather — harshness would have scattered them — and issues three consequent commands (pardon, seek forgiveness, consult), all effects of love. 41:34 extends the principle to enemies: repel evil with what is fairer and the enemy becomes 'as if he were a loyal friend'. Rumi renders this as the sword of clemency, sharper than iron and worth more than a hundred armies, and as chaining the enemy's neck 'with mercy, which noose no blade can cut'.The practical charter is Letter 53 to Malik al-Ashtar: awaken mercy, love and kindness for the subjects in your heart, and extend to them the forgiveness you would wish from God. Mutahhari's conclusion states the ideal type — the ruler must love the people 'from his heart like a loving father', show that affection, and possess an attractive personality which fosters devotion, so that their wills and ambitions can be enlisted in the divine aim. Governance, on this account, is an application of the book's law of attraction.",
+      "evidence": [
+        "b01-u12-007",
+        "b01-u12-003"
+      ]
+    },
+    {
+      "id": "b01-u13-q01",
+      "type": "MCQ",
+      "unit_id": "u13",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Is love of the pure ones an end in itself or a means?",
+      "answer": "A means — for refining the soul, reforming morals, and acquiring human virtues. This is the book's central thesis, stated explicitly here.",
+      "evidence": [
+        "b01-u13-001",
+        "b01-u13-003"
+      ]
+    },
+    {
+      "id": "b01-u13-q02",
+      "type": "FILL",
+      "unit_id": "u13",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "The intellectual method is compared to separating iron filings from dust by hand; love is the ______.",
+      "answer": "Magnet (one sweep).",
+      "evidence": [
+        "b01-u13-010",
+        "b01-u13-007"
+      ]
+    },
+    {
+      "id": "b01-u13-q03",
+      "type": "FILL",
+      "unit_id": "u13",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Rumi's transformation by Shams is compared to a fuse falling into a ______ store.",
+      "answer": "Gunpowder.",
+      "evidence": [
+        "b01-u13-013",
+        "b01-u13-008"
+      ]
+    },
+    {
+      "id": "b01-u13-q04",
+      "type": "MCQ",
+      "unit_id": "u13",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "How does love reform the soul, mechanically?",
+      "answer": "By producing resemblance — it transfers the beloved's qualities to the lover 'like an electric wire'. Hence the choice of beloved is fundamental.",
+      "evidence": [
+        "b01-u13-004",
+        "b01-u13-003"
+      ]
+    },
+    {
+      "id": "b01-u13-q05",
+      "type": "SHORT",
+      "unit_id": "u13",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Why is choosing the beloved 'of fundamental importance'?",
+      "answer": "Because love works by assimilation, not inspiration: Tusi's doctrine is that love's source is essential resemblance between the souls, and love then 'pushes towards similarity', causing the lover to assume the form of the beloved. Love is an electric wire transferring the beloved's qualities to the lover — so whatever the beloved is, the lover becomes. A corrupt object therefore corrupts by exactly the mechanism a pure object purifies. This is why Islam gives such weight to choosing friends and companions, and why the Prophet defined the best companion as one who reminds you of God, increases your knowledge, and turns your thoughts to the hereafter.",
+      "evidence": [
+        "b01-u13-003",
+        "b01-u13-004"
+      ]
+    },
+    {
+      "id": "b01-u13-q06",
+      "type": "LONG",
+      "unit_id": "u13",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Reconstruct the argument that love beats the intellect as a means of self-reform — and state its strongest weakness.",
+      "answer": "The rival method. The Socratic or philosophical way has a man reform himself by intellect and devising: first acquire conviction about purification's benefits and confusion's harms, then locate blameworthy qualities one by one with the instrument of the intellect and cleanse them. Mutahhari's images are deliberately laborious — picking the hairs from inside one's nose one by one, a farmer hand-pulling tares from his furrows, someone cleaning wheat of stones and soil by hand. Philosophers supply the reasoning: continence brings honour, greed brings inferiority, knowledge is 'the seal of the kingdom of Solomon', envy is a spiritual sickness with social consequences.The concession. 'There is no doubt that this way is a correct way, and this means is a good means.' The question is comparative value — 'just as a car is a good means, but when it is compared to an airplane we must examine carefully the extent of its value.' He adds two doubts: it may not be possible for the intellect to acquit itself of this task; and there are countless philosophical schools of ethics, the matter still unsettled as argument — with the Sufi verdict that 'the leg of the reasoners is of wood; a wooden leg is very infirm.'The alternative. Find a perfect being and hang the halter of love and fellowship round your heart. It is both less dangerous and swifter. Three images: hand-work versus machine; the etcher who clears his plate with strong acid rather than a nail or knife-point; and the decisive one — separating iron filings from dust by hand, excruciating and troublesome, versus one sweep of a powerful magnet. Love is 'an automatic apparatus which gathers the vices together by itself and ejects them'. Evidence: practitioners report that companionship with the pure affected their spirits more than hundreds of volumes on ethics; followers involuntarily imitate a great person's gait, dress and gesture 'by the force of nature'; and Rumi — a quiet scholar teaching in a corner of his town — was detonated by Shams like a fuse in a gunpowder store.The balance he himself insists on: 'exertion and being drawn… must go together. Nothing can be accomplished from effort without attraction, just as being drawn where there is no effort will not reach its aim.'Strongest weakness (choose and develop one):(i) Self-undermining concession. In the very same chapter he concedes hubb al-shay' yu'mi wa yusimm — love blinds and deafens; the lover's sight becomes defective and his heart sick; love makes attention 'one-sided and one-tracked' and even 'shows the defects as something good', turning one speck of goodness into the sun and making black seem white. An instrument that systematically distorts perception is a strange candidate for the best means of moral discernment.(ii) Circularity. Everything depends on choosing the right beloved — but the faculty required to identify a genuinely perfect being is precisely the discriminating intellect the method has just demoted to a wooden leg.(iii) The merit-independence problem. He states that love's equilibrium is 'not a function of the scales of goodness, but more a function of the scales of the potentiality and essence of the lover', and that the lover 'creates goodness according to his own ability, not according to what exists in the beloved'. If so, the transformation may be driven by the lover's projection rather than the beloved's actual perfection — which threatens the claim that love reliably transmits real virtue.",
+      "evidence": [
+        "b01-u13-007",
+        "b01-u13-008"
+      ]
+    },
+    {
+      "id": "b01-u14-q01",
+      "type": "MCQ",
+      "unit_id": "u14",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Why did Abu Dharr refuse to drink the rainwater he found?",
+      "answer": "He would not drink before the Prophet drank. He filled his water-skin, carried it on his back along with his pack, and nearly died of thirst.",
+      "evidence": [
+        "b01-u14-002",
+        "b01-u14-006"
+      ]
+    },
+    {
+      "id": "b01-u14-q02",
+      "type": "FILL",
+      "unit_id": "u14",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Abu Sufyan tried to extract remorse from ______ before his execution.",
+      "answer": "Zayd ibn ad-Dathinnah.",
+      "evidence": [
+        "b01-u14-005",
+        "b01-u14-004"
+      ]
+    },
+    {
+      "id": "b01-u14-q03",
+      "type": "FILL",
+      "unit_id": "u14",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The Quraysh nicknamed the Muslims around Mecca the ______ — 'the infatuated ones'.",
+      "answer": "Subat.",
+      "evidence": [
+        "b01-u14-008",
+        "b01-u14-004"
+      ]
+    },
+    {
+      "id": "b01-u14-q04",
+      "type": "MCQ",
+      "unit_id": "u14",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "How many Muslims were martyred at Uhud?",
+      "answer": "Seventy, including Hamzah, the Prophet's paternal uncle.",
+      "evidence": [
+        "b01-u14-007",
+        "b01-u14-008"
+      ]
+    },
+    {
+      "id": "b01-u14-q05",
+      "type": "FILL",
+      "unit_id": "u14",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "application"
+      ],
+      "prompt": "Khubayb said he would have ______ his prayer but for fear they would think he delayed out of fear of death.",
+      "answer": "Prolonged.",
+      "evidence": [
+        "b01-u14-006",
+        "b01-u14-002"
+      ]
+    },
+    {
+      "id": "b01-u14-q06",
+      "type": "SHORT",
+      "unit_id": "u14",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "What did the Prophet say each time a man fell behind on the march to Tabuk?",
+      "answer": "'If there is any good in him, God will make him come back; and if there is no good in him, it is better that he go.' He repeated it for Abu Dharr too — and Abu Dharr returned, on foot, carrying his own pack and undrunk water.",
+      "evidence": [
+        "b01-u14-002",
+        "b01-u14-003"
+      ]
+    },
+    {
+      "id": "b01-u14-q07",
+      "type": "SHORT",
+      "unit_id": "u14",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "How did the Quraysh physically defend themselves against the Prophet's attraction?",
+      "answer": "They forbade their sons to sit with him; they stuck their fingers firmly in their ears when he recited the Qur'an near the Ka'bah so as not to hear and fall under the spell of his speech; and they gathered their garments over their heads and covered their faces so his appearance would not draw them. They called his speech 'magic, it inebriates more than wine'. Nevertheless most people believed after hearing him once.",
+      "evidence": [
+        "b01-u14-008",
+        "b01-u14-002"
+      ]
+    },
+    {
+      "id": "b01-u14-q08",
+      "type": "LONG",
+      "unit_id": "u14",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "How does this chapter argue that attraction, not ordinary pedagogy, explains the Islamic revolution?",
+      "answer": "The thesis is stated at the outset as a contrast between two kinds of school: the pupils of philosophers 'are just students, and philosophers have no more influence than that of a teacher', whereas the prophets' influence is that of a beloved who has entered the depths of the lover's spirit, caught him in his grasp, and taken hold of every element of his life. The episodes are then selected to show influence operating past the point where instruction could reach — i.e. where the man is dying, being tortured, or has nothing to gain.Abu Dharr is tested by exhaustion and thirst: camel gone, pack on his own shoulders, crossing scorching sand, and on finding water he will not drink before the Prophet drinks. The Prophet's astonishment — 'You have water, but you are near to dying from thirst!' — is the measure.Bilal is tested by torture: pinned on burning stones, required only to name the idols. Even Abu Bakr's prudent counsel to conceal his belief fails, because 'love was ever rebellious and deadly'; his repentances for dissembling end when he becomes 'quit of repenting' and asks how he should repent of the life everlasting.Zayd is tested by a hostile interrogator at the moment of execution, offered the obvious consolation of wishing himself home and Muhammad dead — and refuses even to wish a thorn to hurt the Prophet. The proof is that the enemy concedes it: Abu Sufyan, mouth agape, tells the Quraysh he has never seen a man loved as Muhammad's companions love him. Khubayb adds the detail that he would have prayed longer but for the appearance of fear.Sa'd ibn ar-Rabi', with twelve mortal wounds, shifts the object from the person to the cause — 'the God of Muhammad has not been killed; the religion of Muhammad remains' — and sends a message that leaves the Ansar no excuse before God while they can 'flutter an eyelid'.Ibn Abi'l-Hadid supplies the hostile-witness evidence in bulk: the Quraysh nicknamed the Muslims subat, feared al-Walid ibn al-Mughirah's heart would take all Quraysh with it, called the Prophet's speech magic more intoxicating than wine, and resorted to plugging their ears and covering their faces — physical countermeasures against a force they could not argue with.The conclusion is historical-sociological: by any ordinary reckoning, reforming such a society would have required enough time for 'the old generation habituated to vice' to die out and a new one to be raised. That it did not is attributed to attraction, which 'like tongues of fire burns away the roots of evil'. 'It was by riding on the steed of love that such a long way was covered in such a small time.'",
+      "evidence": [
+        "b01-u14-009",
+        "b01-u14-002"
+      ]
+    },
+    {
+      "id": "b01-u15-q01",
+      "type": "MCQ",
+      "unit_id": "u15",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Which verse asks for 'love for my relatives' as the Prophet's wage?",
+      "answer": "42:23 (ash-Shura) — al-mawaddah fi'l-qurba.",
+      "evidence": [
+        "b01-u15-002",
+        "b01-u15-003"
+      ]
+    },
+    {
+      "id": "b01-u15-q02",
+      "type": "FILL",
+      "unit_id": "u15",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "34:47 explains the wage: 'that shall be ______.'",
+      "answer": "Yours — the benefit accrues to the people, not to the Prophet.",
+      "evidence": [
+        "b01-u15-003",
+        "b01-u15-002"
+      ]
+    },
+    {
+      "id": "b01-u15-q03",
+      "type": "MCQ",
+      "unit_id": "u15",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Who did the Prophet name as the 'relatives' when asked?",
+      "answer": "'Ali, Fatimah, and their sons (via Zamakhshari's al-Kashshaf, quoted by Fakhr al-Din al-Razi).",
+      "evidence": [
+        "b01-u15-005",
+        "b01-u15-004"
+      ]
+    },
+    {
+      "id": "b01-u15-q04",
+      "type": "FILL",
+      "unit_id": "u15",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Abu Bakr said he heard the Prophet say that looking at the face of 'Ali is ______.",
+      "answer": "Worship.",
+      "evidence": [
+        "b01-u15-009",
+        "b01-u15-005"
+      ]
+    },
+    {
+      "id": "b01-u15-q05",
+      "type": "SHORT",
+      "unit_id": "u15",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Why did the Prophet alone ask a 'wage', and why is that not self-interest?",
+      "answer": "Because the wage is not a wage. The Qur'an itself settles it at 34:47: 'I have asked no wage of you; that shall be yours. My wage falls only upon God.' What he asks for accrues to the askers — the love he requests is 'a halter for your own perfection and reformation'. It is therefore another good he recommends, not a fee: the Household do not gather round defilement, so love for them yields nothing but obedience to truth and adherence to virtue, and 'it is friendship for them which transmutes and perfects like the elixir'.",
+      "evidence": [
+        "b01-u15-003",
+        "b01-u15-005"
+      ]
+    },
+    {
+      "id": "b01-u15-q06",
+      "type": "LONG",
+      "unit_id": "u15",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Why does Mutahhari build this chapter so heavily on Sunni sources?",
+      "answer": "Because the argument would be question-begging if built on Shi'ah material. The claim is that Islam itself — not one school within it — has designated an object for the love whose reforming power Chs. 11–13 established. So he argues from ground his opponents concede.The verse is Qur'anic and common to all (42:23), and its self-interpretation comes from the Qur'an again (34:47). The identification of 'the relatives' comes through Zamakhshari's al-Kashshaf, quoted by Fakhr al-Din al-Razi in al-Tafsir al-Kabir — a Sunni exegete reasoning to the conclusion that 'love for the Family of Muhammad — who are 'Ali, Fatimah and the Hasanayn — is obligatory on all Muslims', justified by the Qur'anic commands to follow the Prophet (7:158) and take him as the good example (33:21).The supporting traditions are likewise routed through Sunni collections: Ibn al-Athir's Usd al-Ghabah, as-Suyuti ('love of 'Ali is faith, enmity towards him is sedition'), Abu Na'im's Hilyat al-Awliya' ('love him with the love you have for me'), Muhibb al-Tabari and Ibn Hajar's as-Sawa'iq al-muhriqah on gazing at 'Ali's face as worship, and al-Mustadrak for the chicken tradition. He then quantifies: more than ninety traditions on love for 'Ali in authoritative Sunni texts, about twenty on looking at his face, more than eighty narrations of the chicken episode — with al-Majlisi's 123 Shi'ah traditions mentioned only afterwards.He also forecloses the obvious deflation — that this is mere family sentiment — with a footnote: the Prophet's love for them 'had no personal aspect'. He loved them because they were exemplary persons and God loved them; he had other children he did not love to this degree, and toward whom the community has no such obligation. The love is therefore directed at qualities, which is exactly what Ch. 13's mechanism of resemblance requires, and what Ch. 16 will make the whole 'secret' turn on.",
+      "evidence": [
+        "b01-u15-005",
+        "b01-u15-007"
+      ]
+    },
+    {
+      "id": "b01-u16-q01",
+      "type": "MCQ",
+      "unit_id": "u16",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Is love for 'Ali a form of hero-worship, per Mutahhari?",
+      "answer": "No. He explicitly rejects hero-worship (which exists in every nation), love of his body, and even love of his human excellences as the explanation.",
+      "evidence": [
+        "b01-u16-002",
+        "b01-u16-003"
+      ]
+    },
+    {
+      "id": "b01-u16-q02",
+      "type": "FILL",
+      "unit_id": "u16",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "The basis of love for 'Ali is the connection of our souls with the ______, laid in our primordial natures.",
+      "answer": "Truth.",
+      "evidence": [
+        "b01-u16-004",
+        "b01-u16-001"
+      ]
+    },
+    {
+      "id": "b01-u16-q03",
+      "type": "FILL",
+      "unit_id": "u16",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Because our primordial natures are eternal, love for 'Ali is also ______.",
+      "answer": "Eternal.",
+      "evidence": [
+        "b01-u16-004",
+        "b01-u16-001"
+      ]
+    },
+    {
+      "id": "b01-u16-q04",
+      "type": "SHORT",
+      "unit_id": "u16",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "Who was Sa'sa'ah ibn Suhan and what is his significance?",
+      "answer": "One of the very few men present at 'Ali's secret night burial. After covering the body he put a hand over his heart, threw earth over his own head, and delivered the long eulogy Mutahhari quotes — 'you saw what others did not see, and reached what others did not reach' — ending with the judgement that 'Ali's life was the key to good and his death the key to every evil, and that had the people accepted him blessings would have poured from heaven and earth, 'but they preferred this world to the next'.",
+      "evidence": [
+        "b01-u16-007",
+        "b01-u16-008"
+      ]
+    },
+    {
+      "id": "b01-u16-q05",
+      "type": "LONG",
+      "unit_id": "u16",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Why does Mutahhari reject the 'perfect man / human excellence' explanation, and what does he put in its place?",
+      "answer": "The rejection proceeds by elimination and then by counterfactual.Three candidates are dismissed. It cannot be his body — 'his body is not now among us and we have not perceived it with our senses', so whatever draws us is not sensory. It cannot be hero-worship, since that 'exists in every nation' and would therefore fail to explain 'Ali's uniqueness. And it is 'a mistake, too' to call it humanistic love of moral excellence.The third is the serious candidate, so it gets the counterfactual treatment. Mutahhari concedes everything: 'Ali really was 'the manifestation of the perfect man', and men really do love great human figures. He then lists the excellences at length — wisdom and knowledge, self-sacrifice and altruism, humility and modesty, courtesy, kindness and mercy, protection of the weak, justness, liberality and love of freedom, respect for humanity, generosity, bravery, magnanimity and mercy toward his enemies, munificence and beneficence, with Rumi's 'In bravery you are the Lion of the Lord'. And he concludes: if 'Ali had had all of these — which he did — but not the divine touch, 'it is quite certain that there would not have been the feeling of sympathy and awakening of love that there is today.'This is the same move as Ch. 6 ('had 'Ali had no divine colouring… he would have been forgotten'), now made analytically rather than historically: human excellence is insufficient, because history is full of forgotten champions who possessed it.The replacement is an argument from fitrah. 'Ali is loved 'in the sense that he had the divine link': our hearts are 'unconsciously completely involved with, and connected to, the Truth, right in their depths', and finding in 'Ali 'a great sign of the Truth and a manifestation of the attributes of the Truth', they love him. So the love is really the soul recognising its own primordial orientation. The elegance of this is the corollary it yields: because our primordial natures are eternal, love for 'Ali is eternal too — which explains, at last, the three-dimensional attraction of Ch. 6, the love that survives amputation in Ch. 7, and the men who died for it centuries later in Ch. 5. What gives 'Ali this permanent place is specifically 'his faith and morality… it is that which has given him his divine charisma.'Note how the chapter then pivots into Part 2: the people 'preferred this world to the next' and 'could not endure the justice and unwaveringness of 'Ali' — so the same divine link that magnetised Maytham and Ibn as-Sikkit is what made Ziyad, Hajjaj, al-Mutawakkil and Mu'awiyah his enemies. One cause, two effects.",
+      "evidence": [
+        "b01-u16-003",
+        "b01-u16-004"
+      ]
+    },
+    {
+      "id": "b01-u17-q01",
+      "type": "MCQ",
+      "unit_id": "u17",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The people of Siffin were called…",
+      "answer": "Qasitun — 'those who deviate'. (Jamal = Nakithun; Nahrawan = Mariqun.)",
+      "evidence": [
+        "b01-u17-009",
+        "b01-u17-008"
+      ]
+    },
+    {
+      "id": "b01-u17-q02",
+      "type": "MCQ",
+      "unit_id": "u17",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The Nakithun were characterised by…",
+      "answer": "A money-worshipping mentality, covetousness and displays of prejudice.",
+      "evidence": [
+        "b01-u17-008",
+        "b01-u17-009"
+      ]
+    },
+    {
+      "id": "b01-u17-q03",
+      "type": "FILL",
+      "unit_id": "u17",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The Khawarij of Nahrawan were called the ______.",
+      "answer": "Mariqun — those who miss the truth of the religion.",
+      "evidence": [
+        "b01-u17-010",
+        "b01-u17-003"
+      ]
+    },
+    {
+      "id": "b01-u17-q04",
+      "type": "FILL",
+      "unit_id": "u17",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "'Ali willed that his ______ be hidden; Imam al-Sadiq later revealed it.",
+      "answer": "Grave.",
+      "evidence": [
+        "b01-u17-006",
+        "b01-u17-001"
+      ]
+    },
+    {
+      "id": "b01-u17-q05",
+      "type": "SHORT",
+      "unit_id": "u17",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "What happened over the Yemen garments, and what does it show?",
+      "answer": "Returning from commanding in Yemen, 'Ali left a deputy and hurried ahead to report to the Prophet. The deputy distributed the garments so the men could enter Mecca in new clothes. 'Ali reproved him for indiscipline and ordered the garments removed and stored — because taking anything from the bayt al-mal without notifying and obtaining permission from the leader of the Muslims is expropriation. The soldiers complained of his harshness, and the Prophet defended him: he is 'more intensely in the way of God than that anyone should complain about him'. It shows that 'Ali's enmities were manufactured by his refusal to bend on principle, which naturally offends 'souls full of greed and craving'.",
+      "evidence": [
+        "b01-u17-004",
+        "b01-u17-005"
+      ]
+    },
+    {
+      "id": "b01-u17-q06",
+      "type": "LONG",
+      "unit_id": "u17",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Set out the three groups 'Ali fought and explain why Mutahhari treats this as proof of his completeness.",
+      "answer": "Nakithun — 'those who break their allegiance' — the people of Jamal. Their mentality was 'money-worshipping', covetous, and prone to displays of prejudice. Mutahhari notes that 'Ali's speeches about justice and equality were directed chiefly at this group: their deviation was economic and social.Qasitun — 'those who deviate' — the people of Siffin. Their mind 'belonged to politics, deception and sedition'; they killed in order to seize the reins of government and topple the basis of 'Ali's rule. Significantly, 'Ali was advised to compromise and concede part of what they sought, and refused — 'he was ready to fight injustice, not to give his signature to it'. His war with them was therefore 'a war with sedition and double-dealing'.Mariqun — 'those who miss the truth of the religion' — the people of Nahrawan, the Khawarij. Their spirit was 'inadmissible fanaticism, sanctimoniousness and dangerous ignorance'. Toward all three 'Ali was 'a powerful repeller' and they lived in a state of non-conciliation. The triplet is 'Ali's own, from Sermon 3 (ash-Shiqshiqiyah).Why this proves completeness. Mutahhari's argument is that these are three different kinds of corruption, and most reformers are equipped to confront only one. A man who fights greed may be politically naive; a man who fights political cunning may be disarmed by displays of piety; a man who fights fanaticism may tolerate worldliness. 'One of the manifestations of 'Ali's completeness and his being a perfect individual was that, when it was called for, he faced the various factions and deviations and fought against all of them' — sometimes those devoted to money and this world, sometimes 'professional politicians of the most hypocritical type', sometimes 'ignorant and deviationist men of false piety'.This also sets the agenda for the rest of Part 2. Of the three, Mutahhari chooses the Mariqun for extended study — not because they were the most powerful (they were destroyed within a century and a half) but because their spirit proved the most durable: their thinking 'has taken root among the Muslims, and consequently their spirit has always existed, and still does, in the shape of sanctimonious persons, all the way down these fourteen centuries', constituting 'a grave hindrance to the advancement of Islam and the Muslims'.",
+      "evidence": [
+        "b01-u17-009",
+        "b01-u17-012"
+      ]
+    },
+    {
+      "id": "b01-u18-q01",
+      "type": "MCQ",
+      "unit_id": "u18",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Who devised the Qur'ans-on-spears stratagem?",
+      "answer": "'Amr ibn al-'As, in consultation with Mu'awiyah — and he was then chosen unanimously as their arbitrator.",
+      "evidence": [
+        "b01-u18-006",
+        "b01-u18-002"
+      ]
+    },
+    {
+      "id": "b01-u18-q02",
+      "type": "MCQ",
+      "unit_id": "u18",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Whom did 'Ali propose as arbitrator?",
+      "answer": "'Abdullah ibn al-'Abbas or Malik al-Ashtar. The Khawarij forced Abu Musa al-Ash'ari on him instead.",
+      "evidence": [
+        "b01-u18-006",
+        "b01-u18-008"
+      ]
+    },
+    {
+      "id": "b01-u18-q03",
+      "type": "FILL",
+      "unit_id": "u18",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Abu Musa's intended third caliph, 'Abdullah ibn 'Umar, was his ______.",
+      "answer": "Son-in-law.",
+      "evidence": [
+        "b01-u18-007",
+        "b01-u18-006"
+      ]
+    },
+    {
+      "id": "b01-u18-q04",
+      "type": "FILL",
+      "unit_id": "u18",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The two conditions on bidding to good are ihtimal al-ta'thir and 'adam tarattub al-______.",
+      "answer": "Mafsadah ('alayh) — absence of resulting evil.",
+      "evidence": [
+        "b01-u18-010",
+        "b01-u18-011"
+      ]
+    },
+    {
+      "id": "b01-u18-q05",
+      "type": "MCQ",
+      "unit_id": "u18",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Who was moments from victory when recalled?",
+      "answer": "Malik al-Ashtar — about to destroy Mu'awiyah's command pavilion. The Khawarij threatened to hack 'Ali to pieces unless he was recalled.",
+      "evidence": [
+        "b01-u18-005",
+        "b01-u18-006"
+      ]
+    },
+    {
+      "id": "b01-u18-q06",
+      "type": "SHORT",
+      "unit_id": "u18",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning",
+        "application"
+      ],
+      "prompt": "What was the human-shields argument and how did 'Ali apply it?",
+      "answer": "Islamic law on jihad holds that if the enemy places Muslim prisoners at the front as a shield and advances behind them, and there is no way to reach the attacking enemy except through them, then killing those Muslims becomes permissible for the vital interests of Islam and to save the rest; they are counted soldiers of Islam and martyrs, though blood money must be paid from the treasury to their relatives. 'Ali argued a fortiori: if living Muslims may be struck through when Islam's victory requires it, then 'there can be no objection made to the paper and bindings of books'. Respect for pages exists because of their meaning — and here the meaning itself was what the fighting was for.",
+      "evidence": [
+        "b01-u18-004",
+        "b01-u18-011"
+      ]
+    },
+    {
+      "id": "b01-u18-q07",
+      "type": "LONG",
+      "unit_id": "u18",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Trace the arbitration from stratagem to the birth of the sect, and identify the precise intellectual error.",
+      "answer": "The stratagem. On Siffin's final day the battle was going 'Ali's way and Mu'awiyah stood 'only one step away from defeat'. With 'Amr ibn al-'As he saw 'no way to save himself except by having recourse to the creation of confusion', and had Qur'ans raised on spear-points, calling for the Book to arbitrate. The irony Mutahhari stresses: 'Ali had proposed exactly this earlier and they had refused.'Ali's diagnosis and his soldiers' refusal. He called it a ruse to protect themselves behind 'the words and writing of the Qur'an and afterwards carry on in their same old anti-Qur'anic way', asserting 'it is I who am the reality and the true manifestation of the Qur'an', and supported it with the human-shields ruling. A large body of 'undiscriminating, unknowing and sanctimonious persons' refused: 'Should we fight against the Qur'an?' With one hour needed for victory and Malik al-Ashtar closing on Mu'awiyah's command pavilion, they first threatened to attack 'Ali from behind and then drew their swords and threatened to hack him to pieces. Malik was recalled at the point of winning.The arbitration and the double-cross. They chose 'Amr — the author of the trick — 'without the slightest dispute'. They rejected 'Ali's nominees (Ibn al-'Abbas, Malik al-Ashtar) and imposed Abu Musa al-Ash'ari, 'a man of no perspicacity who was not on good terms with 'Ali', refusing all persuasion. 'Amr then proposed a neutral third — 'Abdullah ibn 'Umar, conveniently Abu Musa's son-in-law — and the sequence 'you depose 'Ali, I'll depose Mu'awiyah'. At the assembly he flattered Abu Musa into speaking first; Abu Musa deposed 'Ali, drawing off his ring. 'Amr then confirmed 'Ali's deposition and moved his own ring from right hand to left: 'I set up Mu'awiyah in the caliphate, just as I put this ring on my finger.' The people whipped Abu Musa, who fled to Mecca; 'Amr left for Damascus.The error. They saw the scandal 'with their own eyes, and realized their mistake. But they could not understand where exactly their error lay.' Three diagnoses were available: that they had fallen for the stratagem and halted a won battle; that they had chosen an incompetent arbitrator; or that arbitration as such was sinful. They took the third: appointing any human arbitrator in God's religion is unbelief, 'for the judge is only God, not man'.Why this is the crucial move. It converts a practical misjudgement — for which they were responsible — into a theological principle, which conveniently transfers the guilt to 'Ali and demands his repentance. When 'Ali agreed that repentance is always good but refused to confess a sin he had not committed and could not call sinful what Islam made lawful, they had their kafir. Mutahhari notes the trajectory: they began as a merely rebellious group, then 'gradually drew up basic beliefs for themselves and created a “party” that only had a political colouring to begin with but which step by step assumed the form of a religious group'. Under the banner of 'bidding to good and forbidding evil' — which they alone of all sects held to be unconditional, requiring neither the possibility of effect (ihtimal al-ta'thir) nor the absence of resulting evil — they concluded that 'Uthman, 'Ali and Mu'awiyah were all in sin, and set out to terrorise the lands 'knowing that they would be killed and their blood would be wasted, and knowing that no useful result would come out of their uprising'.",
+      "evidence": [
+        "b01-u18-007",
+        "b01-u18-002"
+      ]
+    },
+    {
+      "id": "b01-u19-q01",
+      "type": "MCQ",
+      "unit_id": "u19",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "application"
+      ],
+      "prompt": "Which Khawarij doctrine could 'modern thinkers' read favourably?",
+      "answer": "Their quasi-democratic theory of the caliphate — free election, merit in faith and piety, open to non-Qurayshi, non-Arab candidates.",
+      "evidence": [
+        "b01-u19-007",
+        "b01-u19-010"
+      ]
+    },
+    {
+      "id": "b01-u19-q02",
+      "type": "FILL",
+      "unit_id": "u19",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The Khawarij slogan was la hukma illa li'______.",
+      "answer": "llah — 'no judgement except Allah's'.",
+      "evidence": [
+        "b01-u19-009",
+        "b01-u19-002"
+      ]
+    },
+    {
+      "id": "b01-u19-q03",
+      "type": "MCQ",
+      "unit_id": "u19",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "How long did the sect last?",
+      "answer": "Under one and a half centuries — arising late in the first century's fourth decade AH and totally extinct by the start of 'Abbasid rule.",
+      "evidence": [
+        "b01-u19-011",
+        "b01-u19-009"
+      ]
+    },
+    {
+      "id": "b01-u19-q04",
+      "type": "FILL",
+      "unit_id": "u19",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "They denounced 'Uthman's caliphate after its ______ year.",
+      "answer": "Seventh (he 'changed direction' toward the end of the sixth).",
+      "evidence": [
+        "b01-u19-010",
+        "b01-u19-007"
+      ]
+    },
+    {
+      "id": "b01-u19-q05",
+      "type": "SHORT",
+      "unit_id": "u19",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "State the four roots of Khawarijism and the consequence.",
+      "answer": "(a) 'Ali, 'Uthman, Mu'awiyah, the Jamal fighters and all who accepted arbitration were infidels — except arbitration-voters who later repented. (b) Anyone not accepting (a) was likewise an infidel. (c) Faith is belief plus action, a compound — so major sin expels from Islam. (d) Revolt against an unjust ruler is unconditionally obligatory, and bidding to good/forbidding evil is subject to no conditions at all.Consequence: holding all four, they began from the position that every human being on earth was an infidel whose blood was worthless and who was condemned to the Fire — which is why the doctrine issued directly in indiscriminate violence.",
+      "evidence": [
+        "b01-u19-002",
+        "b01-u19-004"
+      ]
+    },
+    {
+      "id": "b01-u19-q06",
+      "type": "SHORT",
+      "unit_id": "u19",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Why did the sect die, and what survived it?",
+      "answer": "Died of: relentless and spiritless logic; severity and harshness of behaviour; the incompatibility of their ways with real life; and hysterical temerity and recklessness — including discarding taqiyah in its reasonable sense, which left them permanently exposed. The caliphs hunted them to extinction within a century and a half.Survived: the spirit. 'The Khawarij sect was not one which could in any real sense survive, but its after-effect has remained' — their thinking infiltrated the other sects, so that 'even today, “Nahrawanis” are to be found in abundance', and they remain 'the most dangerous of Islam's internal enemies'. Mutahhari adds the political sting: there will always be Mu'awiyahs and 'Amr ibn al-'As's ready to use such people when convenient, even while regarding them as enemies.",
+      "evidence": [
+        "b01-u19-013",
+        "b01-u19-012"
+      ]
+    },
+    {
+      "id": "b01-u20-q01",
+      "type": "MCQ",
+      "unit_id": "u20",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Who said no greater words were heard after revelation ceased?",
+      "answer": "Taha Husayn, the Egyptian scholar, in 'Ali wa Banuh — of 'Ali's reply to the doubting companion at Jamal.",
+      "evidence": [
+        "b01-u20-009",
+        "b01-u20-008"
+      ]
+    },
+    {
+      "id": "b01-u20-q02",
+      "type": "FILL",
+      "unit_id": "u20",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Shi'ite Islam works through criticism, research, objections and ______.",
+      "answer": "Exactitude.",
+      "evidence": [
+        "b01-u20-004",
+        "b01-u20-010"
+      ]
+    },
+    {
+      "id": "b01-u20-q03",
+      "type": "MCQ",
+      "unit_id": "u20",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "How many of the twelve thousand at Nahrawan turned back?",
+      "answer": "Eight thousand, after 'Ali's speech and Abu Ayyub al-Ansari's flag.",
+      "evidence": [
+        "b01-u20-019",
+        "b01-u20-003"
+      ]
+    },
+    {
+      "id": "b01-u20-q04",
+      "type": "FILL",
+      "unit_id": "u20",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "'Ali was ______ years old after the Prophet's death, against men of sixty.",
+      "answer": "Thirty-three.",
+      "evidence": [
+        "b01-u20-011",
+        "b01-u20-016"
+      ]
+    },
+    {
+      "id": "b01-u20-q05",
+      "type": "FILL",
+      "unit_id": "u20",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Ibn al-Kawwa' disrupted 'Ali's prayer by reciting Qur'an ______:65.",
+      "answer": "39 (az-Zumar).",
+      "evidence": [
+        "b01-u20-016",
+        "b01-u20-008"
+      ]
+    },
+    {
+      "id": "b01-u20-q06",
+      "type": "SHORT",
+      "unit_id": "u20",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "How did 'Ali handle Ibn al-Kawwa' during the prayer?",
+      "answer": "Ibn al-Kawwa' shouted 39:65 at him mid-prayer, insinuating that his early services — the brotherhood, laylat al-mabit when he slept in the Prophet's bed as a lure for swords — had been annulled by unbelief. 'Ali fell silent each time, because 7:204 commands that when the Qur'an is recited one listens and is silent. After several repetitions he recited 30:60 — 'let not those who have not sure faith make thee unsteady' — then ignored him and continued the prayer. He answered a Qur'anic provocation with Qur'anic obedience, and then with Qur'anic patience.",
+      "evidence": [
+        "b01-u20-016",
+        "b01-u20-008"
+      ]
+    },
+    {
+      "id": "b01-u20-q07",
+      "type": "LONG",
+      "unit_id": "u20",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis",
+        "application"
+      ],
+      "prompt": "Explain the motto/spirit distinction and apply it to both Shi'ism and Khawarijism.",
+      "answer": "The tool. A sect has a motto (its slogans, formal doctrines, name) and a spirit (the underlying disposition that generated it). These can come apart in both directions: a sect may 'die as far as its motto is concerned, but live in spirit', or 'an ideology may live as a motto but be completely dead in spirit'. Hence one can be a follower in name but not in spirit, or hold a sect's spirit while rejecting its slogans.Applied to Shi'ism. The motto is 'the caliph immediately after the Prophet is 'Ali, by divine designation'. The spirit is something else entirely: partisanship for principles rather than personalities. Mutahhari characterises the two raisons d'être sharply — Shi'ite Islam works 'through criticism, research, putting forth objections and exactitude'; Sunni Islam 'through finding the most convenient solution, justification after the act and trust in providence'. At the original schism the majority 'only looked at the superficial aspect' and reasoned that great elders who had long served Islam could not have erred; the minority said they would respect whoever respected the truth, but not where the fundamentals were violated by those very men — 'partisans of the principles of Islam, not partisans of the personalities of Islam'. Salman, Abu Dharr, al-Miqdad and 'Ammar joined 'Ali on exactly this basis, refusing to 'give their seeing and understanding into the hands of others'.The doubting companion at Jamal dramatises the difficulty — and Mutahhari is careful to say he should not be blamed too much: 'A'ishah is a mother of the believers, Talhah a forerunner, az-Zubayr with a record better still. We judge easily only because history has since clarified things, or because we were taught the answer in infancy; 'in those days, neither of these factors existed'. 'Ali's reply supplies the criterion and, with it, the definition of the spirit: individuals are not the measure of truth — truth is the measure of individuals. The same logic appears in the generational contrast: the majority reasoned from the authority of the sixty-year-old shaykhs, the minority that 'that which does not err is the truth; the elders must accord themselves with the truth'.The challenge follows: is it enough, today, that a man recites the motto — 'no matter what spirit or what kind of way of thinking he may have'? Mutahhari's answer is no. The true Shi'ah is 'a copy of 'Ali's conduct' and must therefore have two sides to his character, attracting and repelling — though not any attraction or repulsion, since one can be drawn to falsehood and repelled by virtue.Applied to Khawarijism. The mirror case. The sect is extinct — 'there is no such religious sect in existence in the world today' — so studying it as a sect would be pointless. But its spirit is very much alive, 'incarnated in the campaigns of many of us', especially 'those of us who are, so to speak, pretenders to piety'. Since 'the nature of man is a thief', it is entirely possible for people to be 'Shi'ah by imitation and by their speech, but spiritually and practically Kharijite'. That inversion — holding the Shi'ah motto while living the Kharijite spirit — is precisely what the distinction was built to expose, and it is the practical payoff of the whole of Part 2.",
+      "evidence": [
+        "b01-u20-006",
+        "b01-u20-008"
+      ]
+    },
+    {
+      "id": "b01-u21-q01",
+      "type": "MCQ",
+      "unit_id": "u21",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Why did 'Ali forbid killing Khawarij after him?",
+      "answer": "Because 'one who seeks the truth and errs is not the same as one who seeks falsehood and finds it.' They wanted truth but fell into error; Mu'awiyah's men were imposters from the start — so killing Khawarij later would only benefit Mu'awiyah.",
+      "evidence": [
+        "b01-u21-004",
+        "b01-u21-005"
+      ]
+    },
+    {
+      "id": "b01-u21-q02",
+      "type": "FILL",
+      "unit_id": "u21",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Ibn 'Abbas described their foreheads as ______ by excess of prostration.",
+      "answer": "Calloused.",
+      "evidence": [
+        "b01-u21-003",
+        "b01-u21-007"
+      ]
+    },
+    {
+      "id": "b01-u21-q03",
+      "type": "FILL",
+      "unit_id": "u21",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "'Ali's two images for the Khawarij were ghayhab (gloom) and ______ (rabidity).",
+      "answer": "Kalab — hydrophobia; they bit and infected others.",
+      "evidence": [
+        "b01-u21-006",
+        "b01-u21-004"
+      ]
+    },
+    {
+      "id": "b01-u21-q04",
+      "type": "MCQ",
+      "unit_id": "u21",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "What did 'Ali tell Ibn 'Abbas to argue with?",
+      "answer": "The sunnah, not the Qur'an — 'the Qur'an has many sides to it: you will speak and they will speak', whereas the sunnah is particular and points out applications.",
+      "evidence": [
+        "b01-u21-020",
+        "b01-u21-023"
+      ]
+    },
+    {
+      "id": "b01-u21-q05",
+      "type": "FILL",
+      "unit_id": "u21",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The Khawarij confused hukm (law-giving) with ______ (government).",
+      "answer": "Hukumah — which also implies hakamiyah, arbitration.",
+      "evidence": [
+        "b01-u21-013",
+        "b01-u21-021"
+      ]
+    },
+    {
+      "id": "b01-u21-q06",
+      "type": "MCQ",
+      "unit_id": "u21",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "How many returned to 'Ali after he said astaghfiru'llah?",
+      "answer": "About six thousand — until al-Ash'ath's report drove 'Ali to clarify from the minbar that he had not recanted, whereupon they rebelled again.",
+      "evidence": [
+        "b01-u21-022",
+        "b01-u21-003"
+      ]
+    },
+    {
+      "id": "b01-u21-q07",
+      "type": "SHORT",
+      "unit_id": "u21",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "Give the positive features of the Khawarij.",
+      "answer": "(1) Struggle and self-sacrifice: Ibn 'Abdu Rabbih says no sect was more convinced, exerted more effort, or was more ready to die. One speared man rushed toward his killer — 'O God! I am hurrying towards you so that you may be pleased.' Another told his father he was 'more eager for sword-thrusts than for my son'. (2) Worship and devotion: nights in prayer, no desire for the world; at Nahrawan twelve thousand with foreheads calloused by prostration, hands hard like camels' feet, shirts worn down to the skin. Ziyad's victim's slave reported he never brought him food by day nor laid his bedding at night. They were strictly obedient to outward practice and never touched what they judged sin. 'Ali himself distinguished them from Mu'awiyah's party as seekers of truth who erred.",
+      "evidence": [
+        "b01-u21-003",
+        "b01-u21-002"
+      ]
+    },
+    {
+      "id": "b01-u21-q08",
+      "type": "SHORT",
+      "unit_id": "u21",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "How did 'Ali refute the doctrine that great sin makes one a kafir?",
+      "answer": "Two ways. From the Prophet's practice: he punished a man and then read the burial prayers over his corpse — impossible if sin made one an infidel, since 9:84 forbids praying over an unbeliever; he lashed the drinker, cut the thief's hand and whipped the adulterer, yet seated them in Muslim gatherings, kept their wages from the bayt al-mal, and married them to Muslims. He meted out punishments 'but never crossed the names of the punished off the list of the Muslims'. From the generalisation error: even supposing 'Ali had erred and so become an infidel — why should the whole community be condemned and called to account? And why carry swords that strike 'the sinless and the sinners alike'?",
+      "evidence": [
+        "b01-u21-016",
+        "b01-u21-009"
+      ]
+    },
+    {
+      "id": "b01-u21-q09",
+      "type": "LONG",
+      "unit_id": "u21",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Why does Mutahhari call fighting the Khawarij 'Ali's rarest distinction?",
+      "answer": "The difficulty was perceptual, not military. The Khawarij presented every external mark of sanctity. Ibn 'Abbas found twelve thousand men with foreheads calloused from prostration, hands hardened like camels' feet from pressing the burning ground, shirts tattered down to their skins. They fasted the days and prayed the nights — Ziyad's victim's own slave testified he had never brought him food by day nor laid his bedding at night. They were strictly obedient to outward practice and would not touch what they considered sin. And they were brave beyond ordinary measure, one of them rushing onto the spear that killed him.Against such people 'Ali drew his sword. Mutahhari's candour is the heart of the chapter: 'if we had been in the place of his companions and had seen the face of these people, our feelings would have been moved, and we would have remonstrated with 'Ali about drawing swords against such people.''Ali's own claim (Sermon 92) is that this took a daring no one else possessed: 'I have put out the eye of revolt. No one had the daring to do this except me, when its gloom had surged up and its rabidity had become severe.' The two images carry the argument. Ghayhab — gloom: their outward saintliness was such that 'every believer with strong faith became again uncertain', creating a dark, vague atmosphere filled with doubt and hesitation. Kalab — rabidity: like hydrophobia, the bitten becomes rabid and bites others, so the disease propagates; wise people kill a rabid dog at once precisely to save others. 'They were not curable; they bit and infected and regularly added to the number of cases of rabies.'Why only he could do it. 'Neither their calloused foreheads, nor the ascetic-like clothes, nor their forever God-remembering tongues, nor even their strong and steadfast beliefs, could become an obstacle to my insight into them.' Mutahhari adds the sharpest point: apart from 'Ali, no believing Muslim dared — 'only someone who did not believe in God and Islam could have dared to kill this kind of people', i.e. for irreligious reasons. So the act required simultaneously the faith to see the danger and the nerve to act against appearances.What was at stake. 'Ali understood 'that if they got a footing everyone would be afflicted with their blight, that the world of Islam would become inflexible, adhering to the external aspects, superficial and fossilized, that Islam's back would become bent' — echoing the Prophet's warning that two groups will break his back, 'those who know but act recklessly, and those who are ignorant but profess piety'.The consequence. His action 'smoothed the path for the subsequent caliphs and rulers so that they could fight against the Khawarij', and more broadly opened the way to oppose 'any group that showed itself to be outwardly pious, to have pretensions to saintliness and to be religious, but who were really fools'. Note finally the qualification that keeps this from being a licence: 'Ali forbade killing Khawarij after him (Sermon 60), because they were truth-seekers in error, and destroying them later would serve Mu'awiyah — who was 'worse and more dangerous than them'.",
+      "evidence": [
+        "b01-u21-006",
+        "b01-u21-007"
+      ]
+    },
+    {
+      "id": "b01-u22-q01",
+      "type": "MCQ",
+      "unit_id": "u22",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "What is the defining Kharijite trait that spread to other sects?",
+      "answer": "The disengagement (divorce) of intellection from religiosity, together with inflexibility of mind.",
+      "evidence": [
+        "b01-u22-006",
+        "b01-u22-012"
+      ]
+    },
+    {
+      "id": "b01-u22-q02",
+      "type": "FILL",
+      "unit_id": "u22",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Mutahhari explains unconscious borrowing by saying the nature of man is a ______.",
+      "answer": "Thief.",
+      "evidence": [
+        "b01-u22-002",
+        "b01-u22-010"
+      ]
+    },
+    {
+      "id": "b01-u22-q03",
+      "type": "MCQ",
+      "unit_id": "u22",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The Mu'tazilah arose out of which debate?",
+      "answer": "Whether committing great sins makes one a disbeliever — the Kharijite question, hence their origin is 'connected with the Kharijites'.",
+      "evidence": [
+        "b01-u22-008",
+        "b01-u22-009"
+      ]
+    },
+    {
+      "id": "b01-u22-q04",
+      "type": "FILL",
+      "unit_id": "u22",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The ______ school was the Shi'ah form of this disengagement, opposed to the Usulis.",
+      "answer": "Akhbari.",
+      "evidence": [
+        "b01-u22-011",
+        "b01-u22-002"
+      ]
+    },
+    {
+      "id": "b01-u22-q05",
+      "type": "SHORT",
+      "unit_id": "u22",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "Trace the Kharijite spirit through Mu'tazilah, Ash'arites and Akhbaris.",
+      "answer": "The Khawarij bequeathed the divorce of intellect from religion. The Mu'tazilah arose in the early 2nd century AH directly out of the Kharijite question (does great sin make a kafir?) but in reaction — seeking free thinking, critically evaluating ahadith, opposing the traditionists and exoterists who denied that clear judgements follow from the intellect. The Ash'arites then reversed this after about a century and a half, denying the value of intellectual reflection and pure metaphysics, requiring belief in exoteric meanings without reflection, and treating 'every kind of question and answer, or why and wherefore' as innovation — Ahmad ibn Hanbal being imprisoned and tortured in this cause. They won, 'the school of intellectual thinking closed down', and this 'dealt a great blow to the intellectual life of Islamic sciences'. The Akhbaris reproduced the same disengagement inside Shi'ism (11th–12th c. AH), shutting down the intellect entirely, calling its use absolutely forbidden, campaigning against the Usulis, and — since the Qur'an's authority ran only through hadith exegesis — effectively reducing all proof to the outward sense of ahadith. Hence: 'a perfect example of Kharijite thought'.",
+      "evidence": [
+        "b01-u22-011",
+        "b01-u22-008"
+      ]
+    },
+    {
+      "id": "b01-u23-q01",
+      "type": "MCQ",
+      "unit_id": "u23",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Why is fighting hypocrisy harder than fighting unbelief?",
+      "answer": "Because unbelief is open and unconcealed, whereas hypocrisy is concealed unbelief — outwardly Islam, inwardly evil — and most people cannot perceive past outward forms.",
+      "evidence": [
+        "b01-u23-010",
+        "b01-u23-009"
+      ]
+    },
+    {
+      "id": "b01-u23-q02",
+      "type": "FILL",
+      "unit_id": "u23",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The Prophet feared not poverty for his community but ______ thinking.",
+      "answer": "Crooked.",
+      "evidence": [
+        "b01-u23-004",
+        "b01-u23-011"
+      ]
+    },
+    {
+      "id": "b01-u23-q03",
+      "type": "MCQ",
+      "unit_id": "u23",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "Whom does the Prophet say he fears for his community?",
+      "answer": "Neither the believer nor the unbeliever, but the one hypocritical in heart and learned in speech — who 'speaks what you can accept, but does what you cannot accept'.",
+      "evidence": [
+        "b01-u23-011",
+        "b01-u23-004"
+      ]
+    },
+    {
+      "id": "b01-u23-q04",
+      "type": "FILL",
+      "unit_id": "u23",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "retrieval",
+        "source-grounded"
+      ],
+      "prompt": "The stupid are the ______ in the hands of the hypocrites.",
+      "answer": "Tools (their weapon/sword).",
+      "evidence": [
+        "b01-u23-013",
+        "b01-u23-009"
+      ]
+    },
+    {
+      "id": "b01-u23-q05",
+      "type": "SHORT",
+      "unit_id": "u23",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded",
+        "reasoning"
+      ],
+      "prompt": "Why does the Qur'an give universals rather than names?",
+      "answer": "Because 'the Qur'an came to stay forever', so it must make fundamentals and universals clear 'so that falsehood can take its place face to face with truth in every age'. Naming particulars is not its task — 'such a thing would be impossible'. Hence 49:9 tells us to fight the insolent party of two fighting believers, without saying that in forty years a man named Mu'awiyah will fight 'Ali. The burden this places on the reader is the point: deducing the particular from the universal 'depends on our correct understanding and conceptualization', and the Qur'an 'did not come to be always for people like a guardian over a juvenile'. It intends Muslims to be intellectually and socially mature — able to tell the just man from the unjust.",
+      "evidence": [
+        "b01-u23-006",
+        "b01-u23-007"
+      ]
+    },
+    {
+      "id": "b01-u23-q06",
+      "type": "LONG",
+      "unit_id": "u23",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Explain the link between ignorance, hypocrisy, and 'holding the Qur'an up on spears'.",
+      "answer": "Mutahhari presents these as one mechanism with three parts, first assembled at Siffin and repeated for thirteen centuries.The raw material: ignorance. Whenever the ignorant 'put on a show of sanctity and piety, and people take them to be the symbol of the practicing Muslim, an excellent tool is available for unscrupulous schemers'. The ignorant pietist is valuable precisely because he is sincere — his piety is genuine, which is what makes him credible, and his ignorance is what makes him steerable. He cannot 'distinguish between slogans and reality'.The operator: hypocrisy. The struggle against the hypocrite is 'several degrees more difficult' than against the unbeliever, since unbelief is open while hypocrisy is concealed unbelief wearing an Islamic face. Most people 'cannot extend the reach of their perception beyond outward forms'. The Prophet's words in Letter 27 make the ranking explicit: he fears neither believer nor unbeliever — God protects the one and humiliates the other — but fears 'every one of you who is a hypocrite in his heart and learned in speech. He speaks what you can accept, but he does what you cannot accept.'The weapon: the Qur'an itself. Raised on a spear, it turns the community's deepest loyalty into the instrument of its defeat — 'setting the power of Islam itself to work against Islam'. The footnote generalises: whenever a reformer threatens the interests of the unjust, they 'immediately don the disguise of sanctity'. Mutahhari names Western colonialism as an expert practitioner, particularly in manufacturing schisms, and describes the characteristic disgrace — Muslims working to expel foreign influence, only to find 'the very people they wanted to save turn into a barrier in their path in the name, and under the banner, of religion'. Al-Ma'mun's worn fur coat is the same logic in miniature: cultivated austerity as political theatre, and a poet who took nothing from him praising it sincerely.The two remedies. First, the Prophet's diagnosis — 'I am not anxious about the incursion of poverty… that about which I am afraid for them is crooked thinking', which will bring the community far worse than economic poverty. Hence the struggle against stupidity is the struggle against hypocrisy: 'the stupid are the tools in the hands of the hypocrites', so fighting foolishness serves 'to disarm the hypocrites, and take the sword out of their hands'.Second, a correct methodology of derivation. The Qur'an guides only when 'subjected to true reflection… interpreted wisely… guidance taken from the people who really know the Qur'an'. Since it supplies universals rather than names, the reader must supply the application — and 'Ali's rule in Sermon 146 states the requirement exactly: 'You will never know truth and follow the right way unless you know the person who has abandoned it.' Without that, a man may act 'in the name of truth and Islam and under the banner of Islam against Islam and truth and for falsehood' — which is a precise description of what the Khawarij did at Siffin, and of what the whole of Part 2 warns against repeating.",
+      "evidence": [
+        "b01-u23-002",
+        "b01-u23-003"
+      ]
+    },
+    {
+      "id": "b01-u24-q01",
+      "type": "SHORT",
+      "unit_id": "u24",
+      "audience": "reader",
+      "difficulty": "core",
+      "tags": [
+        "comprehension",
+        "source-grounded"
+      ],
+      "prompt": "On Mutahhari's account, what makes 'Ali the model Imam?",
+      "answer": "Not either power alone but both, correctly directed. Leadership needs attraction — power and force drive people like sheep without awakening their inner strengths, and even justice 'lifelessly enforced' is not enough (Ch. 12). But it equally needs repulsion — the capacity to fight greed, political hypocrisy, and ignorant piety alike, which is why facing all three groups was a mark of his completeness (Ch. 17). And since possessing both powers proves nothing by itself — tyrants had them too — what certifies him is the kind of people each power acted on.",
+      "evidence": [
+        "b01-u24-004",
+        "b01-u24-002"
+      ]
+    },
+    {
+      "id": "b01-u24-q02",
+      "type": "LONG",
+      "unit_id": "u24",
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Draw the whole book together: how do Parts 1 and 2 form a single argument?",
+      "answer": "The Introduction lays the frame. Attraction and repulsion is a universal law (Ch. 2) operating in human society through resemblance and contrariety (Ch. 3), which yields four types of men (Ch. 4). Type 4 — attracting and repelling both — belongs to those who genuinely travel a path. But Mutahhari immediately blocks the inference from force to virtue: Genghis Khan, Hajjaj and Mu'awiyah all had both powers strongly. The criterion is the objects: 'friends and enemies, the attracted and the repelled, each one is a clear proof of the essence of such a person.'This single sentence makes the two Parts one experiment. If we are to learn who 'Ali was, we must examine both populations.Part 1 examines the attracted. The attraction is three-dimensional — broad, centuries-long, and reaching the soul's depth — a category otherwise exclusive to the prophets (Ch. 6). Its evidence is people with nothing to gain: Maytham preaching from his cross twenty years on, Ibn as-Sikkit losing his tongue two hundred years on (Ch. 5), the man who praised 'Ali while his own blood dripped (Ch. 7). Mutahhari then analyses why such love matters: it is the elixir that transmutes human nature (Ch. 8), it breaks the barrier of self-love by expanding rather than reducing the self (Ch. 9) — provided it is the noble kind and not passion (Ch. 10), and provided it is directed at those near to God (Ch. 11). The mechanism is resemblance: love transfers the beloved's qualities like an electric wire, which is why it outperforms intellectual self-reform as a magnet outperforms hand-sorting — and why the choice of beloved is everything (Ch. 13). Islam then designates that beloved (Ch. 15), and the final secret is that the attraction is not to 'Ali's body, nor hero-worship, nor even his human excellences, but to the divine link our fitrah recognises — which is why it is eternal (Ch. 16).Part 2 examines the repelled, and it is not an appendix but the other half of the proof. 'Ali faced three deviations — greed (Jamal), political hypocrisy (Siffin), fanatical ignorance (Nahrawan) — and confronting all three is itself the mark of his completeness (Ch. 17). The Khawarij are chosen because their spirit outlived their sect: born from a misdiagnosed error at the arbitration (Ch. 18), hardened into four doctrines that made every human being on earth an infidel (Ch. 19), and surviving as the divorce of intellect from religiosity in Ash'arism, Akhbarism, and modern imitations (Ch. 22). Mutahhari is scrupulous about their virtues — their courage and worship were real, and 'Ali himself said they 'sought the truth and erred' — which is exactly what makes striking them so rare and so instructive (Ch. 21). And the mechanism they enabled is still running: ignorance supplies sincere instruments, hypocrisy operates them, and the Qur'an raised on a spear is the weapon (Ch. 23).The convergence. 'Ali is the true Imam not because he was loved and not because he fought, but because the right people loved him and the right people fought him — and because he governed by a love that awakens inner strengths (Ch. 12) while retaining the nerve to strike at piety when piety had become a disease. The book therefore ends where the Foreword began, with a demand rather than a eulogy: the true Shi'ah is 'a copy of 'Ali's conduct' and must have two sides to his character. The unanswered question Mutahhari leaves us is his own: how often have we who claim to follow 'Ali pushed away the very people 'Ali attracted, and attracted those who were repelled by him?",
+      "evidence": [
+        "b01-u24-003",
+        "b01-u24-002"
+      ]
+    }
+  ]
+}

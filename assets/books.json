@@ -3,7 +3,7 @@
     {
       "id": "book01",
       "order": 1,
-      "status": "legacy",
+      "status": "full",
       "title": "Polarization Around the Character of 'Ali ibn Abi Talib",
       "author": "Ayatullah Murtadha Mutahhari",
       "primary_category": "Akhlaq",
@@ -13,11 +13,18 @@
         "Attraction and Repulsion"
       ],
       "dir": "Library/Book 01 - Polarization Around _Ali/",
-      "note": "Predates the framework's data-driven architecture -- no data/ or mind_maps/ folder yet. Self-contained interactive HTML files instead of a generated hub.",
       "links": {
-        "studyGuide": "study_guide/study_guide_attraction_polarization.html",
+        "studyGuide": "study_guide/study.html",
+        "legacyStudyGuide": "study_guide/study_guide_attraction_polarization.html",
+        "legacyExam": "exam_bank/exam_30_hard_questions.md",
         "examPapers": "exam_bank/exam_papers_bank.html",
-        "masterWorkbook": "exam_bank/Polarization_Ali_MASTER_Exam_Workbook_34_Chapters_20_Simulated_Years.html"
+        "masterWorkbook": "exam_bank/Polarization_Ali_MASTER_Exam_Workbook_34_Chapters_20_Simulated_Years.html",
+        "mindMap": "mind_maps/book01_interactive.html"
+      },
+      "data": {
+        "chunks": "data/chunks.json",
+        "questions": "exam_bank/questions.json",
+        "glossary": "data/glossary.json"
       }
     },
     {
