@@ -63,6 +63,26 @@
         "u15": {
           "title": "گفتار 15",
           "script": "audio/book03/scripts/u15.md"
+        },
+        "u21": {
+          "title": "گفتار 21",
+          "script": "audio/book03/scripts/u21.md"
+        },
+        "u22": {
+          "title": "گفتار 22",
+          "script": "audio/book03/scripts/u22.md"
+        },
+        "u23": {
+          "title": "گفتار 23",
+          "script": "audio/book03/scripts/u23.md"
+        },
+        "u24": {
+          "title": "گفتار 24",
+          "script": "audio/book03/scripts/u24.md"
+        },
+        "u25": {
+          "title": "گفتار 25",
+          "script": "audio/book03/scripts/u25.md"
         }
       }
     },
