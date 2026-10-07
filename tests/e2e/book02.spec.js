@@ -59,7 +59,7 @@ test.describe("Book 02 Interactive Mind Map", () => {
     await page.locator("#nodes .node.concept").first().click();
     await expect(page.locator("#nodes .node.unit")).toHaveCount(15);
     await page.locator("#nodes .node.unit").last().click();
-    await expect(page.locator("#nodes .node.concept").count()).toBeGreaterThan(4);
+    await expect.poll(() => page.locator("#nodes .node.concept").count()).toBeGreaterThan(4);
     expect(errors).toEqual([]);
   });
 });
