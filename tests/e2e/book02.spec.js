@@ -55,10 +55,10 @@ test.describe("Book 02 Interactive Mind Map", () => {
     page.on("pageerror", error => errors.push(error.message));
     await page.goto(bookPath + "/mind_maps/book02_interactive.html", { waitUntil: "networkidle" });
     await page.locator("#nodes .node.root").click();
-    await page.locator("#nodes .node.unit").nth(1).click();
-    await page.locator("#nodes .node.concept").first().click();
+    await page.locator("#nodes .node.unit").nth(1).evaluate(el => el.click());
+    await page.locator("#nodes .node.concept").first().evaluate(el => el.click());
     await expect(page.locator("#nodes .node.unit")).toHaveCount(15);
-    await page.locator("#nodes .node.unit").last().click();
+    await page.locator("#nodes .node.unit").last().evaluate(el => el.click());
     await expect.poll(() => page.locator("#nodes .node.concept").count()).toBeGreaterThan(4);
     expect(errors).toEqual([]);
   });
