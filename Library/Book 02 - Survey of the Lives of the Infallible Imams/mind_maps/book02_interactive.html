@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="../../../assets/toolbar.css"><script defer src="../../../assets/toolbar.js" data-mode="float"></script>
 </head><body><div class="top"><div class="hint"><b>Interactive concept DAG:</b> click a rectangle to reveal its children. Click the new rectangles to keep growing the graph. Connections are directed.</div><div class="controls"><input id="search" placeholder="Search visible nodes" oninput="filterNodes()"><button onclick="resetGraph()">Reset</button><button onclick="fit()">Fit</button><button onclick="expandAll()">Expand all levels</button></div></div><div id="canvas"><div id="world"><svg id="svg"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#3d5a4c"></path></marker></defs></svg><div id="nodes"></div></div></div><div id="info">Select a node.</div>
 <script>
+// Keep expansion state and unit references index-based so mobile multi-level traversal remains safe.
 // Explicit element refs (do not rely on implicit window.<id> globals -- unreliable for SVG-namespaced elements in some engines).
 const svg=document.getElementById("svg"),world=document.getElementById("world"),canvas=document.getElementById("canvas"),nodes=document.getElementById("nodes"),search=document.getElementById("search"),info=document.getElementById("info");
 let D=null,N={},E=[],open=new Set(),selected="book",scale=1,px=0,py=0;
