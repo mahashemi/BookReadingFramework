@@ -1,0 +1,179 @@
+{
+  "book_id": "book01",
+  "title": "Polarization Around the Character of 'Ali ibn Abi Talib",
+  "author": "Ayatullah Murtadha Mutahhari",
+  "translator": "WOFIS English translation",
+  "source_title": "Polarization Around the Character of 'Ali ibn Abi Talib",
+  "source": "Al-Islam.org",
+  "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari",
+  "reading_units": [
+    {
+      "id": "u01",
+      "number": 1,
+      "title": "Preface & Foreword",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/introduction",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u02",
+      "number": 2,
+      "title": "The Law of Attraction and Repulsion",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/introduction",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u03",
+      "number": 3,
+      "title": "Attraction and Repulsion in the World of Man",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/introduction",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u04",
+      "number": 4,
+      "title": "Differences Between People — The Four Types",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/introduction",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u05",
+      "number": 5,
+      "title": "'Ali — One Man with Two Powers",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/introduction",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u06",
+      "number": 6,
+      "title": "Powerful Attractions (Part 1 opens)",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtahhari/part-1-power-attraction-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u07",
+      "number": 7,
+      "title": "Shi'ism, the Creed of Love",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtahhari/part-1-power-attraction-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u08",
+      "number": 8,
+      "title": "The Elixir of Love",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtahhari/part-1-power-attraction-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u09",
+      "number": 9,
+      "title": "Breaking Down the Barriers",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtahhari/part-1-power-attraction-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u10",
+      "number": 10,
+      "title": "Constructive or Destructive?",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtahhari/part-1-power-attraction-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u11",
+      "number": 11,
+      "title": "Love and Devotion to Those Close to God",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtahhari/part-1-power-attraction-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u12",
+      "number": 12,
+      "title": "The Power of Love in Society",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtahhari/part-1-power-attraction-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u13",
+      "number": 13,
+      "title": "The Best Means for Refining the Soul",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtahhari/part-1-power-attraction-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u14",
+      "number": 14,
+      "title": "Examples from the History of Islam",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtahhari/part-1-power-attraction-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u15",
+      "number": 15,
+      "title": "Love for 'Ali in the Qur'an and Sunnah",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtahhari/part-1-power-attraction-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u16",
+      "number": 16,
+      "title": "The Secret of 'Ali's Force of Attraction",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtahhari/part-1-power-attraction-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u17",
+      "number": 17,
+      "title": "How 'Ali Made Enemies (Part 2 opens)",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/part-2-power-repulsion-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u18",
+      "number": 18,
+      "title": "How the Khawarij Came Into Existence",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/part-2-power-repulsion-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u19",
+      "number": 19,
+      "title": "The Basis of Khawarij Opinions & Their View of the Caliphate",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/part-2-power-repulsion-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u20",
+      "number": 20,
+      "title": "Just a Motto? — and 'Ali's Sense of Democracy",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/part-2-power-repulsion-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u21",
+      "number": 21,
+      "title": "The Distinguishing Features of the Khawarij",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/part-2-power-repulsion-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u22",
+      "number": 22,
+      "title": "The Influence of Islamic Sects on Each Other",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/part-2-power-repulsion-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u23",
+      "number": 23,
+      "title": "The Politics of 'Using' the Qur'an & Fighting Hypocrisy",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/part-2-power-repulsion-ali",
+      "status": "learning_ready"
+    },
+    {
+      "id": "u24",
+      "number": 24,
+      "title": "'Ali, the True Imam and Leader",
+      "source_url": "https://al-islam.org/polarization-around-character-ali-ibn-abi-talib-murtadha-mutahhari/part-2-power-repulsion-ali",
+      "status": "learning_ready"
+    }
+  ]
+}
