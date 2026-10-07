@@ -1653,6 +1653,341 @@
         "b03-u25-008",
         "b03-u25-010"
       ]
+    },
+    {
+      "id": "b03-cross-q101",
+      "type": "SHORT",
+      "unit_ids": [
+        "u02",
+        "u03"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "listener-challenge"
+      ],
+      "prompt": "How do the treatment of natural desires in Unit 02 and the two-dimensional account of the human being in Unit 03 change the meaning of jihad al-nafs?",
+      "answer": "Unit 02 prevents jihad al-nafs from being reduced to destroying desire: natural drives remain, but their satisfaction must be governed lawfully. Unit 03 supplies the deeper anthropology: bodily and spiritual dimensions pull in different directions, so struggle consists in ordering the lower dimension toward the person's spiritual purpose.",
+      "evidence": [
+        "b03-u02-002",
+        "b03-u02-003",
+        "b03-u03-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q102",
+      "type": "LONG",
+      "unit_ids": [
+        "u03",
+        "u05"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Compare the human duality described in Unit 03 with the treatment of the nafs ammarah in Unit 05. What is gained by moving from a general account of human constitution to naming the lower self as an active adversary?",
+      "answer": "Unit 03 explains why conflict is built into human life: bodily and spiritual dimensions can pull in opposite directions. Unit 05 makes that conflict more concrete by identifying the commanding lower self and the patterns through which it presses a person toward harmful choices. The movement turns anthropology into a practical diagnosis: the reader can now recognize what must be governed rather than merely knowing that an inner conflict exists.",
+      "evidence": [
+        "b03-u03-001",
+        "b03-u05-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q103",
+      "type": "SHORT",
+      "unit_ids": [
+        "u06",
+        "u07"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "listener-challenge"
+      ],
+      "prompt": "What is the difference between practicing patience in a difficult moment and developing patience as a stable character trait?",
+      "answer": "Unit 06 treats sabr as the necessary response to difficulty and duty; Unit 07 deepens it into a ملكه, a stable disposition. The goal is not merely to survive isolated tests but to train the kind of person who remains steady when the same pressures recur.",
+      "evidence": [
+        "b03-u06-001",
+        "b03-u07-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q104",
+      "type": "LONG",
+      "unit_ids": [
+        "u09",
+        "u10",
+        "u11"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "How does the three-part treatment of repentance deepen tawbah beyond simply feeling sorry for a sin?",
+      "answer": "The repentance units progressively treat recognition of wrongdoing, turning back, and the consequences and responsibilities surrounding repair rather than reducing tawbah to emotion. A strong answer should show how repentance becomes a change in direction and character, not merely a moment of regret.",
+      "evidence": [
+        "b03-u09-001",
+        "b03-u10-001",
+        "b03-u11-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q105",
+      "type": "SHORT",
+      "unit_ids": [
+        "u12",
+        "u13"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "listener-challenge"
+      ],
+      "prompt": "How does sadr or inner expansiveness protect a person from turning disagreement and pressure into moral failure?",
+      "answer": "The two units treat breadth of inner capacity as something that lets a person remain composed and constructive under pressure. Instead of allowing insult, anger, or narrowness to dictate the response, the person preserves room for judgment, patience, and a better action.",
+      "evidence": [
+        "b03-u12-001",
+        "b03-u13-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q106",
+      "type": "LONG",
+      "unit_ids": [
+        "u15",
+        "u17"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Why must worship and sincerity be considered together? Explain how an outwardly religious act can fail to produce the intended spiritual formation if its motive is misdirected.",
+      "answer": "Unit 15 presents worship and servitude as orientation of the whole person toward God, while Unit 17 examines ikhlas as freedom from making praise, status, or recognition the real purpose of an act. Together they show that religious practice is not complete merely because the outward action occurs; its direction and motive matter.",
+      "evidence": [
+        "b03-u15-001",
+        "b03-u17-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q107",
+      "type": "SHORT",
+      "unit_ids": [
+        "u16",
+        "u18"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "listener-challenge"
+      ],
+      "prompt": "How do persistence and night prayer illustrate the difference between an inspiring intention and a sustainable spiritual practice?",
+      "answer": "Unit 16 emphasizes activity, persistence, and steady work rather than short bursts of enthusiasm. Unit 18 applies the same logic to night prayer: a difficult devotional practice should be approached in a way that can actually be sustained, without neglecting obligatory duties.",
+      "evidence": [
+        "b03-u16-001",
+        "b03-u18-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q108",
+      "type": "LONG",
+      "unit_ids": [
+        "u19",
+        "u23"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Compare taking refuge in the Qur'an with practicing dhikr. How do the two practices differ, and how do they reinforce the same struggle for attention and spiritual orientation?",
+      "answer": "Unit 19 presents the Qur'an as a source of refuge, guidance, and formation in the inner struggle. Unit 23 develops remembrance as a repeated return of attention to God in ordinary life. One emphasizes sustained engagement with revealed guidance; the other emphasizes repeated recollection. Together they turn spiritual orientation into something both substantive and habitual.",
+      "evidence": [
+        "b03-u19-001",
+        "b03-u23-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q109",
+      "type": "SHORT",
+      "unit_ids": [
+        "u20",
+        "u21"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "listener-challenge"
+      ],
+      "prompt": "What is the relationship between the benefits of supplication and the more refined question of whether a particular request is actually good for the supplicant?",
+      "answer": "Unit 20 establishes why dua is spiritually valuable; Unit 21 prevents the practice from being reduced to getting a desired object. The connection shifts the reader from treating prayer as a transaction toward seeing it as a relationship in which the supplicant's own condition and understanding can change.",
+      "evidence": [
+        "b03-u20-001",
+        "b03-u21-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q110",
+      "type": "LONG",
+      "unit_ids": [
+        "u21",
+        "u22"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "How does the movement from dua to tawassul preserve the centrality of God while introducing the role of the Ahl al-Bayt?",
+      "answer": "Unit 21 establishes direct supplication and the transformation of the supplicant. Unit 22 places tawassul within that relationship by presenting the Ahl al-Bayt as a means of drawing nearer to God, not as replacements for God. The key distinction is between using a means of approach and treating the means as an independent deity.",
+      "evidence": [
+        "b03-u21-001",
+        "b03-u22-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q111",
+      "type": "SHORT",
+      "unit_ids": [
+        "u23",
+        "u24"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "listener-challenge"
+      ],
+      "prompt": "How does remembrance of God prepare the ground for tawakkul?",
+      "answer": "Unit 23 trains repeated return of attention to God; Unit 24 develops reliance upon God while continuing to fulfill one's responsibilities. Reliance is difficult to sustain if attention is continually captured by the self and its fears; remembrance repeatedly re-centers the person before action and uncertainty.",
+      "evidence": [
+        "b03-u23-001",
+        "b03-u24-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q112",
+      "type": "LONG",
+      "unit_ids": [
+        "u24",
+        "u25"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "Why does the final treatment of tawhid make tawakkul more than a psychological technique for reducing anxiety?",
+      "answer": "Unit 24 distinguishes fulfilling one's duty from controlling the final result. Unit 25 grounds that trust in tawhid: the means remain real, but their ultimate efficacy is not independent of God. Tawakkul therefore becomes a consequence of how reality is understood, not merely a coping strategy.",
+      "evidence": [
+        "b03-u24-001",
+        "b03-u25-004",
+        "b03-u25-008"
+      ]
+    },
+    {
+      "id": "b03-cross-q113",
+      "type": "SHORT",
+      "unit_ids": [
+        "u01",
+        "u17"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "listener-challenge"
+      ],
+      "prompt": "What common principle links the responsibility of teaching in Unit 01 with sincerity in Unit 17?",
+      "answer": "Unit 01 treats influence over another person's formation as a moral trust, while Unit 17 asks whether the motive of an action is genuinely directed toward God rather than recognition. Together they imply that influence is safest when the teacher's work is both morally responsible and inwardly sincere.",
+      "evidence": [
+        "b03-u01-001",
+        "b03-u17-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q114",
+      "type": "LONG",
+      "unit_ids": [
+        "u02",
+        "u15"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "How do lawful management of desire and worship belong to one coherent project rather than two unrelated parts of the book?",
+      "answer": "Unit 02 teaches that natural desires should be governed rather than annihilated, while Unit 15 presents worship as a whole-person orientation toward God. Desire-management supplies the discipline needed for worship to shape the whole person, while worship supplies the higher orientation that tells desire where it belongs.",
+      "evidence": [
+        "b03-u02-003",
+        "b03-u15-001"
+      ]
+    },
+    {
+      "id": "b03-cross-q115",
+      "type": "LONG",
+      "unit_ids": [
+        "u16",
+        "u25"
+      ],
+      "audience": "reader",
+      "difficulty": "advanced",
+      "tags": [
+        "connection",
+        "reasoning",
+        "source-grounded",
+        "synthesis"
+      ],
+      "prompt": "The book ends with tawhid but earlier emphasizes persistence and repeated effort. How can a theology of divine efficacy coexist with disciplined human action?",
+      "answer": "Unit 16 insists that spiritual change requires activity, persistence, and steady work. Unit 25 distinguishes the reality of means from independent ultimate efficacy. The synthesis is neither fatalism nor self-reliance: act seriously within your responsibility while recognizing that you are not the independent source of the final effect.",
+      "evidence": [
+        "b03-u16-001",
+        "b03-u25-008",
+        "b03-u25-010"
+      ]
     }
   ]
 }
