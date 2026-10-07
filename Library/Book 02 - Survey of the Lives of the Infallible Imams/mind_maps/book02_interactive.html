@@ -5,6 +5,7 @@
 <script>
 // Keep expansion state and unit references index-based so mobile multi-level traversal remains safe.
 // Regression path: related unit nodes must retain their numeric D.units index.
+// Keep the traversal data-oriented; presentation remains independent of unit lookup.
 // Explicit element refs (do not rely on implicit window.<id> globals -- unreliable for SVG-namespaced elements in some engines).
 const svg=document.getElementById("svg"),world=document.getElementById("world"),canvas=document.getElementById("canvas"),nodes=document.getElementById("nodes"),search=document.getElementById("search"),info=document.getElementById("info");
 let D=null,N={},E=[],open=new Set(),selected="book",scale=1,px=0,py=0;
