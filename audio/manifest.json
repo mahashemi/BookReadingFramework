@@ -111,6 +111,14 @@
         "u10": {
           "title": "Unit 10",
           "script": "audio/book02/scripts/u10.md"
+        },
+        "u11": {
+          "title": "Unit 11",
+          "script": "audio/book02/scripts/u11.md"
+        },
+        "u12": {
+          "title": "Unit 12",
+          "script": "audio/book02/scripts/u12.md"
         }
       }
     }
