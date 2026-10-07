@@ -18,11 +18,13 @@
         "legacyStudyGuide": "study_guide/study_guide_attraction_polarization.html",
         "legacyExam": "exam_bank/exam_30_hard_questions.md",
         "examPapers": "exam_bank/exam_papers_bank.html",
-        "masterWorkbook": "exam_bank/Polarization_Ali_MASTER_Exam_Workbook_34_Chapters_20_Simulated_Years.html"
+        "masterWorkbook": "exam_bank/Polarization_Ali_MASTER_Exam_Workbook_34_Chapters_20_Simulated_Years.html",
+        "mindMap": "mind_maps/book01_interactive.html"
       },
       "data": {
         "chunks": "data/chunks.json",
-        "questions": "exam_bank/questions.json"
+        "questions": "exam_bank/questions.json",
+        "glossary": "data/glossary.json"
       }
     },
     {
