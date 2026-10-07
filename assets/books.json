@@ -44,7 +44,8 @@
       "data": {
         "chunks": "data/chunks.json",
         "questions": "exam_bank/questions.json",
-        "glossary": "data/glossary.json"
+        "glossary": "data/glossary.json",
+        "counterfactuals": "counterfactuals/chapter-01.json"
       },
       "links": {
         "studyGuide": "study_guide/study.html",
