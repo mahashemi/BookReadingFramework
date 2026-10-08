@@ -227,7 +227,7 @@ ${glossaryHTML}
      truncated copy of) the matching concept's own explanation, and every
      The canonical chunk text is rendered directly; derived Akhlaq lessons
      are now displayed separately when a book provides them. */
-  function unitPage(meta, data, qd, gl, id) {
+  function unitPage(meta, data, qd, gl, id, cf) {
     const dir = SITE + dirEnc(meta.dir);
     const units = data.units;
     const i = units.findIndex(u => u.id === id);
@@ -242,6 +242,19 @@ ${glossaryHTML}
     const chunkCount = chunks.length;
     const terms = gl ? gl.entries.filter(e => e.units.includes(u.id)) : [];
     const testHref = meta.links?.unitTests ? dir + meta.links?.unitTests + '?unit=' + encodeURIComponent(u.id) : null;
+    const counterfactuals = (cf?.counterfactuals || []).filter(x => x.unit_id === u.id);
+    const counterfactualHTML = counterfactuals.length ? `
+<section class="section" id="counterfactual-istidlal">
+  <div class="section-head compact"><div><h2>Counterfactual Istidlal</h2><p>Change a meaningful premise, then reason from the source. These are deliberately harder than recall questions: try to derive the consequences before revealing the answer.</p></div></div>
+  <div class="grid">${counterfactuals.map((x, n) => {
+    const sources = (x.source_ids || []).map(sid => cf.source_catalog?.[sid]).filter(Boolean);
+    return \`<article class="card unit counterfactual-card">
+      <div class="num">Istidlal ${pad(n + 1)} · ${esc(x.difficulty || 'hard')}</div>
+      <h3>${esc(x.prompt)}</h3>
+      <details class="passage"><summary>Reveal the reasoning</summary><p>${esc(x.answer)}</p><p class="meta-line"><strong>Istidlal takeaway:</strong> ${esc(x.istidlal_takeaway)}</p>${sources.length ? '<div class="source-note"><span>Sources: </span>' + sources.map(src => \`<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.work)} · ${esc(src.locator)}</a>\`).join(' · ') + '</div>' : ''}</details>
+    </article>\`;
+  }).join('')}</div>
+</section>` : '';
     const nameOf = uid => { const k = units.findIndex(x => x.id === uid); return k < 0 ? uid : 'Unit ' + pad(k + 1) + ' \u00b7 ' + parts(units[k].title).label; };
     const breakdown = list => ['MCQ', 'FILL', 'SHORT', 'LONG'].map(t => t + ' ' + list.filter(q => q.type === t).length).join(' \u00b7 ');
 
@@ -274,6 +287,7 @@ ${glossaryHTML}
 ${u.akhlaq?.lesson ? `<section class="section" id="akhlaq"><div class="card panel"><div class="num">Akhlaq</div><h2>Akhlaq lesson</h2><p>${esc(u.akhlaq.lesson)}</p><p class="meta-line">Derived from the unit source-grounded concepts. Follow the evidence links below to read the exact concepts behind this lesson.</p>${evidenceLinks}<p class="meta-line"></p></div></section>` : ""}
 <section class="section" id="concepts"><div class="section-head compact"><div><h2>Concepts</h2><p>Each concept is a canonical learning chunk tied directly to its source.</p></div></div><div class="grid">${concepts}</div></section>
 ${phrases}
+${counterfactualHTML}
 ${termsHTML}
 ${links}
 <section class="section"><div class="card panel">
@@ -331,10 +345,10 @@ ${links}
         if (!meta) throw new Error('Unknown book_id: ' + bookId);
         if (meta.status === 'legacy') { legacyNotice(meta); app.setAttribute('aria-busy', 'false'); return; }
         const dir = SITE + dirEnc(meta.dir);
-        const [data, qd, gl] = await Promise.all([getJSON(dir + meta.data.chunks), optional(getJSON(dir + meta.data.questions)), optional(getJSON(dir + meta.data.glossary))]);
+        const [data, qd, gl, cf] = await Promise.all([getJSON(dir + meta.data.chunks), optional(getJSON(dir + meta.data.questions)), optional(getJSON(dir + meta.data.glossary)), meta.data.counterfactuals ? optional(getJSON(dir + meta.data.counterfactuals)) : Promise.resolve(null)]);
         const unit = qs.get('unit');
         if (unit) {
-          unitPage(meta, data, qd, gl, unit);
+          unitPage(meta, data, qd, gl, unit, cf);
         } else {
           bookHome(meta, data, qd, gl);
         }
