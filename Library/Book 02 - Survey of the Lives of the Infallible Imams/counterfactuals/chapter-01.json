@@ -6,7 +6,7 @@
   "coverage": {
     "concepts_covered": 13,
     "minimum_items_per_concept": 2,
-    "total_items": 34
+    "total_items": 35
   },
   "source_catalog": {
     "mutahhari-ch1": {
@@ -564,6 +564,22 @@
         "mutahhari-ch1",
         "ghurar-justice",
         "nahj-53"
+      ]
+    },
+    {
+      "id": "cf-u02-002-d",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose 'Ali had deliberately used deception to gain political power, intending to govern justly once he had secured it. Would the good government afterward repair the deception used to obtain it?",
+      "answer": "The later justice would not erase the moral and institutional cost of the earlier deception. If the Imam could deliberately teach that political deception is acceptable when the intended end is good, later rulers could invoke the same logic for their own ambitions and ask the community to trust their private claim of good intention. The deeper problem is therefore precedent: the method used to acquire authority also teaches people what kinds of political conduct authority may legitimize. The sources distinguish this from deception in warfare, where a specific tactical exception is discussed; that exception cannot simply be transferred to acquiring or exercising political authority.",
+      "istidlal_takeaway": "A just end does not automatically sanctify a deceptive political method, because the method itself can become a precedent for future rulers.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-200",
+        "ghurar-deception",
+        "government-warfare"
       ]
     }
   ]
