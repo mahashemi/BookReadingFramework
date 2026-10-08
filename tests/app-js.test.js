@@ -9,7 +9,7 @@ const app = fs.readFileSync(appPath, "utf8");
 test("app.js keeps the renderer entry points intact", () => {
   assert.match(app, /function library\(manifest, live\)/);
   assert.match(app, /function bookHome\(meta, data, qd, gl\)/);
-  assert.match(app, /function unitPage\(meta, data, qd, gl, id\)/);
+  assert.match(app, /function unitPage\(meta, data, qd, gl, id(?:, cf)?\)/);
   assert.match(app, /async function main\(\)/);
 });
 

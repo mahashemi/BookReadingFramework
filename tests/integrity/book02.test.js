@@ -69,3 +69,13 @@ test("Book 02 Chapter 1 counterfactual Istidlal bank is complete and traceable",
   assert.equal(counts.size, 13);
   for (const [chunkId, count] of counts) assert.ok(count >= 2, chunkId + " has fewer than 2 counterfactuals");
 });
+
+
+test("Book 02 Counterfactual Istidlal is rendered in the shared unit experience", () => {
+  const app = readText("assets/app.js");
+  assert.match(app, /counterfactual-istidlal/);
+  assert.match(app, /meta\.data\.counterfactuals/);
+  assert.match(app, /Reveal the reasoning/);
+  assert.match(app, /istidlal_takeaway/);
+  assert.match(app, /source_catalog/);
+});
