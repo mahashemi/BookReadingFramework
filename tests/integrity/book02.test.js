@@ -51,7 +51,7 @@ test("Book 02 Chapter 1 counterfactual Istidlal bank is complete and traceable",
   const root = "Library/Book 02 - Survey of the Lives of the Infallible Imams/";
   const bank = readJson(root + book.data.counterfactuals);
   assert.equal(bank.book_id, "book02");
-  assert.equal(bank.counterfactuals.length, 34);
+  assert.equal(bank.counterfactuals.length, 35);
   assert.equal(bank.coverage.concepts_covered, 13);
 
   const counts = new Map();
