@@ -2,11 +2,11 @@
   "schema_version": "1.0",
   "book_id": "book02",
   "title": "Counterfactual Istidlal — Chapter 1: 'Ali's Struggles",
-  "description": "A learning-layer bank of medium-length counterfactual reasoning exercises. Each item changes a premise, asks what follows, and answers from the chapter plus wider Shi'i sources. The answers distinguish source-grounded evidence from the inference drawn from it; they are not presented as quotations or as direct answers to modern hypotheticals by the classical sources.",
+  "description": "A learning-layer bank of medium-length counterfactual reasoning exercises. Each item changes a premise, asks what follows, and answers from the chapter plus wider Shi'i sources. The answers distinguish source-grounded evidence from the inference drawn from it; they are not presented as quotations or as direct answers to modern hypotheticals by the classical sources. Fertile concepts may carry additional questions when they support genuinely different lines of istidlal.",
   "coverage": {
     "concepts_covered": 13,
     "minimum_items_per_concept": 2,
-    "total_items": 26
+    "total_items": 34
   },
   "source_catalog": {
     "mutahhari-ch1": {
@@ -445,6 +445,124 @@
       "source_ids": [
         "mutahhari-ch1",
         "ghurar-justice"
+      ]
+    },
+    {
+      "id": "cf-u02-002-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a ruler announced that deception was acceptable whenever he believed it would protect religion. What precedent would that create for sincere people who disagreed about what religion requires?",
+      "answer": "It would move moral permission from a stable principle to the private judgment of whoever holds power. Two rulers could each claim religious necessity for opposite deceptions, while followers would have no shared rule for distinguishing principle from self-interest. The wider danger is therefore not only one lie but the normalization of a political culture in which deception can always be baptized as service to religion.",
+      "istidlal_takeaway": "A rule that permits deception whenever the ruler declares a good intention can become a standing license for self-serving politics.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "ghurar-deception",
+        "nahj-200"
+      ]
+    },
+    {
+      "id": "cf-u02-003-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose every faction were allowed to violate one person's rights whenever it predicted that doing so would produce greater justice later. What would happen to the meaning of justice itself?",
+      "answer": "The exception could swallow the rule. Each faction would judge its own future benefit, while the person whose right was sacrificed would have no reliable protection against political calculation. Imam 'Ali's justice therefore has a systemic dimension: if rights become expendable whenever leaders forecast a better outcome, justice becomes dependent on power rather than a restraint upon it.",
+      "istidlal_takeaway": "A temporary exception can destroy justice if every faction receives the same power to declare its own future good.",
+      "source_ids": [
+        "ghurar-justice",
+        "tuhaf-letter53",
+        "nahj-200"
+      ]
+    },
+    {
+      "id": "cf-u02-005-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-005",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose one faction successfully used a Qur'anic symbol to force its opponent into a political concession. What second-order effect would follow if every faction copied the method?",
+      "answer": "Sacred symbols could gradually become instruments of political leverage rather than objects of guidance. Once opponents learned that displaying a sacred sign could compel concessions, the incentive would be to reproduce the display whenever convenient, making reverence itself vulnerable to manipulation. The lesson of Siffin therefore extends beyond one tactic: symbols cannot safely replace interpretation and judgment.",
+      "istidlal_takeaway": "When sacred symbols become reliable political weapons, repeated imitation can erode the distinction between reverence and manipulation.",
+      "source_ids": [
+        "nahj-125",
+        "mutahhari-ch1",
+        "ghurar-deception"
+      ]
+    },
+    {
+      "id": "cf-u02-006-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose someone argued that because human arbitrators can err, all human interpretation of revelation should be rejected. What would follow from applying that principle consistently?",
+      "answer": "The principle would undermine the very process needed to understand revealed texts, because human beings must still interpret language, identify relevant evidence and apply principles to new circumstances. 'Ali's response to the Kharijites points instead toward accountable interpretation: human judgment is fallible, but fallibility does not make interpretation dispensable.",
+      "istidlal_takeaway": "Human fallibility is a reason for disciplined interpretation, not proof that interpretation can be abolished.",
+      "source_ids": [
+        "nahj-125",
+        "mutahhari-ch1"
+      ]
+    },
+    {
+      "id": "cf-u02-008-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-008",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose every serious sinner were automatically treated as outside the faith. What would happen to repentance, moral reform and the community's ability to distinguish degrees of wrongdoing?",
+      "answer": "The community would lose important distinctions between sin, persistence, repentance and outright rejection of faith. It could also make exclusion politically useful: opponents could be branded unbelievers rather than answered or corrected. The Kharijite pattern therefore shows how an overextended moral category can damage both theology and social judgment.",
+      "istidlal_takeaway": "When every grave sin becomes unbelief, moral accountability can collapse into exclusion and political labeling.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "kafi-truth",
+        "ghurar-justice"
+      ]
+    },
+    {
+      "id": "cf-u02-009-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-009",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a ruler were permitted to use force whenever he predicted that a group might eventually become violent. What would prevent every political opponent from being labeled a future threat?",
+      "answer": "The distinction between present aggression and predicted danger would collapse. A ruler could transform uncertainty into a permanent justification for preventive violence, making peaceful dissent increasingly impossible. The sequence in 'Ali's conduct is more disciplined: explanation and restraint remain meaningful until an actual violent threat changes the situation.",
+      "istidlal_takeaway": "If predicted future danger automatically justifies force, political rulers gain an open-ended excuse to suppress dissent.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122",
+        "tuhaf-letter53"
+      ]
+    },
+    {
+      "id": "cf-u02-010-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-010",
+      "skill": "hard-counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a large majority of visibly pious people endorsed an interpretation of the Qur'an that contradicted stronger evidence. Would their numbers and devotion make the interpretation true?",
+      "answer": "No. Numbers and visible devotion can increase social confidence without increasing the truth of a proposition. The Kharijite example is precisely useful for this distinction: sincerity, courage and religious appearance can coexist with serious interpretive error. Sound judgment therefore has to examine evidence rather than merely count or admire its advocates.",
+      "istidlal_takeaway": "A large or devout following can strengthen an error's social authority without making the error true.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122"
+      ]
+    },
+    {
+      "id": "cf-u02-013-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-013",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a former Kharijite had committed violence years earlier but had genuinely abandoned it and become peaceful. Should the old label alone justify killing him now?",
+      "answer": "No. The moral reason for confronting him would have changed if the active threat and wrongdoing had ceased. Treating the inherited label as permanently decisive would turn punishment into collective or retrospective vengeance rather than a response to present responsibility. The principle of justice requires distinguishing what a person did from what he is doing now.",
+      "istidlal_takeaway": "Past wrongdoing can matter without becoming a permanent license for punishment after the relevant danger has ended.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "ghurar-justice",
+        "tuhaf-letter53"
       ]
     }
   ]
