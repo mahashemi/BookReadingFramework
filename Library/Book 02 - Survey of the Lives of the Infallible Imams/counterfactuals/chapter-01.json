@@ -540,7 +540,7 @@
       "id": "cf-u02-010-c",
       "unit_id": "u02",
       "concept_chunk_id": "b02-u02-010",
-      "skill": "hard-counterfactual-istidlal",
+      "skill": "counterfactual-istidlal",
       "difficulty": "hard",
       "prompt": "Suppose a large majority of visibly pious people endorsed an interpretation of the Qur'an that contradicted stronger evidence. Would their numbers and devotion make the interpretation true?",
       "answer": "No. Numbers and visible devotion can increase social confidence without increasing the truth of a proposition. The Kharijite example is precisely useful for this distinction: sincerity, courage and religious appearance can coexist with serious interpretive error. Sound judgment therefore has to examine evidence rather than merely count or admire its advocates.",
