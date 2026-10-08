@@ -248,11 +248,10 @@ ${glossaryHTML}
   <div class="section-head compact"><div><h2>Counterfactual Istidlal</h2><p>Change a meaningful premise, then reason from the source. These are deliberately harder than recall questions: try to derive the consequences before revealing the answer.</p></div></div>
   <div class="grid">${counterfactuals.map((x, n) => {
     const sources = (x.source_ids || []).map(sid => cf.source_catalog?.[sid]).filter(Boolean);
-    return \`<article class="card unit counterfactual-card">
-      <div class="num">Istidlal ${pad(n + 1)} · ${esc(x.difficulty || 'hard')}</div>
-      <h3>${esc(x.prompt)}</h3>
-      <details class="passage"><summary>Reveal the reasoning</summary><p>${esc(x.answer)}</p><p class="meta-line"><strong>Istidlal takeaway:</strong> ${esc(x.istidlal_takeaway)}</p>${sources.length ? '<div class="source-note"><span>Sources: </span>' + sources.map(src => \`<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.work)} · ${esc(src.locator)}</a>\`).join(' · ') + '</div>' : ''}</details>
-    </article>\`;
+    const sourceHTML = sources.length
+      ? '<div class="source-note"><span>Sources: </span>' + sources.map(src => '<a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(src.work) + ' · ' + esc(src.locator) + '</a>').join(' · ') + '</div>'
+      : '';
+    return '<article class="card unit counterfactual-card"><div class="num">Istidlal ' + pad(n + 1) + ' · ' + esc(x.difficulty || 'hard') + '</div><h3>' + esc(x.prompt) + '</h3><details class="passage"><summary>Reveal the reasoning</summary><p>' + esc(x.answer) + '</p><p class="meta-line"><strong>Istidlal takeaway:</strong> ' + esc(x.istidlal_takeaway) + '</p>' + sourceHTML + '</details></article>';
   }).join('')}</div>
 </section>` : '';
     const nameOf = uid => { const k = units.findIndex(x => x.id === uid); return k < 0 ? uid : 'Unit ' + pad(k + 1) + ' \u00b7 ' + parts(units[k].title).label; };
