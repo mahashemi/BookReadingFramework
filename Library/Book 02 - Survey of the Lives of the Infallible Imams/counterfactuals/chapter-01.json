@@ -1,0 +1,586 @@
+{
+  "schema_version": "1.0",
+  "book_id": "book02",
+  "title": "Counterfactual Istidlal — Chapter 1: 'Ali's Struggles",
+  "description": "A learning-layer bank of medium-length counterfactual reasoning exercises. Each item changes a premise, asks what follows, and answers from the chapter plus wider Shi'i sources. The answers distinguish source-grounded evidence from the inference drawn from it; they are not presented as quotations or as direct answers to modern hypotheticals by the classical sources. Fertile concepts may carry additional questions when they support genuinely different lines of istidlal.",
+  "coverage": {
+    "concepts_covered": 13,
+    "minimum_items_per_concept": 2,
+    "total_items": 35
+  },
+  "source_catalog": {
+    "mutahhari-ch1": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 1: 'Ali's Struggles",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-1-alis-struggles"
+    },
+    "nahj-92": {
+      "work": "Nahj al-Balagha",
+      "author": "Imam 'Ali",
+      "locator": "Sermon 92",
+      "url": "https://al-islam.org/sw/nahjul-balagha-part-1-sermons/sermon-92-leave-me-find-someone-else"
+    },
+    "nahj-200": {
+      "work": "Nahj al-Balagha",
+      "author": "Imam 'Ali",
+      "locator": "Sermon 200",
+      "url": "https://al-islam.org/sw/nahjul-balagha-part-1-sermons/sermon-200-allah-muawiyah-not-more-cunning-i-am"
+    },
+    "nahj-125": {
+      "work": "Nahj al-Balagha",
+      "author": "Imam 'Ali",
+      "locator": "Sermon 125",
+      "url": "https://al-islam.org/nahjul-balagha-part-1-sermons/sermon-125-we-did-not-name-people-arbitrators"
+    },
+    "nahj-122": {
+      "work": "Nahj al-Balagha",
+      "author": "Imam 'Ali",
+      "locator": "Sermon 122",
+      "url": "https://al-islam.org/nahjul-balagha-part-1-sermons/sermon-122-were-all-you-us-siffin"
+    },
+    "ghurar-deception": {
+      "work": "Ghurar al-Hikam wa Durar al-Kalim",
+      "author": "Imam 'Ali",
+      "locator": "Deception and the Deceitful",
+      "url": "https://al-islam.org/ghurar-al-hikam-wa-durar-al-kalim-exalted-aphorisms-and-pearls-speech/deception-and-deceitful"
+    },
+    "ghurar-justice": {
+      "work": "Ghurar al-Hikam wa Durar al-Kalim",
+      "author": "Imam 'Ali",
+      "locator": "Justice and the Just",
+      "url": "https://al-islam.org/id/node/37009"
+    },
+    "government-warfare": {
+      "work": "Imam 'Ali's Book of Government",
+      "author": "Muhammadi Reyshahri",
+      "locator": "Warfare Policies, §9.5 Deception",
+      "url": "https://al-islam.org/imam-ali-ass-book-government-muhammadi-reyshahri/chapter-nine-warfare-policies"
+    },
+    "khomeini-forty": {
+      "work": "Forty Hadith: An Exposition",
+      "author": "Ruhullah Khomeini",
+      "locator": "Twenty-Ninth Hadith",
+      "url": "https://al-islam.org/forty-hadith-exposition-second-revised-edition-sayyid-ruhullah-musawi-khomeini/twenty-ninth-hadith"
+    },
+    "nahj-53": {
+      "work": "Nahj al-Balagha",
+      "author": "Imam 'Ali",
+      "locator": "Letter 53: Order to Malik al-Ashtar",
+      "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/letter-53-order-malik-al-ashtar"
+    },
+    "mizan-truth": {
+      "work": "Mizan al-Hikmah (Scale of Wisdom)",
+      "author": "Muhammad Muhammadi Rayshahri",
+      "locator": "Truthfulness, reports on truthfulness and falsehood",
+      "url": "https://al-islam.org/mizan-al-hikmah-scale-wisdom/truthfulness"
+    }
+  },
+  "counterfactuals": [
+    {
+      "id": "cf-u02-001-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose 'Ali knew that accepting the caliphate immediately would prevent serious bloodshed, but the people were choosing him mainly for factional reasons. Should he accept without hesitation?",
+      "answer": "Not necessarily. Sermon 92 shows him treating the character of the mandate itself as important: if he accepts, he will lead according to what he knows, not according to every faction's wishes. The benefit of taking power therefore does not settle whether the mandate is sound.",
+      "istidlal_takeaway": "Political necessity does not by itself make an unsuitable mandate sound.",
+      "source_ids": [
+        "nahj-92",
+        "mutahhari-ch1"
+      ]
+    },
+    {
+      "id": "cf-u02-001-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose 'Ali could have secured a peaceful caliphate by promising factions policies he already knew he would later reject. Would that be wise political compromise?",
+      "answer": "No. A promise made without an intention to honor it would create a false basis for allegiance. That is different from negotiating within genuine limits. 'Ali's warning that he would lead according to what he knew is evidence that political authority could not simply be built on pleasing every constituency.",
+      "istidlal_takeaway": "A political promise cannot be made a disposable instrument for acquiring authority.",
+      "source_ids": [
+        "nahj-92",
+        "nahj-200",
+        "ghurar-deception"
+      ]
+    },
+    {
+      "id": "cf-u02-002-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose Mu'awiyah publicly used 'Uthman's blood as a cause for justice while privately using the campaign to strengthen his own power. If the slogan produced political stability, would that make it legitimate?",
+      "answer": "No. The problem is not only the outcome; it is that a sacred grievance becomes a vehicle for a concealed political purpose. Mutahhari's account presents this as a danger of religious language being used to redirect public anger for political ends.",
+      "istidlal_takeaway": "A true grievance can still be corrupted when it is used deceptively.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-200",
+        "ghurar-deception"
+      ]
+    },
+    {
+      "id": "cf-u02-002-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a ruler sincerely believed that falsely accusing an opponent would prevent a larger religious conflict. Could sincerity make the accusation acceptable?",
+      "answer": "Sincerity does not turn falsehood into truth. Shi'i ethical sources treat truthfulness as a test of religious character, while Imam 'Ali condemns deception and treachery. An exceptional case would require its own proof; good intention alone is not enough.",
+      "istidlal_takeaway": "Good intention and moral permission are separate questions.",
+      "source_ids": [
+        "mizan-truth",
+        "nahj-200",
+        "ghurar-deception"
+      ]
+    },
+    {
+      "id": "cf-u02-003-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose 'Ali could buy the loyalty of powerful men with special payments and then restore justice after victory. Why not accept the temporary injustice for the larger good?",
+      "answer": "Because the temporary injustice would violate rights now and establish a dangerous rule for later rulers: sacrifice someone's rights whenever a better future is predicted. 'Ali's refusal to purchase political success at the expense of the powerless therefore protects both present justice and the integrity of the political system.",
+      "istidlal_takeaway": "Justice is not merely the destination of government; it constrains how government is built.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "ghurar-justice",
+        "nahj-53"
+      ]
+    },
+    {
+      "id": "cf-u02-003-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose the special payments actually prevented civil war. Would the successful outcome prove that 'Ali's refusal was politically mistaken?",
+      "answer": "It could show that his alternative carried political costs, but it would not prove the unjust method morally superior. Imam 'Ali's political teaching treats justice as a governing principle, not merely a result to maximize after power is secured.",
+      "istidlal_takeaway": "Political effectiveness cannot by itself establish moral legitimacy.",
+      "source_ids": [
+        "ghurar-justice",
+        "nahj-53",
+        "nahj-200"
+      ]
+    },
+    {
+      "id": "cf-u02-004-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-004",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose the Prophet had allowed rapid expansion without the long period of spiritual training. Would a larger early Muslim army necessarily have produced a stronger Islamic society?",
+      "answer": "Not necessarily. Mutahhari's argument is that outward strength without deep formation can produce people who perform religious forms while missing their meaning. The Kharijite episode becomes a warning that devotion and courage are not enough without understanding.",
+      "istidlal_takeaway": "Religious expansion without formation can increase power while weakening judgment.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122"
+      ]
+    },
+    {
+      "id": "cf-u02-004-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-004",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose the Kharijites had been less visibly pious but equally ignorant. Would their danger have been smaller?",
+      "answer": "In one important respect, yes: their outward piety gave their errors authority and made others hesitate to challenge them. Their danger came from the combination of zeal, courage and ignorance, not ignorance alone.",
+      "istidlal_takeaway": "False certainty becomes more dangerous when outward piety makes error difficult to question.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122"
+      ]
+    },
+    {
+      "id": "cf-u02-005-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-005",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose raising Qur'ans on spears was sincerely intended to stop bloodshed rather than deceive. Would that automatically make the tactic legitimate?",
+      "answer": "No. Sincere intention is relevant but does not settle whether the tactic and its interpretation are sound. 'Ali's objection was that the physical Qur'ans were being used to produce a conclusion that did not follow from the Qur'an's actual authority and meaning.",
+      "istidlal_takeaway": "A sacred symbol can be sincerely used and still be misused as an argument.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-125"
+      ]
+    },
+    {
+      "id": "cf-u02-005-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-005",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose every faction learned that displaying Qur'anic symbols could stop an opponent from acting. What would happen to those symbols?",
+      "answer": "Their sacred meaning could be turned into a reusable political instrument. That is why 'Ali's response matters beyond Siffin: religious symbols must remain connected to their truth and interpretation rather than becoming substitutes for reasoning.",
+      "istidlal_takeaway": "Sacred symbols become vulnerable when their appearance can replace their meaning.",
+      "source_ids": [
+        "nahj-125",
+        "mutahhari-ch1"
+      ]
+    },
+    {
+      "id": "cf-u02-006-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose the arbitrators had reached a decision favorable to 'Ali. Would that prove the Kharijites' principle that human arbitration is blasphemous?",
+      "answer": "No. The result cannot establish the principle. 'Ali's Sermon 125 explains that the Qur'an itself requires human interpretation; the real question is whether human judgment remains accountable to the Qur'an and the Prophet's guidance.",
+      "istidlal_takeaway": "A favorable outcome does not prove a faulty principle.",
+      "source_ids": [
+        "nahj-125",
+        "mutahhari-ch1"
+      ]
+    },
+    {
+      "id": "cf-u02-006-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose Abu Musa had been competent and loyal to 'Ali. Would that make every form of arbitration religiously ideal?",
+      "answer": "No. It would remove a serious practical weakness, but it would not settle the larger theological question. The mistake is to move from 'this arbitrator was unsuitable' to 'human interpretation itself is illegitimate.'",
+      "istidlal_takeaway": "Changing the personnel can change the risk without changing the principle.",
+      "source_ids": [
+        "nahj-125",
+        "mutahhari-ch1"
+      ]
+    },
+    {
+      "id": "cf-u02-007-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-007",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose the Kharijites insulted 'Ali publicly every day but never attacked anyone. Should he punish them to preserve the dignity of government?",
+      "answer": "Not necessarily. Their speech was offensive, but his conduct distinguishes tolerating dissent from confronting armed aggression. He did not immediately convert hostility into a reason for coercion.",
+      "istidlal_takeaway": "A ruler need not treat every insult as a security threat.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-53"
+      ]
+    },
+    {
+      "id": "cf-u02-007-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-007",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose tolerating the Kharijites made some ordinary Muslims believe their accusations. Should 'Ali silence them?",
+      "answer": "Not automatically. False claims can be answered with evidence while preserving the distinction between speech and violence. His tolerance before armed revolt suggests that defending truth does not require suppressing every hostile voice.",
+      "istidlal_takeaway": "Defending truth does not require treating every critic as an enemy.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122"
+      ]
+    },
+    {
+      "id": "cf-u02-008-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-008",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a person commits one serious sin but remains repentant and sincere. Does that justify declaring him outside Islam?",
+      "answer": "No. The Kharijite move from serious sin to total exclusion shows the danger of collapsing moral failure into an all-or-nothing religious identity. Serious wrongdoing can be condemned without erasing every other distinction about the person.",
+      "istidlal_takeaway": "A serious sin can be condemned without turning every sinner into an unbeliever.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "mizan-truth"
+      ]
+    },
+    {
+      "id": "cf-u02-008-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-008",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose unconditional enjoining of good really would stop many injustices. Would that justify revolt against every unjust ruler even when revolt clearly causes greater harm?",
+      "answer": "No. The duty to oppose evil still requires judgment about means, consequences and authority. The Kharijite error was partly to isolate one religious principle from the wider demands of justice and wisdom.",
+      "istidlal_takeaway": "A command to oppose evil still requires disciplined judgment about how and when to act.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "ghurar-justice"
+      ]
+    },
+    {
+      "id": "cf-u02-009-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-009",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose 'Ali knew that fighting the Kharijites at Nahrawan would cost many lives. Why not tolerate them indefinitely to avoid bloodshed?",
+      "answer": "Because the situation had changed from disagreement to violence. Mutahhari presents dialogue and repentance as preceding the final confrontation. Once an active threat persists after peaceful remedies, refusing all force is no longer automatically the more merciful choice.",
+      "istidlal_takeaway": "Mercy does not require allowing active violent harm to spread indefinitely.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122"
+      ]
+    },
+    {
+      "id": "cf-u02-009-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-009",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose all 12,000 Kharijites had repented under 'Ali's banner. Would that prove force was unnecessary from the beginning?",
+      "answer": "It would prove the value of persuasion, not that force is always unnecessary. The historical account emphasizes that 'Ali first tried explanation and reconciliation; the remaining conflict concerned those who refused and continued violent opposition.",
+      "istidlal_takeaway": "Successful reconciliation proves the value of persuasion, not the impossibility of coercion.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122"
+      ]
+    },
+    {
+      "id": "cf-u02-010-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-010",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a group were extraordinarily brave and devout but repeatedly misunderstood the Qur'an. Should their courage make their interpretation more trustworthy?",
+      "answer": "No. Courage and worship are virtues only when joined to sound understanding. Mutahhari identifies ignorance as the defining weakness of the Kharijites precisely because outward piety made their errors harder to challenge.",
+      "istidlal_takeaway": "Visible devotion cannot substitute for understanding.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "mizan-truth"
+      ]
+    },
+    {
+      "id": "cf-u02-010-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-010",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose Mu'awiyah could reliably manipulate such a sincere group to defeat his opponents. Would their sincerity make the manipulation less dangerous?",
+      "answer": "It could make it more dangerous. Sincere believers can carry a political message with greater credibility and force. Mutahhari's description of the Kharijites as instruments of political actors therefore reveals a structural danger: innocence can be exploited precisely because it is trusted.",
+      "istidlal_takeaway": "The most effective manipulation can recruit sincere believers rather than obvious cynics.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "ghurar-deception"
+      ]
+    },
+    {
+      "id": "cf-u02-011-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-011",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose the rumor about Iqbal had been repeated by ten respected scholars. Would it then be safe to repeat without checking the original text?",
+      "answer": "No. Authority does not replace investigation. Mutahhari's anecdote is designed to show how an apparently obvious reading can collapse once the original context is examined.",
+      "istidlal_takeaway": "The number of people repeating a claim does not replace evidence.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122"
+      ]
+    },
+    {
+      "id": "cf-u02-011-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-011",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a false accusation would protect a community from a genuinely dangerous person. Could the community deliberately spread it?",
+      "answer": "That would require a separate proof of necessity; usefulness alone is insufficient. False religious accusations can permanently damage reputations and teach the community to treat assertion as evidence. The burden of justification therefore becomes especially high.",
+      "istidlal_takeaway": "Urgency may require action, but it does not automatically create evidence.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "mizan-truth",
+        "ghurar-deception"
+      ]
+    },
+    {
+      "id": "cf-u02-012-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-012",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose Ibn Muljam sincerely believed that killing 'Ali was an act of worship. Would sincerity make the assassination righteous?",
+      "answer": "No. Sincerity cannot turn a false judgment into truth. The tragedy is that ascetic commitment and religious language can be redirected toward a fundamentally wrongful act.",
+      "istidlal_takeaway": "Religious sincerity without sound judgment can become a vehicle for grave wrongdoing.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-125"
+      ]
+    },
+    {
+      "id": "cf-u02-012-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-012",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose Ibn Muljam believed that sacrificing his own life would guarantee a great religious victory. Does willingness to die prove the cause is true?",
+      "answer": "No. It proves intensity of conviction, not correctness. The Kharijite story is a strong warning that certainty and truth are not identical.",
+      "istidlal_takeaway": "Intensity of commitment is evidence of conviction, not evidence of correctness.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-125"
+      ]
+    },
+    {
+      "id": "cf-u02-013-a",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-013",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose some former Kharijites remained ideologically confused but no longer attacked anyone. Should 'Ali's followers continue killing them to eliminate the doctrine?",
+      "answer": "No. The reported final instruction distinguishes a person who seeks truth and errs from one who seeks falsehood deliberately. Once the immediate violent threat has ended, continued killing would no longer serve the same protective purpose.",
+      "istidlal_takeaway": "Punishment must track actual wrongdoing and present danger, not inherited labels.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-53"
+      ]
+    },
+    {
+      "id": "cf-u02-013-b",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-013",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose eliminating the remaining Kharijites would strengthen Mu'awiyah politically. Would that change the moral calculation?",
+      "answer": "It strengthens the case for restraint because the action would then serve a rival's political interest rather than the protection of the community. The reported instruction after 'Ali's death explicitly warns against turning the fight against the Kharijites into an instrument that benefits Mu'awiyah.",
+      "istidlal_takeaway": "Justice requires asking who actually benefits from an act, not merely whether an old grievance remains.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "ghurar-justice"
+      ]
+    },
+    {
+      "id": "cf-u02-002-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a ruler announced that deception was acceptable whenever he believed it would protect religion. What precedent would that create for sincere people who disagreed about what religion requires?",
+      "answer": "It would move moral permission from a stable principle to the private judgment of whoever holds power. Two rulers could each claim religious necessity for opposite deceptions, while followers would have no shared rule for distinguishing principle from self-interest. The wider danger is therefore not only one lie but the normalization of a political culture in which deception can always be baptized as service to religion.",
+      "istidlal_takeaway": "A rule that permits deception whenever the ruler declares a good intention can become a standing license for self-serving politics.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "ghurar-deception",
+        "nahj-200",
+        "government-warfare"
+      ]
+    },
+    {
+      "id": "cf-u02-003-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose every faction were allowed to violate one person's rights whenever it predicted that doing so would produce greater justice later. What would happen to the meaning of justice itself?",
+      "answer": "The exception could swallow the rule. Each faction would judge its own future benefit, while the person whose right was sacrificed would have no reliable protection against political calculation. Imam 'Ali's justice therefore has a systemic dimension: if rights become expendable whenever leaders forecast a better outcome, justice becomes dependent on power rather than a restraint upon it.",
+      "istidlal_takeaway": "A temporary exception can destroy justice if every faction receives the same power to declare its own future good.",
+      "source_ids": [
+        "ghurar-justice",
+        "nahj-53",
+        "nahj-200"
+      ]
+    },
+    {
+      "id": "cf-u02-005-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-005",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose one faction successfully used a Qur'anic symbol to force its opponent into a political concession. What second-order effect would follow if every faction copied the method?",
+      "answer": "Sacred symbols could gradually become instruments of political leverage rather than objects of guidance. Once opponents learned that displaying a sacred sign could compel concessions, the incentive would be to reproduce the display whenever convenient, making reverence itself vulnerable to manipulation. The lesson of Siffin therefore extends beyond one tactic: symbols cannot safely replace interpretation and judgment.",
+      "istidlal_takeaway": "When sacred symbols become reliable political weapons, repeated imitation can erode the distinction between reverence and manipulation.",
+      "source_ids": [
+        "nahj-125",
+        "mutahhari-ch1",
+        "ghurar-deception"
+      ]
+    },
+    {
+      "id": "cf-u02-006-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose someone argued that because human arbitrators can err, all human interpretation of revelation should be rejected. What would follow from applying that principle consistently?",
+      "answer": "The principle would undermine the very process needed to understand revealed texts, because human beings must still interpret language, identify relevant evidence and apply principles to new circumstances. 'Ali's response to the Kharijites points instead toward accountable interpretation: human judgment is fallible, but fallibility does not make interpretation dispensable.",
+      "istidlal_takeaway": "Human fallibility is a reason for disciplined interpretation, not proof that interpretation can be abolished.",
+      "source_ids": [
+        "nahj-125",
+        "mutahhari-ch1"
+      ]
+    },
+    {
+      "id": "cf-u02-008-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-008",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose every serious sinner were automatically treated as outside the faith. What would happen to repentance, moral reform and the community's ability to distinguish degrees of wrongdoing?",
+      "answer": "The community would lose important distinctions between sin, persistence, repentance and outright rejection of faith. It could also make exclusion politically useful: opponents could be branded unbelievers rather than answered or corrected. The Kharijite pattern therefore shows how an overextended moral category can damage both theology and social judgment.",
+      "istidlal_takeaway": "When every grave sin becomes unbelief, moral accountability can collapse into exclusion and political labeling.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "mizan-truth",
+        "ghurar-justice"
+      ]
+    },
+    {
+      "id": "cf-u02-009-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-009",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a ruler were permitted to use force whenever he predicted that a group might eventually become violent. What would prevent every political opponent from being labeled a future threat?",
+      "answer": "The distinction between present aggression and predicted danger would collapse. A ruler could transform uncertainty into a permanent justification for preventive violence, making peaceful dissent increasingly impossible. The sequence in 'Ali's conduct is more disciplined: explanation and restraint remain meaningful until an actual violent threat changes the situation.",
+      "istidlal_takeaway": "If predicted future danger automatically justifies force, political rulers gain an open-ended excuse to suppress dissent.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122",
+        "nahj-53"
+      ]
+    },
+    {
+      "id": "cf-u02-010-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-010",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a large majority of visibly pious people endorsed an interpretation of the Qur'an that contradicted stronger evidence. Would their numbers and devotion make the interpretation true?",
+      "answer": "No. Numbers and visible devotion can increase social confidence without increasing the truth of a proposition. The Kharijite example is precisely useful for this distinction: sincerity, courage and religious appearance can coexist with serious interpretive error. Sound judgment therefore has to examine evidence rather than merely count or admire its advocates.",
+      "istidlal_takeaway": "A large or devout following can strengthen an error's social authority without making the error true.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122"
+      ]
+    },
+    {
+      "id": "cf-u02-013-c",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-013",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a former Kharijite had committed violence years earlier but had genuinely abandoned it and become peaceful. Should the old label alone justify killing him now?",
+      "answer": "No. The moral reason for confronting him would have changed if the active threat and wrongdoing had ceased. Treating the inherited label as permanently decisive would turn punishment into collective or retrospective vengeance rather than a response to present responsibility. The principle of justice requires distinguishing what a person did from what he is doing now.",
+      "istidlal_takeaway": "Past wrongdoing can matter without becoming a permanent license for punishment after the relevant danger has ended.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "ghurar-justice",
+        "nahj-53"
+      ]
+    },
+    {
+      "id": "cf-u02-002-d",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose 'Ali had deliberately used deception to gain political power, intending to govern justly once he had secured it. Would the good government afterward repair the deception used to obtain it?",
+      "answer": "The later justice would not erase the moral and institutional cost of the earlier deception. If the Imam could deliberately teach that political deception is acceptable when the intended end is good, later rulers could invoke the same logic for their own ambitions and ask the community to trust their private claim of good intention. The deeper problem is therefore precedent: the method used to acquire authority also teaches people what kinds of political conduct authority may legitimize. The sources distinguish this from deception in warfare, where a specific tactical exception is discussed; that exception cannot simply be transferred to acquiring or exercising political authority.",
+      "istidlal_takeaway": "A just end does not automatically sanctify a deceptive political method, because the method itself can become a precedent for future rulers.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-200",
+        "ghurar-deception",
+        "government-warfare"
+      ]
+    }
+  ]
+}

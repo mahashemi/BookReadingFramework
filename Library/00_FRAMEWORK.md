@@ -1,6 +1,6 @@
 # The Deep-Reading Framework
 ### A repeatable pipeline for turning any book into long-term memory
-*Version 2.1 — generic, data-driven framework; validated across Books 01–03. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
+*Version 2.2 — generic, data-driven framework; validated across Books 01–03. Adds Counterfactual Istidlal as a source-traceable reasoning layer. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
 
 ---
 
@@ -311,6 +311,7 @@ exam_bank/questions.json ← canonical question universe
 study_guide/             ← rendered study experience
 mind_maps/               ← visual review
 teaching_materials/      ← teaching outputs
+counterfactuals/         ← source-traceable counterfactual Istidlal banks
 ~~~
 
 The important rule is **one canonical representation for each kind of information**. In particular, the current chunk schema is the one documented above; do not introduce alternative names such as a second "learning text" field or a parallel chunk schema without first deliberately changing this framework.
@@ -346,6 +347,7 @@ Everything after that follows the modules above in order.
       📁 mind_maps        (static + interactive)
       📁 exam_bank        (master question universe + generated papers)
       📁 teaching_materials (outline, script, slides)
+      📁 counterfactuals  (source-traceable Istidlal banks)
   📁 Book 02 - Survey of the Lives of the Infallible Imams
       📄 data/                         ← source + structured JSON
       📁 study_guide
