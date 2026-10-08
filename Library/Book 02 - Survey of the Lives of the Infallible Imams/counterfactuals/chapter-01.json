@@ -51,18 +51,6 @@
       "locator": "Justice and the Just",
       "url": "https://al-islam.org/id/node/37009"
     },
-    "tuhaf-letter53": {
-      "work": "Tuhaf al-'Uqul",
-      "author": "Imam 'Ali",
-      "locator": "Counsel on governance and justice",
-      "url": "https://al-islam.org/tuhaf-al-uqul-ibn-shuba-al-harrani/narrations-imam-ali"
-    },
-    "kafi-truth": {
-      "work": "al-Kafi",
-      "author": "Imam al-Baqir / Imam al-Sadiq reports",
-      "locator": "Book 2, p. 104, reports on truthfulness",
-      "url": "https://al-islam.org/mizan-al-hikmah-scale-wisdom/truthfulness"
-    },
     "government-warfare": {
       "work": "Imam 'Ali's Book of Government",
       "author": "Muhammadi Reyshahri",
@@ -74,6 +62,18 @@
       "author": "Ruhullah Khomeini",
       "locator": "Twenty-Ninth Hadith",
       "url": "https://al-islam.org/forty-hadith-exposition-second-revised-edition-sayyid-ruhullah-musawi-khomeini/twenty-ninth-hadith"
+    },
+    "nahj-53": {
+      "work": "Nahj al-Balagha",
+      "author": "Imam 'Ali",
+      "locator": "Letter 53: Order to Malik al-Ashtar",
+      "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/letter-53-order-malik-al-ashtar"
+    },
+    "mizan-truth": {
+      "work": "Mizan al-Hikmah (Scale of Wisdom)",
+      "author": "Muhammad Muhammadi Rayshahri",
+      "locator": "Truthfulness, reports on truthfulness and falsehood",
+      "url": "https://al-islam.org/mizan-al-hikmah-scale-wisdom/truthfulness"
     }
   },
   "counterfactuals": [
@@ -131,7 +131,7 @@
       "answer": "Sincerity does not turn falsehood into truth. Shi'i ethical sources treat truthfulness as a test of religious character, while Imam 'Ali condemns deception and treachery. An exceptional case would require its own proof; good intention alone is not enough.",
       "istidlal_takeaway": "Good intention and moral permission are separate questions.",
       "source_ids": [
-        "kafi-truth",
+        "mizan-truth",
         "nahj-200",
         "ghurar-deception"
       ]
@@ -148,7 +148,7 @@
       "source_ids": [
         "mutahhari-ch1",
         "ghurar-justice",
-        "tuhaf-letter53"
+        "nahj-53"
       ]
     },
     {
@@ -162,7 +162,7 @@
       "istidlal_takeaway": "Political effectiveness cannot by itself establish moral legitimacy.",
       "source_ids": [
         "ghurar-justice",
-        "tuhaf-letter53",
+        "nahj-53",
         "nahj-200"
       ]
     },
@@ -261,7 +261,7 @@
       "istidlal_takeaway": "A ruler need not treat every insult as a security threat.",
       "source_ids": [
         "mutahhari-ch1",
-        "tuhaf-letter53"
+        "nahj-53"
       ]
     },
     {
@@ -289,7 +289,7 @@
       "istidlal_takeaway": "A serious sin can be condemned without turning every sinner into an unbeliever.",
       "source_ids": [
         "mutahhari-ch1",
-        "kafi-truth"
+        "mizan-truth"
       ]
     },
     {
@@ -345,7 +345,7 @@
       "istidlal_takeaway": "Visible devotion cannot substitute for understanding.",
       "source_ids": [
         "mutahhari-ch1",
-        "kafi-truth"
+        "mizan-truth"
       ]
     },
     {
@@ -387,7 +387,7 @@
       "istidlal_takeaway": "Urgency may require action, but it does not automatically create evidence.",
       "source_ids": [
         "mutahhari-ch1",
-        "kafi-truth",
+        "mizan-truth",
         "ghurar-deception"
       ]
     },
@@ -430,7 +430,7 @@
       "istidlal_takeaway": "Punishment must track actual wrongdoing and present danger, not inherited labels.",
       "source_ids": [
         "mutahhari-ch1",
-        "tuhaf-letter53"
+        "nahj-53"
       ]
     },
     {
@@ -459,7 +459,8 @@
       "source_ids": [
         "mutahhari-ch1",
         "ghurar-deception",
-        "nahj-200"
+        "nahj-200",
+        "government-warfare"
       ]
     },
     {
@@ -473,7 +474,7 @@
       "istidlal_takeaway": "A temporary exception can destroy justice if every faction receives the same power to declare its own future good.",
       "source_ids": [
         "ghurar-justice",
-        "tuhaf-letter53",
+        "nahj-53",
         "nahj-200"
       ]
     },
@@ -517,7 +518,7 @@
       "istidlal_takeaway": "When every grave sin becomes unbelief, moral accountability can collapse into exclusion and political labeling.",
       "source_ids": [
         "mutahhari-ch1",
-        "kafi-truth",
+        "mizan-truth",
         "ghurar-justice"
       ]
     },
@@ -533,7 +534,7 @@
       "source_ids": [
         "mutahhari-ch1",
         "nahj-122",
-        "tuhaf-letter53"
+        "nahj-53"
       ]
     },
     {
@@ -562,7 +563,7 @@
       "source_ids": [
         "mutahhari-ch1",
         "ghurar-justice",
-        "tuhaf-letter53"
+        "nahj-53"
       ]
     }
   ]
