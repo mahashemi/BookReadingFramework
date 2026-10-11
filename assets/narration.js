@@ -16,8 +16,8 @@
 
   function editorialTitle(title, text = '') {
     const key = title.trim().toLowerCase();
-    const persian = /[\\u0600-\\u06ff]/.test(text);
-    if (/^\\s*[0-9۰-۹]+[.)،ـ\\s-]+/.test(title)) return spokenSubheading(title);
+    const persian = /[\u0600-\u06ff]/.test(text);
+    if (/^\s*[0-9۰-۹]+[.)،ـ\s-]+/.test(title)) return spokenSubheading(title);
     if (key === 'opening') return persian ? 'برای شروع،' : 'To begin,';
     if (key === 'summary' || key === 'conclusion') return persian ? 'برای جمع‌بندی،' : 'To bring these ideas together.';
     return ({
