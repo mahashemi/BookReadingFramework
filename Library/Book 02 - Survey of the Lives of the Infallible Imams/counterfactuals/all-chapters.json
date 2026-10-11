@@ -4,9 +4,9 @@
   "title": "Counterfactual Istidlal — Curated Questions Across Book 02",
   "description": "A concise, carefully curated bank for the Introduction and every chapter. Answers include direct links to relevant Qur'anic verses and source passages. Hypothetical conclusions are inferences, not claims that classical sources explicitly answered these exact questions.",
   "coverage": {
-    "concepts_covered": 29,
-    "total_items": 29,
-    "selection_policy": "Curated for distinct learning value; no quota per concept."
+    "concepts_covered": 72,
+    "total_items": 72,
+    "selection_policy": "At least six distinct, source-grounded counterfactual questions per substantive reading unit; add more when the source contains additional major arguments. Avoid duplicate hypotheticals and link evidence inline."
   },
   "source_catalog": {
     "mutahhari-ch1": {
@@ -672,6 +672,616 @@
         "book-u12",
         "quran-11-88",
         "quran-5-8"
+      ]
+    },
+    {
+      "id": "cf-u01-03",
+      "unit_id": "u01",
+      "concept_chunk_id": "b02-u01-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a community had many authentic reports from its religious leaders but no disciplined method for reconciling reports that seemed to conflict. Would greater access to tradition necessarily make it wiser?",
+      "answer": "Not necessarily. Mutahhari treats the richness of the Imams' teachings as both a resource and a responsibility: without careful comparison, context, and interpretation, different reports can be misused to justify incompatible agendas. The [Introduction](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/introduction-comparison-between-imam-al-husayns) argues that unresolved differences can create confusion and allow people to select whichever report serves their interests. More evidence helps only when paired with sound methods for understanding it; otherwise, abundance can amplify cherry-picking rather than wisdom.",
+      "istidlal_takeaway": "More transmitted material requires better interpretation, not less scrutiny.",
+      "source_ids": [
+        "book-u01",
+        "quran-17-36"
+      ]
+    },
+    {
+      "id": "cf-u01-04",
+      "unit_id": "u01",
+      "concept_chunk_id": "b02-u01-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose someone defended a harmful inherited custom by saying, 'My father lived this way, so changing it would betray him.' What reasoning error does Mutahhari's example expose?",
+      "answer": "The argument confuses respect for a parent with a duty to preserve every parental choice. In the [Introduction](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/introduction-comparison-between-imam-al-husayns), Imam al-Sadiq challenges a wealthy man who remained in an unsuitable small house merely because it belonged to his father. The counterfactual test is whether the practice embodies a lasting moral value or only repeats a contingent habit. Respect does not require perpetuating imprudence; change should still be judged by justice, compassion, and responsibility rather than novelty for its own sake.",
+      "istidlal_takeaway": "Tradition deserves understanding and respect, but inherited habit is not automatically a moral obligation.",
+      "source_ids": [
+        "book-u01",
+        "quran-16-90"
+      ]
+    },
+    {
+      "id": "cf-u01-05",
+      "unit_id": "u01",
+      "concept_chunk_id": "b02-u01-004",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a religious community treated simple clothing as the only reliable sign of piety and regarded comfortable clothing as evidence of moral decline. What would it overlook?",
+      "answer": "It would mistake an outward form for the ethical purpose the form may have served in a particular time. Mutahhari's account of Imam al-Sadiq's reply to Sufyan al-Thawri says that Islam does not prescribe one universal style of clothing; it emphasizes sympathy, equality, justice, and fairness. The [Introduction](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/introduction-comparison-between-imam-al-husayns) also describes the Imam's decision to sell stored wheat during famine and buy ordinary market bread, showing that responsibility toward people matters more than performing ascetic appearance. Comfort is not automatically virtuous either: the ethical test is how resources and choices affect others.",
+      "istidlal_takeaway": "Neither luxury nor austerity proves virtue by itself; assess conduct by its moral consequences.",
+      "source_ids": [
+        "book-u01",
+        "quran-16-90"
+      ]
+    },
+    {
+      "id": "cf-u01-06",
+      "unit_id": "u01",
+      "concept_chunk_id": "b02-u01-005",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a Prophetic instruction originally served a concrete wartime purpose, but later generations enforced it as an eternal rule without examining its context. What mistake would follow?",
+      "answer": "They would turn a means suited to a circumstance into an end that binds every circumstance. Mutahhari's example of 'Ali narrating the instruction about dyeing white hair while not personally doing so illustrates contextual interpretation: the practice was explained as a wartime measure to obscure age differences among soldiers. The [Introduction](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/introduction-comparison-between-imam-al-husayns) calls for conventional reconciliation that studies time and purpose instead of treating every outward detail identically. This does not license dismissing any inconvenient command as historical; the contextual explanation must itself be supported by evidence and careful jurisprudential reasoning.",
+      "istidlal_takeaway": "Contextual interpretation avoids rigid imitation, but it must be argued from evidence rather than convenience.",
+      "source_ids": [
+        "book-u01",
+        "quran-33-70"
+      ]
+    },
+    {
+      "id": "cf-u03-03",
+      "unit_id": "u03",
+      "concept_chunk_id": "b02-u03-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose someone concluded that the Prophet's use of both peace and armed struggle was inconsistent, and therefore one of those responses must have been wrong. How would the chapter challenge that conclusion?",
+      "answer": "The conclusion assumes that moral consistency requires identical tactics regardless of circumstances. Mutahhari points to the Prophet's own alternation between peace and conflict to show that strategy must be assessed against the conditions, aims, and obligations of a particular moment. In [Chapter 2, Session 1](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1), the comparison asks readers to evaluate al-Hassan's peace and al-Husayn's uprising through principled judgment, not through a single permanent rule that always favors fighting or always favors restraint. The analogy has limits: not every political actor has the authority or evidence of a Prophet or Imam.",
+      "istidlal_takeaway": "Consistency lies in fidelity to principle, not in repeating the same tactic under different conditions.",
+      "source_ids": [
+        "book-u03",
+        "quran-8-61"
+      ]
+    },
+    {
+      "id": "cf-u03-04",
+      "unit_id": "u03",
+      "concept_chunk_id": "b02-u03-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a leader described every act of restraint as cowardice because Imam 'Ali sometimes fought his opponents. What does the chapter's account of his restraint show?",
+      "answer": "It would flatten a more complicated record into a slogan. The chapter recalls that 'Ali also exercised restraint and accepted arbitration in circumstances where immediate force was not the only responsible option. In [Chapter 2, Session 1](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1), Mutahhari uses this history to question the idea that peace is inherently shameful or that resistance must always take the form of battle. A responsible judgment asks whether restraint preserves rights and prevents greater harm, or instead abandons the vulnerable to oppression. The label alone cannot decide the case.",
+      "istidlal_takeaway": "Restraint is not automatically surrender; evaluate what it protects, permits, and costs.",
+      "source_ids": [
+        "book-u03",
+        "book-u01",
+        "quran-49-9"
+      ]
+    },
+    {
+      "id": "cf-u03-05",
+      "unit_id": "u03",
+      "concept_chunk_id": "b02-u03-004",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a person used the word jihad as if it always meant armed combat and ignored the other categories discussed in Shi'ah jurisprudence. What practical error could result?",
+      "answer": "That person would turn a broad religious concept into a single tactic and could misclassify duties that have different conditions and aims. Mutahhari's discussion of the categories of jihad in [Chapter 2, Session 1](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1) makes legal and conceptual distinctions necessary before drawing conclusions about a particular conflict. A word's emotional force cannot replace defining its meaning, identifying who has authority, and checking the relevant conditions. This also prevents someone from using a general command to justify an action that does not meet the command's requirements.",
+      "istidlal_takeaway": "Before applying a religious duty, define its category, conditions, authority, and limits.",
+      "source_ids": [
+        "book-u03",
+        "quran-17-36"
+      ]
+    },
+    {
+      "id": "cf-u03-06",
+      "unit_id": "u03",
+      "concept_chunk_id": "b02-u03-007",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose negotiators at Hudaybiyyah had rejected every term that appeared unfavorable because accepting it might look like weakness. What would they fail to consider?",
+      "answer": "They would judge an agreement only by its immediate optics, not by whether it secured a larger and more durable good. Mutahhari invokes Hudaybiyyah as a precedent for understanding that a truce can be a deliberate strategy rather than a renunciation of principle. In [Chapter 2, Session 1](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1), the example helps frame peace as a decision whose legitimacy depends on its terms, circumstances, and consequences. That does not mean every compromise is wise: terms that require injustice or make protection of the community impossible need separate evaluation.",
+      "istidlal_takeaway": "An apparently unfavorable agreement may serve a principled goal, but its terms and consequences must be examined.",
+      "source_ids": [
+        "book-u03",
+        "quran-8-61"
+      ]
+    },
+    {
+      "id": "cf-u04-03",
+      "unit_id": "u04",
+      "concept_chunk_id": "b02-u04-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose al-Hassan's army had been numerically large but deeply demoralized, divided, and unwilling to stand firm. Would headcount alone make continued war the better choice?",
+      "answer": "No. Numbers matter only alongside morale, loyalty, leadership, and the likelihood that an army can actually carry out its mission. Mutahhari identifies the military balance and Kufah's demoralization as key differences between al-Hassan's circumstances and those of al-Husayn. In [Chapter 2, Session 2](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-2), the case warns against reasoning from an abstract preference for resistance while ignoring the real people who would bear its cost. Still, weakness alone does not prove peace is right; the likely terms and long-term consequences also matter.",
+      "istidlal_takeaway": "Strategic judgment must consider the reliability of people and institutions, not just their apparent size.",
+      "source_ids": [
+        "book-u04",
+        "quran-8-61"
+      ]
+    },
+    {
+      "id": "cf-u04-04",
+      "unit_id": "u04",
+      "concept_chunk_id": "b02-u04-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose al-Hassan had faced the same immediate demand for allegiance that al-Husayn later faced under Yazid. Would that single similarity erase every other difference between their decisions?",
+      "answer": "No. A shared feature of two situations does not make the situations identical. Mutahhari emphasizes that al-Hassan held the caliphate and made a treaty under one set of political and military conditions, while al-Husayn faced a different demand and a different opponent. The comparison in [Chapter 2, Session 2](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-2) asks readers to weigh several conditions together rather than choose one superficial similarity as decisive. Counterfactual reasoning must change one variable at a time and then test whether other relevant conditions remain different.",
+      "istidlal_takeaway": "Historical analogy is useful only when it accounts for the important differences as well as the similarities.",
+      "source_ids": [
+        "book-u04",
+        "book-u01"
+      ]
+    },
+    {
+      "id": "cf-u04-05",
+      "unit_id": "u04",
+      "concept_chunk_id": "b02-u04-004",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose Kufah's earlier invitation to al-Husayn were treated as proof that its people would have supported al-Hassan reliably in an earlier conflict. What evidence would be missing?",
+      "answer": "An invitation at one time does not establish sustained commitment at another. Mutahhari contrasts Kufah's later invitation to al-Husayn with the exhaustion and unreliability that weakened al-Hassan's position. [Chapter 2, Session 2](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-2) therefore encourages attention to timing, actual mobilization, and whether promises translate into dependable action. A leader should not confuse public declarations with a realistic capacity to defend a community. At the same time, the historical narrative should not be generalized into a claim that every resident acted alike.",
+      "istidlal_takeaway": "Promises of support are not the same as dependable capacity; evaluate evidence from the actual moment.",
+      "source_ids": [
+        "book-u04",
+        "quran-49-6"
+      ]
+    },
+    {
+      "id": "cf-u04-06",
+      "unit_id": "u04",
+      "concept_chunk_id": "b02-u04-007",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose al-Husayn's later resistance were used to claim that he must have regarded al-Hassan's treaty as religiously illegitimate. Does that conclusion follow?",
+      "answer": "No. The conclusion assumes that two Imams facing different circumstances must judge each other's strategies by the same immediate outcome. Mutahhari explicitly considers the relationship between al-Hassan's treaty and al-Husayn's later conduct, asking readers to distinguish continuity of purpose from sameness of method. [Chapter 2, Session 2](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-2) presents the treaty in the context of al-Hassan's political and military situation, not as a universal rule that all later Imams had to repeat. The strongest conclusion is limited: different actions can be coherent when conditions and obligations differ; specific claims about endorsement require evidence.",
+      "istidlal_takeaway": "Do not infer rejection from a later difference in strategy without evidence about the actors' intentions and circumstances.",
+      "source_ids": [
+        "book-u04",
+        "book-u01",
+        "quran-17-36"
+      ]
+    },
+    {
+      "id": "cf-u05-03",
+      "unit_id": "u05",
+      "concept_chunk_id": "b02-u05-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose people judged Imam Zayn al-'Abidin's influence only by whether he led a public revolt. What important forms of leadership would that standard miss?",
+      "answer": "It would assume that political visibility is the only measure of service. Mutahhari presents Zayn al-'Abidin as a champion of spirituality whose mission operated through worship, moral formation, affection, and preserving the message of Karbala. In [Chapter 3](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-3-discourse-imam-zayn-al-abidin), the chapter's examples suggest that a community's moral memory and inner character can be sustained even when open political action is constrained. This does not mean private spirituality replaces public responsibility in every situation; it means the value of a mission must be measured against its actual aims and circumstances.",
+      "istidlal_takeaway": "Leadership can form people and preserve truth without taking the most visible political form.",
+      "source_ids": [
+        "book-u05",
+        "quran-107-1-7"
+      ]
+    },
+    {
+      "id": "cf-u05-04",
+      "unit_id": "u05",
+      "concept_chunk_id": "b02-u05-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a worshipper spent long hours in devotion but became indifferent to the suffering of other people. Would the chapter's portrait of Zayn al-'Abidin support that as complete spirituality?",
+      "answer": "No. The chapter places absorption in worship alongside affection, service, and care for others, rather than presenting devotion as an escape from moral obligation. Mutahhari's [Chapter 3](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-3-discourse-imam-zayn-al-abidin) links spiritual depth with conduct that benefits people. [Qur'an 4:36](https://quran.com/4/36) commands care toward parents, relatives, orphans, the needy, and neighbors, making social responsibility part of religious life. The counterfactual reveals a false split: worship may nourish compassion, but a claim of spirituality that excuses cruelty or indifference contradicts that purpose.",
+      "istidlal_takeaway": "Spiritual practice is incomplete when it is used to excuse neglect of people in need.",
+      "source_ids": [
+        "book-u05",
+        "quran-4-36",
+        "quran-107-1-7"
+      ]
+    },
+    {
+      "id": "cf-u05-05",
+      "unit_id": "u05",
+      "concept_chunk_id": "b02-u05-005",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a religious leader could not safely teach publicly but could preserve the faith through personal conduct, supplication, and guiding a smaller circle. Would that necessarily be a lesser mission?",
+      "answer": "Not necessarily. Mutahhari's account suggests that the form of service can change when public conditions make other methods dangerous or ineffective. [Chapter 3](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-3-discourse-imam-zayn-al-abidin) portrays Zayn al-'Abidin's spirituality and moral influence as a meaningful form of service, not simply a pause before political action. The correct comparison is between the available means and the mission's enduring purpose, while remaining honest about what each method can and cannot achieve. A quiet mission should not be romanticized if a safer, more effective public duty is actually possible.",
+      "istidlal_takeaway": "A less visible method can still be principled and consequential when it fits the constraints and needs of the time.",
+      "source_ids": [
+        "book-u05",
+        "book-u01"
+      ]
+    },
+    {
+      "id": "cf-u05-06",
+      "unit_id": "u05",
+      "concept_chunk_id": "b02-u05-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose later generations remembered Karbala only as a military defeat and discarded mourning, storytelling, and remembrance as politically irrelevant. What would the chapter suggest they had lost?",
+      "answer": "They would lose an important means of preserving the event's moral meaning across generations. Mutahhari presents Zayn al-'Abidin's mourning as helping keep Karbala's message alive when direct confrontation with the ruling power was constrained. In [Chapter 3](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-3-discourse-imam-zayn-al-abidin), remembrance functions as moral transmission, not simply private grief. Yet remembrance must preserve truth and ethical reflection rather than become an excuse for hatred or substitute for present duties. The relevant counterfactual is whether memory helps people recognize injustice and cultivate responsibility.",
+      "istidlal_takeaway": "Collective memory can preserve moral testimony, provided remembrance remains truthful and ethically formative.",
+      "source_ids": [
+        "book-u05",
+        "quran-33-70"
+      ]
+    },
+    {
+      "id": "cf-u06-03",
+      "unit_id": "u06",
+      "concept_chunk_id": "b02-u06-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose Imam al-Sadiq had accepted a political opening simply because it appeared to weaken the current dynasty. What questions would still need answers before that decision could be called wise?",
+      "answer": "A temporary opening does not itself prove that the organizers are trustworthy, the coalition shares the Imam's aims, or the outcome will protect the community. Mutahhari describes al-Sadiq's refusal to endorse political actors whose slogans could conceal other ambitions. In [Chapter 4](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-4-imam-al-sadiq-and-issue-vicegerency), the decisive issue is not whether the existing rulers deserve opposition, but whether the proposed alternative and its means are sound. A careful leader must examine who controls the movement, what commitments are credible, and who will bear the consequences if power changes hands.",
+      "istidlal_takeaway": "Opposition to an unjust ruler does not automatically make a rival movement trustworthy.",
+      "source_ids": [
+        "book-u06",
+        "quran-49-6"
+      ]
+    },
+    {
+      "id": "cf-u06-04",
+      "unit_id": "u06",
+      "concept_chunk_id": "b02-u06-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a movement used the name of the Prophet's family to attract support while privately planning to consolidate power for another dynasty. How should its public slogan be evaluated?",
+      "answer": "The slogan must be compared with the movement's organization, commitments, and actions. Mutahhari's account of the Abbasid secret organization warns that religious language can mobilize sincere supporters even when the eventual political beneficiaries have different aims. [Chapter 4](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-4-imam-al-sadiq-and-issue-vicegerency) illustrates why a slogan cannot serve as sufficient evidence of a movement's actual purpose. This is not a reason to assume every political movement is deceptive; it is a reason to verify claims, inspect power arrangements, and ask whether promised justice is reflected in conduct.",
+      "istidlal_takeaway": "Religious slogans are evidence to examine, not proof that a movement will honor its stated purpose.",
+      "source_ids": [
+        "book-u06",
+        "quran-49-6",
+        "quran-61-2-3"
+      ]
+    },
+    {
+      "id": "cf-u06-05",
+      "unit_id": "u06",
+      "concept_chunk_id": "b02-u06-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose two rival organizers each claimed to be acting for the Ahl al-Bayt and each privately sought the Imam's endorsement. What would the competing requests reveal about political trust?",
+      "answer": "They would show that shared religious language does not guarantee shared loyalties or a coherent plan. Mutahhari's discussion of Abu Muslim and Abu Salmah situates their approaches within a shifting contest for power, where apparent support could conceal competing objectives. [Chapter 4](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-4-imam-al-sadiq-and-issue-vicegerency) makes it important to ask who benefits from an endorsement and whether the organizer's conduct matches the cause invoked. A leader should not infer reliability from a request for religious legitimacy alone; independent evidence and the likely downstream consequences matter.",
+      "istidlal_takeaway": "When rival actors claim the same sacred cause, test their conduct and incentives rather than choosing by slogans.",
+      "source_ids": [
+        "book-u06",
+        "quran-17-36"
+      ]
+    },
+    {
+      "id": "cf-u06-06",
+      "unit_id": "u06",
+      "concept_chunk_id": "b02-u06-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a respected descendant of the Prophet opposed the ruling dynasty but had not established that his movement would produce the justice he promised. Would lineage and opposition alone settle the Imam's response?",
+      "answer": "No. Lineage and opposition can matter to a movement's appeal, but they do not independently establish its strategy, readiness, or likely consequences. Mutahhari's treatment of 'Abd Allah al-Mahd and the Abwa' gathering shows that claims of legitimacy and the question of who should lead remained contested. [Chapter 4](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-4-imam-al-sadiq-and-issue-vicegerency) cautions against treating noble ancestry or resistance to an unjust ruler as a complete argument for political endorsement. The counterfactual does not prove the claimant wrong; it shows what additional evidence a responsible judgment requires.",
+      "istidlal_takeaway": "Noble lineage and a just-sounding cause do not remove the need to evaluate leadership, means, and consequences.",
+      "source_ids": [
+        "book-u06",
+        "quran-4-135"
+      ]
+    },
+    {
+      "id": "cf-u07-03",
+      "unit_id": "u07",
+      "concept_chunk_id": "b02-u07-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose martyrdom were treated as proof that a leader's mission had failed because the leader did not survive to see political victory. What would that measure ignore?",
+      "answer": "It would measure a mission only by immediate control of the state or personal survival. Mutahhari's chapter frames the martyrdom of the Imams as connected to the threat their moral and spiritual authority posed to rulers, rather than as simple evidence of political ineffectiveness. In [Chapter 5](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-5-reasons-imam-musa-al-kazims-martyrdom), al-Kazim's steadfastness and continuing influence complicate the assumption that imprisonment or death erases a mission's impact. This does not make suffering desirable in itself; it asks whether the ruler's coercion can silence the values and relationships that gave the mission its force.",
+      "istidlal_takeaway": "Political defeat and moral failure are not identical; assess what a mission preserves and changes over time.",
+      "source_ids": [
+        "book-u07",
+        "quran-21-105"
+      ]
+    },
+    {
+      "id": "cf-u07-04",
+      "unit_id": "u07",
+      "concept_chunk_id": "b02-u07-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a prison official initially feared Imam al-Kazim but changed his view after witnessing the Imam's conduct. What does this suggest about the limits of coercive power?",
+      "answer": "Coercion can restrict movement, but it cannot reliably control how people interpret the character they observe. Mutahhari's account of 'Isa ibn Ja'far's change of view suggests that the Imam's conduct could challenge the assumptions of those tasked with containing him. [Chapter 5](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-5-reasons-imam-musa-al-kazims-martyrdom) presents moral credibility as a kind of influence that may survive even in confinement. One anecdote does not prove that every observer will be transformed, but it undermines the belief that force alone can dictate respect or belief.",
+      "istidlal_takeaway": "Power can control a person's location without controlling the moral judgment of everyone who encounters them.",
+      "source_ids": [
+        "book-u07",
+        "quran-33-70"
+      ]
+    },
+    {
+      "id": "cf-u07-05",
+      "unit_id": "u07",
+      "concept_chunk_id": "b02-u07-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a ruler feared a religious leader despite that leader having no army or official office. What kinds of influence might explain the ruler's anxiety?",
+      "answer": "The ruler may fear networks of trust, independent moral authority, and the possibility that people judge power by standards the ruler cannot control. Mutahhari argues that al-Kazim's spiritual influence and standing made him politically significant even without conventional state power. [Chapter 5](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-5-reasons-imam-musa-al-kazims-martyrdom) thus invites a broader account of power: legitimacy can arise from character and community loyalty as well as offices and weapons. Still, a ruler's fear is not itself proof that the feared person is right; the evidence for the leader's conduct must be considered independently.",
+      "istidlal_takeaway": "Influence can be moral and social, not only institutional, but fear alone is not proof of virtue.",
+      "source_ids": [
+        "book-u07",
+        "quran-4-135"
+      ]
+    },
+    {
+      "id": "cf-u07-06",
+      "unit_id": "u07",
+      "concept_chunk_id": "b02-u07-008",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a person could not preach openly but could reform one person's behavior through a gentle question. Would that count as meaningful religious propagation?",
+      "answer": "It can, if the intervention genuinely helps the person recognize and correct a wrong. Mutahhari's story of Bishr Hafi depicts the Imam's indirect approach as prompting reflection rather than relying on humiliation or force. [Chapter 5](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-5-reasons-imam-musa-al-kazims-martyrdom) presents this as an example of moral influence operating through a timely encounter. The result should not be exaggerated into a guarantee that one question will reform everyone; rather, the story highlights a method that respects agency and can open the door to change.",
+      "istidlal_takeaway": "A small, respectful intervention can be real moral work when it invites sincere self-correction.",
+      "source_ids": [
+        "book-u07",
+        "quran-16-90"
+      ]
+    },
+    {
+      "id": "cf-u08-03",
+      "unit_id": "u08",
+      "concept_chunk_id": "b02-u08-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose the Abbasids had publicly claimed to honor the Prophet's family while continuing policies hostile to Alawis. Which should carry more weight: the public language or the pattern of conduct?",
+      "answer": "Conduct is crucial evidence because public language can serve several political purposes. Mutahhari places Ma'mun's succession decision against a background of Abbasid hostility toward the Alawis, making it unsafe to infer sincere change from a ceremonial gesture alone. [Chapter 6, Session 1](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-rida-crown-prince-session-1) examines competing explanations for the appointment rather than treating the announcement as self-explanatory. Still, prior hostility does not logically prove that every later action is insincere; the responsible conclusion weighs the whole record and distinguishes evidence from speculation.",
+      "istidlal_takeaway": "Evaluate political gestures against a broader record, while avoiding claims about motives that the evidence cannot settle.",
+      "source_ids": [
+        "book-u08",
+        "quran-49-6"
+      ]
+    },
+    {
+      "id": "cf-u08-04",
+      "unit_id": "u08",
+      "concept_chunk_id": "b02-u08-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose Ma'mun claimed that he had made a solemn promise during his struggle with Amin and therefore had to appoint Imam al-Rida. Would the existence of a promise by itself prove the appointment was sincere?",
+      "answer": "No. A promise may explain a stated reason, but it does not settle every motive behind a political act. Mutahhari considers Ma'mun's reported oath alongside other possible explanations for the succession. [Chapter 6, Session 1](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-rida-crown-prince-session-1) models a distinction between what a historical actor said and what the evidence allows us to conclude about the actor's full intention. A disciplined reader should neither dismiss the reported promise automatically nor treat it as conclusive proof; compare sources, context, and subsequent conduct.",
+      "istidlal_takeaway": "A stated motive is evidence, not a complete verdict on a political actor's intentions.",
+      "source_ids": [
+        "book-u08",
+        "quran-17-36"
+      ]
+    },
+    {
+      "id": "cf-u08-05",
+      "unit_id": "u08",
+      "concept_chunk_id": "b02-u08-007",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose Fadl ibn Sahl, rather than Ma'mun, had first proposed Imam al-Rida's appointment. Would that alone establish that the plan served the Imam's interests?",
+      "answer": "No. Identifying who initiated a proposal is only one part of evaluating its purpose and likely consequences. Mutahhari entertains the possibility that Fadl played a role, while also examining how the succession might affect Iranian support, Alawi rebellions, and opposition to Ma'mun. [Chapter 6, Session 1](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-rida-crown-prince-session-1) shows why a proposal can have several political beneficiaries or be used for purposes beyond its public explanation. Historical inference should remain proportionate to the evidence rather than turning a plausible hypothesis into established fact.",
+      "istidlal_takeaway": "Knowing who proposed a policy does not by itself tell us whose interests it serves or how it will work.",
+      "source_ids": [
+        "book-u08",
+        "quran-49-6"
+      ]
+    },
+    {
+      "id": "cf-u08-06",
+      "unit_id": "u08",
+      "concept_chunk_id": "b02-u08-015",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose Imam al-Rida's public participation in the 'Id prayer had strengthened his popularity but also threatened the ruler's control of the ceremony. What would that reveal about symbolic authority?",
+      "answer": "It would show that a public ritual can carry political meaning even when it is formally religious. Mutahhari recounts the 'Id prayer episode as evidence that al-Rida's presence could draw attention and authority beyond the role Ma'mun intended for him. [Chapter 6, Session 1](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-rida-crown-prince-session-1) suggests that symbolic legitimacy is not always controlled by the person who arranges the event. However, the episode should not be made to prove more than the report supports; its significance comes from the context and the ruler's reaction.",
+      "istidlal_takeaway": "Ceremonies can reveal independent legitimacy, but the interpretation must stay tied to the historical evidence.",
+      "source_ids": [
+        "book-u08",
+        "quran-4-135"
+      ]
+    },
+    {
+      "id": "cf-u09-03",
+      "unit_id": "u09",
+      "concept_chunk_id": "b02-u09-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose historians treated every detail of Ma'mun's motives as certain even though the chapter distinguishes established events from disputed explanations. What would be lost?",
+      "answer": "The distinction between historical evidence and interpretation would disappear. Mutahhari's second session separates what can be established about the succession from competing theories about why Ma'mun arranged it. [Chapter 6, Session 2](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-ridaa-crown-prince-session) therefore models intellectual honesty: one can reach a firm conclusion about some actions while remaining uncertain about hidden intentions. Overstating certainty makes an argument appear stronger in the short term but weakens trust when readers discover the evidence is more ambiguous.",
+      "istidlal_takeaway": "Good historical reasoning marks the boundary between documented events and plausible but uncertain motives.",
+      "source_ids": [
+        "book-u09",
+        "quran-17-36"
+      ]
+    },
+    {
+      "id": "cf-u09-04",
+      "unit_id": "u09",
+      "concept_chunk_id": "b02-u09-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose Imam al-Rida had accepted the caliphate offer immediately, without asking what authority he would actually possess. What critical distinction might disappear?",
+      "answer": "The distinction between holding a title and having real power to govern according to one's principles. Mutahhari explains that al-Rida's refusal and conditions matter because the offer came from a ruler with his own political interests. [Chapter 6, Session 2](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-ridaa-crown-prince-session) shows that acceptance cannot be judged from the title alone; one must ask who controls decisions, whether the role requires complicity, and whether meaningful action is possible. The counterfactual does not imply that every offer from a ruler must be refused; it shows why authority and accountability need examination.",
+      "istidlal_takeaway": "A title is not the same as effective authority; examine the conditions attached to office.",
+      "source_ids": [
+        "book-u09",
+        "quran-12-55"
+      ]
+    },
+    {
+      "id": "cf-u09-05",
+      "unit_id": "u09",
+      "concept_chunk_id": "b02-u09-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a crown prince gave a speech that sounded humble but allowed the ruler to present him as endorsing every government policy. What would the chapter's account make us ask?",
+      "answer": "It would make us ask whether the speech was a genuine endorsement, a carefully bounded acceptance, or a way to expose the limits of the office. Mutahhari discusses al-Rida's crown-prince speech alongside his condition of non-interference and his refusal to assume unrestricted responsibility for the government. [Chapter 6, Session 2](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-ridaa-crown-prince-session) warns against reading ceremonial language apart from the terms and context in which it was delivered. Interpretation should rely on the actual wording and actions, not simply the ruler's preferred publicity.",
+      "istidlal_takeaway": "Interpret public statements alongside their conditions and subsequent conduct before assigning endorsement.",
+      "source_ids": [
+        "book-u09",
+        "quran-61-2-3"
+      ]
+    },
+    {
+      "id": "cf-u09-06",
+      "unit_id": "u09",
+      "concept_chunk_id": "b02-u09-016",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose someone argued that a righteous person must never accept any role within an unjust administration. How does the example of Prophet Yusuf complicate that absolute rule?",
+      "answer": "The example complicates the claim because Mutahhari discusses Prophet Yusuf's service in a position of authority as a case in which cooperation may serve public welfare without amounting to approval of every act of the ruler. [Chapter 6, Session 2](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-ridaa-crown-prince-session) therefore points toward a conditional analysis: what authority is actually available, what good can be achieved, what harms are required, and whether participation makes the person complicit. This is not blanket permission to serve any regime; the limits and consequences must be evaluated case by case.",
+      "istidlal_takeaway": "Participation under unjust authority requires a principled test of purpose, power, complicity, and consequences.",
+      "source_ids": [
+        "book-u09",
+        "quran-12-55",
+        "quran-4-135"
+      ]
+    },
+    {
+      "id": "cf-u10-03",
+      "unit_id": "u10",
+      "concept_chunk_id": "b02-u10-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a ruler's surveillance made a religious leader's public teaching dangerous, but the leader continued to preserve a community through trusted relationships. Would the lack of public visibility prove that the mission had stopped?",
+      "answer": "No. Mutahhari describes Imam al-'Askari as living under extreme pressure in Samarra, where surveillance restricted ordinary public activity. [Chapter 7](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-7-topic-imam-al-hassan-al-askari) presents his dignity and continued role as important precisely because the political environment constrained him. The counterfactual distinguishes the visibility of an activity from its existence: a mission may adapt its channels under pressure. Yet readers should not infer specific hidden events without evidence; the general point is about how constraint can change the form of leadership.",
+      "istidlal_takeaway": "Surveillance can make a mission less visible without proving it has ceased, but hidden claims still need evidence.",
+      "source_ids": [
+        "book-u10",
+        "quran-17-36"
+      ]
+    },
+    {
+      "id": "cf-u10-04",
+      "unit_id": "u10",
+      "concept_chunk_id": "b02-u10-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose the location of an Imam in a military-controlled quarter were treated as neutral geography with no effect on his life. What historical factor would that overlook?",
+      "answer": "It would overlook how space can be used as an instrument of political control. Mutahhari emphasizes Samarra's military character and the constraints surrounding al-'Askari's life there. [Chapter 7](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-7-topic-imam-al-hassan-al-askari) encourages readers to consider the environment that shaped the Imam's access to followers, freedom of movement, and exposure to surveillance. Geography alone does not prove every allegation about state intentions, but it is part of the historical context needed to understand the limits on public religious activity.",
+      "istidlal_takeaway": "Historical setting is not background decoration; it can explain the constraints under which people act.",
+      "source_ids": [
+        "book-u10",
+        "quran-28-4-6"
+      ]
+    },
+    {
+      "id": "cf-u10-05",
+      "unit_id": "u10",
+      "concept_chunk_id": "b02-u10-007",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose the birth of the promised child had been openly announced under conditions of intense state surveillance. What danger would the chapter's narrative suggest?",
+      "answer": "The announcement could have exposed the child and household to the very searches and coercion the chapter describes. Mutahhari's account of the concealed birth of Imam al-Mahdi is framed by the authorities' efforts to find the promised child. [Chapter 7](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-7-topic-imam-al-hassan-al-askari) therefore presents concealment as a response to a concrete danger within the narrative, not simply as secrecy for its own sake. The counterfactual helps explain why the protection of a vulnerable person may require limiting public disclosure; it does not remove the need to assess historical reports carefully.",
+      "istidlal_takeaway": "Disclosure is not always harmless; under credible danger, protecting vulnerable people may require discretion.",
+      "source_ids": [
+        "book-u10",
+        "quran-28-4-6"
+      ]
+    },
+    {
+      "id": "cf-u10-06",
+      "unit_id": "u10",
+      "concept_chunk_id": "b02-u10-011",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a community under surveillance depended on trusted relatives and intermediaries to maintain contact with its religious leadership. What strength and what risk would that arrangement create?",
+      "answer": "It could preserve guidance and mutual support when direct contact was dangerous, while also making the community dependent on trust, accurate communication, and protection from infiltration. Mutahhari's discussion of Hakimah Khatun and the hidden Imam highlights the role of trusted people in transmitting knowledge under constraint. [Chapter 7](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-7-topic-imam-al-hassan-al-askari) helps us see that an indirect network can protect people but also requires care about reports and attribution. The narrative should not be used to validate any modern claimant without independent evidence.",
+      "istidlal_takeaway": "Trusted intermediaries can preserve a community under pressure, but their claims still require responsible verification.",
+      "source_ids": [
+        "book-u10",
+        "quran-49-6"
+      ]
+    },
+    {
+      "id": "cf-u11-03",
+      "unit_id": "u11",
+      "concept_chunk_id": "b02-u11-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a religious movement promised individual salvation but treated public injustice as irrelevant to its mission. How would Mutahhari's framing of the prophetic mission challenge that separation?",
+      "answer": "Mutahhari presents the prophetic mission as having both a spiritual dimension and a social dimension concerned with justice. [Chapter 8, Part 1](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-1-universal-justice) argues that universal justice is not merely an afterlife promise; it has implications for how human beings live together. A promise of personal salvation that excuses exploitation would omit the public responsibility the chapter emphasizes. At the same time, social reform should not be reduced to power alone: the chapter links justice with a broader moral and spiritual account of human life.",
+      "istidlal_takeaway": "A complete account of religion cannot use personal piety to dismiss public justice.",
+      "source_ids": [
+        "book-u11",
+        "quran-16-90"
+      ]
+    },
+    {
+      "id": "cf-u11-04",
+      "unit_id": "u11",
+      "concept_chunk_id": "b02-u11-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a society announced that it had achieved universal justice because everyone received the same amount, regardless of need, responsibility, or circumstance. Would equal distribution alone prove justice?",
+      "answer": "No. Mutahhari's discussion distinguishes justice from simple sameness and asks how justice should be defined. [Chapter 8, Part 1](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-1-universal-justice) makes clear that a serious account must consider rights, relevant differences, and whether people are treated fairly rather than merely identically. Equal treatment can be unjust when circumstances differ, while unequal treatment can be justified only by relevant reasons rather than favoritism. The counterfactual requires a principled explanation for distributions, not a slogan about equality.",
+      "istidlal_takeaway": "Justice requires relevant reasons for treatment, not mechanical sameness or arbitrary favoritism.",
+      "source_ids": [
+        "book-u11",
+        "quran-4-135",
+        "quran-5-8"
+      ]
+    },
+    {
+      "id": "cf-u11-05",
+      "unit_id": "u11",
+      "concept_chunk_id": "b02-u11-008",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose justice were entirely instinctive and needed no education, institutions, or moral discipline. What would the persistence of injustice suggest?",
+      "answer": "It would at least challenge the idea that a basic moral intuition is sufficient to produce a just society. Mutahhari examines whether justice is instinctive and considers competing accounts of human nature and self-interest. [Chapter 8, Part 1](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-1-universal-justice) invites readers to distinguish a capacity to recognize justice from the motivation and social conditions required to act on it. The existence of injustice does not by itself settle a philosophical debate, but it makes simplistic claims about automatic moral behavior inadequate.",
+      "istidlal_takeaway": "A moral capacity does not guarantee moral conduct; habits, incentives, knowledge, and institutions still matter.",
+      "source_ids": [
+        "book-u11",
+        "quran-61-2-3"
+      ]
+    },
+    {
+      "id": "cf-u11-06",
+      "unit_id": "u11",
+      "concept_chunk_id": "b02-u11-014",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a leader praised justice in public but repeatedly favored powerful allies when distributing resources. How would the chapter's use of 'Ali as an example test that leader?",
+      "answer": "The test is whether justice constrains the leader when favoritism would be politically convenient. Mutahhari invokes 'Ali as an example in a discussion that challenges accounts of justice based only on self-interest or expediency. [Chapter 8, Part 1](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-1-universal-justice) connects moral principle with actual decisions about power and rights. A leader's stated ideals are not enough if the practice consistently protects allies. The comparison must be grounded in specific actions, not used as a shortcut for assuming that any contemporary actor resembles a historical exemplar.",
+      "istidlal_takeaway": "Justice is most revealing when it limits the advantages available to the powerful and their allies.",
+      "source_ids": [
+        "book-u11",
+        "quran-4-135",
+        "quran-5-8"
+      ]
+    },
+    {
+      "id": "cf-u12-04",
+      "unit_id": "u12",
+      "concept_chunk_id": "b02-u12-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose someone claimed that belief in the Mahdi appeared only centuries after the earliest Muslim community, with no earlier roots. What kind of evidence would the chapter ask them to examine?",
+      "answer": "The claim would need to engage with the early historical and textual material Mutahhari surveys, rather than assume the belief began at the date of a later organized movement. [Chapter 8, Part 2](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi) discusses traditions and historical references that he takes as evidence that Mahdism predates the third century AH. A careful evaluation should inspect the dates, provenance, wording, and reliability of each report; the existence of early references does not automatically settle every later doctrinal question.",
+      "istidlal_takeaway": "Historical claims about a belief's origins require examination of early sources, provenance, and what each source actually establishes.",
+      "source_ids": [
+        "book-u12",
+        "quran-21-105"
+      ]
+    },
+    {
+      "id": "cf-u12-05",
+      "unit_id": "u12",
+      "concept_chunk_id": "b02-u12-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a Qur'anic verse about the righteous inheriting the earth were presented as a complete proof of every detailed claim about the Mahdi, without further argument. What inferential step would be missing?",
+      "answer": "A general scriptural theme can support a broad expectation without, by itself, identifying every historical detail or resolving every interpretive question. Mutahhari's [Chapter 8, Part 2](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi) discusses Qur'anic foundations alongside narrations and historical evidence, suggesting that the case is cumulative rather than dependent on one verse alone. A sound argument should state exactly what a verse establishes, then explain how additional evidence supports more specific conclusions. This avoids asking a text to prove more than its wording and context warrant.",
+      "istidlal_takeaway": "Distinguish a broad scriptural principle from the additional evidence needed for specific historical or doctrinal claims.",
+      "source_ids": [
+        "book-u12",
+        "quran-21-105",
+        "quran-7-56"
+      ]
+    },
+    {
+      "id": "cf-u12-06",
+      "unit_id": "u12",
+      "concept_chunk_id": "b02-u12-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a report about the Mahdi were accepted only because it appeared in a single community's books, while comparable reports from other Muslim traditions were ignored. What would this do to the historical argument?",
+      "answer": "It would narrow the evidence base before the question had been fairly examined. Mutahhari surveys Sunni as well as Shi'ah narrations in [Chapter 8, Part 2](https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi), using the wider record to discuss the history of the belief. Cross-tradition evidence can help establish that a concept circulated more broadly, although it does not make every narration equally reliable or prove every sectarian interpretation. Each report still needs assessment for authenticity, meaning, and the precise conclusion it supports.",
+      "istidlal_takeaway": "A broad evidence base improves historical analysis, but each source must still be assessed on its own merits.",
+      "source_ids": [
+        "book-u12",
+        "quran-17-36"
       ]
     }
   ]

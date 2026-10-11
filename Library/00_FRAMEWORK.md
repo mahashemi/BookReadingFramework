@@ -186,11 +186,11 @@ These questions are not filler. They are a bridge between teaching discussion an
 
 ## Module 6D — Counterfactual Istidlal
 
-Counterfactual Istidlal asks learners to change one meaningful premise in a source-grounded case and reason carefully about what follows. It is not a large collection of near-duplicate "what if" prompts. **Curate for distinct learning value, not a quota:** keep only questions that test a different principle, distinction, consequence, or failure mode. A small set of excellent questions is better than a long repetitive bank.
+Counterfactual Istidlal asks learners to change one meaningful premise in a source-grounded case and reason carefully about what follows. **Coverage must be both deep and broad:** for each substantive chapter or reading unit, build at least 6 distinct questions, usually 6–7 and more when the source contains additional major arguments. Do not stop at 2–3 questions merely to keep the bank short. Avoid near-duplicates; each question should probe a different argument, premise, consequence, exception, or failure mode.
 
 For each selected question:
 
-1. Anchor it to one or more canonical learning chunks. Cover every substantive chapter or teaching unit in the book, including introductions where they contain an argument worth testing; skip front matter that offers no substantive reasoning. For a long chapter, prefer a few distinct, high-value questions over exhaustive coverage.
+1. Anchor it to one or more canonical learning chunks. Cover every substantive chapter or teaching unit in the book, including introductions where they contain an argument worth testing; skip front matter that offers no substantive reasoning. For a long chapter, map the major arguments and develop 6–7 distinct questions at minimum; add more where separate arguments, counterarguments, historical cases, or qualifications warrant it. Never use a fixed quota as a substitute for reading the source carefully.
 2. Change one consequential premise rather than merely rewording the original case.
 3. Make the learner reason through consequences, precedent, competing duties, or limits.
 4. Give a medium-length answer: source principle → inference → qualification where needed.
