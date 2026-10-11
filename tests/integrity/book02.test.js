@@ -113,3 +113,14 @@ test("Book 02 teaching deck clearly separates the source chapters", () => {
     "\\chapterdivider{Chapter 8 — Part 2}"
   ]) assert.ok(deck.includes(label), "missing chapter divider: " + label);
 });
+
+test("Book 02 deck teaches the missing core topics identified in the completeness audit", () => {
+  const root = "Library/Book 02 - Survey of the Lives of the Infallible Imams/teaching_materials/sections/";
+  const political = readText(root + "04_political_openings.tex");
+  const justice = readText(root + "06_justice_mahdi.tex");
+  assert.match(political, /The Double Letter: Who Was Really Being Offered Power/);
+  assert.match(political, /What Is Certain—and What Is Interpretation/);
+  assert.match(justice, /The Promised Age: Justice in Public Life/);
+  assert.match(justice, /Long Life and al-Qa'im/);
+  assert.match(justice, /Evidence, Claimants, and Political Appropriation/);
+});
