@@ -64,12 +64,12 @@
   function parse(md) {
     // Source maps are editorial provenance. Keep them in the Markdown file,
     // but never expose opaque chunk IDs in the learner's transcript or audio.
-    const sourceMapStart = md.search(/^##\s+Source map\s*$/im);
+    const sourceMapStart = md.search(/^#{2,6}\s+(?:source map|نقشه(?:‌| )منبع|نقشه(?:‌| )منابع)\s*$/im);
     const learningText = sourceMapStart >= 0 ? md.slice(0, sourceMapStart) : md;
     const sections = [];
     let current = null;
     for (const line of learningText.split(/\r?\n/)) {
-      const h = line.match(/^##\s+(.+)$/);
+      const h = line.match(/^#{2,6}\s+(.+)$/);
       if (h) {
         current = { title: h[1].trim(), text: '' };
         sections.push(current);
