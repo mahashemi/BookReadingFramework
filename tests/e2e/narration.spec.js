@@ -34,7 +34,7 @@ test("Persian Book 03 narration excludes its Persian source map and redundant ed
   await expect(transcript).toBeVisible();
   await expect(transcript).toContainText("نماز شب");
   await expect(transcript).not.toContainText("نقشه منبع");
-  await expect(transcript).not.toContainText(/b03-u18-\\d{3}/);
+  await expect(transcript).not.toContainText("b03-u18-");
   await expect(transcript).not.toContainText("عنوان شنیداری");
   expect(errors).toEqual([]);
 });
