@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const root = location.pathname.includes('/book/') ? '../' : '';
-  const state = { manifest: null, utterance: null, utterances: [], remaining: 0, playing: false };
+  const state = { manifest: null, utterance: null, utterances: [], remaining: 0, playing: false, generation: 0 };
   const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
   const bookId = () => new URLSearchParams(location.search).get('book_id') || 'book02';
   const unitId = () => new URLSearchParams(location.search).get('unit');
@@ -139,6 +139,7 @@
 
   function stop(button) {
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    state.generation++;
     state.utterance = null;
     state.utterances = [];
     state.remaining = 0;
@@ -161,14 +162,16 @@
       const text=spoken(script), pieces=speechPieces(text);
       if(!pieces.length)return;
       const lang=/[\u0600-\u06ff]/.test(text)?'fa-IR':'en-US';
+      const generation=++state.generation;
       state.utterances=pieces.map(piece=>{
         const u=new SpeechSynthesisUtterance(piece);
         u.lang=lang; u.rate=0.92;
         u.onend=()=>{
+          if(generation!==state.generation)return;
           state.remaining=Math.max(0,state.remaining-1);
           if(state.remaining===0){state.utterance=null;state.utterances=[];state.playing=false;play.textContent='▶ Listen & Learn';play.dataset.playing='false';}
         };
-        u.onerror=()=>stop(play);
+        u.onerror=()=>{if(generation===state.generation)stop(play);};
         return u;
       });
       state.remaining=state.utterances.length; state.playing=true; state.utterance=state.utterances[0];
