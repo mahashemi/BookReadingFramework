@@ -14,16 +14,17 @@
     return state.manifest;
   }
 
-  function editorialTitle(title) {
+  function editorialTitle(title, text = '') {
     const key = title.trim().toLowerCase();
+    const persian = /[\\u0600-\\u06ff]/.test(text);
+    if (/^\\s*[0-9۰-۹]+[.)،ـ\\s-]+/.test(title)) return spokenSubheading(title);
+    if (key === 'opening') return persian ? 'برای شروع،' : 'To begin,';
+    if (key === 'summary' || key === 'conclusion') return persian ? 'برای جمع‌بندی،' : 'To bring these ideas together.';
     return ({
       'narration': '',
-      'opening': '',
-      'deep reading insight': 'A broader point to consider.',
-      'reflection': 'Now, pause and reflect.',
-      'transition': 'As we move forward, keep this question in mind.',
-      'summary': 'To bring these ideas together.',
-      'conclusion': 'To bring these ideas together.',
+      'deep reading insight': persian ? 'حالا کمی عمیق‌تر به معنای این نکته نگاه کنیم.' : 'A broader point to consider.',
+      'reflection': persian ? 'حالا کمی مکث کنیم و فکر کنیم.' : 'Now, pause and reflect.',
+      'transition': persian ? 'با حرکت به بخش بعد، این پرسش را در ذهن نگه داریم.' : 'As we move forward, keep this question in mind.',
       'جمع‌بندی': 'برای جمع‌بندی،',
       'جمع بندی': 'برای جمع‌بندی،',
       'تمرین شنیداری': 'حالا یک تمرین کوتاه انجام دهیم.'
@@ -88,7 +89,7 @@
     for (const section of script.sections) {
       const key = section.title.trim().toLowerCase();
       if (key === 'source map') continue;
-      const cue = editorialTitle(section.title);
+      const cue = editorialTitle(section.title, section.text);
       const text = section.text.trim();
       if (!text) continue;
       if (cue && cue !== section.title) parts.push(cue + ' ' + text);
@@ -112,7 +113,7 @@
     const section=document.createElement('section');
     section.className='section listen-learn'; section.id='listen-learn';
     const transcriptSections = script.sections.filter(s => !/^source map$/i.test(s.title) && !/^narration$/i.test(s.title));
-    section.innerHTML='<div class="card panel narration-card"><div class="num">Listen & Learn</div><h2>'+esc(script.title||entry.title||'Unit narration')+'</h2><p class="meta-line">A guided narration with explanation, connections and reflection. Source-map IDs and editorial notes are kept out of the listening transcript.</p><div class="actions narration-actions"><button class="btn primary" type="button" data-play>▶ Listen & Learn</button><button class="btn" type="button" data-transcript>Show transcript</button></div><details class="narration-transcript"><summary>Read the transcript</summary><div class="narration-body">'+transcriptSections.map(s=>'<h3>'+esc(editorialTitle(s.title)||s.title)+'</h3><p>'+esc(s.text).replace(/\n\n/g,'</p><p>').replace(/\n/g,' ')+'</p>').join('')+'</div></details></div>';
+    section.innerHTML='<div class="card panel narration-card"><div class="num">Listen & Learn</div><h2>'+esc(script.title||entry.title||'Unit narration')+'</h2><p class="meta-line">A guided narration with explanation, connections and reflection. Source-map IDs and editorial notes are kept out of the listening transcript.</p><div class="actions narration-actions"><button class="btn primary" type="button" data-play>▶ Listen & Learn</button><button class="btn" type="button" data-transcript>Show transcript</button></div><details class="narration-transcript"><summary>Read the transcript</summary><div class="narration-body">'+transcriptSections.map(s=>'<h3>'+esc(editorialTitle(s.title, s.text)||s.title)+'</h3><p>'+esc(s.text).replace(/\n\n/g,'</p><p>').replace(/\n/g,' ')+'</p>').join('')+'</div></details></div>';
     hero.insertAdjacentElement('afterend',section);
     const play=section.querySelector('[data-play]');
     play.addEventListener('click',()=>{
