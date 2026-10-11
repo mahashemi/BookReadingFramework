@@ -88,6 +88,8 @@ test("narration normalizes common markdown and spoken-list punctuation", () => {
   assert.match(narration, /replace\(\/\^\\s\*\[-\+\*\]\\s\+/);
   assert.match(narration, /replace\(\/Mu\['’\]awiyah/);
   assert.match(narration, /replace\(\/Qur\['’\]an/);
+  assert.match(narration, /replace\(\/Ja\['’\]far/);
+  assert.match(narration, /replace\(\/al-\['’\]/);
 });
 
 test("every declared narration keeps source IDs in its editorial source-map section", () => {
