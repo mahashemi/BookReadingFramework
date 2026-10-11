@@ -101,6 +101,9 @@ test("every declared narration keeps source IDs in its editorial source-map sect
       assert.ok(sourceMapStart >= 0, entry.script + " must retain its English or Persian provenance map");
       const learningText = script.slice(0, sourceMapStart);
       assert.doesNotMatch(learningText, /\bb0[123]-u\d{2}-\d{3}\b/, entry.script + " must not narrate opaque chunk IDs");
+      if (entry.script !== "audio/book02/scripts/u00.md") {
+        assert.ok(learningText.length >= 1800, entry.script + " is unusually short for a Listen & Learn script; review source-concept coverage rather than defaulting to a summary");
+      }
     }
   }
 });
