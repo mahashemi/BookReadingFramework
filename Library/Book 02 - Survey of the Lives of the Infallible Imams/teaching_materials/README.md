@@ -44,6 +44,25 @@ The teaching deck has been checked against the canonical unit inventory in `data
 
 Chapters 3/5 and 4/6 share thematic source files, but the presentation marks each source chapter separately. Chapter 8's two parts are also separated. The Foreword is intentionally omitted from the teaching sequence; the Introduction is the conceptual starting point. Whole-book retrieval slides and the speaker script/teaching guide provide synthesis beyond the slide text.
 
+## Core-concept completeness check
+
+This is a teaching synthesis, not a slide-per-chunk transcription. The deck should make each chapter's central argument teachable while the canonical chunks and study guide retain the detailed source coverage. The audit found these core concepts represented:
+
+| Source unit | Core concepts explicitly taught |
+|---|---|
+| Introduction | Stable religious essence vs. circumstance-dependent expression; taqiyyah; clothing and beard-dyeing examples |
+| Chapter 1 | Political integrity and justice; the Kharijites' formation and surface piety; Qur'ans on spears; arbitration; dissent vs. violence; Nahrawan; rumor verification; assassination and restraint after victory |
+| Chapter 2 | Jihad categories and truce conditions; Hudaybiyyah; five contrasts between al-Hassan and al-Husayn; treaty terms |
+| Chapter 3 | Worship, compassion, anonymous service during Hajj, and preserving Karbala's message |
+| Chapter 4 | Abbasid slogans; Abu Salmah's double offer; al-Sadiq's refusal; the difference between supporting reform and validating a claimant |
+| Chapter 5 | Imprisonment and refusal to submit; spiritual influence; Bishr Hafi; Safwan Jammal; reasons for martyrdom |
+| Chapter 6 | Competing explanations of Ma'mun's motive; documented events vs. disputed motives; refusal under threat; non-interference; conditional cooperation with rulers |
+| Chapter 7 | Samarra surveillance; concealed birth; Jaddah and Hakimah Khatun; continuity under pressure |
+| Chapter 8, Part 1 | Definitions and theories of justice; the promised age; long-life objection; al-Qa'im and the work of establishing justice |
+| Chapter 8, Part 2 | Qur'anic and Prophetic evidence; Sunni and Shi'ah reports; historical claimants; political appropriation; evidence vs. interpretation; active awaiting |
+
+**Scope note:** secondary details, long lists of historical reports, and every individual sub-argument are not each given a separate slide. They remain in the source-linked study material and speaker script. This table checks central-argument coverage, not verbatim exhaustiveness.
+
 ## Source alignment
 
 Teaching material is derived from:
