@@ -298,9 +298,11 @@ Interpretation must never silently become an author's claim.
 
 ### Spoken narration versus editorial structure
 
-Narration files may use editorial sections such as Narration, Deep Reading insight, Reflection, Transition, and Source map so the artifact is auditable. **Those labels are not automatically spoken.** The transcript may show them, but the speech layer should concatenate the actual prose so the listener hears a natural explanation rather than phrases such as “Deep Reading insight” or “Source map.”
+Narration files may use editorial sections such as Narration, Deep Reading insight, Reflection, Transition, and Source map so the artifact is auditable. **Editorial labels and source maps are not narration.** Keep opaque chunk IDs and source-map bullets in the Markdown source for provenance, but exclude the entire Source map section from both the listening transcript and browser speech. Never make a listener hear identifiers such as “b02-u03-001.”
 
-The narration should feel like one coherent journey: **question → source idea → explanation → consequence → connection → practice → reflection → transition**.
+The transcript and speech should both be listener-friendly. Hide redundant labels such as “Narration”; turn section changes into short, natural spoken bridges; and make subsection headings lead into their explanation rather than sounding like isolated titles. Remove Markdown formatting, list markers, raw URLs, and decorative separators from the spoken text. Normalize common transliteration punctuation that causes awkward pauses without changing the meaning of ordinary possessives or contractions. Preserve meaningful sentence punctuation and paragraph pauses.
+
+The narration should feel like one coherent journey: **question → source idea → explanation → consequence → connection → practice → reflection → transition**. The learner should be able to understand it without seeing the screen.
 
 ### Quality and runtime contract
 
