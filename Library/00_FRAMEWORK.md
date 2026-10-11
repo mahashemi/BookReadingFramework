@@ -191,6 +191,7 @@ Counterfactual Istidlal asks learners to change one meaningful premise in a sour
 For each selected question:
 
 1. Anchor it to one or more canonical learning chunks. Cover every substantive chapter or teaching unit in the book, including introductions where they contain an argument worth testing; skip front matter that offers no substantive reasoning. For a long chapter, map the major arguments and develop 6–7 distinct questions at minimum; add more where separate arguments, counterarguments, historical cases, or qualifications warrant it. Never use a fixed quota as a substitute for reading the source carefully.
+   - **Make the prerequisite concept explicit to the learner.** Every question must reference a canonical `concept_chunk_id` in its `unit_id`. In the learner-facing UI, show the concept's human-readable title immediately before the question as **“Read this concept first”**, linked directly to that concept's anchor (or to its unit page plus anchor when cross-unit). Do not show only an opaque chunk ID, and do not make learners guess which passage contains the needed reasoning. Validate that every referenced chunk exists in the stated unit and that the rendered link resolves to the matching concept.
 2. Change one consequential premise rather than merely rewording the original case.
 3. Make the learner reason through consequences, precedent, competing duties, or limits.
 4. Give a medium-length answer: source principle → inference → qualification where needed.
