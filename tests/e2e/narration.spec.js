@@ -38,3 +38,26 @@ test("Persian Book 03 narration excludes its Persian source map and redundant ed
   await expect(transcript).not.toContainText("عنوان شنیداری");
   expect(errors).toEqual([]);
 });
+
+
+test("long audiobook narration is queued in multiple speech-safe segments", async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__narrationSpoken = [];
+    window.SpeechSynthesisUtterance = function(text) { this.text = text; };
+    Object.defineProperty(window, "speechSynthesis", {
+      configurable: true,
+      value: {
+        speak(utterance) { window.__narrationSpoken.push(utterance.text); },
+        cancel() {}
+      }
+    });
+  });
+  await page.goto("/book/unit.html?book_id=book02&unit=u12", { waitUntil: "networkidle" });
+  const narration = page.locator(".listen-learn");
+  await expect(narration).toBeVisible();
+  await narration.getByRole("button", { name: "▶ Listen & Learn" }).click();
+  const segments = await page.evaluate(() => window.__narrationSpoken);
+  expect(segments.length).toBeGreaterThan(1);
+  expect(segments.join(" ")).not.toContain("b02-u12-");
+  expect(segments.join(" ")).not.toContain("Source map");
+});
