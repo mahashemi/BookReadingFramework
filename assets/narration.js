@@ -110,8 +110,8 @@
       else if (cue) parts.push(cue + ' ' + text);
       else parts.push(text);
     }
-    // One continuous narration gives speech synthesis natural sentence flow;
-    // paragraph boundaries remain pauses, not spoken punctuation or bullets.
+    // Build one continuous spoken sequence from natural paragraph-sized pieces;
+    // sentence-safe chunking keeps long chapters from being truncated by browser TTS.
     return parts.join('\n\n').replace(/[ \t]+\n/g, '\n').trim();
   }
 
