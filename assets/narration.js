@@ -13,36 +13,106 @@
     state.manifest = await r.json();
     return state.manifest;
   }
+
+  function editorialTitle(title) {
+    const key = title.trim().toLowerCase();
+    return ({
+      'narration': '',
+      'opening': '',
+      'deep reading insight': 'A broader point to consider.',
+      'reflection': 'Now, pause and reflect.',
+      'transition': 'As we move forward, keep this question in mind.',
+      'summary': 'To bring these ideas together.',
+      'conclusion': 'To bring these ideas together.',
+      'جمع‌بندی': 'برای جمع‌بندی،',
+      'جمع بندی': 'برای جمع‌بندی،',
+      'تمرین شنیداری': 'حالا یک تمرین کوتاه انجام دهیم.'
+    })[key] ?? title.trim();
+  }
+
+  function spokenSubheading(title) {
+    const clean = title.replace(/^\s*[0-9۰-۹]+[.)،ـ\s-]*/, '').replace(/[：:]$/, '').trim();
+    if (!clean) return '';
+    return /[\u0600-\u06ff]/.test(clean)
+      ? 'نکته‌ی بعدی این است: ' + clean + '.'
+      : 'The next point is ' + clean + '.';
+  }
+
+  function cleanText(value) {
+    return String(value ?? '')
+      .replace(/\[([^\]]+)\]\((?:https?:\/\/[^)\s]+|#[^)]+)\)/g, '$1')
+      .replace(/^\s*#{2,6}\s+(.+)\s*$/gm, (_, title) => spokenSubheading(title))
+      .replace(/^\s*[-+*]\s+/gm, '')
+      .replace(/^\s*\d+[.)]\s+/gm, '')
+      .replace(/^\s*[-*_]{3,}\s*$/gm, '')
+      .replace(/\*\*|__|\*|_|\`/g, '')
+      .replace(/Mu['’]awiyah/gi, 'Muawiyah')
+      .replace(/Mu['’]awiya/gi, 'Muawiya')
+      .replace(/Qur['’]an/gi, 'Quran')
+      .replace(/(^|[\s([{])['’](?=[A-Za-z])/g, '$1')
+      .replace(/[“”]/g, '"')
+      .replace(/[‘’]/g, "'")
+      .replace(/[ \t]+/g, ' ')
+      .replace(/\n[ \t]+/g, '\n')
+      .replace(/\n{3,}/g, '\n\n')
+      .trim();
+  }
+
   function parse(md) {
+    // Source maps are editorial provenance. Keep them in the Markdown file,
+    // but never expose opaque chunk IDs in the learner's transcript or audio.
+    const sourceMapStart = md.search(/^##\s+Source map\s*$/im);
+    const learningText = sourceMapStart >= 0 ? md.slice(0, sourceMapStart) : md;
     const sections = [];
     let current = null;
-    for (const line of md.split(/\r?\n/)) {
+    for (const line of learningText.split(/\r?\n/)) {
       const h = line.match(/^##\s+(.+)$/);
-      if (h) { current = {title:h[1].trim(), text:''}; sections.push(current); }
-      else if (current) current.text += (current.text ? '\n' : '') + line;
+      if (h) {
+        current = { title: h[1].trim(), text: '' };
+        sections.push(current);
+      } else if (current) {
+        current.text += (current.text ? '\n' : '') + line;
+      }
     }
     return {
-      title: ((md.match(/^#\s+(.+)$/m) || [,'Listen & Learn'])[1]).trim(),
+      title: ((learningText.match(/^#\s+(.+)$/m) || [,'Listen & Learn'])[1]).trim(),
       sections: sections.filter(s => s.text.trim()).map(s => ({
-        title:s.title,
-        text:s.text.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_>#]/g, '').replace(/\n{3,}/g, '\n\n').trim()
+        title: s.title,
+        text: cleanText(s.text)
       }))
     };
   }
+
   function spoken(script) {
-    return script.sections.filter(s => !/^source map/i.test(s.title)).map(s => s.text).join('\n\n');
+    const parts = [];
+    for (const section of script.sections) {
+      const key = section.title.trim().toLowerCase();
+      if (key === 'source map') continue;
+      const cue = editorialTitle(section.title);
+      const text = section.text.trim();
+      if (!text) continue;
+      if (cue && cue !== section.title) parts.push(cue + ' ' + text);
+      else if (cue) parts.push(cue + ' ' + text);
+      else parts.push(text);
+    }
+    // One continuous narration gives speech synthesis natural sentence flow;
+    // paragraph boundaries remain pauses, not spoken punctuation or bullets.
+    return parts.join('\n\n').replace(/[ \t]+\n/g, '\n').trim();
   }
+
   function stop(button) {
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
     state.utterance = null;
     if (button) { button.textContent='▶ Listen & Learn'; button.dataset.playing='false'; }
   }
+
   function add(entry, script) {
     const hero=document.querySelector('.unit-hero');
     if (!hero || document.querySelector('.listen-learn')) return;
     const section=document.createElement('section');
     section.className='section listen-learn'; section.id='listen-learn';
-    section.innerHTML='<div class="card panel narration-card"><div class="num">Listen & Learn</div><h2>'+esc(script.title||entry.title||'Unit narration')+'</h2><p class="meta-line">A guided narration with explanation, connections and reflection. Editorial labels are not read aloud.</p><div class="actions narration-actions"><button class="btn primary" type="button" data-play>▶ Listen & Learn</button><button class="btn" type="button" data-transcript>Show transcript</button></div><details class="narration-transcript"><summary>Read the transcript</summary><div class="narration-body">'+script.sections.map(s=>'<h3>'+esc(s.title)+'</h3><p>'+esc(s.text).replace(/\n\n/g,'</p><p>')+'</p>').join('')+'</div></details></div>';
+    const transcriptSections = script.sections.filter(s => !/^source map$/i.test(s.title) && !/^narration$/i.test(s.title));
+    section.innerHTML='<div class="card panel narration-card"><div class="num">Listen & Learn</div><h2>'+esc(script.title||entry.title||'Unit narration')+'</h2><p class="meta-line">A guided narration with explanation, connections and reflection. Source-map IDs and editorial notes are kept out of the listening transcript.</p><div class="actions narration-actions"><button class="btn primary" type="button" data-play>▶ Listen & Learn</button><button class="btn" type="button" data-transcript>Show transcript</button></div><details class="narration-transcript"><summary>Read the transcript</summary><div class="narration-body">'+transcriptSections.map(s=>'<h3>'+esc(editorialTitle(s.title)||s.title)+'</h3><p>'+esc(s.text).replace(/\n\n/g,'</p><p>').replace(/\n/g,' ')+'</p>').join('')+'</div></details></div>';
     hero.insertAdjacentElement('afterend',section);
     const play=section.querySelector('[data-play]');
     play.addEventListener('click',()=>{
@@ -56,6 +126,7 @@
     });
     section.querySelector('[data-transcript]').addEventListener('click',e=>{const d=section.querySelector('details');d.open=!d.open;e.currentTarget.textContent=d.open?'Hide transcript':'Show transcript';});
   }
+
   async function enhance() {
     const id=unitId(); if(!id||!document.querySelector('.unit-hero')||document.querySelector('.listen-learn'))return;
     try {
