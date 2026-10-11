@@ -4,8 +4,8 @@
   "title": "Counterfactual Istidlal — Curated Questions Across Book 02",
   "description": "A concise, carefully curated bank for the Introduction and every chapter. Answers include direct links to relevant Qur'anic verses and source passages. Hypothetical conclusions are inferences, not claims that classical sources explicitly answered these exact questions.",
   "coverage": {
-    "concepts_covered": 16,
-    "total_items": 16,
+    "concepts_covered": 33,
+    "total_items": 33,
     "selection_policy": "Curated for distinct learning value; no quota per concept."
   },
   "source_catalog": {
@@ -60,7 +60,7 @@
     "quran-5-8": {
       "work": "The Qur'an",
       "author": "Allah",
-      "locator": "Surah al-Ma'idah 5:8 — do not let hatred make you depart from justice",
+      "locator": "Surah al-Ma'idah 5:8",
       "url": "https://quran.com/5/8"
     },
     "quran-6-57": {
@@ -78,7 +78,7 @@
     "quran-17-36": {
       "work": "The Qur'an",
       "author": "Allah",
-      "locator": "Surah al-Isra' 17:36 — do not pursue what you have no knowledge of",
+      "locator": "Surah al-Isra' 17:36",
       "url": "https://quran.com/17/36"
     },
     "quran-49-6": {
@@ -134,6 +134,120 @@
       "author": "Allah",
       "locator": "Surah al-Anfal 8:61",
       "url": "https://quran.com/8/61"
+    },
+    "book-u05": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 3: A Discourse on Imam Zayn al-'Abidin",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-3-discourse-imam-zayn-al-abidin"
+    },
+    "book-u06": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 4: Imam al-Sadiq and the Issue of Vicegerency",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-4-imam-al-sadiq-and-issue-vicegerency"
+    },
+    "book-u07": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 5: The Reasons for Imam Musa al-Kazim's Martyrdom",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-5-reasons-imam-musa-al-kazims-martyrdom"
+    },
+    "book-u08": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 6: Imam al-Rida as the Crown Prince (Session 1)",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-rida-crown-prince-session-1"
+    },
+    "book-u09": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 6: Imam al-Rida as the Crown Prince (Session 2)",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-6-issue-imam-al-ridaa-crown-prince-session"
+    },
+    "book-u10": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 7: On the Topic of Imam al-Hassan al-'Askari",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-7-topic-imam-al-hassan-al-askari"
+    },
+    "book-u11": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 8, Part 1: The Universal Justice",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-1-universal-justice"
+    },
+    "book-u12": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 8, Part 2: The Promised al-Mahdi",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi"
+    },
+    "quran-107-1-7": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Ma'un 107:1–7",
+      "url": "https://quran.com/107/1-7"
+    },
+    "quran-4-36": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Nisa' 4:36",
+      "url": "https://quran.com/4/36"
+    },
+    "quran-2-271": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Baqarah 2:271",
+      "url": "https://quran.com/2/271"
+    },
+    "quran-61-2-3": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Saff 61:2–3",
+      "url": "https://quran.com/61/2-3"
+    },
+    "quran-33-70": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Ahzab 33:70",
+      "url": "https://quran.com/33/70"
+    },
+    "quran-12-55": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah Yusuf 12:55",
+      "url": "https://quran.com/12/55"
+    },
+    "quran-28-4-6": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Qasas 28:4–6",
+      "url": "https://quran.com/28/4-6"
+    },
+    "quran-16-43": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Nahl 16:43",
+      "url": "https://quran.com/16/43"
+    },
+    "quran-21-105": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Anbiya' 21:105",
+      "url": "https://quran.com/21/105"
+    },
+    "quran-7-56": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-A'raf 7:56",
+      "url": "https://quran.com/7/56"
+    },
+    "quran-11-88": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah Hud 11:88",
+      "url": "https://quran.com/11/88"
     }
   },
   "counterfactuals": [
@@ -375,6 +489,250 @@
       "source_ids": [
         "book-u04",
         "quran-4-135"
+      ]
+    },
+    {
+      "id": "cf-u05-01",
+      "unit_id": "u05",
+      "concept_chunk_id": "b02-u05-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If Imam Zayn al-'Abidin's spirituality were measured only by private worship, what part of Mutahhari's portrait would disappear?",
+      "answer": "His spirituality would be separated from its social consequences. Mutahhari emphasizes that the Imam welcomed people who were poor, isolated, or stigmatized and served fellow pilgrims without relying on his status. [Qur'an 107:1–7](https://quran.com/107/1-7) criticizes religious performance that neglects the needy, while [Qur'an 4:36](https://quran.com/4/36) commands kindness to vulnerable neighbors and travelers. The point is not to diminish worship, but to ask whether worship is forming compassion and responsibility.",
+      "istidlal_takeaway": "Spirituality is incomplete when devotion does not deepen care for people who are easily overlooked.",
+      "source_ids": [
+        "book-u05",
+        "quran-107-1-7",
+        "quran-4-36"
+      ]
+    },
+    {
+      "id": "cf-u05-02",
+      "unit_id": "u05",
+      "concept_chunk_id": "b02-u05-004",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose pilgrims had known the Imam's identity from the beginning and treated him as an honored leader. What might anonymous service teach that praise could not?",
+      "answer": "Anonymous service makes the act itself, rather than status or social return, the center of attention. It also tests whether a person will perform humble work without the prestige of serving a famous figure. [Qur'an 2:271](https://quran.com/2/271) notes the value of giving charity privately as well as openly; it does not make secrecy mandatory, but helps explain why hidden service can protect sincerity from becoming a performance.",
+      "istidlal_takeaway": "Hidden service can test sincerity by removing the social reward that accompanies a revered name.",
+      "source_ids": [
+        "book-u05",
+        "quran-2-271"
+      ]
+    },
+    {
+      "id": "cf-u06-01",
+      "unit_id": "u06",
+      "concept_chunk_id": "b02-u06-004",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If a political organizer used the language of the Ahl al-Bayt but secretly offered power to rival claimants, what would that reveal about the offer?",
+      "answer": "It would weaken the claim that the organizer was acting from settled commitment to one rightful leader. Mutahhari presents Abu Salmah's parallel letters as evidence that a sacred slogan and sincere allegiance are not the same thing. [Qur'an 61:2–3](https://quran.com/61/2-3) rebukes the gap between professed words and conduct; it is a general principle, not a direct verdict on Abu Salmah. The practical test is whether actions and commitments match the public claim.",
+      "istidlal_takeaway": "A movement's slogans are not proof of its loyalty; test its conduct and commitments.",
+      "source_ids": [
+        "book-u06",
+        "quran-61-2-3"
+      ]
+    },
+    {
+      "id": "cf-u06-02",
+      "unit_id": "u06",
+      "concept_chunk_id": "b02-u06-008",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose Muhammad Nafs al-Zakiyyah's uprising opposed oppression, but his identification as the Promised Mahdi remained unproven. Could one support the cause while rejecting that claim?",
+      "answer": "Yes; those are distinct judgments. The chapter reports Imam al-Sadiq distinguishing the principle of resisting oppression from accepting a specific claimant as the Promised Mahdi. [Qur'an 17:36](https://quran.com/17/36) warns against following what one has no knowledge of, so a worthy cause cannot substitute for evidence about a person's identity or status. This does not settle every question about supporting the uprising; it prevents one unproven claim from being smuggled in with another moral claim.",
+      "istidlal_takeaway": "Support for a just aim does not establish every claim made by the movement pursuing it.",
+      "source_ids": [
+        "book-u06",
+        "quran-17-36"
+      ]
+    },
+    {
+      "id": "cf-u07-01",
+      "unit_id": "u07",
+      "concept_chunk_id": "b02-u07-005",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If Imam Musa al-Kazim could have left prison by making a false confession that legitimized Harun's accusation, would release alone make that choice wise?",
+      "answer": "Release would matter, but the confession would also change the public meaning of the imprisonment: it could make coercion appear justified. Mutahhari presents the Imam's refusal as a refusal to validate a charge he did not accept. [Qur'an 33:70](https://quran.com/33/70) commands believers to speak rightly; it is a general principle, not a direct ruling on this historical report. The hypothetical asks us to weigh survival against whether a compelled statement would mislead others or surrender the truth.",
+      "istidlal_takeaway": "A benefit gained by a false public confession may carry a cost beyond the person making it.",
+      "source_ids": [
+        "book-u07",
+        "quran-33-70"
+      ]
+    },
+    {
+      "id": "cf-u07-02",
+      "unit_id": "u07",
+      "concept_chunk_id": "b02-u07-011",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If every form of work connected to an unjust ruler were forbidden, how could a believer ever protect people from harm within a corrupt administration?",
+      "answer": "A blanket rule would erase the distinction the chapter draws between cooperation that serves the ruler's interests and work that genuinely protects people. Prophet Yusuf asks to manage the storehouses because he is capable ([Qur'an 12:55](https://quran.com/12/55)); that example does not make every appointment under an unjust ruler permissible. Purpose, likely effects, alternatives, and whether the role helps or legitimizes wrongdoing still require scrutiny.",
+      "istidlal_takeaway": "Cooperation must be judged by what it enables and whom it serves, not by the job title alone.",
+      "source_ids": [
+        "book-u07",
+        "quran-12-55"
+      ]
+    },
+    {
+      "id": "cf-u08-01",
+      "unit_id": "u08",
+      "concept_chunk_id": "b02-u08-004",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If Ma'mun's motives for appointing Imam al-Rida were uncertain, what would go wrong if a teacher presented one theory as established fact?",
+      "answer": "The teacher would erase the distinction Mutahhari makes between reported events and competing explanations of motive. The summons, refusal, threat, and condition of non-interference are treated differently from hypotheses about Ma'mun's sincerity or political calculation. [Qur'an 17:36](https://quran.com/17/36) warns against following what one does not know; here that means labeling uncertainty honestly, not refusing to interpret evidence. A plausible explanation should remain a hypothesis until the sources justify stronger confidence.",
+      "istidlal_takeaway": "Historical reasoning must label inference as inference, especially when claiming to know another person's motives.",
+      "source_ids": [
+        "book-u08",
+        "quran-17-36"
+      ]
+    },
+    {
+      "id": "cf-u08-02",
+      "unit_id": "u08",
+      "concept_chunk_id": "b02-u08-013",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose Imam al-Rida accepted the succession only after an explicit threat to his life. Would acceptance by itself prove that he endorsed Ma'mun's legitimacy?",
+      "answer": "No. Consent under coercion and voluntary endorsement are not equivalent, and the chapter reports that the Imam accepted only after refusing and setting a condition of non-interference. Prophet Yusuf's request for a public office ([Qur'an 12:55](https://quran.com/12/55)) is a separate case of seeking a beneficial role; it cannot erase the difference between voluntary service and compelled acceptance. The terms and surrounding evidence determine what the action signifies.",
+      "istidlal_takeaway": "An outward title does not by itself reveal whether the person accepted its political meaning freely.",
+      "source_ids": [
+        "book-u08",
+        "quran-12-55"
+      ]
+    },
+    {
+      "id": "cf-u09-01",
+      "unit_id": "u09",
+      "concept_chunk_id": "b02-u09-017",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If working inside an unjust government can sometimes protect the public, what evidence distinguishes principled service from becoming a tool of oppression?",
+      "answer": "The mere fact that an office offers influence is not enough. Mutahhari contrasts Safwan Jammal's financially motivated service with 'Ali ibn Yaqtin's position, which could protect believers, and discusses Yusuf's public role as an analogy. [Qur'an 12:55](https://quran.com/12/55) supports Yusuf's request in its specific context; it is not a universal license to serve tyrants. Ask whether the role reduces injustice, whether wrongful orders can be refused, and whether the public benefit is real rather than cover for private gain.",
+      "istidlal_takeaway": "Service under a ruler is defensible only when its purpose and actual effects can be morally defended.",
+      "source_ids": [
+        "book-u09",
+        "quran-12-55"
+      ]
+    },
+    {
+      "id": "cf-u09-02",
+      "unit_id": "u09",
+      "concept_chunk_id": "b02-u09-005",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose the crown-prince title brought Imam al-Rida prestige but no power to change government decisions. Why would the condition of non-interference still matter?",
+      "answer": "It marks a boundary between holding a public title and accepting responsibility for the ruler's actions. The chapter treats the condition, the Imam's earlier refusal, and his independent conduct as evidence that the title should not be read as simple endorsement. [Qur'an 4:135](https://quran.com/4/135) calls for justice even when it is personally costly; a ceremonial role cannot be judged solely by prestige if it might make an unjust arrangement appear legitimate.",
+      "istidlal_takeaway": "A public title and practical responsibility differ; examine the terms and the message the role sends.",
+      "source_ids": [
+        "book-u09",
+        "quran-4-135"
+      ]
+    },
+    {
+      "id": "cf-u10-01",
+      "unit_id": "u10",
+      "concept_chunk_id": "b02-u10-005",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If a ruler believed a future reformer would threaten his dynasty, could surveillance and force prove that the ruler's fear was justified?",
+      "answer": "They could reveal the ruler's fear, but not prove that the feared claim was false or that repression was just. Mutahhari compares the authorities' efforts with Pharaoh's oppression in the Qur'anic account ([28:4–6](https://quran.com/28/4-6)); this is an analogy about power trying to control a perceived threat, not independent proof of every historical detail. Explaining why a ruler acts is different from establishing whether the action is right.",
+      "istidlal_takeaway": "A ruler's attempt to suppress a belief reveals policy or fear, not proof that the belief is false.",
+      "source_ids": [
+        "book-u10",
+        "quran-28-4-6"
+      ]
+    },
+    {
+      "id": "cf-u10-02",
+      "unit_id": "u10",
+      "concept_chunk_id": "b02-u10-010",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If the community could not openly consult the Imam under surveillance, would religious guidance and responsibility simply disappear?",
+      "answer": "Not necessarily. The chapter describes Jaddah and Hakimah Khatun as helping preserve guidance and answer practical questions under extraordinary constraints. [Qur'an 16:43](https://quran.com/16/43) instructs people to ask those who possess knowledge when they do not know; applying that general principle still requires care about qualification and what a report establishes. Restricted access can change how a community seeks guidance without making verification optional.",
+      "istidlal_takeaway": "Restricted access can change how a community seeks guidance without making careful knowledge-seeking optional.",
+      "source_ids": [
+        "book-u10",
+        "quran-16-43"
+      ]
+    },
+    {
+      "id": "cf-u11-01",
+      "unit_id": "u11",
+      "concept_chunk_id": "b02-u11-011",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a powerful person could violate others' rights without risking retaliation. If justice depended only on self-interest, what reason would remain for restraint?",
+      "answer": "The theory would struggle precisely where its incentive disappears. Mutahhari's critique asks whether justice remains binding when someone becomes powerful enough to avoid consequences. [Qur'an 4:135](https://quran.com/4/135) commands justice even against one's own interests, and [Letter 53 of Nahj al-Balagha](https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/letter-53-order-malik-al-ashtar) emphasizes a ruler's duty toward people with less power. These sources do not replace the philosophical argument; they show the ethical standard the chapter asks us to explain.",
+      "istidlal_takeaway": "A theory of justice must explain why the powerful should act justly when injustice would benefit them.",
+      "source_ids": [
+        "book-u11",
+        "quran-4-135",
+        "nahj-53"
+      ]
+    },
+    {
+      "id": "cf-u11-02",
+      "unit_id": "u11",
+      "concept_chunk_id": "b02-u11-007",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If justice means giving everyone exactly the same thing in every circumstance, could identical treatment itself become unfair?",
+      "answer": "Yes. Equal dignity does not always imply identical allocation where needs, responsibilities, or relevant qualifications differ. Mutahhari distinguishes justice from mechanical sameness; [Qur'an 5:8](https://quran.com/5/8) requires justice even when emotions pull us away from it, while [Letter 53 of Nahj al-Balagha](https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/letter-53-order-malik-al-ashtar) directs a governor's attention to the vulnerable. The difficult task is to show that different treatment rests on a relevant reason rather than favoritism or prejudice.",
+      "istidlal_takeaway": "Fairness requires relevant reasons for different treatment, not automatic sameness or arbitrary preference.",
+      "source_ids": [
+        "book-u11",
+        "quran-5-8",
+        "nahj-53"
+      ]
+    },
+    {
+      "id": "cf-u12-01",
+      "unit_id": "u12",
+      "concept_chunk_id": "b02-u12-013",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If many people across history claimed to be the Promised Mahdi, would that alone disprove the belief—or prove any one claimant genuine?",
+      "answer": "Neither conclusion follows. A history of false or disputed claimants can show that the idea had real influence, but it cannot by itself establish or refute the identity of the promised figure. Mutahhari distinguishes historical claims from evidence offered for them. [Qur'an 17:36](https://quran.com/17/36) warns against following what one has no knowledge of, while [Qur'an 21:105](https://quran.com/21/105) is discussed as a general foundation concerning the righteous inheriting the earth—not as a standalone identification of a particular claimant.",
+      "istidlal_takeaway": "Evidence for a general promise and evidence that a particular person fulfills it are different questions.",
+      "source_ids": [
+        "book-u12",
+        "quran-17-36",
+        "quran-21-105"
+      ]
+    },
+    {
+      "id": "cf-u12-02",
+      "unit_id": "u12",
+      "concept_chunk_id": "b02-u12-022",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose someone argued that society must become more corrupt before the Imam can reappear, so believers should stop reforming it. What is the flaw in that reasoning?",
+      "answer": "It turns a description of future events into permission to help produce the corruption believers should resist. Mutahhari rejects the claim that awaiting reappearance means abandoning reform or religious duties. [Qur'an 7:56](https://quran.com/7/56) warns against spreading corruption on earth after it has been set right, and [Qur'an 11:88](https://quran.com/11/88) presents reform as a positive aim. These verses do not predict the timing of reappearance; they challenge the inference that one should deliberately worsen society to hasten it.",
+      "istidlal_takeaway": "Awaiting a promised just future is not permission to abandon present duties or manufacture injustice.",
+      "source_ids": [
+        "book-u12",
+        "quran-7-56",
+        "quran-11-88"
+      ]
+    },
+    {
+      "id": "cf-u12-03",
+      "unit_id": "u12",
+      "concept_chunk_id": "b02-u12-024",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If belief in the Mahdi's future victory guaranteed that justice would eventually prevail, why would prayer, reform, and social responsibility still matter now?",
+      "answer": "Because the promised outcome does not logically cancel present obligations. Mutahhari treats genuine awaiting as active responsibility, not passive expectation or deliberate corruption. [Qur'an 11:88](https://quran.com/11/88) describes the aim of reform, and [Qur'an 5:8](https://quran.com/5/8) requires justice even when difficult. Belief in future transformation should intensify commitment to the values it promises, rather than become an excuse to postpone them.",
+      "istidlal_takeaway": "Hope in future justice should motivate present justice, not replace it.",
+      "source_ids": [
+        "book-u12",
+        "quran-11-88",
+        "quran-5-8"
       ]
     }
   ]
