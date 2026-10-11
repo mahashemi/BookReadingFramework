@@ -56,12 +56,33 @@ jobs:
           path: playwright-report/
           if-no-files-found: ignore
 
+  teaching-deck:
+    name: Compile Book 02 teaching deck
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install LaTeX packages
+        run: sudo apt-get update && sudo apt-get install -y texlive-latex-extra
+      - name: Compile deck
+        working-directory: Library/Book 02 - Survey of the Lives of the Infallible Imams/teaching_materials
+        run: |
+          pdflatex -interaction=nonstopmode -halt-on-error main.tex
+          pdflatex -interaction=nonstopmode -halt-on-error main.tex
+      - name: Upload compiled deck
+        uses: actions/upload-artifact@v4
+        with:
+          name: book02-teaching-deck
+          path: Library/Book 02 - Survey of the Lives of the Infallible Imams/teaching_materials/main.pdf
+          if-no-files-found: error
+
   deploy:
     name: Deploy GitHub Pages
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs:
       - structural-tests
       - browser-tests
+      - teaching-deck
     runs-on: ubuntu-latest
     permissions:
       contents: read
