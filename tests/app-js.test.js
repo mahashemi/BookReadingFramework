@@ -71,9 +71,9 @@ const narrationPath = path.join(__dirname, "..", "assets", "narration.js");
 const narration = fs.readFileSync(narrationPath, "utf8");
 
 test("narration player keeps source-map identifiers out of the transcript and spoken text", () => {
-  assert.match(narration, /const sourceMapStart = md\.search\(\/\^##\\s\+Source map/);
-  assert.match(narration, /script\.sections\.filter\(s => !\/\^source map\$\/i\.test\(s\.title\)/);
-  assert.match(narration, /if \(key === 'source map'\) continue/);
+  assert.match(narration, /const sourceMapStart = md\.search\(\/\^#\{2,6\}\\s\+\(\?:source map/);
+  assert.match(narration, /script\.sections\.filter\(s => !\/\^\(\?:source map/);
+  assert.match(narration, /if \(\/\^\(\?:source map/);
   assert.match(narration, /Source-map IDs and editorial notes are kept out/);
 });
 
@@ -97,8 +97,8 @@ test("every declared narration keeps source IDs in its editorial source-map sect
     for (const entry of Object.values(book.units)) {
       const scriptPath = path.join(__dirname, "..", entry.script);
       const script = fs.readFileSync(scriptPath, "utf8");
-      const sourceMapStart = script.search(/^##\s+Source map\s*$/im);
-      assert.ok(sourceMapStart >= 0, entry.script + " must retain its provenance map");
+      const sourceMapStart = script.search(/^#{2,6}\s+(?:source map|نقشه(?:‌| )منبع|نقشه(?:‌| )منابع)\s*$/im);
+      assert.ok(sourceMapStart >= 0, entry.script + " must retain its English or Persian provenance map");
       const learningText = script.slice(0, sourceMapStart);
       assert.doesNotMatch(learningText, /\bb0[123]-u\d{2}-\d{3}\b/, entry.script + " must not narrate opaque chunk IDs");
     }
