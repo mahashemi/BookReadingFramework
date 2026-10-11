@@ -84,3 +84,32 @@ test("Book 02 Counterfactual Istidlal is rendered in the shared unit experience"
   assert.match(app, /istidlal_takeaway/);
   assert.match(app, /source_catalog/);
 });
+
+test("Book 02 teaching deck clearly separates the source chapters", () => {
+  const root = "Library/Book 02 - Survey of the Lives of the Infallible Imams/teaching_materials/";
+  const main = readText(root + "main.tex");
+  assert.match(main, /\\\\newcommand\{\\\\chapterdivider\}/);
+
+  const deck = [
+    "sections/00_intro.tex",
+    "sections/01_ali.tex",
+    "sections/02_hassan.tex",
+    "sections/03_spiritual_resistance.tex",
+    "sections/04_political_openings.tex",
+    "sections/05_askari.tex",
+    "sections/06_justice_mahdi.tex"
+  ].map(path => readText(root + path)).join("\\n");
+
+  for (const label of [
+    "\\chapterdivider{Introduction}",
+    "\\chapterdivider{Chapter 1}",
+    "\\chapterdivider{Chapter 2}",
+    "\\chapterdivider{Chapter 3}",
+    "\\chapterdivider{Chapter 4}",
+    "\\chapterdivider{Chapter 5}",
+    "\\chapterdivider{Chapter 6}",
+    "\\chapterdivider{Chapter 7}",
+    "\\chapterdivider{Chapter 8 — Part 1}",
+    "\\chapterdivider{Chapter 8 — Part 2}"
+  ]) assert.ok(deck.includes(label), "missing chapter divider: " + label);
+});
