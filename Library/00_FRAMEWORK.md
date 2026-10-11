@@ -298,16 +298,20 @@ Interpretation must never silently become an author's claim.
 
 ### Spoken narration versus editorial structure
 
-Narration files may use editorial sections such as Narration, Deep Reading insight, Reflection, Transition, and Source map so the artifact is auditable. **Those labels are not automatically spoken.** The transcript may show them, but the speech layer should concatenate the actual prose so the listener hears a natural explanation rather than phrases such as “Deep Reading insight” or “Source map.”
+Narration files may use editorial sections such as Narration, Deep Reading insight, Reflection, Transition, and Source map so the artifact is auditable. **Editorial labels and source maps are not narration.** Keep opaque chunk IDs and source-map bullets in the Markdown source for provenance, but exclude the entire Source map section from both the listening transcript and browser speech. Never make a listener hear identifiers such as “b02-u03-001.”
 
-The narration should feel like one coherent journey: **question → source idea → explanation → consequence → connection → practice → reflection → transition**.
+The transcript and speech should both be listener-friendly. Hide redundant labels such as “Narration”; turn section changes into short, natural spoken bridges; and make subsection headings lead into their explanation rather than sounding like isolated titles. Remove Markdown formatting, list markers, raw URLs, and decorative separators from the spoken text. Normalize common transliteration punctuation that causes awkward pauses without changing the meaning of ordinary possessives or contractions. Preserve meaningful sentence punctuation and paragraph pauses.
+
+The narration should feel like one coherent journey: **question → source idea → explanation → consequence → connection → practice → reflection → transition**. The learner should be able to understand it without seeing the screen.
 
 ### Quality and runtime contract
 
-- Ground every script in canonical chunks and a source map.
-- Explain important concepts rather than read headings or JSON.
-- Distinguish interpretation from the author's wording.
-- Preserve important original-language terms.
+- Ground every script in canonical chunks and a source map. The source map is editorial metadata and may be titled in English or Persian; it must never enter the listener-facing transcript or spoken text.
+- **Do not reduce a chapter to a short summary.** The goal is a complete audiobook and guided learning experience, not a recap. Preserve the chapter's important claims, reasoning steps, distinctions, examples, qualifications, original terminology, and the connections between ideas. A listener should be able to follow the substance without reading the source or looking at the screen.
+- Represent all major concepts from the unit's canonical chunks. Use the chapter's complexity and source length to determine narration length; do not enforce one arbitrary word count, but flag unusually short scripts for a coverage review rather than treating brevity as a quality goal.
+- Use two clearly signaled layers: first, a faithful source-grounded explanation of what the author argues; second, deeper-reading insights, connections, practical examples, and reflection. Make it clear when interpretation begins, and never attribute the interpretive layer to the author.
+- Explain important concepts in complete spoken prose rather than reading headings, IDs, JSON, or lists aloud. Use natural bridges so headings and paragraphs sound like one coherent argument when spoken.
+- Preserve important original-language terms and explain unfamiliar terms when needed for a listener.
 - Never invent quotations, citations, page references, or unsupported claims.
 - Keep scripts as editorial learning artifacts, not duplicate concept or question databases.
 - Do not commit large recorded audio binaries; professionally recorded media may live externally.

@@ -65,3 +65,49 @@ test("counterfactual answers render safe inline HTTPS references", () => {
   assert.match(app, /linkedText\(x\.answer\)/);
   assert.match(app, /target="_blank" rel="noopener"/);
 });
+
+
+const narrationPath = path.join(__dirname, "..", "assets", "narration.js");
+const narration = fs.readFileSync(narrationPath, "utf8");
+
+test("narration player keeps source-map identifiers out of the transcript and spoken text", () => {
+  assert.match(narration, /const sourceMapStart = md\.search\(\/\^#\{2,6\}\\s\+\(\?:source map/);
+  assert.match(narration, /script\.sections\.filter\(s => !\/\^\(\?:source map/);
+  assert.match(narration, /if \(\/\^\(\?:source map/);
+  assert.match(narration, /Source-map IDs and editorial notes are kept out/);
+});
+
+test("narration converts editorial section labels into listener-friendly transitions", () => {
+  assert.match(narration, /A broader point to consider\./);
+  assert.match(narration, /Now, pause and reflect\./);
+  assert.match(narration, /As we move forward, keep this question in mind\./);
+  assert.match(narration, /spokenSubheading\(title\)/);
+  assert.match(narration, /function speechPieces\(text, maxChars = 1100\)/);
+  assert.ok(narration.includes("state.utterances.forEach(u=>window.speechSynthesis.speak(u));"));
+});
+
+test("narration normalizes common markdown and spoken-list punctuation", () => {
+  assert.match(narration, /replace\(\/\^\\s\*\[-\+\*\]\\s\+/);
+  assert.match(narration, /replace\(\/Mu\['’\]awiyah/);
+  assert.match(narration, /replace\(\/Qur\['’\]an/);
+  assert.match(narration, /replace\(\/Ja\['’\]far/);
+  assert.match(narration, /replace\(\/al-\['’\]/);
+});
+
+test("every declared narration keeps source IDs in its editorial source-map section", () => {
+  const manifestPath = path.join(__dirname, "..", "audio", "manifest.json");
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  for (const book of Object.values(manifest.books)) {
+    for (const entry of Object.values(book.units)) {
+      const scriptPath = path.join(__dirname, "..", entry.script);
+      const script = fs.readFileSync(scriptPath, "utf8");
+      const sourceMapStart = script.search(/^#{2,6}\s+(?:source map|نقشه(?:‌| )منبع|نقشه(?:‌| )منابع)\s*$/im);
+      assert.ok(sourceMapStart >= 0, entry.script + " must retain its English or Persian provenance map");
+      const learningText = script.slice(0, sourceMapStart);
+      assert.doesNotMatch(learningText, /\bb0[123]-u\d{2}-\d{3}\b/, entry.script + " must not narrate opaque chunk IDs");
+      if (entry.script !== "audio/book02/scripts/u00.md") {
+        assert.ok(learningText.length >= 1800, entry.script + " is unusually short for a Listen & Learn script; review source-concept coverage rather than defaulting to a summary");
+      }
+    }
+  }
+});
