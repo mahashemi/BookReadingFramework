@@ -51,13 +51,16 @@ test("Book 02 Chapter 1 counterfactual Istidlal bank is complete and traceable",
   const root = "Library/Book 02 - Survey of the Lives of the Infallible Imams/";
   const bank = readJson(root + book.data.counterfactuals);
   assert.equal(bank.book_id, "book02");
-  assert.equal(bank.counterfactuals.length, 35);
-  assert.equal(bank.coverage.concepts_covered, 13);
+  assert.equal(bank.counterfactuals.length, 10, "keep only the curated, non-repetitive core set");
+  assert.equal(bank.coverage.concepts_covered, 10);
 
+  const chunks = readJson(root + "data/chunks.json");
+  const canonicalChunkIds = new Set(chunks.units.flatMap(unit => unit.chunks.map(chunk => chunk.id)));
   const counts = new Map();
   for (const item of bank.counterfactuals) {
     assert.match(item.id, /^cf-u02-/);
     assert.equal(item.unit_id, "u02");
+    assert.ok(canonicalChunkIds.has(item.concept_chunk_id), item.id + " references an unknown canonical chunk");
     assert.match(item.skill, /^counterfactual-istidlal$/);
     assert.ok(item.prompt.length >= 80, item.id + " prompt is too short");
     assert.ok(item.answer.length >= 120, item.id + " answer is too short");
@@ -66,8 +69,10 @@ test("Book 02 Chapter 1 counterfactual Istidlal bank is complete and traceable",
     for (const sourceId of item.source_ids) assert.ok(bank.source_catalog[sourceId], item.id + " has unknown source " + sourceId);
     counts.set(item.concept_chunk_id, (counts.get(item.concept_chunk_id) || 0) + 1);
   }
-  assert.equal(counts.size, 13);
-  for (const [chunkId, count] of counts) assert.ok(count >= 2, chunkId + " has fewer than 2 counterfactuals");
+  assert.equal(counts.size, 10, "each curated question should anchor a distinct concept chunk");
+  assert.ok(bank.counterfactuals.some(item => item.source_ids.some(id => id.startsWith("quran-"))), "include Qur'anic evidence where relevant");
+  assert.ok(bank.counterfactuals.some(item => item.source_ids.some(id => id.startsWith("nahj-"))), "include hadith evidence where relevant");
+  assert.equal(bank.coverage.selection_policy, "Curated for distinct learning value; no quota per concept.");
 });
 
 
@@ -78,4 +83,33 @@ test("Book 02 Counterfactual Istidlal is rendered in the shared unit experience"
   assert.match(app, /Reveal the reasoning/);
   assert.match(app, /istidlal_takeaway/);
   assert.match(app, /source_catalog/);
+});
+
+test("Book 02 teaching deck clearly separates the source chapters", () => {
+  const root = "Library/Book 02 - Survey of the Lives of the Infallible Imams/teaching_materials/";
+  const main = readText(root + "main.tex");
+  assert.match(main, /\\newcommand\{\\chapterdivider\}/);
+
+  const deck = [
+    "sections/00_intro.tex",
+    "sections/01_ali.tex",
+    "sections/02_hassan.tex",
+    "sections/03_spiritual_resistance.tex",
+    "sections/04_political_openings.tex",
+    "sections/05_askari.tex",
+    "sections/06_justice_mahdi.tex"
+  ].map(path => readText(root + path)).join("\n");
+
+  for (const label of [
+    "\\chapterdivider{Introduction}",
+    "\\chapterdivider{Chapter 1}",
+    "\\chapterdivider{Chapter 2}",
+    "\\chapterdivider{Chapter 3}",
+    "\\chapterdivider{Chapter 4}",
+    "\\chapterdivider{Chapter 5}",
+    "\\chapterdivider{Chapter 6}",
+    "\\chapterdivider{Chapter 7}",
+    "\\chapterdivider{Chapter 8 — Part 1}",
+    "\\chapterdivider{Chapter 8 — Part 2}"
+  ]) assert.ok(deck.includes(label), "missing chapter divider: " + label);
 });

@@ -184,6 +184,53 @@ Teaching material and exam preparation should share the same conceptual question
 
 These questions are not filler. They are a bridge between teaching discussion and exam mastery. If the real exam has a small number of questions, practice should still be much larger so that the learner is prepared for the worst case.
 
+## Module 6D — Counterfactual Istidlal
+
+Counterfactual Istidlal asks learners to change one meaningful premise in a source-grounded case and reason carefully about what follows. It is not a large collection of near-duplicate "what if" prompts. **Curate for distinct learning value, not a quota:** keep only questions that test a different principle, distinction, consequence, or failure mode. A small set of excellent questions is better than a long repetitive bank.
+
+For each selected question:
+
+1. Anchor it to one or more canonical learning chunks.
+2. Change one consequential premise rather than merely rewording the original case.
+3. Make the learner reason through consequences, precedent, competing duties, or limits.
+4. Give a medium-length answer: source principle → inference → qualification where needed.
+5. Include Qur'anic verses and/or hadith when they genuinely strengthen the reasoning. Give a precise locator and a stable source link; do not add scripture as decoration.
+6. Distinguish what a source explicitly says from the conclusion inferred for the hypothetical. Never claim that a classical source directly answered a modern counterfactual unless it actually did.
+7. Preserve relevant distinctions (for example, ordinary political deception versus specifically evidenced exceptions; dissent versus violence; serious sin versus takfir; justice versus identical treatment).
+8. Cite the source IDs in the bank and keep a source catalog. If the authenticity, wording, or locator of a report is disputed or uncertain, say so instead of overstating it.
+
+A useful answer structure is **changed premise → source principle → likely consequence → boundary/qualification → conclusion**. Test second-order effects when they add real insight (for example, what happens when an exception becomes a precedent for future rulers), but avoid repeating the same consequence across several questions.
+
+The bank may use this schema (fields may be extended only when the framework is deliberately revised):
+
+~~~json
+{
+  "schema_version": "1.0",
+  "book_id": "book02",
+  "counterfactuals": [
+    {
+      "id": "cf-u02-core-01",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "What if ...?",
+      "answer": "Medium-length source-grounded reasoning, with inference clearly distinguished from quotation.",
+      "istidlal_takeaway": "The core reasoning principle in one sentence.",
+      "source_ids": ["..."]
+    }
+  ],
+  "source_catalog": {
+    "...": {
+      "work": "...",
+      "author": "...",
+      "locator": "...",
+      "url": "..."
+    }
+  }
+}
+~~~
+
 ## Module 6B — Generic Study Engine
 Use a locked separation of concerns:
 ```
