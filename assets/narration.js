@@ -22,9 +22,18 @@
     if (key === 'summary' || key === 'conclusion') return persian ? 'برای جمع‌بندی،' : 'To bring these ideas together.';
     return ({
       'narration': '',
+      'opening': persian ? 'برای شروع،' : 'To begin,',
+      'عنوان شنیداری': '',
+      'source-grounded narration': persian ? 'روایت از متن:' : 'From the source:',
+      'روایت': 'روایت از متن',
       'deep reading insight': persian ? 'حالا کمی عمیق‌تر به معنای این نکته نگاه کنیم.' : 'A broader point to consider.',
+      'بینشِ خوانش عمیق': 'نگاهی عمیق‌تر',
       'reflection': persian ? 'حالا کمی مکث کنیم و فکر کنیم.' : 'Now, pause and reflect.',
+      'مکث و تمرین': 'مکث و تمرین',
       'transition': persian ? 'با حرکت به بخش بعد، این پرسش را در ذهن نگه داریم.' : 'As we move forward, keep this question in mind.',
+      'گذار': 'پیوند به بخش بعد',
+      'summary': persian ? 'برای جمع‌بندی،' : 'To bring these ideas together.',
+      'conclusion': persian ? 'برای جمع‌بندی،' : 'To bring these ideas together.',
       'جمع‌بندی': 'برای جمع‌بندی،',
       'جمع بندی': 'برای جمع‌بندی،',
       'تمرین شنیداری': 'حالا یک تمرین کوتاه انجام دهیم.'
