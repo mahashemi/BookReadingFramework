@@ -59,3 +59,9 @@ test("library ordering and book taxonomy are explicit and deterministic", () => 
   assert.match(app, /const books = \[\.\.\.manifest\.books\]\.sort/);
   assert.match(app, /b\.primary_category \|\| 'Unclassified'/);
 });
+
+test("counterfactual answers render safe inline HTTPS references", () => {
+  assert.match(app, /const linkedText = value =>/);
+  assert.match(app, /linkedText\(x\.answer\)/);
+  assert.match(app, /target="_blank" rel="noopener"/);
+});
