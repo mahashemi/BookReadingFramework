@@ -190,11 +190,11 @@ Counterfactual Istidlal asks learners to change one meaningful premise in a sour
 
 For each selected question:
 
-1. Anchor it to one or more canonical learning chunks.
+1. Anchor it to one or more canonical learning chunks. Cover every substantive chapter or teaching unit in the book, including introductions where they contain an argument worth testing; skip front matter that offers no substantive reasoning. For a long chapter, prefer a few distinct, high-value questions over exhaustive coverage.
 2. Change one consequential premise rather than merely rewording the original case.
 3. Make the learner reason through consequences, precedent, competing duties, or limits.
 4. Give a medium-length answer: source principle → inference → qualification where needed.
-5. Include Qur'anic verses and/or hadith when they genuinely strengthen the reasoning. Give a precise locator and a stable source link; do not add scripture as decoration.
+5. Include Qur'anic verses and/or hadith when they genuinely strengthen the reasoning. Give a precise locator and a stable source link; do not add scripture as decoration. In the learner-facing answer, place the citation link inline at the claim it supports (for example, `[Qur'an 4:135](https://quran.com/4/135)`), not only in a references list beneath the answer. The UI must render only safe HTTPS Markdown links as links and escape all other answer text.
 6. Distinguish what a source explicitly says from the conclusion inferred for the hypothetical. Never claim that a classical source directly answered a modern counterfactual unless it actually did.
 7. Preserve relevant distinctions (for example, ordinary political deception versus specifically evidenced exceptions; dissent versus violence; serious sin versus takfir; justice versus identical treatment).
 8. Cite the source IDs in the bank and keep a source catalog. If the authenticity, wording, or locator of a report is disputed or uncertain, say so instead of overstating it.
