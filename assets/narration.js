@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const root = location.pathname.includes('/book/') ? '../' : '';
-  const state = { manifest: null, utterance: null };
+  const state = { manifest: null, utterance: null, utterances: [], remaining: 0, playing: false };
   const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
   const bookId = () => new URLSearchParams(location.search).get('book_id') || 'book02';
   const unitId = () => new URLSearchParams(location.search).get('unit');
@@ -115,9 +115,34 @@
     return parts.join('\n\n').replace(/[ \t]+\n/g, '\n').trim();
   }
 
+  function speechPieces(text, maxChars = 1100) {
+    const pieces = [];
+    for (const paragraph of text.split(/\n{2,}/)) {
+      let remaining = paragraph.trim();
+      while (remaining.length > maxChars) {
+        let cut = Math.max(
+          remaining.lastIndexOf('. ', maxChars),
+          remaining.lastIndexOf('! ', maxChars),
+          remaining.lastIndexOf('? ', maxChars),
+          remaining.lastIndexOf('؟ ', maxChars),
+          remaining.lastIndexOf('۔ ', maxChars)
+        );
+        if (cut < Math.floor(maxChars * 0.45)) cut = remaining.lastIndexOf(' ', maxChars);
+        if (cut < 1) cut = maxChars;
+        pieces.push(remaining.slice(0, cut + 1).trim());
+        remaining = remaining.slice(cut + 1).trim();
+      }
+      if (remaining) pieces.push(remaining);
+    }
+    return pieces.filter(Boolean);
+  }
+
   function stop(button) {
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
     state.utterance = null;
+    state.utterances = [];
+    state.remaining = 0;
+    state.playing = false;
     if (button) { button.textContent='▶ Listen & Learn'; button.dataset.playing='false'; }
   }
 
@@ -131,13 +156,24 @@
     hero.insertAdjacentElement('afterend',section);
     const play=section.querySelector('[data-play]');
     play.addEventListener('click',()=>{
-      if(state.utterance){stop(play);return;}
+      if(state.playing){stop(play);return;}
       if(!('speechSynthesis' in window)){play.textContent='Browser narration unavailable';return;}
-      const text=spoken(script), u=new SpeechSynthesisUtterance(text);
-      u.lang=/[\u0600-\u06ff]/.test(text)?'fa-IR':'en-US'; u.rate=0.92;
-      u.onstart=()=>{state.utterance=u;play.textContent='■ Stop listening';play.dataset.playing='true';};
-      u.onend=()=>{state.utterance=null;play.textContent='▶ Listen & Learn';play.dataset.playing='false';};
-      u.onerror=()=>stop(play); window.speechSynthesis.speak(u);
+      const text=spoken(script), pieces=speechPieces(text);
+      if(!pieces.length)return;
+      const lang=/[\u0600-\u06ff]/.test(text)?'fa-IR':'en-US';
+      state.utterances=pieces.map(piece=>{
+        const u=new SpeechSynthesisUtterance(piece);
+        u.lang=lang; u.rate=0.92;
+        u.onend=()=>{
+          state.remaining=Math.max(0,state.remaining-1);
+          if(state.remaining===0){state.utterance=null;state.utterances=[];state.playing=false;play.textContent='▶ Listen & Learn';play.dataset.playing='false';}
+        };
+        u.onerror=()=>stop(play);
+        return u;
+      });
+      state.remaining=state.utterances.length; state.playing=true; state.utterance=state.utterances[0];
+      play.textContent='■ Stop listening'; play.dataset.playing='true';
+      state.utterances.forEach(u=>window.speechSynthesis.speak(u));
     });
     section.querySelector('[data-transcript]').addEventListener('click',e=>{const d=section.querySelector('details');d.open=!d.open;e.currentTarget.textContent=d.open?'Hide transcript':'Show transcript';});
   }
