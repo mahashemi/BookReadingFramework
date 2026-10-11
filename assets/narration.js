@@ -90,7 +90,7 @@
     const parts = [];
     for (const section of script.sections) {
       const key = section.title.trim().toLowerCase();
-      if (key === 'source map') continue;
+      if (/^(?:source map|نقشه(?:‌| )منبع|نقشه(?:‌| )منابع)$/i.test(key)) continue;
       const cue = editorialTitle(section.title, section.text);
       const text = section.text.trim();
       if (!text) continue;
@@ -114,7 +114,7 @@
     if (!hero || document.querySelector('.listen-learn')) return;
     const section=document.createElement('section');
     section.className='section listen-learn'; section.id='listen-learn';
-    const transcriptSections = script.sections.filter(s => !/^source map$/i.test(s.title) && !/^narration$/i.test(s.title));
+    const transcriptSections = script.sections.filter(s => !/^(?:source map|نقشه(?:‌| )منبع|نقشه(?:‌| )منابع)$/i.test(s.title) && !/^narration$/i.test(s.title));
     section.innerHTML='<div class="card panel narration-card"><div class="num">Listen & Learn</div><h2>'+esc(script.title||entry.title||'Unit narration')+'</h2><p class="meta-line">A guided narration with explanation, connections and reflection. Source-map IDs and editorial notes are kept out of the listening transcript.</p><div class="actions narration-actions"><button class="btn primary" type="button" data-play>▶ Listen & Learn</button><button class="btn" type="button" data-transcript>Show transcript</button></div><details class="narration-transcript"><summary>Read the transcript</summary><div class="narration-body">'+transcriptSections.map(s=>'<h3>'+esc(editorialTitle(s.title, s.text)||s.title)+'</h3><p>'+esc(s.text).replace(/\n\n/g,'</p><p>').replace(/\n/g,' ')+'</p>').join('')+'</div></details></div>';
     hero.insertAdjacentElement('afterend',section);
     const play=section.querySelector('[data-play]');
