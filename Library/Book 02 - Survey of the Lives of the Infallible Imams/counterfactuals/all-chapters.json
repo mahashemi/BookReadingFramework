@@ -1,0 +1,381 @@
+{
+  "schema_version": "1.1",
+  "book_id": "book02",
+  "title": "Counterfactual Istidlal — Curated Questions Across Book 02",
+  "description": "A concise, carefully curated bank for the Introduction and every chapter. Answers include direct links to relevant Qur'anic verses and source passages. Hypothetical conclusions are inferences, not claims that classical sources explicitly answered these exact questions.",
+  "coverage": {
+    "concepts_covered": 16,
+    "total_items": 16,
+    "selection_policy": "Curated for distinct learning value; no quota per concept."
+  },
+  "source_catalog": {
+    "mutahhari-ch1": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 1: 'Ali's Struggles",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-1-alis-struggles"
+    },
+    "nahj-200": {
+      "work": "Nahj al-Balagha",
+      "author": "Imam 'Ali",
+      "locator": "Sermon 200 — Allah, Mu'awiyah, and deception",
+      "url": "https://al-islam.org/sw/nahjul-balagha-part-1-sermons/sermon-200-allah-muawiyah-not-more-cunning-i-am"
+    },
+    "nahj-125": {
+      "work": "Nahj al-Balagha",
+      "author": "Imam 'Ali",
+      "locator": "Sermon 125 — Arbitration and the Qur'an",
+      "url": "https://al-islam.org/nahjul-balagha-part-1-sermons/sermon-125-we-did-not-name-people-arbitrators"
+    },
+    "nahj-122": {
+      "work": "Nahj al-Balagha",
+      "author": "Imam 'Ali",
+      "locator": "Sermon 122 — Siffin and the Kharijites",
+      "url": "https://al-islam.org/nahjul-balagha-part-1-sermons/sermon-122-were-all-you-us-siffin"
+    },
+    "nahj-53": {
+      "work": "Nahj al-Balagha",
+      "author": "Imam 'Ali",
+      "locator": "Letter 53 — Order to Malik al-Ashtar",
+      "url": "https://al-islam.org/nahjul-balagha-part-2-letters-and-sayings/letter-53-order-malik-al-ashtar"
+    },
+    "ghurar-deception": {
+      "work": "Ghurar al-Hikam wa Durar al-Kalim",
+      "author": "Imam 'Ali",
+      "locator": "Deception and the Deceitful",
+      "url": "https://al-islam.org/ghurar-al-hikam-wa-durar-al-kalim-exalted-aphorisms-and-pearls-speech/deception-and-deceitful"
+    },
+    "ghurar-justice": {
+      "work": "Ghurar al-Hikam wa Durar al-Kalim",
+      "author": "Imam 'Ali",
+      "locator": "Justice and the Just",
+      "url": "https://al-islam.org/id/node/37009"
+    },
+    "quran-4-135": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Nisa' 4:135",
+      "url": "https://quran.com/4/135"
+    },
+    "quran-5-8": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Ma'idah 5:8 — do not let hatred make you depart from justice",
+      "url": "https://quran.com/5/8"
+    },
+    "quran-6-57": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-An'am 6:57 — judgment belongs to Allah",
+      "url": "https://quran.com/6/57"
+    },
+    "quran-4-59": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Nisa' 4:59 — refer disputes to Allah and the Messenger",
+      "url": "https://quran.com/4/59"
+    },
+    "quran-17-36": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Isra' 17:36 — do not pursue what you have no knowledge of",
+      "url": "https://quran.com/17/36"
+    },
+    "quran-49-6": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Hujurat 49:6 — verify reports before acting on them",
+      "url": "https://quran.com/49/6"
+    },
+    "quran-49-9": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Hujurat 49:9",
+      "url": "https://quran.com/49/9"
+    },
+    "quran-4-94": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Nisa' 4:94 — do not deny a person's faith without care",
+      "url": "https://quran.com/4/94"
+    },
+    "book-u01": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Introduction: Comparison between Imam al-Husayn's Path and That of Other Imams",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/introduction-comparison-between-imam-al-husayns"
+    },
+    "book-u03": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 2: Imam al-Hassan's Pacifism (Session 1)",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1"
+    },
+    "book-u04": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 2: Imam al-Hassan's Pacifism (Session 2)",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-2"
+    },
+    "quran-22-39": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Hajj 22:39",
+      "url": "https://quran.com/22/39"
+    },
+    "quran-16-90": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Nahl 16:90",
+      "url": "https://quran.com/16/90"
+    },
+    "quran-8-61": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah al-Anfal 8:61",
+      "url": "https://quran.com/8/61"
+    }
+  },
+  "counterfactuals": [
+    {
+      "id": "cf-u02-core-01",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-002",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose 'Ali had used deception to gain political power, sincerely intending to govern justly afterward. If the outcome were better, what would still be at stake?",
+      "answer": "The immediate result would not settle the moral or institutional cost. In Nahj al-Balagha 200, 'Ali distinguishes political cunning from deception that crosses moral limits; Qur'an 4:135 commands justice even when it cuts against our own interests. If a ruler normalizes deception whenever he claims a good end, successors can use the same excuse for self-interest. This concerns deceptive acquisition of authority; any specific exception, such as a narrowly defined wartime tactic, needs its own evidence rather than being generalized.",
+      "istidlal_takeaway": "A claimed good end does not automatically legitimize a method that teaches future rulers to deceive.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-200",
+        "quran-4-135",
+        "ghurar-deception"
+      ]
+    },
+    {
+      "id": "cf-u02-core-02",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-003",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose paying powerful supporters special stipends really would have prevented a civil war. Would that prove 'Ali should have sacrificed the rights of poorer people?",
+      "answer": "It might show that refusing favoritism carried a real political cost, but not that the injustice became right. Qur'an 4:135 requires standing for justice even against one's own interests, and 5:8 warns that even hostility must not pull a person away from justice. Letter 53 of Nahj al-Balagha likewise frames governance around care for the vulnerable. The counterfactual forces us to ask not only what outcome was likely, but whose rights were treated as expendable to achieve it.",
+      "istidlal_takeaway": "Political effectiveness matters, but it cannot by itself cancel the rights of people with less power.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-53",
+        "quran-4-135",
+        "quran-5-8"
+      ]
+    },
+    {
+      "id": "cf-u02-core-03",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-005",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose the commanders raising Qur'ans on spears sincerely wanted to stop bloodshed. Why might the tactic still be religiously misleading?",
+      "answer": "A sincere motive does not guarantee that the conclusion drawn from a symbol is sound. In Sermon 125, 'Ali explains that people must speak and interpret through the Qur'an; the physical presence of its pages cannot decide a political dispute by itself. Qur'an 6:57 affirms God's judgment, but quoting it does not remove the need to understand what it means in context. The danger is that a sacred sign can pressure people to stop reasoning precisely when careful judgment is most needed.",
+      "istidlal_takeaway": "Reverence for scripture requires understanding and applying it, not treating its appearance as a substitute for reasoning.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-125",
+        "quran-6-57"
+      ]
+    },
+    {
+      "id": "cf-u02-core-04",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose the arbitrators had ruled in 'Ali's favor. Would that vindicate the Kharijite claim that appointing human arbitrators is itself blasphemy?",
+      "answer": "No: a favorable result would not repair a faulty principle, just as an unfavorable result cannot prove every form of arbitration illegitimate. Sermon 125 argues that the Qur'an needs people to interpret and apply it; Qur'an 4:59 directs believers to refer disputes to Allah and the Messenger, which itself requires human deliberation about what that reference entails. The proper test is whether judgment remains accountable to revelation, not whether human judgment disappears.",
+      "istidlal_takeaway": "Judge a principle by its reasoning and limits, not merely by whether one decision succeeds.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-125",
+        "quran-4-59",
+        "quran-6-57"
+      ]
+    },
+    {
+      "id": "cf-u02-core-05",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-004",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a community were intensely devout but had never learned how to interpret the Qur'an carefully. Would visible piety make its judgments more trustworthy?",
+      "answer": "Not by itself. Mutahhari presents the Kharijites as dangerous precisely because striking outward devotion coexisted with shallow understanding. Qur'an 17:36 warns against following what one does not know, while 'Ali's words in Sermon 122 distinguish the Qur'an's recitation from understanding its meaning. Devotion can motivate learning, but when it is treated as proof that one's interpretation cannot be wrong, it can shield error from correction.",
+      "istidlal_takeaway": "Sincerity and visible worship are not substitutes for knowledge, humility, and sound interpretation.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122",
+        "quran-17-36"
+      ]
+    },
+    {
+      "id": "cf-u02-core-06",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-007",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose the Kharijites continued insulting 'Ali but never turned to armed violence. Should he silence them to protect the dignity of government?",
+      "answer": "Not automatically. Mutahhari emphasizes that 'Ali tolerated their dissent and did not cut their treasury share simply because they opposed him. Qur'an 49:9 distinguishes conflict that calls for reconciliation from the duty to restrain an aggressor; it does not make every hostile disagreement equivalent to armed rebellion. The distinction matters because a ruler who treats criticism as violence can turn public authority into a shield against correction.",
+      "istidlal_takeaway": "A government should distinguish offensive speech and dissent from a real, evidence-based threat of violence.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122",
+        "quran-49-9",
+        "nahj-53"
+      ]
+    },
+    {
+      "id": "cf-u02-core-07",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-008",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a person commits a serious sin but remains Muslim and seeks repentance. Does the sin alone justify declaring that person outside Islam?",
+      "answer": "No. Condemning an act and declaring a person outside the faith are different judgments with different evidentiary burdens. Qur'an 49:9 still describes two fighting parties as believers while commanding reconciliation, and 4:94 warns believers not to casually deny another's faith. Mutahhari's account of Kharijite doctrine shows how collapsing every serious sin into total exclusion can turn moral criticism into sectarian violence.",
+      "istidlal_takeaway": "Moral accountability does not license careless judgments about another person's entire religious identity.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "quran-49-9",
+        "quran-4-94"
+      ]
+    },
+    {
+      "id": "cf-u02-core-08",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-009",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose 'Ali defeated the Kharijites at Nahrawan and then ordered the killing of every remaining sympathizer, including those who had laid down their arms. Would that be justified as prevention?",
+      "answer": "No: a past affiliation or mistaken doctrine cannot by itself establish present guilt or an active threat. Mutahhari reports 'Ali's final instruction not to keep killing Kharijites after him, distinguishing people who seek truth but err from those who pursue falsehood deliberately. Qur'an 5:8 commands justice even toward those one dislikes. Preventing future harm requires evidence and proportionate judgment, not collective revenge.",
+      "istidlal_takeaway": "Justice after conflict means distinguishing present conduct and credible danger from labels and revenge.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "nahj-122",
+        "quran-5-8"
+      ]
+    },
+    {
+      "id": "cf-u02-core-09",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-010",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "medium",
+      "prompt": "Suppose a rumor about a revered scholar were repeated by ten respected teachers. Could a student safely repeat it without checking the original evidence?",
+      "answer": "No. Repetition and reputation do not turn a report into verified knowledge. Qur'an 49:6 instructs believers to verify reports before acting on them, and 17:36 warns against following what one does not know. Mutahhari's Iqbal/Ja'far-Sadiq example shows how a careless reading can become a false accusation as it passes from person to person. The responsible response is to inspect the original context before forwarding the claim.",
+      "istidlal_takeaway": "The credibility of a chain of repeaters cannot replace checking the original evidence and context.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "quran-49-6",
+        "quran-17-36"
+      ]
+    },
+    {
+      "id": "cf-u02-core-10",
+      "unit_id": "u02",
+      "concept_chunk_id": "b02-u02-011",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose Ibn Muljam sincerely believed that killing 'Ali was an act of worship. Would sincerity make his act morally sound?",
+      "answer": "No. Sincerity describes a person's subjective conviction; it does not prove that the conviction is true or that the action is just. Qur'an 17:36 warns against acting without knowledge, and the chapter's account of the Kharijites shows how religious certainty can be used to excuse grave wrongdoing. This does not mean motives are irrelevant; it means intention must be assessed alongside knowledge, evidence, and the moral nature of the act.",
+      "istidlal_takeaway": "A sincere intention cannot turn an unjust act into a justified one when the underlying judgment is false.",
+      "source_ids": [
+        "mutahhari-ch1",
+        "quran-17-36",
+        "nahj-122"
+      ]
+    },
+    {
+      "id": "cf-u01-01",
+      "unit_id": "u01",
+      "concept_chunk_id": "b02-u01-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If every Imam had followed the same visible political strategy in every era, would that necessarily have produced greater fidelity to Islam?",
+      "answer": "Not necessarily. Mutahhari's argument is that the Imams faced different threats and opportunities while preserving the same core commitments. [Qur'an 22:39](https://quran.com/22/39) connects permission to fight with being wronged; it does not prescribe identical action in every circumstance. The contrast between al-Husayn's revolt and other Imams' restraint asks us to judge strategy against its conditions and purpose, not turn one historical response into a universal script.",
+      "istidlal_takeaway": "A stable moral purpose can require different outward strategies when circumstances and duties differ.",
+      "source_ids": [
+        "book-u01",
+        "quran-22-39"
+      ]
+    },
+    {
+      "id": "cf-u01-02",
+      "unit_id": "u01",
+      "concept_chunk_id": "b02-u01-005",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If an Imam narrated a Prophetic practice but did not personally follow it in a later era, should we assume he contradicted the Prophet?",
+      "answer": "Not before asking whether the practice was a permanent command or a response to a particular circumstance. Mutahhari uses the beard-dyeing example to distinguish outward form from underlying purpose. [Qur'an 16:90](https://quran.com/16/90) gives enduring moral principles, while a specific historical tactic may have a narrower purpose. This supports careful interpretation, not dismissing inconvenient reports: context and evidence must establish whether a ruling is general or situational.",
+      "istidlal_takeaway": "Before calling a contradiction, distinguish the lasting principle from a context-specific application.",
+      "source_ids": [
+        "book-u01",
+        "quran-16-90"
+      ]
+    },
+    {
+      "id": "cf-u03-01",
+      "unit_id": "u03",
+      "concept_chunk_id": "b02-u03-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If peace and armed resistance were judged by which one looks braver, what important part of the al-Hassan question would be missed?",
+      "answer": "It would replace moral and jurisprudential analysis with a performance test. Mutahhari rejects explaining al-Hassan and al-Husayn as merely having different temperaments. [Qur'an 49:9](https://quran.com/49/9) begins with reconciliation between fighting believers and then addresses persistent aggression; [Qur'an 22:39](https://quran.com/22/39) situates fighting in a context of being wronged. Neither passage makes one response obligatory in every situation. We must examine what each choice could accomplish and what principles it preserved.",
+      "istidlal_takeaway": "Courage is not identical to fighting; ask which response fits the duty and circumstances.",
+      "source_ids": [
+        "book-u03",
+        "quran-49-9",
+        "quran-22-39"
+      ]
+    },
+    {
+      "id": "cf-u03-02",
+      "unit_id": "u03",
+      "concept_chunk_id": "b02-u03-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a truce stopped immediate bloodshed but gave the other side an unlimited opportunity to attack later. Would the word 'peace' alone make it sound?",
+      "answer": "No. The chapter treats peace as a means governed by terms, duration, and likely consequences—not as a self-validating label. [Qur'an 8:61](https://quran.com/8/61) directs believers to incline toward peace when the opposing side genuinely inclines toward it; it does not require ignoring evidence of bad faith or abandoning safeguards. One must ask whether the agreement serves a legitimate protective purpose and whether its terms are clear enough to evaluate.",
+      "istidlal_takeaway": "A peace agreement must be judged by its terms and purpose, not its name alone.",
+      "source_ids": [
+        "book-u03",
+        "quran-8-61"
+      ]
+    },
+    {
+      "id": "cf-u04-01",
+      "unit_id": "u04",
+      "concept_chunk_id": "b02-u04-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If al-Hassan's peace and al-Husayn's revolt were judged only by immediate outcomes, why would that be an unreliable moral test?",
+      "answer": "Immediate outcomes alone cannot tell us whether a decision was justified by the conditions known at the time. Mutahhari distinguishes their political positions, military balance, public demands, and the role each action played in exposing injustice. The Qur'an recognizes reconciliation ([49:9](https://quran.com/49/9)) and a context for resisting oppression ([22:39](https://quran.com/22/39)); neither verse makes one response obligatory in every situation. Historical uncertainty does not disappear in hindsight.",
+      "istidlal_takeaway": "Judge a decision by its duties, context, and foreseeable consequences—not hindsight alone.",
+      "source_ids": [
+        "book-u04",
+        "quran-49-9",
+        "quran-22-39"
+      ]
+    },
+    {
+      "id": "cf-u04-02",
+      "unit_id": "u04",
+      "concept_chunk_id": "b02-u04-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose al-Hassan's treaty had preserved his life but required him to endorse every act of Mu'awiyah's government. Would survival alone justify accepting it?",
+      "answer": "Survival is a serious consideration, but a term requiring the Imam to validate injustice would change the moral meaning of the agreement. [Qur'an 4:135](https://quran.com/4/135) commands standing firmly for justice even when personally costly; it is therefore not enough to ask whether a treaty prevents immediate death. One must also ask what public truth it forces a person to affirm or conceal.",
+      "istidlal_takeaway": "Preserving life and accepting a ruler's legitimacy are separate questions; treaty terms matter.",
+      "source_ids": [
+        "book-u04",
+        "quran-4-135"
+      ]
+    }
+  ]
+}
