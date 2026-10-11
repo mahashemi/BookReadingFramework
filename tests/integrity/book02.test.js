@@ -56,16 +56,23 @@ test("Book 02 Chapter 1 counterfactual Istidlal bank is complete and traceable",
 
   const chunks = readJson(root + "data/chunks.json");
   const canonicalChunkIds = new Set(chunks.units.flatMap(unit => unit.chunks.map(chunk => chunk.id)));
+  const canonicalUnitByChunk = new Map(chunks.units.flatMap(unit => unit.chunks.map(chunk => [chunk.id, unit.id])));
+  const expectedUnits = chunks.units.filter(unit => /^u(?:0[1-9]|1[0-2])$/.test(unit.id)).map(unit => unit.id);
+  for (const unitId of expectedUnits) assert.ok(bank.counterfactuals.some(item => item.unit_id === unitId), unitId + " has no Istidlal questions");
   const counts = new Map();
   for (const item of bank.counterfactuals) {
     assert.ok(canonicalChunkIds.has(item.concept_chunk_id), item.id + " references an unknown canonical chunk");
+    assert.equal(canonicalUnitByChunk.get(item.concept_chunk_id), item.unit_id, item.id + " references a chunk in another unit");
     assert.match(item.skill, /^counterfactual-istidlal$/);
     assert.ok(item.prompt.length >= 80, item.id + " prompt is too short");
     assert.ok(item.answer.length >= 120, item.id + " answer is too short");
     assert.ok(item.answer.includes("](https://"), item.id + " needs an inline clickable reference");
     assert.ok(item.istidlal_takeaway.length >= 30, item.id + " takeaway is too short");
     assert.ok(item.source_ids.length >= 2, item.id + " needs multiple sources");
-    for (const sourceId of item.source_ids) assert.ok(bank.source_catalog[sourceId], item.id + " has unknown source " + sourceId);
+    for (const sourceId of item.source_ids) {
+      assert.ok(bank.source_catalog[sourceId], item.id + " has unknown source " + sourceId);
+      assert.ok(bank.source_catalog[sourceId].url.startsWith("https://"), sourceId + " must use HTTPS");
+    }
     counts.set(item.concept_chunk_id, (counts.get(item.concept_chunk_id) || 0) + 1);
   }
   assert.equal(counts.size, 29, "each curated question should anchor a distinct concept chunk");
