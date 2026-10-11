@@ -104,7 +104,7 @@
     {
       "id": "cf-u02-core-01",
       "unit_id": "u02",
-      "concept_chunk_id": "b02-u02-003",
+      "concept_chunk_id": "b02-u02-002",
       "skill": "counterfactual-istidlal",
       "difficulty": "hard",
       "prompt": "Suppose 'Ali had used deception to gain political power, sincerely intending to govern justly afterward. If the outcome were better, what would still be at stake?",
