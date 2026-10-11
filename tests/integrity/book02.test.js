@@ -43,7 +43,7 @@ test("Book 02 page data references match the manifest", () => {
 });
 
 
-test("Book 02 Chapter 1 counterfactual Istidlal bank is complete and traceable", () => {
+test("Book 02 all-chapter counterfactual Istidlal bank is complete and traceable", () => {
   const manifest = readJson("assets/books.json");
   const book = manifest.books.find(b => b.id === "book02");
   assert.equal(book.data.counterfactuals, "counterfactuals/all-chapters.json");
@@ -51,14 +51,17 @@ test("Book 02 Chapter 1 counterfactual Istidlal bank is complete and traceable",
   const root = "Library/Book 02 - Survey of the Lives of the Infallible Imams/";
   const bank = readJson(root + book.data.counterfactuals);
   assert.equal(bank.book_id, "book02");
-  assert.equal(bank.counterfactuals.length, 29, "keep a concise curated set across every chapter");
-  assert.equal(bank.coverage.concepts_covered, 29);
+  assert.equal(bank.counterfactuals.length, 72, "six substantive questions per reading unit");
+  assert.equal(bank.coverage.concepts_covered, 72);
 
   const chunks = readJson(root + "data/chunks.json");
   const canonicalChunkIds = new Set(chunks.units.flatMap(unit => unit.chunks.map(chunk => chunk.id)));
   const canonicalUnitByChunk = new Map(chunks.units.flatMap(unit => unit.chunks.map(chunk => [chunk.id, unit.id])));
   const expectedUnits = chunks.units.filter(unit => /^u(?:0[1-9]|1[0-2])$/.test(unit.id)).map(unit => unit.id);
-  for (const unitId of expectedUnits) assert.ok(bank.counterfactuals.some(item => item.unit_id === unitId), unitId + " has no Istidlal questions");
+  for (const unitId of expectedUnits) {
+    const unitQuestions = bank.counterfactuals.filter(item => item.unit_id === unitId);
+    assert.ok(unitQuestions.length >= 6, unitId + " needs at least six Istidlal questions");
+  }
   const counts = new Map();
   for (const item of bank.counterfactuals) {
     assert.ok(canonicalChunkIds.has(item.concept_chunk_id), item.id + " references an unknown canonical chunk");
@@ -75,10 +78,10 @@ test("Book 02 Chapter 1 counterfactual Istidlal bank is complete and traceable",
     }
     counts.set(item.concept_chunk_id, (counts.get(item.concept_chunk_id) || 0) + 1);
   }
-  assert.equal(counts.size, 29, "each curated question should anchor a distinct concept chunk");
+  assert.ok(counts.size >= 71, "questions should cover nearly every distinct concept chunk; limited reuse is acceptable only when a unit has fewer than six chunks");
   assert.ok(bank.counterfactuals.some(item => item.source_ids.some(id => id.startsWith("quran-"))), "include Qur'anic evidence where relevant");
   assert.ok(bank.counterfactuals.some(item => item.source_ids.some(id => id.startsWith("nahj-"))), "include hadith evidence where relevant");
-  assert.equal(bank.coverage.selection_policy, "Curated for distinct learning value; no quota per concept.");
+  assert.match(bank.coverage.selection_policy, /At least six distinct, source-grounded counterfactual questions per substantive reading unit/);
 });
 
 
