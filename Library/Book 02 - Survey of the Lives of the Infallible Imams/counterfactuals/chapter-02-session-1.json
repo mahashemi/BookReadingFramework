@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.1",
+  "book_id": "book02",
+  "title": "Counterfactual Istidlal — Chapter 2 — Imam al-Hassan's Pacifism, Session 1",
+  "description": "A small, carefully curated set of counterfactuals. Answers link directly to the Qur'anic, hadith, and book references used in the reasoning. The hypothetical conclusion is an inference, not a claim that the source explicitly answered this exact question.",
+  "coverage": {
+    "concepts_covered": 2,
+    "total_items": 2,
+    "selection_policy": "Curated for distinct learning value; no quota per concept."
+  },
+  "source_catalog": {
+    "book-u03": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Chapter 2: Imam al-Hassan's Pacifism (Session 1)",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1"
+    },
+    "quran-22-39": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah Al-Hajj 22:39",
+      "url": "https://quran.com/22/39"
+    },
+    "quran-8-61": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah Al-Anfal 8:61",
+      "url": "https://quran.com/8/61"
+    },
+    "quran-49-9": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah Al-Hujurat 49:9",
+      "url": "https://quran.com/49/9"
+    }
+  },
+  "counterfactuals": [
+    {
+      "id": "cf-u03-01",
+      "unit_id": "u03",
+      "concept_chunk_id": "b02-u03-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If peace and armed resistance were judged by which one looks braver, what important part of the al-Hassan question would be missed?",
+      "answer": "It would replace jurisprudential and moral analysis with a performance test. Mutahhari explicitly rejects explaining al-Hassan and al-Husayn as merely having different temperaments. [Qur'an 49:9](https://quran.com/49/9) begins with reconciliation between fighting believers and only then addresses the party that persists in aggression; [Qur'an 22:39](https://quran.com/22/39) situates fighting in a context of being wronged. These passages do not settle every historical detail, but they show that restraint, reconciliation, and fighting have conditions that must be examined rather than ranked by appearance.",
+      "istidlal_takeaway": "Courage is not identical to fighting; the relevant question is which response fits the duty and circumstances.",
+      "source_ids": [
+        "book-u03",
+        "quran-49-9",
+        "quran-22-39"
+      ]
+    },
+    {
+      "id": "cf-u03-02",
+      "unit_id": "u03",
+      "concept_chunk_id": "b02-u03-006",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "Suppose a truce stopped immediate bloodshed but gave the other side an unlimited opportunity to attack later. Would the word 'peace' alone make it sound?",
+      "answer": "No. The chapter's discussion of truce conditions treats peace as a means governed by terms, duration, and likely consequences—not as a morally self-validating label. [Qur'an 8:61](https://quran.com/8/61) directs believers to incline toward peace when the opposing side genuinely inclines toward it; it does not require ignoring evidence of bad faith or abandoning all safeguards. The counterfactual asks whether the agreement actually serves a legitimate protective purpose and whether its conditions are clear enough to evaluate.",
+      "istidlal_takeaway": "A peace agreement must be judged by its terms and purpose, not by its name alone.",
+      "source_ids": [
+        "book-u03",
+        "quran-8-61"
+      ]
+    }
+  ]
+}
