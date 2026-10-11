@@ -256,13 +256,23 @@ ${glossaryHTML}
     const counterfactuals = (cf?.counterfactuals || []).filter(x => x.unit_id === u.id);
     const counterfactualHTML = counterfactuals.length ? `
 <section class="section" id="counterfactual-istidlal">
-  <div class="section-head compact"><div><h2>Counterfactual Istidlal</h2><p>Change a meaningful premise, then reason from the source. These are deliberately harder than recall questions: try to derive the consequences before revealing the answer.</p></div></div>
+  <div class="section-head compact"><div><h2>Counterfactual Istidlal</h2><p>Change a meaningful premise, then reason from the source. Before attempting each question, read the linked concept below; it identifies the argument or passage you should understand first.</p></div></div>
   <div class="grid">${counterfactuals.map((x, n) => {
+    const conceptUnit = units.find(unit => unit.id === x.unit_id);
+    const concept = conceptUnit?.chunks?.find(chunk => chunk.id === x.concept_chunk_id);
+    const conceptHref = concept
+      ? (conceptUnit.id === u.id
+        ? '#concept-' + encodeURIComponent(concept.id)
+        : unitHref(meta.id, conceptUnit.id) + '#concept-' + encodeURIComponent(concept.id))
+      : null;
+    const conceptHTML = concept
+      ? '<div class="source-note prerequisite"><strong>Read this concept first:</strong> <a class="pill" href="' + esc(conceptHref) + '">' + esc(concept.title) + ' ↗</a></div>'
+      : '<div class="source-note prerequisite"><strong>Prerequisite concept:</strong> ' + esc(x.concept_chunk_id || 'Not specified') + ' (concept reference unavailable)</div>';
     const sources = (x.source_ids || []).map(sid => cf.source_catalog?.[sid]).filter(Boolean);
     const sourceHTML = sources.length
       ? '<div class="source-note"><span>Sources: </span>' + sources.map(src => '<a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(src.work) + ' · ' + esc(src.locator) + '</a>').join(' · ') + '</div>'
       : '';
-    return '<article class="card unit counterfactual-card"><div class="num">Istidlal ' + pad(n + 1) + ' · ' + esc(x.difficulty || 'hard') + '</div><h3>' + esc(x.prompt) + '</h3><details class="passage"><summary>Reveal the reasoning</summary><p>' + linkedText(x.answer) + '</p><p class="meta-line"><strong>Istidlal takeaway:</strong> ' + esc(x.istidlal_takeaway) + '</p>' + sourceHTML + '</details></article>';
+    return '<article class="card unit counterfactual-card"><div class="num">Istidlal ' + pad(n + 1) + ' · ' + esc(x.difficulty || 'hard') + '</div>' + conceptHTML + '<h3>' + esc(x.prompt) + '</h3><details class="passage"><summary>Reveal the reasoning</summary><p>' + linkedText(x.answer) + '</p><p class="meta-line"><strong>Istidlal takeaway:</strong> ' + esc(x.istidlal_takeaway) + '</p>' + sourceHTML + '</details></article>';
   }).join('')}</div>
 </section>` : '';
     const nameOf = uid => { const k = units.findIndex(x => x.id === uid); return k < 0 ? uid : 'Unit ' + pad(k + 1) + ' \u00b7 ' + parts(units[k].title).label; };
