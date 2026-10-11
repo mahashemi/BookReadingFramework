@@ -97,10 +97,10 @@ test("every declared narration keeps source IDs in its editorial source-map sect
     for (const entry of Object.values(book.units)) {
       const scriptPath = path.join(__dirname, "..", entry.script);
       const script = fs.readFileSync(scriptPath, "utf8");
-      const sourceMapStart = script.search(/^##\\s+Source map\\s*$/im);
+      const sourceMapStart = script.search(/^##\s+Source map\s*$/im);
       assert.ok(sourceMapStart >= 0, entry.script + " must retain its provenance map");
       const learningText = script.slice(0, sourceMapStart);
-      assert.doesNotMatch(learningText, /\\bb0[123]-u\\d{2}-\\d{3}\\b/, entry.script + " must not narrate opaque chunk IDs");
+      assert.doesNotMatch(learningText, /\bb0[123]-u\d{2}-\d{3}\b/, entry.script + " must not narrate opaque chunk IDs");
     }
   }
 });
