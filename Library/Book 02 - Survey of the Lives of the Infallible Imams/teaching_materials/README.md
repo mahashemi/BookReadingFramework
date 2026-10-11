@@ -23,6 +23,8 @@ The recurring method is:
 
 This mirrors the Book 01 teaching approach while adapting it to the much larger Book 02 structure.
 
+**Fresh PDF build:** every PR compiles `main.tex` twice and uploads the resulting `main.pdf` as the `book02-teaching-deck` workflow artifact. Download that artifact from the PR's **Checks → Compile Book 02 teaching deck** run to review the compiled slides; do not assume a stale checked-in PDF reflects current source edits.
+
 ## Chapter-coverage audit
 
 The teaching deck has been checked against the canonical unit inventory in `data/chunks.json`. It covers the Introduction and every numbered chapter, with explicit visual divider slides at each source-chapter boundary.
