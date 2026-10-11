@@ -19,6 +19,17 @@
 
   /* ---------- small helpers ---------- */
   const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
+  const linkedText = value => {
+    const text = String(value ?? '');
+    const pattern = /\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g;
+    let html = '', cursor = 0, match;
+    while ((match = pattern.exec(text))) {
+      html += esc(text.slice(cursor, match.index));
+      html += '<a href="' + esc(match[2]) + '" target="_blank" rel="noopener">' + esc(match[1]) + '</a>';
+      cursor = pattern.lastIndex;
+    }
+    return html + esc(text.slice(cursor));
+  };
   const pad = n => String(n).padStart(2, '0');
   const fmt = n => (n == null ? '\u2014' : Number(n).toLocaleString('en-US'));
   const sum = (list, f) => list.reduce((a, x) => a + f(x), 0);
@@ -251,7 +262,7 @@ ${glossaryHTML}
     const sourceHTML = sources.length
       ? '<div class="source-note"><span>Sources: </span>' + sources.map(src => '<a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(src.work) + ' · ' + esc(src.locator) + '</a>').join(' · ') + '</div>'
       : '';
-    return '<article class="card unit counterfactual-card"><div class="num">Istidlal ' + pad(n + 1) + ' · ' + esc(x.difficulty || 'hard') + '</div><h3>' + esc(x.prompt) + '</h3><details class="passage"><summary>Reveal the reasoning</summary><p>' + esc(x.answer) + '</p><p class="meta-line"><strong>Istidlal takeaway:</strong> ' + esc(x.istidlal_takeaway) + '</p>' + sourceHTML + '</details></article>';
+    return '<article class="card unit counterfactual-card"><div class="num">Istidlal ' + pad(n + 1) + ' · ' + esc(x.difficulty || 'hard') + '</div><h3>' + esc(x.prompt) + '</h3><details class="passage"><summary>Reveal the reasoning</summary><p>' + linkedText(x.answer) + '</p><p class="meta-line"><strong>Istidlal takeaway:</strong> ' + esc(x.istidlal_takeaway) + '</p>' + sourceHTML + '</details></article>';
   }).join('')}</div>
 </section>` : '';
     const nameOf = uid => { const k = units.findIndex(x => x.id === uid); return k < 0 ? uid : 'Unit ' + pad(k + 1) + ' \u00b7 ' + parts(units[k].title).label; };
