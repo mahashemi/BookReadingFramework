@@ -23,6 +23,25 @@ The recurring method is:
 
 This mirrors the Book 01 teaching approach while adapting it to the much larger Book 02 structure.
 
+## Chapter-coverage audit
+
+The teaching deck has been checked against the canonical unit inventory in `data/chunks.json`. It covers the Introduction and every numbered chapter, with explicit visual divider slides at each source-chapter boundary.
+
+| Source chapter | Deck location |
+|---|---|
+| Introduction: comparison of the Imams' methods | `sections/00_intro.tex` |
+| Chapter 1: 'Ali's Struggles | `sections/01_ali.tex` |
+| Chapter 2: Imam al-Hassan's Pacifism (Sessions 1–2) | `sections/02_hassan.tex` |
+| Chapter 3: Zayn al-'Abidin | `sections/03_spiritual_resistance.tex` |
+| Chapter 4: al-Sadiq and vicegerency | `sections/04_political_openings.tex` |
+| Chapter 5: Musa al-Kazim's martyrdom | `sections/03_spiritual_resistance.tex` |
+| Chapter 6: al-Rida as crown prince (Sessions 1–2) | `sections/04_political_openings.tex` |
+| Chapter 7: al-Hassan al-'Askari | `sections/05_askari.tex` |
+| Chapter 8, Part 1: Universal Justice | `sections/06_justice_mahdi.tex` |
+| Chapter 8, Part 2: The Promised al-Mahdi | `sections/06_justice_mahdi.tex` |
+
+Chapters 3/5 and 4/6 share thematic source files, but the presentation marks each source chapter separately. Chapter 8's two parts are also separated. The Foreword is intentionally omitted from the teaching sequence; the Introduction is the conceptual starting point. Whole-book retrieval slides and the speaker script/teaching guide provide synthesis beyond the slide text.
+
 ## Source alignment
 
 Teaching material is derived from:
