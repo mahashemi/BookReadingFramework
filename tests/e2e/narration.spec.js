@@ -15,7 +15,7 @@ test("Listen & Learn transcript omits source maps and presents natural section t
   await expect(transcript).toContainText("Now, pause and reflect.");
   await expect(transcript).toContainText("As we move forward, keep this question in mind.");
   await expect(transcript).not.toContainText("Source map");
-  await expect(transcript).not.toContainText(/b02-u03-\\d{3}/);
+  await expect(transcript).not.toContainText(/b02-u03-\d{3}/);
   await expect(transcript).not.toContainText("## Narration");
   expect(errors).toEqual([]);
 });
