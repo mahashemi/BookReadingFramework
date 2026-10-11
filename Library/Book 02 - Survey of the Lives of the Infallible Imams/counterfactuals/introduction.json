@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.1",
+  "book_id": "book02",
+  "title": "Counterfactual Istidlal — the Introduction",
+  "description": "A small, carefully curated set of counterfactuals. Answers link directly to the Qur'anic, hadith, and book references used in the reasoning. The hypothetical conclusion is an inference, not a claim that the source explicitly answered this exact question.",
+  "coverage": {
+    "concepts_covered": 2,
+    "total_items": 2,
+    "selection_policy": "Curated for distinct learning value; no quota per concept."
+  },
+  "source_catalog": {
+    "book-u01": {
+      "work": "A Survey into the Lives of the Infallible Imams",
+      "author": "Murtadha Mutahhari",
+      "locator": "Introduction: A Comparison between Imam al-Husayn's Path and That of Other Imams",
+      "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/introduction-comparison-between-imam-al-husayns"
+    },
+    "quran-3-28": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah Al 'Imran 3:28",
+      "url": "https://quran.com/3/28"
+    },
+    "quran-22-39": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah Al-Hajj 22:39",
+      "url": "https://quran.com/22/39"
+    },
+    "quran-16-90": {
+      "work": "The Qur'an",
+      "author": "Allah",
+      "locator": "Surah Al-Nahl 16:90",
+      "url": "https://quran.com/16/90"
+    }
+  },
+  "counterfactuals": [
+    {
+      "id": "cf-u01-01",
+      "unit_id": "u01",
+      "concept_chunk_id": "b02-u01-001",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If every Imam had followed the same visible political strategy in every era, would that necessarily have produced greater fidelity to Islam?",
+      "answer": "Not necessarily. The introduction's argument is that the Imams faced different threats and opportunities while preserving the same core commitments. [Qur'an 22:39](https://quran.com/22/39) connects permission to fight with being wronged; it does not prescribe identical action in every circumstance. The chapter's account of al-Husayn's revolt and other Imams' restraint therefore asks us to judge a strategy against its conditions and purpose, not to turn one historical response into a universal script. The inference is about contextual judgment; it does not mean convenience can override principle.",
+      "istidlal_takeaway": "A stable moral purpose can require different outward strategies when circumstances and duties differ.",
+      "source_ids": [
+        "book-u01",
+        "quran-22-39"
+      ]
+    },
+    {
+      "id": "cf-u01-02",
+      "unit_id": "u01",
+      "concept_chunk_id": "b02-u01-005",
+      "skill": "counterfactual-istidlal",
+      "difficulty": "hard",
+      "prompt": "If an Imam narrated a Prophetic practice but did not personally follow it in a later era, should we assume he contradicted the Prophet?",
+      "answer": "Not before asking whether the practice was a permanent command or a response to a particular circumstance. Mutahhari uses the beard-dyeing example to distinguish outward form from underlying purpose. [Qur'an 16:90](https://quran.com/16/90) gives enduring moral principles—justice and good conduct—while a specific historical tactic may have a narrower purpose. The passage supports careful interpretation, not a license to dismiss any inconvenient report: the context and evidence must establish whether a ruling is general or situational.",
+      "istidlal_takeaway": "Before calling a contradiction, distinguish the lasting principle from a context-specific application.",
+      "source_ids": [
+        "book-u01",
+        "quran-16-90"
+      ]
+    }
+  ]
+}
