@@ -63,3 +63,20 @@ test.describe("Book 02 Interactive Mind Map", () => {
     expect(errors).toEqual([]);
   });
 });
+
+
+test.describe("Book 02 Counterfactual Istidlal prerequisites", () => {
+  test("shows a human-readable prerequisite concept link that jumps to the concept", async ({ page }) => {
+    const errors = [];
+    page.on("pageerror", error => errors.push(error.message));
+    await page.goto("/book/unit.html?book_id=book02&unit=u02", { waitUntil: "networkidle" });
+    const card = page.locator(".counterfactual-card").first();
+    const prerequisite = card.locator(".prerequisite a");
+    await expect(prerequisite).toBeVisible();
+    await expect(prerequisite).toContainText("Ch1 — 'Uthman's assassination and the problem of hypocrisy");
+    await expect(prerequisite).toHaveAttribute("href", "#concept-b02-u02-002");
+    await prerequisite.click();
+    await expect(page.locator("#concept-b02-u02-002")).toBeVisible();
+    expect(errors).toEqual([]);
+  });
+});
