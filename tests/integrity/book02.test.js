@@ -88,7 +88,7 @@ test("Book 02 Counterfactual Istidlal is rendered in the shared unit experience"
 test("Book 02 teaching deck clearly separates the source chapters", () => {
   const root = "Library/Book 02 - Survey of the Lives of the Infallible Imams/teaching_materials/";
   const main = readText(root + "main.tex");
-  assert.match(main, /\\\\newcommand\{\\\\chapterdivider\}/);
+  assert.match(main, /\\newcommand\{\\chapterdivider\}/);
 
   const deck = [
     "sections/00_intro.tex",
@@ -98,7 +98,7 @@ test("Book 02 teaching deck clearly separates the source chapters", () => {
     "sections/04_political_openings.tex",
     "sections/05_askari.tex",
     "sections/06_justice_mahdi.tex"
-  ].map(path => readText(root + path)).join("\\n");
+  ].map(path => readText(root + path)).join("\n");
 
   for (const label of [
     "\\chapterdivider{Introduction}",
