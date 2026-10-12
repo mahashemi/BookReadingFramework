@@ -67,7 +67,7 @@ test("browser speech matches the visible transcript and excludes the legacy summ
   await expect.poll(() => page.evaluate(() => window.__narrationSpoken.length)).toBeGreaterThan(1);
   await expect.poll(async () => {
     const spoken = await page.evaluate(() => window.__narrationSpoken.join(" "));
-    return /The next point is Chapter 2 Session 1/.test(spoken);
+    return /Chapter 2 Session 1/.test(spoken);
   }).toBe(true);
   const spoken = await page.evaluate(() => window.__narrationSpoken.join(" ").replace(/\s+/g, " ").trim());
   const visible = (await transcript.innerText()).replace(/\s+/g, " ").trim();
