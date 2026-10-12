@@ -68,7 +68,8 @@ async def synthesize(text: str, voice: str, path: Path):
 async def generate_unit(book_id: str, unit_id: str, entry: dict, out_dir: Path):
     source=ROOT/entry["script"];spoken=plain_text(source.read_text(encoding="utf-8"))
     if len(spoken)<900:raise ValueError(f"Refusing to create audio from an unusually short script: {source} ({len(spoken)} chars)")
-    voice=VOICES["fa"] if re.search(r"[\u0600-\u06ff]",spoken) else VOICES["en"]
+    arabic_count=len(re.findall(r"[\u0600-\u06ff]",spoken)); latin_count=len(re.findall(r"[A-Za-z]",spoken))
+    voice=VOICES["fa"] if arabic_count > max(300, latin_count * 0.20) else VOICES["en"]
     pieces=split_text(spoken);target=out_dir/book_id/(unit_id+".mp3");target.parent.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="book-audio-") as tmp:
         tmpdir=Path(tmp);parts=[]
