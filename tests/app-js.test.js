@@ -76,7 +76,7 @@ test("narration player keeps source-map identifiers out of the transcript and sp
   assert.match(narration, /for \(const section of transcriptSections\(script\)\)/);
   assert.match(narration, /narration-reading-time/);
   assert.match(narration, /Estimated reading time: about/);
-  assert.match(narration, /Source-map IDs and editorial notes are kept out/);
+  assert.match(narration, /The spoken content matches the transcript below/);
 });
 
 test("narration converts editorial section labels into listener-friendly transitions", () => {
