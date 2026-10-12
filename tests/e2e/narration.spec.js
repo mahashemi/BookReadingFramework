@@ -61,3 +61,23 @@ test("long audiobook narration is queued in multiple speech-safe segments", asyn
   expect(segments.join(" ")).not.toContain("b02-u12-");
   expect(segments.join(" ")).not.toContain("Source map");
 });
+
+
+test("changing the selected unit stops old speech and replaces the narration panel", async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__cancelCount = 0;
+    window.SpeechSynthesisUtterance = function(text) { this.text = text; };
+    Object.defineProperty(window, "speechSynthesis", { configurable: true, value: { speak() {}, cancel() { window.__cancelCount += 1; } } });
+  });
+  await page.goto("/book/unit.html?book_id=book02&unit=u02", { waitUntil: "networkidle" });
+  await expect(page.locator(".listen-learn")).toContainText("Chapter 1");
+  await page.evaluate(() => {
+    const url = new URL(location.href); url.searchParams.set("unit", "u03"); history.pushState({}, "", url);
+    document.querySelector(".unit-hero")?.remove();
+    const hero = document.createElement("section"); hero.className = "unit-hero"; hero.innerHTML = "<h1>Chapter 2</h1>";
+    document.querySelector("#app").prepend(hero);
+  });
+  await expect(page.locator(".listen-learn")).toContainText("Chapter 2");
+  await expect(page.locator(".listen-learn")).not.toContainText("Chapter 1");
+  expect(await page.evaluate(() => window.__cancelCount)).toBeGreaterThan(0);
+});

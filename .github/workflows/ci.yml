@@ -56,6 +56,7 @@ jobs:
           path: playwright-report/
           if-no-files-found: ignore
 
+
   teaching-deck:
     name: Compile Book 02 teaching deck
     runs-on: ubuntu-latest

@@ -21,6 +21,10 @@ If a study method doesn't map to one of these four, it's probably just re-readin
 
 ## The Pipeline — 7 Modules
 
+### Source-section linking and local provenance
+
+Every canonical learning chunk should link as precisely as the original source permits. When a stable source heading ID exists, source_url must include its exact #fragment; do not point every concept to the chapter top when a matching subsection exists. Keep a local index of source URLs, heading text, and source-site IDs. A refresh script may fetch source HTML to derive headings and anchors, but should not mirror full copyrighted book text into the repository unless redistribution rights are documented. Use the existing source_url field rather than a parallel chunk schema. Report unresolved matches instead of guessing. Browser narration must cancel queued speech and reload the selected script when the unit changes, including client-side route changes.
+
 ### Module 1 — Full-Text Acquisition
 Read the *entire* book before extracting anything. Partial coverage produces confident-sounding gaps — the single biggest risk in this whole process. If a source is split across editions, uploads, or missing chapters, actively search/fetch the rest before starting Module 2. Verify page/chapter counts against the book's own table of contents.
 
