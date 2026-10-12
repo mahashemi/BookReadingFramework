@@ -1,14 +1,14 @@
 (() => {
   'use strict';
   const root = location.pathname.includes('/book/') ? '../' : '';
-  const state = { manifest: null, utterance: null, utterances: [], remaining: 0, playing: false, generation: 0 };
+  const state = { manifest: null, utterance: null, utterances: [], remaining: 0, playing: false, generation: 0, currentKey: null, loadingKey: null };
   const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
   const bookId = () => new URLSearchParams(location.search).get('book_id') || 'book02';
   const unitId = () => new URLSearchParams(location.search).get('unit');
 
   async function getManifest() {
     if (state.manifest) return state.manifest;
-    const r = await fetch(root + 'audio/manifest.json');
+    const r = await fetch(root + 'audio/manifest.json', { cache: 'no-store' });
     if (!r.ok) return null;
     state.manifest = await r.json();
     return state.manifest;
@@ -147,11 +147,11 @@
     if (button) { button.textContent='▶ Listen & Learn'; button.dataset.playing='false'; }
   }
 
-  function add(entry, script) {
+  function add(entry, script, key) {
     const hero=document.querySelector('.unit-hero');
     if (!hero || document.querySelector('.listen-learn')) return;
     const section=document.createElement('section');
-    section.className='section listen-learn'; section.id='listen-learn';
+    section.className='section listen-learn'; section.id='listen-learn'; section.dataset.unitKey=key;
     const transcriptSections = script.sections.filter(s => !/^(?:source map|نقشه(?:‌| )منبع|نقشه(?:‌| )منابع|narration|عنوان شنیداری)$/i.test(s.title));
     section.innerHTML='<div class="card panel narration-card"><div class="num">Listen & Learn</div><h2>'+esc(script.title||entry.title||'Unit narration')+'</h2><p class="meta-line">A guided narration with explanation, connections and reflection. Source-map IDs and editorial notes are kept out of the listening transcript.</p><div class="actions narration-actions"><button class="btn primary" type="button" data-play>▶ Listen & Learn</button><button class="btn" type="button" data-transcript>Show transcript</button></div><details class="narration-transcript"><summary>Read the transcript</summary><div class="narration-body">'+transcriptSections.map(s=>'<h3>'+esc(editorialTitle(s.title, s.text)||s.title)+'</h3><p>'+esc(s.text).replace(/\n\n/g,'</p><p>').replace(/\n/g,' ')+'</p>').join('')+'</div></details></div>';
     hero.insertAdjacentElement('afterend',section);
@@ -182,13 +182,28 @@
   }
 
   async function enhance() {
-    const id=unitId(); if(!id||!document.querySelector('.unit-hero')||document.querySelector('.listen-learn'))return;
+    const id = unitId(); const key = id ? `${bookId()}::${id}` : null;
+    const panel = document.querySelector('.listen-learn');
+    // A client-side route can replace a unit without pagehide firing.
+    if (state.currentKey !== key) { stop(); panel?.remove(); state.currentKey = key; state.loadingKey = null; }
+    if (!id || !document.querySelector('.unit-hero')) return;
+    const existing = document.querySelector('.listen-learn');
+    if (existing?.dataset.unitKey === key || state.loadingKey === key) return;
+    state.loadingKey = key;
     try {
-      const m=await getManifest(), b=m&&m.books&&m.books[bookId()], e=b&&b.units&&b.units[id]; if(!e)return;
-      const r=await fetch(root+e.script); if(!r.ok)return; add(e,parse(await r.text()));
-    } catch (_) {}
+      const m = await getManifest(), b = m && m.books && m.books[bookId()], entry = b && b.units && b.units[id];
+      if (!entry) return;
+      const r = await fetch(root + entry.script, { cache: 'no-store' });
+      if (!r.ok || key !== `${bookId()}::${unitId()}` || state.currentKey !== key) return;
+      add(entry, parse(await r.text()), key);
+    } catch (_) { /* Narration is optional; a failed fetch must not break the unit. */ }
+    finally { if (state.loadingKey === key) state.loadingKey = null; }
   }
   const app=document.getElementById('app')||document.body;
-  new MutationObserver(enhance).observe(app,{childList:true,subtree:true}); enhance();
-  window.addEventListener('pagehide',()=>{if('speechSynthesis' in window)window.speechSynthesis.cancel();});
+  const routeChanged = () => { enhance(); };
+  new MutationObserver(enhance).observe(app,{childList:true,subtree:true});
+  window.addEventListener('popstate', routeChanged); window.addEventListener('hashchange', routeChanged);
+  for (const method of ['pushState', 'replaceState']) { const original = history[method]; history[method] = function(...args) { const result = original.apply(this, args); window.dispatchEvent(new Event('narration:routechange')); return result; }; }
+  window.addEventListener('narration:routechange', routeChanged);
+  enhance(); window.addEventListener('pagehide',()=>{stop();});
 })();

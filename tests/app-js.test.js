@@ -134,3 +134,22 @@ test("every Book 02 Istidlal question maps to a canonical concept in its stated 
     assert.ok(concept.title.trim(), question.id + " prerequisite concept must have a readable title");
   }
 });
+
+
+test("narration playback is cancelled and rebuilt when the selected unit changes", () => {
+  assert.match(narration, /state\.currentKey !== key/);
+  assert.match(narration, /panel\?\.remove\(\)/);
+  assert.match(narration, /state\.loadingKey === key/);
+  assert.match(narration, /cache: 'no-store'/);
+  assert.match(narration, /narration:routechange/);
+});
+test("Book 01 and Book 02 concept links carry source-section fragments", () => {
+  for (const [bookId, folder] of [["book01","Book 01 - Polarization Around _Ali"],["book02","Book 02 - Survey of the Lives of the Infallible Imams"]]) {
+    const file = path.join(__dirname, "..", "Library", folder, "data", "chunks.json");
+    const data = JSON.parse(fs.readFileSync(file, "utf8"));
+    for (const unit of data.units) for (const chunk of unit.chunks || []) {
+      assert.ok(chunk.source_url.startsWith("https://al-islam.org/"), bookId + " " + chunk.id);
+      assert.ok(chunk.source_url.includes("#"), bookId + " " + chunk.id);
+    }
+  }
+});
