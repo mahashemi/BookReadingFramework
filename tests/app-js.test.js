@@ -111,3 +111,26 @@ test("every declared narration keeps source IDs in its editorial source-map sect
     }
   }
 });
+
+
+test("Istidlal questions visibly link to their prerequisite concept", () => {
+  assert.match(app, /Read this concept first:/);
+  assert.match(app, /x\.concept_chunk_id/);
+  assert.match(app, /conceptUnit\?\.chunks\?\.find/);
+  assert.match(app, /#concept-/);
+});
+
+test("every Book 02 Istidlal question maps to a canonical concept in its stated unit", () => {
+  const bookDir = path.join(__dirname, "..", "Library", "Book 02 - Survey of the Lives of the Infallible Imams");
+  const bank = JSON.parse(fs.readFileSync(path.join(bookDir, "counterfactuals", "all-chapters.json"), "utf8"));
+  const book = JSON.parse(fs.readFileSync(path.join(bookDir, "data", "chunks.json"), "utf8"));
+  const units = new Map(book.units.map(unit => [unit.id, unit]));
+  assert.equal(bank.counterfactuals.length, 72);
+  for (const question of bank.counterfactuals) {
+    const unit = units.get(question.unit_id);
+    assert.ok(unit, question.id + " must reference an existing reading unit");
+    const concept = unit.chunks.find(chunk => chunk.id === question.concept_chunk_id);
+    assert.ok(concept, question.id + " must reference a canonical concept in the same unit");
+    assert.ok(concept.title.trim(), question.id + " prerequisite concept must have a readable title");
+  }
+});
