@@ -17,6 +17,8 @@ test("Listen & Learn transcript omits source maps and presents natural section t
   await expect(transcript).not.toContainText("Source map");
   await expect(transcript).not.toContainText(/b02-u03-\d{3}/);
   await expect(transcript).not.toContainText("## Narration");
+  await expect(narration.locator(".narration-reading-time")).toContainText(/Estimated reading time: about \d+ min/);
+  await expect(narration.locator(".narration-reading-time")).toContainText(/\d+ words/);
   expect(errors).toEqual([]);
 });
 
@@ -40,26 +42,40 @@ test("Persian Book 03 narration excludes its Persian source map and redundant ed
 });
 
 
-test("long audiobook narration is queued in multiple speech-safe segments", async ({ page }) => {
+test("browser speech matches the visible transcript and excludes the legacy summary", async ({ page }) => {
   await page.addInitScript(() => {
     window.__narrationSpoken = [];
     window.SpeechSynthesisUtterance = function(text) { this.text = text; };
     Object.defineProperty(window, "speechSynthesis", {
       configurable: true,
       value: {
-        speak(utterance) { window.__narrationSpoken.push(utterance.text); },
+        speak(utterance) {
+          window.__narrationSpoken.push(utterance.text);
+          queueMicrotask(() => utterance.onend?.());
+        },
         cancel() {}
       }
     });
   });
-  await page.goto("/book/unit.html?book_id=book02&unit=u12", { waitUntil: "networkidle" });
+  await page.goto("/book/unit.html?book_id=book02&unit=u03", { waitUntil: "networkidle" });
   const narration = page.locator(".listen-learn");
   await expect(narration).toBeVisible();
+  await narration.getByRole("button", { name: "Show transcript" }).click();
+  const transcript = narration.locator(".narration-body");
+  await expect(transcript).toBeVisible();
   await narration.getByRole("button", { name: "▶ Listen & Learn" }).click();
-  const segments = await page.evaluate(() => window.__narrationSpoken);
-  expect(segments.length).toBeGreaterThan(1);
-  expect(segments.join(" ")).not.toContain("b02-u12-");
-  expect(segments.join(" ")).not.toContain("Source map");
+  await expect.poll(() => page.evaluate(() => window.__narrationSpoken.length)).toBeGreaterThan(1);
+  await expect.poll(async () => {
+    const spoken = await page.evaluate(() => window.__narrationSpoken.join(" "));
+    return /Chapter 2 Session 1/.test(spoken);
+  }).toBe(true);
+  await expect(narration.getByRole("button", { name: "▶ Listen & Learn" })).toBeVisible();
+  const spoken = await page.evaluate(() => window.__narrationSpoken.join(" ").replace(/\s+/g, " ").trim());
+  const visible = (await transcript.innerText()).replace(/\s+/g, " ").trim();
+  expect(spoken).toBe(visible);
+  expect(spoken).not.toContain("Mutahhari opens with a question that can seem troubling at first");
+  expect(spoken).not.toContain("b02-u03-");
+  expect(spoken).not.toContain("Source map");
 });
 
 

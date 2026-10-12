@@ -72,9 +72,11 @@ const narration = fs.readFileSync(narrationPath, "utf8");
 
 test("narration player keeps source-map identifiers out of the transcript and spoken text", () => {
   assert.match(narration, /const sourceMapStart = md\.search\(\/\^#\{2,6\}\\s\+\(\?:source map/);
-  assert.match(narration, /script\.sections\.filter\(s => !\/\^\(\?:source map/);
-  assert.match(narration, /if \(\/\^\(\?:source map/);
-  assert.match(narration, /Source-map IDs and editorial notes are kept out/);
+  assert.match(narration, /function transcriptSections\(script\)/);
+  assert.match(narration, /function transcriptHeading\(section\)/);
+  assert.match(narration, /narration-reading-time/);
+  assert.match(narration, /Estimated reading time: about/);
+  assert.match(narration, /The spoken content matches the transcript below/);
 });
 
 test("narration converts editorial section labels into listener-friendly transitions", () => {
@@ -83,7 +85,9 @@ test("narration converts editorial section labels into listener-friendly transit
   assert.match(narration, /As we move forward, keep this question in mind\./);
   assert.match(narration, /spokenSubheading\(title\)/);
   assert.match(narration, /function speechPieces\(text, maxChars = 1100\)/);
-  assert.ok(narration.includes("state.utterances.forEach(u=>window.speechSynthesis.speak(u));"));
+  assert.match(narration, /const speakNext\s*=\s*\(\)\s*=>/);
+  assert.match(narration, /window\.speechSynthesis\.speak\(utterance\)/);
+  assert.doesNotMatch(narration, /state\.utterances\.forEach\(u=>window\.speechSynthesis\.speak\(u\)\)/);
 });
 
 test("narration normalizes common markdown and spoken-list punctuation", () => {

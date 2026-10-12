@@ -98,21 +98,35 @@
     };
   }
 
+  // This is the single source of truth for both the visible transcript and speech.
+  // The short legacy "Narration" summary is deliberately excluded from both.
+  function transcriptSections(script) {
+    return script.sections.filter(s =>
+      !/^(?:source map|نقشه(?:‌| )منبع|نقشه(?:‌| )منابع|narration|عنوان شنیداری)$/i.test(s.title.trim())
+    );
+  }
+
+  function transcriptHeading(section) {
+    return editorialTitle(section.title, section.text) || section.title;
+  }
+
   function spoken(script) {
-    const parts = [];
-    for (const section of script.sections) {
-      const key = section.title.trim().toLowerCase();
-      if (/^(?:source map|نقشه(?:‌| )منبع|نقشه(?:‌| )منابع)$/i.test(key)) continue;
-      const cue = editorialTitle(section.title, section.text);
-      const text = section.text.trim();
-      if (!text) continue;
-      if (cue && cue !== section.title) parts.push(cue + ' ' + text);
-      else if (cue) parts.push(cue + ' ' + text);
-      else parts.push(text);
-    }
-    // Build one continuous spoken sequence from natural paragraph-sized pieces;
-    // sentence-safe chunking keeps long chapters from being truncated by browser TTS.
-    return parts.join('\n\n').replace(/[ \t]+\n/g, '\n').trim();
+    return transcriptSections(script)
+      .map(section => transcriptHeading(section) + ' ' + section.text.trim())
+      .filter(Boolean)
+      .join('\n\n')
+      .replace(/[ \t]+\n/g, '\n')
+      .trim();
+  }
+
+  function readingEstimate(script) {
+    const visibleText = transcriptSections(script)
+      .map(s => [transcriptHeading(s), s.text].filter(Boolean).join(' '))
+      .join(' ');
+    const words = visibleText.match(/[\p{L}\p{M}\p{N}]+(?:['’\-][\p{L}\p{M}\p{N}]+)*/gu) || [];
+    const persian = /[\u0600-\u06ff]/.test(visibleText);
+    const minutes = Math.max(1, Math.ceil(words.length / (persian ? 180 : 200)));
+    return { words: words.length, minutes };
   }
 
   function speechPieces(text, maxChars = 1100) {
@@ -152,8 +166,9 @@
     if (!hero || document.querySelector('.listen-learn')) return;
     const section=document.createElement('section');
     section.className='section listen-learn'; section.id='listen-learn'; section.dataset.unitKey=key;
-    const transcriptSections = script.sections.filter(s => !/^(?:source map|نقشه(?:‌| )منبع|نقشه(?:‌| )منابع|narration|عنوان شنیداری)$/i.test(s.title));
-    section.innerHTML='<div class="card panel narration-card"><div class="num">Listen & Learn</div><h2>'+esc(script.title||entry.title||'Unit narration')+'</h2><p class="meta-line">A guided narration with explanation, connections and reflection. Source-map IDs and editorial notes are kept out of the listening transcript.</p><div class="actions narration-actions"><button class="btn primary" type="button" data-play>▶ Listen & Learn</button><button class="btn" type="button" data-transcript>Show transcript</button></div><details class="narration-transcript"><summary>Read the transcript</summary><div class="narration-body">'+transcriptSections.map(s=>'<h3>'+esc(editorialTitle(s.title, s.text)||s.title)+'</h3><p>'+esc(s.text).replace(/\n\n/g,'</p><p>').replace(/\n/g,' ')+'</p>').join('')+'</div></details></div>';
+    const visibleSections = transcriptSections(script);
+    const estimate = readingEstimate(script);
+    section.innerHTML='<div class="card panel narration-card"><div class="num">Listen & Learn</div><h2>'+esc(script.title||entry.title||'Unit narration')+'</h2><p class="meta-line">A guided narration with explanation, connections and reflection. The spoken content matches the transcript below.</p><p class="meta-line narration-reading-time">Estimated reading time: about '+estimate.minutes+' min · '+estimate.words.toLocaleString()+' words</p><div class="actions narration-actions"><button class="btn primary" type="button" data-play>▶ Listen & Learn</button><button class="btn" type="button" data-transcript>Show transcript</button></div><details class="narration-transcript"><summary>Read the transcript</summary><div class="narration-body">'+visibleSections.map(s=>'<h3>'+esc(transcriptHeading(s))+'</h3><p>'+esc(s.text).replace(/\n\n/g,'</p><p>').replace(/\n/g,' ')+'</p>').join('')+'</div></details></div>';
     hero.insertAdjacentElement('afterend',section);
     const play=section.querySelector('[data-play]');
     play.addEventListener('click',()=>{
@@ -166,17 +181,30 @@
       state.utterances=pieces.map(piece=>{
         const u=new SpeechSynthesisUtterance(piece);
         u.lang=lang; u.rate=0.92;
-        u.onend=()=>{
-          if(generation!==state.generation)return;
-          state.remaining=Math.max(0,state.remaining-1);
-          if(state.remaining===0){state.utterance=null;state.utterances=[];state.playing=false;play.textContent='▶ Listen & Learn';play.dataset.playing='false';}
-        };
-        u.onerror=()=>{if(generation===state.generation)stop(play);};
         return u;
       });
-      state.remaining=state.utterances.length; state.playing=true; state.utterance=state.utterances[0];
+      state.remaining=state.utterances.length; state.playing=true;
       play.textContent='■ Stop listening'; play.dataset.playing='true';
-      state.utterances.forEach(u=>window.speechSynthesis.speak(u));
+      // Queue one utterance at a time. Some browsers silently drop items when a
+      // long list is submitted at once, which can make the voice stop mid-script.
+      const speakNext=()=>{
+        if(generation!==state.generation)return;
+        const utterance=state.utterances.shift();
+        if(!utterance){
+          state.utterance=null; state.remaining=0; state.playing=false;
+          play.textContent='▶ Listen & Learn'; play.dataset.playing='false';
+          return;
+        }
+        state.utterance=utterance;
+        utterance.onend=()=>{
+          if(generation!==state.generation)return;
+          state.remaining=Math.max(0,state.remaining-1);
+          speakNext();
+        };
+        utterance.onerror=()=>{if(generation===state.generation)stop(play);};
+        window.speechSynthesis.speak(utterance);
+      };
+      speakNext();
     });
     section.querySelector('[data-transcript]').addEventListener('click',e=>{const d=section.querySelector('details');d.open=!d.open;e.currentTarget.textContent=d.open?'Hide transcript':'Show transcript';});
   }
