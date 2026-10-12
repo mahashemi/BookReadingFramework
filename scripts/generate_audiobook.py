@@ -51,19 +51,42 @@ def plain_text(markdown: str) -> str:
     return re.sub(r"\n{3,}","\n\n","\n\n".join(lines)).strip()
 
 def split_text(text: str, limit: int=2600) -> list[str]:
-    result=[]
-    for paragraph in re.split(r"\n\s*\n",text):
-        remaining=paragraph.strip()
+    # Pack adjacent short paragraphs together; one TTS request per paragraph
+    # would turn a book into hundreds of unnecessary network calls.
+    result=[]; buffer=""
+    def split_long(paragraph):
+        parts=[]; remaining=paragraph.strip()
         while len(remaining)>limit:
             cut=max(remaining.rfind(". ",0,limit),remaining.rfind("? ",0,limit),remaining.rfind("! ",0,limit),remaining.rfind("؟ ",0,limit))
             if cut < limit//2: cut=remaining.rfind(" ",0,limit)
             if cut < 1: cut=limit
-            result.append(remaining[:cut+1].strip());remaining=remaining[cut+1:].strip()
-        if remaining: result.append(remaining)
+            parts.append(remaining[:cut+1].strip()); remaining=remaining[cut+1:].strip()
+        if remaining: parts.append(remaining)
+        return parts
+    for paragraph in re.split(r"\n\s*\n",text):
+        paragraph=paragraph.strip()
+        if not paragraph: continue
+        if len(paragraph)>limit:
+            if buffer: result.append(buffer); buffer=""
+            result.extend(split_long(paragraph)); continue
+        candidate=(buffer+"\n\n"+paragraph).strip() if buffer else paragraph
+        if len(candidate)<=limit: buffer=candidate
+        else:
+            if buffer: result.append(buffer)
+            buffer=paragraph
+    if buffer: result.append(buffer)
     return result
 
 async def synthesize(text: str, voice: str, path: Path):
-    await edge_tts.Communicate(text,voice).save(str(path))
+    error=None
+    for attempt in range(3):
+        try:
+            await asyncio.wait_for(edge_tts.Communicate(text,voice).save(str(path)),timeout=75)
+            return
+        except Exception as exc:
+            error=exc
+            if attempt < 2: await asyncio.sleep(2 ** attempt)
+    raise RuntimeError(f"TTS failed after retries for {path.name}: {error}")
 
 async def generate_unit(book_id: str, unit_id: str, entry: dict, out_dir: Path):
     source=ROOT/entry["script"];spoken=plain_text(source.read_text(encoding="utf-8"))
