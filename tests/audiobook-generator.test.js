@@ -13,7 +13,7 @@ test("chapter audio generator strips source maps and segments long narration", (
 });
 
 test("chapter audio uses manifest-declared scripts and publishes MP3 artifacts", () => {
-  assert.match(generator, /audio\/manifest\.json/);
+  assert.match(generator, /MANIFEST=ROOT\/"audio"\/"manifest\.json"/);
   assert.match(generator, /entry\["script"\]/);
   assert.match(workflow, /actions\/upload-artifact@v4/);
   assert.match(workflow, /chapter-audiobook-mp3/);
