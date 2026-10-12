@@ -10,6 +10,8 @@ test("chapter audio generator strips source maps and segments long narration", (
   assert.match(generator, /def split_text/);
   assert.match(generator, /Pack adjacent short paragraphs together/);
   assert.match(generator, /asyncio\.wait_for/);
+  assert.match(generator, /from gtts import gTTS/);
+  assert.match(generator, /eSpeak NG fallback/);
   assert.match(generator, /ffmpeg/);
   assert.match(generator, /Refusing to create audio from an unusually short script/);
 });

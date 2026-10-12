@@ -7,11 +7,11 @@ not from a verbatim copy of the source book. MP3 files are build artifacts.
 from __future__ import annotations
 import argparse, asyncio, json, re, subprocess, tempfile
 from pathlib import Path
-import edge_tts
+from gtts import gTTS
 
 ROOT=Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/"audio"/"manifest.json"
-VOICES={"en":"en-US-AriaNeural","fa":"fa-IR-DilaraNeural","ar":"ar-SA-ZariyahNeural"}
+VOICES={"en":"en","fa":"fa"}
 
 def plain_text(markdown: str) -> str:
     markdown=re.split(r"(?im)^#{2,6}\s+(?:source map|نقشه(?:‌| )منبع|نقشه(?:‌| )منابع)\s*$",markdown,maxsplit=1)[0]
@@ -77,16 +77,20 @@ def split_text(text: str, limit: int=2600) -> list[str]:
     if buffer: result.append(buffer)
     return result
 
-async def synthesize(text: str, voice: str, path: Path):
-    error=None
-    for attempt in range(3):
-        try:
-            await asyncio.wait_for(edge_tts.Communicate(text,voice).save(str(path)),timeout=75)
-            return
-        except Exception as exc:
-            error=exc
-            if attempt < 2: await asyncio.sleep(2 ** attempt)
-    raise RuntimeError(f"TTS failed after retries for {path.name}: {error}")
+async def synthesize(text: str, lang: str, path: Path):
+    try:
+        await asyncio.wait_for(asyncio.to_thread(gTTS(text=text, lang=lang, slow=False).save, str(path)), timeout=75)
+        return "Google TTS"
+    except Exception as exc:
+        # Hosted neural TTS endpoints can reject automated runners. Keep the
+        # chapter build usable with an explicit offline English fallback.
+        if lang != "en":
+            raise RuntimeError(f"Online Persian TTS failed for {path.name}; no accurate offline Persian voice is configured: {exc}") from exc
+        wav=path.with_suffix(".wav")
+        subprocess.run(["espeak-ng","-v","en-us","-s","155","-p","45","-a","170","-w",str(wav),text],check=True)
+        subprocess.run(["ffmpeg","-hide_banner","-loglevel","error","-y","-i",str(wav),"-codec:a","libmp3lame","-q:a","3",str(path)],check=True)
+        wav.unlink(missing_ok=True)
+        return "eSpeak NG fallback"
 
 async def generate_unit(book_id: str, unit_id: str, entry: dict, out_dir: Path):
     source=ROOT/entry["script"];spoken=plain_text(source.read_text(encoding="utf-8"))
@@ -96,12 +100,13 @@ async def generate_unit(book_id: str, unit_id: str, entry: dict, out_dir: Path):
     pieces=split_text(spoken);target=out_dir/book_id/(unit_id+".mp3");target.parent.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="book-audio-") as tmp:
         tmpdir=Path(tmp);parts=[]
+        engines=set()
         for i,piece in enumerate(pieces,1):
-            part=tmpdir/f"part-{i:04d}.mp3";await synthesize(piece,voice,part);parts.append(part)
+            part=tmpdir/f"part-{i:04d}.mp3";engines.add(await synthesize(piece,voice,part));parts.append(part)
         listing=tmpdir/"concat.txt"
         listing.write_text("".join("file '"+str(p).replace("'","'\\''")+"'\n" for p in parts),encoding="utf-8")
         subprocess.run(["ffmpeg","-hide_banner","-loglevel","error","-y","-f","concat","-safe","0","-i",str(listing),"-c","copy",str(target)],check=True)
-    return {"book_id":book_id,"unit_id":unit_id,"script":entry["script"],"voice":voice,"characters":len(spoken),"segments":len(pieces),"mp3":str(target.relative_to(out_dir))}
+    return {"book_id":book_id,"unit_id":unit_id,"script":entry["script"],"voice":voice,"engine":sorted(engines),"characters":len(spoken),"segments":len(pieces),"mp3":str(target.relative_to(out_dir))}
 
 async def main():
     ap=argparse.ArgumentParser();ap.add_argument("--output-dir",default="dist/audiobook")

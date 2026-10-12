@@ -45,9 +45,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install FFmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
-      - name: Install Edge TTS
-        run: python -m pip install --upgrade edge-tts
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng
+      - name: Install Google TTS with offline fallback
+        run: python -m pip install --upgrade gTTS
       - name: Generate declared chapter audio
         env:
           BOOK_ID: ${{ github.event.inputs.book_id }}
