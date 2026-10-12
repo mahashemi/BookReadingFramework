@@ -7,6 +7,7 @@ match chunks to headings and update existing source_url fields in place.
 """
 from __future__ import annotations
 import argparse, json, re, sys, time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -60,9 +61,12 @@ def main():
  data={k:json.loads(p.read_text(encoding="utf-8")) for k,p in BOOKS.items()}
  urls=sorted({base(u.get("source_url","")) for b in data.values() for u in b.get("units",[]) if u.get("source_url")})
  pages={};fail=[];invalid=[];unresolved=[];changes=0
- for url in urls:
-  try:pages[url]=fetch(url)
-  except Exception as ex:fail.append(str(ex));print("ERROR "+str(ex),file=sys.stderr)
+ with ThreadPoolExecutor(max_workers=8) as pool:
+  futures={pool.submit(fetch,url):url for url in urls}
+  for future in as_completed(futures):
+   url=futures[future]
+   try:pages[url]=future.result()
+   except Exception as ex:fail.append(str(ex));print("ERROR "+str(ex),file=sys.stderr)
  index={"source":"Al-Islam.org","policy":"Heading metadata only; original prose is not mirrored.","pages":[]}
  for url,page in pages.items():index["pages"].append({"url":url,"sections":[{"title":s["title"],"id":s["id"] or slug(s["title"])} for s in page.sections]})
  for bid,book in data.items():
