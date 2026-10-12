@@ -153,3 +153,22 @@ test("Book 01 and Book 02 concept links carry source-section fragments", () => {
     }
   }
 });
+
+
+test("Book 02 peace concepts link to the corresponding original source subsections", () => {
+  const file = path.join(__dirname, "..", "Library", "Book 02 - Survey of the Lives of the Infallible Imams", "data", "chunks.json");
+  const data = JSON.parse(fs.readFileSync(file, "utf8"));
+  const unit = data.units.find(u => u.id === "u03");
+  const expected = {
+    "b02-u03-002": "the-holy-prophet-s-and-peace",
+    "b02-u03-003": "ali-and-peace",
+    "b02-u03-004": "the-cases-for-jihad-in-the-shiah-jurisprudence",
+    "b02-u03-005": "fighting-rebels",
+    "b02-u03-006": "peace-in-the-shiah-jurisprudence"
+  };
+  for (const [id, fragment] of Object.entries(expected)) {
+    const concept = unit.chunks.find(c => c.id === id);
+    assert.ok(concept, id + " exists");
+    assert.equal(new URL(concept.source_url).hash.slice(1), fragment, id + " links to its source subsection");
+  }
+});

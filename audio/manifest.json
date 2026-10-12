@@ -161,6 +161,106 @@
           "script": "audio/book02/scripts/u12.md"
         }
       }
+    },
+    "book01": {
+      "units": {
+        "u01": {
+          "title": "Preface & Foreword",
+          "script": "audio/book01/scripts/u01.md"
+        },
+        "u02": {
+          "title": "The Law of Attraction and Repulsion",
+          "script": "audio/book01/scripts/u02.md"
+        },
+        "u03": {
+          "title": "Attraction and Repulsion in the World of Man",
+          "script": "audio/book01/scripts/u03.md"
+        },
+        "u04": {
+          "title": "Differences Between People — The Four Types",
+          "script": "audio/book01/scripts/u04.md"
+        },
+        "u05": {
+          "title": "'Ali — One Man with Two Powers",
+          "script": "audio/book01/scripts/u05.md"
+        },
+        "u06": {
+          "title": "Powerful Attractions (Part 1 opens)",
+          "script": "audio/book01/scripts/u06.md"
+        },
+        "u07": {
+          "title": "Shi'ism, the Creed of Love",
+          "script": "audio/book01/scripts/u07.md"
+        },
+        "u08": {
+          "title": "The Elixir of Love",
+          "script": "audio/book01/scripts/u08.md"
+        },
+        "u09": {
+          "title": "Breaking Down the Barriers",
+          "script": "audio/book01/scripts/u09.md"
+        },
+        "u10": {
+          "title": "Constructive or Destructive?",
+          "script": "audio/book01/scripts/u10.md"
+        },
+        "u11": {
+          "title": "Love and Devotion to Those Close to God",
+          "script": "audio/book01/scripts/u11.md"
+        },
+        "u12": {
+          "title": "The Power of Love in Society",
+          "script": "audio/book01/scripts/u12.md"
+        },
+        "u13": {
+          "title": "The Best Means for Refining the Soul",
+          "script": "audio/book01/scripts/u13.md"
+        },
+        "u14": {
+          "title": "Examples from the History of Islam",
+          "script": "audio/book01/scripts/u14.md"
+        },
+        "u15": {
+          "title": "Love for 'Ali in the Qur'an and Sunnah",
+          "script": "audio/book01/scripts/u15.md"
+        },
+        "u16": {
+          "title": "The Secret of 'Ali's Force of Attraction",
+          "script": "audio/book01/scripts/u16.md"
+        },
+        "u17": {
+          "title": "How 'Ali Made Enemies (Part 2 opens)",
+          "script": "audio/book01/scripts/u17.md"
+        },
+        "u18": {
+          "title": "How the Khawarij Came Into Existence",
+          "script": "audio/book01/scripts/u18.md"
+        },
+        "u19": {
+          "title": "The Basis of Khawarij Opinions & Their View of the Caliphate",
+          "script": "audio/book01/scripts/u19.md"
+        },
+        "u20": {
+          "title": "Just a Motto? — and 'Ali's Sense of Democracy",
+          "script": "audio/book01/scripts/u20.md"
+        },
+        "u21": {
+          "title": "The Distinguishing Features of the Khawarij",
+          "script": "audio/book01/scripts/u21.md"
+        },
+        "u22": {
+          "title": "The Influence of Islamic Sects on Each Other",
+          "script": "audio/book01/scripts/u22.md"
+        },
+        "u23": {
+          "title": "The Politics of 'Using' the Qur'an & Fighting Hypocrisy",
+          "script": "audio/book01/scripts/u23.md"
+        },
+        "u24": {
+          "title": "'Ali, the True Imam and Leader",
+          "script": "audio/book01/scripts/u24.md"
+        }
+      }
     }
   }
 }
