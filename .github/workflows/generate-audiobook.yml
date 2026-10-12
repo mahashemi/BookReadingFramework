@@ -16,7 +16,12 @@ on:
         default: 'book02'
 
 permissions:
+  actions: write
   contents: read
+
+concurrency:
+  group: chapter-audio-${{ github.event.pull_request.head.ref || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   generate-audio:
@@ -25,6 +30,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Cancel stale audio runs for this branch
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for run_id in $(gh run list --workflow generate-audiobook.yml --branch "$GITHUB_HEAD_REF" --limit 50 --json databaseId,status --jq '.[] | select(.status == "inProgress" or .status == "queued") | .databaseId'); do
+            if [ "$run_id" != "$GITHUB_RUN_ID" ]; then
+              gh api --method POST "repos/$GITHUB_REPOSITORY/actions/runs/$run_id/cancel" || true
+            fi
+          done
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
