@@ -71,7 +71,7 @@ const narrationPath = path.join(__dirname, "..", "assets", "narration.js");
 const narration = fs.readFileSync(narrationPath, "utf8");
 
 test("narration player keeps source-map identifiers out of the transcript and spoken text", () => {
-  assert.match(narration, /const sourceMapStart = md\.search\(\/\^#\{2,6\}\s\+\(\?:source map/);
+  assert.match(narration, /const sourceMapStart = md\.search\(\/\^#\{2,6\}\\s\+\(\?:source map/);
   assert.match(narration, /function transcriptSections\(script\)/);
   assert.match(narration, /function transcriptHeading\(section\)/);
   assert.match(narration, /narration-reading-time/);
@@ -91,7 +91,7 @@ test("narration converts editorial section labels into listener-friendly transit
 });
 
 test("narration normalizes common markdown and spoken-list punctuation", () => {
-  assert.match(narration, /replace\(\/\^\s\*\[-\+\*\]\s\+/);
+  assert.match(narration, /replace\(\/\^\\s\*\[-\+\*\]\\s\+/);
   assert.match(narration, /replace\(\/Mu\['’\]awiyah/);
   assert.match(narration, /replace\(\/Qur\['’\]an/);
   assert.match(narration, /replace\(\/Ja\['’\]far/);
