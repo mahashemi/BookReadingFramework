@@ -17,8 +17,8 @@ test("Listen & Learn transcript omits source maps and presents natural section t
   await expect(transcript).not.toContainText("Source map");
   await expect(transcript).not.toContainText(/b02-u03-\d{3}/);
   await expect(transcript).not.toContainText("## Narration");
-  await expect(narration.locator(".narration-reading-time")).toContainText(/Estimated reading time: about \\d+ min/);
-  await expect(narration.locator(".narration-reading-time")).toContainText(/\\d+ words/);
+  await expect(narration.locator(".narration-reading-time")).toContainText(/Estimated reading time: about \d+ min/);
+  await expect(narration.locator(".narration-reading-time")).toContainText(/\d+ words/);
   expect(errors).toEqual([]);
 });
 
@@ -69,8 +69,8 @@ test("browser speech matches the visible transcript and excludes the legacy summ
     const spoken = await page.evaluate(() => window.__narrationSpoken.join(" "));
     return /The next point is Chapter 2 Session 1/.test(spoken);
   }).toBe(true);
-  const spoken = await page.evaluate(() => window.__narrationSpoken.join(" ").replace(/\\s+/g, " ").trim());
-  const visible = (await transcript.innerText()).replace(/\\s+/g, " ").trim();
+  const spoken = await page.evaluate(() => window.__narrationSpoken.join(" ").replace(/\s+/g, " ").trim());
+  const visible = (await transcript.innerText()).replace(/\s+/g, " ").trim();
   expect(spoken).toBe(visible);
   expect(spoken).not.toContain("Mutahhari opens with a question that can seem troubling at first");
   expect(spoken).not.toContain("b02-u03-");
