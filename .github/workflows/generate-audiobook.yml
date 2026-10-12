@@ -35,7 +35,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          for run_id in $(gh api "repos/$GITHUB_REPOSITORY/actions/runs?per_page=100" --jq '.workflow_runs[] | select(.head_branch == env.GITHUB_HEAD_REF and .name == "Generate chapter audio" and .status == "in_progress" and (.id|tostring) != env.GITHUB_RUN_ID) | .id'); do
+          for run_id in $(gh api "repos/$GITHUB_REPOSITORY/actions/runs?per_page=100" --jq ".workflow_runs[] | select(.head_branch == \"$GITHUB_HEAD_REF\" and .name == \"Generate chapter audio\" and .status == \"in_progress\") | .id"); do
             if [ "$run_id" != "$GITHUB_RUN_ID" ]; then
               gh api --method POST "repos/$GITHUB_REPOSITORY/actions/runs/$run_id/cancel" || true
             fi
