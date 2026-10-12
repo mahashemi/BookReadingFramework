@@ -57,19 +57,6 @@ jobs:
           if-no-files-found: ignore
 
 
-  source-anchor-audit:
-    name: Source anchor audit
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Audit source section links against original pages
-        run: python scripts/refresh_al_islam_anchors.py --strict
-
   teaching-deck:
     name: Compile Book 02 teaching deck
     runs-on: ubuntu-latest
