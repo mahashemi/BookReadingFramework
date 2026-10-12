@@ -73,7 +73,7 @@ const narration = fs.readFileSync(narrationPath, "utf8");
 test("narration player keeps source-map identifiers out of the transcript and spoken text", () => {
   assert.match(narration, /const sourceMapStart = md\.search\(\/\^#\{2,6\}\s\+\(\?:source map/);
   assert.match(narration, /function transcriptSections\(script\)/);
-  assert.match(narration, /function transcriptHeading\\(section\\)/);
+  assert.match(narration, /function transcriptHeading\(section\)/);
   assert.match(narration, /narration-reading-time/);
   assert.match(narration, /Estimated reading time: about/);
   assert.match(narration, /The spoken content matches the transcript below/);
