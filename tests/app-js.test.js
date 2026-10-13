@@ -180,3 +180,14 @@ test("Book 02 peace concepts link to the corresponding original source subsectio
     assert.equal(new URL(concept.source_url).hash.slice(1), fragment, id + " links to its source subsection");
   }
 });
+
+
+test("concept passages render Markdown paragraphs, bold labels, and real lists instead of raw syntax", () => {
+  assert.match(app, /const markdownInline = value =>/);
+  assert.match(app, /const markdownToHTML = value =>/);
+  assert.match(app, /markdownToHTML\(c\.text\)/);
+  assert.doesNotMatch(app, /<p>\$\{esc\(c\.text\)\}<\/p>/);
+  assert.match(app, /<strong>\$1<\/strong>/);
+  assert.match(app, /out\.push\('<' \+ nextType \+ '>'\)/);
+  assert.match(app, /out\.push\('<li>' \+ markdownInline\(item\[1\]\) \+ '<\/li>'\)/);
+});
