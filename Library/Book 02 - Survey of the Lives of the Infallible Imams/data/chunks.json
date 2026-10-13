@@ -299,65 +299,81 @@
       "chunks": [
         {
           "id": "b02-u03-001",
-          "title": "Chapter 2 Session 1 — Framing the question of al-Hassan's peace vs al-Husayn's revolt",
+          "title": "The central question: why did al-Hassan make peace while al-Husayn resisted?",
           "order": 1,
-          "text": "Mutahhari opens Session 1 by posing the puzzle directly: why did Imam al-Hassan make peace with Mu'awiyah while Imam al-Husayn refused to submit to Yazid? He rejects the easy explanation that the two Imams simply had different temperaments (one peace-loving, one rebellious), arguing instead that a proper answer requires first laying out Islam's general jurisprudential rules on jihad and peace, since both men's choices were reasoned applications of those same rules to different circumstances, not personality traits.",
+          "text": "**Main idea:** Mutahhari argues that the difference between Imam al-Hassan's peace and Imam al-Husayn's resistance cannot be explained simply by saying they had different personalities.\n\n**How to think about it:** Both decisions must be understood through the same religious principles, applied to different political and social circumstances. The chapter first explains those principles, then uses them to examine al-Hassan's treaty.\n\n**Remember:** Different actions do not necessarily mean different values; the circumstances may change which action is justified.",
           "importance": "high",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#chapter-2-imam-al-hassans-pacifism-session-1"
         },
         {
           "id": "b02-u03-002",
-          "title": "Chapter 2 Session 1 — The Prophet's own alternation between peace and war",
+          "title": "The Prophet used both peace and fighting, depending on the circumstances",
           "order": 2,
-          "text": "Mutahhari shows that pacifism was not unique to al-Hassan: the Prophet himself avoided armed retaliation throughout the Meccan period even as Muslims were tortured, and permission to fight was only revealed after the migration to Medina (citing Qur'an 22:39). The Prophet later both fought polytheists, Jews and Christians at times and signed treaties with them at other times (e.g., the Hudaybiyyah treaty and a non-aggression pact with the Jews of Medina), showing that Islam treats war and peace as circumstance-dependent tools rather than fixed identities.",
+          "text": "**Main idea:** In Mutahhari's account, Islam does not treat war or peace as a permanent identity. The right course depends on the situation.\n\n- In Mecca, Muslims endured persecution without being permitted to fight; permission came later, after the migration (Qur'an 22:39).\n- At other times, the Prophet fought opponents, but he also made agreements, including the Treaty of Hudaybiyyah.\n\n**Why it matters:** The Prophet's own example shows that choosing peace in one situation and fighting in another is not automatically a contradiction.",
           "importance": "high",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#the-holy-prophet-s-and-peace"
         },
         {
           "id": "b02-u03-003",
-          "title": "Chapter 2 Session 1 — 'Ali's own record of restraint and arbitration",
+          "title": "Imam Ali also chose restraint and arbitration at particular moments",
           "order": 3,
-          "text": "Mutahhari traces the same pattern in 'Ali: he refused to fight for the caliphate after the Prophet's death (drawing even Fatimah's objection), mediated between the rebels and 'Uthman to try to prevent his murder, and later accepted arbitration at Siffin after Mu'awiyah's side raised the Qur'an on spearheads — even though 'Amr ibn al-'As then manipulated the arbitration to a fruitless outcome. Mutahhari uses this to argue that 'Ali, like the Prophet, moved between war and peace based on the situation, which sets up the same question for al-Hassan and al-Husayn.",
+          "text": "**Main idea:** Mutahhari presents Imam Ali as another example of leadership that responded to circumstances rather than following one unchanging tactic.\n\nThe chapter points to Ali's reluctance to fight for political power, his attempts to mediate during the crisis involving Uthman, and his acceptance of arbitration at Siffin after the opposing army raised Qur'ans on spears. Mutahhari also recounts how the arbitration was manipulated.\n\n**Key distinction:** Accepting negotiation or arbitration does not mean that every opponent is sincere. It means the decision must be judged in its context, including the risks and the available alternatives.",
           "importance": "high",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#ali-and-peace"
         },
         {
           "id": "b02-u03-004",
-          "title": "Chapter 2 Session 1 — The categories of jihad in Shi'ah jurisprudence",
+          "title": "Offensive jihad has a specific authorization condition in the Shi'ah jurisprudence discussed here",
           "order": 4,
-          "text": "Mutahhari outlines, citing the jurists Muhaqqiq al-Hilli and Shahid Thani, several distinct categories of jihad: (1) 'antecedent' offensive jihad against non-Muslims, which requires the presence of an imam or his appointee and is not permitted even to a religious authority acting alone; (2) defensive jihad when Islamic land, people, or property are attacked, which becomes obligatory on all Muslims regardless of an imam's permission, with the obligation growing stronger the closer one is to the danger; and (3) a jihad-like category (not classed as general jihad but earning the same martyrdom status) covering a Muslim in non-Muslim lands who must fight to save his own life, or someone defending his home from an attacker, where the level of resistance required scales with what is at stake (property vs. life).",
+          "text": "**Main idea:** The jurists cited by Mutahhari distinguish different kinds of fighting; they do not treat every situation as the same legal case.\n\nIn the category he calls antecedent or offensive jihad against non-Muslims, the passage says that the presence of an Imam or his appointed representative is required. A religious authority acting alone is not enough under this rule.\n\n**Do not confuse this with:** Defensive fighting when a community is attacked, which the following concept treats separately. These are the author's presentation of jurisprudential categories, not a complete guide to every contemporary legal question.",
           "importance": "high",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#the-cases-for-jihad-in-the-shiah-jurisprudence"
         },
         {
           "id": "b02-u03-005",
-          "title": "Chapter 2 Session 1 — Fighting rebels against a just ruler",
+          "title": "When a community is attacked, defense is treated differently from offensive jihad",
           "order": 5,
-          "text": "A further category is fighting rebels: when two Muslim factions clash, the Qur'an (49:9) commands the community first to seek reconciliation, and only to fight the side that refuses to comply. Mutahhari notes this applies especially when a group rises against a just imam, in which case Muslims are obligated to fight in the imam's favor, and mentions a related but separately debated category of righteous armed uprising for 'enjoining good and forbidding evil.'",
-          "importance": "medium",
-          "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#fighting-rebels"
+          "text": "**Main idea:** In the framework described in this passage, defending people, land, or property against an attack is a different legal category from initiating offensive warfare.\n\nMutahhari explains that defensive jihad becomes obligatory on Muslims without the same prior authorization condition described for offensive jihad. The obligation becomes more immediate for those closer to the danger.\n\n**Remember the distinction:** The question is not merely “Is there fighting?” but “What kind of situation caused it, and what conditions apply to that category?”",
+          "importance": "high",
+          "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#the-cases-for-jihad-in-the-shiah-jurisprudence"
         },
         {
           "id": "b02-u03-006",
-          "title": "Chapter 2 Session 1 — Jurisprudential conditions for a peace treaty (armistice)",
+          "title": "Personal defense depends on what is threatened",
           "order": 6,
-          "text": "Mutahhari then turns to the jurisprudence of peace/truce, quoting Muhaqqiq's Shara'i' al-Islam: a truce with non-Muslims is permissible only if it serves Muslim interests — e.g., the Muslims are currently too few or weak to win, they need time to gather strength or allies, or the pause in hostilities is likely to lead the other side toward Islam — and even then it must run for a fixed, specified term rather than an indefinite one. If Muslims are strong enough to prevail and gain nothing from a truce, a truce is not permitted; this framework is what Mutahhari will apply to evaluate al-Hassan's treaty.",
+          "text": "**Main idea:** The passage also discusses situations that are jihad-like in reward but are not classified as general jihad.\n\nIt gives examples such as a Muslim protecting their own life while living in a non-Muslim land, or a person defending their home from an attacker. The level of resistance is related to what is at risk: protecting property is not identical to protecting a human life.\n\n**Why this matters:** The source distinguishes categories and degrees of obligation instead of giving one rule for every threat. This summary reflects the passage's examples and should not be treated as a standalone ruling for a real-life emergency.",
           "importance": "medium",
-          "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#peace-in-the-shiah-jurisprudence"
+          "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#the-cases-for-jihad-in-the-shiah-jurisprudence"
         },
         {
           "id": "b02-u03-007",
-          "title": "Chapter 2 Session 1 — The Hudaybiyyah precedent",
+          "title": "When Muslim groups fight, reconciliation comes before fighting rebels",
           "order": 7,
-          "text": "Mutahhari retells the Hudaybiyyah episode at length as the model for al-Hassan's later peace: the Prophet marched to Mecca unarmed as a pilgrim, was blocked by the Quraysh, and accepted an apparently one-sided ten-year truce (including a clause requiring the return of any Muslim who fled to Medina, but not vice versa) purely to secure freedom to preach — a decision many companions, including 'Umar, initially resented. Within less than two years, this peace produced far more conversions than the previous two decades of conflict had, vindicating the Prophet's judgment and establishing that a costly-looking peace can be the strategically sound choice.",
-          "importance": "medium",
-          "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#peace-in-the-shiah-jurisprudence"
+          "text": "**Main idea:** In the case of conflict between two Muslim groups, the passage cites Qur'an 49:9: first seek reconciliation; if one side refuses and continues wrongdoing, the community is to confront that side.\n\nMutahhari discusses this in relation to a group rebelling against a just Imam. He also mentions armed uprising to enjoin good and forbid evil as a related but separately debated category.\n\n**Important:** Do not collapse all these cases into one label. The passage treats conflict between Muslim groups, rebellion against a just Imam, and other forms of uprising as related but distinguishable questions.",
+          "importance": "high",
+          "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#fighting-rebels"
         },
         {
           "id": "b02-u03-008",
-          "title": "Chapter 2 Session 1 — Q&A: does citing jurisprudence beg the question, and is Sunni fiqh on jihad different?",
+          "title": "A peace treaty must serve a legitimate purpose and have a defined term",
           "order": 8,
-          "text": "In the Q&A, a listener presses Mutahhari on whether it is circular to judge al-Hassan's conduct by a jurisprudence that is itself built on the Imams' precedents; Mutahhari clarifies he is testing whether the jurisprudence as a whole is internally logical, not claiming al-Hassan consciously followed later fiqh manuals. Asked whether Sunni jurisprudence differs on jihad, he says the substantive rules are close, with Shi'ah fiqh's distinguishing feature being its requirement of an imam's authorization for offensive jihad.",
+          "text": "**Main idea:** In the jurisprudential rule quoted by Mutahhari, a truce is permitted when it serves a genuine Muslim interest—not simply because peace sounds preferable in every situation.\n\n**When might it serve an interest?**\n- The community is too weak or too few in number to prevail at that time.\n- A pause is needed to gather strength or allies.\n- The pause may create an opportunity for the other side to learn about Islam.\n\n**Two limits matter:**\n1. The agreement must last for a specified period, not an indefinite term.\n2. Under the rule as presented here, if Muslims are strong enough to prevail and have no benefit to gain from a truce, that truce is not permitted.\n\n**Why the author explains this:** These conditions give readers a framework for evaluating Imam al-Hassan's treaty rather than judging it by appearance alone.",
+          "importance": "high",
+          "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#peace-in-the-shiah-jurisprudence"
+        },
+        {
+          "id": "b02-u03-009",
+          "title": "Hudaybiyyah shows why an agreement that looks unfavorable may still be wise",
+          "order": 9,
+          "text": "**Main idea:** Mutahhari uses the Prophet's Treaty of Hudaybiyyah as a precedent for understanding al-Hassan's peace.\n\nThe Prophet accepted a ten-year truce with Quraysh, including terms that some companions considered one-sided. The agreement gave Muslims room to preach without constant warfare. Mutahhari emphasizes that many more people embraced Islam during the ensuing peace than during the preceding years of conflict.\n\n**Lesson of the example:** A treaty should be assessed by its purpose, circumstances, and consequences—not only by whether every clause looks favorable at first glance. The example does not mean that every unequal treaty is automatically wise; the reasoning depends on the circumstances described.",
+          "importance": "high",
+          "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#peace-in-the-shiah-jurisprudence"
+        },
+        {
+          "id": "b02-u03-010",
+          "title": "Using jurisprudence to assess the Imams requires careful reasoning, not circular claims",
+          "order": 10,
+          "text": "**Main idea:** In the discussion questions, a listener asks whether it is circular to judge al-Hassan's actions using jurisprudential rules that were themselves shaped by the Imams' examples.\n\nMutahhari replies that he is testing whether the jurisprudential system is coherent as a whole; he is not claiming that al-Hassan consciously consulted later manuals. Asked about Sunni jurisprudence, he says the rules are broadly similar in this area, while identifying authorization for offensive jihad as a distinctive feature of Shi'ah jurisprudence in his account.\n\n**Read carefully:** This is Mutahhari's explanation of his method and comparison. It should not be expanded into a claim that every jurist or school agrees on every detail.",
           "importance": "medium",
           "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#peace-in-the-shiah-jurisprudence"
         }
