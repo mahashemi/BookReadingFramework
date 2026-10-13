@@ -30,6 +30,48 @@
     }
     return html + esc(text.slice(cursor));
   };
+  /* Render the small, safe Markdown subset used by concept explanations.
+     Always escape source text first; only then add the HTML we generate. */
+  const markdownInline = value => {
+    let html = esc(value);
+    html = html.replace(/\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g,
+      (_, label, url) => '<a href="' + url + '" target="_blank" rel="noopener">' + label + '</a>');
+    html = html.replace(/\x60([^\x60]+)\x60/g, '<code>$1</code>');
+    html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    html = html.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>');
+    return html;
+  };
+
+  const markdownToHTML = value => {
+    const lines = String(value ?? '').replace(/\r\n?/g, '\n').split('\n');
+    const out = [];
+    let paragraph = [];
+    let listType = null;
+    const closeList = () => {
+      if (listType) out.push('</' + listType + '>');
+      listType = null;
+    };
+    const flushParagraph = () => {
+      if (paragraph.length) out.push('<p>' + paragraph.map(markdownInline).join(' ') + '</p>');
+      paragraph = [];
+    };
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed) { flushParagraph(); closeList(); continue; }
+      const bullet = trimmed.match(/^[-+*]\s+(.+)$/);
+      const numbered = trimmed.match(/^\d+[.)]\s+(.+)$/);
+      const item = bullet || numbered;
+      if (item) {
+        flushParagraph();
+        const nextType = bullet ? 'ul' : 'ol';
+        if (listType !== nextType) { closeList(); out.push('<' + nextType + '>'); listType = nextType; }
+        out.push('<li>' + markdownInline(item[1]) + '</li>');
+      } else { closeList(); paragraph.push(trimmed); }
+    }
+    flushParagraph(); closeList();
+    return out.join('');
+  };
+
   const pad = n => String(n).padStart(2, '0');
   const fmt = n => (n == null ? '\u2014' : Number(n).toLocaleString('en-US'));
   const sum = (list, f) => list.reduce((a, x) => a + f(x), 0);
@@ -282,7 +324,7 @@ ${glossaryHTML}
 
     /* The canonical chunk text is the source-grounded learning passage. Render one passage reveal per concept rather than inventing a second explanation field or duplicating the same source text under another label. */
     const concepts = chunks.map(c => {
-      return `<article class="card unit" id="concept-${esc(c.id)}"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><p>${esc(c.text)}</p></details><div class="source-note"><a href="${esc(c.source_url || sourceHref)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></div></article>`;
+      return `<article class="card unit" id="concept-${esc(c.id)}"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><div class="markdown-content">${markdownToHTML(c.text)}</div></details><div class="source-note"><a href="${esc(c.source_url || sourceHref)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></div></article>`;
     }).join('');
 
     const phrases = u.quotes.length ? `<section class="section"><div class="section-head compact"><div><h2>Key phrases</h2><p>Short phrases worth remembering verbatim. Consult the original page for full context.</p></div></div>${u.quotes.map(q => `<blockquote class="phrase">${esc(q.text)}</blockquote>`).join('')}</section>` : '';
