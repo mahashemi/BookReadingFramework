@@ -93,7 +93,7 @@ test.describe("Book 02 Session 2 jihad and truce framework", () => {
     await expect(framework).toContainText("genuine Muslim interest");
     await expect(framework).toContainText("Imam al-Hasan · Treaty");
     await expect(framework).toContainText("Imam al-Husayn · Qiyam");
-    await expect(framework.locator("a[href^=\"#concept-b02-u04-\"]")).toHaveCount(6);
+    await expect(framework.locator("a[href^=\"#concept-b02-u04-\"]")).toHaveCount(7);
     await page.goto("/book/unit.html?book_id=book02&unit=u03", { waitUntil: "networkidle" });
     await expect(page.locator("#jihad-truce-framework")).toHaveCount(0);
     expect(errors).toEqual([]);
