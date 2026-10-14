@@ -1,6 +1,6 @@
 # The Deep-Reading Framework
 ### A repeatable pipeline for turning any book into long-term memory
-*Version 2.2 — generic, data-driven framework; validated across Books 01–03. Adds Counterfactual Istidlal as a source-traceable reasoning layer. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 160 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
+*Version 2.3 — generic, data-driven framework; validated across Books 01–03. Adds source-heading-aware concept titles and reader-first Istidlal questions, with counterfactual reasoning used when it naturally fits. v1.8 adds a source-traceable Akhlaq lesson layer for character/ethics books and clarifies how derived moral lessons must remain distinct from source claims. (v1.5: found that Book 02's `concepts.explanation` is byte-identical to the raw source chunk in all 162 concepts -- not a distillation as assumed in the v1.4 note below -- broadened that note accordingly and fixed the resulting duplicate display on unit pages. v1.4: documented the `claim_examples` duplication found in Book 02 -- see Module 2 -- and moved the GitHub Pages hub from a per-book `/book-NN/` folder to one generic, manifest-driven `/book/` shell -- see Module 7. v1.3: resolved the question-bank duplication documented below Module 6B -- `study_bookXX.json` no longer embeds questions; `study.html` now fetches `exam_bank/questions.json` live. v1.2: removed several duplicated paragraphs that had accumulated in this document; restored the 5th Module 2 extraction item that had been dropped from the bullet list.)*
 
 ---
 
@@ -78,6 +78,8 @@ For every chapter/reading-unit, extract five things:
 **The claim → example pattern.** Most serious non-fiction authors argue by stating a general claim, then proving it with a story, statistic, or historical case. Once you spot this pattern in a book, extraction becomes mechanical: the claim is the quote/slide material, the example is what you narrate or explain. Look for it explicitly in Module 2.
 
 **Deep-understanding rule.** A question should usually force the learner to combine at least two elements: cause + consequence, claim + evidence, comparison + reason, event + interpretation, or concept + application. Avoid questions whose answer is merely a section title or one isolated fact.
+
+**Source-heading and concept-title rule.** Read the source headings before naming concepts. If several concepts belong to one source subtitle, preserve that shared subtitle as a visible grouping while giving each concept a distinct, informative learning title (for example, “The Imam’s prayers and tear shedding — Serving Islam through prayer” and “The Imam’s prayers and tear shedding — Mourning preserves the message of Karbala”). Do not prefix every title with a generic “Chapter N —” when the source heading can do the organizing. Do not invent numbered “types,” stages, or taxonomies unless the source actually defines them. Keep the existing canonical schema and IDs; this is a title/provenance convention, not a reason to add fields.
 
 **An "explanation" that is secretly just the source text, copy-pasted, is the same bug as a question bank duplicated across files — just one level further in.** Found twice in Book 02, in two different fields, in two separate review passes:
 - `claim_examples.reasoning` duplicates the matching concept's own `explanation` verbatim in all 160 entries; `evidence` either duplicates it too or holds a truncated prefix of the same text in all 160; `lesson` repeats one identical boilerplate sentence in all 160.
@@ -188,23 +190,23 @@ Teaching material and exam preparation should share the same conceptual question
 
 These questions are not filler. They are a bridge between teaching discussion and exam mastery. If the real exam has a small number of questions, practice should still be much larger so that the learner is prepared for the worst case.
 
-## Module 6D — Counterfactual Istidlal
+## Module 6D — Reader Questions and Istidlal
 
-Counterfactual Istidlal asks learners to change one meaningful premise in a source-grounded case and reason carefully about what follows. **Coverage must be both deep and broad:** for each substantive chapter or reading unit, build at least 6 distinct questions, usually 6–7 and more when the source contains additional major arguments. Do not stop at 2–3 questions merely to keep the bank short. Avoid near-duplicates; each question should probe a different argument, premise, consequence, exception, or failure mode.
+Start with the question a thoughtful reader would naturally ask at that point in the source: “Why did the author make this distinction?”, “What evidence supports this?”, “How can these two examples fit together?”, “What would change if this condition were absent?”, or “What follows from this claim?” Do not force every prompt into a hypothetical or repeat “Suppose…” as a template. Use a counterfactual only when changing a meaningful premise genuinely clarifies the source’s reasoning. Keep the skill tag `counterfactual-istidlal` for the existing canonical schema unless that schema is deliberately revised; the learner-facing wording should still sound natural and reader-led. **Coverage must be both deep and broad:** for each substantive chapter or reading unit, build at least 6 distinct questions, usually 6–7 and more when the source contains additional major arguments. Do not stop at 2–3 questions merely to keep the bank short. Avoid near-duplicates; each question should probe a different argument, premise, consequence, exception, or failure mode.
 
 For each selected question:
 
 1. Anchor it to one or more canonical learning chunks. Cover every substantive chapter or teaching unit in the book, including introductions where they contain an argument worth testing; skip front matter that offers no substantive reasoning. For a long chapter, map the major arguments and develop 6–7 distinct questions at minimum; add more where separate arguments, counterarguments, historical cases, or qualifications warrant it. Never use a fixed quota as a substitute for reading the source carefully.
    - **Make the prerequisite concept explicit to the learner.** Every question must reference a canonical `concept_chunk_id` in its `unit_id`. In the learner-facing UI, show the concept's human-readable title immediately before the question as **“Read this concept first”**, linked directly to that concept's anchor (or to its unit page plus anchor when cross-unit). Do not show only an opaque chunk ID, and do not make learners guess which passage contains the needed reasoning. Validate that every referenced chunk exists in the stated unit and that the rendered link resolves to the matching concept.
-2. Change one consequential premise rather than merely rewording the original case.
-3. Make the learner reason through consequences, precedent, competing duties, or limits.
+2. Make the prompt a natural reader question. It may ask for explanation, evidence, comparison, clarification, an implication, or an application. Do not add a hypothetical just to make the question sound difficult.
+3. When a counterfactual is genuinely useful, change one consequential premise rather than merely rewording the original case; then make the learner reason through consequences, precedent, competing duties, or limits.
 4. Give a medium-length answer: source principle → inference → qualification where needed.
 5. Include Qur'anic verses and/or hadith when they genuinely strengthen the reasoning. Give a precise locator and a stable source link; do not add scripture as decoration. In the learner-facing answer, place the citation link inline at the claim it supports (for example, `[Qur'an 4:135](https://quran.com/4/135)`), not only in a references list beneath the answer. The UI must render only safe HTTPS Markdown links as links and escape all other answer text.
 6. Distinguish what a source explicitly says from the conclusion inferred for the hypothetical. Never claim that a classical source directly answered a modern counterfactual unless it actually did.
 7. Preserve relevant distinctions (for example, ordinary political deception versus specifically evidenced exceptions; dissent versus violence; serious sin versus takfir; justice versus identical treatment).
 8. Cite the source IDs in the bank and keep a source catalog. If the authenticity, wording, or locator of a report is disputed or uncertain, say so instead of overstating it.
 
-A useful answer structure is **changed premise → source principle → likely consequence → boundary/qualification → conclusion**. Test second-order effects when they add real insight (for example, what happens when an exception becomes a precedent for future rulers), but avoid repeating the same consequence across several questions.
+A useful answer structure is **direct answer → source principle/evidence → reasoning → qualification or uncertainty → conclusion**. For a genuine counterfactual, include the changed premise and likely consequence. Test second-order effects when they add real insight (for example, what happens when an exception becomes a precedent for future rulers), but avoid repeating the same consequence across several questions.
 
 The bank may use this schema (fields may be extended only when the framework is deliberately revised):
 
@@ -219,7 +221,7 @@ The bank may use this schema (fields may be extended only when the framework is 
       "concept_chunk_id": "b02-u02-003",
       "skill": "counterfactual-istidlal",
       "difficulty": "hard",
-      "prompt": "What if ...?",
+      "prompt": "Why does the author distinguish ...? (Use a counterfactual only when it genuinely helps.)",
       "answer": "Medium-length source-grounded reasoning, with inference clearly distinguished from quotation.",
       "istidlal_takeaway": "The core reasoning principle in one sentence.",
       "source_ids": ["..."]
