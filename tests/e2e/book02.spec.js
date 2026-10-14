@@ -97,7 +97,7 @@ test.describe("Book 02 Session 2 jihad and truce framework", () => {
     await expect(framework.locator("svg .jf-node-question")).toHaveCount(7);
     await expect(framework.locator("svg .jf-route-hasan path")).toHaveCount(7);
     await expect(framework.locator("svg .jf-route-husayn path")).toHaveCount(4);
-    await expect(framework.locator("svg .jf-node-leaf")).toHaveCount(8);
+    await expect(framework.locator("svg .jf-node-leaf")).toHaveCount(10);
     await page.goto("/book/unit.html?book_id=book02&unit=u03", { waitUntil: "networkidle" });
     await expect(page.locator("#jihad-truce-framework")).toHaveCount(0);
     expect(errors).toEqual([]);
