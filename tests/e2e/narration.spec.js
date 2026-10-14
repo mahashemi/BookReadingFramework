@@ -97,3 +97,30 @@ test("changing the selected unit stops old speech and replaces the narration pan
   await expect(page.locator(".listen-learn")).not.toContainText("Chapter 1");
   expect(await page.evaluate(() => window.__cancelCount)).toBeGreaterThan(0);
 });
+
+
+test("browser narration chooses a voice from the dominant script, not isolated Arabic text", async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__narrationSpoken = [];
+    window.SpeechSynthesisUtterance = function(text) { this.text = text; this.lang = ""; };
+    Object.defineProperty(window, "speechSynthesis", {
+      configurable: true,
+      value: { speak(utterance) { window.__narrationSpoken.push({ text: utterance.text, lang: utterance.lang }); queueMicrotask(() => utterance.onend?.()); }, cancel() {} }
+    });
+  });
+  await page.goto("/book/unit.html?book_id=book02&unit=u03", { waitUntil: "networkidle" });
+  const narration = page.locator(".listen-learn");
+  await expect(narration).toBeVisible();
+  await narration.getByRole("button", { name: "▶ Listen & Learn" }).click();
+  await expect.poll(() => page.evaluate(() => window.__narrationSpoken.length)).toBeGreaterThan(1);
+  const englishLangs = await page.evaluate(() => [...new Set(window.__narrationSpoken.map(x => x.lang))]);
+  expect(englishLangs).toEqual(["en-US"]);
+
+  await page.goto("/book/unit.html?book_id=book03&unit=u18", { waitUntil: "networkidle" });
+  const persianNarration = page.locator(".listen-learn");
+  await expect(persianNarration).toBeVisible();
+  await persianNarration.getByRole("button", { name: "▶ Listen & Learn" }).click();
+  await expect.poll(() => page.evaluate(() => window.__narrationSpoken.length)).toBeGreaterThan(1);
+  const persianLangs = await page.evaluate(() => [...new Set(window.__narrationSpoken.map(x => x.lang))]);
+  expect(persianLangs).toEqual(["fa-IR"]);
+});

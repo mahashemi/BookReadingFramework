@@ -14,6 +14,7 @@ MANIFEST=ROOT/"audio"/"manifest.json"
 VOICES={"en":"en","fa":"fa"}
 
 def plain_text(markdown: str) -> str:
+    markdown=re.sub(r"(?ims)^#{2,6}\s+(?:narration|عنوان شنیداری)\s*$.*?(?=^#{2,6}\s+|\Z)", "", markdown)
     markdown=re.split(r"(?im)^#{2,6}\s+(?:source map|نقشه(?:‌| )منبع|نقشه(?:‌| )منابع)\s*$",markdown,maxsplit=1)[0]
     lines=[]
     for line in markdown.splitlines():
@@ -23,20 +24,28 @@ def plain_text(markdown: str) -> str:
             cues={
                 "narration":"",
                 "عنوان شنیداری":"",
-                "deep reading insight":"A deeper point to consider.",
-                "بینشِ خوانش عمیق":"حالا کمی عمیق‌تر به این نکته نگاه کنیم.",
+                "deep reading insight":"A broader point to consider.",
+                "بینشِ خوانش عمیق":"حالا کمی عمیق‌تر به معنای این نکته نگاه کنیم.",
                 "reflection":"Now, pause and reflect.",
-                "مکث و تمرین":"حالا مکث کنیم و فکر کنیم.",
+                "مکث و تمرین":"حالا کمی مکث کنیم و فکر کنیم.",
                 "transition":"As we move forward, keep this question in mind.",
-                "گذار":"از اینجا به نکته‌ی بعد می‌رسیم.",
+                "opening":"To begin,",
+                "source-grounded narration":"From the source:",
+                "روایت":"روایت",
+                "جمع‌بندی":"برای جمع‌بندی،",
+                "جمع بندی":"برای جمع‌بندی،",
+                "تمرین شنیداری":"حالا یک تمرین کوتاه انجام دهیم.",
+                "گذار":"از اینجا به نکته بعد می‌رسیم.",
                 "summary":"To bring these ideas together.",
                 "conclusion":"To bring these ideas together."
             }
-            if title in cues and cues[title]: lines.append(cues[title])
+            if re.match(r"^\s*[0-9۰-۹]+[.)،ـ\s-]+", heading.group(1)):
+                clean=re.sub(r"^\s*[0-9۰-۹]+[.)،ـ\s-]*", "", heading.group(1)).rstrip(".،: ").strip()
+                cue="The next point is " if not re.search(r"[\u0600-\u06ff]", clean) else "نکته‌ی بعدی این است: "
+                lines.append(cue+clean+".")
+            elif title in cues and cues[title]: lines.append(cues[title])
             elif title in cues or title.startswith("listen & learn"): continue
-            else:
-                cue="The next point is " if not re.search(r"[\u0600-\u06ff]",heading.group(1)) else "نکته‌ی بعدی این است: "
-                lines.append(cue+heading.group(1).strip(".،: ") + ".")
+            else: lines.append(heading.group(1).strip(".،: "))
             continue
         line=re.sub(r"\[([^\]]+)\]\((?:https?://[^)\s]+|#[^)]+)\)",r"\1",line)
         line=re.sub(r"^\s*>\s?","",line)
@@ -44,7 +53,10 @@ def plain_text(markdown: str) -> str:
         line=re.sub(r"https?://\S+","",line)
         line=re.sub(r"[*_~]{1,3}","",line).replace(chr(96),"")
         line=re.sub(r"^\s*[-*_]{3,}\s*$","",line)
-        line=line.replace("Mu'awiyah","Muawiyah").replace("Mu’awiyah","Muawiyah")
+        line=line.replace("Mu'awiyah","Muawiyah").replace("Mu’awiyah","Muawiyah").replace("Mu'awiya","Muawiya").replace("Mu’awiya","Muawiya").replace("Ma'mun","Mamun").replace("Ma’mun","Mamun").replace("Ja'far","Jafar").replace("Ja’far","Jafar").replace("Qur'an","Quran").replace("Qur’an","Quran")
+        line=re.sub(r"al-['’](?=[A-Za-z])","al-",line)
+        line=re.sub(r"(^|\s)['’](?=[A-Za-z])",r"\1",line)
+        line=line.replace("‘","'").replace("’","'").replace("“",'"').replace("”",'"')
         line=line.replace("Ja'far","Jafar").replace("Ja’far","Jafar").replace("Qur'an","Quran").replace("Qur’an","Quran")
         line=re.sub(r"\s+"," ",line).strip()
         if line: lines.append(line)
@@ -94,9 +106,9 @@ async def synthesize(text: str, lang: str, path: Path):
 
 async def generate_unit(book_id: str, unit_id: str, entry: dict, out_dir: Path):
     source=ROOT/entry["script"];spoken=plain_text(source.read_text(encoding="utf-8"))
-    if len(spoken)<900:raise ValueError(f"Refusing to create audio from an unusually short script: {source} ({len(spoken)} chars)")
+    if len(spoken)<500:raise ValueError(f"Refusing to create audio from an unusually short script: {source} ({len(spoken)} chars)")
     arabic_count=len(re.findall(r"[\u0600-\u06ff]",spoken)); latin_count=len(re.findall(r"[A-Za-z]",spoken))
-    voice=VOICES["fa"] if arabic_count > max(300, latin_count * 0.20) else VOICES["en"]
+    voice=VOICES["fa"] if arabic_count > latin_count else VOICES["en"]
     pieces=split_text(spoken);target=out_dir/book_id/(unit_id+".mp3");target.parent.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="book-audio-") as tmp:
         tmpdir=Path(tmp);parts=[]
