@@ -380,7 +380,7 @@ ${glossaryHTML}
       <div class="jf-links"><a href="#concept-b02-u04-001">Political roles ↗</a><a href="#concept-b02-u04-004">Kufah’s invitation ↗</a><a href="#concept-b02-u04-005">The ruler’s record ↗</a></div>
     </article>
   </div>
-  <div class="jf-bottomline"><strong>The central lesson</strong><p>Same principles do not require identical outward actions when role, capacity, demands, public conditions, and the likely consequences differ. The source’s conclusion is an argument to examine—not a shortcut that makes every truce or every uprising automatically correct.</p><a href="https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-2#the-elements-contributing-to-imam-al-husaynsuprisal-and-their-contrasts-with-imam-al-hassans-circumstances" target="_blank" rel="noopener">Read Mutahhari’s comparison in Session 2 ↗</a></div>
+  <div class="jf-bottomline"><strong>The central lesson</strong><p>Same principles do not require identical outward actions when role, capacity, demands, public conditions, and the likely consequences differ. The source’s conclusion is an argument to examine—not a shortcut that makes every truce or every uprising automatically correct.</p><a href="#concept-b02-u04-007">Connect this comparison to the final Session 2 concept ↗</a><a href="https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-2#the-elements-contributing-to-imam-al-husaynsuprisal-and-their-contrasts-with-imam-al-hassans-circumstances" target="_blank" rel="noopener">Read Mutahhari’s comparison in Session 2 ↗</a></div>
 </section>` : ''; 
 
     const concepts = chunks.map(c => {
