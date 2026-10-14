@@ -98,6 +98,8 @@ test.describe("Book 02 Session 2 jihad and truce framework", () => {
     await expect(framework.locator("svg .jf-route-hasan path")).toHaveCount(7);
     await expect(framework.locator("svg .jf-route-husayn path")).toHaveCount(4);
     await expect(framework.locator("svg .jf-node-leaf")).toHaveCount(10);
+    await expect(framework).toContainText("BYPASSED BY THE GREEN / AL-HASAN PATH");
+    await expect(framework).toContainText("NOT A SUFFICIENT CATEGORY FOR EITHER CASE");
     await page.goto("/book/unit.html?book_id=book02&unit=u03", { waitUntil: "networkidle" });
     await expect(page.locator("#jihad-truce-framework")).toHaveCount(0);
     expect(errors).toEqual([]);
