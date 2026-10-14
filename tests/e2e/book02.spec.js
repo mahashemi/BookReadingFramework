@@ -80,3 +80,34 @@ test.describe("Book 02 Counterfactual Istidlal prerequisites", () => {
     expect(errors).toEqual([]);
   });
 });
+
+
+test.describe("Book 02 Session 2 jihad and truce framework", () => {
+  test("renders the source-linked decision framework only in Session 2", async ({ page }) => {
+    const errors = [];
+    page.on("pageerror", error => errors.push(error.message));
+    await page.goto("/book/unit.html?book_id=book02&unit=u04", { waitUntil: "networkidle" });
+    const framework = page.locator("#jihad-truce-framework");
+    await expect(framework).toBeVisible();
+    await expect(framework).toContainText("This is a learning map");
+    await expect(framework).toContainText("genuine Muslim interest");
+    await expect(framework).toContainText("Imam al-Hasan · Treaty");
+    await expect(framework).toContainText("Imam al-Husayn · Qiyam");
+    await expect(framework.locator("a[href^=\"#concept-b02-u04-\"]")).toHaveCount(6);
+    await page.goto("/book/unit.html?book_id=book02&unit=u03", { waitUntil: "networkidle" });
+    await expect(page.locator("#jihad-truce-framework")).toHaveCount(0);
+    expect(errors).toEqual([]);
+  });
+
+  test("Session 2 reader questions use natural language and source-linked reasoning", async ({ page }) => {
+    await page.goto("/book/unit.html?book_id=book02&unit=u04", { waitUntil: "networkidle" });
+    const cards = page.locator(".counterfactual-card");
+    await expect(cards).toHaveCount(6);
+    await expect(cards.first()).toContainText("Why does Mutahhari insist that we compare the circumstances");
+    await expect(cards.nth(3)).toContainText("Why does the demand that al-Husayn pledge allegiance");
+    await cards.nth(1).locator("details summary").click();
+    await cards.nth(1).locator("details summary").click();
+    await cards.nth(1).locator("details summary").click();
+    await expect(cards.nth(1).locator("details a[href^=\"https://\"]").first()).toBeVisible();
+  });
+});
