@@ -14,7 +14,7 @@ test("chapter audio generator strips source maps and segments long narration", (
   assert.match(generator, /eSpeak NG fallback/);
   assert.match(generator, /ffmpeg/);
   assert.match(generator, /Refusing to create audio from an unusually short script/);
-  assert.match(generator, /len\\(spoken\\)<500/);
+  assert.match(generator, /len\(spoken\)<500/);
 });
 
 test("chapter audio uses manifest-declared scripts and publishes MP3 artifacts", () => {
