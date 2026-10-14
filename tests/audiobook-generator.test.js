@@ -22,3 +22,10 @@ test("chapter audio uses manifest-declared scripts and publishes MP3 artifacts",
   assert.match(workflow, /actions\/upload-artifact@v4/);
   assert.match(workflow, /chapter-audiobook-mp3/);
 });
+
+
+test("chapter audio excludes the legacy summary and selects voice by dominant script", () => {
+  assert.match(generator, /narration\|عنوان شنیداری/);
+  assert.match(generator, /arabic_count > latin_count/);
+  assert.match(generator, /A broader point to consider/);
+});
