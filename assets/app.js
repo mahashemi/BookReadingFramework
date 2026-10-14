@@ -298,7 +298,7 @@ ${glossaryHTML}
     const counterfactuals = (cf?.counterfactuals || []).filter(x => x.unit_id === u.id);
     const counterfactualHTML = counterfactuals.length ? `
 <section class="section" id="counterfactual-istidlal">
-  <div class="section-head compact"><div><h2>Counterfactual Istidlal</h2><p>Change a meaningful premise, then reason from the source. Before attempting each question, read the linked concept below; it identifies the argument or passage you should understand first.</p></div></div>
+  <div class="section-head compact"><div><h2>Questions a careful reader might ask</h2><p>Begin with the genuine puzzle raised by the chapter. Each answer reasons from the linked concept and source; any hypothetical inference is identified in the answer rather than forced into every question.</p></div></div>
   <div class="grid">${counterfactuals.map((x, n) => {
     const conceptUnit = units.find(unit => unit.id === x.unit_id);
     const concept = conceptUnit?.chunks?.find(chunk => chunk.id === x.concept_chunk_id);
@@ -314,7 +314,7 @@ ${glossaryHTML}
     const sourceHTML = sources.length
       ? '<div class="source-note"><span>Sources: </span>' + sources.map(src => '<a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(src.work) + ' · ' + esc(src.locator) + '</a>').join(' · ') + '</div>'
       : '';
-    return '<article class="card unit counterfactual-card"><div class="num">Istidlal ' + pad(n + 1) + ' · ' + esc(x.difficulty || 'hard') + '</div>' + conceptHTML + '<h3>' + esc(x.prompt) + '</h3><details class="passage"><summary>Reveal the reasoning</summary><p>' + linkedText(x.answer) + '</p><p class="meta-line"><strong>Istidlal takeaway:</strong> ' + esc(x.istidlal_takeaway) + '</p>' + sourceHTML + '</details></article>';
+    return '<article class="card unit counterfactual-card"><div class="num">Question ' + pad(n + 1) + ' · ' + esc(x.difficulty || 'hard') + '</div>' + conceptHTML + '<h3>' + esc(x.prompt) + '</h3><details class="passage"><summary>Reveal the reasoning</summary><p>' + linkedText(x.answer) + '</p><p class="meta-line"><strong>Istidlal takeaway:</strong> ' + esc(x.istidlal_takeaway) + '</p>' + sourceHTML + '</details></article>';
   }).join('')}</div>
 </section>` : '';
     const nameOf = uid => { const k = units.findIndex(x => x.id === uid); return k < 0 ? uid : 'Unit ' + pad(k + 1) + ' \u00b7 ' + parts(units[k].title).label; };
@@ -323,6 +323,66 @@ ${glossaryHTML}
     document.title = (p.label === p.name ? p.name : p.label + ' \u2014 ' + p.name) + ' \u00b7 ' + meta.title;
 
     /* The canonical chunk text is the source-grounded learning passage. Render one passage reveal per concept rather than inventing a second explanation field or duplicating the same source text under another label. */
+    const jihadTruceFramework = meta.id === 'book02' && u.id === 'u04' ? `
+<section class="section jihad-framework" id="jihad-truce-framework" aria-labelledby="jihad-framework-title">
+  <div class="section-head compact">
+    <div><div class="eyebrow">Read this before comparing the two Imams</div><h2 id="jihad-framework-title">A decision framework for jihad, truce, and the two Imams’ choices</h2>
+    <p>This is a learning map of the distinctions Mutahhari presents in Sessions 1–2—not a stand-alone fatwa or a rule for deciding present-day conflicts. First classify the situation; then examine the historical facts and obligations.</p></div>
+  </div>
+  <div class="jf-start"><span class="jf-step">START</span><strong>What kind of situation is being discussed?</strong><span>Do not decide “fight or peace” before identifying the legal and historical category.</span></div>
+  <div class="jf-branches">
+    <article class="jf-branch">
+      <div class="jf-question">Is there an active external attack or immediate threat to people, land, or protected property?</div>
+      <div class="jf-arrow" aria-hidden="true">↓</div>
+      <div class="jf-result"><span class="jf-tag">Defence</span><strong>Defensive protection</strong><p>Session 1 distinguishes defence from initiating offensive warfare. It describes different authorization conditions for defence. Do not collapse the categories.</p><a href="${esc('https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#the-cases-for-jihad-in-the-shiah-jurisprudence')}" target="_blank" rel="noopener">Source: cases for jihad ↗</a></div>
+    </article>
+    <article class="jf-branch">
+      <div class="jf-question">Is this a conflict between Muslim groups, including rebellion against a just Imam?</div>
+      <div class="jf-arrow" aria-hidden="true">↓</div>
+      <div class="jf-result"><span class="jf-tag">Reconciliation first</span><strong>Repair the conflict where possible</strong><p>The passage cites Qur’an 49:9: seek reconciliation; if one side persists in wrongdoing, the verse describes confronting that side. The source treats this as a distinct category.</p><a href="https://quran.com/49/9" target="_blank" rel="noopener">Qur’an 49:9 ↗</a></div>
+    </article>
+    <article class="jf-branch">
+      <div class="jf-question">Is the proposal to initiate offensive jihad without an immediate attack?</div>
+      <div class="jf-arrow" aria-hidden="true">↓</div>
+      <div class="jf-result"><span class="jf-tag">Authorization matters</span><strong>Do not treat initiation as self-authorizing</strong><p>In the Shi‘ah jurisprudential view quoted by Mutahhari, antecedent/offensive jihad requires the Imam or a person specifically appointed by him. This is not the same category as defence.</p><a href="https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#the-cases-for-jihad-in-the-shiah-jurisprudence" target="_blank" rel="noopener">Read the source rule ↗</a></div>
+    </article>
+    <article class="jf-branch jf-branch-truce">
+      <div class="jf-question">Is a truce being considered instead of continuing hostilities?</div>
+      <div class="jf-arrow" aria-hidden="true">↓</div>
+      <div class="jf-result"><span class="jf-tag">Test the truce</span><strong>Mutahhari’s summary of the cited jurisprudential rule</strong>
+        <ul><li>Is there a genuine Muslim interest—such as insufficient strength, time to obtain support, or a prospect of spiritual persuasion?</li><li>Is the agreement for a specified period rather than indefinite?</li><li>Are its terms and foreseeable consequences examined honestly?</li></ul>
+        <p>If the stated interests are absent, the passage says the cited rule does not permit a truce merely for its own sake. A truce is not automatically wise just because it is peaceful.</p><a href="https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#peace-in-the-shiah-jurisprudence" target="_blank" rel="noopener">Source: peace in Shi‘ah jurisprudence ↗</a>
+      </div>
+    </article>
+  </div>
+  <div class="jf-bridge"><span aria-hidden="true">↓</span><strong>Only after identifying the category, compare the actual circumstances.</strong><span>The legal categories do not by themselves answer every historical question.</span></div>
+  <div class="jf-compare">
+    <article class="jf-case jf-hasan">
+      <div class="jf-case-kicker">Imam al-Hasan · Treaty</div><h3>What did the treaty seek to protect?</h3>
+      <ul>
+        <li><strong>Political role:</strong> the sitting caliph facing a rebellion.</li>
+        <li><strong>Practical capacity:</strong> a divided, unreliable force and a high risk of prolonged Muslim casualties.</li>
+        <li><strong>Allegiance:</strong> Mutahhari says the same immediate pledge-demand central to al-Husayn’s case was not made of al-Hasan.</li>
+        <li><strong>Terms:</strong> governance conditions, succession after Mu‘awiyah, protection for supporters, and an end to public cursing of Imam ‘Ali.</li>
+      </ul>
+      <p class="jf-conclusion">Mutahhari’s argument: the treaty was a conditional, historically situated choice—not proof that the Imam endorsed every act of Mu‘awiyah.</p>
+      <div class="jf-links"><a href="#concept-b02-u04-002">Military balance ↗</a><a href="#concept-b02-u04-003">Allegiance ↗</a><a href="#concept-b02-u04-006">Treaty terms ↗</a></div>
+    </article>
+    <article class="jf-case jf-husayn">
+      <div class="jf-case-kicker">Imam al-Husayn · Qiyam</div><h3>Why did the later situation call for a public stand?</h3>
+      <ul>
+        <li><strong>Political role:</strong> not the sitting caliph; his refusal became public opposition to Yazid’s rule.</li>
+        <li><strong>Allegiance:</strong> a direct demand for a pledge was a central trigger.</li>
+        <li><strong>Public appeal:</strong> invitations from Kufah created a claim he could not simply ignore, although the promised support later failed.</li>
+        <li><strong>Public wrong:</strong> Mutahhari treats enjoining right and opposing oppressive rule as a further element of the uprising.</li>
+      </ul>
+      <p class="jf-conclusion">Mutahhari’s argument: the stand cannot be reduced to a calculation of troop numbers; allegiance, public responsibility, and the ruler’s record also mattered.</p>
+      <div class="jf-links"><a href="#concept-b02-u04-001">Political roles ↗</a><a href="#concept-b02-u04-004">Kufah’s invitation ↗</a><a href="#concept-b02-u04-005">The ruler’s record ↗</a></div>
+    </article>
+  </div>
+  <div class="jf-bottomline"><strong>The central lesson</strong><p>Same principles do not require identical outward actions when role, capacity, demands, public conditions, and the likely consequences differ. The source’s conclusion is an argument to examine—not a shortcut that makes every truce or every uprising automatically correct.</p><a href="#concept-b02-u04-007">Connect this comparison to the final Session 2 concept ↗</a><a href="https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-2#the-elements-contributing-to-imam-al-husaynsuprisal-and-their-contrasts-with-imam-al-hassans-circumstances" target="_blank" rel="noopener">Read Mutahhari’s comparison in Session 2 ↗</a></div>
+</section>` : ''; 
+
     const concepts = chunks.map(c => {
       return `<article class="card unit" id="concept-${esc(c.id)}"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><div class="markdown-content">${markdownToHTML(c.text)}</div></details><div class="source-note"><a href="${esc(c.source_url || sourceHref)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></div></article>`;
     }).join('');
@@ -346,6 +406,7 @@ ${glossaryHTML}
     ${meta.links?.mindMap ? `<a class="btn" href="${dir + meta.links.mindMap}">Mind map</a>` : ''}
   </div>
 </section>
+${jihadTruceFramework}
 ${u.akhlaq?.lesson ? `<section class="section" id="akhlaq"><div class="card panel"><div class="num">Akhlaq</div><h2>Akhlaq lesson</h2><p>${esc(u.akhlaq.lesson)}</p><p class="meta-line">Derived from the unit source-grounded concepts. Follow the evidence links below to read the exact concepts behind this lesson.</p>${evidenceLinks}<p class="meta-line"></p></div></section>` : ""}
 <section class="section" id="concepts"><div class="section-head compact"><div><h2>Concepts</h2><p>Each concept is a canonical learning chunk tied directly to its source.</p></div></div><div class="grid">${concepts}</div></section>
 ${phrases}
