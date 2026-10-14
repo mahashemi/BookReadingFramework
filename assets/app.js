@@ -345,11 +345,11 @@ ${glossaryHTML}
         <marker id="jf-arrow-husayn" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#a51f2b"/></marker>
       </defs>
       <g class="jf-connectors" fill="none" stroke="#82909b" stroke-width="3" marker-end="url(#jf-arrow)">
-        <path d="M800 96 V142"/><path d="M620 182 H430 V260"/><path d="M800 222 V260"/>
-        <path d="M620 306 H430 V390"/><path d="M800 346 V390"/>
+        <path d="M800 96 V142"/><path d="M620 182 H430 V303"/><path d="M800 222 V260"/>
+        <path d="M620 303 H430 V445"/><path d="M800 346 V390"/>
         <path d="M620 436 H430 V540"/><path d="M800 482 V540"/>
-        <path d="M980 582 H1140 V600"/><path d="M800 624 V680"/>
-        <path d="M620 720 H430 V800"/><path d="M800 760 V800"/>
+        <path d="M980 436 H1140 V570"/><path d="M800 624 V680"/>
+        <path d="M980 720 H1140 V727"/><path d="M800 760 V800"/>
         <path d="M800 880 V920"/><path d="M620 960 H430 V1050"/><path d="M800 1000 V1050"/>
         <path d="M980 960 H1160 V1050"/>
         <path d="M430 500 H520 V720 H620"/>
@@ -357,17 +357,17 @@ ${glossaryHTML}
       <g class="jf-branch-labels">
         <text x="520" y="169">YES</text><text x="817" y="246">NO</text>
         <text x="520" y="293">YES</text><text x="817" y="376">NO</text>
-        <text x="520" y="420">NO</text><text x="817" y="526">YES</text>
-        <text x="1040" y="568">YES</text><text x="817" y="662">NO</text>
-        <text x="520" y="705">NO</text><text x="817" y="785">YES</text>
-        <text x="817" y="905">YES</text><text x="520" y="1032">NO</text><text x="817" y="1032">YES</text>
-        <text x="1060" y="942">NO</text>
+        <text x="1040" y="420">YES</text><text x="817" y="526">NO</text>
+        <text x="520" y="565">YES</text><text x="817" y="662">NO</text>
+        <text x="817" y="785">YES</text><text x="1060" y="705">NO</text>
+        <text x="817" y="905">YES</text><text x="520" y="900">NO</text>
+        <text x="817" y="1032">YES</text><text x="1060" y="942">NO</text>
       </g>
       <g class="jf-route jf-route-hasan" fill="none" stroke="#174f3e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".95" marker-end="url(#jf-arrow-hasan)">
         <path d="M800 96 V142"/><path d="M800 222 V260"/><path d="M620 306 H430 V390"/><path d="M430 500 H520 V720 H620"/><path d="M800 760 V800"/><path d="M800 880 V920"/><path d="M800 1000 V1050"/>
       </g>
       <g class="jf-route jf-route-husayn" fill="none" stroke="#a51f2b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".95" marker-end="url(#jf-arrow-husayn)">
-        <path d="M800 96 V142"/><path d="M620 182 H430 V260"/><path d="M430 346 H520 V436 H620"/><path d="M980 436 H1140 V510"/>
+        <path d="M800 96 V142"/><path d="M800 222 V260"/><path d="M800 346 V390"/><path d="M980 436 H1140 V510"/>
       </g>
       <g class="jf-node jf-node-root"><rect x="620" y="24" width="360" height="72" rx="18"/><text x="800" y="52" class="jf-node-kicker">START</text><text x="800" y="77">What kind of situation is this?</text></g>
       <g class="jf-node jf-node-question"><rect x="620" y="142" width="360" height="80" rx="16"/><text x="800" y="172">Is there an active external attack</text><text x="800" y="196">or immediate threat to protected people/property?</text></g>
