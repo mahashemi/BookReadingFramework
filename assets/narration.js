@@ -124,7 +124,9 @@
       .map(s => [transcriptHeading(s), s.text].filter(Boolean).join(' '))
       .join(' ');
     const words = visibleText.match(/[\p{L}\p{M}\p{N}]+(?:['’\-][\p{L}\p{M}\p{N}]+)*/gu) || [];
-    const persian = /[\u0600-\u06ff]/.test(visibleText);
+    const persianChars = (visibleText.match(/[\u0600-\u06ff]/g) || []).length;
+    const latinChars = (visibleText.match(/[A-Za-z]/g) || []).length;
+    const persian = persianChars > latinChars;
     const minutes = Math.max(1, Math.ceil(words.length / (persian ? 180 : 200)));
     return { words: words.length, minutes };
   }
@@ -176,7 +178,9 @@
       if(!('speechSynthesis' in window)){play.textContent='Browser narration unavailable';return;}
       const text=spoken(script), pieces=speechPieces(text);
       if(!pieces.length)return;
-      const lang=/[\u0600-\u06ff]/.test(text)?'fa-IR':'en-US';
+      const persianChars=(text.match(/[\u0600-\u06ff]/g)||[]).length;
+       const latinChars=(text.match(/[A-Za-z]/g)||[]).length;
+       const lang=persianChars>latinChars?'fa-IR':'en-US';
       const generation=++state.generation;
       state.utterances=pieces.map(piece=>{
         const u=new SpeechSynthesisUtterance(piece);
