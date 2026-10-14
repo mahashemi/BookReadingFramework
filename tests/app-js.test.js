@@ -171,8 +171,8 @@ test("Book 02 peace concepts link to the corresponding original source subsectio
     "b02-u03-006": "the-cases-for-jihad-in-the-shiah-jurisprudence",
     "b02-u03-007": "fighting-rebels",
     "b02-u03-008": "peace-in-the-shiah-jurisprudence",
-    "b02-u03-009": "peace-in-the-shiah-jurisprudence",
-    "b02-u03-010": "peace-in-the-shiah-jurisprudence"
+    "b02-u03-009": "hudaybiyyah-peace",
+    "b02-u03-010": "question-and-answer"
   };
   for (const [id, fragment] of Object.entries(expected)) {
     const concept = unit.chunks.find(c => c.id === id);
