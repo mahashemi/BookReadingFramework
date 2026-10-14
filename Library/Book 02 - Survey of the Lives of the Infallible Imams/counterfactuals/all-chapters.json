@@ -6,7 +6,7 @@
   "coverage": {
     "concepts_covered": 72,
     "total_items": 72,
-    "selection_policy": "At least six distinct, source-grounded reader questions per substantive reading unit. Prefer questions a careful reader would naturally ask about a claim, distinction, cause, evidence, or implication; use hypotheticals only when they genuinely clarify the argument. Keep evidence links inline and distinguish source claims from inference."
+    "selection_policy": "At least six distinct, source-grounded counterfactual questions per substantive reading unit, phrased as questions a careful reader would naturally ask about a claim, distinction, cause, evidence, or implication. Prefer direct reader questions; use hypotheticals only when they genuinely clarify the argument. Keep evidence links inline and distinguish source claims from inference."
   },
   "source_catalog": {
     "mutahhari-ch1": {
