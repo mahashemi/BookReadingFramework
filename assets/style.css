@@ -611,37 +611,45 @@ body.source-reading {
 .footer span { white-space: nowrap; }
 
 
-/* Book 02 Session 2: source-traceable jihad/truce reasoning map */
-.jihad-framework { --jf-green:#286454; --jf-gold:#936c25; }
-.jihad-framework .section-head { max-width: 900px; }
-.jihad-framework .jf-start, .jihad-framework .jf-bridge, .jihad-framework .jf-bottomline {
-  border:1px solid var(--line); border-radius:16px; padding:18px 20px; text-align:center;
-  background:linear-gradient(135deg,var(--accent2),var(--paper)); display:flex; flex-direction:column; align-items:center; gap:6px;
-}
-.jihad-framework .jf-start strong { font-size:1.15rem; }
-.jihad-framework .jf-start > span:last-child, .jihad-framework .jf-bridge > span:last-child { color:var(--muted); font-size:.92rem; }
-.jihad-framework .jf-step,.jihad-framework .jf-tag { display:inline-block; font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; font-weight:800; color:var(--accent); }
-.jihad-framework .jf-branches { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin:16px 0; }
-.jihad-framework .jf-branch { border:1px solid var(--line); border-radius:14px; padding:16px; background:var(--paper); min-width:0; }
-.jihad-framework .jf-question { font-weight:750; line-height:1.45; min-height:3.2em; }
-.jihad-framework .jf-arrow { text-align:center; color:var(--accent); font-size:1.45rem; font-weight:800; line-height:1.5; }
-.jihad-framework .jf-result { border-left:3px solid var(--accent); background:var(--soft); border-radius:0 10px 10px 0; padding:13px 14px; }
-.jihad-framework .jf-result strong { display:block; margin:.2rem 0 .45rem; }
-.jihad-framework .jf-result p,.jihad-framework .jf-result li { font-size:.92rem; }
-.jihad-framework .jf-result ul { padding-left:1.25rem; margin:.45rem 0; }
-.jihad-framework .jf-result a,.jihad-framework .jf-bottomline a { font-size:.88rem; font-weight:650; }
-.jihad-framework .jf-bridge { margin:18px 0; }
-.jihad-framework .jf-bridge > span:first-child { font-size:1.5rem; color:var(--accent); line-height:1; }
-.jihad-framework .jf-compare { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
-.jihad-framework .jf-case { border:1px solid var(--line); border-radius:16px; padding:18px; background:var(--paper); min-width:0; }
-.jihad-framework .jf-case h3 { margin:.25rem 0 .7rem; font-size:1.15rem; }
-.jihad-framework .jf-case-kicker { font-size:.73rem; letter-spacing:.07em; font-weight:800; text-transform:uppercase; color:var(--jf-green); }
-.jihad-framework .jf-husayn .jf-case-kicker { color:var(--jf-gold); }
-.jihad-framework .jf-case ul { padding-left:1.2rem; }
-.jihad-framework .jf-case li { margin:.45rem 0; }
-.jihad-framework .jf-conclusion { border-top:1px solid var(--line); padding-top:12px; font-size:.92rem; }
-.jihad-framework .jf-links { display:flex; flex-wrap:wrap; gap:8px; }
-.jihad-framework .jf-links a { display:inline-block; border:1px solid var(--line); padding:5px 9px; border-radius:999px; font-size:.8rem; text-decoration:none; }
-.jihad-framework .jf-bottomline { margin-top:16px; background:var(--paper); }
-.jihad-framework .jf-bottomline p { max-width:850px; margin:0; }
-@media(max-width:700px) { .jihad-framework .jf-branches,.jihad-framework .jf-compare { grid-template-columns:1fr; } .jihad-framework .jf-question { min-height:0; } .jihad-framework .jf-branch,.jihad-framework .jf-case { padding:14px; } }
+/* Book 02 Session 2: presentation-grade binary decision tree */
+.jihad-framework { --jf-green:#174f3e; --jf-red:#a51f2b; --jf-ink:#172a35; --jf-line:#82909b; }
+.jihad-framework .section-head { max-width: 1050px; }
+.jihad-framework .jf-legend { display:flex; flex-wrap:wrap; align-items:center; gap:10px 18px; margin:18px 0 12px; color:var(--muted); font-size:.84rem; }
+.jihad-framework .jf-legend span { display:inline-flex; align-items:center; gap:7px; }
+.jihad-framework .jf-swatch { display:inline-block; width:20px; height:12px; border:2px solid #71808b; border-radius:4px; background:var(--paper); }
+.jihad-framework .jf-swatch-hasan { background:var(--jf-green); border-color:var(--jf-green); }
+.jihad-framework .jf-swatch-husayn { background:var(--jf-red); border-color:var(--jf-red); }
+.jihad-framework .jf-swatch-question { background:#e8f0f4; border-color:#547184; }
+.jihad-framework .jf-swatch-leaf { background:#fffaf0; border-color:#a67c35; }
+.jihad-framework .jf-graph-frame { overflow-x:auto; border:1px solid var(--line); border-radius:20px; background:linear-gradient(180deg,#f5f8fa 0%,#fffdf8 100%); box-shadow:0 12px 32px rgba(20,38,48,.09); }
+.jihad-framework .jf-graph { display:block; width:100%; min-width:1200px; height:auto; }
+.jihad-framework .jf-graph text { font-family:inherit; text-anchor:middle; fill:var(--jf-ink); font-size:19px; font-weight:650; }
+.jihad-framework .jf-graph .jf-node rect { fill:#fff; stroke:#547184; stroke-width:2.5; }
+.jihad-framework .jf-graph .jf-node-question rect { fill:#e8f0f4; stroke:#547184; }
+.jihad-framework .jf-graph .jf-not-hasan rect,.jihad-framework .jf-graph .jf-not-controlling rect { stroke-dasharray:8 5; }
+.jihad-framework .jf-graph .jf-route-notes text { text-anchor:middle; fill:#687681; font-size:12px; font-weight:850; letter-spacing:.8px; }
+.jihad-framework .jf-graph .jf-node-root rect { fill:#172a35; stroke:#172a35; }
+.jihad-framework .jf-graph .jf-node-root text { fill:#fff; }
+.jihad-framework .jf-graph .jf-node-leaf rect { fill:#fffaf0; stroke:#a67c35; }
+.jihad-framework .jf-graph .jf-node-kicker { font-size:14px; font-weight:850; letter-spacing:1.2px; }
+.jihad-framework .jf-graph .jf-node-small { font-size:14px; font-weight:500; }
+.jihad-framework .jf-graph .jf-leaf-hasan rect { stroke:var(--jf-green); stroke-width:3; }
+.jihad-framework .jf-graph .jf-leaf-husayn rect { stroke:var(--jf-red); stroke-width:3; }
+.jihad-framework .jf-graph .jf-leaf-hasan .jf-node-kicker { fill:var(--jf-green); }
+.jihad-framework .jf-graph .jf-leaf-husayn .jf-node-kicker { fill:var(--jf-red); }
+.jihad-framework .jf-graph .jf-branch-labels text { fill:#465866; font-size:14px; font-weight:850; letter-spacing:.8px; paint-order:stroke; stroke:#fffdf8; stroke-width:5px; stroke-linejoin:round; }
+.jihad-framework .jf-graph .jf-route { pointer-events:none; }
+.jihad-framework .jf-graph .jf-note rect { fill:#f0f2f3; stroke:#c7d0d5; stroke-width:1.5; }
+.jihad-framework .jf-graph .jf-note text { text-anchor:start; font-size:15px; font-weight:550; }
+.jihad-framework .jf-graph .jf-note text:first-of-type { font-weight:900; letter-spacing:1px; }
+.jihad-framework .jf-case-notes { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:16px; }
+.jihad-framework .jf-case-note { border:1px solid var(--line); border-left:5px solid var(--jf-green); border-radius:14px; padding:16px 18px; background:var(--paper); min-width:0; }
+.jihad-framework .jf-case-note-husayn { border-left-color:var(--jf-red); }
+.jihad-framework .jf-case-note h3 { margin:0 0 10px; font-size:1.05rem; }
+.jihad-framework .jf-case-note-hasan h3 span { color:var(--jf-green); }
+.jihad-framework .jf-case-note-husayn h3 span { color:var(--jf-red); }
+.jihad-framework .jf-case-note p { margin:.5rem 0; font-size:.92rem; }
+.jihad-framework .jf-case-note a,.jihad-framework .jf-bottomline a { font-size:.88rem; font-weight:700; }
+.jihad-framework .jf-bottomline { margin-top:16px; border:1px solid var(--line); border-radius:16px; padding:18px 20px; text-align:center; background:var(--paper); }
+.jihad-framework .jf-bottomline p { max-width:900px; margin:8px auto 12px; }
+@media(max-width:700px) { .jihad-framework .jf-graph { min-width:1200px; } .jihad-framework .jf-case-notes { grid-template-columns:1fr; } .jihad-framework .jf-legend { gap:8px 12px; } }
