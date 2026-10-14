@@ -108,7 +108,6 @@ test.describe("Book 02 Session 2 jihad and truce framework", () => {
     await cards.nth(1).locator("details summary").click();
     await cards.nth(1).locator("details summary").click();
     await cards.nth(1).locator("details summary").click();
-    await cards.nth(1).locator("details summary").click();
     await expect(cards.nth(1).locator("details a[href^=\"https://\"]").first()).toBeVisible();
   });
 });
