@@ -31,19 +31,21 @@ def plain_text(markdown: str) -> str:
                 "transition":"As we move forward, keep this question in mind.",
                 "opening":"To begin,",
                 "source-grounded narration":"From the source:",
-                "روایت":"",
+                "روایت":"روایت",
                 "جمع‌بندی":"برای جمع‌بندی،",
                 "جمع بندی":"برای جمع‌بندی،",
                 "تمرین شنیداری":"حالا یک تمرین کوتاه انجام دهیم.",
-                "گذار":"از اینجا به نکته‌ی بعد می‌رسیم.",
+                "گذار":"از اینجا به نکته بعد می‌رسیم.",
                 "summary":"To bring these ideas together.",
                 "conclusion":"To bring these ideas together."
             }
-            if title in cues and cues[title]: lines.append(cues[title])
+            if re.match(r"^\s*[0-9۰-۹]+[.)،ـ\s-]+", heading.group(1)):
+                clean=re.sub(r"^\s*[0-9۰-۹]+[.)،ـ\s-]*", "", heading.group(1)).rstrip(".،: ").strip()
+                cue="The next point is " if not re.search(r"[\u0600-\u06ff]", clean) else "نکته‌ی بعدی این است: "
+                lines.append(cue+clean+".")
+            elif title in cues and cues[title]: lines.append(cues[title])
             elif title in cues or title.startswith("listen & learn"): continue
-            else:
-                cue="The next point is " if not re.search(r"[\u0600-\u06ff]",heading.group(1)) else "نکته‌ی بعدی این است: "
-                lines.append(cue+heading.group(1).strip(".،: ") + ".")
+            else: lines.append(heading.group(1).strip(".،: "))
             continue
         line=re.sub(r"\[([^\]]+)\]\((?:https?://[^)\s]+|#[^)]+)\)",r"\1",line)
         line=re.sub(r"^\s*>\s?","",line)
@@ -53,7 +55,7 @@ def plain_text(markdown: str) -> str:
         line=re.sub(r"^\s*[-*_]{3,}\s*$","",line)
         line=line.replace("Mu'awiyah","Muawiyah").replace("Mu’awiyah","Muawiyah").replace("Mu'awiya","Muawiya").replace("Mu’awiya","Muawiya").replace("Ma'mun","Mamun").replace("Ma’mun","Mamun").replace("Ja'far","Jafar").replace("Ja’far","Jafar").replace("Qur'an","Quran").replace("Qur’an","Quran")
         line=re.sub(r"al-['’](?=[A-Za-z])","al-",line)
-        line=re.sub(r"(^|[\\s([{])['’](?=[A-Za-z])",r"\\1",line)
+        line=re.sub(r"(^|\s)['’](?=[A-Za-z])",r"\1",line)
         line=line.replace("‘","'").replace("’","'").replace("“",'"').replace("”",'"')
         line=line.replace("Ja'far","Jafar").replace("Ja’far","Jafar").replace("Qur'an","Quran").replace("Qur’an","Quran")
         line=re.sub(r"\s+"," ",line).strip()
