@@ -345,13 +345,14 @@ ${glossaryHTML}
         <marker id="jf-arrow-husayn" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#a51f2b"/></marker>
       </defs>
       <g class="jf-connectors" fill="none" stroke="#82909b" stroke-width="3" marker-end="url(#jf-arrow)">
-        <path d="M800 96 V142"/><path d="M620 182 H430 V303"/><path d="M800 222 V260"/>
+        <path d="M800 96 V142"/>
+        <path d="M620 182 H430 V303"/><path d="M800 222 V260"/>
         <path d="M620 303 H430 V445"/><path d="M800 346 V390"/>
-        <path d="M620 436 H430 V540"/><path d="M800 482 V540"/>
-        <path d="M980 436 H1140 V570"/><path d="M800 624 V680"/>
+        <path d="M980 436 H1140 V570"/><path d="M800 482 V540"/>
+        <path d="M620 582 H430 V702"/><path d="M800 624 V680"/>
         <path d="M980 720 H1140 V727"/><path d="M800 760 V800"/>
-        <path d="M800 880 V920"/><path d="M620 960 H430 V1050"/><path d="M800 1000 V1050"/>
-        <path d="M980 960 H1160 V1050"/>
+        <path d="M620 840 H430 V960"/><path d="M800 880 V920"/>
+        <path d="M980 960 H1140"/><path d="M800 1000 V1050"/>
         <path d="M430 500 H520 V720 H620"/>
       </g>
       <g class="jf-branch-labels">
