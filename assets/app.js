@@ -326,62 +326,76 @@ ${glossaryHTML}
     const jihadTruceFramework = meta.id === 'book02' && u.id === 'u04' ? `
 <section class="section jihad-framework" id="jihad-truce-framework" aria-labelledby="jihad-framework-title">
   <div class="section-head compact">
-    <div><div class="eyebrow">Read this before comparing the two Imams</div><h2 id="jihad-framework-title">A decision framework for jihad, truce, and the two Imams’ choices</h2>
-    <p>This is a learning map of the distinctions Mutahhari presents in Sessions 1–2—not a stand-alone fatwa or a rule for deciding present-day conflicts. First classify the situation; then examine the historical facts and obligations.</p></div>
+    <div><div class="eyebrow">The key teaching visual · read the branches, not just the endpoints</div><h2 id="jihad-framework-title">Jihad &amp; Truce: a Yes/No Decision Tree</h2>
+    <p>First classify the situation, then follow the YES/NO branches. The colored overlays show how Mutahhari’s historical comparison can be read against the framework; they are not a modern fatwa or an automatic rule for present-day conflicts.</p></div>
   </div>
-  <div class="jf-start"><span class="jf-step">START</span><strong>What kind of situation is being discussed?</strong><span>Do not decide “fight or peace” before identifying the legal and historical category.</span></div>
-  <div class="jf-branches">
-    <article class="jf-branch">
-      <div class="jf-question">Is there an active external attack or immediate threat to people, land, or protected property?</div>
-      <div class="jf-arrow" aria-hidden="true">↓</div>
-      <div class="jf-result"><span class="jf-tag">Defence</span><strong>Defensive protection</strong><p>Session 1 distinguishes defence from initiating offensive warfare. It describes different authorization conditions for defence. Do not collapse the categories.</p><a href="${esc('https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#the-cases-for-jihad-in-the-shiah-jurisprudence')}" target="_blank" rel="noopener">Source: cases for jihad ↗</a></div>
-    </article>
-    <article class="jf-branch">
-      <div class="jf-question">Is this a conflict between Muslim groups, including rebellion against a just Imam?</div>
-      <div class="jf-arrow" aria-hidden="true">↓</div>
-      <div class="jf-result"><span class="jf-tag">Reconciliation first</span><strong>Repair the conflict where possible</strong><p>The passage cites Qur’an 49:9: seek reconciliation; if one side persists in wrongdoing, the verse describes confronting that side. The source treats this as a distinct category.</p><a href="https://quran.com/49/9" target="_blank" rel="noopener">Qur’an 49:9 ↗</a></div>
-    </article>
-    <article class="jf-branch">
-      <div class="jf-question">Is the proposal to initiate offensive jihad without an immediate attack?</div>
-      <div class="jf-arrow" aria-hidden="true">↓</div>
-      <div class="jf-result"><span class="jf-tag">Authorization matters</span><strong>Do not treat initiation as self-authorizing</strong><p>In the Shi‘ah jurisprudential view quoted by Mutahhari, antecedent/offensive jihad requires the Imam or a person specifically appointed by him. This is not the same category as defence.</p><a href="https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#the-cases-for-jihad-in-the-shiah-jurisprudence" target="_blank" rel="noopener">Read the source rule ↗</a></div>
-    </article>
-    <article class="jf-branch jf-branch-truce">
-      <div class="jf-question">Is a truce being considered instead of continuing hostilities?</div>
-      <div class="jf-arrow" aria-hidden="true">↓</div>
-      <div class="jf-result"><span class="jf-tag">Test the truce</span><strong>Mutahhari’s summary of the cited jurisprudential rule</strong>
-        <ul><li>Is there a genuine Muslim interest—such as insufficient strength, time to obtain support, or a prospect of spiritual persuasion?</li><li>Is the agreement for a specified period rather than indefinite?</li><li>Are its terms and foreseeable consequences examined honestly?</li></ul>
-        <p>If the stated interests are absent, the passage says the cited rule does not permit a truce merely for its own sake. A truce is not automatically wise just because it is peaceful.</p><a href="https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#peace-in-the-shiah-jurisprudence" target="_blank" rel="noopener">Source: peace in Shi‘ah jurisprudence ↗</a>
-      </div>
-    </article>
+  <div class="jf-legend" aria-label="Decision tree legend">
+    <span><i class="jf-swatch jf-swatch-question"></i> Question / decision node</span>
+    <span><i class="jf-swatch jf-swatch-leaf"></i> Rule or outcome</span>
+    <span><i class="jf-swatch jf-swatch-hasan"></i> Imam al-Hasan’s path</span>
+    <span><i class="jf-swatch jf-swatch-husayn"></i> Imam al-Husayn’s path</span>
   </div>
-  <div class="jf-bridge"><span aria-hidden="true">↓</span><strong>Only after identifying the category, compare the actual circumstances.</strong><span>The legal categories do not by themselves answer every historical question.</span></div>
-  <div class="jf-compare">
-    <article class="jf-case jf-hasan">
-      <div class="jf-case-kicker">Imam al-Hasan · Treaty</div><h3>What did the treaty seek to protect?</h3>
-      <ul>
-        <li><strong>Political role:</strong> the sitting caliph facing a rebellion.</li>
-        <li><strong>Practical capacity:</strong> a divided, unreliable force and a high risk of prolonged Muslim casualties.</li>
-        <li><strong>Allegiance:</strong> Mutahhari says the same immediate pledge-demand central to al-Husayn’s case was not made of al-Hasan.</li>
-        <li><strong>Terms:</strong> governance conditions, succession after Mu‘awiyah, protection for supporters, and an end to public cursing of Imam ‘Ali.</li>
-      </ul>
-      <p class="jf-conclusion">Mutahhari’s argument: the treaty was a conditional, historically situated choice—not proof that the Imam endorsed every act of Mu‘awiyah.</p>
-      <div class="jf-links"><a href="#concept-b02-u04-002">Military balance ↗</a><a href="#concept-b02-u04-003">Allegiance ↗</a><a href="#concept-b02-u04-006">Treaty terms ↗</a></div>
-    </article>
-    <article class="jf-case jf-husayn">
-      <div class="jf-case-kicker">Imam al-Husayn · Qiyam</div><h3>Why did the later situation call for a public stand?</h3>
-      <ul>
-        <li><strong>Political role:</strong> not the sitting caliph; his refusal became public opposition to Yazid’s rule.</li>
-        <li><strong>Allegiance:</strong> a direct demand for a pledge was a central trigger.</li>
-        <li><strong>Public appeal:</strong> invitations from Kufah created a claim he could not simply ignore, although the promised support later failed.</li>
-        <li><strong>Public wrong:</strong> Mutahhari treats enjoining right and opposing oppressive rule as a further element of the uprising.</li>
-      </ul>
-      <p class="jf-conclusion">Mutahhari’s argument: the stand cannot be reduced to a calculation of troop numbers; allegiance, public responsibility, and the ruler’s record also mattered.</p>
-      <div class="jf-links"><a href="#concept-b02-u04-001">Political roles ↗</a><a href="#concept-b02-u04-004">Kufah’s invitation ↗</a><a href="#concept-b02-u04-005">The ruler’s record ↗</a></div>
-    </article>
+  <div class="jf-graph-frame" role="img" aria-label="A yes-or-no decision tree. It distinguishes defence, conflict between Muslim groups, public allegiance and wrongdoing, offensive jihad authorization, and truce conditions. A dark-green overlay traces the treaty case of Imam al-Hasan and a blood-red overlay traces Imam al-Husayn’s public stand.">
+    <svg class="jf-graph" viewBox="0 0 1600 1320" xmlns="http://www.w3.org/2000/svg" aria-labelledby="jf-svg-title jf-svg-desc">
+      <title id="jf-svg-title">Jihad and truce: source-grounded decision tree</title>
+      <desc id="jf-svg-desc">Follow each question's Yes or No arrow. Green traces the route Mutahhari's analysis associates with al-Hasan's treaty; red traces the distinct historical route associated with al-Husayn's public stand. The paths are interpretive overlays, not legal rulings.</desc>
+      <defs>
+        <marker id="jf-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#82909b"/></marker>
+        <marker id="jf-arrow-hasan" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#174f3e"/></marker>
+        <marker id="jf-arrow-husayn" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#a51f2b"/></marker>
+      </defs>
+      <g class="jf-connectors" fill="none" stroke="#82909b" stroke-width="3" marker-end="url(#jf-arrow)">
+        <path d="M800 96 V142"/><path d="M620 182 H430 V260"/><path d="M800 222 V260"/>
+        <path d="M620 306 H430 V390"/><path d="M800 346 V390"/>
+        <path d="M620 436 H430 V540"/><path d="M800 482 V540"/>
+        <path d="M980 582 H1140 V600"/><path d="M800 624 V680"/>
+        <path d="M620 720 H430 V800"/><path d="M800 760 V800"/>
+        <path d="M800 880 V920"/><path d="M620 960 H430 V1050"/><path d="M800 1000 V1050"/>
+        <path d="M980 960 H1160 V1050"/>
+        <path d="M430 500 H520 V720 H620"/>
+      </g>
+      <g class="jf-branch-labels">
+        <text x="520" y="169">YES</text><text x="817" y="246">NO</text>
+        <text x="520" y="293">YES</text><text x="817" y="376">NO</text>
+        <text x="520" y="420">NO</text><text x="817" y="526">YES</text>
+        <text x="1040" y="568">YES</text><text x="817" y="662">NO</text>
+        <text x="520" y="705">NO</text><text x="817" y="785">YES</text>
+        <text x="817" y="905">YES</text><text x="520" y="1032">NO</text><text x="817" y="1032">YES</text>
+        <text x="1060" y="942">NO</text>
+      </g>
+      <g class="jf-route jf-route-hasan" fill="none" stroke="#174f3e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".95" marker-end="url(#jf-arrow-hasan)">
+        <path d="M800 96 V142"/><path d="M800 222 V260"/><path d="M620 306 H430 V390"/><path d="M430 500 H520 V720 H620"/><path d="M800 760 V800"/><path d="M800 880 V920"/><path d="M800 1000 V1050"/>
+      </g>
+      <g class="jf-route jf-route-husayn" fill="none" stroke="#a51f2b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".95" marker-end="url(#jf-arrow-husayn)">
+        <path d="M800 96 V142"/><path d="M620 182 H430 V260"/><path d="M430 346 H520 V436 H620"/><path d="M980 436 H1140 V510"/>
+      </g>
+      <g class="jf-node jf-node-root"><rect x="620" y="24" width="360" height="72" rx="18"/><text x="800" y="52" class="jf-node-kicker">START</text><text x="800" y="77">What kind of situation is this?</text></g>
+      <g class="jf-node jf-node-question"><rect x="620" y="142" width="360" height="80" rx="16"/><text x="800" y="172">Is there an active external attack</text><text x="800" y="196">or immediate threat to protected people/property?</text></g>
+      <g class="jf-node jf-node-leaf jf-leaf-left"><rect x="60" y="260" width="370" height="86" rx="14"/><text x="245" y="285" class="jf-node-kicker">YES · DEFENCE</text><text x="245" y="309">Protect against the attack</text><text x="245" y="330" class="jf-node-small">Distinct rules; not the offensive-jihad case.</text></g>
+      <g class="jf-node jf-node-question"><rect x="620" y="260" width="360" height="86" rx="16"/><text x="800" y="290">Is this conflict between Muslim groups</text><text x="800" y="314">or rebellion against a just Imam?</text><text x="800" y="334" class="jf-node-small">Classify precisely; do not assume equivalence.</text></g>
+      <g class="jf-node jf-node-leaf jf-leaf-left jf-leaf-hasan"><rect x="60" y="390" width="370" height="110" rx="14"/><text x="245" y="416" class="jf-node-kicker">YES · RECONCILIATION FIRST</text><text x="245" y="440">Seek to reconcile the parties</text><text x="245" y="462" class="jf-node-small">Qur’an 49:9 describes confronting the side</text><text x="245" y="482" class="jf-node-small">that persists in wrongdoing after refusal.</text></g>
+      <g class="jf-node jf-node-question"><rect x="620" y="390" width="360" height="92" rx="16"/><text x="800" y="420">Is a demand for allegiance and public</text><text x="800" y="444">opposition to wrongdoing central?</text><text x="800" y="465" class="jf-node-small">A historical duty question—not just troop count.</text></g>
+      <g class="jf-node jf-node-leaf jf-leaf-right jf-leaf-husayn"><rect x="1140" y="510" width="400" height="120" rx="14"/><text x="1340" y="537" class="jf-node-kicker">YES · HISTORICAL DUTY</text><text x="1340" y="561">Examine the demanded pledge, ruler’s record,</text><text x="1340" y="583">public responsibility, and available options.</text><text x="1340" y="606" class="jf-node-small">These factors explain a case; they do not auto-decide it.</text></g>
+      <g class="jf-node jf-node-question"><rect x="620" y="540" width="360" height="84" rx="16"/><text x="800" y="570">Is the proposal to initiate offensive jihad</text><text x="800" y="594">without an immediate attack?</text><text x="800" y="613" class="jf-node-small">The source’s Shi‘ah jurisprudential category.</text></g>
+      <g class="jf-node jf-node-leaf jf-leaf-left"><rect x="60" y="650" width="370" height="104" rx="14"/><text x="245" y="677" class="jf-node-kicker">YES · AUTHORIZATION</text><text x="245" y="701">Do not treat initiation as self-authorizing</text><text x="245" y="724" class="jf-node-small">Mutahhari’s account requires the Imam or</text><text x="245" y="744" class="jf-node-small">a specifically appointed representative.</text></g>
+      <g class="jf-node jf-node-question"><rect x="620" y="680" width="360" height="80" rx="16"/><text x="800" y="710">Is a truce being considered</text><text x="800" y="734">instead of continuing hostilities?</text></g>
+      <g class="jf-node jf-node-leaf jf-leaf-right"><rect x="1140" y="680" width="400" height="94" rx="14"/><text x="1340" y="707" class="jf-node-kicker">NO · REASSESS THE CASE</text><text x="1340" y="731">Do not force the facts into a truce rule.</text><text x="1340" y="752" class="jf-node-small">Return to duties, authority, and context.</text></g>
+      <g class="jf-node jf-node-question"><rect x="620" y="800" width="360" height="80" rx="16"/><text x="800" y="830">Is there a genuine public interest in a truce?</text><text x="800" y="852" class="jf-node-small">Weakness, time to gain support, or persuasion?</text></g>
+      <g class="jf-node jf-node-leaf jf-leaf-left"><rect x="60" y="920" width="370" height="80" rx="14"/><text x="245" y="947" class="jf-node-kicker">NO · NOT JUST PEACE FOR ITS OWN SAKE</text><text x="245" y="972">The cited rule does not permit a truce</text><text x="245" y="991" class="jf-node-small">when the stated advantage is absent.</text></g>
+      <g class="jf-node jf-node-question"><rect x="620" y="920" width="360" height="80" rx="16"/><text x="800" y="950">Is the agreement for a defined period</text><text x="800" y="974">with terms examined honestly?</text></g>
+      <g class="jf-node jf-node-leaf jf-leaf-right"><rect x="1140" y="920" width="400" height="80" rx="14"/><text x="1340" y="947" class="jf-node-kicker">NO · INSUFFICIENT BASIS</text><text x="1340" y="972">An undefined pause is not enough.</text><text x="1340" y="991" class="jf-node-small">Terms and foreseeable consequences matter.</text></g>
+      <g class="jf-node jf-node-leaf jf-leaf-hasan"><rect x="620" y="1050" width="360" height="104" rx="14"/><text x="800" y="1077" class="jf-node-kicker">YES · COMPARE THE REAL CASE</text><text x="800" y="1101">Assess role, capacity, pledge, terms,</text><text x="800" y="1123">public duty, and foreseeable consequences.</text><text x="800" y="1143" class="jf-node-small">No single factor is decisive by itself.</text></g>
+      <g class="jf-node jf-node-leaf jf-leaf-hasan"><rect x="60" y="1050" width="370" height="104" rx="14"/><text x="245" y="1077" class="jf-node-kicker">IMAM AL-HASAN · DARK GREEN</text><text x="245" y="1101">Treaty with conditions</text><text x="245" y="1123" class="jf-node-small">Later poisoned, according to the tradition;</text><text x="245" y="1143" class="jf-node-small">not a causal result inferred from this tree.</text></g>
+      <g class="jf-node jf-node-leaf jf-leaf-husayn"><rect x="1140" y="1050" width="400" height="104" rx="14"/><text x="1340" y="1077" class="jf-node-kicker">IMAM AL-HUSAYN · BLOOD RED</text><text x="1340" y="1101">Public stand at Karbala</text><text x="1340" y="1123" class="jf-node-small">Bloodshed and martyrdom followed; this is</text><text x="1340" y="1143" class="jf-node-small">historical aftermath, not a universal algorithm.</text></g>
+      <g class="jf-note"><rect x="60" y="1190" width="1480" height="84" rx="14"/><text x="84" y="1220">READ THIS CAREFULLY</text><text x="84" y="1247">The overlays summarize Mutahhari’s interpretation of two distinct historical situations. Al-Hasan’s treaty was not a pledge of allegiance to every act of Mu‘awiyah;</text><text x="84" y="1268">al-Husayn’s refusal involved a different demand and public responsibility. Neither poison nor bloodshed is presented as a simple causal output of the decision tree.</text></g>
+    </svg>
   </div>
-  <div class="jf-bottomline"><strong>The central lesson</strong><p>Same principles do not require identical outward actions when role, capacity, demands, public conditions, and the likely consequences differ. The source’s conclusion is an argument to examine—not a shortcut that makes every truce or every uprising automatically correct.</p><a href="#concept-b02-u04-007">Connect this comparison to the final Session 2 concept ↗</a><a href="https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-2#the-elements-contributing-to-imam-al-husaynsuprisal-and-their-contrasts-with-imam-al-hassans-circumstances" target="_blank" rel="noopener">Read Mutahhari’s comparison in Session 2 ↗</a></div>
-</section>` : ''; 
+  <div class="jf-case-notes">
+    <article class="jf-case-note jf-case-note-hasan"><h3><span>●</span> Imam al-Hasan · treaty path</h3><p><strong>Highlighted:</strong> rebellion against the sitting caliph; reconciliation/peace as an available option; weak and divided support; defined treaty conditions.</p><p><strong>Not implied:</strong> that the treaty endorsed Mu‘awiyah’s later conduct, or that the later poisoning was caused by the treaty decision.</p><a href="#concept-b02-u04-002">Military balance ↗</a> · <a href="#concept-b02-u04-006">Treaty terms ↗</a></article>
+    <article class="jf-case-note jf-case-note-husayn"><h3><span>●</span> Imam al-Husayn · public stand</h3><p><strong>Highlighted:</strong> a direct demand for allegiance to Yazid, the ruler’s record, public invitations from Kufah, and the duty to oppose wrongdoing.</p><p><strong>Not implied:</strong> that his case was simply the same as initiating offensive jihad, or that the truce rules alone settle the question.</p><a href="#concept-b02-u04-001">Different political roles ↗</a> · <a href="#concept-b02-u04-005">Public duty and ruler’s record ↗</a></article>
+  </div>
+  <div class="jf-bottomline"><strong>How to read the tree</strong><p>Start at the top. Follow only the branch that matches the question’s facts. The historical overlays then ask which principles are relevant—and which boxes do not fit—without pretending that a diagram can replace the chapter’s full argument.</p><a href="https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-1#the-cases-for-jihad-in-the-shiah-jurisprudence" target="_blank" rel="noopener">Session 1: jurisprudential categories ↗</a> · <a href="https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-2-imam-al-hassans-pacifism-session-2#the-elements-contributing-to-imam-al-husaynsuprisal-and-their-contrasts-with-imam-al-hassans-circumstances" target="_blank" rel="noopener">Session 2: compare the two Imams ↗</a></div>
+</section>` : '';
 
     const concepts = chunks.map(c => {
       return `<article class="card unit" id="concept-${esc(c.id)}"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><div class="markdown-content">${markdownToHTML(c.text)}</div></details><div class="source-note"><a href="${esc(c.source_url || sourceHref)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></div></article>`;
