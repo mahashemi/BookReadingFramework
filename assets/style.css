@@ -622,10 +622,12 @@ body.source-reading {
 .jihad-framework .jf-swatch-question { background:#e8f0f4; border-color:#547184; }
 .jihad-framework .jf-swatch-leaf { background:#fffaf0; border-color:#a67c35; }
 .jihad-framework .jf-graph-frame { overflow-x:auto; border:1px solid var(--line); border-radius:20px; background:linear-gradient(180deg,#f5f8fa 0%,#fffdf8 100%); box-shadow:0 12px 32px rgba(20,38,48,.09); }
-.jihad-framework .jf-graph { display:block; width:100%; min-width:900px; height:auto; }
+.jihad-framework .jf-graph { display:block; width:100%; min-width:1200px; height:auto; }
 .jihad-framework .jf-graph text { font-family:inherit; text-anchor:middle; fill:var(--jf-ink); font-size:19px; font-weight:650; }
 .jihad-framework .jf-graph .jf-node rect { fill:#fff; stroke:#547184; stroke-width:2.5; }
 .jihad-framework .jf-graph .jf-node-question rect { fill:#e8f0f4; stroke:#547184; }
+.jihad-framework .jf-graph .jf-not-hasan rect,.jihad-framework .jf-graph .jf-not-controlling rect { stroke-dasharray:8 5; }
+.jihad-framework .jf-graph .jf-route-notes text { text-anchor:middle; fill:#687681; font-size:12px; font-weight:850; letter-spacing:.8px; }
 .jihad-framework .jf-graph .jf-node-root rect { fill:#172a35; stroke:#172a35; }
 .jihad-framework .jf-graph .jf-node-root text { fill:#fff; }
 .jihad-framework .jf-graph .jf-node-leaf rect { fill:#fffaf0; stroke:#a67c35; }
@@ -650,4 +652,4 @@ body.source-reading {
 .jihad-framework .jf-case-note a,.jihad-framework .jf-bottomline a { font-size:.88rem; font-weight:700; }
 .jihad-framework .jf-bottomline { margin-top:16px; border:1px solid var(--line); border-radius:16px; padding:18px 20px; text-align:center; background:var(--paper); }
 .jihad-framework .jf-bottomline p { max-width:900px; margin:8px auto 12px; }
-@media(max-width:700px) { .jihad-framework .jf-graph { min-width:900px; } .jihad-framework .jf-case-notes { grid-template-columns:1fr; } .jihad-framework .jf-legend { gap:8px 12px; } }
+@media(max-width:700px) { .jihad-framework .jf-graph { min-width:1200px; } .jihad-framework .jf-case-notes { grid-template-columns:1fr; } .jihad-framework .jf-legend { gap:8px 12px; } }
