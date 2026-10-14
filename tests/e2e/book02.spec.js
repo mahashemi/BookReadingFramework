@@ -73,7 +73,7 @@ test.describe("Book 02 Counterfactual Istidlal prerequisites", () => {
     const card = page.locator(".counterfactual-card").first();
     const prerequisite = card.locator(".prerequisite a");
     await expect(prerequisite).toBeVisible();
-    await expect(prerequisite).toContainText("'Uthman's assassination (the problem of hypocrisy) — Political manipulation after the killing");
+    await expect(prerequisite).toContainText("Bluntness and honesty in politics — Why ‘Ali rejected deception as a political tool");
     await expect(prerequisite).toHaveAttribute("href", "#concept-b02-u02-002");
     await prerequisite.click();
     await expect(page.locator("#concept-b02-u02-002")).toBeVisible();
@@ -89,7 +89,7 @@ test.describe("Book 02 Session 2 jihad and truce framework", () => {
     await page.goto("/book/unit.html?book_id=book02&unit=u04", { waitUntil: "networkidle" });
     const framework = page.locator("#jihad-truce-framework");
     await expect(framework).toBeVisible();
-    await expect(framework).toContainText("Follow the YES/NO branches");
+    await expect(framework).toContainText("follow the YES/NO branches");
     await expect(framework).toContainText("genuine public interest in a truce");
     await expect(framework).toContainText("IMAM AL-HASAN · DARK GREEN");
     await expect(framework).toContainText("IMAM AL-HUSAYN · BLOOD RED");
