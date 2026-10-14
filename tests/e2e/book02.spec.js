@@ -105,6 +105,7 @@ test.describe("Book 02 Session 2 jihad and truce framework", () => {
     await expect(cards).toHaveCount(6);
     await expect(cards.first()).toContainText("Why does Mutahhari insist that we compare the circumstances");
     await expect(cards.nth(3)).toContainText("Why does the demand that al-Husayn pledge allegiance");
+    await cards.nth(1).locator("details summary").click();
     await expect(cards.nth(1).locator("details a[href^=\"https://\"]").first()).toBeVisible();
   });
 });
