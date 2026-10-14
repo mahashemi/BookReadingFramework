@@ -2,6 +2,14 @@ const { test, expect } = require("@playwright/test");
 
 const books = [
   {
+    name: "Book 01",
+    bookId: "book01",
+    path: "/Library/Book%2001%20-%20Polarization%20Around%20_Ali",
+    units: Array.from({ length: 24 }, (_, i) => "u" + String(i + 1).padStart(2, "0")),
+    mindMap: "/Library/Book%2001%20-%20Polarization%20Around%20_Ali/mind_maps/book01_interactive.html",
+    mindMapSelector: "main"
+  },
+  {
     name: "Book 02",
     bookId: "book02",
     path: "/Library/Book%2002%20-%20Survey%20of%20the%20Lives%20of%20the%20Infallible%20Imams",
@@ -47,6 +55,10 @@ for (const book of books) {
       await expect(page.locator("h1")).not.toHaveText("");
       await expect(page.locator("#concepts")).toBeVisible();
       expect(await page.locator("#concepts .card.unit").count()).toBeGreaterThan(0);
+      const narration = page.locator(".listen-learn");
+      await expect(narration).toBeVisible();
+      await expect(narration.locator(".narration-reading-time")).toContainText(/Estimated reading time: about \d+ min/);
+      await expect(narration.locator(".narration-reading-time")).toContainText(/\d+ words/);
       await expect(page.locator("body")).not.toContainText("The learning data could not be loaded");
       await expect(page.locator("body")).not.toContainText("undefined");
       expect(errors).toEqual([]);
