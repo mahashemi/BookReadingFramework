@@ -33,6 +33,21 @@ test("Book 02 pages use the canonical nested chunks architecture", () => {
   assert.doesNotMatch(mindMap, /claim_examples/);
 });
 
+test("Chapter 1 separates justice from political honesty and maps questions to the right evidence", () => {
+  const root = "Library/Book 02 - Survey of the Lives of the Infallible Imams/";
+  const chunks = readJson(root + "data/chunks.json");
+  const unit = chunks.units.find(u => u.id === "u02");
+  assert.equal(unit.chunks.length, 14);
+  const justice = unit.chunks.find(c => c.id === "b02-u02-003");
+  const honesty = unit.chunks.find(c => c.id === "b02-u02-014");
+  assert.equal(new URL(justice.source_url).hash.slice(1), "inflexibility-in-the-enforcement-of-justice");
+  assert.equal(new URL(honesty.source_url).hash.slice(1), "bluntness-and-honesty-in-politics");
+  const bank = readJson(root + "counterfactuals/all-chapters.json");
+  assert.equal(bank.counterfactuals.find(q => q.id === "cf-u02-core-01").concept_chunk_id, "b02-u02-014");
+  assert.equal(bank.counterfactuals.find(q => q.id === "cf-u02-core-05").concept_chunk_id, "b02-u02-010");
+  assert.equal(bank.counterfactuals.find(q => q.id === "cf-u02-core-09").concept_chunk_id, "b02-u02-011");
+});
+
 test("Book 02 page data references match the manifest", () => {
   const manifest = readJson("assets/books.json");
   const book = manifest.books.find(b => b.id === "book02");
