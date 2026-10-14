@@ -73,7 +73,7 @@ test.describe("Book 02 Counterfactual Istidlal prerequisites", () => {
     const card = page.locator(".counterfactual-card").first();
     const prerequisite = card.locator(".prerequisite a");
     await expect(prerequisite).toBeVisible();
-    await expect(prerequisite).toContainText("Ch1 — 'Uthman's assassination and the problem of hypocrisy");
+    await expect(prerequisite).toContainText("'Uthman's assassination (the problem of hypocrisy) — Political manipulation after the killing");
     await expect(prerequisite).toHaveAttribute("href", "#concept-b02-u02-002");
     await prerequisite.click();
     await expect(page.locator("#concept-b02-u02-002")).toBeVisible();
