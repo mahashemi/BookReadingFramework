@@ -254,7 +254,7 @@
     {
       "id": "cf-u02-core-01",
       "unit_id": "u02",
-      "concept_chunk_id": "b02-u02-002",
+      "concept_chunk_id": "b02-u02-014",
       "skill": "counterfactual-istidlal",
       "difficulty": "hard",
       "prompt": "Why does Imam ‘Ali reject deception as a route to political power, even if someone promises to govern justly afterward?",
@@ -301,7 +301,7 @@
     {
       "id": "cf-u02-core-05",
       "unit_id": "u02",
-      "concept_chunk_id": "b02-u02-004",
+      "concept_chunk_id": "b02-u02-010",
       "skill": "counterfactual-istidlal",
       "difficulty": "hard",
       "prompt": "Why can intense outward piety fail to protect a person from misunderstanding the Qur’an?",
@@ -332,7 +332,7 @@
     {
       "id": "cf-u02-core-09",
       "unit_id": "u02",
-      "concept_chunk_id": "b02-u02-010",
+      "concept_chunk_id": "b02-u02-011",
       "skill": "counterfactual-istidlal",
       "difficulty": "medium",
       "prompt": "If several respected people repeat the same report, why should we still trace it back to its evidence before passing it on?",
