@@ -74,9 +74,9 @@ test.describe("Book 02 Counterfactual Istidlal prerequisites", () => {
     const prerequisite = card.locator(".prerequisite a");
     await expect(prerequisite).toBeVisible();
     await expect(prerequisite).toContainText("Bluntness and honesty in politics — Why ‘Ali rejected deception as a political tool");
-    await expect(prerequisite).toHaveAttribute("href", "#concept-b02-u02-002");
+    await expect(prerequisite).toHaveAttribute("href", "#concept-b02-u02-014");
     await prerequisite.click();
-    await expect(page.locator("#concept-b02-u02-002")).toBeVisible();
+    await expect(page.locator("#concept-b02-u02-014")).toBeVisible();
     expect(errors).toEqual([]);
   });
 });
