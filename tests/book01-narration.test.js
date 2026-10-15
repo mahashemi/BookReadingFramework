@@ -63,9 +63,9 @@ test("Book 02 detailed narration walkthroughs have one section per canonical con
     if (unit.id === "u00") continue; // The foreword is one short framing concept, not a chapter walkthrough.
     const entry = bookManifest.units[unit.id];
     const script = fs.readFileSync(path.join(root, entry.script), "utf8");
-    const walkthrough = script.match(/^## A closer walk through the source\\s*\\n([\\s\\S]*?)(?=^## Bringing the thread together|^## Source map|\\Z)/m);
+    const walkthrough = script.split("## A closer walk through the source")[1]?.split(/\n## (?:Bringing the thread together|Source map)/)[0];
     assert.ok(walkthrough, unit.id + " has no detailed concept walkthrough");
-    const sectionCount = [...walkthrough[1].matchAll(/^###\\s+.+$/gm)].length;
+    const sectionCount = [...walkthrough.matchAll(/^###\s+.+$/gm)].length;
     assert.equal(sectionCount, unit.chunks.length, unit.id + " walkthrough headings do not cover every canonical concept exactly once");
   }
 });
