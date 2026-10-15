@@ -16,3 +16,20 @@ test("Book 01 exposes all 24 substantial narration scripts", () => {
     assert.match(script, /## Reflection/);
   }
 });
+
+
+test("Book 02 narration source maps cover every canonical concept exactly once", () => {
+  const book = JSON.parse(fs.readFileSync(path.join(root, "Library", "Book 02 - Survey of the Lives of the Infallible Imams", "data", "chunks.json"), "utf8"));
+  const bookManifest = manifest.books.book02;
+  assert.equal(Object.keys(bookManifest.units).length, book.units.length);
+  for (const unit of book.units) {
+    const entry = bookManifest.units[unit.id];
+    assert.ok(entry, unit.id + " is missing from the audio manifest");
+    const script = fs.readFileSync(path.join(root, entry.script), "utf8");
+    const sourceMap = script.match(/^## Source map\\s*\\n([\\s\\S]*)$/m);
+    assert.ok(sourceMap, unit.id + " narration has no source map");
+    const ids = [...sourceMap[1].matchAll(/b02-u\\d{2}-\\d{3}/g)].map(match => match[0]);
+    assert.equal(new Set(ids).size, ids.length, unit.id + " repeats a source-map ID");
+    assert.deepEqual([...ids].sort(), unit.chunks.map(chunk => chunk.id).sort(), unit.id + " source map does not match canonical concepts");
+  }
+});
