@@ -124,3 +124,34 @@ test("browser narration chooses a voice from the dominant script, not isolated A
   const persianLangs = await page.evaluate(() => [...new Set(window.__narrationSpoken.map(x => x.lang))]);
   expect(persianLangs).toEqual(["fa-IR"]);
 });
+
+
+test("English narration stays English when it contains an isolated Arabic quotation", async ({ page }) => {
+  const fs = require("node:fs");
+  const path = require("node:path");
+  const scriptPath = path.join(__dirname, "..", "..", "audio", "book02", "scripts", "u03.md");
+  const source = fs.readFileSync(scriptPath, "utf8");
+  const mixedScript = source.replace(
+    "Mutahhari opens with a question",
+    "Arabic quotation: إِنَّ اللَّهَ مَعَ الصَّابِرِينَ. Mutahhari opens with a question"
+  );
+  await page.route("**/audio/book02/scripts/u03.md", route => route.fulfill({
+    status: 200,
+    contentType: "text/markdown; charset=utf-8",
+    body: mixedScript
+  }));
+  await page.addInitScript(() => {
+    window.__narrationLangs = [];
+    window.SpeechSynthesisUtterance = function(text) { this.text = text; this.lang = ""; };
+    Object.defineProperty(window, "speechSynthesis", {
+      configurable: true,
+      value: { speak(utterance) { window.__narrationLangs.push(utterance.lang); queueMicrotask(() => utterance.onend?.()); }, cancel() {} }
+    });
+  });
+  await page.goto("/book/unit.html?book_id=book02&unit=u03", { waitUntil: "networkidle" });
+  const narration = page.locator(".listen-learn");
+  await expect(narration).toBeVisible();
+  await narration.getByRole("button", { name: "▶ Listen & Learn" }).click();
+  await expect.poll(() => page.evaluate(() => window.__narrationLangs.length)).toBeGreaterThan(1);
+  expect(await page.evaluate(() => [...new Set(window.__narrationLangs)])).toEqual(["en-US"]);
+});
