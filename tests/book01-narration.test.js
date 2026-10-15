@@ -33,3 +33,15 @@ test("Book 02 narration source maps cover every canonical concept exactly once",
     assert.deepEqual([...ids].sort(), unit.chunks.map(chunk => chunk.id).sort(), unit.id + " source map does not match canonical concepts");
   }
 });
+
+
+test("Book 02 introduction narration develops each of its five concepts", () => {
+  const script = fs.readFileSync(path.join(root, "audio", "book02", "scripts", "u01.md"), "utf8");
+  assert.match(script, /## A closer walk through the source/);
+  assert.match(script, /### Why the Imams’ different approaches can appear contradictory/);
+  assert.match(script, /### How a rich tradition can guide followers and still require careful interpretation/);
+  assert.match(script, /### Why inherited custom is not automatically a religious obligation/);
+  assert.match(script, /### Imam al-Sadiq on clothing, circumstance, and the spirit of religion/);
+  assert.match(script, /### Imam ‘Ali’s explanation of the beard-dyeing instruction/);
+  assert.ok(script.length >= 6000, "introduction narration should include the detailed concept walkthrough");
+});
