@@ -69,3 +69,16 @@ test("Book 02 detailed narration walkthroughs have one section per canonical con
     assert.equal(sectionCount, unit.chunks.length, unit.id + " walkthrough headings do not cover every canonical concept exactly once");
   }
 });
+
+
+test("Book 01 closing unit contains source-grounded concepts, not a truncation placeholder", () => {
+  const book = JSON.parse(fs.readFileSync(path.join(root, "Library", "Book 01 - Polarization Around _Ali", "data", "chunks.json"), "utf8"));
+  const unit = book.units.find(item => item.id === "u24");
+  const script = fs.readFileSync(path.join(root, "audio", "book01", "scripts", "u24.md"), "utf8");
+  assert.ok(unit);
+  assert.doesNotMatch(script, /coverage note|source text was truncated/i);
+  for (const chunk of unit.chunks) assert.ok(script.includes(chunk.title), "narration omits concept title: " + chunk.id);
+  const sourceMap = script.split("## Source map")[1] || "";
+  const ids = [...sourceMap.matchAll(/b01-u24-\\d{3}/g)].map(match => match[0]);
+  assert.deepEqual([...ids].sort(), unit.chunks.map(chunk => chunk.id).sort());
+});
