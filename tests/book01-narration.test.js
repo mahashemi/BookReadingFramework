@@ -45,3 +45,12 @@ test("Book 02 introduction narration develops each of its five concepts", () => 
   assert.match(script, /### Imam ‘Ali’s explanation of the beard-dyeing instruction/);
   assert.ok(script.length >= 6000, "introduction narration should include the detailed concept walkthrough");
 });
+
+
+test("Book 02 Session 1 narration distinguishes all three jurisprudential cases of jihad", () => {
+  const script = fs.readFileSync(path.join(root, "audio", "book02", "scripts", "u03.md"), "utf8");
+  assert.match(script, /The cases for jihad in the Shi‘ah jurisprudence — Offensive jihad and authorization/);
+  assert.match(script, /The cases for jihad in the Shi‘ah jurisprudence — Defense against an attack/);
+  assert.match(script, /The cases for jihad in the Shi‘ah jurisprudence — Personal defense and differing levels of risk/);
+  assert.match(script, /This completes the chapter['’]s three-way distinction/);
+});
