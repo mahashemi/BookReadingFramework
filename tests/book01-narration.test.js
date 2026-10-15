@@ -40,5 +40,5 @@ test("Book 02 Session 1 narration distinguishes all three jurisprudential cases 
   assert.match(script, /The cases for jihad in the Shi‘ah jurisprudence — Offensive jihad and authorization/);
   assert.match(script, /The cases for jihad in the Shi‘ah jurisprudence — Defense against an attack/);
   assert.match(script, /The cases for jihad in the Shi‘ah jurisprudence — Personal defense and differing levels of risk/);
-  assert.match(script, /This completes the chapter’s three-way distinction/);
+  assert.match(script, /This completes the chapter['’]s three-way distinction/);
 });
