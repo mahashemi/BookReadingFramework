@@ -54,3 +54,18 @@ test("Book 02 Session 1 narration distinguishes all three jurisprudential cases 
   assert.match(script, /The cases for jihad in the Shi‘ah jurisprudence — Personal defense and differing levels of risk/);
   assert.match(script, /This completes the chapter['’]s three-way distinction/);
 });
+
+
+test("Book 02 detailed narration walkthroughs have one section per canonical concept", () => {
+  const book = JSON.parse(fs.readFileSync(path.join(root, "Library", "Book 02 - Survey of the Lives of the Infallible Imams", "data", "chunks.json"), "utf8"));
+  const bookManifest = manifest.books.book02;
+  for (const unit of book.units) {
+    if (unit.id === "u00") continue; // The foreword is one short framing concept, not a chapter walkthrough.
+    const entry = bookManifest.units[unit.id];
+    const script = fs.readFileSync(path.join(root, entry.script), "utf8");
+    const walkthrough = script.match(/^## A closer walk through the source\\s*\\n([\\s\\S]*?)(?=^## Bringing the thread together|^## Source map|\\Z)/m);
+    assert.ok(walkthrough, unit.id + " has no detailed concept walkthrough");
+    const sectionCount = [...walkthrough[1].matchAll(/^###\\s+.+$/gm)].length;
+    assert.equal(sectionCount, unit.chunks.length, unit.id + " walkthrough headings do not cover every canonical concept exactly once");
+  }
+});
