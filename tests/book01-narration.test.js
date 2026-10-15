@@ -79,6 +79,6 @@ test("Book 01 closing unit contains source-grounded concepts, not a truncation p
   assert.doesNotMatch(script, /coverage note|source text was truncated/i);
   for (const chunk of unit.chunks) assert.ok(script.includes(chunk.title), "narration omits concept title: " + chunk.id);
   const sourceMap = script.split("## Source map")[1] || "";
-  const ids = [...sourceMap.matchAll(/b01-u24-\\d{3}/g)].map(match => match[0]);
+  const ids = [...sourceMap.matchAll(/b01-u24-\d{3}/g)].map(match => match[0]);
   assert.deepEqual([...ids].sort(), unit.chunks.map(chunk => chunk.id).sort());
 });
