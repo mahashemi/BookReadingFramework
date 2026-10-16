@@ -268,6 +268,27 @@ def audio(args):
     print(f"Generated {len(manifest)} sentence segments under {segments_dir}")
 
 
+def preview(args):
+    import numpy as np
+    import soundfile as sf
+    from omnivoice import OmniVoice
+
+    model = OmniVoice.from_pretrained(TTS_MODEL, device_map="cuda:0")
+    kwargs = {"text": args.text}
+    if args.reference_audio:
+        kwargs["ref_audio"] = args.reference_audio
+        if not args.reference_text:
+            raise ValueError("--reference-text is required with --reference-audio.")
+        kwargs["ref_text"] = args.reference_text
+    audio_out = model.generate(**kwargs)
+    samples = audio_out[0] if isinstance(audio_out, (list, tuple)) else audio_out
+    samples = np.asarray(samples).squeeze()
+    target = Path(args.output)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    sf.write(str(target), samples, 24000)
+    print(f"Preview saved: {target}")
+
+
 def package(args):
     import zipfile
 
@@ -296,6 +317,12 @@ def main():
     p.add_argument("--allow-unreviewed", action="store_true")
     p.add_argument("--overwrite", action="store_true")
     p.set_defaults(func=audio)
+    p = sub.add_parser("preview")
+    p.add_argument("--text", default="السلام علیکم۔ آج ہم اس کتاب کے ایک اہم موضوع کو سمجھیں گے۔")
+    p.add_argument("--output", required=True)
+    p.add_argument("--reference-audio")
+    p.add_argument("--reference-text")
+    p.set_defaults(func=preview)
     p = sub.add_parser("package")
     p.add_argument("--output-dir", required=True)
     p.set_defaults(func=package)
