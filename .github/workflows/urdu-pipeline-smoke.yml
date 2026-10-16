@@ -1,0 +1,49 @@
+name: Urdu open-weight pipeline smoke tests
+
+on:
+  pull_request:
+    paths:
+      - "tools/urdu_audiobook/**"
+      - "notebooks/urdu_audiobook_pipeline.ipynb"
+      - ".github/workflows/urdu-pipeline-smoke.yml"
+  push:
+    branches:
+      - "feature/urdu-translation-pipeline"
+    paths:
+      - "tools/urdu_audiobook/**"
+      - "notebooks/urdu_audiobook_pipeline.ipynb"
+      - ".github/workflows/urdu-pipeline-smoke.yml"
+  workflow_dispatch:
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile local pipeline
+        run: python -m py_compile tools/urdu_audiobook/local_pipeline.py
+      - name: Check CLI entry points
+        run: |
+          python tools/urdu_audiobook/local_pipeline.py --help
+          python tools/urdu_audiobook/local_pipeline.py translate --help
+          python tools/urdu_audiobook/local_pipeline.py preview --help
+          python tools/urdu_audiobook/local_pipeline.py audio --help
+          python tools/urdu_audiobook/local_pipeline.py package --help
+      - name: Validate notebook JSON and local-only configuration
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          notebook = json.loads(Path("notebooks/urdu_audiobook_pipeline.ipynb").read_text(encoding="utf-8"))
+          assert notebook["nbformat"] == 4
+          assert len(notebook["cells"]) >= 10
+          source = "\n".join("".join(cell.get("source", [])) for cell in notebook["cells"])
+          assert "OPENAI_API_KEY" not in source
+          assert "local_pipeline.py" in source
+          assert "Qwen3-4B" in source
+          assert "translation.json" in source
+          print(f"Notebook JSON valid; {len(notebook['cells'])} cells checked.")
+          PY
