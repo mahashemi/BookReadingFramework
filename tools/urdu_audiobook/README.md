@@ -6,7 +6,7 @@ This is the recommended Google Colab workflow for creating a **reviewable Urdu e
 
 - **Translation:** [Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B), loaded in 4-bit NF4 mode. The model card documents multilingual support including 100+ languages and an Apache-2.0 license. This should be a practical starting point for a free Colab GPU, but the translation quality for our religious source material must be assessed on a reviewed pilot passage.
 - **Urdu speech:** [mlwithabdullah/omnivoice-urdu-12000](https://huggingface.co/mlwithabdullah/omnivoice-urdu-12000), a 0.6B Urdu fine-tune of OmniVoice. The model card reports improvements on a small ten-sentence test set; treat that as a lead, not an independent quality guarantee. Compare the generated audio with the Urdu transcript before scaling.
-- **Optional consistent narrator:** OmniVoice accepts a short reference voice recording. Use only a recording you own or have explicit permission to use. A reference clip in Urdu is preferred for Urdu pronunciation.
+- **Optional consistent narrator:** OmniVoice accepts a short reference voice recording. Use only a recording you own or have explicit permission to use. A reference clip in Urdu is preferred for Urdu pronunciation. If you do not have an authorized narrator recording, audition a generated synthetic sample first and reuse that sample as the reference for all sentence segments so the narrator stays consistent.
 
 This is a **candidate combination, not a claim that GPU inference has already passed**. The notebook includes a voice audition and a short-passage pilot. The current environment cannot execute a free Colab GPU session on your behalf, so the actual first run and listening test remain to be done in Colab.
 
@@ -28,8 +28,8 @@ The notebook uses `tools/urdu_audiobook/local_pipeline.py`:
 
 ```bash
 python tools/urdu_audiobook/local_pipeline.py translate --input source.md --output-dir build/urdu-book02-pilot
-python tools/urdu_audiobook/local_pipeline.py preview --output build/urdu-book02-pilot/voice-preview.wav
-python tools/urdu_audiobook/local_pipeline.py audio --translation build/urdu-book02-pilot/translation.json --output-dir build/urdu-book02-pilot
+python tools/urdu_audiobook/local_pipeline.py preview --output build/urdu-book02-pilot/voice-preview.wav --text "السلام علیکم۔ آج ہم اس کتاب کے ایک اہم موضوع کو سمجھیں گے۔"
+python tools/urdu_audiobook/local_pipeline.py audio --translation build/urdu-book02-pilot/translation.json --output-dir build/urdu-book02-pilot --reference-audio build/urdu-book02-pilot/voice-preview.wav --reference-text "السلام علیکم۔ آج ہم اس کتاب کے ایک اہم موضوع کو سمجھیں گے۔"
 python tools/urdu_audiobook/local_pipeline.py package --output-dir build/urdu-book02-pilot
 ```
 
