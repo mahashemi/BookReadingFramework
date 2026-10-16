@@ -131,26 +131,21 @@
     return { words: words.length, minutes };
   }
 
-  function speechPieces(text, maxChars = 1100) {
-    const pieces = [];
-    for (const paragraph of text.split(/\n{2,}/)) {
-      let remaining = paragraph.trim();
-      while (remaining.length > maxChars) {
-        let cut = Math.max(
-          remaining.lastIndexOf('. ', maxChars),
-          remaining.lastIndexOf('! ', maxChars),
-          remaining.lastIndexOf('? ', maxChars),
-          remaining.lastIndexOf('؟ ', maxChars),
-          remaining.lastIndexOf('۔ ', maxChars)
-        );
-        if (cut < Math.floor(maxChars * 0.45)) cut = remaining.lastIndexOf(' ', maxChars);
-        if (cut < 1) cut = maxChars;
-        pieces.push(remaining.slice(0, cut + 1).trim());
-        remaining = remaining.slice(cut + 1).trim();
+  function sentenceList(text) {
+    // Keep sentence boundaries as the synchronization unit. Each visible sentence
+    // is spoken in its own utterance, so browsers without reliable onboundary
+    // events can still highlight the exact sentence being read.
+    const out = [];
+    for (const paragraph of String(text || '').split(/\n{2,}/)) {
+      const clean = paragraph.replace(/\s*\n\s*/g, ' ').trim();
+      if (!clean) continue;
+      const matches = clean.match(/[^.!?؟۔]+[.!?؟۔]+(?:[”"'’)]*)|[^.!?؟۔]+$/gu) || [clean];
+      for (const match of matches) {
+        const sentence = match.trim();
+        if (sentence) out.push(sentence);
       }
-      if (remaining) pieces.push(remaining);
     }
-    return pieces.filter(Boolean);
+    return out;
   }
 
   function stop(button) {
@@ -164,53 +159,101 @@
   }
 
   function add(entry, script, key) {
-    const hero=document.querySelector('.unit-hero');
+    const hero = document.querySelector('.unit-hero');
     if (!hero || document.querySelector('.listen-learn')) return;
-    const section=document.createElement('section');
-    section.className='section listen-learn'; section.id='listen-learn'; section.dataset.unitKey=key;
+    const section = document.createElement('section');
+    section.className = 'section listen-learn';
+    section.id = 'listen-learn';
+    section.dataset.unitKey = key;
     const visibleSections = transcriptSections(script);
     const estimate = readingEstimate(script);
-    section.innerHTML='<div class="card panel narration-card"><div class="num">Listen & Learn</div><h2>'+esc(script.title||entry.title||'Unit narration')+'</h2><p class="meta-line">A guided narration with explanation, connections and reflection. The spoken content matches the transcript below.</p><p class="meta-line narration-reading-time">Estimated reading time: about '+estimate.minutes+' min · '+estimate.words.toLocaleString()+' words</p><div class="actions narration-actions"><button class="btn primary" type="button" data-play>▶ Listen & Learn</button><button class="btn" type="button" data-transcript>Show transcript</button></div><details class="narration-transcript"><summary>Read the transcript</summary><div class="narration-body">'+visibleSections.map(s=>'<h3>'+esc(transcriptHeading(s))+'</h3><p>'+esc(s.text).replace(/\n\n/g,'</p><p>').replace(/\n/g,' ')+'</p>').join('')+'</div></details></div>';
-    hero.insertAdjacentElement('afterend',section);
-    const play=section.querySelector('[data-play]');
-    play.addEventListener('click',()=>{
-      if(state.playing){stop(play);return;}
-      if(!('speechSynthesis' in window)){play.textContent='Browser narration unavailable';return;}
-      const text=spoken(script), pieces=speechPieces(text);
-      if(!pieces.length)return;
-      const persianChars=(text.match(/[\u0600-\u06ff]/g)||[]).length;
-       const latinChars=(text.match(/[A-Za-z]/g)||[]).length;
-       const lang=persianChars>latinChars?'fa-IR':'en-US';
-      const generation=++state.generation;
-      state.utterances=pieces.map(piece=>{
-        const u=new SpeechSynthesisUtterance(piece);
-        u.lang=lang; u.rate=0.92;
+    let sentenceId = 0;
+    const sequence = [];
+    const renderSentence = (text, className = '') => {
+      const id = sentenceId++;
+      sequence.push({ id, text });
+      return '<span class="narration-sentence ' + className + '" data-sentence-id="' + id + '">' + esc(text) + '</span>';
+    };
+    const transcript = visibleSections.map(s => {
+      const heading = transcriptHeading(s);
+      const headingHTML = heading ? '<h3>' + renderSentence(heading, 'narration-heading') + '</h3>' : '';
+      const paragraphs = s.text.split(/\n{2,}/).map(p => p.replace(/\s*\n\s*/g, ' ').trim()).filter(Boolean);
+      const body = paragraphs.map(p => {
+        const sentences = sentenceList(p);
+        return '<p>' + (sentences.length ? sentences.map(t => renderSentence(t)).join(' ') : esc(p)) + '</p>';
+      }).join('');
+      return headingHTML + body;
+    }).join('');
+    // Sequence order is also the playback order: transcript and speech share the
+    // exact same sentence strings, rather than separately generated text.
+    section.innerHTML = '<div class="card panel narration-card">' +
+      '<div class="num">Listen & Learn</div><h2>' + esc(script.title || entry.title || 'Unit narration') + '</h2>' +
+      '<p class="meta-line">Follow the highlighted sentence as it is read. The transcript and speech use the same text.</p>' +
+      '<p class="meta-line narration-reading-time">Estimated reading time: about ' + estimate.minutes + ' min · ' + estimate.words.toLocaleString() + ' words</p>' +
+      '<div class="actions narration-actions"><button class="btn primary" type="button" data-play>▶ Listen & Learn</button>' +
+      '<button class="btn" type="button" data-transcript>Show transcript</button></div>' +
+      '<details class="narration-transcript" open><summary>Read the transcript</summary><div class="narration-body">' + transcript + '</div></details></div>';
+    hero.insertAdjacentElement('afterend', section);
+    const play = section.querySelector('[data-play]');
+    let activeId = null;
+    const clearHighlight = () => {
+      section.querySelectorAll('.narration-sentence.is-speaking').forEach(el => el.classList.remove('is-speaking'));
+      activeId = null;
+    };
+    const highlight = id => {
+      clearHighlight();
+      const el = section.querySelector('[data-sentence-id="' + id + '"]');
+      if (!el) return;
+      el.classList.add('is-speaking');
+      activeId = id;
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+    play.addEventListener('click', () => {
+      if (state.playing) { stop(play); clearHighlight(); return; }
+      if (!('speechSynthesis' in window)) { play.textContent = 'Browser narration unavailable'; return; }
+      if (!sequence.length) return;
+      const fullText = sequence.map(item => item.text).join(' ');
+      const persianChars = (fullText.match(/[\u0600-\u06ff]/g) || []).length;
+      const latinChars = (fullText.match(/[A-Za-z]/g) || []).length;
+      const lang = persianChars > latinChars ? 'fa-IR' : 'en-US';
+      const generation = ++state.generation;
+      state.utterances = sequence.map(item => {
+        const u = new SpeechSynthesisUtterance(item.text);
+        u.lang = lang;
+        u.rate = 0.92;
+        u.__sentenceId = item.id;
         return u;
       });
-      state.remaining=state.utterances.length; state.playing=true;
-      play.textContent='■ Stop listening'; play.dataset.playing='true';
-      // Queue one utterance at a time. Some browsers silently drop items when a
-      // long list is submitted at once, which can make the voice stop mid-script.
-      const speakNext=()=>{
-        if(generation!==state.generation)return;
-        const utterance=state.utterances.shift();
-        if(!utterance){
-          state.utterance=null; state.remaining=0; state.playing=false;
-          play.textContent='▶ Listen & Learn'; play.dataset.playing='false';
+      state.remaining = state.utterances.length;
+      state.playing = true;
+      play.textContent = '■ Stop listening';
+      play.dataset.playing = 'true';
+      const speakNext = () => {
+        if (generation !== state.generation) return;
+        const utterance = state.utterances.shift();
+        if (!utterance) {
+          state.utterance = null; state.remaining = 0; state.playing = false;
+          play.textContent = '▶ Listen & Learn'; play.dataset.playing = 'false';
+          clearHighlight();
           return;
         }
-        state.utterance=utterance;
-        utterance.onend=()=>{
-          if(generation!==state.generation)return;
-          state.remaining=Math.max(0,state.remaining-1);
+        state.utterance = utterance;
+        highlight(utterance.__sentenceId);
+        utterance.onend = () => {
+          if (generation !== state.generation) return;
+          state.remaining = Math.max(0, state.remaining - 1);
           speakNext();
         };
-        utterance.onerror=()=>{if(generation===state.generation)stop(play);};
+        utterance.onerror = () => { if (generation === state.generation) { stop(play); clearHighlight(); } };
         window.speechSynthesis.speak(utterance);
       };
       speakNext();
     });
-    section.querySelector('[data-transcript]').addEventListener('click',e=>{const d=section.querySelector('details');d.open=!d.open;e.currentTarget.textContent=d.open?'Hide transcript':'Show transcript';});
+    section.querySelector('[data-transcript]').addEventListener('click', e => {
+      const details = section.querySelector('details');
+      details.open = !details.open;
+      e.currentTarget.textContent = details.open ? 'Hide transcript' : 'Show transcript';
+    });
   }
 
   async function enhance() {
