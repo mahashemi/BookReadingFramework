@@ -181,6 +181,11 @@ def audio(args):
     data = json.loads(data_path.read_text(encoding="utf-8"))
     if not data.get("sentences"):
         raise ValueError("No aligned sentences found.")
+    if not args.reference_audio or not args.reference_text:
+        raise ValueError(
+            "Pass a 3–10 second Urdu reference clip and its exact transcript to keep one consistent narrator across sentence segments. "
+            "You can use the preview WAV created by the preview command."
+        )
     if args.require_review and data.get("review_status") not in {"reviewed", "approved_for_audio"}:
         raise ValueError(
             "Translation is still marked as a draft. Review translation.json and set "
