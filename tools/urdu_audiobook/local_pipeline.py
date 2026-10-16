@@ -39,12 +39,16 @@ def read_source(path):
             })
             paragraphs = []
 
+    in_code_fence = False
     for raw in Path(path).read_text(encoding="utf-8").splitlines():
         line = raw.strip()
+        if line.startswith("```"):
+            in_code_fence = not in_code_fence
+            continue
+        if in_code_fence:
+            continue
         if not line:
             flush()
-        elif line.startswith("```"):
-            continue
         elif line.startswith("#"):
             flush()
             heading = line.lstrip("#").strip() or heading
