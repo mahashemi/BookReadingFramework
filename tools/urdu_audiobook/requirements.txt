@@ -1,2 +1,7 @@
-openai>=1.68.0
-python-dotenv>=1.0.1
+# Colab runtime provides PyTorch; retain its CUDA build.
+transformers>=4.51.0
+accelerate
+bitsandbytes
+sentencepiece
+soundfile
+omnivoice
