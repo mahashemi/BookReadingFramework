@@ -195,7 +195,7 @@ def audio(args):
     output_dir.mkdir(parents=True, exist_ok=True)
     segments_dir = output_dir / "segments"
     segments_dir.mkdir(exist_ok=True)
-    model = OmniVoice.from_pretrained(TTS_MODEL, device_map="cuda:0")
+    model = OmniVoice.from_pretrained(TTS_MODEL, device_map="cuda:0", dtype=torch.float16)
     manifest = []
 
     for index, item in enumerate(data["sentences"], 1):
@@ -213,7 +213,8 @@ def audio(args):
                 kwargs["ref_text"] = args.reference_text
             audio_out = model.generate(**kwargs)
             samples = audio_out[0] if isinstance(audio_out, (list, tuple)) else audio_out
-            samples = np.asarray(samples).squeeze()
+            samples = samples.detach().float().cpu().numpy() if hasattr(samples, "detach") else np.asarray(samples)
+            samples = np.squeeze(samples)
             sf.write(str(wav_path), samples, 24000)
             result = subprocess.run(
                 ["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav_path),
@@ -291,7 +292,8 @@ def preview(args):
         kwargs["ref_text"] = args.reference_text
     audio_out = model.generate(**kwargs)
     samples = audio_out[0] if isinstance(audio_out, (list, tuple)) else audio_out
-    samples = np.asarray(samples).squeeze()
+    samples = samples.detach().float().cpu().numpy() if hasattr(samples, "detach") else np.asarray(samples)
+    samples = np.squeeze(samples)
     target = Path(args.output)
     target.parent.mkdir(parents=True, exist_ok=True)
     sf.write(str(target), samples, 24000)
