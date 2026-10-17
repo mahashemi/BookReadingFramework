@@ -387,10 +387,10 @@ ${glossaryHTML}
 /* ===== HEADER ===== */
   .jihad-source-content .head{border-bottom:1px solid var(--line);padding-bottom:36px;margin-bottom:44px}
 .jihad-source-content .eyebrow{font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
-.jihad-source-content h1{font-family:Georgia,'Times New Roman',serif;font-weight:700;
+.jihad-source-content h2{font-family:Georgia,'Times New Roman',serif;font-weight:700;
      font-size:clamp(34px,4.6vw,60px);line-height:1.05;letter-spacing:-.5px;margin:0 0 20px}
-.jihad-source-content h1 .h{color:var(--hasan)}
-.jihad-source-content h1 .x{color:var(--husayn)}
+.jihad-source-content h2 .h{color:var(--hasan)}
+.jihad-source-content h2 .x{color:var(--husayn)}
 .jihad-source-content .deck{font-size:clamp(15px,1.2vw,18px);color:var(--ink2);max-width:920px;margin:0}
 .jihad-source-content .deck em{font-style:italic}
 /* ===== SUMMARY ===== */
@@ -513,8 +513,8 @@ ${glossaryHTML}
   <!-- ================= HEADER ================= -->
   <header class="head">
     <div class="eyebrow">Chapter 2 · Imam al-Ḥasan's Pacifism · Sessions 1 &amp; 2</div>
-    <h1>The Framework of Jihād &amp; Truce<br>
-      <span class="h">Imam al-Ḥasan</span> &amp; <span class="x">Imam al-Ḥusayn</span></h1>
+    <h2>The Framework of Jihād &amp; Truce<br>
+      <span class="h">Imam al-Ḥasan</span> &amp; <span class="x">Imam al-Ḥusayn</span></h2>
     <p class="deck">
       One jurisprudence. Two circumstances. Six binary gates decide between peace and uprising —
       and the paths of the two Imams are traced through every node. The framework never changes.
