@@ -192,7 +192,7 @@
       '<p class="meta-line narration-reading-time">Estimated reading time: about ' + estimate.minutes + ' min · ' + estimate.words.toLocaleString() + ' words</p>' +
       '<div class="actions narration-actions"><button class="btn primary" type="button" data-play>▶ Listen & Learn</button>' +
       '<button class="btn" type="button" data-transcript>Show transcript</button></div>' +
-      '<details class="narration-transcript" open><summary>Read the transcript</summary><div class="narration-body">' + transcript + '</div></details></div>';
+      '<details class="narration-transcript"><summary>Read the transcript</summary><div class="narration-body">' + transcript + '</div></details></div>';
     hero.insertAdjacentElement('afterend', section);
     const play = section.querySelector('[data-play]');
     let activeId = null;
