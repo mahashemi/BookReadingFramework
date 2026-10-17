@@ -76,7 +76,7 @@ test("narration player keeps source-map identifiers out of the transcript and sp
   assert.match(narration, /function transcriptHeading\(section\)/);
   assert.match(narration, /narration-reading-time/);
   assert.match(narration, /Estimated reading time: about/);
-  assert.match(narration, /The spoken content matches the transcript below/);
+  assert.match(narration, /The transcript and speech use the same text/);
 });
 
 test("narration converts editorial section labels into listener-friendly transitions", () => {
