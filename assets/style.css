@@ -617,3 +617,8 @@ body.source-reading {
 .narration-sentence { border-radius: 4px; transition: background-color .15s ease, box-shadow .15s ease; }
 .narration-sentence.is-speaking { background: #fff0b8; color: #29220e; box-shadow: 0 0 0 3px #fff0b8; }
 .narration-heading.is-speaking { background: #d8ebf3; box-shadow: 0 0 0 4px #d8ebf3; }
+
+@media (prefers-color-scheme: dark) {
+  .narration-sentence.is-speaking { background: #59491d; color: #fff7d9; box-shadow: 0 0 0 3px #59491d; }
+  .narration-heading.is-speaking { background: #234b5b; box-shadow: 0 0 0 4px #234b5b; }
+}
