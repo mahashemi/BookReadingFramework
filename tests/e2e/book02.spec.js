@@ -87,21 +87,27 @@ test.describe("Book 02 Session 2 jihad and truce framework", () => {
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
     await page.goto("/book/unit.html?book_id=book02&unit=u04", { waitUntil: "networkidle" });
-    const framework = page.locator("#jihad-truce-framework");
+    const framework = page.locator(".jihad-source-content");
     await expect(framework).toBeVisible();
     await expect(framework).toContainText("follow the YES/NO branches");
     await expect(framework).toContainText("genuine public interest in a truce");
     await expect(framework).toContainText("IMAM AL-HASAN · DARK GREEN");
     await expect(framework).toContainText("IMAM AL-HUSAYN · BLOOD RED");
-    await expect(framework.locator("a[href^=\"#concept-b02-u04-\"]")).toHaveCount(7);
-    await expect(framework.locator("svg .jf-node-question")).toHaveCount(7);
-    await expect(framework.locator("svg .jf-route-hasan path")).toHaveCount(7);
-    await expect(framework.locator("svg .jf-route-husayn path")).toHaveCount(4);
-    await expect(framework.locator("svg .jf-node-leaf")).toHaveCount(10);
-    await expect(framework).toContainText("BYPASSED BY THE GREEN / AL-HASAN PATH");
-    await expect(framework).toContainText("NOT A SUFFICIENT CATEGORY FOR EITHER CASE");
+    await expect(framework.locator("svg#map")).toBeVisible();
+    await expect(framework.locator(".modes button")).toHaveCount(3);
+    await expect(framework.locator("svg .p-hasan").first()).toBeVisible();
+    await expect(framework.locator("svg .p-husayn").first()).toBeVisible();
+    await expect(framework.locator('a[href^="https://"]').first()).toHaveAttribute("target", "_blank");
+    const afterConcepts = await page.locator("#concepts").evaluate(el =>
+      Boolean(el.compareDocumentPosition(document.querySelector(".jihad-source-content")) & Node.DOCUMENT_POSITION_FOLLOWING)
+    );
+    expect(afterConcepts).toBe(true);
+    await framework.locator('.modes button[data-mode="husayn"]').click();
+    await expect(framework.locator("svg#map")).toHaveClass(/mode-husayn/);
+    await framework.locator('.modes button[data-mode="both"]').click();
+    await expect(framework.locator("svg#map")).not.toHaveClass(/mode-husayn/);
     await page.goto("/book/unit.html?book_id=book02&unit=u03", { waitUntil: "networkidle" });
-    await expect(page.locator("#jihad-truce-framework")).toHaveCount(0);
+    await expect(page.locator(".jihad-source-content")).toHaveCount(0);
     expect(errors).toEqual([]);
   });
 
