@@ -611,3 +611,9 @@ body.source-reading {
 .footer span { white-space: nowrap; }
 
 
+
+
+/* Sentence-level narration synchronization */
+.narration-sentence { border-radius: 4px; transition: background-color .15s ease, box-shadow .15s ease; }
+.narration-sentence.is-speaking { background: #fff0b8; color: #29220e; box-shadow: 0 0 0 3px #fff0b8; }
+.narration-heading.is-speaking { background: #d8ebf3; box-shadow: 0 0 0 4px #d8ebf3; }
