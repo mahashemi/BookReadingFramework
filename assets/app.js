@@ -334,7 +334,7 @@ ${glossaryHTML}
     const jihadTruceFramework = meta.id === 'book02' && u.id === 'u04' ? `
 <section class="section jihad-framework-embed" id="jihad-truce-framework" aria-labelledby="jihad-framework-title">
   <div class="section-head compact"><div><h2 id="jihad-framework-title">Jihad &amp; Truce: decision framework</h2><p>The complete chapter visual follows the concepts, with its original source notes and path highlighting.</p></div></div>
-  <iframe id="jihad-truce-framework-frame" title="Jihad and Truce decision map" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts" style="display:block;width:100%;height:3600px;border:0;border-radius:14px;background:#fbf8f2" srcdoc="${esc(jihadTruceEmbedDocument)}"></iframe>
+  <iframe id="jihad-truce-framework-frame" title="Jihad and Truce decision map" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-popups" style="display:block;width:100%;height:3600px;border:0;border-radius:14px;background:#fbf8f2" srcdoc="${esc(jihadTruceEmbedDocument)}"></iframe>
 </section>` : '';
 
     const concepts = chunks.map(c => {
