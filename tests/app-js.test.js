@@ -84,7 +84,7 @@ test("narration converts editorial section labels into listener-friendly transit
   assert.match(narration, /Now, pause and reflect\./);
   assert.match(narration, /As we move forward, keep this question in mind\./);
   assert.match(narration, /spokenSubheading\(title\)/);
-  assert.match(narration, /function speechPieces\(text, maxChars = 1100\)/);
+  assert.match(narration, /function sentenceList\(text\)/);
   assert.match(narration, /const speakNext\s*=\s*\(\)\s*=>/);
   assert.match(narration, /window\.speechSynthesis\.speak\(utterance\)/);
   assert.doesNotMatch(narration, /state\.utterances\.forEach\(u=>window\.speechSynthesis\.speak\(u\)\)/);
