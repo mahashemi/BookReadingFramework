@@ -82,3 +82,7 @@ The teaching files should explain and organize the source; they should not becom
 **Teacher preparation:** teaching guide → lecture outline → slide content → speaker script → Beamer deck.
 
 **Final exam preparation:** master question universe → 20 simulated years → hard/worst-case paper → identify weak units → spaced review.
+
+
+### Chapter 2 visual aid
+The full Jihad & Truce decision framework is embedded directly in the Book 02, Unit U04 page immediately after its Concepts section. The diagram preserves the original hadith panel, decision gates, historical path highlighting, and source links.
