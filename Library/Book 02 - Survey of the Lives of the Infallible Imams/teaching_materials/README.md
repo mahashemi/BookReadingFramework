@@ -85,4 +85,4 @@ The teaching files should explain and organize the source; they should not becom
 
 
 ### Chapter 2 visual aid
-- **[Jihad & Truce — one framework, two decisions](jihad-truce-decision-framework.html)** — standalone, print-friendly decision map for Imam al-Hasan’s Pacifism (Sessions 1–2). Use the path controls to highlight the green truce route or red uprising route. It is explicitly labelled as a derived teaching synthesis; the source links are included in the page.
+The full Jihad & Truce decision framework is embedded directly in the Book 02, Unit U04 page immediately after its Concepts section. The diagram preserves the original hadith panel, decision gates, historical path highlighting, and source links.
