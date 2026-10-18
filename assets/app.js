@@ -105,13 +105,13 @@
         const { data, qd } = live[b.id];
         const concepts = data.units.reduce((n, u) => n + (u.chunks || []).length, 0);
         const t = { units: data.units.length, concepts, questions: qd ? qd.questions.length : null };
-        return `<a class="card book-card" href="${bookPage(b.id)}">
+        return `<div class="card book-card">
   <div class="eyebrow">Full learning hub · ${esc(b.primary_category || 'Unclassified')}</div>
   <h3>${esc(b.title)}</h3>
-  <p>${esc(b.author)}${b.translator ? ' \u00b7 translated by ' + esc(b.translator) : ''}</p>
+  <p>${esc(b.author)}${b.translator ? ' \\u00b7 translated by ' + esc(b.translator) : ''}</p>
   <div class="stats">${stat(t.units, 'Learning units')}${stat(t.concepts, 'Concepts')}${stat(fmt(t.questions), 'Questions')}</div>
-  <span class="btn primary">Enter \u2192</span>
-</a>`;
+  <div class="actions"><a class="btn primary" href="${bookPage(b.id)}">Enter study hub →</a>${b.id === 'book02' ? '<a class="btn" href="urdu/index.html">Urdu reading &amp; audio →</a>' : ''}</div>
+</div>`;
       }
       const links = Object.entries(b.links || {}).map(([k, v]) => `<a class="btn" href="${esc(SITE + dirEnc(b.dir) + v)}">${esc(k.replace(/([A-Z])/g, ' $1'))}</a>`).join('');
       return `<div class="card book-card">
@@ -207,6 +207,7 @@
     ${L('studyGuide') ? `<a class="btn primary" href="${L('studyGuide')}">Open the study guide</a>` : ''}
     <a class="btn" href="${unitHref(meta.id, units[0].id)}">Start at Unit 01</a>
     ${meta.links?.teachingDeck ? `<a class="btn" href="${L('teachingDeck')}">Teaching deck (PDF)</a>` : ''}
+    ${meta.id === 'book02' ? `<a class="btn" href="${SITE}urdu/index.html">Urdu reading &amp; audio</a>` : ''}
   </div>
 </section>
 <section class="section" id="units">
