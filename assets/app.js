@@ -108,7 +108,7 @@
         return `<div class="card book-card">
   <div class="eyebrow">Full learning hub · ${esc(b.primary_category || 'Unclassified')}</div>
   <h3>${esc(b.title)}</h3>
-  <p>${esc(b.author)}${b.translator ? ' \\u00b7 translated by ' + esc(b.translator) : ''}</p>
+  <p>${esc(b.author)}${b.translator ? ' \u00b7 translated by ' + esc(b.translator) : ''}</p>
   <div class="stats">${stat(t.units, 'Learning units')}${stat(t.concepts, 'Concepts')}${stat(fmt(t.questions), 'Questions')}</div>
   <div class="actions"><a class="btn primary" href="${bookPage(b.id)}">Enter study hub →</a>${b.id === 'book02' ? '<a class="btn" href="urdu/index.html">Urdu reading &amp; audio →</a>' : ''}</div>
 </div>`;
