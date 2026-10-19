@@ -627,8 +627,9 @@ body.source-reading {
 /* Keep the honorific glyph ﷺ visually proportional to surrounding Arabic text. */
 .salawat {
   display: inline;
-  font-size: 0.72em;
+  font-size: .4em;
   line-height: 1;
   white-space: nowrap;
-  vertical-align: baseline;
+  vertical-align: middle;
+  padding: 0 5px;
 }
