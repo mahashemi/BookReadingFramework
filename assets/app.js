@@ -11,6 +11,58 @@
   const inBook = location.pathname.includes('/book/');
   const SITE = inBook ? '../' : '';
 
+  /* Wrap visible ﷺ text in a styled span without changing source or narration data. */
+  function normalizeSalawat(root) {
+    if (!root || !document.createTreeWalker) return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        const parent = node.parentElement;
+        if (!node.nodeValue.includes('ﷺ') || !parent ||
+            parent.closest('script, style, textarea, code, .salawat')) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    const matches = [];
+    while (walker.nextNode()) matches.push(walker.currentNode);
+    for (const node of matches) {
+      const fragment = document.createDocumentFragment();
+      const pieces = node.nodeValue.split('ﷺ');
+      pieces.forEach((piece, index) => {
+        if (piece) fragment.appendChild(document.createTextNode(piece));
+        if (index < pieces.length - 1) {
+          const span = document.createElement('span');
+          span.className = 'salawat';
+          span.setAttribute('aria-label', 'صلى الله عليه وآله وسلم');
+          span.textContent = 'ﷺ';
+          fragment.appendChild(span);
+        }
+      });
+      node.parentNode.replaceChild(fragment, node);
+    }
+  }
+
+  if (document.body) {
+    normalizeSalawat(document.body);
+    const salawatObserver = new MutationObserver(records => {
+      for (const record of records) {
+        if (record.type === 'characterData') {
+          normalizeSalawat(record.target.parentElement);
+        } else {
+          for (const added of record.addedNodes) {
+            if (added.nodeType === Node.TEXT_NODE) {
+              normalizeSalawat(added.parentElement);
+            } else if (added.nodeType === Node.ELEMENT_NODE && !added.matches('.salawat')) {
+              normalizeSalawat(added);
+            }
+          }
+        }
+      }
+    });
+    salawatObserver.observe(document.body, { childList: true, characterData: true, subtree: true });
+  }
+
   const REPO = 'https://github.com/mahashemi/BookReadingFramework/blob/main/';
   const qs = new URLSearchParams(location.search);
   const bookId = qs.get('book_id') || 'book02';
