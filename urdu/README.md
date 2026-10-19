@@ -12,6 +12,7 @@
 
 ## کتاب ۲: آیت اللہ مرتضیٰ مطہری — *A Survey into the Lives of the Infallible Imams*
 
+- [باب ۱: حواشی ۱ تا ۶۲ — اردو مسودہ (تصدیق باقی)](book02/chapter-01-footnotes-urdu.html)
 - [باب ۱: اصل باب کے ۶۲ حواشی — اردو رہنما ترجمہ؛ اشاعتی تصدیق باقی](book02/chapter-01-footnotes.html)
 - [باب ۱: علیؑ کی جدوجہد — ترجمہ، حصہ سوم (خوارج کے اصول، نہروان، افواہ و تحقیق اور شہادت؛ حواشی کی تصدیق باقی)](book02/chapter-01-translation-part-03.html)
 - [باب ۱: علیؑ کی جدوجہد — ترجمہ، حصہ دوم (خوارج، تحکیم اور تحمل؛ باب جاری ہے)](book02/chapter-01-translation-part-02.html)
