@@ -11,6 +11,9 @@ body{font-family:"Noto Nastaliq Urdu","Noto Naskh Arabic","Geeza Pro",serif;line
 p{margin:.65rem 0 1rem}.meta{color:var(--muted);font-size:.94rem}blockquote{border-right:3px solid var(--accent);margin:1rem 0;padding:.6rem 1rem;background:var(--paper)}
 a{overflow-wrap:anywhere}.footnote-marker{white-space:nowrap;font-size:.88em}#footnotes{border-top:2px solid var(--line);margin-top:3rem;padding-top:1rem}
 #footnotes ol{padding-right:1.5rem}#footnotes li{padding:.2rem 0;scroll-margin-top:1rem}
+
+/* Keep the Prophet's honorific glyph proportional in this standalone page. */
+.salawat{display:inline;font-size:.72em;line-height:1;white-space:nowrap;vertical-align:baseline}
 </style></head><body>
 <header class="topbar"><div class="shell nav"><a class="brand" href="../../">Deep Reading</a><nav aria-label="Primary"><a href="../index.html">اردو مطالعہ</a><a href="../../">کتب خانہ</a></nav></div></header>
 <main><header class="chapter-head"><p class="meta">آیت اللہ مرتضیٰ مطہری · <span lang="en" dir="ltr">A Survey into the Lives of the Infallible Imams</span></p>
@@ -207,4 +210,50 @@ a{overflow-wrap:anywhere}.footnote-marker{white-space:nowrap;font-size:.88em}#fo
 </ol>
 </section>
 <p class="meta"><a href="../index.html">اردو مطالعہ گاہ پر واپس جائیں</a></p></main>
-<footer class="footer"><div class="shell">Deep Reading · اردو مطالعہ و سماعت · <a href="../index.html">اردو کتب خانہ</a></div></footer></body></html>
+<footer class="footer"><div class="shell">Deep Reading · اردو مطالعہ و سماعت · <a href="../index.html">اردو کتب خانہ</a></div></footer>
+<script>
+/* Standalone Urdu chapter pages do not load the main site's app.js. */
+(() => {
+  'use strict';
+  function normalizeSalawat(root) {
+    if (!root || !document.createTreeWalker) return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        const parent = node.parentElement;
+        if (!node.nodeValue.includes('ﷺ') || !parent ||
+            parent.closest('script,style,textarea,code,.salawat')) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    const matches = [];
+    while (walker.nextNode()) matches.push(walker.currentNode);
+    for (const node of matches) {
+      const fragment = document.createDocumentFragment();
+      const pieces = node.nodeValue.split('ﷺ');
+      pieces.forEach((piece,index) => {
+        if (piece) fragment.appendChild(document.createTextNode(piece));
+        if (index < pieces.length-1) {
+          const span = document.createElement('span');
+          span.className='salawat';
+          span.setAttribute('aria-label','صلى الله عليه وآله وسلم');
+          span.textContent='ﷺ';
+          fragment.appendChild(span);
+        }
+      });
+      node.parentNode.replaceChild(fragment,node);
+    }
+  }
+  normalizeSalawat(document.body);
+  new MutationObserver(records => {
+    for (const record of records) {
+      if (record.type==='characterData') normalizeSalawat(record.target.parentElement);
+      else for (const node of record.addedNodes) {
+        if (node.nodeType===Node.TEXT_NODE) normalizeSalawat(node.parentElement);
+        else if (node.nodeType===Node.ELEMENT_NODE && !node.matches('.salawat')) normalizeSalawat(node);
+      }
+    }
+  }).observe(document.body,{childList:true,characterData:true,subtree:true});
+})();
+</script>
+
+</body></html>
