@@ -20,7 +20,11 @@ BOOK: A Survey into the Lives of the Infallible Imams
 │   └── spirituality + service + preserving Karbala's message
 │
 ├── al-Sadiq
-│   └── political opening ≠ real conditions for a just movement
+│   ├── political opening ≠ dependable conditions for just rule
+│   ├── Imam al-Husayn's coercive period vs Imam al-Sadiq's scholarly opening
+│   ├── intellectual currents: recitation, tafsir, hadith, jurisprudence, theology
+│   ├── scholarly service: preserve inherited knowledge and answer new debates
+│   └── source caution: Jabir ibn Hayyan attribution remains historically disputed
 │
 ├── Musa al-Kazim
 │   ├── principled refusal under imprisonment
