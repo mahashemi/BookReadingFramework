@@ -997,8 +997,8 @@ ${glossaryHTML}
       const sessionOne = sessionTwoIndex >= 0 ? chunks.slice(0, sessionTwoIndex) : chunks;
       const sessionTwo = sessionTwoIndex >= 0 ? chunks.slice(sessionTwoIndex) : [];
       const sessionDivider = `<div class="concept-session-divider" role="separator" aria-label="End of Session 1; beginning of Session 2" style="display:flex;align-items:center;gap:12px;margin:30px 0 22px;color:var(--muted);font-size:13px;font-weight:700;letter-spacing:.03em"><span aria-hidden="true" style="height:1px;background:var(--line);flex:1"></span><span>SESSION 2 · IMAM AL-SADIQ’S SCHOLARLY MOVEMENT</span><span aria-hidden="true" style="height:1px;background:var(--line);flex:1"></span></div>`;
-      concepts = `<section class="concept-session" aria-labelledby="concept-session-1-title"><h3 id="concept-session-1-title" class="sr-only">Session 1</h3><div class="grid" aria-label="Session 1 concepts">${sessionOne.map(conceptCard).join('')}</div></section>`
-        + (sessionTwo.length ? sessionDivider + `<section class="concept-session" aria-labelledby="concept-session-2-title"><h3 id="concept-session-2-title" class="sr-only">Session 2 — Imam al-Sadiq’s scholarly movement</h3><div class="grid" aria-label="Session 2 concepts">${sessionTwo.map(conceptCard).join('')}</div></section>` : '');
+      concepts = `<section class="concept-session" aria-label="Session 1 concepts"><div class="grid">${sessionOne.map(conceptCard).join('')}</div></section>`
+        + (sessionTwo.length ? sessionDivider + `<section class="concept-session" aria-label="Session 2 — Imam al-Sadiq’s scholarly movement"><div class="grid">${sessionTwo.map(conceptCard).join('')}</div></section>` : '');
     } else {
       concepts = chunks.map(conceptCard).join('');
     }
