@@ -23,8 +23,11 @@ BOOK: A Survey into the Lives of the Infallible Imams
 │   ├── political opening ≠ dependable conditions for just rule
 │   ├── Imam al-Husayn's coercive period vs Imam al-Sadiq's scholarly opening
 │   ├── intellectual currents: recitation, tafsir, hadith, jurisprudence, theology
+│   ├── scientific enthusiasm: religious encouragement + cross-cultural exchange
+│   │   + shared Islamic homeland + learning across religious boundaries
 │   ├── scholarly service: preserve inherited knowledge and answer new debates
-│   └── source caution: Jabir ibn Hayyan attribution remains historically disputed
+│   └── source caution: reports about Jabir ibn Hayyan and other scholarly testimonies
+│       need attribution and historical context; Jabir's link to the Imam remains disputed
 │
 ├── Musa al-Kazim
 │   ├── principled refusal under imprisonment
