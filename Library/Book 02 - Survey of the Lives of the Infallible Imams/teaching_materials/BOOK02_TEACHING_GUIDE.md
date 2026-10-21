@@ -73,6 +73,11 @@ Teach:
 - Abu Salmah
 - Muhammad Nafs al-Zakiyyah
 - Imam al-Sadiq's refusal
+- Session 2: compare the coercive environment under Mu'awiyah with the later scholarly opening
+- Qur'anic recitation, exegesis, hadith, jurisprudence, theology, and competing intellectual currents
+- Imam al-Sadiq's scholarly role and source-critical treatment of testimonies
+- Jabir ibn Hayyan: distinguish attribution from established historical certainty
+- scholarship as religious service when political conditions are not dependable
 - al-Rida's crown-prince appointment
 - certain facts vs disputed motives
 - cooperation vs support
