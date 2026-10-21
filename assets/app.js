@@ -997,8 +997,8 @@ ${glossaryHTML}
       const sessionOne = sessionTwoIndex >= 0 ? chunks.slice(0, sessionTwoIndex) : chunks;
       const sessionTwo = sessionTwoIndex >= 0 ? chunks.slice(sessionTwoIndex) : [];
       const sessionDivider = `<div class="concept-session-divider" role="separator" aria-label="End of Session 1; beginning of Session 2" style="display:flex;align-items:center;gap:12px;margin:30px 0 22px;color:var(--muted);font-size:13px;font-weight:700;letter-spacing:.03em"><span aria-hidden="true" style="height:1px;background:var(--line);flex:1"></span><span>SESSION 2 · IMAM AL-SADIQ’S SCHOLARLY MOVEMENT</span><span aria-hidden="true" style="height:1px;background:var(--line);flex:1"></span></div>`;
-      concepts = `<section class="concept-session" aria-label="Session 1 concepts"><div class="grid">${sessionOne.map(conceptCard).join('')}</div></section>`
-        + (sessionTwo.length ? sessionDivider + `<section class="concept-session" aria-label="Session 2 — Imam al-Sadiq’s scholarly movement"><div class="grid">${sessionTwo.map(conceptCard).join('')}</div></section>` : '');
+      concepts = `<section class="concept-session" aria-label="Session 1 concepts"><div class="actions"><button class="btn" type="button" data-narrate-session="1">Narrate Session 1</button><button class="btn" type="button" data-stop-narration>Stop narration</button></div><div class="grid">${sessionOne.map(conceptCard).join('')}</div></section>`
+        + (sessionTwo.length ? sessionDivider + `<section class="concept-session" aria-label="Session 2 — Imam al-Sadiq’s scholarly movement"><div class="actions"><button class="btn" type="button" data-narrate-session="2">Narrate Session 2</button><button class="btn" type="button" data-stop-narration>Stop narration</button></div><div class="grid">${sessionTwo.map(conceptCard).join('')}</div></section>` : '');
     } else {
       concepts = chunks.map(conceptCard).join('');
     }
@@ -1049,6 +1049,49 @@ ${links}
   <a href="${bookPage(meta.id)}#units">All learning units</a>
   <a ${next ? `href="${unitHref(meta.id, next.id)}"` : 'aria-disabled="true"'}>${next ? esc(parts(next.title).label) : 'Next unit'} \u2192</a>
 </nav>`;
+    const sessionNarrationSections = app.querySelectorAll('[data-narrate-session]');
+    if (sessionNarrationSections.length) {
+      const stopNarration = () => {
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+        app.querySelectorAll('[data-narrate-session]').forEach(button => {
+          button.disabled = false;
+          button.textContent = button.dataset.narrateSession === '1' ? 'Narrate Session 1' : 'Narrate Session 2';
+        });
+      };
+      sessionNarrationSections.forEach(button => button.addEventListener('click', () => {
+        if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
+          button.textContent = 'Browser narration unavailable';
+          button.disabled = true;
+          return;
+        }
+        stopNarration();
+        const section = button.closest('.concept-session');
+        const conceptsToRead = [...(section?.querySelectorAll('article.card.unit') || [])];
+        const sessionLabel = button.dataset.narrateSession === '2'
+          ? 'Session 2. Imam al-Sadiq’s scholarly movement.'
+          : 'Session 1.';
+        const textToRead = [sessionLabel, ...conceptsToRead.map(card => {
+          const title = card.querySelector('h3')?.textContent || '';
+          const passage = card.querySelector('.markdown-content')?.innerText || '';
+          return title + '. ' + passage;
+        })].join('\n\n');
+        const utterance = new SpeechSynthesisUtterance(textToRead);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.95;
+        utterance.onend = () => {
+          button.disabled = false;
+          button.textContent = button.dataset.narrateSession === '1' ? 'Narrate Session 1' : 'Narrate Session 2';
+        };
+        utterance.onerror = () => {
+          button.disabled = false;
+          button.textContent = button.dataset.narrateSession === '1' ? 'Narrate Session 1' : 'Narrate Session 2';
+        };
+        button.disabled = true;
+        button.textContent = 'Narrating…';
+        window.speechSynthesis.speak(utterance);
+      }));
+      app.querySelectorAll('[data-stop-narration]').forEach(button => button.addEventListener('click', stopNarration));
+    }
     const frameworkRoot = app.querySelector('.jihad-source-content');
     if (frameworkRoot) {
       const svg = frameworkRoot.querySelector('#map');
