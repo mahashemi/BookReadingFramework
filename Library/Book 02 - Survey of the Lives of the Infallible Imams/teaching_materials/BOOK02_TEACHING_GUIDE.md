@@ -76,6 +76,7 @@ Teach:
 - Session 2: compare the coercive environment under Mu'awiyah with the later scholarly opening
 - Qur'anic recitation, exegesis, hadith, jurisprudence, theology, and competing intellectual currents
 - Imam al-Sadiq's scholarly role and source-critical treatment of testimonies
+- Hisham ibn al-Hakam and al-Nazzam: discuss the theological debates as Mutahhari presents them; treat the reported teacher-student relationship as an attribution, not an independently verified fact
 - Jabir ibn Hayyan: distinguish attribution from established historical certainty
 - scholarship as religious service when political conditions are not dependable
 - al-Rida's crown-prince appointment

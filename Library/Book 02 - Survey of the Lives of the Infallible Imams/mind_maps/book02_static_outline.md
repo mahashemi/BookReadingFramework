@@ -23,8 +23,9 @@ BOOK: A Survey into the Lives of the Infallible Imams
 │   ├── political opening ≠ dependable conditions for just rule
 │   ├── Imam al-Husayn's coercive period vs Imam al-Sadiq's scholarly opening
 │   ├── intellectual currents: recitation, tafsir, hadith, jurisprudence, theology
+│   ├── Hisham ibn al-Hakam and al-Nazzam: reported examples of theological debate
 │   ├── scholarly service: preserve inherited knowledge and answer new debates
-│   └── source caution: Jabir ibn Hayyan attribution remains historically disputed
+│   └── source caution: attribute the Hisham–Nazzam link to Mutahhari; Jabir's attribution remains disputed
 │
 ├── Musa al-Kazim
 │   ├── principled refusal under imprisonment

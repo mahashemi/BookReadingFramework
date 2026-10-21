@@ -77,6 +77,12 @@ Musa al-Kazim combines dignity, endurance, refusal to submit and spiritual influ
 
 The Abbasid movement uses broad Islamic and Ahl al-Bayt slogans. Abu Salmah's double letter makes the political nature of the opening especially visible. Imam al-Sadiq asks the deeper question: are the real conditions present for a sound movement?”
 
+For Chapter 4, also pause for the separate scholarly session:
+
+“Mutahhari describes an intellectual field that included Qur'anic recitation and exegesis, hadith, jurisprudence and theology. He discusses Hisham ibn al-Hakam and al-Nazzam as part of this field, but the reported relationship between them should be attributed to the author's account. The connection between Jabir ibn Hayyan and Imam al-Sadiq is explicitly uncertain, so do not teach it as settled fact.”
+
+**Ask:** “What is the difference between evidence that a scholarly movement existed and proof of a particular teacher–student relationship?”
+
 Then move to al-Rida:
 
 “Now the Imam is offered a position inside the ruling system. The key is to separate the historical facts from explanations about motive.”
