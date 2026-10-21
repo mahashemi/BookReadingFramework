@@ -40,3 +40,35 @@ test("question-bank references resolve to canonical units", () => {
     }
   }
 });
+
+
+test("Book 02 Session 2 deep-reading questions remain source-grounded and unit-linked", () => {
+  const root = "Library/Book 02 - Survey of the Lives of the Infallible Imams";
+  const bank = readJson(root + "/exam_bank/session2_deep_questions.json");
+  const data = readJson(root + "/data/chunks.json");
+  const unit = data.units.find(u => u.id === "u06");
+  assert.ok(unit, "canonical Chapter 4 unit u06 must exist");
+  assert.ok(Array.isArray(bank.questions) && bank.questions.length >= 20,
+    "Session 2 should have concept-deepening, istidlal, and synthesis questions");
+
+  const chunkIds = new Set(unit.chunks.map(chunk => chunk.id));
+  const questionIds = new Set();
+  const categories = new Set();
+  for (const q of bank.questions) {
+    assert.equal(typeof q.id, "string");
+    assert.ok(!questionIds.has(q.id), "duplicate supplemental question id " + q.id);
+    questionIds.add(q.id);
+    assert.equal(q.unit_id, "u06");
+    assert.equal(q.session, "Session 2");
+    assert.equal(typeof q.prompt, "string");
+    assert.ok(q.prompt.length > 40, "question should require more than recall");
+    assert.equal(typeof q.answer, "string");
+    assert.ok(q.answer.length > 100, "model answer should show the reasoning");
+    assert.ok(chunkIds.has(q.chunk_id), "unknown source chunk " + q.chunk_id);
+    assert.ok(q.source_url.startsWith("https://al-islam.org/"));
+    categories.add(q.category);
+  }
+  for (const category of ["Concept deepening", "Istidlal", "Unit synthesis"]) {
+    assert.ok(categories.has(category), "missing question category " + category);
+  }
+});
