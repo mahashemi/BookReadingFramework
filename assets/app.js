@@ -990,12 +990,18 @@ ${glossaryHTML}
 </div>
 </section>` : '';
 
-    const concepts = chunks.map(c => {
-      const sessionDivider = meta.id === 'book02' && u.id === 'u06' && c.id === 'b02-u06-010'
-        ? `<div class="concept-session-divider" role="separator" aria-label="Session 2" style="display:flex;align-items:center;gap:12px;margin:30px 0 18px;color:var(--muted);font-size:13px;font-weight:700;letter-spacing:.03em"><span style="height:1px;background:var(--line);flex:1"></span><span>SESSION 2 · IMAM AL-SADIQ’S SCHOLARLY MOVEMENT</span><span style="height:1px;background:var(--line);flex:1"></span></div>`
-        : '';
-      return `${sessionDivider}<article class="card unit" id="concept-${esc(c.id)}"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><div class="markdown-content">${markdownToHTML(c.text)}</div></details><div class="source-note"><a href="${esc(c.source_url || sourceHref)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></div></article>`;
-    }).join('');
+    const conceptCard = c => `<article class="card unit" id="concept-${esc(c.id)}"><div class="num">Concept</div><h3>${esc(c.title)}</h3><details class="passage" open><summary>Read the passage</summary><div class="markdown-content">${markdownToHTML(c.text)}</div></details><div class="source-note"><a href="${esc(c.source_url || sourceHref)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></div></article>`;
+    let concepts;
+    if (meta.id === 'book02' && u.id === 'u06') {
+      const sessionTwoIndex = chunks.findIndex(c => c.id === 'b02-u06-010');
+      const sessionOne = sessionTwoIndex >= 0 ? chunks.slice(0, sessionTwoIndex) : chunks;
+      const sessionTwo = sessionTwoIndex >= 0 ? chunks.slice(sessionTwoIndex) : [];
+      const sessionDivider = `<div class="concept-session-divider" role="separator" aria-label="End of Session 1; beginning of Session 2" style="display:flex;align-items:center;gap:12px;margin:30px 0 22px;color:var(--muted);font-size:13px;font-weight:700;letter-spacing:.03em"><span aria-hidden="true" style="height:1px;background:var(--line);flex:1"></span><span>SESSION 2 · IMAM AL-SADIQ’S SCHOLARLY MOVEMENT</span><span aria-hidden="true" style="height:1px;background:var(--line);flex:1"></span></div>`;
+      concepts = `<section class="concept-session" aria-labelledby="concept-session-1-title"><h3 id="concept-session-1-title" class="sr-only">Session 1</h3><div class="grid" aria-label="Session 1 concepts">${sessionOne.map(conceptCard).join('')}</div></section>`
+        + (sessionTwo.length ? sessionDivider + `<section class="concept-session" aria-labelledby="concept-session-2-title"><h3 id="concept-session-2-title" class="sr-only">Session 2 — Imam al-Sadiq’s scholarly movement</h3><div class="grid" aria-label="Session 2 concepts">${sessionTwo.map(conceptCard).join('')}</div></section>` : '');
+    } else {
+      concepts = chunks.map(conceptCard).join('');
+    }
 
     const phrases = u.quotes.length ? `<section class="section"><div class="section-head compact"><div><h2>Key phrases</h2><p>Short phrases worth remembering verbatim. Consult the original page for full context.</p></div></div>${u.quotes.map(q => `<blockquote class="phrase">${esc(q.text)}</blockquote>`).join('')}</section>` : '';
 
