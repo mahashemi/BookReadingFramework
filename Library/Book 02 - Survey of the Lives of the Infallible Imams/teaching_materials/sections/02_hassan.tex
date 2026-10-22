@@ -39,61 +39,25 @@ Legitimate truce & Only if too weak to prevail, need time, or truce may draw the
 \bigquote{Leave me and seek someone else... I would rather stay a minister than to become a chief.}{'Ali -- a parallel restraint, decades earlier}
 \end{frame}
 
-\begin{frame}{Jihad \& Truce: Follow the Yes/No Branches}
-\small
-\begin{columns}[T,onlytextwidth]
-\column{0.48\textwidth}
-\begin{block}{1. Classify before judging}
-\begin{itemize}\itemsep2pt
-\item \textbf{1. External attack?} Yes: defence has distinct rules.
-\item \textbf{2. Muslim-group conflict / rebellion against a just Imam?} Yes: seek reconciliation first (Qur'an 49:9).
-\item \textbf{3. Is allegiance and public opposition to wrongdoing central?} Yes: examine the historical duty; do not reduce it to troop count.
-\item \textbf{4. Initiating offensive jihad?} The Shi'ah jurisprudential view summarized by Mutahhari requires the Imam or an appointed representative.
-\end{itemize}
-\end{block}
-\column{0.48\textwidth}
-\begin{block}{2. If a truce is proposed}
-\begin{itemize}\itemsep2pt
-\item \textbf{1. Genuine public interest?} Weakness, time/support, or an opportunity for persuasion.
-\item \textbf{2. Defined term and honest review of conditions?}
-\item \textbf{3. Yes to both:} compare role, capacity, public duty, terms, and likely consequences.
-\item \textbf{4. No:} the cited rule does not make a truce automatically permissible.
-\end{itemize}
-\end{block}
-\end{columns}
-\vspace{0.1cm}
-\begin{alertblock}{How to use this}
-This is Mutahhari's source-based teaching framework, not a stand-alone ruling for modern conflicts. No single branch settles the historical comparison.
-\end{alertblock}
-\end{frame}
+% ---- Jihad & Truce decision tree -------------------------------------------
+% Four full-bleed 16:9 figures generated from figures/jihad_truce_tree.json by
+% scripts/build_jihad_truce_tree.py (regenerate; do not edit the PDFs by hand).
+% They replace the earlier two text-column frames "Follow the Yes/No Branches" and
+% "Two Historical Paths Overlaid on the Framework"; their caveats are kept in the notes.
+\newcommand{\treeframe}[2]{%
+  {\setbeamertemplate{background}{\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{figures/jihad-truce-tree-#1.pdf}}%
+   \begin{frame}[plain]
+   \delivernote{#2}
+   \end{frame}}%
+}
 
-\begin{frame}{Two Historical Paths Overlaid on the Framework}
-\scriptsize
-\begin{columns}[T,onlytextwidth]
-\column{0.49\textwidth}
-\setbeamercolor{block title}{fg=white,bg=deepteal}
-\setbeamercolor{block body}{fg=black,bg=green!5}
-\begin{block}{\textcolor{deepteal}{\textbf{IMAM AL-HASAN · DARK GREEN PATH}}}
-\begin{itemize}\itemsep1pt
-\item \textbf{Applicable:} rebellion against the sitting caliph; weak and divided support; peace as an available option; defined treaty terms.
-\item \textbf{Not implied:} a pledge of allegiance to every act of Mu'awiyah.
-\item \textbf{Aftermath:} the tradition reports that al-Hasan was later poisoned. This is not a causal output of the tree or proof that the treaty caused his death.
-\end{itemize}
-\end{block}
-\column{0.49\textwidth}
-\setbeamercolor{block title}{fg=white,bg=red!70!black}
-\setbeamercolor{block body}{fg=black,bg=red!4}
-\begin{block}{\textcolor{red!70!black}{\textbf{IMAM AL-HUSAYN · BLOOD-RED PATH}}}
-\begin{itemize}\itemsep1pt
-\item \textbf{Applicable:} direct demand for allegiance to Yazid; the ruler's record; public invitations; responsibility to oppose wrongdoing.
-\item \textbf{Not a simple match:} his case is not settled by classifying it as offensive jihad or applying truce rules alone.
-\item \textbf{Aftermath:} the stand culminated in Karbala's bloodshed and martyrdom; this is historical aftermath, not a universal algorithm.
-\end{itemize}
-\end{block}
-\end{columns}
-\vspace{0.05cm}
-\begin{center}\textbf{Same principles do not mean identical actions.} Mutahhari's argument is cumulative: role, capacity, demanded allegiance, public conditions, treaty terms, and foreseeable consequences must be read together.\end{center}
-\end{frame}
+\treeframe{clean}{Walk the tree left to right before any Imam appears. Stage 1 classifies the conflict: defence, fighting rebels, or enjoining good. Stage 2 asks whether a truce is lawful and wise. This is Mutahhari's source-based teaching framework, not a stand-alone ruling for modern conflicts, and no single branch settles the historical comparison. Ask the room to predict which exits each Imam will take.}
+
+\treeframe{overlay}{Both Imams pass through the same boxes. Green is al-Hassan and red is al-Husayn; they enter the truce box together and leave in opposite directions. Read the scorecard: on the three conditions for rising, al-Hassan scores 0 of 3 and al-Husayn 3 of 3. Same principles do not mean identical actions. Mutahhari's argument is cumulative: role, capacity, demanded allegiance, public conditions, treaty terms and foreseeable consequences must be read together. The colours mark each route; poison and bloodshed are historical aftermath, not causal outputs of the tree.}
+
+\treeframe{hassan}{Follow the green line. Applicable: rebellion against the sitting caliph; weak and divided support; peace as an available option; defined treaty terms. Not implied: a pledge of allegiance to every act of Mu'awiyah. Aftermath: the tradition reports that al-Hasan was later poisoned. This is not a causal output of the tree or proof that the treaty caused his death.}
+
+\treeframe{husayn}{Follow the red line. Applicable: direct demand for allegiance to Yazid; the ruler's record; public invitations; responsibility to oppose wrongdoing. Not a simple match: his case is not settled by classifying it as offensive jihad or applying truce rules alone. Aftermath: the stand culminated in Karbala's bloodshed and martyrdom; this is historical aftermath, not a universal algorithm.}
 
 \begin{frame}{Same Principles, Different Historical Conditions}
 \small

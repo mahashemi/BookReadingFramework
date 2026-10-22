@@ -148,3 +148,57 @@ test("Book 02 deck teaches the missing core topics identified in the completenes
   assert.match(justice, /Long Life and al-Qa'im/);
   assert.match(justice, /Evidence, Claimants, and Political Appropriation/);
 });
+
+test("Book 02 Chapter 2 jihad-truce decision tree is traceable and wired into the deck and the u04 page", () => {
+  const figures = root + "/teaching_materials/figures";
+  const tree = readJson(figures + "/jihad_truce_tree.json");
+  const chunkIds = new Set(
+    readJson(root + "/data/chunks.json").units.flatMap((unit) => unit.chunks.map((chunk) => chunk.id))
+  );
+
+  // every box and principle cites real canonical chunks
+  const boxes = tree.nodes.filter((node) => node.kind !== "start");
+  for (const node of boxes) {
+    assert.ok((node.chunk_ids || []).length > 0, node.id + " has no chunk_ids");
+    for (const id of node.chunk_ids) assert.ok(chunkIds.has(id), node.id + " cites unknown chunk " + id);
+  }
+  for (const principle of tree.principles) {
+    for (const id of principle.chunk_ids || []) assert.ok(chunkIds.has(id), "principle " + principle.id + " cites unknown chunk " + id);
+  }
+
+  // binary structure: every decision box has exactly one YES and one NO exit; edges join known nodes
+  const nodeIds = new Set(tree.nodes.map((node) => node.id));
+  for (const edge of tree.edges) {
+    assert.ok(nodeIds.has(edge.from) && nodeIds.has(edge.to), "edge joins unknown nodes: " + edge.from + " -> " + edge.to);
+  }
+  for (const node of tree.nodes.filter((item) => item.kind === "decision")) {
+    const labels = tree.edges.filter((edge) => edge.from === node.id).map((edge) => edge.label).sort();
+    assert.deepEqual(labels, ["NO", "YES"], node.id + " must have one YES and one NO exit");
+  }
+
+  // both Imams' paths end at their own outcome box, and every answer on a path is yes or no
+  const byId = Object.fromEntries(tree.nodes.map((node) => [node.id, node]));
+  assert.equal(byId[tree.paths.hasan.end].tone, "hasan");
+  assert.equal(byId[tree.paths.husayn.end].tone, "husayn");
+  for (const path of Object.values(tree.paths)) {
+    for (const [id, answer] of path.steps) {
+      assert.equal(byId[id].kind, "decision");
+      assert.ok(["yes", "no"].includes(answer));
+    }
+  }
+
+  // the deck uses all four generated figures
+  const deck = readText(root + "/teaching_materials/sections/02_hassan.tex");
+  for (const view of ["clean", "overlay", "hassan", "husayn"]) {
+    assert.ok(exists(figures + "/jihad-truce-tree-" + view + ".pdf"), "missing figure for " + view);
+    assert.match(deck, new RegExp("\\\\treeframe\\{" + view + "\\}"));
+  }
+
+  // the u04 page carries the generated block with the class hooks the mode buttons rely on
+  const app = readText("assets/app.js");
+  assert.match(app, /BEGIN generated: jihad-truce-tree/);
+  assert.match(app, /END generated: jihad-truce-tree/);
+  for (const hook of ["p-hasan", "p-husayn", "p-both", "ov-hasan", "ov-husayn"]) {
+    assert.ok(app.includes(hook), "app.js is missing class hook " + hook);
+  }
+});

@@ -52,7 +52,7 @@ This is a teaching synthesis, not a slide-per-chunk transcription. The deck shou
 |---|---|
 | Introduction | Stable religious essence vs. circumstance-dependent expression; taqiyyah; clothing and beard-dyeing examples |
 | Chapter 1 | Political integrity and justice; the Kharijites' formation and surface piety; Qur'ans on spears; arbitration; dissent vs. violence; Nahrawan; rumor verification; assassination and restraint after victory |
-| Chapter 2 | Jihad categories and truce conditions; Hudaybiyyah; five contrasts between al-Hassan and al-Husayn; treaty terms |
+| Chapter 2 | Jihad categories and truce conditions; Hudaybiyyah; five contrasts between al-Hassan and al-Husayn; treaty terms; the jihad-truce decision tree (clean, both paths, al-Hassan, al-Husayn) |
 | Chapter 3 | Worship, compassion, anonymous service during Hajj, and preserving Karbala's message |
 | Chapter 4 | Abbasid slogans; Abu Salmah's double offer; al-Sadiq's refusal; the difference between supporting reform and validating a claimant |
 | Chapter 5 | Imprisonment and refusal to submit; spiritual influence; Bishr Hafi; Safwan Jammal; reasons for martyrdom |
@@ -85,4 +85,8 @@ The teaching files should explain and organize the source; they should not becom
 
 
 ### Chapter 2 visual aid
-The full Jihad & Truce decision framework is embedded directly in the Book 02, Unit U04 page immediately after its Concepts section. The diagram preserves the original hadith panel, decision gates, historical path highlighting, and source links.
+The Jihad & Truce decision tree is a derived teaching aid built from one data file, `figures/jihad_truce_tree.json`. Running `python scripts/build_jihad_truce_tree.py` regenerates both outputs: the four vector figures used by `sections/02_hassan.tex` (clean tree, both paths, al-Hassan only, al-Husayn only) and the inline `<svg id="map">` block in `assets/app.js`, which the Book 02 Unit U04 page shows immediately after its Concepts section. The page keeps the hadith panel, the mode buttons, the notes and the source links around the diagram.
+
+Every box lists the canonical chunks it rests on (`chunk_ids`), and `tests/integrity/book02.test.js` checks those ids, the yes/no structure, the deck wiring and the page hooks. After editing the JSON, run the script and commit the regenerated files; `--check` reports a stale page block. The script needs Pillow, cairosvg and the Liberation fonts.
+
+The diagram is a teaching framework drawn from Mutahhari's argument, not a context-free decision algorithm or a ruling for modern conflicts, and no single box settles the comparison. The colours mark each Imam's route; the poison and the bloodshed are historical aftermath, not causal outputs of the tree.
