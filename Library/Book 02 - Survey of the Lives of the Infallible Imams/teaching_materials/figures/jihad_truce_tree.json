@@ -1,0 +1,580 @@
+{
+  "schema_version": "1.0",
+  "kind": "decision-tree",
+  "derived_learning_aid": true,
+  "book_id": "book02",
+  "unit_ids": [
+    "u03",
+    "u04"
+  ],
+  "title": "Jihad & Truce: one framework, two decisions",
+  "subtitle": "Mutahhari, A Survey into the Lives of the Infallible Imams · Chapter 2: Imam al-Hassan's Pacifism (Sessions 1–2)",
+  "note": "Derived teaching diagram. The book's text is authoritative: every box carries the source passage it rests on. Mutahhari does not present this as a numbered algorithm; the diagram arranges his criteria (Session 1: cases for jihad, fighting rebels, Muhaqqiq's truce conditions) and his comparisons (Session 2) into one yes/no sequence.",
+  "source_base": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/",
+  "anchors": {
+    "s1_jihad": "chapter-2-imam-al-hassans-pacifism-session-1#cases-jihad-shiah-jurisprudence",
+    "s1_rebels": "chapter-2-imam-al-hassans-pacifism-session-1#fighting-rebels",
+    "s1_peace": "chapter-2-imam-al-hassans-pacifism-session-1#peace-shiah-jurisprudence",
+    "s1_hudaybiyyah": "chapter-2-imam-al-hassans-pacifism-session-1#hudaybiyyah-peace",
+    "s1_qa": "chapter-2-imam-al-hassans-pacifism-session-1#question-and-answer",
+    "s2_contrast": "chapter-2-imam-al-hassans-pacifism-session-2#contrasting-circumstances-imam-al-hassan-and-imam-al-husayna",
+    "s2_elements": "chapter-2-imam-al-hassans-pacifism-session-2#elements-contributing-imam-al-husaynsuprisal-and-their-contrasts-imam-al-hassans-circumstances",
+    "s2_contract": "chapter-2-imam-al-hassans-pacifism-session-2#conditions-contract",
+    "s2_qa": "chapter-2-imam-al-hassans-pacifism-session-2#question-and-answer"
+  },
+  "stages": [
+    {
+      "id": "jihad",
+      "label": "STAGE 1 · THE JIHAD FRAMEWORK",
+      "sub": "Is there a lawful ground to fight?"
+    },
+    {
+      "id": "truce",
+      "label": "STAGE 2 · THE TRUCE FRAMEWORK",
+      "sub": "Must we fight now, or is a truce lawful?"
+    }
+  ],
+  "principles": [
+    {
+      "id": 1,
+      "name": "Sitting head of state?",
+      "chunk_ids": [
+        "b02-u04-001"
+      ],
+      "hasan": {
+        "answer": "yes",
+        "note": "Caliph in the seat: his death would be the caliphate's defeat"
+      },
+      "husayn": {
+        "answer": "no",
+        "note": "No office held: his stand is a public protest"
+      },
+      "sources": [
+        "s2_contrast"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Loyal, reliable force?",
+      "chunk_ids": [
+        "b02-u04-002"
+      ],
+      "hasan": {
+        "answer": "no",
+        "note": "Kufah split: chiefs bribed, desertions at Nukhaylah"
+      },
+      "husayn": {
+        "answer": "yes",
+        "note": "72 trained companions; almost none deserted"
+      },
+      "sources": [
+        "s2_contrast",
+        "s2_qa"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Lawful truce on offer?",
+      "chunk_ids": [
+        "b02-u04-006",
+        "b02-u03-008"
+      ],
+      "hasan": {
+        "answer": "yes",
+        "note": "Signed blank page: time-bound, protective clauses"
+      },
+      "husayn": {
+        "answer": "no",
+        "note": "Only a pledge of allegiance was demanded"
+      },
+      "sources": [
+        "s2_contract",
+        "s1_peace"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Allegiance demanded?",
+      "chunk_ids": [
+        "b02-u04-003"
+      ],
+      "condition": true,
+      "hasan": {
+        "answer": "no",
+        "note": "None: the treaty required no pledge"
+      },
+      "husayn": {
+        "answer": "yes",
+        "note": "\"He must pledge his allegiance\""
+      },
+      "sources": [
+        "s2_elements"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Binding call from a prepared base?",
+      "chunk_ids": [
+        "b02-u04-004"
+      ],
+      "condition": true,
+      "hasan": {
+        "answer": "no",
+        "note": "Kufah divided, hostile factions active"
+      },
+      "husayn": {
+        "answer": "yes",
+        "note": "Kufah's 18,000 letters: an ultimatum"
+      },
+      "sources": [
+        "s2_elements"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Wrong manifest and proven?",
+      "chunk_ids": [
+        "b02-u04-005"
+      ],
+      "condition": true,
+      "hasan": {
+        "answer": "no",
+        "note": "Not yet: Mu'awiyah's written terms promised religious rule"
+      },
+      "husayn": {
+        "answer": "yes",
+        "note": "Rules changed, blood shed, an unfit son made heir"
+      },
+      "sources": [
+        "s2_elements"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "start",
+      "kind": "start",
+      "text": "A conflict confronts the Imam, the leader of the Muslims",
+      "x": 190,
+      "y": 330,
+      "w": 300
+    },
+    {
+      "id": "D1",
+      "kind": "decision",
+      "stage": "jihad",
+      "tag": "DEFENSIVE JIHAD",
+      "principles": [],
+      "text": "Is a non-Muslim enemy attacking Islamic land, lives, property or sanctuaries?",
+      "x": 190,
+      "y": 560,
+      "w": 290,
+      "sources": [
+        "s1_jihad"
+      ],
+      "chunk_ids": [
+        "b02-u03-005"
+      ]
+    },
+    {
+      "id": "L1",
+      "kind": "leaf",
+      "tone": "grey",
+      "stage": "jihad",
+      "principles": [],
+      "title": "Defensive jihad",
+      "text": "Obligatory on every Muslim, man or woman, free or not. No Imam's permission needed.",
+      "example": "e.g. an invader occupying a Muslim land",
+      "x": 580,
+      "y": 310,
+      "w": 300,
+      "sources": [
+        "s1_jihad"
+      ],
+      "chunk_ids": [
+        "b02-u03-005"
+      ]
+    },
+    {
+      "id": "D2",
+      "kind": "decision",
+      "stage": "jihad",
+      "tag": "FIGHTING REBELS · Q 49:9",
+      "principles": [
+        1
+      ],
+      "text": "Is a Muslim faction in armed revolt against the lawful, sitting Imam?",
+      "x": 580,
+      "y": 560,
+      "w": 290,
+      "sources": [
+        "s1_rebels",
+        "s2_contrast"
+      ],
+      "chunk_ids": [
+        "b02-u03-007",
+        "b02-u04-001"
+      ]
+    },
+    {
+      "id": "D3",
+      "kind": "decision",
+      "stage": "jihad",
+      "tag": "ENJOINING GOOD",
+      "principles": [
+        1
+      ],
+      "text": "Is the Imam instead protesting a ruler who violates Islam?",
+      "x": 960,
+      "y": 700,
+      "w": 290,
+      "sources": [
+        "s1_rebels",
+        "s2_elements"
+      ],
+      "chunk_ids": [
+        "b02-u03-007",
+        "b02-u04-005"
+      ]
+    },
+    {
+      "id": "L0",
+      "kind": "leaf",
+      "tone": "grey",
+      "stage": "jihad",
+      "principles": [],
+      "title": "No ground to fight",
+      "text": "Starting a war on non-Muslims who have not attacked needs the Imam or his deputy.",
+      "example": "Antecedent jihad: adult, free men",
+      "x": 960,
+      "y": 905,
+      "w": 340,
+      "sources": [
+        "s1_jihad"
+      ],
+      "chunk_ids": [
+        "b02-u03-004"
+      ]
+    },
+    {
+      "id": "T1",
+      "kind": "decision",
+      "stage": "truce",
+      "tag": "TRUCE · MUHAQQIQ'S TEST",
+      "principles": [
+        3
+      ],
+      "text": "Is a lawful truce on offer: time-bound, protective terms, no demand for allegiance?",
+      "x": 1340,
+      "y": 560,
+      "w": 290,
+      "sources": [
+        "s1_peace",
+        "s2_contract",
+        "s2_elements"
+      ],
+      "chunk_ids": [
+        "b02-u03-008",
+        "b02-u04-003",
+        "b02-u04-006"
+      ]
+    },
+    {
+      "id": "H1",
+      "kind": "decision",
+      "stage": "truce",
+      "tag": "TRUCE · STRENGTH TEST",
+      "principles": [
+        2
+      ],
+      "text": "Is the force loyal and strong enough to win without years of Muslim bloodshed?",
+      "x": 1720,
+      "y": 365,
+      "w": 290,
+      "sources": [
+        "s1_peace",
+        "s2_contrast",
+        "s2_qa"
+      ],
+      "chunk_ids": [
+        "b02-u04-002",
+        "b02-u04-004"
+      ]
+    },
+    {
+      "id": "U1",
+      "kind": "decision",
+      "stage": "truce",
+      "tag": "DUTY TO RISE",
+      "principles": [
+        4,
+        5,
+        6
+      ],
+      "text": "Have all three conditions for rising ripened?",
+      "x": 1720,
+      "y": 755,
+      "w": 290,
+      "sources": [
+        "s2_elements"
+      ],
+      "sub": [
+        "Allegiance is demanded",
+        "The wrong is manifest and proven",
+        "A prepared base calls him"
+      ],
+      "chunk_ids": [
+        "b02-u04-003",
+        "b02-u04-004",
+        "b02-u04-005"
+      ]
+    },
+    {
+      "id": "F",
+      "kind": "leaf",
+      "tone": "grey",
+      "stage": "truce",
+      "principles": [],
+      "title": "Fight on",
+      "text": "Strong enough, and a truce gains nothing? Then a truce is not permissible.",
+      "example": "'Ali at Siffin: the stronger Iraqi forces fought 18 months",
+      "x": 2150,
+      "y": 268,
+      "w": 400,
+      "sources": [
+        "s1_peace",
+        "s2_contrast"
+      ],
+      "chunk_ids": [
+        "b02-u03-008",
+        "b02-u04-002"
+      ]
+    },
+    {
+      "id": "TRUCE",
+      "kind": "leaf",
+      "tone": "hasan",
+      "stage": "truce",
+      "principles": [
+        3
+      ],
+      "title": "TRUCE: al-Hassan steps aside",
+      "text": "Book and Sunnah, no successor, no cursing of 'Ali, safety for his followers, no allegiance.",
+      "example": "Precedent: the Prophet at Hudaybiyyah",
+      "x": 2150,
+      "y": 463,
+      "w": 400,
+      "sources": [
+        "s2_contract",
+        "s1_hudaybiyyah"
+      ],
+      "chunk_ids": [
+        "b02-u04-006",
+        "b02-u03-009"
+      ]
+    },
+    {
+      "id": "RISE",
+      "kind": "leaf",
+      "tone": "husayn",
+      "stage": "truce",
+      "principles": [],
+      "title": "RISE: al-Husayn refuses",
+      "text": "Allegiance demanded and refused. Kufah's 18,000 letters. 72 loyal companions. A protestor's honourable death.",
+      "example": "An honourable stand, even unto death",
+      "x": 2150,
+      "y": 658,
+      "w": 400,
+      "sources": [
+        "s2_contrast",
+        "s2_elements",
+        "s2_qa"
+      ],
+      "chunk_ids": [
+        "b02-u04-001",
+        "b02-u04-003",
+        "b02-u04-004"
+      ]
+    },
+    {
+      "id": "W",
+      "kind": "leaf",
+      "tone": "grey",
+      "stage": "truce",
+      "principles": [],
+      "title": "Not yet: expose first",
+      "text": "The duty to rise is not 'produced' until the ruler's true face shows.",
+      "example": "Al-Hassan's peace did exactly this for al-Husayn",
+      "x": 2150,
+      "y": 853,
+      "w": 400,
+      "sources": [
+        "s2_elements"
+      ],
+      "chunk_ids": [
+        "b02-u04-005",
+        "b02-u04-007"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "D1",
+      "kind": "vertical"
+    },
+    {
+      "from": "D1",
+      "to": "L1",
+      "label": "YES",
+      "dy_from": -40,
+      "dy_to": 0
+    },
+    {
+      "from": "D1",
+      "to": "D2",
+      "label": "NO",
+      "dy_from": 0,
+      "dy_to": 0
+    },
+    {
+      "from": "D2",
+      "to": "T1",
+      "label": "YES",
+      "dy_from": -38,
+      "dy_to": -38
+    },
+    {
+      "from": "D2",
+      "to": "D3",
+      "label": "NO",
+      "dy_from": 38,
+      "dy_to": 0
+    },
+    {
+      "from": "D3",
+      "to": "T1",
+      "label": "YES",
+      "dy_from": -38,
+      "dy_to": 38
+    },
+    {
+      "from": "D3",
+      "to": "L0",
+      "kind": "vertical",
+      "label": "NO"
+    },
+    {
+      "from": "T1",
+      "to": "H1",
+      "label": "YES",
+      "dy_from": -38,
+      "dy_to": 0
+    },
+    {
+      "from": "T1",
+      "to": "U1",
+      "label": "NO",
+      "dy_from": 38,
+      "dy_to": 0
+    },
+    {
+      "from": "H1",
+      "to": "F",
+      "label": "YES",
+      "dy_from": -38,
+      "dy_to": 0
+    },
+    {
+      "from": "H1",
+      "to": "TRUCE",
+      "label": "NO",
+      "dy_from": 38,
+      "dy_to": 0
+    },
+    {
+      "from": "U1",
+      "to": "RISE",
+      "label": "YES",
+      "dy_from": -38,
+      "dy_to": 0
+    },
+    {
+      "from": "U1",
+      "to": "W",
+      "label": "NO",
+      "dy_from": 38,
+      "dy_to": 0
+    }
+  ],
+  "paths": {
+    "hasan": {
+      "label": "Imam al-Hassan (a)",
+      "motif": "poison",
+      "steps": [
+        [
+          "D1",
+          "no"
+        ],
+        [
+          "D2",
+          "yes"
+        ],
+        [
+          "T1",
+          "yes"
+        ],
+        [
+          "H1",
+          "no"
+        ]
+      ],
+      "end": "TRUCE"
+    },
+    "husayn": {
+      "label": "Imam al-Husayn (a)",
+      "motif": "bloodshed",
+      "steps": [
+        [
+          "D1",
+          "no"
+        ],
+        [
+          "D2",
+          "no"
+        ],
+        [
+          "D3",
+          "yes"
+        ],
+        [
+          "T1",
+          "no"
+        ],
+        [
+          "U1",
+          "yes"
+        ]
+      ],
+      "end": "RISE"
+    }
+  },
+  "quotes": [
+    {
+      "text": "These all resulted from the differences in their circumstances.",
+      "source": "Session 2",
+      "anchor": "s2_contract"
+    },
+    {
+      "text": "Imam al-Hassan's peace prepared the grounds for Imam al-Husayn's uprising.",
+      "source": "Session 2",
+      "anchor": "s2_elements"
+    }
+  ],
+  "framing_note": "Mutahhari's own framing (Session 2, footnote 1): he analyses the two situations 'from a social point of view'. Troop numbers and counterfactuals are his historical assessment. This is a teaching framework drawn from his argument, not a context-free decision algorithm or a ruling for modern conflicts, and no single box settles the comparison.",
+  "condition_tally": {
+    "label": "THE THREE CONDITIONS FOR RISING (4–6)",
+    "hasan": "0 of 3",
+    "husayn": "3 of 3"
+  }
+}

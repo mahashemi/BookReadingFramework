@@ -94,6 +94,8 @@ test.describe("Book 02 Session 2 jihad and truce framework", () => {
     await expect(framework).toContainText("IMAM AL-HASAN · DARK GREEN");
     await expect(framework).toContainText("IMAM AL-HUSAYN · BLOOD RED");
     await expect(framework.locator("svg#map")).toBeVisible();
+    await expect(framework.locator("svg#map")).toContainText("TRUCE: al-Hassan");
+    await expect(framework.locator("svg#map")).toContainText("RISE: al-Husayn");
     await expect(framework.locator(".modes button")).toHaveCount(3);
     await expect(framework.locator("svg .p-hasan").first()).toBeVisible();
     await expect(framework.locator("svg .p-husayn").first()).toBeVisible();
@@ -104,8 +106,13 @@ test.describe("Book 02 Session 2 jihad and truce framework", () => {
     expect(afterConcepts).toBe(true);
     await framework.locator('.modes button[data-mode="husayn"]').click();
     await expect(framework.locator("svg#map")).toHaveClass(/mode-husayn/);
+    await expect(framework.locator("svg .ov-hasan").first()).toBeHidden();
+    await framework.locator('.modes button[data-mode="hasan"]').click();
+    await expect(framework.locator("svg#map")).toHaveClass(/mode-hasan/);
+    await expect(framework.locator("svg .ov-husayn").first()).toBeHidden();
     await framework.locator('.modes button[data-mode="both"]').click();
     await expect(framework.locator("svg#map")).not.toHaveClass(/mode-husayn/);
+    await expect(framework.locator("svg .ov-husayn").first()).toBeVisible();
     await page.goto("/book/unit.html?book_id=book02&unit=u03", { waitUntil: "networkidle" });
     await expect(page.locator(".jihad-source-content")).toHaveCount(0);
     expect(errors).toEqual([]);

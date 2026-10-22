@@ -376,7 +376,7 @@ ${glossaryHTML}
 
     document.title = (p.label === p.name ? p.name : p.label + ' \u2014 ' + p.name) + ' \u00b7 ' + meta.title;
 
-    const jihadTruceFramework = meta.id === 'book02' && u.id === 'u04' ? `<section class="jihad-source-content" id="jihad-truce-framework" aria-label="Jihad and Truce decision framework">\n  <p class="framework-context" style="margin:0 0 18px;padding:14px 18px;border:1px solid #e3dccb;border-radius:12px;background:#fff;font-size:14px;color:#3f3a34">Start at the top and follow the YES/NO branches. One gate asks whether there is genuine public interest in a truce. The historical comparison highlights <strong>IMAM AL-HASAN · DARK GREEN</strong> and <strong>IMAM AL-HUSAYN · BLOOD RED</strong>.</p>
+    const jihadTruceFramework = meta.id === 'book02' && u.id === 'u04' ? `<section class="jihad-source-content" id="jihad-truce-framework" aria-label="Jihad and Truce decision framework">\n  <p class="framework-context" style="margin:0 0 18px;padding:14px 18px;border:1px solid #e3dccb;border-radius:12px;background:#fff;font-size:14px;color:#3f3a34">Start at the dark pill on the left and follow the YES/NO branches. The truce box asks whether there is genuine public interest in a truce: a time-bound deal with protective terms and no demand for allegiance. The historical comparison highlights <strong>IMAM AL-HASAN · DARK GREEN</strong> and <strong>IMAM AL-HUSAYN · BLOOD RED</strong>.</p>
 <style>
 .jihad-source-content{
     --ink:#1C1917; --ink2:#3F3A34; --ink3:#78716C; --ink4:#A8A29E;
@@ -490,6 +490,9 @@ ${glossaryHTML}
 .jihad-source-content svg#map .p-hasan, .jihad-source-content svg#map .p-husayn{transition:opacity .4s ease}
 .jihad-source-content svg#map.mode-hasan .p-husayn{opacity:.08}
 .jihad-source-content svg#map.mode-husayn .p-hasan{opacity:.08}
+.jihad-source-content svg#map .off{opacity:.55}
+.jihad-source-content svg#map.mode-hasan .off,.jihad-source-content svg#map.mode-husayn .off{opacity:.18}
+.jihad-source-content svg#map.mode-hasan .ov-husayn,.jihad-source-content svg#map.mode-husayn .ov-hasan{display:none}
 /* ===== NOTES ===== */
   .jihad-source-content .notes{margin-top:72px}
 .jihad-source-content .notes h2{font-family:Georgia,serif;font-size:30px;margin:0 0 8px;font-weight:700}
@@ -569,8 +572,7 @@ ${glossaryHTML}
     <h2>The Framework of Jihād &amp; Truce<br>
       <span class="h">Imam al-Ḥasan</span> &amp; <span class="x">Imam al-Ḥusayn</span></h2>
     <p class="deck">
-      One jurisprudence. Two circumstances. Six binary gates decide between peace and uprising —
-      and the paths of the two Imams are traced through every node. The framework never changes.
+      One jurisprudence. Two circumstances. A yes/no tree decides between peace and uprising, and the paths of the two Imams are traced through it. The framework never changes.
       <em>The inputs do.</em>
     </p>
   </header>
@@ -579,7 +581,7 @@ ${glossaryHTML}
   <section class="summary">
     <div class="sumcard a">
       <h3>One framework</h3>
-      <p>Six gates. The same Shiʿah jurisprudence of jihād and truce.
+      <p>One tree. The same Shiʿah jurisprudence of jihād and truce.
          <strong>Neither Imam appealed to a special exception.</strong></p>
     </div>
     <div class="sumcard b">
@@ -599,7 +601,7 @@ ${glossaryHTML}
     <h4>How to read this map</h4>
     <div class="step"><span class="n">1</span> Follow the green line — <strong>Imam al-Ḥasan</strong> <span class="sw g"></span></div>
     <div class="step"><span class="n">2</span> Follow the red line — <strong>Imam al-Ḥusayn</strong> <span class="sw r"></span></div>
-    <div class="step"><span class="n">3</span> At every gate, both face the <strong>same question</strong>. Read their answers side by side.</div>
+    <div class="step"><span class="n">3</span> Where the paths meet, both face the <strong>same question</strong>; the scorecard under the tree sets their answers side by side.</div>
   </section>
 
   <!-- ================= TOOLBAR ================= -->
@@ -609,350 +611,131 @@ ${glossaryHTML}
       <button data-mode="hasan">Imam al-Ḥasan</button>
       <button data-mode="husayn">Imam al-Ḥusayn</button>
     </div>
-    <span class="hint">Each gate carries both answers — green is al-Ḥasan's, red is al-Ḥusayn's.</span>
+    <span class="hint">Green is al-Ḥasan's route, red is al-Ḥusayn's; hollow marks show principles that did not apply.</span>
     <button class="btn-print" onclick="window.print()">Print / PDF</button>
   </div>
 
   <!-- ================= DIAGRAM ================= -->
   <div class="diagram-wrap">
-    <svg id="map" viewBox="0 0 2000 3560" xmlns="http://www.w3.org/2000/svg"
-         role="img" aria-label="Six-gate decision framework for jihad and truce, showing Imam al-Hasan's path in green and Imam al-Husayn's path in red">
+    <!-- BEGIN generated: jihad-truce-tree (scripts/build_jihad_truce_tree.py) -->
+<svg id="map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1350" role="img" aria-label="Yes/no decision tree for the jihad and truce frameworks. Imam al-Hassan's path is dark green and ends in truce; Imam al-Husayn's path is blood red and ends in uprising.">
 
-      <!-- ======== SPINE ======== -->
-      <line x1="22" y1="138" x2="22" y2="1830" stroke="#D6CDB8" stroke-width="2.5" stroke-dasharray="4 5"/>
-      <circle cx="22" cy="138" r="19" fill="#1C1917"/><text x="22" y="145" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="700" fill="#fff">1</text>
-      <circle cx="22" cy="418" r="19" fill="#1C1917"/><text x="22" y="425" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="700" fill="#fff">2</text>
-      <circle cx="22" cy="698" r="19" fill="#1C1917"/><text x="22" y="705" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="700" fill="#fff">2a</text>
-      <circle cx="22" cy="978" r="19" fill="#1C1917"/><text x="22" y="985" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="700" fill="#fff">3</text>
-      <circle cx="22" cy="1258" r="19" fill="#1C1917"/><text x="22" y="1265" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="700" fill="#fff">4</text>
-      <circle cx="22" cy="1538" r="19" fill="#1C1917"/><text x="22" y="1545" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="700" fill="#fff">5</text>
-      <circle cx="22" cy="1818" r="19" fill="#1C1917"/><text x="22" y="1825" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="700" fill="#fff">6</text>
-
-      <!-- ================= TIME AXIS BAND ================= -->
-      <rect x="52" y="60" width="1908" height="44" rx="10" fill="#F7F3EA" stroke="#E3DCCB" stroke-width="1.5"/>
-      <text x="84" y="88" font-family="Inter,sans-serif" font-size="16" font-weight="700" fill="#8C6E28" letter-spacing="1.5">TIME AXIS</text>
-      <text x="280" y="88" font-family="Inter,sans-serif" font-size="16" font-weight="400" fill="#3F3A34">40 AH · al-Ḥasan: caliph, army fracturing, peace offered</text>
-      <text x="1180" y="88" font-family="Inter,sans-serif" font-size="16" font-weight="400" fill="#3F3A34">60 AH · al-Ḥusayn: Muʿāwiyah dead, allegiance demanded</text>
-
-      <!-- ================= GATE 1 ================= -->
-      <g>
-        <rect x="52" y="128" width="1908" height="76" rx="12" fill="#1C1917"/>
-        <text x="84" y="162" font-family="Inter,sans-serif" font-size="25" font-weight="600" fill="#fff">①  Is Muslim land under foreign attack?</text>
-        <text x="84" y="190" font-family="Inter,sans-serif" font-size="18" font-weight="400" fill="#C9A227">Defensive jihād (Qurʾān 22:39) — if yes, every Muslim must fight, with no permission needed.</text>
-
-        <g class="p-hasan">
-          <rect x="52" y="220" width="940" height="170" rx="12" fill="#EAF5EE" stroke="#0B6B3A" stroke-width="2.5"/>
-          <rect x="52" y="220" width="8" height="170" rx="4" fill="#0B6B3A"/>
-          <rect x="84" y="240" width="76" height="36" rx="18" fill="#fff" stroke="#0B6B3A" stroke-width="2.5"/>
-          <text x="122" y="264" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#0B6B3A">NO</text>
-          <text x="84" y="318" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">No. Muʿāwiyah is not a foreign invader.</text>
-          <text x="84" y="346" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">He is a Muslim rebel from inside.</text>
-          <text x="84" y="374" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">Defensive jihād <tspan font-weight="700" fill="#0B6B3A">does not apply</tspan>.</text>
-        </g>
-
-        <g class="p-husayn">
-          <rect x="1020" y="220" width="940" height="170" rx="12" fill="#FBEBEC" stroke="#A31621" stroke-width="2.5"/>
-          <rect x="1020" y="220" width="8" height="170" rx="4" fill="#A31621"/>
-          <rect x="1052" y="240" width="76" height="36" rx="18" fill="#fff" stroke="#A31621" stroke-width="2.5"/>
-          <text x="1090" y="264" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#A31621">NO</text>
-          <text x="1052" y="318" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">No. Yazīd is not an outside army.</text>
-          <text x="1052" y="346" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">He is a usurper from within.</text>
-          <text x="1052" y="374" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">Defensive jihād <tspan font-weight="700" fill="#A31621">does not apply</tspan>.</text>
-        </g>
-      </g>
-
-      <!-- ================= GATE 2 ================= -->
-      <g>
-        <rect x="52" y="410" width="1908" height="76" rx="12" fill="#1C1917"/>
-        <text x="84" y="444" font-family="Inter,sans-serif" font-size="25" font-weight="600" fill="#fff">②  Is one Muslim faction wronging another?</text>
-        <text x="84" y="472" font-family="Inter,sans-serif" font-size="18" font-weight="400" fill="#C9A227">Fighting rebels (bughāt). Qurʾān 49:9 — reconcile; if one side refuses, fight the wrongdoer.</text>
-
-        <g class="p-hasan">
-          <rect x="52" y="502" width="940" height="170" rx="12" fill="#EAF5EE" stroke="#0B6B3A" stroke-width="2.5"/>
-          <rect x="52" y="502" width="8" height="170" rx="4" fill="#0B6B3A"/>
-          <rect x="84" y="522" width="84" height="36" rx="18" fill="#0B6B3A"/>
-          <text x="126" y="546" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#fff">YES</text>
-          <text x="84" y="600" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">Yes. Muʿāwiyah rebelled against ʿAlī,</text>
-          <text x="84" y="628" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">and now against the rightful caliph.</text>
-          <text x="84" y="656" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520"><tspan font-weight="700" fill="#0B6B3A">He is the wrongdoer.</tspan></text>
-        </g>
-
-        <g class="p-husayn">
-          <rect x="1020" y="502" width="940" height="170" rx="12" fill="#FBEBEC" stroke="#A31621" stroke-width="2.5"/>
-          <rect x="1020" y="502" width="8" height="170" rx="4" fill="#A31621"/>
-          <rect x="1052" y="522" width="84" height="36" rx="18" fill="#A31621"/>
-          <text x="1094" y="546" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#fff">YES</text>
-          <text x="1052" y="600" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">Yes. Yazīd's regime wrongs the Muslims —</text>
-          <text x="1052" y="628" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">tyranny, embezzlement, killing the righteous.</text>
-        </g>
-      </g>
-
-      <!-- ================= GATE 2a ================= -->
-      <g>
-        <rect x="52" y="690" width="1908" height="76" rx="12" fill="#1C1917"/>
-        <text x="84" y="724" font-family="Inter,sans-serif" font-size="25" font-weight="600" fill="#fff">②ᵃ  Is there a deal on the table?</text>
-        <text x="84" y="752" font-family="Inter,sans-serif" font-size="18" font-weight="400" fill="#C9A227">If he returns to Allah's ordinance — reconcile. If he refuses — fight him until he does.</text>
-
-        <g class="p-hasan">
-          <rect x="52" y="782" width="940" height="170" rx="12" fill="#EAF5EE" stroke="#0B6B3A" stroke-width="2.5"/>
-          <rect x="52" y="782" width="8" height="170" rx="4" fill="#0B6B3A"/>
-          <rect x="84" y="802" width="240" height="36" rx="18" fill="#0B6B3A"/>
-          <text x="204" y="826" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#fff">YES → RECONCILE</text>
-          <text x="84" y="880" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">Yes. Muʿāwiyah sends a blank, signed page:</text>
-          <text x="84" y="908" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520"><tspan font-weight="700" fill="#0B6B3A">“Write your own terms.”</tspan> A just settlement</text>
-          <text x="84" y="936" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">is genuinely on the table.</text>
-        </g>
-
-        <g class="p-husayn">
-          <rect x="1020" y="782" width="940" height="170" rx="12" fill="#FBEBEC" stroke="#A31621" stroke-width="2.5"/>
-          <rect x="1020" y="782" width="8" height="170" rx="4" fill="#A31621"/>
-          <rect x="1052" y="802" width="184" height="36" rx="18" fill="#A31621"/>
-          <text x="1144" y="826" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#fff">NO → FIGHT</text>
-          <text x="1052" y="880" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">No. Yazīd's governor demands allegiance —</text>
-          <text x="1052" y="908" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">no terms, no negotiation.</text>
-          <text x="1052" y="936" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520"><tspan font-weight="700" fill="#A31621">There is nothing to reconcile with.</tspan></text>
-        </g>
-      </g>
-
-      <!-- ================= GATE 3 ================= -->
-      <g>
-        <rect x="52" y="970" width="1908" height="76" rx="12" fill="#1C1917"/>
-        <text x="84" y="1004" font-family="Inter,sans-serif" font-size="25" font-weight="600" fill="#fff">③  Is this an offensive war beyond Muslim borders?</text>
-        <text x="84" y="1032" font-family="Inter,sans-serif" font-size="18" font-weight="400" fill="#C9A227">Antecedent jihād — requires the Imam present, personally appointing the commander.</text>
-
-        <g class="p-hasan">
-          <rect x="52" y="1062" width="940" height="170" rx="12" fill="#EAF5EE" stroke="#0B6B3A" stroke-width="2.5"/>
-          <rect x="52" y="1062" width="8" height="170" rx="4" fill="#0B6B3A"/>
-          <rect x="84" y="1082" width="76" height="36" rx="18" fill="#fff" stroke="#0B6B3A" stroke-width="2.5"/>
-          <text x="122" y="1106" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#0B6B3A">NO</text>
-          <text x="84" y="1160" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">No. This is an internal conflict inside the</text>
-          <text x="84" y="1188" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">Muslim community.</text>
-          <text x="84" y="1216" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">Antecedent jihād <tspan font-weight="700" fill="#0B6B3A">does not apply</tspan>.</text>
-        </g>
-
-        <g class="p-husayn">
-          <rect x="1020" y="1062" width="940" height="170" rx="12" fill="#FBEBEC" stroke="#A31621" stroke-width="2.5"/>
-          <rect x="1020" y="1062" width="8" height="170" rx="4" fill="#A31621"/>
-          <rect x="1052" y="1082" width="76" height="36" rx="18" fill="#fff" stroke="#A31621" stroke-width="2.5"/>
-          <text x="1090" y="1106" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#A31621">NO</text>
-          <text x="1052" y="1160" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">No. Also internal.</text>
-          <text x="1052" y="1188" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">Antecedent jihād <tspan font-weight="700" fill="#A31621">does not apply</tspan>.</text>
-        </g>
-      </g>
-
-      <!-- ================= GATE 4 ================= -->
-      <g>
-        <rect x="52" y="1250" width="1908" height="76" rx="12" fill="#1C1917"/>
-        <text x="84" y="1284" font-family="Inter,sans-serif" font-size="25" font-weight="600" fill="#fff">④  Can we buy time without betraying the cause?</text>
-        <text x="84" y="1312" font-family="Inter,sans-serif" font-size="18" font-weight="400" fill="#C9A227">Muḥaqqiq, Sharāʾiʿ al-Islām — a truce must be time-bound AND carry a benefit (maṣlaḥah).</text>
-
-        <g class="p-hasan">
-          <rect x="52" y="1342" width="940" height="170" rx="12" fill="#EAF5EE" stroke="#0B6B3A" stroke-width="2.5"/>
-          <rect x="52" y="1342" width="8" height="170" rx="4" fill="#0B6B3A"/>
-          <rect x="84" y="1362" width="316" height="36" rx="18" fill="#0B6B3A"/>
-          <text x="242" y="1386" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#fff">YES → TRUCE PERMITTED</text>
-          <text x="84" y="1440" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">Yes. A definite term, and a clear benefit: end the</text>
-          <text x="84" y="1468" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">war, protect the Shīʿah, force the Umayyads</text>
-          <text x="84" y="1496" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">to show <tspan font-weight="700" fill="#0B6B3A">their real face</tspan>.</text>
-        </g>
-
-        <g class="p-husayn">
-          <rect x="1020" y="1342" width="940" height="170" rx="12" fill="#FBEBEC" stroke="#A31621" stroke-width="2.5"/>
-          <rect x="1020" y="1342" width="8" height="170" rx="4" fill="#A31621"/>
-          <rect x="1052" y="1362" width="316" height="36" rx="18" fill="#A31621"/>
-          <text x="1210" y="1386" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#fff">NO → TRUCE FORBIDDEN</text>
-          <text x="1052" y="1440" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">No. What was offered was allegiance, not a</text>
-          <text x="1052" y="1468" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">time-bound truce. Submission brings no benefit —</text>
-          <text x="1052" y="1496" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520"><tspan font-weight="700" fill="#A31621">it kills the protest</tspan>.</text>
-        </g>
-      </g>
-
-      <!-- ================= GATE 5 ================= -->
-      <g>
-        <rect x="52" y="1530" width="1908" height="76" rx="12" fill="#1C1917"/>
-        <text x="84" y="1564" font-family="Inter,sans-serif" font-size="25" font-weight="600" fill="#fff">⑤  Has the duty to rise ripened?</text>
-        <text x="84" y="1592" font-family="Inter,sans-serif" font-size="18" font-weight="400" fill="#C9A227">Enjoining good and forbidding evil — all three conditions must hold.</text>
-
-        <g class="p-hasan">
-          <rect x="52" y="1622" width="940" height="170" rx="12" fill="#EAF5EE" stroke="#0B6B3A" stroke-width="2.5"/>
-          <rect x="52" y="1622" width="8" height="170" rx="4" fill="#0B6B3A"/>
-          <rect x="84" y="1642" width="230" height="36" rx="18" fill="#fff" stroke="#0B6B3A" stroke-width="2.5"/>
-          <text x="199" y="1666" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#0B6B3A">NOT YET · 0 of 3</text>
-          <text x="84" y="1720" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">① No allegiance demanded. ② Corruption not yet</text>
-          <text x="84" y="1748" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">manifest. ③ No ultimatum from the base.</text>
-          <text x="84" y="1776" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520"><tspan font-weight="700" fill="#0B6B3A">The obligation had not yet ripened.</tspan></text>
-        </g>
-
-        <g class="p-husayn">
-          <rect x="1020" y="1622" width="940" height="170" rx="12" fill="#FBEBEC" stroke="#A31621" stroke-width="2.5"/>
-          <rect x="1020" y="1622" width="8" height="170" rx="4" fill="#A31621"/>
-          <rect x="1052" y="1642" width="184" height="36" rx="18" fill="#A31621"/>
-          <text x="1144" y="1666" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#fff">YES · 3 of 3</text>
-          <text x="1052" y="1720" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">① Allegiance demanded and refused. ② Yazīd</text>
-          <text x="1052" y="1748" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">named heir — corruption manifest. ③ 18,000</text>
-          <text x="1052" y="1776" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">letters: an ultimatum. <tspan font-weight="700" fill="#A31621">The obligation had ripened.</tspan></text>
-        </g>
-      </g>
-
-      <!-- ================= GATE 6 ================= -->
-      <g>
-        <rect x="52" y="1810" width="1908" height="76" rx="12" fill="#1C1917"/>
-        <text x="84" y="1844" font-family="Inter,sans-serif" font-size="25" font-weight="600" fill="#fff">⑥  What happens if I die — and what happens if I live?</text>
-        <text x="84" y="1872" font-family="Inter,sans-serif" font-size="18" font-weight="400" fill="#C9A227">The seat of the caliphate · the chance of a decisive victory.</text>
-
-        <g class="p-hasan">
-          <rect x="52" y="1902" width="940" height="170" rx="12" fill="#EAF5EE" stroke="#0B6B3A" stroke-width="2.5"/>
-          <rect x="52" y="1902" width="8" height="170" rx="4" fill="#0B6B3A"/>
-          <rect x="84" y="1922" width="396" height="36" rx="18" fill="#0B6B3A"/>
-          <text x="282" y="1946" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#fff">CALIPH · WAR WOULD NEVER END</text>
-          <text x="84" y="2000" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">Killing the caliph disgraces the caliphate. At</text>
-          <text x="84" y="2028" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">Ṣiffīn, 18 months of fighting ended with</text>
-          <text x="84" y="2056" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">Qurʾāns on spears — <tspan font-weight="700" fill="#0B6B3A">no verdict</tspan>.</text>
-        </g>
-
-        <g class="p-husayn">
-          <rect x="1020" y="1902" width="940" height="170" rx="12" fill="#FBEBEC" stroke="#A31621" stroke-width="2.5"/>
-          <rect x="1020" y="1902" width="8" height="170" rx="4" fill="#A31621"/>
-          <rect x="1052" y="1922" width="366" height="36" rx="18" fill="#A31621"/>
-          <text x="1235" y="1946" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="#fff">PROTESTOR · DEATH IS HONOR</text>
-          <text x="1052" y="2000" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">72 men against an army. No illusion of victory —</text>
-          <text x="1052" y="2028" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520">a protest carried to its end.</text>
-          <text x="1052" y="2056" font-family="Inter,sans-serif" font-size="22" font-weight="400" fill="#2A2520"><tspan font-weight="700" fill="#A31621">His blood would become the argument.</tspan></text>
-        </g>
-      </g>
-
-      <!-- ================= "SO WHAT?" OUTCOME RIBBON ================= -->
-      <g>
-        <rect x="52" y="2110" width="1908" height="60" rx="12" fill="#F7F3EA" stroke="#E3DCCB" stroke-width="1.5"/>
-        <text x="84" y="2145" font-family="Inter,sans-serif" font-size="16" font-weight="700" fill="#8C6E28" letter-spacing="1.5">SO WHAT?</text>
-        <text x="280" y="2145" font-family="Inter,sans-serif" font-size="16" font-weight="400" fill="#3F3A34">The peace exposed the Umayyads and preserved the Shīʿah for Karbala.</text>
-        <text x="1180" y="2145" font-family="Inter,sans-serif" font-size="16" font-weight="400" fill="#3F3A34">The blood became the argument that no throne could silence.</text>
-      </g>
-
-      <!-- ================= RESULTS ================= -->
-      <g>
-        <rect x="52" y="2200" width="1908" height="70" rx="12" fill="#1C1917"/>
-        <text x="1006" y="2245" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="700" fill="#fff" letter-spacing="3">THE RESULT — WHAT EACH CHOICE ACHIEVED</text>
-
-        <!-- HASAN RESULT -->
-        <g class="p-hasan">
-          <rect x="52" y="2290" width="940" height="480" rx="14" fill="#fff" stroke="#0B6B3A" stroke-width="2.5"/>
-          <path d="M52,2304 A14,14 0 0 1 66,2290 L978,2290 A14,14 0 0 1 992,2304 L992,2354 L52,2354 Z" fill="#0B6B3A"/>
-          <text x="84" y="2332" font-family="Inter,sans-serif" font-size="26" font-weight="700" fill="#fff" letter-spacing="1.2">THE PEACE · The Poison</text>
-
-          <rect x="52" y="2354" width="940" height="138" fill="#F4FAF6"/>
-          <text x="84" y="2390" font-family="Inter,sans-serif" font-size="15" font-weight="700" fill="#0B6B3A" letter-spacing="2.2">DECISION</text>
-          <text x="84" y="2424" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520">Sign a time-bound treaty with five conditions:</text>
-          <text x="84" y="2452" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520">no allegiance, no cursing of ʿAlī, the caliphate to</text>
-          <text x="84" y="2480" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520">return to the Ahl al-Bayt, treasury payments, safety.</text>
-
-          <rect x="52" y="2492" width="940" height="138" fill="#fff"/>
-          <text x="84" y="2528" font-family="Inter,sans-serif" font-size="15" font-weight="700" fill="#0B6B3A" letter-spacing="2.2">REASON</text>
-          <text x="84" y="2562" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520">Avert annihilation. Buy time. Force the Umayyads</text>
-          <text x="84" y="2590" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520">to break their own signed word — and</text>
-          <text x="84" y="2618" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520"><tspan font-weight="700" fill="#0B6B3A">expose themselves</tspan>.</text>
-
-          <rect x="52" y="2630" width="940" height="140" fill="#F4FAF6"/>
-          <text x="84" y="2666" font-family="Inter,sans-serif" font-size="15" font-weight="700" fill="#0B6B3A" letter-spacing="2.2">RESULT</text>
-          <text x="84" y="2700" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520">Muʿāwiyah breaks every clause. The mask falls.</text>
-          <text x="84" y="2728" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520"><tspan font-weight="700" fill="#0B6B3A">The ground is prepared for Karbala.</tspan></text>
-        </g>
-
-        <!-- HUSAYN RESULT -->
-        <g class="p-husayn">
-          <rect x="1020" y="2290" width="940" height="480" rx="14" fill="#fff" stroke="#A31621" stroke-width="2.5"/>
-          <path d="M1020,2304 A14,14 0 0 1 1034,2290 L1946,2290 A14,14 0 0 1 1960,2304 L1960,2354 L1020,2354 Z" fill="#A31621"/>
-          <text x="1052" y="2332" font-family="Inter,sans-serif" font-size="26" font-weight="700" fill="#fff" letter-spacing="1.2">THE UPRISING · The Blood</text>
-
-          <rect x="1020" y="2354" width="940" height="138" fill="#FDF5F6"/>
-          <text x="1052" y="2390" font-family="Inter,sans-serif" font-size="15" font-weight="700" fill="#A31621" letter-spacing="2.2">DECISION</text>
-          <text x="1052" y="2424" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520">Refuse allegiance. Rise. Stand at Karbala with</text>
-          <text x="1052" y="2452" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520">72 companions — and no illusion of victory.</text>
-
-          <rect x="1020" y="2492" width="940" height="138" fill="#fff"/>
-          <text x="1052" y="2528" font-family="Inter,sans-serif" font-size="15" font-weight="700" fill="#A31621" letter-spacing="2.2">REASON</text>
-          <text x="1052" y="2562" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520">The duty had ripened. Silence before a manifest</text>
-          <text x="1052" y="2590" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520">tyrant is itself a sin.</text>
-          <text x="1052" y="2618" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520"><tspan font-weight="700" fill="#A31621">The protest had to be made.</tspan></text>
-
-          <rect x="1020" y="2630" width="940" height="140" fill="#FDF5F6"/>
-          <text x="1052" y="2666" font-family="Inter,sans-serif" font-size="15" font-weight="700" fill="#A31621" letter-spacing="2.2">RESULT</text>
-          <text x="1052" y="2700" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520">Martyrdom that shook the Umayyad throne.</text>
-          <text x="1052" y="2728" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520"><tspan font-weight="700" fill="#A31621">The blood became the argument that never stops.</tspan></text>
-        </g>
-
-        <rect x="52" y="2800" width="1908" height="72" rx="12" fill="#C9A227"/>
-        <text x="1006" y="2845" text-anchor="middle" font-family="Inter,sans-serif" font-size="25" font-weight="700" fill="#1C1917" letter-spacing="1">BOTH WERE RIGHT — because the inputs differed, not the framework.</text>
-      </g>
-
-      <!-- ================= REVERSAL TEST BOX ================= -->
-      <g>
-        <rect x="52" y="2910" width="1908" height="130" rx="14" fill="#fff" stroke="#C9A227" stroke-width="2.5"/>
-        <rect x="52" y="2910" width="8" height="130" rx="4" fill="#C9A227"/>
-        <text x="84" y="2950" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#8C6E28" letter-spacing="2.4">REVERSAL TEST — APPLY THE FRAMEWORK YOURSELF</text>
-        <text x="84" y="2984" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520">If al-Ḥasan had lived past Muʿāwiyah — what would he have done? If al-Ḥusayn had been caliph after ʿAlī — what would he have done?</text>
-        <text x="84" y="3018" font-family="Inter,sans-serif" font-size="21" font-weight="400" fill="#2A2520"><tspan font-weight="700" fill="#8C6E28">The answer is the same framework. Only the inputs change.</tspan></text>
-      </g>
-
-      <!-- ================= SYNTHESIS ================= -->
-      <g>
-        <rect x="52" y="3080" width="628" height="200" rx="14" fill="#fff" stroke="#E3DCCB" stroke-width="2"/>
-        <text x="84" y="3118" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#8C6E28" letter-spacing="2.4">ONE FRAMEWORK</text>
-        <text x="84" y="3154" font-family="Inter,sans-serif" font-size="23" font-weight="700" fill="#1C1917">Six gates. Same law.</text>
-        <text x="84" y="3188" font-family="Inter,sans-serif" font-size="20" font-weight="400" fill="#3F3A34">Neither Imam appealed to a special</text>
-        <text x="84" y="3214" font-family="Inter,sans-serif" font-size="20" font-weight="400" fill="#3F3A34">exception. They faced different</text>
-        <text x="84" y="3240" font-family="Inter,sans-serif" font-size="20" font-weight="400" fill="#3F3A34">circumstances and answered the</text>
-        <text x="84" y="3266" font-family="Inter,sans-serif" font-size="20" font-weight="400" fill="#3F3A34">same questions differently.</text>
-
-        <rect x="700" y="3080" width="628" height="200" rx="14" fill="#fff" stroke="#E3DCCB" stroke-width="2"/>
-        <text x="732" y="3118" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#8C6E28" letter-spacing="2.4">DIFFERENT INPUTS</text>
-        <text x="732" y="3154" font-family="Inter,sans-serif" font-size="23" font-weight="700" fill="#1C1917">Caliph vs. protestor.</text>
-        <text x="732" y="3188" font-family="Inter,sans-serif" font-size="20" font-weight="400" fill="#3F3A34">Reconciliation offered vs. refused.</text>
-        <text x="732" y="3214" font-family="Inter,sans-serif" font-size="20" font-weight="400" fill="#3F3A34">Duty ripened vs. not yet.</text>
-        <text x="732" y="3240" font-family="Inter,sans-serif" font-size="20" font-weight="400" fill="#3F3A34">An army of 40,000 vs. a caravan</text>
-        <text x="732" y="3266" font-family="Inter,sans-serif" font-size="20" font-weight="400" fill="#3F3A34">of 72.</text>
-
-        <rect x="1348" y="3080" width="612" height="200" rx="14" fill="#fff" stroke="#E3DCCB" stroke-width="2"/>
-        <text x="1380" y="3118" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#8C6E28" letter-spacing="2.4">ONE CAUSE</text>
-        <text x="1380" y="3154" font-family="Inter,sans-serif" font-size="23" font-weight="700" fill="#1C1917">Peace prepared the uprising.</text>
-        <text x="1380" y="3188" font-family="Inter,sans-serif" font-size="20" font-weight="400" fill="#3F3A34">Had al-Ḥasan lived past Muʿāwiyah,</text>
-        <text x="1380" y="3214" font-family="Inter,sans-serif" font-size="20" font-weight="400" fill="#3F3A34">he would have risen. Had al-Ḥusayn</text>
-        <text x="1380" y="3240" font-family="Inter,sans-serif" font-size="20" font-weight="400" fill="#3F3A34">been caliph, he would have made</text>
-        <text x="1380" y="3266" font-family="Inter,sans-serif" font-size="20" font-weight="400" fill="#3F3A34">peace.</text>
-
-        <rect x="52" y="3300" width="1908" height="70" rx="12" fill="#1C1917"/>
-        <text x="1006" y="3332" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-style="italic" font-weight="400" fill="#F5F1E8">
-          Islam is neither a religion of pure peace nor of pure war. It is a religion of
-        </text>
-        <text x="1006" y="3358" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-style="italic" font-weight="400" fill="#F5F1E8">
-          <tspan font-weight="700" fill="#C9A227">judgement</tspan> — peace and war are tools, and the circumstances decide which is right.
-        </text>
-      </g>
-
-    </svg>
+<rect width="2400" height="1350" fill="#FBF9F4"/>
+<text x="50.0" y="80.0" font-family="'Times New Roman', 'Liberation Serif', Georgia, serif" font-size="56" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Jihad &amp; Truce: one framework, two decisions</text>
+<text x="50.0" y="114.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="21" font-weight="normal" font-style="normal" fill="#5B6572" text-anchor="start">Mutahhari, A Survey into the Lives of the Infallible Imams · Chapter 2: Imam al-Hassan’s Pacifism (Sessions 1–2)</text>
+<text x="2350.0" y="62.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#5B6572" text-anchor="end" letter-spacing="1.5">DEEP READING  ·  BOOK 02  ·  DERIVED TEACHING DIAGRAM</text>
+<text x="2350.0" y="90.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5B6572" text-anchor="end">A teaching framework drawn from Mutahhari, not a ruling for modern conflicts</text>
+<rect x="30" y="140" width="1105" height="850" rx="28" fill="#F3F1EA" stroke="#D8D3C6" stroke-width="2"/>
+<rect x="1160" y="140" width="1212" height="850" rx="28" fill="#EAF1F4" stroke="#C9DAE1" stroke-width="2"/>
+<text x="54.0" y="172.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#3B4A63" text-anchor="start" letter-spacing="1">STAGE 1 · THE JIHAD FRAMEWORK</text>
+<text x="458.8" y="172.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" font-weight="normal" font-style="normal" fill="#5B6572" text-anchor="start">—  Is there a lawful ground to fight?</text>
+<text x="1184.0" y="172.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#245B74" text-anchor="start" letter-spacing="1">STAGE 2 · THE TRUCE FRAMEWORK</text>
+<text x="1588.8" y="172.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" font-weight="normal" font-style="normal" fill="#5B6572" text-anchor="start">—  Must we fight now, or is a truce lawful?</text>
+<g id="edges-base"><line class="p-both" x1="190.0" y1="450.5" x2="190.0" y2="490.5" stroke="#9AA3AF" stroke-width="3.5"/><path class="off" d="M335.0,547.5 C382.5,547.5 382.5,359.0 430.0,359.0" fill="none" stroke="#9AA3AF" stroke-width="3.5" stroke-linecap="round"/><path class="p-both" d="M335.0,587.5 C385.0,587.5 385.0,587.5 435.0,587.5" fill="none" stroke="#9AA3AF" stroke-width="3.5" stroke-linecap="round"/><path class="p-hasan" d="M725.0,549.5 C960.0,549.5 960.0,549.5 1195.0,549.5" fill="none" stroke="#9AA3AF" stroke-width="3.5" stroke-linecap="round"/><path class="p-husayn" d="M725.0,625.5 C770.0,625.5 770.0,712.5 815.0,712.5" fill="none" stroke="#9AA3AF" stroke-width="3.5" stroke-linecap="round"/><path class="p-husayn" d="M1105.0,674.5 C1150.0,674.5 1150.0,625.5 1195.0,625.5" fill="none" stroke="#9AA3AF" stroke-width="3.5" stroke-linecap="round"/><line class="off" x1="960.0" y1="784.5" x2="960.0" y2="804.5" stroke="#9AA3AF" stroke-width="3.5"/><path class="p-hasan" d="M1485.0,549.5 C1530.0,549.5 1530.0,379.0 1575.0,379.0" fill="none" stroke="#9AA3AF" stroke-width="3.5" stroke-linecap="round"/><path class="p-husayn" d="M1485.0,625.5 C1530.0,625.5 1530.0,796.0 1575.0,796.0" fill="none" stroke="#9AA3AF" stroke-width="3.5" stroke-linecap="round"/><path class="off" d="M1865.0,341.0 C1907.5,341.0 1907.5,277.5 1950.0,277.5" fill="none" stroke="#9AA3AF" stroke-width="3.5" stroke-linecap="round"/><path class="p-hasan" d="M1865.0,417.0 C1907.5,417.0 1907.5,480.5 1950.0,480.5" fill="none" stroke="#9AA3AF" stroke-width="3.5" stroke-linecap="round"/><path class="p-husayn" d="M1865.0,758.0 C1907.5,758.0 1907.5,695.5 1950.0,695.5" fill="none" stroke="#9AA3AF" stroke-width="3.5" stroke-linecap="round"/><path class="off" d="M1865.0,834.0 C1907.5,834.0 1907.5,896.5 1950.0,896.5" fill="none" stroke="#9AA3AF" stroke-width="3.5" stroke-linecap="round"/></g>
+<g id="edges-arrows"><g class="p-both"><polygon points="190.0,502.5 182.0,489.5 198.0,489.5" fill="#9AA3AF"/></g><g class="off"><polygon points="430.0,359.0 417.0,351.0 417.0,367.0" fill="#9AA3AF"/></g><g class="p-both"><polygon points="435.0,587.5 422.0,579.5 422.0,595.5" fill="#9AA3AF"/></g><g class="p-hasan"><polygon points="1195.0,549.5 1182.0,541.5 1182.0,557.5" fill="#9AA3AF"/></g><g class="p-husayn"><polygon points="815.0,712.5 802.0,704.5 802.0,720.5" fill="#9AA3AF"/></g><g class="p-husayn"><polygon points="1195.0,625.5 1182.0,617.5 1182.0,633.5" fill="#9AA3AF"/></g><g class="off"><polygon points="960.0,816.5 952.0,803.5 968.0,803.5" fill="#9AA3AF"/></g><g class="p-hasan"><polygon points="1575.0,379.0 1562.0,371.0 1562.0,387.0" fill="#9AA3AF"/></g><g class="p-husayn"><polygon points="1575.0,796.0 1562.0,788.0 1562.0,804.0" fill="#9AA3AF"/></g><g class="off"><polygon points="1950.0,277.5 1937.0,269.5 1937.0,285.5" fill="#9AA3AF"/></g><g class="p-hasan"><polygon points="1950.0,480.5 1937.0,472.5 1937.0,488.5" fill="#9AA3AF"/></g><g class="p-husayn"><polygon points="1950.0,695.5 1937.0,687.5 1937.0,703.5" fill="#9AA3AF"/></g><g class="off"><polygon points="1950.0,896.5 1937.0,888.5 1937.0,904.5" fill="#9AA3AF"/></g></g>
+<g id="edges-overlay"><g class="ov-hasan p-hasan"><line x1="186.0" y1="450.5" x2="186.0" y2="490.5" stroke="#0B5D3B" stroke-width="6" stroke-linecap="round"/><polygon points="186.0,502.5 178.0,489.5 194.0,489.5" fill="#0B5D3B"/></g><g class="ov-husayn p-husayn"><line x1="194.0" y1="450.5" x2="194.0" y2="490.5" stroke="#9B111E" stroke-width="6" stroke-linecap="round"/><polygon points="194.0,502.5 186.0,489.5 202.0,489.5" fill="#9B111E"/></g><g class="ov-hasan p-hasan"><path d="M335.0,583.7 C385.0,583.7 385.0,583.7 435.0,583.7" fill="none" stroke="#0B5D3B" stroke-width="6" stroke-linecap="round"/><polygon points="435.0,583.7 422.0,575.7 422.0,591.7" fill="#0B5D3B"/></g><g class="ov-husayn p-husayn"><path d="M335.0,591.3 C385.0,591.3 385.0,591.3 435.0,591.3" fill="none" stroke="#9B111E" stroke-width="6" stroke-linecap="round"/><polygon points="435.0,591.3 422.0,583.3 422.0,599.3" fill="#9B111E"/></g><g class="ov-hasan p-hasan"><path d="M725.0,549.5 C960.0,549.5 960.0,549.5 1195.0,549.5" fill="none" stroke="#0B5D3B" stroke-width="8" stroke-linecap="round"/><polygon points="1195.0,549.5 1182.0,541.5 1182.0,557.5" fill="#0B5D3B"/></g><g class="ov-husayn p-husayn"><path d="M725.0,625.5 C770.0,625.5 770.0,712.5 815.0,712.5" fill="none" stroke="#9B111E" stroke-width="8" stroke-linecap="round"/><polygon points="815.0,712.5 802.0,704.5 802.0,720.5" fill="#9B111E"/></g><g class="ov-husayn p-husayn"><path d="M1105.0,674.5 C1150.0,674.5 1150.0,625.5 1195.0,625.5" fill="none" stroke="#9B111E" stroke-width="8" stroke-linecap="round"/><polygon points="1195.0,625.5 1182.0,617.5 1182.0,633.5" fill="#9B111E"/></g><g class="ov-hasan p-hasan"><path d="M1485.0,549.5 C1530.0,549.5 1530.0,379.0 1575.0,379.0" fill="none" stroke="#0B5D3B" stroke-width="8" stroke-linecap="round"/><polygon points="1575.0,379.0 1562.0,371.0 1562.0,387.0" fill="#0B5D3B"/></g><g class="ov-husayn p-husayn"><path d="M1485.0,625.5 C1530.0,625.5 1530.0,796.0 1575.0,796.0" fill="none" stroke="#9B111E" stroke-width="8" stroke-linecap="round"/><polygon points="1575.0,796.0 1562.0,788.0 1562.0,804.0" fill="#9B111E"/></g><g class="ov-hasan p-hasan"><path d="M1865.0,417.0 C1907.5,417.0 1907.5,480.5 1950.0,480.5" fill="none" stroke="#0B5D3B" stroke-width="8" stroke-linecap="round"/><polygon points="1950.0,480.5 1937.0,472.5 1937.0,488.5" fill="#0B5D3B"/></g><g class="ov-husayn p-husayn"><path d="M1865.0,758.0 C1907.5,758.0 1907.5,695.5 1950.0,695.5" fill="none" stroke="#9B111E" stroke-width="8" stroke-linecap="round"/><polygon points="1950.0,695.5 1937.0,687.5 1937.0,703.5" fill="#9B111E"/></g></g>
+<g id="nodes"><g class="node p-both" id="n-start"><rect x="40.0" y="352.5" width="300.0" height="98.0" rx="49.0" fill="#14212F"/><text x="190.0" y="385.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle">A conflict confronts the</text><text x="190.0" y="409.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle">Imam, the leader of the</text><text x="190.0" y="433.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle">Muslims</text></g><g class="node p-both" id="n-D1"><rect class="ov-hasan p-hasan" x="39.0" y="496.5" width="302.0" height="182.0" rx="24" fill="none" stroke="#0B5D3B" stroke-width="5"/><rect class="ov-husayn p-husayn" x="32.0" y="489.5" width="316.0" height="196.0" rx="31" fill="none" stroke="#9B111E" stroke-width="5"/><rect x="45.0" y="502.5" width="290.0" height="170.0" rx="18" fill="#fff" stroke="#3B4A63" stroke-width="2.5"/><path d="M45.0,538.5 V520.5 A18,18 0 0 1 63.0,502.5 H317.0 A18,18 0 0 1 335.0,520.5 V538.5 Z" fill="#3B4A63"/><text x="61.0" y="525.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="start" letter-spacing="0.9">DEFENSIVE JIHAD</text><text x="62.0" y="571.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Is a non-Muslim enemy</text><text x="62.0" y="597.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">attacking Islamic land,</text><text x="62.0" y="623.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">lives, property or</text><text x="62.0" y="649.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">sanctuaries?</text></g><g class="node off" id="n-L1"><rect x="430.0" y="252.5" width="300.0" height="213.0" rx="18" fill="#F4F2EC" stroke="#B8B2A2" stroke-width="2.5" stroke-dasharray="9 6"/><rect x="440.0" y="266.5" width="12" height="185.0" rx="6" fill="#B8B2A2"/><text x="464.0" y="291.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="21" font-weight="bold" font-style="normal" fill="#3A4350" text-anchor="start">Defensive jihad</text><text x="464.0" y="324.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Obligatory on every Muslim,</text><text x="464.0" y="347.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">man or woman, free or not.</text><text x="464.0" y="370.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">No Imam’s permission</text><text x="464.0" y="393.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">needed.</text><text x="464.0" y="424.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16.5" font-weight="normal" font-style="italic" fill="#5B6572" text-anchor="start">e.g. an invader occupying a</text><text x="464.0" y="446.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16.5" font-weight="normal" font-style="italic" fill="#5B6572" text-anchor="start">Muslim land</text></g><g class="node p-both" id="n-D2"><rect class="ov-hasan p-hasan" x="429.0" y="509.5" width="302.0" height="156.0" rx="24" fill="none" stroke="#0B5D3B" stroke-width="5"/><rect class="ov-husayn p-husayn" x="422.0" y="502.5" width="316.0" height="170.0" rx="31" fill="none" stroke="#9B111E" stroke-width="5"/><rect x="435.0" y="515.5" width="290.0" height="144.0" rx="18" fill="#fff" stroke="#3B4A63" stroke-width="2.5"/><path d="M435.0,551.5 V533.5 A18,18 0 0 1 453.0,515.5 H707.0 A18,18 0 0 1 725.0,533.5 V551.5 Z" fill="#3B4A63"/><text x="451.0" y="538.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="start" letter-spacing="0.9">FIGHTING REBELS · Q 49:9</text><circle cx="703.0" cy="533.5" r="13" fill="#fff"/><text x="703.0" y="539.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#3B4A63" text-anchor="middle">1</text><text x="452.0" y="584.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Is a Muslim faction in</text><text x="452.0" y="610.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">armed revolt against the</text><text x="452.0" y="636.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">lawful, sitting Imam?</text></g><g class="node p-husayn" id="n-D3"><rect class="ov-husayn p-husayn" x="809.0" y="634.5" width="302.0" height="156.0" rx="24" fill="none" stroke="#9B111E" stroke-width="5"/><rect x="815.0" y="640.5" width="290.0" height="144.0" rx="18" fill="#fff" stroke="#3B4A63" stroke-width="2.5"/><path d="M815.0,676.5 V658.5 A18,18 0 0 1 833.0,640.5 H1087.0 A18,18 0 0 1 1105.0,658.5 V676.5 Z" fill="#3B4A63"/><text x="831.0" y="663.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="start" letter-spacing="0.9">ENJOINING GOOD</text><circle cx="1083.0" cy="658.5" r="13" fill="#fff"/><text x="1083.0" y="664.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#3B4A63" text-anchor="middle">1</text><text x="832.0" y="709.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Is the Imam instead</text><text x="832.0" y="735.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">protesting a ruler who</text><text x="832.0" y="761.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">violates Islam?</text></g><g class="node off" id="n-L0"><rect x="790.0" y="816.5" width="340.0" height="168.0" rx="18" fill="#F4F2EC" stroke="#B8B2A2" stroke-width="2.5" stroke-dasharray="9 6"/><rect x="800.0" y="830.5" width="12" height="140.0" rx="6" fill="#B8B2A2"/><text x="824.0" y="855.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="21" font-weight="bold" font-style="normal" fill="#3A4350" text-anchor="start">No ground to fight</text><text x="824.0" y="888.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Starting a war on non-Muslims</text><text x="824.0" y="911.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">who have not attacked needs the</text><text x="824.0" y="934.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Imam or his deputy.</text><text x="824.0" y="965.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16.5" font-weight="normal" font-style="italic" fill="#5B6572" text-anchor="start">Antecedent jihad: adult, free men</text></g><g class="node p-both" id="n-T1"><rect class="ov-hasan p-hasan" x="1189.0" y="496.5" width="302.0" height="182.0" rx="24" fill="none" stroke="#0B5D3B" stroke-width="5"/><rect class="ov-husayn p-husayn" x="1182.0" y="489.5" width="316.0" height="196.0" rx="31" fill="none" stroke="#9B111E" stroke-width="5"/><rect x="1195.0" y="502.5" width="290.0" height="170.0" rx="18" fill="#fff" stroke="#245B74" stroke-width="2.5"/><path d="M1195.0,538.5 V520.5 A18,18 0 0 1 1213.0,502.5 H1467.0 A18,18 0 0 1 1485.0,520.5 V538.5 Z" fill="#245B74"/><text x="1211.0" y="525.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="start" letter-spacing="0.9">TRUCE · MUHAQQIQ'S TEST</text><circle cx="1463.0" cy="520.5" r="13" fill="#fff"/><text x="1463.0" y="526.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#245B74" text-anchor="middle">3</text><text x="1212.0" y="571.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Is a lawful truce on offer:</text><text x="1212.0" y="597.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">time-bound, protective</text><text x="1212.0" y="623.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">terms, no demand for</text><text x="1212.0" y="649.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">allegiance?</text></g><g class="node p-hasan" id="n-H1"><rect class="ov-hasan p-hasan" x="1569.0" y="288.0" width="302.0" height="182.0" rx="24" fill="none" stroke="#0B5D3B" stroke-width="5"/><rect x="1575.0" y="294.0" width="290.0" height="170.0" rx="18" fill="#fff" stroke="#245B74" stroke-width="2.5"/><path d="M1575.0,330.0 V312.0 A18,18 0 0 1 1593.0,294.0 H1847.0 A18,18 0 0 1 1865.0,312.0 V330.0 Z" fill="#245B74"/><text x="1591.0" y="317.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="start" letter-spacing="0.9">TRUCE · STRENGTH TEST</text><circle cx="1843.0" cy="312.0" r="13" fill="#fff"/><text x="1843.0" y="318.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#245B74" text-anchor="middle">2</text><text x="1592.0" y="363.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Is the force loyal and</text><text x="1592.0" y="389.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">strong enough to win</text><text x="1592.0" y="415.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">without years of Muslim</text><text x="1592.0" y="441.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">bloodshed?</text></g><g class="node p-husayn" id="n-U1"><rect class="ov-husayn p-husayn" x="1569.0" y="684.0" width="302.0" height="224.0" rx="24" fill="none" stroke="#9B111E" stroke-width="5"/><rect x="1575.0" y="690.0" width="290.0" height="212.0" rx="18" fill="#fff" stroke="#245B74" stroke-width="2.5"/><path d="M1575.0,726.0 V708.0 A18,18 0 0 1 1593.0,690.0 H1847.0 A18,18 0 0 1 1865.0,708.0 V726.0 Z" fill="#245B74"/><text x="1591.0" y="713.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="start" letter-spacing="0.9">DUTY TO RISE</text><circle cx="1783.0" cy="708.0" r="13" fill="#fff"/><text x="1783.0" y="714.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#245B74" text-anchor="middle">4</text><circle cx="1813.0" cy="708.0" r="13" fill="#fff"/><text x="1813.0" y="714.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#245B74" text-anchor="middle">5</text><circle cx="1843.0" cy="708.0" r="13" fill="#fff"/><text x="1843.0" y="714.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#245B74" text-anchor="middle">6</text><text x="1592.0" y="759.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Have all three conditions</text><text x="1592.0" y="785.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">for rising ripened?</text><circle cx="1599.0" cy="806.0" r="4" fill="#245B74"/><text x="1613.0" y="812.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5B6572" text-anchor="start">Allegiance is demanded</text><circle cx="1599.0" cy="827.0" r="4" fill="#245B74"/><text x="1613.0" y="833.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5B6572" text-anchor="start">The wrong is manifest and</text><text x="1613.0" y="854.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5B6572" text-anchor="start">proven</text><circle cx="1599.0" cy="869.0" r="4" fill="#245B74"/><text x="1613.0" y="875.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5B6572" text-anchor="start">A prepared base calls him</text></g><g class="node off" id="n-F"><rect x="1950.0" y="194.0" width="400.0" height="167.0" rx="18" fill="#F4F2EC" stroke="#B8B2A2" stroke-width="2.5" stroke-dasharray="9 6"/><rect x="1960.0" y="208.0" width="12" height="139.0" rx="6" fill="#B8B2A2"/><text x="1984.0" y="233.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="21" font-weight="bold" font-style="normal" fill="#3A4350" text-anchor="start">Fight on</text><text x="1984.0" y="266.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Strong enough, and a truce gains</text><text x="1984.0" y="289.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">nothing? Then a truce is not permissible.</text><text x="1984.0" y="320.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16.5" font-weight="normal" font-style="italic" fill="#5B6572" text-anchor="start">‘Ali at Siffin: the stronger Iraqi forces fought</text><text x="1984.0" y="342.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16.5" font-weight="normal" font-style="italic" fill="#5B6572" text-anchor="start">18 months</text></g><g class="node p-hasan" id="n-TRUCE"><rect class="ov-hasan p-hasan" x="1944.0" y="377.0" width="412.0" height="207.0" rx="24" fill="none" stroke="#0B5D3B" stroke-width="5"/><rect x="1950.0" y="383.0" width="400.0" height="195.0" rx="18" fill="#E2F0E8" stroke="#0B5D3B" stroke-width="4"/><rect x="1960.0" y="397.0" width="12" height="167.0" rx="6" fill="#0B5D3B"/><text x="1984.0" y="422.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="21" font-weight="bold" font-style="normal" fill="#073B25" text-anchor="start">TRUCE: al-Hassan steps</text><text x="1984.0" y="449.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="21" font-weight="bold" font-style="normal" fill="#073B25" text-anchor="start">aside</text><text x="1984.0" y="482.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Book and Sunnah, no successor, no</text><text x="1984.0" y="505.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">cursing of ‘Ali, safety for his followers,</text><text x="1984.0" y="528.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">no allegiance.</text><text x="1984.0" y="559.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16.5" font-weight="normal" font-style="italic" fill="#5B6572" text-anchor="start">Precedent: the Prophet at Hudaybiyyah</text><path transform="translate(2316.0,423.0) scale(1.25)" d="M0,-15 C7,-5 12,1 12,7 A12,12 0 1 1 -12,7 C-12,1 -7,-5 0,-15 Z" fill="#0B5D3B"/><circle cx="2324.0" cy="554.0" r="13" fill="#fff" stroke="#0B5D3B" stroke-width="2"/><text x="2324.0" y="560.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#0B5D3B" text-anchor="middle">3</text></g><g class="node p-husayn" id="n-RISE"><rect class="ov-husayn p-husayn" x="1944.0" y="594.0" width="412.0" height="203.0" rx="24" fill="none" stroke="#9B111E" stroke-width="5"/><rect x="1950.0" y="600.0" width="400.0" height="191.0" rx="18" fill="#F8E3E5" stroke="#9B111E" stroke-width="4"/><rect x="1960.0" y="614.0" width="12" height="163.0" rx="6" fill="#9B111E"/><text x="1984.0" y="639.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="21" font-weight="bold" font-style="normal" fill="#6E0C15" text-anchor="start">RISE: al-Husayn refuses</text><text x="1984.0" y="672.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Allegiance demanded and refused.</text><text x="1984.0" y="695.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Kufah’s 18,000 letters. 72 loyal</text><text x="1984.0" y="718.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">companions. A protestor’s honourable</text><text x="1984.0" y="741.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">death.</text><text x="1984.0" y="772.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16.5" font-weight="normal" font-style="italic" fill="#5B6572" text-anchor="start">An honourable stand, even unto death</text><path transform="translate(2316.0,640.0) scale(1.25)" d="M0,-15 C7,-5 12,1 12,7 A12,12 0 1 1 -12,7 C-12,1 -7,-5 0,-15 Z" fill="#9B111E"/></g><g class="node off" id="n-W"><rect x="1950.0" y="813.0" width="400.0" height="167.0" rx="18" fill="#F4F2EC" stroke="#B8B2A2" stroke-width="2.5" stroke-dasharray="9 6"/><rect x="1960.0" y="827.0" width="12" height="139.0" rx="6" fill="#B8B2A2"/><text x="1984.0" y="852.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="21" font-weight="bold" font-style="normal" fill="#3A4350" text-anchor="start">Not yet: expose first</text><text x="1984.0" y="885.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">The duty to rise is not ‘produced’ until</text><text x="1984.0" y="908.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">the ruler’s true face shows.</text><text x="1984.0" y="939.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16.5" font-weight="normal" font-style="italic" fill="#5B6572" text-anchor="start">Al-Hassan’s peace did exactly this for</text><text x="1984.0" y="961.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16.5" font-weight="normal" font-style="italic" fill="#5B6572" text-anchor="start">al-Husayn</text></g></g>
+<g id="pills"><g class="off"><rect x="364.5" y="421.6" width="46" height="24" rx="12" fill="#2B3A4B"/><text x="387.5" y="438.6" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" letter-spacing="0.5">YES</text></g><g class="p-both"><rect x="364.3" y="575.5" width="46" height="24" rx="12" fill="#2B3A4B"/><text x="387.3" y="592.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" letter-spacing="0.5">NO</text></g><g class="p-hasan"><rect x="754.1" y="537.5" width="46" height="24" rx="12" fill="#0B5D3B"/><text x="777.1" y="554.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" letter-spacing="0.5">YES</text></g><g class="p-husayn"><rect x="754.5" y="671.1" width="46" height="24" rx="12" fill="#9B111E"/><text x="777.5" y="688.1" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" letter-spacing="0.5">NO</text></g><g class="p-husayn"><rect x="1134.5" y="630.0" width="46" height="24" rx="12" fill="#9B111E"/><text x="1157.5" y="647.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" letter-spacing="0.5">YES</text></g><g class="off"><rect x="937.0" y="788.5" width="46" height="24" rx="12" fill="#2B3A4B"/><text x="960.0" y="805.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" letter-spacing="0.5">NO</text></g><g class="p-hasan"><rect x="1514.5" y="424.6" width="46" height="24" rx="12" fill="#0B5D3B"/><text x="1537.5" y="441.6" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" letter-spacing="0.5">YES</text></g><g class="p-husayn"><rect x="1514.5" y="726.4" width="46" height="24" rx="12" fill="#9B111E"/><text x="1537.5" y="743.4" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" letter-spacing="0.5">NO</text></g><g class="off"><rect x="1894.3" y="283.4" width="46" height="24" rx="12" fill="#2B3A4B"/><text x="1917.3" y="300.4" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" letter-spacing="0.5">YES</text></g><g class="p-hasan"><rect x="1894.3" y="450.6" width="46" height="24" rx="12" fill="#0B5D3B"/><text x="1917.3" y="467.6" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" letter-spacing="0.5">NO</text></g><g class="p-husayn"><rect x="1894.3" y="701.1" width="46" height="24" rx="12" fill="#9B111E"/><text x="1917.3" y="718.1" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" letter-spacing="0.5">YES</text></g><g class="off"><rect x="1894.3" y="866.9" width="46" height="24" rx="12" fill="#2B3A4B"/><text x="1917.3" y="883.9" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" letter-spacing="0.5">NO</text></g></g>
+<g id="chips"><g class="ov-hasan p-hasan" data-node="D1"><circle cx="73.0" cy="672.5" r="15" fill="#fff" stroke="#0B5D3B" stroke-width="3"/><path d="M67.5,667.0 L78.5,678.0 M67.5,678.0 L78.5,667.0" stroke="#0B5D3B" stroke-width="3.4" stroke-linecap="round"/></g><g class="ov-husayn p-husayn" data-node="D1"><rect x="98.0" y="657.5" width="30" height="30" rx="7" fill="#fff" stroke="#9B111E" stroke-width="3"/><path d="M107.5,667.0 L118.5,678.0 M107.5,678.0 L118.5,667.0" stroke="#9B111E" stroke-width="3.4" stroke-linecap="round"/></g><g class="ov-hasan p-hasan" data-node="D2"><circle cx="463.0" cy="659.5" r="15" fill="#0B5D3B" stroke="#0B5D3B" stroke-width="3"/><polyline points="456.5,660.0 461.0,665.0 470.0,654.5" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></g><g class="ov-husayn p-husayn" data-node="D2"><rect x="488.0" y="644.5" width="30" height="30" rx="7" fill="#fff" stroke="#9B111E" stroke-width="3"/><path d="M497.5,654.0 L508.5,665.0 M497.5,665.0 L508.5,654.0" stroke="#9B111E" stroke-width="3.4" stroke-linecap="round"/></g><g class="ov-husayn p-husayn" data-node="D3"><rect x="868.0" y="769.5" width="30" height="30" rx="7" fill="#9B111E" stroke="#9B111E" stroke-width="3"/><polyline points="876.5,785.0 881.0,790.0 890.0,779.5" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></g><g class="ov-hasan p-hasan" data-node="T1"><circle cx="1223.0" cy="672.5" r="15" fill="#0B5D3B" stroke="#0B5D3B" stroke-width="3"/><polyline points="1216.5,673.0 1221.0,678.0 1230.0,667.5" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></g><g class="ov-husayn p-husayn" data-node="T1"><rect x="1248.0" y="657.5" width="30" height="30" rx="7" fill="#fff" stroke="#9B111E" stroke-width="3"/><path d="M1257.5,667.0 L1268.5,678.0 M1257.5,678.0 L1268.5,667.0" stroke="#9B111E" stroke-width="3.4" stroke-linecap="round"/></g><g class="ov-hasan p-hasan" data-node="H1"><circle cx="1603.0" cy="464.0" r="15" fill="#fff" stroke="#0B5D3B" stroke-width="3"/><path d="M1597.5,458.5 L1608.5,469.5 M1597.5,469.5 L1608.5,458.5" stroke="#0B5D3B" stroke-width="3.4" stroke-linecap="round"/></g><g class="ov-husayn p-husayn" data-node="U1"><rect x="1628.0" y="887.0" width="30" height="30" rx="7" fill="#9B111E" stroke="#9B111E" stroke-width="3"/><polyline points="1636.5,902.5 1641.0,907.5 1650.0,897.0" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+<rect x="800" y="215" width="310" height="242" rx="20" fill="#fff" stroke="#D8D3C6" stroke-width="2"/>
+<text x="824.0" y="277.0" font-family="'Times New Roman', 'Liberation Serif', Georgia, serif" font-size="72" font-weight="bold" font-style="normal" fill="#C9B98F" text-anchor="start">“</text>
+<text x="830.0" y="297.0" font-family="'Times New Roman', 'Liberation Serif', Georgia, serif" font-size="27" font-weight="normal" font-style="italic" fill="#17202B" text-anchor="start">These all resulted</text>
+<text x="830.0" y="331.0" font-family="'Times New Roman', 'Liberation Serif', Georgia, serif" font-size="27" font-weight="normal" font-style="italic" fill="#17202B" text-anchor="start">from the differences</text>
+<text x="830.0" y="365.0" font-family="'Times New Roman', 'Liberation Serif', Georgia, serif" font-size="27" font-weight="normal" font-style="italic" fill="#17202B" text-anchor="start">in their</text>
+<text x="830.0" y="399.0" font-family="'Times New Roman', 'Liberation Serif', Georgia, serif" font-size="27" font-weight="normal" font-style="italic" fill="#17202B" text-anchor="start">circumstances.</text>
+<text x="830.0" y="441.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" fill="#5B6572" text-anchor="start" letter-spacing="0.5">Mutahhari · Session 2</text>
+<rect x="50" y="700" width="690" height="285" rx="20" fill="#fff" stroke="#D8D3C6" stroke-width="2"/>
+<text x="74.0" y="734.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#5B6572" text-anchor="start" letter-spacing="1.5">HOW TO READ THE TREE</text>
+<line x1="74" y1="764" x2="134" y2="764" stroke="#0B5D3B" stroke-width="8" stroke-linecap="round"/>
+<path transform="translate(154.0,766.0) scale(0.90)" d="M0,-15 C7,-5 12,1 12,7 A12,12 0 1 1 -12,7 C-12,1 -7,-5 0,-15 Z" fill="#0B5D3B"/>
+<text x="176.0" y="770.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Imam al-Hassan (a) · dark green · aftermath: poison</text>
+<line x1="74" y1="797" x2="134" y2="797" stroke="#9B111E" stroke-width="8" stroke-linecap="round"/>
+<path transform="translate(154.0,799.0) scale(0.90)" d="M0,-15 C7,-5 12,1 12,7 A12,12 0 1 1 -12,7 C-12,1 -7,-5 0,-15 Z" fill="#9B111E"/>
+<text x="176.0" y="803.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Imam al-Husayn (a) · blood red · aftermath: bloodshed</text>
+<circle cx="90.0" cy="830.0" r="15" fill="#0B5D3B" stroke="#0B5D3B" stroke-width="3"/><polyline points="83.5,830.5 88.0,835.5 97.0,825.0" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="117.0" y="815.0" width="30" height="30" rx="7" fill="#9B111E" stroke="#9B111E" stroke-width="3"/><polyline points="125.5,830.5 130.0,835.5 139.0,825.0" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="176.0" y="836.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Principle applied (answer YES)</text>
+<circle cx="90.0" cy="863.0" r="15" fill="#fff" stroke="#0B5D3B" stroke-width="3"/><path d="M84.5,857.5 L95.5,868.5 M84.5,868.5 L95.5,857.5" stroke="#0B5D3B" stroke-width="3.4" stroke-linecap="round"/><rect x="117.0" y="848.0" width="30" height="30" rx="7" fill="#fff" stroke="#9B111E" stroke-width="3"/><path d="M126.5,857.5 L137.5,868.5 M126.5,868.5 L137.5,857.5" stroke="#9B111E" stroke-width="3.4" stroke-linecap="round"/>
+<text x="176.0" y="869.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Principle did not apply (answer NO)</text>
+<rect x="74" y="883" width="60" height="26" rx="8" fill="#F4F2EC" stroke="#B8B2A2" stroke-width="2.5" stroke-dasharray="9 6"/>
+<text x="176.0" y="902.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Not on either path: the law, but not their case</text>
+<circle cx="104.0" cy="929.0" r="13" fill="#fff" stroke="#3B4A63" stroke-width="2"/><text x="104.0" y="935.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#3B4A63" text-anchor="middle">1</text>
+<text x="176.0" y="935.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17.5" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Numbered badges link a box to the scorecard below</text>
+<text x="74.0" y="968.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16.5" font-weight="normal" font-style="italic" fill="#5B6572" text-anchor="start">Colours mark each route, not a causal output of the tree.</text>
+<text x="40.0" y="1020.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5B6572" text-anchor="start" letter-spacing="1.5">THE SIX PRINCIPLES — HOW EACH ONE APPLIED TO EACH IMAM</text>
+<path d="M1208.0,1038 V1031 H2360.0 V1038" fill="none" stroke="#245B74" stroke-width="3" stroke-linecap="round"/>
+<text x="2360.0" y="1019.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" fill="#245B74" text-anchor="end">THE THREE CONDITIONS FOR RISING (4–6):  al-Hassan 0 of 3  ·  al-Husayn 3 of 3</text>
+<rect x="40.0" y="1040" width="373.3" height="200" rx="18" fill="#fff" stroke="#DDD7C8" stroke-width="2"/>
+<circle cx="68.0" cy="1074" r="16" fill="#3B4A63"/>
+<text x="68.0" y="1080.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle">1</text>
+<text x="94.0" y="1080.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Sitting head of state?</text>
+<line x1="54.0" y1="1106" x2="399.3" y2="1106" stroke="#E8E3D6" stroke-width="2"/>
+<g class="ov-hasan p-hasan"><circle cx="70.0" cy="1144.0" r="15" fill="#0B5D3B" stroke="#0B5D3B" stroke-width="3"/><polyline points="63.5,1144.5 68.0,1149.5 77.0,1139.0" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><text x="96.0" y="1141.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Caliph in the seat: his death would be</text><text x="96.0" y="1161.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">the caliphate’s defeat</text></g>
+<g class="ov-husayn p-husayn"><rect x="55.0" y="1187.0" width="30" height="30" rx="7" fill="#fff" stroke="#9B111E" stroke-width="3"/><path d="M64.5,1196.5 L75.5,1207.5 M64.5,1207.5 L75.5,1196.5" stroke="#9B111E" stroke-width="3.4" stroke-linecap="round"/><text x="96.0" y="1199.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">No office held: his stand is a public</text><text x="96.0" y="1219.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">protest</text></g>
+<rect x="429.3" y="1040" width="373.3" height="200" rx="18" fill="#fff" stroke="#DDD7C8" stroke-width="2"/>
+<circle cx="457.3" cy="1074" r="16" fill="#3B4A63"/>
+<text x="457.3" y="1080.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle">2</text>
+<text x="483.3" y="1080.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Loyal, reliable force?</text>
+<line x1="443.3" y1="1106" x2="788.7" y2="1106" stroke="#E8E3D6" stroke-width="2"/>
+<g class="ov-hasan p-hasan"><circle cx="459.3" cy="1144.0" r="15" fill="#fff" stroke="#0B5D3B" stroke-width="3"/><path d="M453.8,1138.5 L464.8,1149.5 M453.8,1149.5 L464.8,1138.5" stroke="#0B5D3B" stroke-width="3.4" stroke-linecap="round"/><text x="485.3" y="1141.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Kufah split: chiefs bribed, desertions at</text><text x="485.3" y="1161.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Nukhaylah</text></g>
+<g class="ov-husayn p-husayn"><rect x="444.3" y="1187.0" width="30" height="30" rx="7" fill="#9B111E" stroke="#9B111E" stroke-width="3"/><polyline points="452.8,1202.5 457.3,1207.5 466.3,1197.0" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><text x="485.3" y="1199.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">72 trained companions; almost none</text><text x="485.3" y="1219.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">deserted</text></g>
+<rect x="818.7" y="1040" width="373.3" height="200" rx="18" fill="#fff" stroke="#DDD7C8" stroke-width="2"/>
+<circle cx="846.7" cy="1074" r="16" fill="#245B74"/>
+<text x="846.7" y="1080.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle">3</text>
+<text x="872.7" y="1080.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Lawful truce on offer?</text>
+<line x1="832.7" y1="1106" x2="1178.0" y2="1106" stroke="#E8E3D6" stroke-width="2"/>
+<g class="ov-hasan p-hasan"><circle cx="848.7" cy="1144.0" r="15" fill="#0B5D3B" stroke="#0B5D3B" stroke-width="3"/><polyline points="842.2,1144.5 846.7,1149.5 855.7,1139.0" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><text x="874.7" y="1141.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Signed blank page: time-bound,</text><text x="874.7" y="1161.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">protective clauses</text></g>
+<g class="ov-husayn p-husayn"><rect x="833.7" y="1187.0" width="30" height="30" rx="7" fill="#fff" stroke="#9B111E" stroke-width="3"/><path d="M843.2,1196.5 L854.2,1207.5 M843.2,1207.5 L854.2,1196.5" stroke="#9B111E" stroke-width="3.4" stroke-linecap="round"/><text x="874.7" y="1199.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Only a pledge of allegiance was</text><text x="874.7" y="1219.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">demanded</text></g>
+<rect x="1208.0" y="1040" width="373.3" height="200" rx="18" fill="#fff" stroke="#9DB7C4" stroke-width="2"/>
+<circle cx="1236.0" cy="1074" r="16" fill="#245B74"/>
+<text x="1236.0" y="1080.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle">4</text>
+<text x="1262.0" y="1080.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Allegiance demanded?</text>
+<line x1="1222.0" y1="1106" x2="1567.3" y2="1106" stroke="#E8E3D6" stroke-width="2"/>
+<g class="ov-hasan p-hasan"><circle cx="1238.0" cy="1144.0" r="15" fill="#fff" stroke="#0B5D3B" stroke-width="3"/><path d="M1232.5,1138.5 L1243.5,1149.5 M1232.5,1149.5 L1243.5,1138.5" stroke="#0B5D3B" stroke-width="3.4" stroke-linecap="round"/><text x="1264.0" y="1146.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">None: the treaty required no pledge</text></g>
+<g class="ov-husayn p-husayn"><rect x="1223.0" y="1187.0" width="30" height="30" rx="7" fill="#9B111E" stroke="#9B111E" stroke-width="3"/><polyline points="1231.5,1202.5 1236.0,1207.5 1245.0,1197.0" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><text x="1264.0" y="1204.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">“He must pledge his allegiance”</text></g>
+<rect x="1597.3" y="1040" width="373.3" height="200" rx="18" fill="#fff" stroke="#9DB7C4" stroke-width="2"/>
+<circle cx="1625.3" cy="1074" r="16" fill="#245B74"/>
+<text x="1625.3" y="1080.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle">5</text>
+<text x="1651.3" y="1070.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Binding call from a prepared</text>
+<text x="1651.3" y="1092.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">base?</text>
+<line x1="1611.3" y1="1106" x2="1956.7" y2="1106" stroke="#E8E3D6" stroke-width="2"/>
+<g class="ov-hasan p-hasan"><circle cx="1627.3" cy="1144.0" r="15" fill="#fff" stroke="#0B5D3B" stroke-width="3"/><path d="M1621.8,1138.5 L1632.8,1149.5 M1621.8,1149.5 L1632.8,1138.5" stroke="#0B5D3B" stroke-width="3.4" stroke-linecap="round"/><text x="1653.3" y="1146.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Kufah divided, hostile factions active</text></g>
+<g class="ov-husayn p-husayn"><rect x="1612.3" y="1187.0" width="30" height="30" rx="7" fill="#9B111E" stroke="#9B111E" stroke-width="3"/><polyline points="1620.8,1202.5 1625.3,1207.5 1634.3,1197.0" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><text x="1653.3" y="1204.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Kufah’s 18,000 letters: an ultimatum</text></g>
+<rect x="1986.7" y="1040" width="373.3" height="200" rx="18" fill="#fff" stroke="#9DB7C4" stroke-width="2"/>
+<circle cx="2014.7" cy="1074" r="16" fill="#245B74"/>
+<text x="2014.7" y="1080.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle">6</text>
+<text x="2040.7" y="1080.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#17202B" text-anchor="start">Wrong manifest and proven?</text>
+<line x1="2000.7" y1="1106" x2="2346.0" y2="1106" stroke="#E8E3D6" stroke-width="2"/>
+<g class="ov-hasan p-hasan"><circle cx="2016.7" cy="1144.0" r="15" fill="#fff" stroke="#0B5D3B" stroke-width="3"/><path d="M2011.2,1138.5 L2022.2,1149.5 M2011.2,1149.5 L2022.2,1138.5" stroke="#0B5D3B" stroke-width="3.4" stroke-linecap="round"/><text x="2042.7" y="1141.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Not yet: Mu‘awiyah’s written terms</text><text x="2042.7" y="1161.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">promised religious rule</text></g>
+<g class="ov-husayn p-husayn"><rect x="2001.7" y="1187.0" width="30" height="30" rx="7" fill="#9B111E" stroke="#9B111E" stroke-width="3"/><polyline points="2010.2,1202.5 2014.7,1207.5 2023.7,1197.0" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><text x="2042.7" y="1199.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">Rules changed, blood shed, an unfit</text><text x="2042.7" y="1219.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#17202B" text-anchor="start">son made heir</text></g>
+<rect x="0" y="1252" width="2400" height="98" fill="#14212F"/>
+<text x="50.0" y="1318.0" font-family="'Times New Roman', 'Liberation Serif', Georgia, serif" font-size="42" font-weight="bold" font-style="normal" fill="#fff" text-anchor="start">Same law. Different circumstances.</text>
+<text x="920.0" y="1296.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="24" font-weight="bold" font-style="normal" fill="#E8EEF3" text-anchor="start">Neither Imam changed the law. The circumstances changed the answer.</text>
+<text x="920.0" y="1330.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19.5" font-weight="normal" font-style="italic" fill="#B9C7D3" text-anchor="start">“Imam al-Hassan’s peace prepared the grounds for Imam al-Husayn’s uprising.”  ·  Mutahhari, Session 2</text>
+</svg>
+<!-- END generated: jihad-truce-tree -->
   </div>
 
   <!-- ================= NOTES ================= -->
   <section class="notes">
     <h2>Why both were right — in one page</h2>
-    <p class="sub">Use this as the expansion after the diagram. Each card maps directly to a gate above.</p>
+    <p class="sub">Use this as the expansion after the diagram. Each card maps directly to the numbered boxes above.</p>
 
     <div class="notegrid">
       <div class="notecard g">
         <h3>Imam al-Ḥasan · The Poison</h3>
-        <p><strong>Gate 2a:</strong> Muʿāwiyah sent a blank, signed page — <em>write your own terms</em>. A just settlement was genuinely on the table. Under Qurʾān 49:9, reconciliation is the first obligation.</p>
-        <p><strong>Gate 4:</strong> The truce was time-bound, and it carried a real benefit — the Shīʿah would survive, and the Umayyads would be forced to show their true face.</p>
-        <p><strong>Gate 5:</strong> The duty to rise had not yet ripened. No allegiance was demanded of him. The corruption was not yet manifest. No ultimatum had come from the base.</p>
-        <p><strong>Gate 6:</strong> As caliph, his death would have disgraced the caliphate itself. Ṣiffīn had already shown that eighteen months of war produced no verdict.</p>
+        <p><strong>Truce on offer (box 3):</strong> Muʿāwiyah sent a blank, signed page — <em>write your own terms</em>. A just settlement was genuinely on the table. Under Qurʾān 49:9, reconciliation is the first obligation.</p>
+        <p><strong>Truce terms (box 3):</strong> The truce was time-bound, and it carried a real benefit — the Shīʿah would survive, and the Umayyads would be forced to show their true face.</p>
+        <p><strong>Duty to rise (boxes 4–6):</strong> The duty to rise had not yet ripened. No allegiance was demanded of him. The corruption was not yet manifest. No ultimatum had come from the base.</p>
+        <p><strong>Position and strength (boxes 1–2):</strong> As caliph, his death would have disgraced the caliphate itself. Ṣiffīn had already shown that eighteen months of war produced no verdict.</p>
         <p><strong>Result:</strong> Muʿāwiyah broke every clause. The mask fell. The ground was prepared for Karbala.</p>
       </div>
 
       <div class="notecard r">
         <h3>Imam al-Ḥusayn · The Blood</h3>
-        <p><strong>Gate 2a:</strong> Yazīd's governor demanded allegiance — no terms, no negotiation. There was nothing to reconcile with.</p>
-        <p><strong>Gate 4:</strong> What was offered was not a truce. It was submission. Submission brings no benefit — it kills the protest.</p>
-        <p><strong>Gate 5:</strong> All three conditions had ripened. Allegiance was demanded and refused. Yazīd was named heir — corruption manifest. Eighteen thousand letters were an ultimatum.</p>
-        <p><strong>Gate 6:</strong> As a protestor, his death was not the death of a caliph. It was a protest carried to its end. His blood would become the argument.</p>
+        <p><strong>Truce on offer (box 3):</strong> Yazīd's governor demanded allegiance — no terms, no negotiation. There was nothing to reconcile with.</p>
+        <p><strong>Truce terms (box 3):</strong> What was offered was not a truce. It was submission. Submission brings no benefit — it kills the protest.</p>
+        <p><strong>Duty to rise (boxes 4–6):</strong> All three conditions had ripened. Allegiance was demanded and refused. Yazīd was named heir — corruption manifest. Eighteen thousand letters were an ultimatum.</p>
+        <p><strong>Position and strength (boxes 1–2):</strong> As a protestor, his death was not the death of a caliph. It was a protest carried to its end. His blood would become the argument.</p>
         <p><strong>Result:</strong> A martyrdom that shook the Umayyad throne — and an argument that has never stopped speaking.</p>
       </div>
 
