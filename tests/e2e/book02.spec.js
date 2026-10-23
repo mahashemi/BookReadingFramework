@@ -97,6 +97,8 @@ test.describe("Book 02 Session 2 jihad and truce framework", () => {
     await expect(framework.locator("svg#map")).toContainText("TRUCE: al-Hassan");
     await expect(framework.locator("svg#map")).toContainText("RISE: al-Husayn");
     await expect(framework.locator(".modes button")).toHaveCount(3);
+    // Explicitly select both paths before asserting overlay visibility; this also verifies the reset behavior.
+    await framework.locator('.modes button[data-mode="both"]').click();
     await expect(framework.locator('svg .ov-hasan path[stroke="#0B5D3B"]').first()).toBeVisible();
     await expect(framework.locator('svg .ov-husayn path[stroke="#9B111E"]').first()).toBeVisible();
     await expect(framework.locator('a[href^="https://"]').first()).toHaveAttribute("target", "_blank");
