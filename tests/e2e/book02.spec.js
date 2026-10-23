@@ -97,8 +97,8 @@ test.describe("Book 02 Session 2 jihad and truce framework", () => {
     await expect(framework.locator("svg#map")).toContainText("TRUCE: al-Hassan");
     await expect(framework.locator("svg#map")).toContainText("RISE: al-Husayn");
     await expect(framework.locator(".modes button")).toHaveCount(3);
-    await expect(framework.locator("svg .p-hasan").first()).toBeVisible();
-    await expect(framework.locator("svg .p-husayn").first()).toBeVisible();
+    await expect(framework.locator('svg .ov-hasan path[stroke="#0B5D3B"]').first()).toBeVisible();
+    await expect(framework.locator('svg .ov-husayn path[stroke="#9B111E"]').first()).toBeVisible();
     await expect(framework.locator('a[href^="https://"]').first()).toHaveAttribute("target", "_blank");
     const afterConcepts = await page.locator("#concepts").evaluate(el =>
       Boolean(el.compareDocumentPosition(document.querySelector(".jihad-source-content")) & Node.DOCUMENT_POSITION_FOLLOWING)
