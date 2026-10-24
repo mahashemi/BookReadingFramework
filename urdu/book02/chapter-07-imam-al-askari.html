@@ -56,4 +56,55 @@ p{margin:.55rem 0 1rem}.meta{color:var(--muted);font-size:.95rem}a{color:var(--a
 <p>ہمارے دلوں میں محبت اور روحانی معرفت کی کرنیں روشن فرما۔</p>
 <p>ہمارے دلوں میں نبیؐ اور ان کے خاندان کی محبت اور معرفت کی روشنی پھیلا دے۔</p>
 <p>ہمارے اعمال کو اپنی الٰہی عنایت، بے پایاں رحمت اور مغفرت کا مستحق بنا دے۔ آمین۔</p>
-</article>
+</article><section id="footnotes"><h2 id="book02-ch07-section-07">ماخذ اور تدوینی نوٹ</h2>
+<p>یہ مطالعہ جاتی اردو ترجمہ اصل باب کے دستیاب متن کی بنیاد پر تیار کیا گیا ہے۔ تاریخی بیانات، منقولہ روایتوں، اشخاص کے ناموں اور حوالہ جاتی تفصیلات کی عبارت بہ عبارت تصدیق حتمی اشاعت سے پہلے ضروری ہے۔ عقیدتی تعبیرات کو مصنف کے مذہبی تناظر میں پیش کیا گیا ہے۔</p>
+<p>ماخذ: <a href="https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-7-topic-imam-al-hassan-al-askari">Al-Islam.org — Chapter 7: On the Topic of Imam al-Hassan al-Askari</a>.</p>
+<p class="meta"><a href="../README.md">اردو مطالعہ کے مرکزی صفحے پر واپس جائیں</a></p>
+</section></main>
+<script>
+/* Standalone Urdu chapter pages do not load the main site's app.js. */
+(() => {
+  'use strict';
+  function normalizeSalawat(root) {
+    if (!root || !document.createTreeWalker) return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        const parent = node.parentElement;
+        if (!node.nodeValue.includes('ﷺ') || !parent ||
+            parent.closest('script,style,textarea,code,.salawat')) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    const matches = [];
+    while (walker.nextNode()) matches.push(walker.currentNode);
+    for (const node of matches) {
+      const fragment = document.createDocumentFragment();
+      const pieces = node.nodeValue.split('ﷺ');
+      pieces.forEach((piece,index) => {
+        if (piece) fragment.appendChild(document.createTextNode(piece));
+        if (index < pieces.length-1) {
+          const span = document.createElement('span');
+          span.className='salawat';
+          span.setAttribute('aria-label','صلى الله عليه وآله وسلم');
+          span.textContent='ﷺ';
+          fragment.appendChild(span);
+        }
+      });
+      node.parentNode.replaceChild(fragment,node);
+    }
+  }
+  normalizeSalawat(document.body);
+  new MutationObserver(records => {
+    for (const record of records) {
+      if (record.type==='characterData') normalizeSalawat(record.target.parentElement);
+      else for (const node of record.addedNodes) {
+        if (node.nodeType===Node.TEXT_NODE) normalizeSalawat(node.parentElement);
+        else if (node.nodeType===Node.ELEMENT_NODE && !node.matches('.salawat')) normalizeSalawat(node);
+      }
+    }
+  }).observe(document.body,{childList:true,characterData:true,subtree:true});
+})();
+</script>
+
+<nav class="reader-return reader-return-bottom" aria-label="باب کے اختتام پر واپسی"><a href="../index.html">← تمام اردو ابواب</a><a href="../../book/?book_id=book02">مطالعاتی مرکز</a><a href="../../">کتب خانہ</a></nav>
+</body></html>
