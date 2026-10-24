@@ -1,0 +1,7 @@
+# Colab runtime provides PyTorch; retain its CUDA build.
+transformers>=4.51.0
+accelerate
+bitsandbytes
+sentencepiece
+soundfile
+omnivoice
