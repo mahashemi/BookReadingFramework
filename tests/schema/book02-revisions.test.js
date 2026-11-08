@@ -75,6 +75,6 @@ test("Book 02 unit and mock practice pages enforce attempt-first answers and obj
   }
   assert.match(unit, /sort\(unitSort\)/, "unit practice should start with the latest reading unit");
   assert.match(mock, /Final Seven Reading Units/, "half-book practice should start from the latest units");
-  assert.match(mock, /map\\(q=>q\\.unit_id\\)\\.filter\\(Boolean\\)/, "mock generator must safely exclude cross-unit questions from unit ordering");
-  assert.match(interleaved, /map\\(q=>q\\.unit_id\\)\\.filter\\(Boolean\\)/, "interleaved generator must safely exclude cross-unit questions from unit ordering");
+  assert.ok(mock.includes("Q.map(q=>q.unit_id).filter(Boolean)"), "mock generator must safely exclude cross-unit questions from unit ordering");
+  assert.ok(interleaved.includes("Q.map(q=>q.unit_id).filter(Boolean)"), "interleaved generator must safely exclude cross-unit questions from unit ordering");
 });
