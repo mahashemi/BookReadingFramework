@@ -21,6 +21,7 @@ const revisionFiles = [
 test("Book 02 reverse-order revision bank is complete, source-traceable, and exam-ready", () => {
   const chunks = readJson(root + "/data/chunks.json");
   const unitIds = new Set(chunks.units.map(unit => unit.id));
+  const chunkIds = new Set(chunks.units.flatMap(unit => unit.chunks.map(chunk => chunk.id)));
   const seen = new Set();
   let total = 0;
 
@@ -47,6 +48,7 @@ test("Book 02 reverse-order revision bank is complete, source-traceable, and exa
       assert.ok(revision.replace_unit_ids.includes(q.unit_id), q.id + " is outside its declared replacement unit");
       assert.ok(q.source_url && q.source_url.startsWith("https://al-islam.org/"), q.id + " needs a source URL");
       assert.ok(q.source_chunk_id, q.id + " needs a source chunk id");
+      assert.ok(chunkIds.has(q.source_chunk_id), q.id + " references an unknown canonical source chunk");
       assert.ok(q.source_locator, q.id + " needs a human-readable source locator");
       if (q.type === "SHORT" || q.type === "LONG") {
         assert.ok(q.answer.split(/\\s+/).length >= 35, q.id + " written model answer is too brief for exam preparation");
