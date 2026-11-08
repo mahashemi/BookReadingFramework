@@ -35,3 +35,10 @@ The actual exam may be short; this library deliberately is not. The master bank 
 **source fact → precise recall → distinction → explanation → claim/example → cross-unit synthesis → interleaved full papers → hard/worst-case paper**
 
 All generated exams draw from the same question IDs rather than creating a separate question universe for each paper.
+
+## Practice and assessment
+
+- [Unit Practice & Assessment](exam_bank/unit_tests.html) — choose a unit, attempt objective questions, write answers before revealing model responses, and self-assess written work.
+- [Full-book Practice Exam Generator](exam_bank/full_book_exam_generator.html) — unit, cumulative, full-book, simulated-year, and hard papers.
+- [Interleaved Exam Generator](exam_bank/interleaved_exam_generator.html) — mixed-unit mock papers.
+- [Study Guide](study_guide/study.html) — concepts, source-linked questions, model answers, and spaced review.
