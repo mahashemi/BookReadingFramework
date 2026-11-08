@@ -49,7 +49,8 @@
         "question_revisions": [
           "exam_bank/revisions/chapter-8-part-2.json",
           "exam_bank/revisions/chapter-8-part-1.json",
-          "exam_bank/revisions/chapter-7.json"
+          "exam_bank/revisions/chapter-7.json",
+          "exam_bank/revisions/chapter-6-session-2.json"
         ]
       },
       "links": {
