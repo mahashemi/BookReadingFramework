@@ -24,6 +24,7 @@
       "data": {
         "chunks": "data/chunks.json",
         "questions": "exam_bank/questions.json",
+        "question_revisions": ["exam_bank/revisions/chapter-8-part-2.json"],
         "glossary": "data/glossary.json"
       }
     },
