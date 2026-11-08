@@ -57,7 +57,8 @@
           "exam_bank/revisions/chapter-3.json",
           "exam_bank/revisions/chapter-2-session-2.json",
           "exam_bank/revisions/chapter-2-session-1.json",
-          "exam_bank/revisions/chapter-1.json"
+          "exam_bank/revisions/chapter-1.json",
+          "exam_bank/revisions/introduction.json"
         ]
       },
       "links": {
