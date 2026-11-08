@@ -47,7 +47,7 @@
       "explanation": "",
       "source_chunk_id": "b02-u12-002",
       "source_locator": "mahdis m-in-the-qur-an-and-in-the-sayings-of-prophets",
-      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi#mahdis m-in-the-qur-an-and-in-the-sayings-of-prophets"
+      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi"
     },
     {
       "id": "b02-u12-rev-003",
@@ -62,7 +62,7 @@
       "explanation": "",
       "source_chunk_id": "b02-u12-003",
       "source_locator": "mahdis m-in-the-qur-an-and-in-the-sayings-of-prophets",
-      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi#mahdis m-in-the-qur-an-and-in-the-sayings-of-prophets"
+      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi"
     },
     {
       "id": "b02-u12-rev-004",
@@ -271,8 +271,8 @@
       "answer": "The four cases show different ways in which belief in the Mahdi could shape political conduct. Mukhtar used the expectation to strengthen his campaign by presenting Muhammad ibn Hanafiyyah as the promised figure and himself as the Mahdi’s representative. Nafs Zakiyyah attracted allegiance partly because people associated his lineage, name, and reported physical sign with the expected Mahdi, although Imam al-Sadiq distinguished support for a righteous uprising from accepting that identification. Mansur, by contrast, is portrayed as manipulating the title for Abbasid legitimacy, even making contradictory claims about who the Mahdi was. Muhammad ibn ‘Ijlan represents a follower who pledged allegiance to ‘Abd Allah al-Mahd because he sincerely believed him to be the promised figure, and was nearly punished for it. The comparison shows that Mahdist belief could inspire movements, attract allegiance, be exploited by rulers, and expose sincere believers to danger. Mutahhari’s central caution is that widespread expectation must not replace critical examination of a claimant.",
       "explanation": "",
       "source_chunk_id": "b02-u12-006",
-      "source_locator": "the-deceit-of-mansur-the-abbasid-caliph",
-      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi#the-deceit-of-mansur-the-abbasid-caliph"
+      "source_locator": "Mukhtar; Nafs Zakiyyah; Mansur; Muhammad ibn ‘Ijlan sections",
+      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi"
     },
     {
       "id": "b02-u12-rev-018",
@@ -339,45 +339,45 @@
       "unit_id": "u12",
       "unit_title": "Chapter 8, Part 2: The Promised [Maw‘ud] al-Mahdi",
       "type": "LONG",
-      "skill": "evidence",
-      "category": "evidence",
+      "skill": "synthesis",
+      "category": "synthesis",
       "difficulty": "hard",
-      "prompt": "How does Mutahhari use the traditions about the conditions under Imam al-Mahdi to describe the character of the promised just society?",
-      "answer": "Mutahhari cites reports describing a world transformed by justice, security, and abundance. He refers to narrations in which wealth is distributed fairly, hearts are filled with spiritual richness, poverty and need disappear, and even a weak elderly woman can travel safely across the world. He also quotes Imam ‘Ali’s description of war as something that appears attractive to those who initiate it but whose outcome is bitter, and of a divinely guided ruler who will hold former officials accountable, restore abandoned Qur’anic and Prophetic practice, and reveal the earth’s resources. These reports portray justice as more than a change of ruler: it includes public safety, fair distribution, moral restoration, and the removal of oppression. Mutahhari also distinguishes spiritual wealth from mere material prosperity. The answer should present these as traditions cited and interpreted by the author, not as a detailed administrative blueprint.",
-      "explanation": "",
-      "source_chunk_id": "b02-u12-032",
-      "source_locator": "mahdism-a-global-philosophy",
-      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi#mahdism-a-global-philosophy"
+      "prompt": "What does Mutahhari say about the disagreements that arose after the deaths of some of the Imams, and what does he identify as the main point of disagreement?",
+      "answer": "Mutahhari says that after the deaths of several Imams, some groups claimed that the Imam had not really died but had disappeared and was the Promised Mahdi. He mentions cases associated with Imam al-Baqir, Imam al-Kazim, Imam al-Sadiq, and others. He then makes an important distinction: in his reading of the historical record, the main disagreement was generally not whether a Promised Mahdi would appear, but which individual was that Mahdi. Questions included whether he was the son of Imam al-Hasan al-‘Askari, whether he belonged to the descendants of Imam al-Hasan or Imam al-Husayn, and whether a particular Imam who had died was actually concealed. Mutahhari says that, as far as his research indicated, scholars up to Ibn Khaldun accepted the basis of the narrations, while disputes concerned identification and details. Present this as Mutahhari’s summary of the record, not as an independently exhaustive survey of every scholar.",
+      "explanation": "This answer follows the chapter’s distinction between the historical report, Mutahhari’s interpretation, and the conclusion he draws. Avoid turning the author’s reported material into a stronger claim than the text makes.",
+      "source_chunk_id": "b02-u12-016",
+      "source_locator": "Muhammad ibn ‘Ijlan; the discussion of early disagreements after the deaths of the Imams",
+      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi"
     },
     {
       "id": "b02-u12-rev-023",
       "unit_id": "u12",
       "unit_title": "Chapter 8, Part 2: The Promised [Maw‘ud] al-Mahdi",
-      "type": "LONG",
-      "skill": "reasoning",
-      "category": "reasoning",
-      "difficulty": "hard",
-      "prompt": "How does Mutahhari respond to the objection that the long life of Imam al-Mahdi is contrary to natural law?",
-      "answer": "Mutahhari challenges the assumption that everything occurring in nature must conform to the ordinary limits currently known to human beings. He points to unresolved questions about the origin of the first living organism and the emergence of life, arguing that science does not possess a complete explanation of every stage in the history of life. He also notes that human knowledge of biological limits is incomplete and that future discoveries might extend human lifespan. He compares the possibility of extraordinary longevity with other events that exceed ordinary experience, including revelation. His argument is not a medical demonstration that a particular lifespan has been empirically verified; it is a philosophical response to the claim that such longevity is impossible simply because it is unusual or not explained by present scientific knowledge. A careful exam answer must state the limits of the argument accurately.",
-      "explanation": "",
-      "source_chunk_id": "b02-u12-032",
-      "source_locator": "the-issue-of-the-imam-s-lifetime",
-      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi#the-issue-of-the-imam-s-lifetime"
+      "type": "SHORT",
+      "skill": "evidence",
+      "category": "evidence",
+      "difficulty": "medium",
+      "prompt": "How does Mutahhari’s footnote about Zayd ibn ‘Ali qualify the report of Zuhri’s reaction to Zayd’s martyrdom?",
+      "answer": "Mutahhari’s main text reports Zuhri as asking why the Ahl al-Bayt were rushing into rebellion when the day of the Mahdi’s emergence from among them would come. Mutahhari says that he is not assessing the validity of Zuhri’s objection; he uses the remark as evidence that expectation of a future Mahdi from the Prophet’s Household was familiar. The footnote then adds an important qualification from the Shi‘ah perspective: Zayd is described as a righteous and pious person, and the Imams’ reports praise him. According to the narrations cited there, Zayd’s uprising was for enjoining good and forbidding evil, not for claiming the Imamate. Therefore, the report should not be used to imply that Zayd himself claimed to be the Mahdi or that his uprising was a claim to the Imamate.",
+      "explanation": "This answer follows the chapter’s distinction between the historical report, Mutahhari’s interpretation, and the conclusion he draws. Avoid turning the author’s reported material into a stronger claim than the text makes.",
+      "source_chunk_id": "b02-u12-008",
+      "source_locator": "The words of Zuhri; footnote 6 concerning Zayd ibn ‘Ali",
+      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi"
     },
     {
       "id": "b02-u12-rev-024",
       "unit_id": "u12",
       "unit_title": "Chapter 8, Part 2: The Promised [Maw‘ud] al-Mahdi",
-      "type": "LONG",
-      "skill": "connection",
-      "category": "connection",
-      "difficulty": "hard",
-      "prompt": "What is the significance of the title al-Qa’im, and how does it connect with the central theme of Chapter 8?",
-      "answer": "Mutahhari explains that the title al-Qa’im is associated with rising or standing forth. Whereas the other Imams are remembered by titles connected with distinctive qualities, the Imam of the Time is especially associated with the act of rising. The title therefore expresses the public and transformative dimension of his mission: he will rise to establish justice and end oppression. Mutahhari links this with the traditions describing the safety of roads, fair distribution of wealth, the disappearance of poverty, the revival of the Qur’an and Sunnah, and the restoration of just conduct. The title is not merely an honorific name; in the lecture’s argument it summarizes the promised Imam’s role in bringing about a just social order. It also connects Part 2 to Part 1, where universal justice is presented as a central aim of prophetic history.",
-      "explanation": "",
-      "source_chunk_id": "b02-u12-032",
-      "source_locator": "mahdism-a-global-philosophy",
-      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi#mahdism-a-global-philosophy"
+      "type": "SHORT",
+      "skill": "evidence",
+      "category": "evidence",
+      "difficulty": "medium",
+      "prompt": "What does footnote 5 clarify about the Prophet’s early statement concerning the Mahdi, and why is that clarification important?",
+      "answer": "Footnote 5 explains that the Prophet’s early statement, as presented in the chapter, was that a Mahdi from his descendants would definitely reappear. It did not specify the time of reappearance in historical terms. Mutahhari adds that a select group may have known whose son the promised figure would be, but the public statement itself did not provide a detailed timetable or all the later identifying particulars. This clarification matters because it prevents readers from projecting later historical details backward into the earliest reports. It also helps explain why the general expectation could be widely known while disagreements later arose over the identity of particular claimants. In an exam, distinguish the broad Prophetic promise from later debates about the person, lineage, and timing.",
+      "explanation": "This answer follows the chapter’s distinction between the historical report, Mutahhari’s interpretation, and the conclusion he draws. Avoid turning the author’s reported material into a stronger claim than the text makes.",
+      "source_chunk_id": "b02-u12-001",
+      "source_locator": "Opening historical question; footnote 5 on the early Prophetic report",
+      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi"
     },
     {
       "id": "b02-u12-rev-025",
@@ -491,7 +491,7 @@
       "explanation": "",
       "source_chunk_id": "b02-u12-002",
       "source_locator": "mahdism-in-the-qur-an-and-in-the-sayings-of-prophets",
-      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi#mahdism-in-the-qur-an-and-in-the-sayings-of-prophets",
+      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi",
       "options": [
         "inherit",
         "divide",
