@@ -51,7 +51,7 @@ test("Book 02 reverse-order revision bank is complete, source-traceable, and exa
       assert.ok(chunkIds.has(q.source_chunk_id), q.id + " references an unknown canonical source chunk");
       assert.ok(q.source_locator, q.id + " needs a human-readable source locator");
       if (q.type === "SHORT" || q.type === "LONG") {
-        assert.ok(q.answer.split(/\\s+/).length >= 35, q.id + " written model answer is too brief for exam preparation");
+        assert.ok(q.answer.split(/\s+/).length >= 35, q.id + " written model answer is too brief for exam preparation");
       }
       if (q.type === "MCQ" || q.type === "FILL") {
         assert.ok(Array.isArray(q.options) && q.options.length >= 3, q.id + " objective question needs at least three options");
