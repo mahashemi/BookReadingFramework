@@ -13,7 +13,7 @@ test.describe("Book 02 attempt-first unit practice", () => {
 
   test("requires an attempt before revealing a written model answer", async ({ page }) => {
     await page.goto(bookPath + "/exam_bank/unit_tests.html", { waitUntil: "networkidle" });
-    const written = page.locator(".question").filter({ has: page.locator("textarea") }).first();
+    const written = page.locator(".question:has(textarea)").first();
     await written.locator("button.reveal").click();
     await expect(written.locator(".feedback")).toContainText("Attempt this question first");
     await expect(written.locator(".answer")).toBeHidden();
@@ -24,7 +24,7 @@ test.describe("Book 02 attempt-first unit practice", () => {
 
   test("marks objective answers and updates attempt progress", async ({ page }) => {
     await page.goto(bookPath + "/exam_bank/unit_tests.html", { waitUntil: "networkidle" });
-    const objective = page.locator(".question").filter({ has: page.locator('input[type="radio"]') }).first();
+    const objective = page.locator(".question:has(input[type=radio])").first();
     await objective.locator('input[type="radio"]').first().check();
     await page.locator("#checkObjective").click();
     await expect(page.locator("#score")).toContainText("Objective score:");
