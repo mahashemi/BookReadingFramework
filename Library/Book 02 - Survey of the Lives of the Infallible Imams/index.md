@@ -11,7 +11,8 @@ data/chunks.json              canonical source-understanding chunks + Akhlaq les
    ↓
 study guide                   interactive study + spaced review
    ↓
-exam_bank/questions.json      single master question universe
+exam_bank/questions.json      base master question universe
+   + exam_bank/revisions/      source-checked unit overrides
    ├── unit tests
    ├── cumulative/interleaved exams
    └── simulated / worst-case papers

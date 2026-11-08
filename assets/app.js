@@ -1138,7 +1138,12 @@ ${links}
         if (!meta) throw new Error('Unknown book_id: ' + bookId);
         if (meta.status === 'legacy') { legacyNotice(meta); app.setAttribute('aria-busy', 'false'); return; }
         const dir = SITE + dirEnc(meta.dir);
-        const [data, qd, gl, cf] = await Promise.all([getJSON(dir + meta.data.chunks), optional(getJSON(dir + meta.data.questions)), optional(getJSON(dir + meta.data.glossary)), meta.data.counterfactuals ? optional(getJSON(dir + meta.data.counterfactuals)) : Promise.resolve(null)]);
+        const [data, qd, gl, cf, questionRevisions] = await Promise.all([getJSON(dir + meta.data.chunks), optional(getJSON(dir + meta.data.questions)), optional(getJSON(dir + meta.data.glossary)), meta.data.counterfactuals ? optional(getJSON(dir + meta.data.counterfactuals)) : Promise.resolve(null), meta.data.question_revisions?.length ? Promise.all(meta.data.question_revisions.map(path => optional(getJSON(dir + path)))) : Promise.resolve([])]);
+        if (qd && questionRevisions?.length) {
+          const revisions = questionRevisions.filter(Boolean);
+          const replacedUnits = new Set(revisions.flatMap(revision => revision.replace_unit_ids || []));
+          qd.questions = [...qd.questions.filter(question => !replacedUnits.has(question.unit_id)), ...revisions.flatMap(revision => revision.questions || [])];
+        }
         const unit = qs.get('unit');
         if (unit) {
           unitPage(meta, data, qd, gl, unit, cf);
