@@ -43,7 +43,7 @@
       "category": "evidence",
       "difficulty": "hard",
       "prompt": "Which Qur’anic passages does Mutahhari use to establish the broad promise of the righteous inheriting the earth, and what scope does he draw from them?",
-      "answer": "Mutahhari refers especially to Qur’an 21:105, which states that the righteous servants will inherit the earth, and Qur’an 9:33, which speaks of the religion of truth prevailing over other religions. He interprets these promises as universal rather than limited to one city, nation, race, or geographical region. The earth will not remain permanently under oppressive rulers; the righteous will ultimately inherit it. He connects this Qur’anic horizon with the promised al-Mahdi. In an exam, distinguish the Qur’anic wording from Mutahhari’s interpretation: the verses provide the scriptural basis, while his lecture explains their future-oriented and universal significance.",
+      "answer": "Mutahhari points to three key Qur’anic promises: Qur’an 24:55 promises believers who do righteous deeds succession, the establishment of their religion, and security after fear; Qur’an 21:105 states that the righteous servants will inherit the earth; and Qur’an 9:33 speaks of the religion of truth prevailing over other religions. He interprets these promises as universal rather than limited to one city, nation, race, or geographical region. The earth will not remain permanently under oppressive rulers; the righteous will ultimately inherit it. He connects this Qur’anic horizon with the promised al-Mahdi. In an exam, distinguish the Qur’anic wording from Mutahhari’s interpretation: the verses provide the scriptural basis, while his lecture explains their future-oriented and universal significance.",
       "explanation": "",
       "source_chunk_id": "b02-u12-002",
       "source_locator": "mahdis m-in-the-qur-an-and-in-the-sayings-of-prophets",
@@ -402,17 +402,17 @@
       "skill": "retrieval",
       "category": "retrieval",
       "difficulty": "medium",
-      "prompt": "According to the report cited by Mutahhari, what did Imam ‘Ali tell Kumayl about the earth and Allah’s proof?",
-      "answer": "The earth is never empty of Allah’s proof, whether manifest or concealed.",
-      "explanation": "",
-      "source_chunk_id": "b02-u12-005",
-      "source_locator": "ali-s-saying",
-      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi#ali-s-saying",
+      "prompt": "Which historical work does Mutahhari cite for Abu al-Faraj al-Isfahani’s report of Zuhri’s remark about the future Mahdi from the Ahl al-Bayt?",
+      "answer": "Maqatil al-Talibiyyin",
+      "explanation": "Mutahhari identifies Abu al-Faraj al-Isfahani as the author of Maqatil al-Talibiyyin and notes that he was not a Shi‘ah historian.",
+      "source_chunk_id": "b02-u12-008",
+      "source_locator": "The words of Zuhri",
+      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi",
       "options": [
-        "The earth is never empty of Allah’s proof, whether manifest or concealed.",
-        "The proof must always be a publicly ruling political leader.",
-        "The proof disappears whenever people reject the Imams.",
-        "The earth is guided only by written books, never by a living proof."
+        "Maqatil al-Talibiyyin",
+        "Al-Kafi",
+        "Muntakhab al-Athar",
+        "Nahj al-Balaghah"
       ]
     },
     {
@@ -420,20 +420,20 @@
       "unit_id": "u12",
       "unit_title": "Chapter 8, Part 2: The Promised [Maw‘ud] al-Mahdi",
       "type": "MCQ",
-      "skill": "concept_check",
-      "category": "concept check",
+      "skill": "retrieval",
+      "category": "retrieval",
       "difficulty": "medium",
-      "prompt": "What distinction did Imam al-Sadiq make regarding Muhammad ibn ‘Abd Allah al-Mahd?",
-      "answer": "He could support an uprising for enjoining good and forbidding evil, but he rejected identifying Muhammad as the Promised Mahdi.",
-      "explanation": "",
-      "source_chunk_id": "b02-u12-010",
-      "source_locator": "the-rising-of-nafs-zakiyyah-and-the-belief-in-mahdism",
-      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi#the-rising-of-nafs-zakiyyah-and-the-belief-in-mahdism",
+      "prompt": "What did Mukhtar call himself when presenting Muhammad ibn Hanafiyyah as the Promised Mahdi?",
+      "answer": "The representative of the Mahdi of the Time",
+      "explanation": "Mutahhari says Mukhtar used the title “Representative of the al-Mahdi of the Time” to advance his political campaign.",
+      "source_chunk_id": "b02-u12-006",
+      "source_locator": "Mukhtar’s uprising and belief in Mahdism",
+      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi",
       "options": [
-        "He could support an uprising for enjoining good and forbidding evil, but he rejected identifying Muhammad as the Promised Mahdi.",
-        "He rejected every form of social reform and political action.",
-        "He accepted Muhammad as the Promised Mahdi but opposed his methods.",
-        "He said that no descendant of Imam al-Hasan could ever lead an uprising."
+        "The representative of the Mahdi of the Time",
+        "The successor of Imam Zayn al-‘Abidin",
+        "The Abbasid governor of Kufa",
+        "The commander of the Ahl al-Bayt"
       ]
     },
     {
@@ -441,20 +441,20 @@
       "unit_id": "u12",
       "unit_title": "Chapter 8, Part 2: The Promised [Maw‘ud] al-Mahdi",
       "type": "MCQ",
-      "skill": "reasoning",
-      "category": "reasoning",
+      "skill": "retrieval",
+      "category": "retrieval",
       "difficulty": "medium",
-      "prompt": "Which analogy does Mutahhari use to describe the conditions for the Mahdi’s reappearance?",
-      "answer": "The ripening of a fruit, which requires maturity, rather than an abscess bursting through accumulated corruption.",
-      "explanation": "",
-      "source_chunk_id": "b02-u12-023",
-      "source_locator": "the-essence-of-al-mahdi-s-uprising",
-      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi#the-essence-of-al-mahdi-s-uprising",
+      "prompt": "After Muhammad ibn Hanafiyyah’s death, where did his followers claim that he was concealed?",
+      "answer": "Mount Radwa",
+      "explanation": "The followers reasoned that the Promised Mahdi could not have died before filling the earth with justice, so they claimed Muhammad ibn Hanafiyyah was hidden at Radwa.",
+      "source_chunk_id": "b02-u12-007",
+      "source_locator": "Mukhtar’s uprising and belief in Mahdism",
+      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi",
       "options": [
-        "The ripening of a fruit, which requires maturity, rather than an abscess bursting through accumulated corruption.",
-        "A storm that must destroy every existing institution.",
-        "A fire that must consume all social structures.",
-        "A machine that automatically creates justice without human development."
+        "Mount Radwa",
+        "Mount Uhud",
+        "The desert near Kufa",
+        "Samarra"
       ]
     },
     {
@@ -465,17 +465,17 @@
       "skill": "retrieval",
       "category": "retrieval",
       "difficulty": "medium",
-      "prompt": "Complete the principle: Awaiting the reappearance of Imam al-Mahdi does not invalidate any ______ or ______ duty.",
-      "answer": "personal or social",
-      "explanation": "",
-      "source_chunk_id": "b02-u12-024",
-      "source_locator": "the-essence-of-al-mahdi-s-uprising",
-      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi#the-essence-of-al-mahdi-s-uprising",
+      "prompt": "In Di‘bil’s lamentation, Imam al-Rida added a reference to a grave in ______ and explained that it would be his own.",
+      "answer": "Tus",
+      "explanation": "The exchange links the lamentation over the Ahl al-Bayt’s past suffering with Imam al-Rida’s own future martyrdom and the poem’s Mahdist theme.",
+      "source_chunk_id": "b02-u12-018",
+      "source_locator": "The words of Di‘bil",
+      "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi",
       "options": [
-        "personal or social",
-        "political or economic",
-        "historical or cultural",
-        "private or optional"
+        "Tus",
+        "Kufa",
+        "Baghdad",
+        "Medina"
       ]
     },
     {
@@ -486,17 +486,17 @@
       "skill": "retrieval",
       "category": "retrieval",
       "difficulty": "medium",
-      "prompt": "Complete the Qur’anic promise central to Mutahhari’s global vision: “Indeed My righteous servants shall ______ the earth.”",
-      "answer": "inherit",
-      "explanation": "",
-      "source_chunk_id": "b02-u12-002",
-      "source_locator": "mahdism-in-the-qur-an-and-in-the-sayings-of-prophets",
+      "prompt": "The scholar from Qum who wrote Muntakhab al-Athar, under the supervision of Ayatullah Bojnurdi, was Ayatullah ______ Golpaygani.",
+      "answer": "Safi",
+      "explanation": "Mutahhari names Aqa Mirza Lutfullah Safi (Golpaygani) as the author and notes the supervisory role of Ayatullah Bojnurdi.",
+      "source_chunk_id": "b02-u12-003",
+      "source_locator": "Mahdism in the Qur’an and in the sayings of prophets",
       "source_url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari/chapter-8-part-2-promised-mawud-al-mahdi",
       "options": [
-        "inherit",
-        "divide",
-        "abandon",
-        "conquer only one region"
+        "Safi",
+        "Sadr",
+        "Mutahhari",
+        "Tabataba’i"
       ]
     }
   ]
