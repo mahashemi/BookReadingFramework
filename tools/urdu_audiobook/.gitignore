@@ -1,0 +1,6 @@
+# Generated translations, audio, and user source material
+build/
+outputs/
+*.mp3
+*.wav
+.env
